@@ -8,4 +8,4 @@
 
 - [FAQ](faq/faq.md)
 
-- Blog Articles (coming soon)
+- [Think Deploy Blog](https://thinkdeploy.blogspot.com)
