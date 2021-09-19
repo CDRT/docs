@@ -8,6 +8,7 @@ The Think BIOS Configurator tool was developed using the WMI BIOS interface meth
 
 ### Standard execution of the application
 This tool is in the HTML application format (hta) so it can be portable and be used in lightweight versions of Windows like WinPE without needing additional libraries to run.  When launched by a user in Windows, the application will attempt to relaunch itself with administrative privileges which causes a User Account Control dialog to be displayed with the Program Name of "Microsoft (R) HTML application host" and the Verified Publisher as "Microsoft Windows".  This occurs because access to the WMI BIOS Settings interface requires administrative privileges on the system and there is no "Run as Administrator" option for .HTA files.  After approving the UAC prompt, the application window will appear.  Below is an example of what a standard execution of the application will look like:
+
 ![Think BIOS Config Tool UI](../img/reference/tbct1.png)
 
 #### File Actions
