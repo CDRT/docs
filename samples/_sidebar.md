@@ -2,8 +2,8 @@
 
 [Home](/)
 
-## Sample Scripts ##
+**Sample Scripts**
 
-- [MOF Files](samples/mof_files.md)
-- [Odometer](samples/odometer.md)
-- [Secure Wipe](samples/secure_wipe.md)
+- [MOF Files](https://github.com/CDRT/Library/tree/master/mof 'target=_blank')
+- [Odometer](https://github.com/CDRT/Library/tree/master/odometer 'target=_blank')
+- [Secure Wipe](https://github.com/CDRT/Library/tree/master/secure-wipe 'target=_blank')

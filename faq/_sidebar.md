@@ -2,8 +2,8 @@
 
 [Home](/)
 
-## Frequently Asked Questions ##
+**Frequently Asked Questions**
 
-- [ (faq #1) ]()
+- [ (faq #1) ](faq/faq1.md)
 - [ (faq #2) ]()
 - [ (faq #3) ]()
