@@ -19,6 +19,7 @@ OMA-URI:
 ```
 
 Values:
+
 `<enabled/>`
 `<disabled/>`
 
@@ -62,7 +63,6 @@ Values:
 If this setting is enabled, it will specify the log max file size in kb before creating a new log file based on the inputted value inside the textbox in the options panel.
 
 OMA-URI:
-
 ```
 ./Device/Vendor/MSFT/Policy/Config/DockManager~Policy~LenovoCompany~DockManager~General/LogfileMaxSize
 ```
