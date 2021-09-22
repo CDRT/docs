@@ -20,7 +20,7 @@ This Windows 10 store application provides the user interface. You can install t
 
 - **Lenovo System Interface Foundation**
 
-This driver is required to allow the **Commercial Vantage** to provide control of system features. The driver is installed to **Device Manager -\&gt; System Devices** as **System Interface Foundation V2 Device**. The driver also installs the **System Interface Foundation Service**. The service uses a plugin framework which provides the individual features of **Commercial Vantage**. The System Interface Foundation Service and these plugins are automatically updated by Lenovo to fix bugs and provide new features.
+This driver is required to allow the **Commercial Vantage** to provide control of system features. The driver is installed to **Device Manager -> System Devices** as **System Interface Foundation V2 Device**. The driver also installs the **System Interface Foundation Service**. The service uses a plugin framework which provides the individual features of **Commercial Vantage**. The System Interface Foundation Service and these plugins are automatically updated by Lenovo to fix bugs and provide new features.
 
 - **Lenovo Vantage Service**
 
@@ -81,7 +81,7 @@ Commercial Vantage can also be configured by importing .reg file(s) to your PCs 
 1. Copy **Group Policy Settings\CommercialVantage.admx** to the **C:\Windows\PolicyDefinitions** folder
 2. Copy **Group Policy Settings\en-US\CommercialVantage.adml** to the **C:\Windows\PolicyDefinitions\en-US** folder
 3. Run gpedit.msc
-4. The configuration items are at **Local Computer Policy -\&gt; Computer Configuration -\&gt; Administrative Templates -\&gt; Commercial Vantage**
+4. The configuration items are at **Local Computer Policy -> Computer Configuration -> Administrative Templates -> Commercial Vantage**
 5. From here, you can configure the policy settings that you want.
 6. When you are done changing settings, close the Group Policy Editor, and then run regedit.exe
 7. In the Registry Editor, navigate to **Computer\HKEY\_LOCAL\_MACHINE\SOFTWARE\Policies\Lenovo**
@@ -102,37 +102,37 @@ The sample configuration (sample-policy-config.reg) is provided as a registry ex
 
 Again, this is just a sample. You can deploy any available policy setting in this way by following the instructions in Chapter 3.
 
-1. **System Update – automatic updates**
+**System Update – automatic updates**
 
 By default, the System Update feature of Commercial Vantage automatically installs the following updates on a weekly schedule:
 
 - All &quot;Critical&quot; updates (BIOS, firmware, drivers, and software)
 - All &quot;Recommended&quot; driver updates (not BIOS, firmware, or software)
 
-These automatic updates can be disabled in **Computer Configuration -\&gt; Administrative Templates -\&gt; Commercial Vantage -\&gt; Device -\&gt; System Update -\&gt; Auto Update**. Or, you can use the VantageDisableAutomaticSystemUpdates.reg file which is included in the deployment packagee.
+These automatic updates can be disabled in **Computer Configuration -> Administrative Templates -> Commercial Vantage -> Device -> System Update -> Auto Update**. Or, you can use the **VantageDisableAutomaticSystemUpdates.reg** file which is included in the deployment packagee.
 
-You can configure the types of updates that get installed automatically in **Computer Configuration -\&gt; Administrative Templates -\&gt; Commercial Vantage -\&gt; System Update -\&gt; Configure System Update**. For example, you can choose to install _only_ driver and software updates, and not any BIOS or firmware updates. Or you can install all critical and recommended updates.
+You can configure the types of updates that get installed automatically in **Computer Configuration -> Administrative Templates -> Commercial Vantage -> System Update -> Configure System Update**. For example, you can choose to install _only_ driver and software updates, and not any BIOS or firmware updates. Or you can install all critical and recommended updates.
 
-1. **System Update – update history**
+**System Update – update history**
 
 The System Update feature of Commercial Vantage writes update history to WMI (in the ROOT\LENOVO namespace). The Lenovo\_Updates class will contain each applicable package ID for that specific model, along with the Severity, Status, Title, and Version.
 
-1. **System Update – update repository**
+**System Update – update repository**
 
-By default, the System Update feature of Commercial Vantage searches the Lenovo repository of updates. If you prefer, you can create your own repository of updates and configure Vantage to use this repository instead. This is configured in **Computer Configuration -\&gt; Administrative Templates -\&gt; Commercial Vantage -\&gt; Device -\&gt; System Update -\&gt; System Update Repository**. You can point to a local folder (such as c:\myRepository), a mapped drive (such as m:\myRespository) or a UNC path (such as \\myServer\myRepository).
+By default, the System Update feature of Commercial Vantage searches the Lenovo repository of updates. If you prefer, you can create your own repository of updates and configure Vantage to use this repository instead. This is configured in **Computer Configuration -> Administrative Templates -> Commercial Vantage -> Device -> System Update -> System Update Repository**. You can point to a local folder (such as c:\myRepository), a mapped drive (such as m:\myRespository) or a UNC path (such as \\\\myServer\myRepository).
 
 See here for more information about using Update Retriever to create your own custom repository of updates: [https://support.lenovo.com/us/en/solutions/ht037099](https://support.lenovo.com/us/en/solutions/ht037099)
 
-1. **Warranty Information**
+**Warranty Information**
 
-You can use Commercial Vantage to write the system warranty information to WMI (in the ROOT\Lenovo namespace) by setting the policy in **Computer Configuration -\&gt; Administrative Templates -\&gt; Commercial Vantage -\&gt; Device -\&gt; Warranty**. The Lenovo\_WarrantyInformation class stores SerialNumber, Product, StartDate, EndDate, LastUpdateTime and the reference of each purchased warranty, while Lenovo\_WarrantyElement stores the details of these purchased warranties.
+You can use Commercial Vantage to write the system warranty information to WMI (in the ROOT\Lenovo namespace) by setting the policy in **Computer Configuration -> Administrative Templates -> Commercial Vantage -> Device -> Warranty**. The Lenovo\_WarrantyInformation class stores SerialNumber, Product, StartDate, EndDate, LastUpdateTime and the reference of each purchased warranty, while Lenovo\_WarrantyElement stores the details of these purchased warranties.
 
-1. **Lenovo System Interface Foundation**
+**Lenovo System Interface Foundation**
 
 By default, Lenovo System Interface Foundation keeps itself up to date with updates from Lenovo servers. These updates include The System Interface Foundation service itself, as well as the plugins which are used to provide specific features within Vantage. Lenovo recommends allowing these kinds of self-updates as we are constantly adding features and improving reliability. However, if you want to disable these updates, you can import the **SifDisableSelfUpdate.reg** registry during your deployment.
 
-1. **Battery Information**
+**Battery Information**
 
-On ThinkPads, you can use Commercial Vantage to write the battery information to WMI (in the ROOT\Lenovo namespace) by setting the policy in **Computer Configuration -\&gt; Administrative Templates -\&gt; Commercial Vantage -\&gt; Device -\&gt; Device Settings -\&gt; Power**. The Lenovo\_Battery class stores the same information about the battery that you can see in the Commercial Vantage application.
+On ThinkPads, you can use Commercial Vantage to write the battery information to WMI (in the ROOT\Lenovo namespace) by setting the policy in **Computer Configuration -> Administrative Templates -> Commercial Vantage -> Device -> Device Settings -> Power**. The Lenovo\_Battery class stores the same information about the battery that you can see in the Commercial Vantage application.
 
 Need help with other configurations? Have questions? Reach out to us on our forum! [https://forums.lenovo.com/t5/Enterprise-Client-Management/bd-p/sa01\_eg](https://forums.lenovo.com/t5/Enterprise-Client-Management/bd-p/sa01_eg)
