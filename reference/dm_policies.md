@@ -154,8 +154,8 @@ OMA-URI:
 
 Values:
 
-`<enabled/> <data id="RunMonth_Prompt" value="January,March,May,July,September,November"/>`
-
+`<enabled/>`
+`<data id="RunMonth_Prompt" value="January,March,May,July,September,November"/>`
 `<disabled/>`
 
 ?>Note: This configuration will be use when the Frequency policy is enabled and set to "MONTHLY".
