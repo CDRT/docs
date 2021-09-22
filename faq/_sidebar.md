@@ -4,6 +4,6 @@
 
 **Frequently Asked Questions**
 
-- [ (faq #1) ](faq/faq1.md)
+- [ System Update FAQ ](faq/system_update_faq.md)
 - [ (faq #2) ]()
 - [ (faq #3) ]()
