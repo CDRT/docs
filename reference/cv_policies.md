@@ -1,6 +1,6 @@
 # Commercial Vantage Policies
 
-This page will present the policies found in the Dock Manager admx template; along with the OMA-URI which can be used in Intune to configure the application on clients.
+This page will present the policies found in the Commercial Vantage admx template; along with the OMA-URI which can be used in Intune to configure the application on clients.
 
 Refer to this [Commercial Vantage blog article](https://thinkdeploy.blogspot.com/2020/11/deploying-commercial-vantage-with-intune.html 'target=_blank') on how to create the Win32 app and [Managing Commercial Vantage in Intune](https://thinkdeploy.blogspot.com/2020/11/manage-commercial-vantage-with-intune.html) for steps on how to ingest the ADMX file in Intune.
 
