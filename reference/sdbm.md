@@ -12,6 +12,8 @@ In the past, a supervisor password had to be set manually or from the factory.  
 No longer requires user interaction if a call to clear the TPM was performed.  In other words, no more pressing F9!
 
 ## Supported Systems
+*(These systems were the supported systems at the original writing of this article. It is expected that this feature will continue to be inlcuded in follow-on models.)*
+
 ### L-Series
 L14/15 (Intel)
 
