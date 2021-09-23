@@ -43,7 +43,7 @@ permissions to install new software.
 Please note, License agreement and Open Source Licenses notice will be placed in the
 installation folder.
 3. As a part of the installation process, Windows Registry keys are added. Please see the
-Logging section for more details.
+[Logging section](#logging) for more details.
 4. If one of the LDA versions is already installed, the system offers you to uninstall it within
 the installation process.
 
@@ -359,7 +359,7 @@ You are able to view the Release Notes in the pop-up or download the update.
 
 3. In the opened pop up you may see the Release Notes.
 
-    You can initiate the installation process by clicking the “Install” button. The LDA is closed and the Installation Wizard appears. Please see Installing LDA.
+    You can initiate the installation process by clicking the “Install” button. The LDA is closed and the Installation Wizard appears. Please see [Installing LDA](#installation).
 
 ![](../img/reference/lda/image34.png)
 
@@ -413,7 +413,7 @@ already created or NOT created in CM.
 
 ![](../img/reference/lda/image39.png)
 
-## LOGGING
+## Logging
 ### Overview
 The LDA offers the logging feature. The log file will contain any user’s interaction with the system and all system responses: success, failure, and all information from the "Finish" screen. Logging may help you to track the interaction with the system and how the system responds. In case some problem happens the logging file can be sent to the Lenovo support team for future investigation.
 
