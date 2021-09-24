@@ -12,4 +12,4 @@ The Commercial Deployment Readiness Team is a small group of dedicated professio
 - [Enterprise Client Management Forum]()
 - On Twitter [@joe_lenovo](https://www.twitter.com/joe_lenovo) or [@LenovoCDRT](https://www.twitter.com/LenovoCDRT)
 
-We also try to make it to the popular community events such as Midwest Management Summit, Microsoft Ignite, and Workplace Ninja Virtual Edition 2021.
+We also try to make it to the popular community events such as [Midwest Management Summit](https://mmsmoa.com/), [Workplace Ninja Summit](https://www.wpninjas.ch/), and [Microsoft Ignite](https://myignite.microsoft.com/home).
