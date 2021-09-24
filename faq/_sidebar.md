@@ -5,5 +5,5 @@
 **Frequently Asked Questions**
 
 - [ System Update FAQ ](faq/system_update_faq.md)
-- [ (faq #2) ]()
-- [ (faq #3) ]()
+- [ Commercial Vantage FAQ ](faq/commercial_vantage_faq.md)
+- [ Dock Manager FAQ ](faq/dock_manager_faq.md)
