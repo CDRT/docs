@@ -1,23 +1,29 @@
 # System Deployment Boot Mode
 
 ## Overview
+
 System Deployment Boot Mode (SDB) is a new feature added to the Whiskey Lake generation of ThinkPads.  This introduces the ability to programmatically configure key security BIOS settings during your operating system deployments.
 
 Unlike previous generations, this boot mode will allow you to:
 
 **Set an initial Supervisor Password**
+
 In the past, a supervisor password had to be set manually or from the factory.  Once a supervisor password was set, it could be changed in an automated way leveraging the Lenovo_SetBiosPassword WMI class.
 
 **Disable the TPM Physical Presence for Clear requirement**
+
 No longer requires user interaction if a call to clear the TPM was performed.  In other words, no more pressing F9!
 
 ## Supported Systems
+
 *(These systems were the supported systems at the original writing of this article. It is expected that this feature will continue to be inlcuded in follow-on models.)*
 
 ### L-Series
+
 L14/15 (Intel)
 
 ### P-Series
+
 P14s/15s
 
 P15/17
@@ -27,6 +33,7 @@ P15v
 P43s/53s
 
 ### T-Series
+
 T14 (AMD)
 
 T14/15 (Intel)
@@ -40,6 +47,7 @@ T490 (CML)
 T490/590
 
 ### X-Series
+
 X1 Carbon 8/X1 Yoga 5
 
 X13 NEC
@@ -53,6 +61,7 @@ X390 NEC
 X390 (WHL)
 
 ## Activating System Deployment Boot Mode
+
 * Boot the system and press F12 until the boot menu appears
 * Press the Delete key.  **System Deployment Boot Mode** will appear in the upper right side of the screen.  The internal boot device(s) will be removed from the list.  This is a security precaution.
 
@@ -63,6 +72,7 @@ X390 (WHL)
 * System will exit System Deployment Boot Mode upon the next reboot.
 
 ## WMI in System Deployment Boot Mode
+
 PXE boot a system to WinPE, F8 to a command prompt, and start PowerShell.  Verify there is no supervisor password set on the system by running the following command:
 
 ```
@@ -74,6 +84,7 @@ Confirm the **PasswordState** property value is 0
 ![](../img/reference/sdbm/image2.jpg)
 
 ### Setting the Supervisor Password
+
 Run the following commands to set an initial Supervisor Password.  Replace *secretpassword* with a password of your choice.
 
 ```
@@ -89,6 +100,7 @@ Get-CimInstance -Namespace root/WMI -ClassName Lenovo_SaveBiosSettings | Invoke-
 ```
 
 ### Check TPM Physical Presence for Clear Status
+
 By default, the TPM Physical Presence for Clear setting is always going to be enabled from the factory.  You can verify by running these commands:
 
 ```
@@ -97,6 +109,7 @@ Get-CimInstance -Namespace root/WMI -ClassName Lenovo_BiosSetting | Where-Object
 ![](../img/reference/sdbm/image4.jpg)
 
 ### Disable TPM Physical Presence for Clear
+
 To disable Physical Presence, run the following commands:
 
 ```
@@ -115,6 +128,7 @@ $saveBios.SaveBiosSettings("secretpassword,ascii,us")
 
 ## Use With TBCT
 ### Preparing the Configuration File
+
 You can also use the Think BIOS Config [Tool](https://thinkdeploy.blogspot.com/2016/08/the-think-bios-config-tool.html) or higher to apply these changes in your operating system deployment task sequence.  
 
 ?>Supported on version 1.28 or higher of the TBCT
@@ -140,6 +154,7 @@ On a test system, PXE boot (or USB boot) to WinPE and perform the following:
 ![](../img/reference/sdbm/image7.jpg)
 
 ### Applying the Configuration File
+
 To apply the new Supervisor Password and other BIOS settings, perform the following:
 
 * Navigate to the directory containing the TBCT, password .INI, and config .INI.
@@ -158,6 +173,7 @@ If you open the log you'll see the password change was successful, the config fi
 ![](../img/reference/sdbm/image8.jpg)
 
 ## Confirm the Updated BIOS Configuration
+
 Reboot the system and **F1** to get to the BIOS.  You should be prompted to enter your new Supervisor Password.  Navigate to **Security > Password**
 
 The Supervisor Password should now show as Enabled
