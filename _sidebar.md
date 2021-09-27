@@ -2,8 +2,17 @@
 
 [Home](/)
 
-- [Deployment Guides](guides/deployment_guides.md)
-- [Reference Material](reference/reference.md)
+**Product Guides**
+- [Commercial Vantage](cv/cv_top.md)
+- [Dock Manager](dm/dm_top.md)
+- [Lenovo Deployment Assistant](lda/lda_top.md)
+- [System Update, Update Retriever, Thin Installer](su/su_top.md)
+- [Think BIOS Config Tool](tbct/tbct_top.md)
+
+<!--
+- [Deployment Guides](guides/deployment_guides.md) 
+- [Reference Material](reference/reference.md)-->
+---
 - [Scripting Samples](samples/samples.md)
 
 - [FAQ](faq/faq.md)
