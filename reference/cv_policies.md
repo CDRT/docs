@@ -163,6 +163,7 @@ Values:
 `<disabled/>`
 
 ### DPM Power Settings
+
 ?>Note: Added in version 2104.10
 
 When this policy is enabled, the Desktop Power Manager Power Settings of Commercial Vantage will be turned off.
@@ -178,6 +179,7 @@ Values:
 `<disabled/>`
 
 ### Battery Settings 
+
 ?>Added in version 2104.10
 
 When this policy is enabled, the Battery Settings features of Commercial Vantage will be turned off.
@@ -214,6 +216,7 @@ Values:
 !> If this policy is enabled, the Battery Settings section in the GUI will disappear.
 
 ### Power Smart Settings
+
 ?> Added in version 2104.10 
 
 When this policy is enabled, the Power Smart Settings of Commercial Vantage will be turned off.
@@ -229,6 +232,7 @@ Values:
 `<disabled/>`
 
 ### Standby Settings
+
 ?> Added in version 2104.10
 
 When this policy is enabled, the Standby Settings feature of Commercial Vantage will be turned off.
@@ -244,6 +248,7 @@ Values:
 `<disabled/>`
 
 ### Energy Star
+
 ?> Added in version 2104.10
 
 When this policy is enabled, the Energy Star features of Commercial Vantage will be turned off
@@ -259,6 +264,7 @@ Values:
 `<disabled/>`
 
 ### Active Protection System Settings
+
 ?> Added in version 2104.10
 
 When this policy is enabled, the Active Protection System Settings features of Commercial Vantage will be turned off.
@@ -288,6 +294,7 @@ Values:
 `<disabled/>`
 
 ### Intelligent Security Settings
+
 ?> Added in version 2104.10
 
 When this policy is enabled, the Intelligent Security Settings features of Commercial Vantage will be turned off.
@@ -398,6 +405,7 @@ Values:
 ?> The value should be a number (0-6), where 0 means Sunday, 1 means Monday, 2 means Tuesday...
 
 ### Defer Update
+
 ?> Added in version 2104.10 v2
 
 This policy setting provides the ability for the Administrator to control deferred updates.  If you enable this policy setting, when there are some updates that needs to reboot the system, the end user can defer these updates for 1 hour.  If you disable or do not configure this policy setting, the end user can cancel these updates.
@@ -413,6 +421,7 @@ Values:
 `<disabled/>`
 
 ### Auto Update
+
 ?> Added in version 2104.10 v2
 
 This policy setting provides the ability for the Administrator to control auto updates.  If you enable this policy setting, auto updates will be enabled.  If you disable this policy setting, auto updates will be disabled.  If you do not configure this policy setting, it will keep the last status and can be controlled by the end user.  By default, auto updates will install critical updates and recommended drivers.  If you want customization, please change the setting "Configure System Update".
@@ -428,6 +437,7 @@ Values:
 `<disabled/>`
 
 ### Turn Off Run-Once Task
+
 ?> Added in version 2104.10 v2
 
 When this policy is enabled, the initial check for updates by Commercial Vantage is turned off.
@@ -459,6 +469,7 @@ Values:
 ?> For example, 18: 30:00 for 6:30 PM
 
 ### Warranty Information
+
 ?> Added in version 2104.10
 
 This policy setting allows the Administrator to hide the warranty information in Commercial Vantage.  If you enable it, the warranty information will be removed from the Commercial Vantage GUI.  If you disable or not configure it, the warranty information will be shown.
@@ -474,6 +485,7 @@ Values:
 `<disabled/>`
 
 ### Write Warranty Information to WMI
+
 ?> Added in version 2104.10
 
 This policy setting allows the Administrator to enable Commercial Vantage to writing the warranty information of the system into the Lenovo Namespace WMI table.  If you enable it, the warranty information will be written to the WMI table.  If you disable or not configure it, the warranty information will not be written to WMI table.

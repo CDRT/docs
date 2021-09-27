@@ -1,5 +1,6 @@
 # Dock Manager Policies 
 ## Intro
+
 This page will present the policies found in the Dock Manager admx template; along with the OMA-URI which can be used in Intune to configure the application on clients.
 
 Refer to the [Dock Manager blog article](https://thinkdeploy.blogspot.com/2020/12/lenovo-dock-manager.html 'target=_blank') on how to create the Win32 app and for steps on how to ingest the Dock Manager ADMX in Intune
@@ -94,6 +95,7 @@ Values:
 
 ## Scheduler
 ### Frequency
+
 If this settings is enabled, it will edit the frequency on how the next scheduled task's execute date should be updated. 
 
 OMA-URI:
@@ -110,6 +112,7 @@ Values:
 ?>Note: Frequency values include DAILY,WEEKLY, and MONTHLY which can be configured on the dropdown provided inside the options panel.
 
 ### Run At
+
 Description: If this setting is enabled, it will edit the time upon when the next scheduled task's execute date should be updated. 
 
 OMA-URI:
@@ -126,6 +129,7 @@ Values:
 ?>Note: Valid inputs includes any time of the day in 24:MM:SS format which can be inputted inside the textbox in the options panel.
 
 ### Run Days
+
 If this setting is enabled, it will edit the day/s when the next scheduled task's execute date should be updated. 
 
 Valid inputs are 1-31 and can be separated by a comma (e.g. 1,2,31) which can be inputted inside the textbox in the options panel.        
@@ -144,6 +148,7 @@ Values:
 ?>Note: This configuration will be use when the Frequency policy is enabled and set to "MONTHLY".
 
 ### Run Month
+
 If this setting is enabled, it will edit the month/s when the next scheduled task's execute date should be updated. 
 
 Valid inputs are January-December and can be separated by a comma (e.g. January,February) which can be inputted inside the textbox in the options panel.  
@@ -162,6 +167,7 @@ Values:
 ?>Note: This configuration will be use when the Frequency policy is enabled and set to "MONTHLY".
 
 ### Run Monthly On
+
 If this setting is enabled, it will edit the month/s when the next scheduled task's execute date should be updated. 
 
 Valid inputs include: First, Second, Third, Fourth, Last; and can be separated by a comma (e.g. First,Second,Last) which can be inputted inside the textbox in the options panel.  
@@ -180,6 +186,7 @@ Values:
 ?>Note: This configuration will be use when the Frequency policy is enabled and set to "MONTHLY".
 
 ### Run On
+
 If this setting is enabled, it will edit the day of the week when the next scheduled task's execute date should be updated. 
 
 Valid inputs are Sunday-Monday and can be separated by a comma (e.g. Monday,Tuesday) which can be inputted inside the textbox in the options panel.  
