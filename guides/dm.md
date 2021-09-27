@@ -41,23 +41,23 @@ In the console, navigate to the **Software > Application Management > Applicatio
 
 Tick the **Manually specify the application information** radio button, click Next
 
-![1](../img/guides/dm/image1.png)
+![](../img/guides/dm/image1.PNG)
 
 Specify information about the app, click **Next**
 
-![2](../img/guides/dm/image2.png)
+![](../img/guides/dm/image2.PNG)
 
 Enter Software Center details, click **Next**
 
-![ ](../img/guides/dm/image3.png)
+![](../img/guides/dm/image3.PNG)
 
 Set the deployment type to **Script Installer** and click **Next**
 
-![](../img/guides/dm/image4.png)
+![](../img/guides/dm/image4.PNG)
 
 Set the deployment type name and click **Next**
 
-![](../img/guides/dm/image5.png)
+![](../img/guides/dm/image5.PNG)
 
 Enter the content location path to the Dock Manager executable
 
@@ -73,7 +73,7 @@ Uninstall start in:
 ```
 %ProgramFiles%\Lenovo\Dock Manager
 ```
-![](../img/guides/dm/image6.png)
+![](../img/guides/dm/image6.PNG)
 
 Set the detection rule setting type to **Registry**
 
@@ -95,13 +95,13 @@ Value:
 ```
 1.0.0.125
 ```
-![](../img/guides/dm/image7.png)
+![](../img/guides/dm/image7.PNG)
 
 Set the installation behavior to **Install for system** and logon requirement to **Whether or not a user is logged on**
 
 Add any installation requirements such as Operating system is One of Windows 10 (64-bit)
 
-![](../img/guides/dm/image8.png)
+![](../img/guides/dm/image8.PNG)
 
 Complete the deployment type and App wizards.  Deploy to a Device Collection.
 
@@ -113,7 +113,7 @@ Using the Win32 Content Prep [Tool](https://github.com/Microsoft/Microsoft-Win32
 IntuneWinAppUtil.exe -c "C:\IntuneWin\DM\" -s "dock_manager_setup.exe" -o "C:\IntuneWin\output\" -q
 ```
 
-![](../img/guides/dm/image9.png)
+![](../img/guides/dm/image9.PNG)
 
 Login to the Endpoint admin center [portal](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/AppsWindowsMenu/windowsApps) to create a new Windows app and select the **Windows app (Win32)** type.
 
@@ -121,7 +121,7 @@ Select the **dock_manager_setup.intunewin** app package file.
 
 Enter required and optional information about the app
 
-![](../img/guides/dm/image10.png)
+![](../img/guides/dm/image10.PNG)
 
 Enter the Install command
 ```
@@ -131,7 +131,7 @@ and Uninstall command
 ```
 %ProgramFiles%\Lenovo\Dock Manager\unins000.exe /SILENT
 ```
-![](../img/guides/dm/image11.png)
+![](../img/guides/dm/image11.PNG)
 
 Set the requirements.  You can take it a bit further with a detection script to check if a supported dock is currently connected to the system.  Here's a sample PowerShell script
 ```
@@ -144,7 +144,7 @@ else {
     Exit 1
 }
 ```
-![](../img/guides/dm/image12.png)
+![](../img/guides/dm/image12.PNG)
 
 Enter the detection rules to verify the current version of Dock Manager is installed
 
@@ -161,7 +161,7 @@ Operator: **Equals**
 
 Value: **1.0.0.125**
 
-![](../img/guides/dm/image13.png)
+![](../img/guides/dm/image13.PNG)
 
 Finish out the wizard and assign to a group.
 
@@ -173,8 +173,8 @@ You can [extend hardware inventory](https://docs.microsoft.com/en-us/mem/configm
 
 An example from Resource Explorer
 
-![](../img/guides/dm/image14.png)
+![](../img/guides/dm/image14.PNG)
 
 Sample report of what can be gathered using SSRS
 
-![](../img/guides/dm/image15.png)
+![](../img/guides/dm/image15.PNG)
