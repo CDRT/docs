@@ -41,15 +41,15 @@ In the console, navigate to the **Software > Application Management > Applicatio
 
 Tick the **Manually specify the application information** radio button, click Next
 
-![](../img/guides/dm/image1.png)
+![ ](../img/guides/dm/image1.png)
 
 Specify information about the app, click **Next**
 
-![](../img/guides/dm/image2.png)
+![ ](../img/guides/dm/image2.png)
 
 Enter Software Center details, click **Next**
 
-![](../img/guides/dm/image3.png)
+![ ](../img/guides/dm/image3.png)
 
 Set the deployment type to **Script Installer** and click **Next**
 
