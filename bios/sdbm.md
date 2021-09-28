@@ -18,47 +18,15 @@ No longer requires user interaction if a call to clear the TPM was performed.  I
 
 *(These systems were the supported systems at the original writing of this article. It is expected that this feature will continue to be inlcuded in follow-on models.)*
 
-### L-Series
+| L-Series | P-Series | T-Series | X-Series |
+|----------|----------|----------|----------|
+| L14/15 (Intel) | P14s/15s | T14 (AMD)| X1 Carbon 8/X1 Yoga 5 |
+| | P15/17 | T14/15 (Intel) | X13 NEC |
+| | P15v | T14s/X13 | X13/T14s (AMD) |
+| | P43s/53s | T15p | X390 (CML) |
+| | | T490 (CML) | X390 NEC |
+| | | T490/T590 | X390 (WHL) |
 
-L14/15 (Intel)
-
-### P-Series
-
-P14s/15s
-
-P15/17
-
-P15v
-
-P43s/53s
-
-### T-Series
-
-T14 (AMD)
-
-T14/15 (Intel)
-
-T14s/X13
-
-T15p
-
-T490 (CML)
-
-T490/590
-
-### X-Series
-
-X1 Carbon 8/X1 Yoga 5
-
-X13 NEC
-
-X13/T14s (AMD)
-
-X390 (CML)
-
-X390 NEC
-
-X390 (WHL)
 
 ## Activating System Deployment Boot Mode
 
