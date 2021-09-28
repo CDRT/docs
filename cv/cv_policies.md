@@ -1,11 +1,14 @@
-# Commercial Vantage Policies
+## Intune
 
-This page will present the policies found in the Commercial Vantage admx template; along with the OMA-URI which can be used in Intune to configure the application on clients.
+### **Overview**
+
+This page will present the policies found in the Commercial Vantage ADMX template, along with the OMA-URIs which can be used to configure the application on clients.
 
 Refer to this [Commercial Vantage blog article](https://thinkdeploy.blogspot.com/2020/11/deploying-commercial-vantage-with-intune.html 'target=_blank') on how to create the Win32 app and [Managing Commercial Vantage in Intune](https://thinkdeploy.blogspot.com/2020/11/manage-commercial-vantage-with-intune.html) for steps on how to ingest the ADMX file in Intune.
 
-## Dashboard
-### Dashboard
+### **Dashboard**
+
+#### Dashboard
 
 When this policy is enabled, the Dashboard feature of Commercial Vantage will be turned off.
 
@@ -19,8 +22,9 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-## Device
-### Smart Assist
+### **Device**
+
+#### Smart Assist
 
 When this policy is enabled, the Smart Assist feature of Commercial Vantage will be turned off.
 
@@ -34,7 +38,7 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-### Device Settings
+#### Device Settings
 
 When this policy is enabled, the Device Settings feature of Commercial Vantage will be turned off.
 
@@ -48,7 +52,7 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-### System Update
+#### System Update
 
 When this policy is enabled, the System Update feature of Commercial Vantage will be turned off.
 
@@ -62,7 +66,7 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-### My Device
+#### My Device
 
 When this policy is enabled, the My Device feature of Commercial Vantage will be turned off.
 
@@ -76,9 +80,9 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-## Device Settings
+### **Device Settings**
 
-### Microphone Settings
+#### Microphone Settings
 
 When this policy is enabled, the Microphone Settings features of Commercial Vantage will be turned off.
 
@@ -92,7 +96,7 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-### Audio Smart Settings
+#### Audio Smart Settings
 
 When this policy is enabled, the Audio Smart Settings feature of Commercial Vantage will be turned off.
 
@@ -106,7 +110,7 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-### Camera
+#### Camera
 
 When this policy is enabled, the Camera features of Commercial Vantage will be turned off.
 
@@ -120,7 +124,7 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-### Display
+#### Display
 
 When this policy is enabled, the Display features of Commercial Vantage will be turned off.
 
@@ -134,7 +138,7 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-### Intelligent Keyboard
+#### Intelligent Keyboard
 
 When this policy is enabled, the Intelligent Keyboard feature of Commercial Vantage will be turned off.
 
@@ -148,7 +152,7 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-### Power Settings
+#### Power Settings
 
 When this policy is enabled, the Power Settings of Commercial Vantage will be turned off.
 
@@ -162,7 +166,7 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-### DPM Power Settings
+#### DPM Power Settings
 
 ?>Note: Added in version 2104.10
 
@@ -178,7 +182,7 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-### Battery Settings 
+#### Battery Settings 
 
 ?>Added in version 2104.10
 
@@ -215,7 +219,7 @@ Values:
 
 !> If this policy is enabled, the Battery Settings section in the GUI will disappear.
 
-### Power Smart Settings
+#### Power Smart Settings
 
 ?> Added in version 2104.10 
 
@@ -231,7 +235,7 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-### Standby Settings
+#### Standby Settings
 
 ?> Added in version 2104.10
 
@@ -247,7 +251,7 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-### Energy Star
+#### Energy Star
 
 ?> Added in version 2104.10
 
@@ -263,7 +267,7 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-### Active Protection System Settings
+#### Active Protection System Settings
 
 ?> Added in version 2104.10
 
@@ -279,7 +283,7 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-### Intelligent Screen
+#### Intelligent Screen
 
 When this policy is enabled, the Intelligent Screen features of Commercial Vantage will be turned off.
 
@@ -293,7 +297,7 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-### Intelligent Security Settings
+#### Intelligent Security Settings
 
 ?> Added in version 2104.10
 
@@ -309,8 +313,9 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-## System Update
-### System Update Configuration
+### **System Update**
+
+#### System Update Configuration
 
 This policy setting provides the ability for the Administrator to configure the filter of searching updates.  If you enable this policy setting, Commercial Vantage will search for updates based on this filter. This policy affects both manual and auto update.
 
@@ -358,7 +363,7 @@ Values:
 `C62002C924CF75712313AC1CF94525AB = Optional Firmware`
 `9A82A62C3EF3BA2FCC142413A1FAC951 = Optional Others`
 
-### System Update Repository
+#### System Update Repository
 
 Defines the location of where System Update will pickup available content.
 
@@ -374,7 +379,7 @@ Values:
 `<enabled/>`  
 `<data id="BD0C70F0CE887CC46496DD7BF81C0B8C" value="\\your_repository"/>`
 
-### Auto Update
+#### Auto Update
 
 This policy setting provides the ability for the Administrator to control auto update.  If you enable this policy setting, the auto update will be enabled. If you disable this policy setting, the auto update will be disabled.  If you do not configure this policy setting, it will keep the last status and can be controlled by the end user.  By default, auto update will install critical updates and recommended drivers.  If you want customization, please change the setting "Configure System Update".
 
@@ -388,7 +393,7 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-### Auto Update - Schedule Day Of Week
+#### Auto Update - Schedule Day Of Week
 
 This policy setting provides the ability for the Administrator to configure the day of week for auto updates.
 
@@ -404,7 +409,7 @@ Values:
 
 ?> The value should be a number (0-6), where 0 means Sunday, 1 means Monday, 2 means Tuesday...
 
-### Defer Update
+#### Defer Update
 
 ?> Added in version 2104.10 v2
 
@@ -420,7 +425,7 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-### Auto Update
+#### Auto Update
 
 ?> Added in version 2104.10 v2
 
@@ -436,7 +441,7 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-### Turn Off Run-Once Task
+#### Turn Off Run-Once Task
 
 ?> Added in version 2104.10 v2
 
@@ -452,7 +457,7 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-### Auto Update - Schedule Time
+#### Auto Update - Schedule Time
 
 This policy setting provides the ability for the Administrator to configure the time for auto updates.
 
@@ -468,7 +473,7 @@ Values:
 
 ?> For example, 18: 30:00 for 6:30 PM
 
-### Warranty Information
+#### Warranty Information
 
 ?> Added in version 2104.10
 
@@ -484,7 +489,7 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-### Write Warranty Information to WMI
+#### Write Warranty Information to WMI
 
 ?> Added in version 2104.10
 
@@ -500,8 +505,9 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-## EULA
-### Auto Accept EULA
+### **EULA**
+
+#### Auto Accept EULA
 
 When you use this policy to disable the EULA and Privacy window, a notification will go back to Lenovo that the EULA has been accepted.  No other data is collected.
 
@@ -515,8 +521,9 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-## Wifi Security
-### Wifi Security
+### **Wifi Security**
+
+#### Wifi Security
 
  When this policy is enabled, the Wifi Security feature of Commercial Vantage will be turned off.
 
