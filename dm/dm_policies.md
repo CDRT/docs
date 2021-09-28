@@ -1,12 +1,12 @@
 ## Intune
 
-### Overview
+### **Overview**
 
-This page will present the policies found in the Dock Manager ADMX template, along with the OMA-URI which can be used to configure the application on clients.
+This page will present the policies found in the Dock Manager ADMX template, along with the OMA-URIs which can be used to configure the application on clients.
 
 Refer to the [Dock Manager blog article](dm/dm) on how to create the Win32 app and for steps on how to ingest the Dock Manager ADMX in Intune.
 
-### General
+### **General**
 
 ### Ask Before Firmware Update
 
@@ -93,8 +93,8 @@ Values:
 
 `<disabled/>`
 
+### **Scheduling**
 
-## Scheduler
 ### Frequency
 
 If this settings is enabled, it will edit the frequency on how the next scheduled task's execute date should be updated. 
