@@ -1,11 +1,12 @@
-# Dock Manager Policies 
-## Intro
+## Intune
 
-This page will present the policies found in the Dock Manager admx template; along with the OMA-URI which can be used in Intune to configure the application on clients.
+### Overview
 
-Refer to the [Dock Manager blog article](https://thinkdeploy.blogspot.com/2020/12/lenovo-dock-manager.html 'target=_blank') on how to create the Win32 app and for steps on how to ingest the Dock Manager ADMX in Intune
+This page will present the policies found in the Dock Manager ADMX template, along with the OMA-URI which can be used to configure the application on clients.
 
-## General
+Refer to the [Dock Manager blog article](dm/dm) on how to create the Win32 app and for steps on how to ingest the Dock Manager ADMX in Intune.
+
+### General
 
 ### Ask Before Firmware Update
 
