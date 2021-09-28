@@ -21,4 +21,4 @@
 ---
 - [FAQ](faq/faq.md)
 
-- [Think Deploy Blog](https://thinkdeploy.blogspot.com)
+- [Think Deploy Blog ![ ](../img/link.png)](https://thinkdeploy.blogspot.com)
