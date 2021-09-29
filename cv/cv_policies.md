@@ -168,7 +168,7 @@ Values:
 
 #### Write Battery Information to WMI
 
-?>Note: Added in version 2109.10
+?>Note: Added in version 10.2109
 
 This policy setting allows Commercial Vantage to write the computer battery information into the Lenovo Namespace WMI table. If you enable it, the battery information will be written to WMI.
 
@@ -203,7 +203,7 @@ Values:
 
 #### DPM Power Settings
 
-?>Note: Added in version 2104.10
+?>Note: Added in version 10.2104
 
 When this policy is enabled, the Desktop Power Manager Power Settings of Commercial Vantage will be turned off.
 
@@ -219,7 +219,7 @@ Values:
 
 #### Battery Settings 
 
-?>Added in version 2104.10
+?>Added in version 10.2104
 
 When this policy is enabled, the Battery Settings features of Commercial Vantage will be turned off.
 
@@ -256,7 +256,7 @@ Values:
 
 #### Power Smart Settings
 
-?> Added in version 2104.10 
+?> Added in version 10.2104
 
 When this policy is enabled, the Power Smart Settings of Commercial Vantage will be turned off.
 
@@ -272,7 +272,7 @@ Values:
 
 #### Standby Settings
 
-?> Added in version 2104.10
+?> Added in version 10.2104
 
 When this policy is enabled, the Standby Settings feature of Commercial Vantage will be turned off.
 
@@ -288,7 +288,7 @@ Values:
 
 #### Energy Star
 
-?> Added in version 2104.10
+?> Added in version 10.2104
 
 When this policy is enabled, the Energy Star features of Commercial Vantage will be turned off
 
@@ -304,7 +304,7 @@ Values:
 
 #### Active Protection System Settings
 
-?> Added in version 2104.10
+?> Added in version 10.2104
 
 When this policy is enabled, the Active Protection System Settings features of Commercial Vantage will be turned off.
 
@@ -334,7 +334,7 @@ Values:
 
 #### Intelligent Security Settings
 
-?> Added in version 2104.10
+?> Added in version 10.2104
 
 When this policy is enabled, the Intelligent Security Settings features of Commercial Vantage will be turned off.
 
@@ -446,7 +446,7 @@ Values:
 
 #### Defer Update
 
-?> Added in version 2104.10 v2
+?> Added in version 10.2104 v2
 
 This policy setting provides the ability for the Administrator to control deferred updates.  If you enable this policy setting, when there are some updates that needs to reboot the system, the end user can defer these updates for 1 hour.  If you disable or do not configure this policy setting, the end user can cancel these updates.
 
@@ -462,7 +462,7 @@ Values:
 
 #### Auto Update
 
-?> Added in version 2104.10 v2
+?> Added in version 10.2104 v2
 
 This policy setting provides the ability for the Administrator to control auto updates.  If you enable this policy setting, auto updates will be enabled.  If you disable this policy setting, auto updates will be disabled.  If you do not configure this policy setting, it will keep the last status and can be controlled by the end user.  By default, auto updates will install critical updates and recommended drivers.  If you want customization, please change the setting "Configure System Update".
 
@@ -478,7 +478,7 @@ Values:
 
 #### Turn Off Run-Once Task
 
-?> Added in version 2104.10 v2
+?> Added in version 10.2104 v2
 
 When this policy is enabled, the initial check for updates by Commercial Vantage is turned off.
 
@@ -510,7 +510,7 @@ Values:
 
 #### Warranty Information
 
-?> Added in version 2104.10
+?> Added in version 10.2104
 
 This policy setting allows the Administrator to hide the warranty information in Commercial Vantage.  If you enable it, the warranty information will be removed from the Commercial Vantage GUI.  If you disable or not configure it, the warranty information will be shown.
 
@@ -526,7 +526,7 @@ Values:
 
 #### Write Warranty Information to WMI
 
-?> Added in version 2104.10
+?> Added in version 10.2104
 
 This policy setting allows the Administrator to enable Commercial Vantage to writing the warranty information of the system into the Lenovo Namespace WMI table.  If you enable it, the warranty information will be written to the WMI table.  If you disable or not configure it, the warranty information will not be written to WMI table.
 
