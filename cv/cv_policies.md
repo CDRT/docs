@@ -166,6 +166,41 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
+#### Write Battery Information to WMI
+
+?>Note: Added in version 2109.10
+
+This policy setting allows Commercial Vantage to write the computer battery information into the Lenovo Namespace WMI table. If you enable it, the battery information will be written to WMI.
+
+This policy setting allows the Administrator to configure the schedule type, schedule day, and schedule time for writing the computer battery information to WMI.
+The Schedule type value should be a number (0-2), where 0 means daily, 1 means weekly, 2 means monthly.
+
+If the Schedule type value is set to 0, the Schedule day value should be set to 0 (and this value will be ignored). If the Schedule type is set to 1, the Schedule day value should be a number (0-6), where 0 means Sunday, 1 means Monday, 2 means Tuesday... 
+
+If the Schedule type is set to 2, the Schedule day value should be a number (-1 or 1-31), where -1 means the last day of the month, 1 means the first day of the month, 2 means the second day of the month...
+
+The Schedule time value format should be HH: mm:ss. For example, 18: 30:00 represents 6:30PM.
+
+If you disable or do not configure this policy setting, the battery information will not be written to WMI.
+
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/CommercialVantage~Policy~03E445D7B5956335BEDEF9340AC7E092~7D8BB8A33C8A8577FC2188C5539DFDBB~8BFC79DE8BB6F9B73316906802BA1CF8~E4F5170489B8C677D42DEB4590E140A7/64F93BB9BFC0EB1C9ADD81981905E061
+```
+
+?>  `ADE41242A9F8CE596481FE945E5FE5D8 = Schedule Type`
+    `F04F922293A120999D4EB95012CA0C64 = Schedule Day`
+    `AC72B4BC066D807C760A11748C39F451 = Schedule Time`
+
+Values:
+
+`<enabled/>`  
+`<data id="ADE41242A9F8CE596481FE945E5FE5D8" value="1"/>`
+`<data id="F04F922293A120999D4EB95012CA0C64" value="1"/>`
+`<data id="AC72B4BC066D807C760A11748C39F451" value="10:00:00"/>`
+
+`<disabled/>`
+
 #### DPM Power Settings
 
 ?>Note: Added in version 2104.10
