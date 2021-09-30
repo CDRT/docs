@@ -460,22 +460,6 @@ Values:
 `<enabled/>`
 `<disabled/>`
 
-#### Auto Update
-
-?> Added in version 10.2104 v2
-
-This policy setting provides the ability for the Administrator to control auto updates.  If you enable this policy setting, auto updates will be enabled.  If you disable this policy setting, auto updates will be disabled.  If you do not configure this policy setting, it will keep the last status and can be controlled by the end user.  By default, auto updates will install critical updates and recommended drivers.  If you want customization, please change the setting "Configure System Update".
-
-OMA-URI:
-```
-./Device/Vendor/MSFT/Policy/Config/CommercialVantage~Policy~03E445D7B5956335BEDEF9340AC7E092~7D8BB8A33C8A8577FC2188C5539DFDBB~162A79B7E43E726881D582DBA5C8B0B7~E4FF6280DA9B32B3629E2DCFE74DCCDB/7D8BB8A33C8A8577FC2188C5539DFDBB
-```
-
-Values:
-
-`<enabled/>`
-`<disabled/>`
-
 #### Turn Off Run-Once Task
 
 ?> Added in version 10.2104 v2
