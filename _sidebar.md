@@ -9,9 +9,6 @@
 -- [System Update, Update Retriever, Thin Installer](su/su_top.md)
 -- [Think BIOS Config Tool](tbct/tbct_top.md)
 
-<!--
-- [Deployment Guides](guides/deployment_guides.md) 
-- [Reference Material](reference/reference.md)-->
 ---
 - **Reference Material**
 -- [Scripting Samples](samples/samples.md)

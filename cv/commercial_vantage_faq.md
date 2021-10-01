@@ -6,5 +6,5 @@ No.  Because Commercial Vantage is a UWP app, the process to get driver and firm
 
 To control the update process, use the Commercial Vantage policies that define the timing and filtering as needed.  
 
-See [Commercial Vantage Policies](/reference/cv_policies.md) under the System Update category for more details.
+See [Commercial Vantage Policies](/cv/cv_policies.md) under the System Update category for more details.
 </details>
