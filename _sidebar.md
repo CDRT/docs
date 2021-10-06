@@ -1,6 +1,6 @@
 ![Commercial Deployment Readiness Team](img/cdrt.png)
 
-[Home](/)
+[**Home**](/)
 
 - **Product Guides**
 -- [Commercial Vantage](cv/cv_top.md)
