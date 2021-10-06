@@ -29,7 +29,7 @@ Operating Systems
 - Windows Server 2016
 - Windows Server 2019
 
-**AMC** (AMD Management Console) requires a minimum of 1 GB Disk space and 4 GB RAM. It supports DASH 2.
+**AMC** (AMD Management Console) requires a minimum of 1 GB Disk space and 4 GB RAM. It supports DASH 1.2.
 
 **NOTE: If you have AMC already installed, you will first have to uninstall that version before installing the latest version of AMC.**
 
@@ -37,6 +37,7 @@ Lenovo AMD ThinkPad and ThinkCentre models support management via DASH and ether
 
 The appropriate Realtek DASH Controller, along with all the latest drivers and firmware updates, can be found by searching for your system name or serial number at [https://pcsupport.lenovo.com](https://pcsupport.lenvo.com/).
 
+![pcsupport.lenovo.com](../img/dash/1.png)
 
 # Installation
 
