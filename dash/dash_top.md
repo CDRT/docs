@@ -22,6 +22,7 @@ Operating Systems
 - Windows 7 (32 and 64 bit)
 - Windows 8 (32 and 64 bit)
 - Windows 8.1 (32 and 64 bit)
+- Windows 10 (32 and 64 bit)
 - Windows Server 2008 R2 (64 bit)
 - Windows Server 2012 (64 bit)
 - Windows Server 2012 R2
@@ -182,11 +183,11 @@ The table below lists all supported power states.
   
 ### Power Operation on a Single System
 
- Right click on the specific system on which the power operation is to be performed.
-2. Select **Power** from the menu. You will get the power screen.
+1. Right click on the specific system on which the power operation is to be performed.
+2. Select **Power** from the menu. You will get the Power screen.
 3. The Power Screen will show:
-  - The &#39;system name&#39; against which you are going to perform the power operation
-  - The &#39;current power state&#39; of the system.
+  - The system name against which you are going to perform the power operation
+  - The current power state of the system.
   - The list of power states which the system can accept from its current state is shown in the &#39;select power state to apply&#39; drop down list.
 4. To start the transition of the system to the new power state, click **Apply**
 5. The result of the operation will be displayed. Click **Finish** to close the Power window.
@@ -205,17 +206,23 @@ AMC&#39;s Boot task shows all the boot configurations available for the system b
 
 To manage Boot settings:
 
- Select the target system.
-2. Either right click on the system and select **Boot** menu item or click on the ribbon icon **Boot**.
-3. The Boot Screen appears and displays:
+ 1. Select the target system.
 
- Drop-down list with all the boot configurations available for the system.
-2. Settings information for the selected boot configuration from the drop-down list:
+ 2. Either right click on the system and select **Boot** menu item or click on the ribbon icon **Boot**.
 
- This boot configuration will be used during next boot.
-2. This boot configuration will not be used during next boot.
-3. This boot configuration will be used only for next boot
-4. The current boot order for the selected boot configuration from the drop-down list.
+     The Boot Screen appears and displays:
+
+  - Drop-down list with all the boot configurations available for the system.
+
+  - Settings information for the selected boot configuration from the drop-down list:
+
+  - This boot configuration will be used during next boot.
+
+  - This boot configuration will not be used during next boot.
+
+  - This boot configuration will be used only for next boot
+
+3. The current boot order for the selected boot configuration from the drop-down list.
 
 4. Select the required boot configuration from the **Name** drop down list.
 
@@ -234,21 +241,23 @@ Text redirection provides BIOS-assisted console and keyboard redirection to a re
 
 To use text redirection:
 
- Select the desired system.
+ 1. Select the desired system.
 2. Either right click on the system and select **Text**  **Redirection** menu item or click on the text portion of ribbon icon **Redirection**.
 
- The **Text Redirection** Screen appears and shows:
+    The **Text Redirection** Screen appears and shows:
 
-       Drop down list with available protocols for text redirection, SSH and Telnet respectively. (SSH is the default.)
-      2. The Name of the Service that runs on the system to redirect the text.
-      3. The port through which the text will be redirected.
-      4. The information/status is stated – e.g., Support for OTP (one time password)
-2. Select the required protocol from the drop-down list.
-3. Click **Connec** t. If the connection is successful, the text redirection screen will close, and the terminal console screen will appear.
+   - Drop down list with available protocols for text redirection, SSH and Telnet respectively. (SSH is the default.)
+   - The Name of the Service that runs on the system to redirect the text.
+   - The port through which the text will be redirected.
+   - The information/status is stated – e.g., Support for OTP (one time password)
+
+      
+3. Select the required protocol from the drop-down list.
+4. Click **Connect**. If the connection is successful, the text redirection screen will close, and the terminal console screen will appear.
 
 To manage the BIOS remotely using text redirection:
 
-   Select a system for which you want to view and manage the BIOS.
+  1. Select a system for which you want to view and manage the BIOS.
   2. Perform steps 2 to 5 above to open a terminal console to receive the redirected text from the system.
   3. Click on **Power** icon and select **graceful power**  **cycle** option in the available power states.
   4. Click **Apply** to change the power state. The AMC terminal screen will receive the boot screen remotely and return keystrokes from the AMC System.
@@ -274,13 +283,13 @@ The AMC Boot to Text Image feature provides an environment where user can boot t
 
 To boot to BIOS:
 
- Select the target system you wish to boot into BIOS KVM profile
+ 1. Select the target system you wish to boot into BIOS KVM profile
 2. Either right click on the system and select **Boot to BIOS** menu item or click on the ribbon icon **Boot to BIOS** image.
 
-When the user starts the **Boot to BIOS** workflow by clicking the Start button, the following tasks are initiated:
+3. When the user starts the **Boot to BIOS** workflow by clicking the Start button, the following tasks are initiated:
 
- KVM enable command is sent to the managed system.
-2. The managed system is rebooted.
+4. KVM enable command is sent to the managed system.
+5. The managed system is rebooted.
 
 After the managed system boots to BIOS setup screen and the VNC server is ready, VNC viewer is launched.
 
@@ -368,7 +377,7 @@ The types of alerts are platform, boot progress and lifecycle events such as tem
 
 To subscribe to Alerts / modify the subscribed Alerts:
 
- Select the target system.
+1. Select the target system.
 2. Either right click on the system and select **Alerts** menu item or click on the ribbon icon **Alerts**.
 
 - The Alert Screen will be displayed
@@ -387,7 +396,7 @@ For AMC, System Properties are:
 - Transport protocol
 - Transport Port
 
-To view a specific system&#39;s properties (_Fig. 19)_, right click the system and select **Properties** from the menu.
+To view a specific system&#39;s properties, right click the system and select **Properties** from the menu.
 
 ## Inventory
 
