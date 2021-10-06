@@ -104,6 +104,8 @@ The most recent system BIOS can be found at [https://pcsupport.lenovo.com/](http
 
    ![RealManage Setup](../img/dash/6-dash.png)
 
+   ![Username and Password management](../img/7-dash.png)
+
  4.   Save and exit the BIOS
 
   
@@ -113,6 +115,7 @@ DASH Windows software can be found at [https://pcsupport.lenovo.com/](https://pc
 
 Documentation for attended and unattended installation will be available with the application download and in the installation directory. The default installation location is _C:\Program Files (x86)\AMD Management Console._
 
+![Drivers & Software - Manual Updates](../img/dash/8-dash.png)
 
 # AMC Client Management
 
@@ -140,7 +143,8 @@ AMC supports four methods of discovery, which are described below.
 
 **Note:** Discovery requests are queued. If a user chooses Active Directory discovery and then tries to do any of the other types of discovery, then that discovery will be done after the completion of Active Directory discovery.
 
-  
+ ![Discovery criteria window](../img/dash/9-dash.png)
+
 ### Hostname
 
 Hostname discovery requires functioning, accurate DNS.
@@ -158,7 +162,7 @@ AMC will scan each IP address in that range and find out if the system with that
   
 ### Active Directory
 
-Each system in the domain is checked for AMD manageability when AMPS is first installed. After installation, system discovery can be done manually or on a schedule. (See [Authentication](#_Authentication))
+Each system in the domain is checked for AMD manageability when AMPS is first installed. After installation, system discovery can be done manually or on a schedule. (See [Authentication](#_Authentication) section above.)
 
 ## Power
 
@@ -204,8 +208,11 @@ The table below lists all supported power states.
 4. To start the transition of the system to the new power state, click **Apply**
 5. The result of the operation will be displayed. Click **Finish** to close the Power window.
 
+![ Power operation on single system](../img/dash/10-dash.png)
   
 ### Power Operation on a Group
+
+![Power management on Group.](../img/dash/11-dash.png)
 
 ## DASH Tasks
 
@@ -246,6 +253,7 @@ To manage Boot settings:
 
 9. Close the power screen by clicking **Close**.
 
+![ Boot Configuration.](../img/dash/12-dash.png)
   
 ### Text Redirection
 
@@ -256,7 +264,9 @@ To use text redirection:
  1. Select the desired system.
 2. Either right click on the system and select **Text**  **Redirection** menu item or click on the text portion of ribbon icon **Redirection**.
 
-    The **Text Redirection** Screen appears and shows:
+![Redirection on AMC toolbar](../img/dash/13-dash.png)
+
+3. The **Text Redirection** Screen appears and shows:
 
    - Drop down list with available protocols for text redirection, SSH and Telnet respectively. (SSH is the default.)
    - The Name of the Service that runs on the system to redirect the text.
@@ -296,6 +306,7 @@ The AMC Boot to Text Image feature provides an environment where user can boot t
 To boot to BIOS:
 
  1. Select the target system you wish to boot into BIOS KVM profile
+
 2. Either right click on the system and select **Boot to BIOS** menu item or click on the ribbon icon **Boot to BIOS** image.
 
 3. When the user starts the **Boot to BIOS** workflow by clicking the Start button, the following tasks are initiated:
