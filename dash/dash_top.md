@@ -39,6 +39,7 @@ The appropriate Realtek DASH Controller, along with all the latest drivers and f
 
 ![pcsupport.lenovo.com](../img/dash/1.png)
 
+
 # Installation
 
 ## Installing AMC
@@ -60,6 +61,10 @@ When the AMC Console is launched the first time, you will be prompted to proceed
 The AMC console configuration supports up to three authentication entries. Each credential entry requires a unique Authentication Identifier and Schema. AMC has support for two types of authentication schemas: Digest and Active Directory.
 
 At least one authentication entry must be configured before a client system can be discovered. If there is more than one credential, AMC will try each credential in sequential order.
+
+![configuration tab](../img/dash/2.png)
+
+![configuration window](../img/dash/3.png)
 
 For the changes to take effect, click **Validate** and then click **Save.**
 
@@ -85,15 +90,21 @@ Two different DashConfig tools are available: DashConfig for Broadcom and DashCo
 
 The most recent system BIOS can be found at [https://pcsupport.lenovo.com/](https://pcsupport.lenovo.com/).
 
- First boot into system BIOS and locate DASH Configuration under Security.
+ 1. First boot into system BIOS and locate DASH Configuration under Security.
 
-DASH Configuration - Set DASH to Enabled
+    ![BIOS - DASH Configuration](../img/dash/4-dash.png)
 
- RealTek LAN Controller - Reset the DASH Credentials under RealManage Setup. These credentials are used for Digest Authentication of the management service to the client. Refer to manufacturer documentation for default credentials. It is recommended to change the default credentials.
+2. DASH Configuration - Set DASH to Enabled
+
+    ![DASH Support setting](../img/dash/5-dash.png)
+
+ 3. RealTek LAN Controller - Reset the DASH Credentials under RealManage Setup. These credentials are used for Digest Authentication of the management service to the client. Refer to manufacturer documentation for default credentials. It is recommended to change the default credentials.
 
 **NOTE:** You may need to scroll down to see Realtek Manage Setup
 
- Save and exit the BIOS
+  ![RealManage Setup](../img/dash/6-dash.png)
+
+ 4.   Save and exit the BIOS
 
   
 ### Windows DASH client software
