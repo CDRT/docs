@@ -96,13 +96,13 @@ The most recent system BIOS can be found at [https://pcsupport.lenovo.com/](http
 
 2. DASH Configuration - Set DASH to Enabled
 
-    ![DASH Support setting](../img/dash/5-dash.png)
+    ![DASH Support setting](../img/dash/5-dash.jpg)
 
  3. RealTek LAN Controller - Reset the DASH Credentials under RealManage Setup. These credentials are used for Digest Authentication of the management service to the client. Refer to manufacturer documentation for default credentials. It is recommended to change the default credentials.
 
 **NOTE:** You may need to scroll down to see Realtek Manage Setup
 
-  ![RealManage Setup](../img/dash/6-dash.png)
+   ![RealManage Setup](../img/dash/6-dash.png)
 
  4.   Save and exit the BIOS
 
