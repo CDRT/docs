@@ -229,19 +229,17 @@ To manage Boot settings:
 
  2. Either right click on the system and select **Boot** menu item or click on the ribbon icon **Boot**.
 
-     The Boot Screen appears and displays:
+  3. The Boot Screen appears and displays a drop-down list with all the boot configurations available for the system.
 
-  - Drop-down list with all the boot configurations available for the system.
+      - Settings information for the selected boot configuration from the drop-down list:
 
-  - Settings information for the selected boot configuration from the drop-down list:
+         > This boot configuration will be used during next boot.
 
-  - This boot configuration will be used during next boot.
+         > This boot configuration will not be used during next boot.
 
-  - This boot configuration will not be used during next boot.
+         > This boot configuration will be used only for next boot
 
-  - This boot configuration will be used only for next boot
-
-3. The current boot order for the selected boot configuration from the drop-down list.
+     - The current boot order for the selected boot configuration from the drop-down list.
 
 4. Select the required boot configuration from the **Name** drop down list.
 
@@ -253,7 +251,7 @@ To manage Boot settings:
 
 9. Close the power screen by clicking **Close**.
 
-![ Boot Configuration.](../img/dash/12-dash.png)
+![ Boot Configuration](../img/dash/12-dash.png)
   
 ### Text Redirection
 
@@ -276,6 +274,10 @@ To use text redirection:
       
 3. Select the required protocol from the drop-down list.
 4. Click **Connect**. If the connection is successful, the text redirection screen will close, and the terminal console screen will appear.
+
+[Text Redirection dialog](../img/dash/14-dash.png)
+
+![Successful redirected telnet login](../img/dash/15-dash.png)
 
 To manage the BIOS remotely using text redirection:
 
@@ -384,14 +386,17 @@ AMC collects and displays sensors of managed computer systems. Administrators ca
   
 ### Monitor the health of system:
 
- Select the target system
-2. Either right click on the system and select **System**** Health**_(Fig. 17)_ menu item or click on the**System Health** _(Fig. 16)_ribbon icon.
+1. Select the target system
+2. Either right click on the system and select **System Health** menu item or click on the**System Health** ribbon icon.
 
+![Ribbon Health Icon](../img/dash/16-dash.png)
 
+![System Health Menu option](../img/dash/17-dash.png)
 
  The **Health** screen _(Fig. 17)_ will show a tree view of all the sensors and fans in the system in each node.
 
-  
+  ![Health Inventory](../img/dash/18-dash.png)
+
 ### Subscribe/ Unsubscribe to Alerts
 
 **Note: The port used for alerts should be configured during AMPS installation.**
@@ -408,6 +413,8 @@ To subscribe to Alerts / modify the subscribed Alerts:
 
 - Subscribed filters as a list box in the right. This is a list of events for which the Subscription is already in place.
 
+![Available and subscribed alerts](../img/dash/19-dash.png)
+
 ## System Properties
 
 For AMC, System Properties are:
@@ -421,9 +428,13 @@ For AMC, System Properties are:
 
 To view a specific system&#39;s properties, right click the system and select **Properties** from the menu.
 
+![System Properties ](../img/dash/20-dash.png)
+
 ## Inventory
 
-Select desired system to see inventory details in the **Inventory** area below the computer system inventory. (See Figure 20.) The asset and inventory information displayed are identity of the system, physical assets, processor, system Configuration Manager, Ethernet port, BIOS, OS and DASH
+Select desired system to see inventory details in the **Inventory** area below the computer system inventory. (See Figure 20.) The asset and inventory information displayed are identity of the system, physical assets, processor, system Configuration Manager, Ethernet port, BIOS, OS and DASH.
+
+![AMC Inventory](../img/dash/21-dash.png)
 
 ## Group Management
 
