@@ -92,7 +92,7 @@ The most recent system BIOS can be found at [https://pcsupport.lenovo.com/](http
 
  1. First boot into system BIOS and locate DASH Configuration under Security.
 
-    ![BIOS - DASH Configuration](../img/dash/4-dash.png)
+    ![BIOS - DASH Configuration](../img/dash/4-dash.jpg)
 
 2. DASH Configuration - Set DASH to Enabled
 
@@ -104,7 +104,7 @@ The most recent system BIOS can be found at [https://pcsupport.lenovo.com/](http
 
    ![RealManage Setup](../img/dash/6-dash.png)
 
-   ![Username and Password management](../img/7-dash.png)
+   ![Username and Password management](../img/dash/7-dash.png)
 
  4.   Save and exit the BIOS
 
