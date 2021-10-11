@@ -585,7 +585,7 @@ Also add the domain user accounts that require access to the DASH Systems to the
 - ACTIVEDIRECTORY\_GROUP
 - OBJECTSID 
 
-
+#### Example Config.xml
         <?xml version="1.0" encoding="utf-8" ?>
         <DASHPROVISIONSETTINGS>
           <MANAGEMENTTARGET>
@@ -593,37 +593,127 @@ Also add the domain user accounts that require access to the DASH Systems to the
             <HTTPS>
                  <ENABLESUPPORT>true</ENABLESUPPORT>
                  <TCPIPPORT>664</TCPIPPORT>
-             </HTTPS>
-           <USERS>
+           </HTTPS>
             <HTTP>
                 <ENABLESUPPORT>true</ENABLESUPPORT>
                 <TCPIPPORT>623</TCPIPPORT>
             </HTTP>
             </GLOBAL>
-        <USERS>
-            <USER>
+          <USERS>
+             <USER>
                 <USERID>Administrator</USERID>
                 <PASSWORD> [Administrator Password]</PASSWORD>
                 <ENABLE>true</ENABLE>
                 <ROLES>
                     <ROLE>Administrator Role</ROLE>
                 </ROLES>
-            </USER>
-         </USERS>
-    	<ACTIVEDIRECTORY>
-          <ENABLESUPPORT>true</ENABLESUPPORT>
-	  	    <ACTIVEDIRECTORY_SPNACCOUNT> [DASH SPN Account] </ACTIVEDIRECTORY_SPNACCOUNT>
-          <SPNACCOUNT_PASSWORD> [Password] </SPNACCOUNT_PASSWORD>
-		<ACTIVEDIRECTORY_GROUPS>
-			<ACTIVEDIRECTORY_GROUP>
-			<GROUPNAME> [DASH Admins Group] </GROUPNAME>
-        <OBJECTSID>S-1-5-21-0123456789-0123456789-0123456789-1118<OBJECTSID>
-			<ROLES>
-				<ROLE>Administrator Role<ROLE>
-			</ROLES>
-         </ACTIVEDIRECTORY_GROUP>
-	    </ACTIVEDIRECTORY_GROUPS>
-         </ACTIVEDIRECTORY>
-         </MANAGEMENTTARGET>
-        </DASHPROVISIONSETTINGS>
+              </USER>
+          </USERS>
+        	<ACTIVEDIRECTORY>
+                <ENABLESUPPORT>true</ENABLESUPPORT>
+	  	          <ACTIVEDIRECTORY_SPNACCOUNT> [DASH SPN Account] </ACTIVEDIRECTORY_SPNACCOUNT>
+               <SPNACCOUNT_PASSWORD> [Password] </SPNACCOUNT_PASSWORD>
+	  	    <ACTIVEDIRECTORY_GROUPS>
+			       <ACTIVEDIRECTORY_GROUP>
+		  	        <GROUPNAME> [DASH Admins Group] </GROUPNAME>
+                <OBJECTSID>S-1-5-21-0123456789-0123456789-0123456789-1118<OBJECTSID>
+		          	  <ROLES>
+			              <ROLE>Administrator Role<ROLE>
+			           </ROLES>
+              </ACTIVEDIRECTORY_GROUP>  
+	          </ACTIVEDIRECTORY_GROUPS>
+          </ACTIVEDIRECTORY>
+          </MANAGEMENTTARGET>
+         </DASHPROVISIONSETTINGS>
 		
+### Run DASHConfig utility on DASH managed system
+
+The DASHConfig/DASHConfigRT utility can run on DASH systems manually or you can use Configuration Manager to run the script.
+### Configuration Manager DASH Plugin settings
+
+The **DASH Configuration** node allows you to configure for Authentication, Management Port, Management Transport, and DASH Wake-Up. Before performing any DASH operation on the client device, configure DASH with correct Authentication, Management Port and Management Transport.
+
+## Authentication
+
+AMPS supports for two types of authentication schemes: Digest and Active Directory.
+
+AMPS supports up-to 3 authentication entries. Each authentication entry has an authentication identifier, scheme and corresponding credentials.
+
+### Configure Authentication for AMPS
+
+To configure Active Directory authentication using Configuration Manager console, navigate to **Administration/DASH Management/DASH Configuration** :
+
+1. Right click the server listed and select **Properties**
+2. Go to **Authentication** tab.
+3. Check &quot;Enable Active Directory Authentication&quot;.
+4. Enter the DASH systems domain user and password created earlier.
+5. Check &quot;Use Active Directory as Default Authentication.&quot;
+6. Click **OK**.
+
+## Management and Transport Ports
+AMPS can communicate with the managed DASH computer systems on either HTTP or HTTPS.
+
+**Note:** The default port for HTTP is 623 and HTTPS is 664.
+
+###  Alerts Event Port
+
+The Alerts event reporting port should be configured during the installation process of AMPS. The port number entered during installation is visible in the Configuration screen ( **Administration/DASH Management/DASH Configuration** ).
+### Wakeup during Package Deployment
+
+The **DASH Wakeup** functionality enables Configuration Manager to use secure DASH commands and Wake-on-LAN to power up systems.
+
+The Wake-on-LAN packet is not guaranteed to wake all the devices in the collection. This is the purpose of the DASH power on operation provided by the AMPS.
+
+To configure the DASH Wakeup feature, perform the following steps:
+
+- Ensure that a working **authentication scheme** is in place (See Authentication section above)
+
+- In the **DASH Configuration** screen select the **DASH Wakeup** check box, if already not selected.
+- In the **Software Deployment Package,** be sure to enable the Wake-on-LAN option and set a valid future schedule when creating the software deployment package for a device collection.
+
+      
+### Auto Discovery
+
+If the **DASH Auto Discover** check box is selected, a new device added to Configuration Manager is checked for DASH support automatically.
+
+  
+### Create the DASHConfig Software Package
+
+The steps to create the software package are as follows:
+The steps to create the software package are as follows:
+
+ In the Configuration Manager console navigate to **Software Library \&gt; Application Management \&gt;** right click **Package** node \&gt; **Create Package**
+
+ In Create **Package and Program Wizard** enter the following information:
+
+- Name: DASHConfigRT
+- Version: x.x.x.x
+- Manufacturer: AMD
+- Language: English
+
+ Next, on the **Data Source** page
+
+- Select &quot;This package contains source files&quot;
+- Source Folder: Enter the directory on the site server where the DASHConfigRT files are stored.
+- Next, select Standard Program – Create a Program for a client computer
+
+ Next, complete the **Standard Program** information:
+
+- Name: DASHConfigRT
+- Command: DASHConfigRT.exe -xf:Config.xml -dxf -mif -lf:DASHConfig.log
+- Run: Normal
+- Run with Administrative Rights
+
+**NOTE:** For details of all the command options refer to the **DASHConfig\_RT\_guide.pdf** located at _C:\Program Files (x86)\AMD Management Plugin for SCCM\DASHConfigRT_
+
+1. Next, accept the defaults on the **Requirements** page
+2. Next, verify the information in the **Summary** and click Next, thenClose
+3. Right click on the newly created DASHConfig Package and select **Properties**.
+4. On the **Data Access** tab, check &quot;Copy the content in this package to a package share on distribution points.&quot;
+5. On the **Distribution Settings** tab
+    
+
+- Set the Distribution Priority to High
+- Check &quot;Distribute the content for this package to preferred distribution points,&quot; and select &quot;Automatically download content when packages are assigned to distribution points.&quot;
+
+## Distribute the DASHConfig Software Package
