@@ -7,11 +7,11 @@
 
 DASH (Desktop and mobile Architecture for System Hardware) is a secure out-of-band and remote client management standard. Out-of-band management tasks include powering a system on when it is powered off and obtaining asset and health information when the operating system is not available.
 
-DASH was developed and released by the DMTF (Distributed Management Task Force). DASH profile specification source material can be found at: [DMTF - Management Profiles](http://www.dmtf.org/standards/profiles)
+DASH was developed and released by the DMTF (Distributed Management Task Force). DASH profile specification source material can be found at [DMTF - Management Profiles](http://www.dmtf.org/standards/profiles)
 
 For more information refer to [DMTF - Desktop and Mobile Architecture for System Hardware](https://www.dmtf.org/standards/dash)
 
-AMD Management Console can be downloaded here: [Tools for DMTF DASH](https://developer.amd.com/tools-for-dmtf-dash/) . It can be installed on any Windows workstation or Windows Server OS to use for monitoring and managing the client systems.
+AMD Management Console can be downloaded here: [Tools for DMTF DASH](https://developer.amd.com/tools-for-dmtf-dash/). It can be installed on any Windows workstation or Windows Server OS to use for monitoring and managing the client systems.
 
 ## System Requirements
 
@@ -77,9 +77,9 @@ Prerequisites:
 
 - DASH firmware enabled
 - Windows DASH client software
-- The latest DASH console tool, which can be found[here.](https://developer.amd.com/tools-for-dmtf-dash/)
+- The latest DASH console tool, which can be found [here.](https://developer.amd.com/tools-for-dmtf-dash/)
 
-**Note** : DashConfig, an AMD tool, is packaged with AMC and can be used for configuration. Refer the release notes of DASH Config tool or see [Provisioning tools for DASH standalone systems](https://community.amd.com/t5/amd-manageability-community-tkb/provisioning-tools-for-dash-standalone-systems/ta-p/420927)
+**Note**: DashConfig, an AMD tool, is packaged with AMC and can be used for configuration. Refer the release notes of DASH Config tool or see [Provisioning tools for DASH standalone systems](https://community.amd.com/t5/amd-manageability-community-tkb/provisioning-tools-for-dash-standalone-systems/ta-p/420927)
 
 Two different DashConfig tools are available: DashConfig for Broadcom and DashConfigRT for Realtek. Most all Lenovo systems will require the DASHConfigRT tool.
 
@@ -162,7 +162,7 @@ AMC will scan each IP address in that range and find out if the system with that
   
 ### Active Directory
 
-Each system in the domain is checked for AMD manageability when AMPS is first installed. After installation, system discovery can be done manually or on a schedule. (See [Authentication](#_Authentication) section above.)
+Each system in the domain is checked for AMD manageability when AMPS is first installed. After installation, system discovery can be done manually or on a schedule. (See [Authentication](https://github.com/CDRT/docs/blob/branch1/dash/dash_top.md#authentication) section above.)
 
 ## Power
 
@@ -393,7 +393,7 @@ AMC collects and displays sensors of managed computer systems. Administrators ca
 
 ![System Health Menu option](../img/dash/17-dash.png)
 
- The **Health** screen _(Fig. 17)_ will show a tree view of all the sensors and fans in the system in each node.
+ The **Health** screen will show a tree view of all the sensors and fans in the system in each node.
 
   ![Health Inventory](../img/dash/18-dash.png)
 
