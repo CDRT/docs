@@ -234,9 +234,9 @@ To manage Boot settings:
       - Settings information for the selected boot configuration from the drop-down list:
 
          > This boot configuration will be used during next boot.
-
+        >   
          > This boot configuration will not be used during next boot.
-
+        >
          > This boot configuration will be used only for next boot
 
      - The current boot order for the selected boot configuration from the drop-down list.
@@ -275,7 +275,7 @@ To use text redirection:
 3. Select the required protocol from the drop-down list.
 4. Click **Connect**. If the connection is successful, the text redirection screen will close, and the terminal console screen will appear.
 
-[Text Redirection dialog](../img/dash/14-dash.png)
+![Text Redirection dialog](../img/dash/14-dash.png)
 
 ![Successful redirected telnet login](../img/dash/15-dash.png)
 
@@ -293,7 +293,7 @@ USB Redirection provides a virtual USB device which reads data from a remote ima
 
 This allows the BIOS to boot from a remote ISO image. The ISO Image file must be available at C:/AMC-ISO on the management server.
 
-AMC has its own ISO webserver. Use AMC to initiate an action to attach the managed systems&#39; USB to a remote URL. This operation can be performed against a single system or on a group of systems. Place ISOs in C:/AMC-ISO and http:xxx.xx.xxxx:3274/ can be used as USB URL (e.g. [http://10.10.10.2:3274/dos.iso](http://10.10.10.2:3274/dos.iso)).
+AMC has its own ISO webserver. Use AMC to initiate an action to attach the managed systems&#39; USB to a remote URL. This operation can be performed against a single system or on a group of systems. Place ISOs in C:/AMC-ISO and http://xxx.xx.xxxx:3274/ can be used as USB URL (e.g. http://10.10.10.2:3274/dos.iso.)
 
   
 ### Boot to Text Image
@@ -303,16 +303,13 @@ The AMC Boot to Text Image feature provides an environment where user can boot t
   
 ### Boot to BIOS [KVM Profile]
 
-**Boot to BIOS** implements the DMTF DASH KVM profile and allows the user to boot the managed system to the BIOS setup screen, and remotely connect to the BIOS screen via the VNC viewer. Through the VNC viewer, the user can access the BIOS screen and interact with mouse &amp; keyboard.
+**Boot to BIOS** implements the DMTF DASH KVM profile and allows the user to boot the managed system to the BIOS setup screen, and remotely connect to the BIOS screen via the VNC viewer. Through the VNC viewer, the user can access the BIOS screen and interact with mouse and keyboard.
 
 To boot to BIOS:
 
- 1. Select the target system you wish to boot into BIOS KVM profile
-
+1. Select the target system you wish to boot into BIOS KVM profile
 2. Either right click on the system and select **Boot to BIOS** menu item or click on the ribbon icon **Boot to BIOS** image.
-
 3. When the user starts the **Boot to BIOS** workflow by clicking the Start button, the following tasks are initiated:
-
 4. KVM enable command is sent to the managed system.
 5. The managed system is rebooted.
 
@@ -369,13 +366,38 @@ DASHConfig provides six case-sensitive parameters ( –v, -xf, -lf, -dxf, -mif a
 
 ###
 
+### Example Config.xml
+
+        <?xml version="1.0" encoding="utf-8"?>
+        <DASHPROVISIONSETTINGS>
+          <MANAGEMENTTARGET>
+          <GLOBAL>
+                  <HTTPS>
+                    <ENABLESUPPORT>true</ENABLESUPPORT>
+                     <TCPIPPORT>664</TCPIPPORT>
+                  </HTTPS>
+                  <HTTP>
+                    <ENABLESUPPORT>true</ENABLESUPPORT>
+                    <TCPIPPORT>623/TCPIPPORT>
+                  </HTTP>
+          </GLOBAL>
+          <USERS>
+                  <USER>
+                    <USERID>Administrator</USERID>
+                    <PASSWORD>password</PASSWORD>
+                    <ENABLE>true</ENABLE>
+                    <ROLES>
+                    <ROLE>Administrator Role</ROLE>
+                    </ROLES>
+                  </USER>
+                </USERS>
+          </MANAGEMENTTARGET>
+        </DASHPROVSIONSETTINGS>
 
 
 ### XML Nodes List
+_coming soon_
 
-|
-
-### Example Config.xml
 
 
 
@@ -449,3 +471,4 @@ Groups can be deleted by right clicking the relevant group and selecting **Delet
 ### Add / Remove systems to Groups
 
 To add systems to any group, right click on the group to which systems are to be added and select **Add systems** in the menu and select the systems from the new screen. Click on Ok.
+
