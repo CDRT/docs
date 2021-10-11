@@ -328,7 +328,7 @@ To use In-band KVM feature, ensure the relevant Windows driver package released 
 
 **DASHConfigRT** is an AMD tool packaged with **AMC** , used to script DASH configuration. The instructions and tool will be in the installation folder, which by default is _C:\Program Files (x86)\AMD Management Console\DASHConfigRT._
 
-**NOTE:** DASHConfigRT is the Realtek-specific version of this tool. The name &quot;DASHConfig&quot; is commonly used to reference the tool regardless of version.
+**NOTE:** _DASHConfigRT.exe_ is the Realtek-specific version of this tool. The name &quot;DASHConfig&quot; is commonly used to reference the tool regardless of version.
 
   
 ### How DASHConfigRT works
@@ -472,3 +472,159 @@ Groups can be deleted by right clicking the relevant group and selecting **Delet
 
 To add systems to any group, right click on the group to which systems are to be added and select **Add systems** in the menu and select the systems from the new screen. Click on Ok.
 
+
+
+# AMD Management Plugin for SCCM (AMPS)
+
+## Overview
+
+||Description of AMPS
+
+## Prerequisites and System Requirements
+
+- SPN must be configured in AD
+- Systems BIOS must be DASH enabled
+- Third party software (Windows) for network adapters should be installed and working.
+- Authentication must be configured
+
+## Installing and Uninstalling AMPS
+
+You can deploy AMPS in three possible scenarios:
+
+ 1. AMPS with Configuration Manager Console and Standalone Site Server: In this scenario, the Configuration Manager Site server and the console are on the same system. Install AMPS on this system that has both the Site server and console.
+2. AMPS with Configuration Manager Console: In this scenario, the MEM site server and MEM console are on two different systems. Therefore, you need to install AMPS twice, once on the site server system and once on the MEM console system. First, complete installation of plugin on the site server and then install the plugin on the console system. Plugin software automatically guides and lets you install only the required components on each system (site server and console).
+
+3. AMPS with CAS (Central Administration Site): Here, the IT infrastructure will have CAS and one or more primary sites, along with optional secondary sites.
+
+The DASH Plug-in help file provides detailed information on support for role-based authorization in DASH Plug-in. The default location for the help file and other supporting material is located at _C:\Program Files (x86)\AMD Management Plugin for SCCM\doc_
+
+## Installing/Upgrading AMPS
+
+  
+### AMPS deployment in CAS
+
+In CAS infrastructure at least one primary site server must be configured.
+
+It will take few minutes for the configuration settings to propagate in CAS infrastructure. If the settings are not updated, check if replication status is good in **Monitoring / Overview / Site Hierarchy** in Console.
+
+  
+### Installing/Upgrading AMPS
+
+To install/upgrade the DASH plug-in either infrastructure type:
+
+ 1. Use the _AMPS-[version]-AMD.exe_ installer.
+2. Follow the steps in the Install wizard to complete installation.
+
+  
+### Uninstalling AMPS
+
+You can uninstall AMPS using **Programs and Features** in **Control Panel**.
+
+Alternatively,
+
+1. Run the _AMPS-[version]-AMD.exe_ installer
+2. Click the **Remove** button to uninstall the plugin
+
+## Configure AMPS to work with Active Directory
+
+This section offers a brief description of how to create SPN account.
+
+Authorization must be configured in both Active Directory and in the DASH targets. Active Directory authentication with the DASHConfigRT utility provides greater security to administrators performing DASH operations. Only authorized users can communicate with the assigned DASH targets.
+
+  
+### Create DASH SPN User account
+
+As domain administrator, use ADUC to create a new user account in the Users node, named &quot;DASHSPN&quot; or something similar in accordance with your organization&#39;s naming conventions.
+
+  
+### Add SPNs for DASH systems
+
+Under the **Properties** for the new &quot;DASHSPN&quot; user, select **Attribute Editor**
+
+Select the **servicePrincipalName** attribute item, click **Edit** and add two values for each DASH system which will use AD authentication:
+
+- _HTTP/[MachineName]_
+- _HTTP_/[_FQDN]_
+
+**NOTE:** For a large group of DASH systems, it is faster to use the SETSPN utility in a script or batch file:
+
+When using the [Setspn](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731241(v=ws.11)#:~:text=To%20reset%20the%20default%20SPN%20values%2C%20use%20the,You%20receive%20confirmation%20if%20the%20reset%20is%20successful.) utility use the following two command lines for each client:
+
+        Setspn –S -U HTTP/MACHINENAME spnacctname
+        Setspn –S -U HTTP/FQDN spnacctname
+
+  
+### Create DASH Admins group in Active Directory and obtain SID
+
+Create a security group for DASH Administrators, named &quot;DASH Admins&quot; or another name suitable to your policies. Under **Properties** for the new group, select the **Attribute Editor** tab. Scroll down the **Attributes** list box until you find the **objectSID** attribute item. Record the security ID string in the value field for the **objectSID** attribute.
+
+**Note:** You may need to scroll horizontally to obtain the whole string if you obtain it from the object Properties.
+
+Alternatively, use PowerShell:
+
+Get-ADGroup -Identity _[&#39;DASHADMINS&#39;]_ | select SID
+
+  
+### Add user(s) to the created group
+
+Under the **Properties** of the SPN user account created, open **Member Of** tab and add the newly created DASH Administrators group.
+
+Also add the domain user accounts that require access to the DASH Systems to the new &quot;DASHAdmins&quot; security group.
+
+  
+### Use DASHConfigRT.exe to add the configured parameters to DASH systems
+
+      
+#### Update the DASHConfig provisioning XML file for distribution:
+
+ 1. Make a backup copy of the _DASHConfig.xml_ file located at _C:\Program Files (x86)\AMD Management Console\DASHConfigRT._
+2. Edit _DASHConfig.xml._ to add the information from the previous steps and save the file:
+
+
+- ACTIVEDIRECTORY\_SPNACCOUNT
+- SPNACCOUNT\_PASSWORD
+- ACTIVEDIRECTORY\_GROUP
+- OBJECTSID 
+
+
+        <?xml version="1.0" encoding="utf-8" ?>
+        <DASHPROVISIONSETTINGS>
+          <MANAGEMENTTARGET>
+          <GLOBAL>
+            <HTTPS>
+                 <ENABLESUPPORT>true</ENABLESUPPORT>
+                 <TCPIPPORT>664</TCPIPPORT>
+             </HTTPS>
+           <USERS>
+            <HTTP>
+                <ENABLESUPPORT>true</ENABLESUPPORT>
+                <TCPIPPORT>623</TCPIPPORT>
+            </HTTP>
+            </GLOBAL>
+        <USERS>
+            <USER>
+                <USERID>Administrator</USERID>
+                <PASSWORD> [Administrator Password]</PASSWORD>
+                <ENABLE>true</ENABLE>
+                <ROLES>
+                    <ROLE>Administrator Role</ROLE>
+                </ROLES>
+            </USER>
+         </USERS>
+    	<ACTIVEDIRECTORY>
+          <ENABLESUPPORT>true</ENABLESUPPORT>
+	  	    <ACTIVEDIRECTORY_SPNACCOUNT> [DASH SPN Account] </ACTIVEDIRECTORY_SPNACCOUNT>
+          <SPNACCOUNT_PASSWORD> [Password] </SPNACCOUNT_PASSWORD>
+		<ACTIVEDIRECTORY_GROUPS>
+			<ACTIVEDIRECTORY_GROUP>
+			<GROUPNAME> [DASH Admins Group] </GROUPNAME>
+        <OBJECTSID>S-1-5-21-0123456789-0123456789-0123456789-1118<OBJECTSID>
+			<ROLES>
+				<ROLE>Administrator Role<ROLE>
+			</ROLES>
+         </ACTIVEDIRECTORY_GROUP>
+	    </ACTIVEDIRECTORY_GROUPS>
+         </ACTIVEDIRECTORY>
+         </MANAGEMENTTARGET>
+        </DASHPROVISIONSETTINGS>
+		
