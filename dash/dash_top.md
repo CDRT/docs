@@ -259,7 +259,7 @@ Text redirection provides BIOS-assisted console and keyboard redirection to a re
 
 To use text redirection:
 
- 1. Select the desired system.
+1. Select the desired system.
 2. Either right click on the system and select **Text**  **Redirection** menu item or click on the text portion of ribbon icon **Redirection**.
 
 ![Redirection on AMC toolbar](../img/dash/13-dash.png)
@@ -395,9 +395,24 @@ DASHConfig provides six case-sensitive parameters ( –v, -xf, -lf, -dxf, -mif a
 
 
 ### XML Nodes List
-_coming soon_
 
-
+  | \<DASHPROVISIONSETTINGS\> | Root node |
+| --- | --- |
+| \<USERID\> | Provides the name of the account to be created |
+| \<PASSWORD\> | Password for specified account |
+| \<ENABLE\> | Newly created user account enabled: false = offline, true = enabled |
+| \<ROLES\> | Defines the roles (privileges) given to the newly created user account. Up to 3 roles can be defined for a particular user account. |
+| \<ROLE\> | 3 acceptable values: Administrator (full control), Operator (can invoke operations), and Read Only |
+| \<ACTIVEDIRECTORY\> | Required if provisioning Active Directory support |
+| \<ENABLESUPPORT\> | Required if Active Directory support is provisionedfalse = disabled, true = enabled. |
+| \<ACTIVEDIRECTORY\_SPNACCOUNT\> | Name string of the Active Directory user account whose SPN property has been updated to include the target&#39;s service principal name (SPN) |
+| \<SPNACCOUNT\_PASSWORD\> | Active Directory stored password for the user account defined by the \<ACTIVEDIRECTORY\_SPNACCOUNT\> node. |
+| \<ACTIVEDIRECTORY\_GROUPS\> | There is a limit of 3provisioned groups on any single management target because a DASH Role can only be associated to a single Active Directory group and are only 3 defined roles. |
+| \<ACTIVEDIRECTORY\_GROUP\> | Required, if the \<ACTIVEDIRECTORY\_GROUPS\> node is included in the XML provisioning file. |
+| \<GROUPNAME\> | Necessary if any Active Directory group(s) are to be provisioned on the management target. |
+| \<OBJECTSID\> | Security descriptor string in the standard string representation (S-R-I-S-S) for the Active Directory User Group defined by the \<GROUPNAME\> node. |
+| \<ROLES\> | Defines the role(s) (privileges) given to the associated Active Directory group. Up to 3 roles can be defined for a particular Active Directory group. **NOTE:** The individual DASH roles can only be associated to a single Active Directory group. |
+| \<ROLE\> | - Required. Currently there are only 3 acceptable values: Administrator Role, Operator Role and Read Only Role. Administrators have full control over the management target and its settings. Operators can invoke operational methods. |
 
 
 ## Health
@@ -470,6 +485,7 @@ Groups can be deleted by right clicking the relevant group and selecting **Delet
 ### Add / Remove systems to Groups
 
 To add systems to any group, right click on the group to which systems are to be added and select **Add systems** in the menu and select the systems from the new screen. Click on Ok.
+
 
 
 
@@ -830,7 +846,7 @@ To control the power state of a collection node, perform the following steps:
 4. In the shortcut menu, select **DASH** and then click **Power Control**.
 5. The **Power Control** on Collection dialog box appears
 
-**NOTE:** See [Power States]() for PC supported power states table.
+**NOTE:** See [Power States](https://github.com/CDRT/docs/blob/branch1/dash/dash_top.md#power-states) for PC supported power states table.
 
   
 ### Scheduled Power Control
