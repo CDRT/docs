@@ -478,7 +478,7 @@ To add systems to any group, right click on the group to which systems are to be
 
 ## Overview
 
-||Description of AMPS
+
 
 ## Prerequisites and System Requirements
 
@@ -546,6 +546,9 @@ Select the **servicePrincipalName** attribute item, click **Edit** and add two v
 - _HTTP/[MachineName]_
 - _HTTP_/[_FQDN]_
 
+![SPN user account attribute](../img/dash/22-dash.png)
+
+
 **NOTE:** For a large group of DASH systems, it is faster to use the SETSPN utility in a script or batch file:
 
 When using the [Setspn](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731241(v=ws.11)#:~:text=To%20reset%20the%20default%20SPN%20values%2C%20use%20the,You%20receive%20confirmation%20if%20the%20reset%20is%20successful.) utility use the following two command lines for each client:
@@ -558,7 +561,7 @@ When using the [Setspn](https://docs.microsoft.com/en-us/previous-versions/windo
 
 Create a security group for DASH Administrators, named &quot;DASH Admins&quot; or another name suitable to your policies. Under **Properties** for the new group, select the **Attribute Editor** tab. Scroll down the **Attributes** list box until you find the **objectSID** attribute item. Record the security ID string in the value field for the **objectSID** attribute.
 
-**Note:** You may need to scroll horizontally to obtain the whole string if you obtain it from the object Properties.
+![object SID in DASH Admins group Properties](../img/dash/23-dash.png)
 
 Alternatively, use PowerShell:
 
@@ -587,7 +590,7 @@ Also add the domain user accounts that require access to the DASH Systems to the
 - OBJECTSID 
 
 #### Example Config.xml
-        <?xml version="1.0" encoding="utf-8" ?>
+        <?xml version="1.0" encoding="utf-8"?>
         <DASHPROVISIONSETTINGS>
           <MANAGEMENTTARGET>
           <GLOBAL>
@@ -659,6 +662,9 @@ AMPS can communicate with the managed DASH computer systems on either HTTP or HT
 ###  Alerts Event Port
 
 The Alerts event reporting port should be configured during the installation process of AMPS. The port number entered during installation is visible in the Configuration screen ( **Administration/DASH Management/DASH Configuration** ).
+
+![Alerts Event Port](../img/dash/24-dash.png)
+
 ### Wakeup during Package Deployment
 
 The **DASH Wakeup** functionality enables Configuration Manager to use secure DASH commands and Wake-on-LAN to power up systems.
@@ -672,15 +678,16 @@ To configure the DASH Wakeup feature, perform the following steps:
 - In the **DASH Configuration** screen select the **DASH Wakeup** check box, if already not selected.
 - In the **Software Deployment Package,** be sure to enable the Wake-on-LAN option and set a valid future schedule when creating the software deployment package for a device collection.
 
+![DASH Plugin Configuration](../img/dash/25-dash.png)
       
 ### Auto Discovery
 
 If the **DASH Auto Discover** check box is selected, a new device added to Configuration Manager is checked for DASH support automatically.
 
-  
+  ![DASH Auto Discover](../img/dash/26-dash.png)
+
 ### Create the DASHConfig Software Package
 
-The steps to create the software package are as follows:
 The steps to create the software package are as follows:
 
  In the Configuration Manager console navigate to **Software Library \&gt; Application Management \&gt;** right click **Package** node \&gt; **Create Package**
@@ -718,3 +725,385 @@ The steps to create the software package are as follows:
 - Check &quot;Distribute the content for this package to preferred distribution points,&quot; and select &quot;Automatically download content when packages are assigned to distribution points.&quot;
 
 ## Distribute the DASHConfig Software Package
+
+To distribute the software package:
+
+ In the Configuration Manager console navigate to **Software Library \&gt; Application Management**
+
+ Click on the **Package** node and select the DASHConfig Package
+2. Right click the DASHConfig package and select **Deploy** to launch the deploy software wizard.
+3. On the **Content** page, Verify the distribution point is added, if not click on the **Add** button and add manually
+4. Next, **Schedule** the deployment as needed and click Next
+5. Specify the **User Experience** and other installation behavior according to your organization&#39;s needs
+6. Select the **Deployment Option** s to &quot;Download content from distribution point and run locally.&quot;
+
+ Next, verify the information in the **Summary**
+2. Next, you should receive a **Confirmation** page indicating &quot;The Deploy Software Wizard completed successfully&quot; and you can close the Wizard.
+3. To get status, check the Configuration Manger System Status logs and the execmgr.log file in the DASH machine&#39;s _C:\Windows\System32\CCM\Logs_ folder. Alternatively, you can check the package&#39;s folder for the DASHConfig.log file.
+
+  
+### Manually run DASHConfigRT
+
+The DASHConfigRT utility must be run locally with administrative privileges.
+
+Steps to run DASHConfigRT on one system:
+
+ From an administrative command prompt, navigate to the directory with the DASHConfigRT executable and provisioning XML.
+
+ Invoke DASHConfigRT using following command line:
+
+DASHConfigRT -xf:\&lt;DASHConfig.xml\&gt; -dxf -mif -lf:DASHConfig.log
+
+## Performing DASH Operations
+
+The AMPS installation creates a collection node called **All DASH Capable Systems**. This collection contains all the devices which are DASH capable, once discovered.
+
+Devices in **All DASH Capable Systems** support the following DASH operations:
+
+·    Discovery
+
+·    Power Control
+
+·    Boot Control
+
+·    Text Redirection
+
+·    USB Redirection
+
+·    Alerts
+
+·    Inventory
+
+·    Log Entry
+
+·    Boot to Text Image
+
+·    Firmware Update
+
+·    Boot to BIOS( KVM Profile)
+
+·    KVM Redirection
+
+  
+### Discovering a collection
+
+The AMPS Discover feature allows you to automatically discover the DASH capable systems within a collection.
+
+To discover DASH capable client systems in a collection, perform the following steps:
+
+ 1. Expand the **Assets and Compliance/Device Collections** node.
+ In the right pane, list of all the collections appears.
+2. Right-click the collection in which you want to discover all the DASH capable systems.
+ The shortcut menu appears.
+3. In the shortcut menu, Point to **DASH** and then click **Discover**.
+
+The **Discover Collection** dialog box appears
+
+![Discovery Dialog](../img/dash/27-2-dash.png)
+
+ To discover DASH capable systems in the collections, click the **Yes** button.
+
+  
+### Discovering a Device
+
+This feature enables you to discover a single DASH capable system.
+
+To discover an individual DASH capable system, perform the following steps:
+
+ Expand the **Assets and Compliance** node.
+
+ Expand the **Devices** node and click **All Systems**.
+
+ In the right pane, right-click the device for which you want to discover DASH.
+2. In the shortcut menu, point to DASH and then click Discover.
+
+  
+### Power Control
+
+AMPS allows you to control the power state of a group of systems in a given collection.
+
+To control the power state of a collection node, perform the following steps:
+
+ Expand the **Assets and Compliance** node.
+2. Expand the **Overview** node and click **Device Collections** or an **individual device**.
+ In the right pane, the list of all the available collections appears.
+3. Right-click the collection for which you want to initiate power control.
+4. In the shortcut menu, select **DASH** and then click **Power Control**.
+5. The **Power Control** on Collection dialog box appears
+
+**NOTE:** See [Power States]() for PC supported power states table.
+
+  
+### Scheduled Power Control
+
+To power on all the systems in a Collection at a specific time on a one-time or recurring schedule, perform the following steps:
+
+ Utilize the **Power Control** feature screen as illustrated in Figure 26 above.
+2. Click the **Schedule** button.
+3. Configure the schedule as desired and click **OK,** then **Apply,** then **Close.**
+
+  
+### Boot Control
+  
+### Text Redirection
+
+Text Redirection provides BIOS-assisted console and keyboard redirection to a remote computer terminal. This includes Boot progress, BIOS setup screen, command line OS or command line diagnostic program screens.
+
+A client system can redirect its console text to the AMPS provided console using either Telnet or SSH.
+
+Follow these steps to use Text Redirection using AMPS:
+
+1. In Configuration Manager navigate to **Assets and Compliance** \&gt; **Overview** \&gt; **Devices** \&gt; **All Systems** node.
+2. Expand the **Devices** node and click **All Systems**.
+3. In the right pane, right-click the device on which you want to perform Text Redirection.
+4. In the shortcut menu that appears, select **DASH** , then **Text Redirection**.
+
+Alternatively, on the Configuration Manager ribbon, select the **DASH** tab, then **Text Redirection**.
+
+ The **Text Redirection** Screen appears and shows:
+
+   Drop down list with available protocols for text redirection, SSH and Telnet respectively. (SSH is the default.)
+  2. The Name of the Service that runs on the system to redirect the text.
+  3. The port through which the text will be redirected.
+  4. The information/status is stated – e.g., Support for OTP (one time password)
+
+  
+### USB Redirection
+
+USB Redirection provides a Virtual USB device which reads data from a remote image file, allowing the BIOS to boot from a remote image file such as _.iso_. See also [USB Redirection]() above.
+
+The ISOimage file must be available as _http_ web URL.
+
+To initiate a USB redirection for a system, perform the following steps:
+
+ In Configuration Manager navigate to **Assets and Compliance** \&gt; **Overview** \&gt; **Devices** \&gt; **All Systems** node. Expand the **Devices** node and click **All Systems**.
+
+ In the right pane, right-click the device on which you want to perform USB redirection.
+2. In the shortcut menu that opens, point to **DASH** and then click **USB Redirection**.
+The **USB Redirection** screen appears and displays the following **:**
+
+   The name of the system for whose USB, AMPS is going to attach the remote URL
+  2. The URL that has to be attached to the systems USB.
+     If the USB is already attached to the remote URL,then the attached URL is displayed , and the option to edit the URL field is grayed out. You can disconnect the attached USB by clicking the **Disconnect** button on the screen.
+    2. If the USB is not attached, you can replace/update any existing URL or enter a new valid URL and click the **Connect** button
+
+ To close the USB Redirection screen, click the **Close** button.
+
+  
+### Boot to Text Image
+
+See [Boot to Text Image]()section above. The steps are identical in AMD Management Console and AMPS.
+
+  
+### Boot to BIOS (KVM Profile)
+
+See [Boot to BIOS [KVM Profile]]() section above. The steps are identical in AMD Management Console and AMPS.
+
+  
+### KVM Redirection
+
+See [KVM Redirection]() section above_._ The steps are identical in AMD Management Console and AMPS.
+
+  
+### Inventory
+
+Configuration Manager shows the Information that it collects about the managed device in the **Resource Explorer** window. Information collected by the AMPS plugin also ends up in the Resource explorer. DASH inventory is displayed in the path **SystemName** \&gt; **Hardware**.
+
+Inventory is successful after successful client push, and can also be initiated manually. DASH inventory is populated using out-of-band DASH protocol.
+
+To collect inventory, perform the following steps:
+
+1. In the Configuration Manager console, navigate to **Assets and Compliance** \&gt; **Overview** \&gt; **Devices** \&gt; **All Systems.**
+2. In the right pane, right-click the device on which you want to collect the inventory.
+
+In the shortcut menu select **DASH,** then click **Inventory.** Alternatively, click the DASH toolbar button to initiate the inventory
+
+ A confirmation should appear. Click **OK**.
+
+  
+### Log Entry
+
+The managed DASH systems maintain log file for all events that are generated.
+
+To view the log entry of a managed device:
+
+ In the Configuration Manager console, navigate to **Assets and Compliance** \&gt; **Overview** \&gt; **Devices** \&gt; **All Systems**.
+
+ In the right pane, right-click the device where you want to view the log.
+2. The shortcut menu is displayed. In the shortcut menu, point to **DASH** and then click **Log Entry**. The log entry screen appears.
+
+The Log Entry screen displays the latest 20 log entries. Use the **Next** and **Previous** navigation buttons to view additional log entries. Double click an entry to launch the **Status Message Detail** window for that entry.
+
+  
+### Firmware Update
+
+AMPS allow you update the firmware for an individual system or a Collection.
+
+To update the firmware on a system/collection, perform the following steps:
+
+ Expand **Assets and Compliance** \&gt; **Overview** \&gt; **Devices** or **Device Collections** node.
+
+ In the right pane, the list of systems or all the available collections appears.
+2. Right-click the target. The shortcut menu appears.
+3. In the shortcut menu, select **DASH** and then click **Firmware Upgrade**.
+
+The **Firmware Update** dialog box appears.  In the Firmware Upgrade dialog box
+
+   Select the **Software Module** from the drop-down list. The default (and only available) Software module is **Management Controller Firmware**
+  2. **Schedule Time** can be immediate, or you can set a scheduled time.
+  3. The grid in the **Firmware Upgrade** windows lists the firmware URLs of the devices. Use the (+) and (-) buttons below the list to add and remove firmware URLs.
+
+Select the checkboxes next to the devices or collections you wish to update and click on the **Apply** button. The firmware update executes at once.
+
+  
+### Alerts
+
+AMPS can subscribe or unsubscribe to alerts generated by the managed systems.
+
+The types of alerts are Platform, Boot Progress, and Lifecycle Events (temperature alerts, fan failure, chassis intrusion, and BIOS boot failure).
+
+      
+#### To configure alerts:
+
+ Navigate to **Assets and Compliance** \&gt; **Overview** \&gt; **Devices** \&gt; **All Systems**
+
+ In the right pane, right-click the device on which you want to perform Alert configuration.
+
+The shortcut menu appears.
+
+ In the shortcut menu, point to **DASH** and then click **Alerts**.
+
+Alternatively, click the ribbon icon **Alerts**.
+
+ AMPS shows the list of available alerts and currently subscribed alerts. Adjust the subscribed alerts using the left-right arrow buttons and click **Apply.**
+
+## Role Based Administration
+
+AMPS extends the Configurations Manager&#39;s security model to define which groups of users can perform DASH tasks and which groups of users can modify the DASH configuration.
+
+  
+### Security Role
+
+**Security Role** defines the Configuration Manager administrative users&#39; job functions. Configuration Manager provides several built-in roles which perform functions such as Software Update Manager for managing software updates, and Full Administrator and Remote Tools Operator for performing restrictive DASH operations.
+
+- **Full Administrators** possess all permissions in Configuration Manager. The administrative user who first creates a new Configuration Manager installation is associated with this security role, all scopes, and all collections. All DASH operations can be performed by users having Full Administrator role.
+
+- **Operations Administrator** - AMPS allows Operation Administrators users to run all out of band DASH tasks, except the DASH Configuration operation, which can only be performed by the Full Administrator Role user.
+
+- **Remote Tools Operator** - Administrative users associated with this role can run Remote Control, Remote Assistance and Remote Desktop from the Configuration Manager console. AMPS allows Remote Tools Operator users to run all out of band management operations such as DASH tasks, except the DASH Configuration operation which can only be performed by the Full Administrator Role user.
+
+  
+### Security Rights for DASH Operations
+
+The User collection that can access a device collection can be viewed by navigating to **Assets and Compliance** \&gt; **Overview** \&gt; **Device Collections**. Right click on an instance like &quot;Windows 10 DASH systems&quot; and select **Properties** , then **Security.**
+
+| **DASH Task** | **Right** | **Granted actions** |
+| --- | --- | --- |
+| Discover | Create, Modify, and Read Resource | Identify whether a system is DASH-capable or not. Get version information and the profiles supported. |
+| Power | Read Resource | Obtain current system power state |
+| Use Remote Tools | Change system power state |
+| Boot | Read resource | Obtain boot order information. |
+| Use Remote Tools | Change system boot order |
+| Inventory | Read Resource | Obtain hardware inventory |
+| KVM, USB, and Text Redirection | Read Resource and Use Remote Tools | Redirect BIOS screen, boot to remote ISO image. |
+| Alerts/Events | Read Resource and Use Remote Tools | Subscribe and unsubscribe to all or selected event alerting. |
+| Account Management | Read Resource | View list of digest accounts on DASH-capable system. |
+| Use Remote Tools | Modify the digest account on DASH-capable system. |
+| Firmware Upgrade | Read Resource | View list of firmware Images |
+| Use Remote Tools | Add\Modify the list of firmware images |
+| Log Entry | Read Resource | Obtain hardware inventory of the system. |
+| Boot to Text Image | Read Resource | View list of remote ISO images |
+| Use Remote Tools | Flash Image then Redirect to Text BIOS |
+| Boot to BIOS | Read Resource | View list of KVM Redirection Instances to boot to BIOS |
+| Use Remote Tools | Reboot the System and Redirect BIOS screen |
+
+  
+### Security rights defined for DASH settings
+
+The security rights model applies for modifying DASH settings in the **DASH Configuration** window in the Configuration Manager Console.
+
+The DASH settings that can be changed in the **DASH Configuration** window are:
+
+- Manage inventory schedules
+- Modify digest and active directory authentication
+- Modify HTTP/HTTPS settings
+- Change DASH port numbers
+- Enable/Disable DASH Auto Discovery and DASH wakeup
+
+The **Full Control** security right allows Read or Modify on Site class or Site class instance control. Full Control can modify and save all settings and user security rights assignments.
+
+The **Read** security right allows the user to open the DASH Configuration window and view the settings. The user cannot save the settings.
+
+The **Modify** Security right allows the user to open the DASH Configuration windows, modify, and save the settings.
+
+Navigate to **Administration** \&gt; **Overview** \&gt; **Site Configuration** \&gt; **Sites** to check this setting.
+
+In AMPS, the administrator has the option to either enable or disable the user permission checking feature. This is a global setting and affects all users.
+
+**Note:** Only users with Full Administrator rights can modify and save the DASH Configuration window.
+
+  
+### Security Scope
+
+Security scopes limit administrative users&#39; access to specific secured objects. While security roles grant the class level permission to the user such as &quot;Read Applications&quot;, security scopes grant instance level permission for _which_ applications they can read.  Refer to Configuration Manager documentation for more information. Security scopes are not considered for either DASH tasks or DASH configuration changes.
+
+A **Collection** is the group of devices or users the administrative user can manage. For performing DASH tasks, the **Remote Tool Operator** role users must have access to the collection. Users with **Full Administrator** role have access to all collections.
+
+## DASH Scheduled Tasks
+
+  
+### Schedule DASH Tasks
+
+The following DASH tasks can be scheduled using AMPS:
+
+- Discovery on collection task
+- Power on collection task
+- Firmware upgrade on collection task
+
+The **Schedule** button is provided on supported screens. When a user clicks **Schedule** , the **DASH Task Scheduler** screen launches.
+
+![](RackMultipart20211005-4-sdvvzj_html_ec85dca215e1d841.png)
+
+_Figure 34 – DASH Task Scheduler_
+
+  
+### View DASH Scheduled Tasks
+
+The **DASH Scheduled Tasks** console enables you to view, as well as disable/enable or delete all the scheduled DASH tasks.
+
+To view the scheduled DASH tasks:
+
+ Navigate to the **Administration** tab in Configuration Manager.
+
+ Click **Overview** \&gt; **DASH Management** \&gt; **DASH Scheduled Tasks**
+
+ Select the target server and click **Properties**
+
+![](RackMultipart20211005-4-sdvvzj_html_78351344311425.png)
+
+Figure 35 – Accessing DASH Scheduled Tasks
+
+## DASH Reports
+
+**DASH Reports** gets deployed toConfiguration Manager reports during installation of AMPS provided the site server has the Reporting services point role. It is deployed in following path:
+
+_//\&lt;reportserver\&gt;/Reports/browse/ConfigMgr\_\&lt;SiteCode\&gt;/DASH Reports_
+
+If there is a custom deployment or the reports are not present after install, the reports are available in .rpl to import from _C:\Program Files (x86)\AMD Management Plugin for SCCM\SCCMReports._
+
+## Status Monitoring
+
+AMPS Status message in **Monitoring** category of Configuration Manager allows user to view all logged messages.
+
+![](RackMultipart20211005-4-sdvvzj_html_d923cff56fe6756a.png)
+
+
+# resources and support
+
+More details about AMPS features and AMPS updates can be found at:
+
+Link: [_http://www.amd.com/DASH_](http://www.amd.com/DASH)
+
+DASH Support email: dashsupport@amd.com
+
+Note: AMPS is based on the DMTF DASH specification. Some commands might not be supported by a given platform. Check the platform documentation on the DASH support.
