@@ -364,7 +364,6 @@ DASHConfig provides six case-sensitive parameters ( –v, -xf, -lf, -dxf, -mif a
 | -mif | Instructs the DASHConfig utility to create a Microsoft installation status MIF file on exit. This is for integration into Microsoft Configuration Manager. |
 | -help | This parameter will print out short help documentation about the command line parameters to the console. |
 
-###
 
 ### Example Config.xml
 
