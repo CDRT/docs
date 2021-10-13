@@ -14,14 +14,14 @@
 LIMITED AND RESTRICTED RIGHTS NOTICE: If data or software is delivered pursuant a General Services Administration &quot;GSA&quot; contract, use, reproduction, or disclosure is subject to restrictions set forth in Contract No. GS-35F-05925.
 
 
-# Overview
+# 1 Overview
 
 The System Update Suite of tools from Lenovo include System Update, Update Retriever, and Thin Installer. Lenovo provides these free utilities to assist in updating drivers, firmware and software for Lenovo PC products running Microsoft® Windows®operating system. This deployment guide will describe how to install and use the current version of each of these programs. This deployment guide is aimed at IT administrators and will describe configurations and best practices for using these tools in a managed environment.
 
 These tools can be downloaded from the following website: [https://support.lenovo.com/us/en/solutions/ht037099](https://support.lenovo.com/us/en/solutions/ht037099)
 
 
-## System Update
+## 1.1 System Update
 
 System Update is a program that helps keep the software on a system up to date. System Update can identify applicable update packages which are stored on Lenovo&#39;s Content Delivery Network globally. Update packages can be applications, device drivers, BIOS and firmware, and software updates. System Update can also be configured to pull updates from a local repository managed by Update Retriever. System Update detects the computer machine type, model number, and other system information to determine whether the system needs the available updates. System Update can display a pick list of update packages where the user can select update packages to download and install. System Update can also be configured to install packages based on a scheduled task. System Update provides a method to defer the installation of update packages. This tool can be configured to search for and download update packages from the following locations:
 
@@ -30,7 +30,7 @@ System Update is a program that helps keep the software on a system up to date. 
 - Repository folder on a network share
 
 
-## Update Retriever
+## 1.2 Update Retriever
 
 Update Retriever is a program that enables an administrator to search for and download updates from the Lenovo Support site to a repository folder on a local drive or network share. The repository folder provides the storage for update packages. System Update or Thin Installer can be configured to search for update packages from the repository folder on a network share instead of searching the Lenovo Support site. With Update Retriever, one can manually initiate the search for update packages, or schedule an automatic search for new update packages at a specified time interval. This allows greater control of the updates that are available to managed devices. Update Retriever can help with the following:
 
@@ -38,18 +38,18 @@ Update Retriever is a program that enables an administrator to search for and do
 - Downloading update packages for more than one machine type
 - Providing the repository that System Update or Thin Installer can pull from
 
-## Thin Installer
+## 1.3 Thin Installer
 
 Thin Installer is a lighter version of System Update. Unlike System Update, Thin Installer does not require installation, does not create any registry keys, and does not have any services. Thin Installer can search for update packages from a repository folder on a local hard disk drive, a network share, a Web share, or external media such as a CD, DVD, or USB hard disk drive.
 
 
-# Installation
+# 2 Installation
 
-## Installing System Update
+## 2.1 Installing System Update
 
 This chapter provides the installation instructions and requirements for System Update.
 
-### Installation Requirements
+### 2.1.1 Installation Requirements
 
 System Update supports the following operating systems:
 
@@ -64,7 +64,7 @@ System Update requires Microsoft .NET Framework 4.5.2 or a later version. A comp
 [https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download)
 
 
-### Languages
+### 2.1.2 Languages
 
 System Update supports all NLS (National Language Support) language packs. In normal cases, System Update loads the language pack set in the LanguageOverride field. That is, at startup, System Update checks the Windows registry for a valid language override code in the LanguageOverride field. If the language override code in the LanguageOverride field is valid and the language pack is available on the system, System Update will load the language pack corresponding to the language override code specified in the LanguageOverride field and display the rest of the session in that language.
 
@@ -104,7 +104,7 @@ The following are scenarios in which System Update will load the substitute NLS 
 - **_Loading the US English language pack_**: If the DefaultLanguage field is empty or contains an invalid value, or if the language pack corresponding to the default language set in the DefaultLanguage field is not on the system, the default language will not be used. System Update will attempt to load the US English language pack. If the US English language pack is not on the system, an error message will be displayed, saying &quot;System Update has found a critical problem and must close.&quot; This error message is in the US English language.
 
 
-### Installation Command Lines
+### 2.1.3 Installation Command Lines
 
 System Update can be installed manually by executing the installation package downloaded from Lenovo. System Update can also be installed silently with the following command line:
 
@@ -129,7 +129,7 @@ An installation log file, _tvsusetup.log_, will be automatically generated and s
     C:\\[System Update installation file name].exe /VERYSILENT /NORESTART /LOG=c:\tvsu.log
 
 
-### Uninstalling System Update
+### 2.1.4 Uninstalling System Update
 
 System Update can be uninstalled by using the **Add or Remove Programs** applet located in the Windows operating system. After the uninstall is complete, all program files and settings are deleted.
 
@@ -138,7 +138,7 @@ Alternatively, a command-line can be used to perform a silent uninstall. To sile
     [Your install dir]\unins000.exe /verysilent /norestart
 
 
-### Updating System Update
+### 2.1.5 Updating System Update
 
 System Update includes a mechanism by which it will update itself whenever a newer version is released. System Update checks for a newer version before performing a search for updates each time it is launched. If a newer version is found, it will prompt to update itself before proceeding and will guide the user through the update process.
 
@@ -151,12 +151,12 @@ It is recommended to keep System Update running on the most current version; how
    2. Delete the ServerName string value, for example: https://download.lenovo.com/ibmdl/pub/pc/pcbs/agent/
    3. Click **OK**.
 
-## Installing Thin Installer
+## 2.2 Installing Thin Installer
 
 Thin Installer is provided as an installation package which simply extracts the Thin Installer source files to C:\Program Files (x86)\Lenovo\ThinInstaller. The process does not create any registry entries and does not install any services. The Thin Installer folder can simply be copied to target devices and executed by command line.
 
 
-### Installation Requirements
+### 2.2.1 Installation Requirements
 
 Thin Installer is supported on the following operating systems:
 
@@ -168,17 +168,17 @@ Thin Installer requires Microsoft .NET Framework version 4.5.2 or higher. A comp
 [https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download)
 
 
-### Removing Thin Installer
+### 2.2.2 Removing Thin Installer
 
 No registry keys or temporary files relating to Thin Installer are created when the program finishes installing update packages. Therefore, to uninstall Thin Installer, you only need to delete the folder containing Thin Installer and all its related files.
 
 
-## Installing Update Retriever
+## 2.3 Installing Update Retriever
 
 Update Retriever is intended to be installed on an administrator&#39;s system and is not installed on the fleet of client computers.
 
 
-### Installation Requirements
+### 2.3.1 Installation Requirements
 
 Update Retriever is supported on the following operating systems:
 
@@ -194,7 +194,7 @@ Update Retriever requires Microsoft .NET Framework version 4.5.2 or higher. A co
 [https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download)
 
 
-### Languages
+### 2.3.2 Languages
 
 The following table presents the languages supported by Update Retriever and their corresponding language override codes:
 
@@ -218,7 +218,7 @@ The registry location for the **LanguageOverride** field for a 64-bit machine is
 	HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\Lenovo\Update Retriever\LanguageOverride
 
 
-### Installation Command Lines
+### 2.3.3 Installation Command Lines
 
 Update Retriever can be installed manually by executing the installation package downloaded from Lenovo. Update Retriever can also be installed silently with the following command line:
 
@@ -226,7 +226,7 @@ Update Retriever can be installed manually by executing the installation package
 
 To silently extract to a specific folder followed by an installation, use the DIR parameter. For example:
 
-	[Update Retriever installation file name].exe /VERYSILENT /NORESTART /DIR=&quot;C:\temp&quot;
+	[Update Retriever installation file name].exe /VERYSILENT /NORESTART /DIR="C:\temp"
 
 The installation log file contains information that can be used to debug installation problems. For Update Retriever, the log file name is _tvursetup.log_.
 
@@ -243,22 +243,22 @@ If a previous version of Update Retriever is already installed, the following po
 _Figure 2-1. Removing existing version of Update Retriever to download the newest version._
 
 
-### Uninstall Update Retriever
+### 2.3.4 Uninstall Update Retriever
 
 Update Retriever can be uninstalled by using the Add or Remove Programs applet in Windows operating systems. After the uninstall is complete, all program files and settings are deleted. Alternatively, you can use command-lines to perform a silent uninstall. To silently uninstall Update Retriever, use the following command-line:
 
 	[Your install dir]\unins000.exe /verysilent /norestart
 
 
-# General Usage
+# 3 General Usage
 
 
-## System Update
+## 3.1 System Update
 
 This section will provide an overview of how System Update can be used to install updates either manually using the application&#39;s interface or automatically based on a scheduled task. The various methods of configuring and launching System Update will be covered.
 
 
-### Using System Update
+### 3.1.1 Using System Update
 
 Once System Update has been installed, the tool is ready to run. When launching System Update for the first time, the Welcome tab information will appear, giving the user a brief overview of how the tool can be used. Once the user clicks  **Next** , in the bottom left hand corner on the welcome page, System Update will automatically start searching for updates on the system. Of course, the administrator can make changes in group policy to alter how system update searches for updates, this is just the generic way of how System Update will run. Once the tool has finished searching for updates, it will prompt the user with a License notice. The License agreement notice is for all future package downloads and will not be shown again. The user must agree to proceed with the download and installation. Once the tool searches for updates, the update packages will be displayed in three different severity categories; Critical, Recommended, and optional.
 
@@ -426,7 +426,7 @@ The following table provides the keyboard shortcuts for the main functions of Sy
 _Table 3-1. System Update keyboard shortcuts_
 
 
-## Thin Installer
+## 3.2 Thin Installer
 
 This section will cover how to work with Thin Installer. Although the program is most often used in a scripted and unattended scenario, it can also be executed to install updates manually which will be described in this section.
 
@@ -437,7 +437,7 @@ _![](../img/su/img3-14.png)_
 _Figure 3-14. Default repository._
 
 
-### Running Thin Installer Manually
+### 3.2.1 Running Thin Installer Manually
 
 In the following scenario, the repository used is local on the target machine. Launch Thin Installer to search for applicable updates based on the machine type and OS.
 
@@ -467,9 +467,7 @@ If a reboot is necessary to complete the installation of a package, the followin
 
 _Figure 3-19. Thin Installer reboot message._
 
-?>Notes:
->1. BIOS installations require user's attention to ensure the update is not interrupted. They cannot be deployed in an unattended mode.
->2. Thin Installer installs the updates that force a reboot or shut down after all other updates to reduce the number of reboots.
+?>Notes: <br/>1. BIOS installations require user's attention to ensure the update is not interrupted. They cannot be deployed in an unattended mode. <br/>2. Thin Installer installs the updates that force a reboot or shut down after all other updates to reduce the number of reboots.
 
 **Windows 7 and Later OS Considerations**
 
@@ -480,10 +478,10 @@ With considerations for Windows 7 and later operating systems, after you log in 
 !>Note: If the **Windows has blocked some startup programs** message does not display on the system tray, you will need to manually run Thin Installer, search for the remaining updates, and install them.
 
 
-## Update Retriever
+## 3.3 Update Retriever
 
 
-### Update Retriever First Time Setup
+### 3.3.1 Update Retriever First Time Setup
 
 When launching Update Retriever the first time, some initial configuration items will need to be set. If launching Update Retriever for the first time, do the following:
 
@@ -517,7 +515,7 @@ _Figure 3-22. Update default status and Advanced Options in Update Retriever fir
 ?>Note: After the initial settings are complete, the Welcome screen will not open the next time Update Retriever is launched. To change the repository path and update's default status, click Modify settings.
 
 
-### Searching for and Downloading Updates
+### 3.3.2 Searching for and Downloading Updates
 
 After initial setup is complete, Update Retriever can be used to search for and download updates. The following will describe these steps.
 
@@ -559,7 +557,7 @@ _Figure 3-26. Selecting update packages from search results._
 _Figure 3-27. Completed download list displayed._
 
 
-### Manage Repository
+### 3.3.3 Manage Repository
 
 To view updates that have been downloaded into the local repository, click on the **Manage repository** tab and then select **Update view**.
 
@@ -570,7 +568,7 @@ _Figure 3-28. Viewing updates and managing the repository in Update Retriever._
 The updates displayed can be by filtered by Operating system, System, Severity, Status and Type. In the Update view panel, the administrator can sort the list of updates by Update ID, Title, Type, Version, Reboot type, Severity, License, or Status by clicking the column header. Double-clicking the Update ID of an item will display the details from the package descriptor. It is recommended that the values displayed are not altered unless directed to do so by Lenovo support personnel. Altering any of the values will invalidate the signature on the package descriptor file which will cause System Update to no longer apply the update. Only Thin Installer can work with modified updates.
 
   
-#### Modify an Update Package
+#### 3.3.3.1 Modify an Update Package
 
 The Administrator can modify the reboot type, severity, license, and status of one or more update packages in the repository. Select one or more packages by clicking the check box next to the item.
 
@@ -590,7 +588,7 @@ The following table provides the values that an administrator can set for the se
 _Table 3-2. Configurable values for an update package_
 
   
-#### Create Report
+#### 3.3.3.2 Create Report
 
 Update Retriever can generate a report, which is a list of active updates, archived updates, hidden updates, and test updates. This list is saved in a TXT file that you can use in most spreadsheet applications.
 
@@ -630,11 +628,11 @@ To create a report, do the following:
 _Figure 3-30. Create report with Update Retriever._
 
   
-#### Import Updates
+#### 3.3.3.3 Import Updates
 
 Update Retriever enables you to import updates to your repository from a local location or network share. Once the updates are in the repository, you can assign them to specific systems and deploy them to multiple computers.
 
-?>Note: Update packages cannot be deployed until they are assigned to one or more systems. For more information, see section Assigning Systems.
+?>Note: Update packages cannot be deployed until they are assigned to one or more systems. For more information, see section 3.3.3.3.1 Assigning Systems.
 
 To import updates, do the following:
 
@@ -653,7 +651,7 @@ To import updates, do the following:
 _Figure 3-31. Import Updates with Update Retriever_
 
     
-##### Assigning Systems
+##### 3.3.3.3.1 Assigning Systems
 
 When updates are imported the will initially have no supported systems associated with them. You can assign and unassign systems to updates in the repository, where system stands for the combination of machine type and operating system. When assigning systems to updates, you can choose one or more systems from the available System/Operating system list.
 
@@ -671,7 +669,7 @@ To assign or unassign systems to updates, do the following:
 ?>Note: There is an icon next to the **Update ID** for each update that is originated from the Lenovo Help Center Web site. You cannot modify the systems assigned to these updates. You can modify the systems assigned to custom updates that were created or imported by the user.
 
   
-#### Export Updates
+#### 3.3.3.4 Export Updates
 
 Update Retriever enables you to export driver updates in your repository to a designated target folder. During the export process, Update Retriever will extract each driver update to a subfolder. Then, these extracted driver updates can be easily imported into common operating system deployment tools such as Microsoft System Center Configuration Manager or LANDesk Management Suite for easy integration and deployment.
 
@@ -711,7 +709,7 @@ To change the Local intranet settings in the Microsoft Internet Explorer Web bro
      - f) Click **OK** to exit the Internet Options dialog box.
 
 
-### Manage Driver Packs
+### 3.3.4 Manage Driver Packs
 
 This feature allows an admin to create a collection of the hardware drivers for a specified model in a format that can be imported into Microsoft System Center Configuration Manager (SCCM) or Microsoft Deployment Toolkit (MDT) to support OS deployment.
 
@@ -745,7 +743,7 @@ A collection of source files for the driver packages are generated, along with a
 ?>Note: This new feature is intended to support the OS deployment process of new drivers which only works with INF installable hardware drivers. Application updates and firmware updates cannot be included. The feature also only supports ThinkPad, ThinkCentre and ThinkStation PCs launched in 2018 or later.
 
 
-### Scheduling the Search for Updates
+### 3.3.5 Scheduling the Search for Updates
 
 The administrator can configure Update Retriever to search for new updates automatically on a scheduled basis. The administrator is notified depending on how Update Retriever was configured, in the form of an e-mail or a balloon tooltip from the application icon in the notification area.
 
@@ -770,7 +768,7 @@ The administrator can configure Update Retriever to search for new updates autom
 - **How to notify me:** Update Retriever can notify by sending an email or by popping up a toast message from the application icon in the system tray. If the email option is selected, click the Propertiesbutton to provide additional details. The email option may only work with certain configurations. The e-mail notification includes the date and time of the check, the number of packages found, and a list of updates.
 
 
-### Restore Hidden Updates
+### 3.3.6 Restore Hidden Updates
 
 Administrators can hide updates, which means that the hidden updates including the current and future versions will not be displayed as relevant (from the Lenovo Help Center) in the future. There are two options:
 
@@ -790,12 +788,12 @@ _Figure 3-37. Unhide specific packages in Update Retriever._
    4. Click the **Unhide** button in the bottom right corner of the tool. The update package will then be displayed in the **Update View**.
 
 
-### Modify Settings
+### 3.3.7 Modify Settings
 
-The **Modify settings** option allows the administrator to make changes to any of the settings that were configured during the first-time setup process. For details on the settings that can be configured, please refer to section **Update Retriever First Time Setup**.
+The **Modify settings** option allows the administrator to make changes to any of the settings that were configured during the first-time setup process. For details on the settings that can be configured, please refer to section 3.3.1 **Update Retriever First Time Setup**.
 
 
-### Viewing History
+### 3.3.8 Viewing History
 
 The **View history** function enables you to view the detailed information about the download history and export history.
 
@@ -829,10 +827,10 @@ To view the export history, do the following:
 - **Subfolder Name:** The name of subfolder where the exported driver update is saved. For the driver update that fails to be exported, the subfolder name just indicates its title and version number.
 
 
-# Troubleshooting
+# 4 Troubleshooting
 
 
-## System Update
+## 4.1 System Update
 
 Typically the first step in isolating issues when running System Update is to make sure System Update can access the repository, whether that is over the Internet to access content directly from Lenovo or over an intranet network to access a local repository. Use standard network troubleshooting steps to verify the logged-on user account has access as required.
 
@@ -904,7 +902,7 @@ Example:
 If assistance is required in troubleshooting System Update issues, please consider posting a question in the Enterprise Client Management forum which can be linked to from the Enterprise Deployment Solutions page ([https://support.lenovo.com/us/en/solutions/ht104232](https://support.lenovo.com/us/en/solutions/ht104232)). Please provide the applicable log files, the machine type (e.g. 20AN) and operating system (e.g. Windows 10 1903) where the problem is occurring, and a detailed description of the symptoms.
 
 
-## Thin Installer
+## 4.2 Thin Installer
 
 Troubleshooting Thin Installer issues will generally follow the same path as troubleshooting System Update (see section above). Although Thin Installer does not pull content directly from Lenovo it may still require troubleshooting access to the local repository on the intranet network. Typically network related issues for Thin Installer are access related. For instance, if Thin Installer is launched using a process under the Local System context, it may not have access to a network share that has been granted read/write access to Everyone. This is because Thin Installer in this case is not running under the context of a known user on the domain; &quot;Everyone&quot; does not include Local System.
 
@@ -954,7 +952,7 @@ In the Update\_ApplicabilityRulesTrace.txt file, installed updates will be shown
 If assistance is required in troubleshooting Thin Installer issues, please consider posting a question in the Enterprise Client Management forum which can be linked to from the Enterprise Deployment Solutions page ([https://support.lenovo.com/us/en/solutions/ht104232](https://support.lenovo.com/us/en/solutions/ht104232)). Please provide the applicable log files, the machine type (e.g. 20AN) and operating system (e.g. Windows 10 1903) where the problem is occurring, and a detailed description of the symptoms.
 
 
-## Update Retriever
+## 4.3 Update Retriever
 
 The most common issues encountered with Update Retriever are typically related to the catalogs and the content being pulled from Lenovo servers. Within the process used by Update Retriever to process catalogs for specified models, there are several CRC checks performed on the files that are downloaded. There may be times when the catalogs and the content are out of synch as the catalogs are being refreshed. In this case Update Retriever may report that it failed to download an update or may not offer any update that should be available. These types of issues are typically addressed automatically due to the continuous nature of the catalog maintenance processes but may take a day or two to be resolved. In other cases there may be an incorrect CRC value specified for a file causing it to continuously fail to download. These issues will be identified in the error messages presented by Update Retriever and can be reported in the Enterprise Client Management forum which can be linked to from the Enterprise Deployment Solutions page ([https://support.lenovo.com/us/en/solutions/ht104232](https://support.lenovo.com/us/en/solutions/ht104232)). Please specify the machine type (e.g. 20AN) and operating system combination that was used in the search.
 
@@ -973,10 +971,10 @@ The following list contain some common issues and how to address them:
 	```Computer\HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\Lenovo\Update Retriever\Preferences\UserSettings\General```
 
 
-# Command Line Reference
+# 5 Command Line Reference
 
 
-## System Update
+## 5.1 System Update
 
 System Update can be controlled via command line by leveraging the group policy control for the Administrator Command Line. A typical scenario would have System Update executed by a task in the Windows Task Scheduler set to run on a recurring basis to ensure the device stays current. That scheduled task would execute:
 
@@ -1075,7 +1073,7 @@ Optional. Causes System Update to store update history data in a WMI table:
 	Root\Lenovo\Lenovo\_Updates\
 
 
-### User Prompt Handling
+### 5.1.1 User Prompt Handling
 
 When System Update finds updates that will cause a restart of the system, it will display a warning dialog to the end user to allow them to save their work before proceeding with the updates. There are limited ways of controlling this behavior depending on which updates are found applicable and which command line parameters are used.
 
@@ -1085,7 +1083,7 @@ When System Update finds updates that will cause a restart of the system, it wil
    - If Reboot Type 1, 4 or 5 updates are found then System Update will always prompt the user before proceeding to install the updates. With Reboot Type 1 and 4 updates, the system will be restarted or shutdown respectively by the update itself. With Reboot Type 5 updates, a reboot timer will be displayed and the system will be restarted within 5 minutes.
 
 
-## Thin Installer
+## 5.2 Thin Installer
 
 Thin Installer must be executed with administrative privileges in order to function properly and it can be controlled by command line. Since Thin Installer does not require installation it can be executed from the folder it resides in, such as:
 
@@ -1115,7 +1113,7 @@ Required. Specifies the action to take with the updates found. It can only speci
    - **SCAN** : Assesses applicability of updates available in the repository; generates an Update\_ApplicabilityRulesTrace.txt file automatically; updates **cannot** be filtered using -includerebootpackages and -packagetypes parameters
    - **INSTALLDEFERRED** : install the updates which were previously downloaded using the DOWNLOAD parameter; any filtering parameters on the command line are **ignored**
 
-?>Note: The return codes used by Thin Installer will vary by the action performed. See section Thin Installer Return Codes
+?>Note: The return codes used by Thin Installer will vary by the action performed. See section 5.2.1 Thin Installer Return Codes
 
 **-includerebootpackages**
 
@@ -1190,7 +1188,7 @@ root\Lenovo\Lenovo\_Updates\
 Optional. Specifies fully qualified path for storing the log file
 
 
-### Thin Installer Return Codes
+### 5.2.1 Thin Installer Return Codes
 
 There are specific return codes used by Thin Installer based on which -action parameter is used.
 
@@ -1209,7 +1207,7 @@ There are specific return codes used by Thin Installer based on which -action pa
 |                 |     20003    |     No applicable updates were found to download                                                                                        |                                                                                  |
 
 
-## Update Retriever
+## 5.3 Update Retriever
 
 Update Retriever can be launched from its default installation location at
 
@@ -1230,10 +1228,10 @@ Optional. Launches Update Retriever to the &quot;Get new updates&quot; screen.
 Optional. Launches Update Retriever silently to automatically search for new content since the last search in the catalogs of all the model + OS pairs that have been specified. If there has been no new content released, Update Retriever exits. If new content is found, Update Retriever UI will appear to display the search results.
 
 
-# Appendix A: Advanced Configurations
+# 6 Appendix A: Advanced Configurations
 
 
-## System Update
+## 6.1 System Update
 
 System Update can be configured directly by modifying registry values. It may also be configured through Group Policy.
 
@@ -1268,7 +1266,7 @@ The following table lists the configurable and modifiable items for System Updat
 _Table 7-1. Advanced System Update Registry settings_
 
 
-### Using Active Directory
+### 6.1.1 Using Active Directory
 
 Active Directory is a directory service that gives administrators the ability to manage computers, groups, end users, domains, security policies, and any type of user-defined objects. The mechanism used by Active Directory to accomplish this is known as Group Policy. With Group Policy, administrators define settings that can be applied to computers or users in the domain. The following examples are settings that Active Directory can manage for System Update:
 
@@ -1276,12 +1274,12 @@ Active Directory is a directory service that gives administrators the ability to
    - Mapped Network Drive settings
 
   
-#### Managing Network Share Repositories
+#### 6.1.1.1 Managing Network Share Repositories
 
 This section provides a description of the policy settings for the network share repository. Setting these policies will prompt an end user for a username and password when the System Update end user interface is launched or when a scheduled update task runs. When an end user authenticates into a domain and has appropriate rights to access the network share repository, then no prompt for the username and password is displayed on the System Update end user interface.
 
   
-#### Administrative Template Files
+#### 6.1.1.2 Administrative Template Files
 
 The administrative template file (ADMX file) defines policy settings used by applications on the client computers. Policies are specific settings that govern the operation of applications. Policy settings also define whether the end user will be allowed to set specific settings through an application. Settings defined by an administrator on the server are defined as policies. Settings defined by an end user on the client computer for an application are defined as preferences. As defined by Microsoft, policy settings take precedence over preferences. When System Update checks for a setting, it will look for the setting in the following order:
 
@@ -1309,7 +1307,7 @@ To add the ADMX file and customize the settings, do the following:
     Example: 
     >[\\contoso.com\SYSVOL\Contoso.com\Policies\PolicyDefinitions](smb://contoso.com/SYSVOL/Contoso.com/Policies/PolicyDefinitions)
 
-   6. Then, copy the ADMX language file (tvsu.adml) from the en-US folder, and paste it into the ```\\\<domain\>\SYSVOL\\<domain\>\Policies\PolicyDefinitions\en-US ``` _folder._
+   6. Then, copy the ADMX language file (tvsu.adml) from the en-US folder, and paste it into the ```\\\<domain>\SYSVOL\\<domain>\Policies\PolicyDefinitions\en-US ``` _folder._
 
     Example: 
     >[\\contoso.com\SYSVOL\Contoso.com\Policies\PolicyDefinitions\en-US](smb://contoso.com/SYSVOL/Contoso.com/Policies/PolicyDefinitions/en-US)
@@ -1339,7 +1337,7 @@ To apply policy settings immediately after configuring the settings for the ADM 
    2. Type _ **gpedit.msc /force** _ and then click **OK**.
 
   
-#### Group Policy Settings
+#### 6.1.1.3 Group Policy Settings
 
 The following tables provide policy settings for System Update.
 
@@ -1376,62 +1374,52 @@ This section provides descriptions for the configurable items available in the U
 
 The following table and example provide the settings and values for the **Connections** key. These configurable items are for proxy server connections.
 
-|     Configurable Item         |     Description                                                                                           |     Value                                                                                                                                                     |     Action                                                                                                                                                                                                                                                                                 |
-|-------------------------------|-----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|     User                      |     Specifies the username to use for  the connection.                                                    |     Default value: None      This setting is only used for the  connection type of proxy, the HTTP  proxy, when the proxy server requires  authentication.    |     This setting is used for authentication  to access the HTTP proxy server.                                                                                                                                                                                                              |
-|                               |                                                                                                           |     Possible values: Any string                                                                                                                               |                                                                                                                                                                                                                                                                                            |
-|     Password                  |     Specifies the password to use for  the connection.                                                    |     Default value: None                                                                                                                                       |     This setting is used for authentication  to access the HTTP proxy server.     System Update will connect to the  HTTP proxy server defined in **ServerName**  using the username defined in **User**.  The end user is prompted for this  information when the information is needed.          |
-|                               |                                                                                                           |     Possible values: Any string                                                                                                                               |                                                                                                                                                                                                                                                                                            |
-|     AllowProxyFailToDirect    |     If enabled, System Update will  attempt a direct connection if it  cannot connect to proxy server.    |     Default vale:  No                                                                                                                                         |     This allows users to get updates while  connected to the Internet away from the  office network.                                                                                                                                                                                       |
-|                               |                                                                                                           |     Possible values:      Yes, No                                                                                                                             |                                                                                                                                                                                                                                                                                            |
+|     Configurable Item         |     Description                                                                                           |     Value                                                                                                                                                                                  |     Action                                                                                                                                                                                                                                                                                      |
+|-------------------------------|-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     User                      |     Specifies the username to  use for the connection.                                                    |     Default value: None<br/><br/>      This setting is only used for the  connection type of proxy, the HTTP  proxy, when the proxy server requires  authentication.<br/><br/>     Possible values: Any string |     This setting is used for  authentication to access  the HTTP proxy server.                                                                                                                                                                                                                  |
+|     Password                  |     Specifies the password to  use for the connection.                                                    |     Default value: None<br/><br/>     Possible values: Any string                                                                                                                                    |     This setting is used for  authentication to access  the HTTP proxy server.<br/><br/>     System Update will connect  to the   HTTP proxy server  defined in **ServerName** using  the username defined in **User**.  The end user is prompted for  this information when the  information is needed.          |
+|     AllowProxyFailToDirect    |     If enabled, System Update will  attempt a direct connection if  it cannot connect to proxy server.    |     Default vale:  No<br/><br/>     Possible values:<br/> Yes, No                                                                                                                                         |     This allows users to get updates  while connected to the Internet  away from the office network.                                                                                                                                                                                            |
 
 _Table 7-3. \UserSettings\Connection_
 
+
+
 The following table and example provide the settings and values for the **General** key.
 
-|     Configurable Item                                                                                                                                                                                                                                                                                                                                                         |     Description                                                                                                                                                                                  |     Value                                                       |     Action                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|     ContentMode                                                                                                                                                                                                                                                                                                                                                               |     Refers to the status of the update packages  that System Update will search for in the  Update Retriever repository                                                                          |     Default value: Active                                       | • If Active, System Update will search  the Update Retriever repository for the  update packages in active status.      • If Test, System Update will search  the Update Retriever repository for  the update packages in test status.      Note: If there is no database.xml file  in the Update Retriever repository folder,  System Update will ignore the value of  ContentMode and search for all the  update packages                  |
-|                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                  |     Possible values:      • Active      • Test                  |                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|     DebugEnable                                                                                                                                                                                                                                                                                                                                                               |     Enables you to log process results to  the file named ApplicabilityRulesTrace.txt.                                                                                                           |     Default value: NO                                           | • If YES, System Update will log the  process results to the log file.        • If NO, System Update will not log the  process results.                                                                                                                                                                                                                                                                                                      |
-|     DisplayLicenseNotice                                                                                                                                                                                                                                                                                                                                                      |     Enables you to skip the license agreement  that will be displayed before the update  packages pick list is populated.                                                                        |     Default value: YES                                          | • If YES, the license agreement screen   will be displayed prior to the update  packages pick list.      • If NO, the license agreement screen  will not be displayed.                                                                                                                                                                                                                                                                       |
-|                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                  |     Possible values:      • YES      • NO                       |                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|     DisplayLicenseNoticeSU                                                                                                                                                                                                                                                                                                                                                    |     Enables you to skip the license agreement  that is displayed in the Schedule updates  panel of System Update                                                                                 |     Default value: YES                                          | • If YES, the license agreement will be  displayed prior to saving the changes  in the Schedule updates panel.      • If NO, the license agreement will be  displayed and the changes will be saved  directly to the Windows Registry subkey.                                                                                                                                                                                                |
-|                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                  |     Possible values:      • YES      • NO                       |                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                  |                                                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|     IgnoreLocalLicense      Note: By implementing this setting,  you are accepting the End User  License Agreement and the Terms  and Conditions on behalf of the end  user for each package to be installed.  Do not use this setting if you do not  have the authority to accept the End  User LicenseAgreement and the Terms  and Conditions on behalf of the end user.    |     Enables you to show or hide the license  dialog when System Update is downloading  and installing an update package located in  a repository folder such as the network  share repository    |     Default value: NO                                           | • If YES, the license dialog will not  be displayed when a repository is used  to store update packages.      Note: If you obtain packages directly  from the Lenovo Help Center and do not  use a repository to store update packages,  the IgnoreLocalLicense value will be  ignored and the license dialog will be displayed.      • If NO, the license dialog will be displayed when a repository is   used to store update packages.    |
-|                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                  |     Possible values:      • YES      • NO                       |                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                  |                                                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|     IgnoreRLicCRCSize                                                                                                                                                                                                                                                                                                                                                         |     This setting enables users to enable or disable  the CRC and file size check functions when System  Update downloads update packages from the Lenovo  Help Center Web site.                  | Default Value: YES     Possible values:      • YES      • NO    | You can set the value to YES or NO:  • If YES, System   Update will ignore  these files and will not check the file  CRC and file size.      • If NO, System Update will check the  file CRC and file size.        Note: System Update does not check file  size and corruption of readme files and  license agreement files when you  download packages from a local repository  even if you set this value to NO.                          |
-|                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                  |                                                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                              ||     NotifyInterval         |     Specifies the amount of time between  restart notifications when you  download and install update packages  that require a reboot.                   |     Default value: 300 (seconds)                                                                                                                         |     You can specify any value between  60 seconds and 86 400 seconds.  By default, you will be prompted with a  restart notification every 300 seconds  when you begin to download and install  an update package that forces a reboot  or defer the download and installation  process.       System Update will use the default  value when an invalid value is set.  For example, if you set a value greater  than 86 400 seconds (24 hours),  System Update will use the default  value of 300 seconds.                                                                                                                                                                             |
-|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                            |                                                                                                                                                          |     Possible values: Any value between    60 seconds and 86 400 seconds                                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-|     RepositoryLocation1    |  Specifies the repository folder path.  The key value name should be  RepositoryLocation%N% where N is a  number between 1 and 20, including  1 and 20.  |     Default value: SUPPORTCENTER                                                                                                                         |     This setting specifies the  repository location that update  packages will be downloaded from and  installed. The default setting is  SUPPORTCENTER and enables System Update  to download updates from the Lenovo  Help Center. When SUPPORTCENTER is used  it should always be specified as  RepositoryLocation1. You can also specify  a repository path on a network  share drive or a URL to a web server,  and this will enable System Update to  search for update packages in the network  share or web-hosted repository folder.  System Update will present the most current  update packages from the available  repositories when multiple locations  are specified.    |
-|                            |                                                                                                                                                          |     Possible values:      • SUPPORTCENTER      • A local folder path     • A UNC path to a network share     • A URL path to a web-hosted  repository    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-|     UNCMaxAttempts         |     Specifies the maximum number of tries  that System Update will attempt when  connecting to a network share folder  before it completely fails.       |     Default value: 2                                                                                                                                     |     System Update will attempt the  number of tries when connecting to  a network share folder.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|     Configurable Item                                                                                                                                                                                                                                                                                                                                                              |     Description                                                                                                                                                                                  |     Value                                                                                                                                                           |     Action                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     ContentMode                                                                                                                                                                                                                                                                                                                                                                    |     Refers to the status of the update  packages that System Update will  search for in the Update Retriever  repository                                                                         |     Default value: Active<br/><br/>  Possible Values:<br/> • Active<br/>  • Test                                                                                                        |     • If **Active**, System Update will search  the Update Retriever repository for the  update packages in active status.<br/><br/>      • If **Test**, System Update will search the  Update Retriever repository for the  update packages in test status.<br/><br/>      **Note**: If there is no database.xml file  in the Update Retriever repository folder,  System Update will ignore the value of  **ContentMode** and search for all the update  packages                                                                                                                                                                                                                                                     |
+|     DebugEnable                                                                                                                                                                                                                                                                                                                                                                    |     Enables you to log process results  to the file named  ApplicabilityRulesTrace.txt.                                                                                                          |     Default value: NO                                                                                                                                               |     • If **YES**, System Update will log the process  results to the log file.<br/><br/>      • If **NO**, System Update will not log the process  results.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|     DisplayLicenseNotice                                                                                                                                                                                                                                                                                                                                                           |     Enables you to skip the license agreement  that will be displayed before the update  packages pick list is populated.                                                                        |     Default value: YES<br/><br/>      Possible Values:<br/> • YES<br/> • NO                                                                                                              |     • If **YES**, the license agreement screen will be  displayed prior to the update packages pick list.<br/> <br/>       • If **NO**, the license agreement screen will not  be displayed.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|     DisplayLicenseNoticeSU                                                                                                                                                                                                                                                                                                                                                         |     Enables you to skip the license agreement  that is displayed in the Schedule updates  panel of System Update                                                                                 |     Default value: YES<br/><br/>      Possible Values:<br/> •YES<br/> •NO                                                                                                                |     • If **YES**, the license agreement will be displayed  prior to saving the changes in the Schedule updates  panel.<br/><br/>      • If **NO**, the license agreement will be displayed  and the changes will be saved directly to the  Windows Registry subkey.                                                                                                                                                                                                                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                                                   
+|     IgnoreLocalLicense<br/><br/>      **Note**: By implementing  this setting, you are  accepting the End User  License Agreement and  the Terms and Conditions  on behalf of the end user  for each package to be  installed. Do not use this  setting if you do not have  the authority to accept  the End User License Agreement  and the Terms and Conditions  on behalf of the end user.    |     Enables you to show or hide the  license dialog when System Update  is downloading and installing an update  package located in a repository folder  such as the network share repository    |     Default value: NO<br/><br/>     Possible Values:<br/> • YES<br/> • NO                                                                                                               |     • If **YES**, the license dialog will not be displayed  when a repository is used to store update packages.<br/><br/>      **Note:** If you obtain packages directly from the  Lenovo Help Center and do not use a repository to  store update   packages, the IgnoreLocalLicense  value will be ignored and the license dialog will  be displayed. <br/><br/>     • If **NO**, the license dialog will be displayed when  a repository is   used to store update packages.                                                                                                                                                                                                                                     |
+|     IgnoreRLicCRCSize                                                                                                                                                                                                                                                                                                                                                              |     This setting enables users to enable  or disable the CRC and file size check  functions when System Update downloads  update packages from the Lenovo Help Center  Web site.                 |     Default value: YES<br/><br/>      Possible values:<br/> • YES<br/> • NO                                                                                                              |     You can set the value to **YES** or **NO**:<br/>       • If **YES**, System Update will ignore these files  and will not check the file CRC and file size.<br/>         • If **NO**, System Update will check the file CRC  and file size.<br/><br/>       **Note**: System Update does not check file size and  corruption of readme files and license agreement  files when you download packages from a local  repository even if you set this value to **NO**.                                                                                                                                                                                                                                                           |
+|     NotifyInterval                                                                                                                                                                                                                                                                                                                                                                 |     Specifies the amount of time  between restart notifications when  you download and install update  packages that require a reboot.                                                           |     Default value: 300 (seconds)<br/><br/>      Possible values: Any value between 60 seconds and 86 400 seconds                                                               |     You can specify any value between 60 seconds and  86 400 seconds. By default, you will be prompted  with a restart notification every 300 seconds when  you begin to download and install an update package  that forces a reboot or defer the download and  installation process.     System Update will use the default value when an  invalid value is set. For example, if you set a value  greater than 86 400 seconds (24 hours), System Update  will use the default value of   300 seconds.                                                                                                                                                                             |
+|     RepositoryLocation1                                                                                                                                                                                                                                                                                                                                                            |     Specifies the repository folder  path. The key value name should be  RepositoryLocation%N% where N is a  number between 1 and 20,  including 1 and 20.                                       |     Default value: SUPPORTCENTER<br/><br/>      Possible values:<br/>  •SUPPORTCENTER<br/> • A local folder path<br/> • A UNC path to a network share<br/> • A URL path to a web-hosted repository |     This setting specifies the repository location that  update packages will be downloaded from and installed.  The default setting is **SUPPORTCENTER** and enables  System Update to download updates from the Lenovo Help Center.    When SUPPORTCENTER is used it should always be specified as  RepositoryLocation1. You can also specify a repository path  on a network share drive or a URL to a web server, and this  will enable System Update to search for update packages in  the network share or web-hosted repository folder.  System Update will present the most current update packages  from the available repositories when multiple locations are  specified.    |
+|     UNCMaxAttempts                                                                                                                                                                                                                                                                                                                                                                 |     Specifies the maximum number of tries  that System Update will attempt when  connecting to a network share folder  before it completely fails.                                               |     Default value: 2<br/><br/>     Possible values: Any valid integer                                                                                                         |     System Update will attempt the number of tries when connecting  to a network share folder.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |                                                                  
 
 _Table 7-4. HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\Lenovo\System Update\Preferences\UserSettings\General_
 
 
-### Recommendations for Managed Environments
+### 6.1.2 Recommendations for Managed Environments
 
 When System Update is used in a managed environment, the following settings are recommended:
 
 | HKLM:\SOFTWARE\WOW6432Node\Lenovo\System Update\Preferences\UserSettings\General |
 | --- |
-| AskBeforeClosing | NO |
-| DisplayLicenseNotice | NO |
-| MetricsEnabled | NO |
-| DebugEnable | YES |
+| AskBeforeClosing:&nbsp;&nbsp; NO |
+| DisplayLicenseNotice:&nbsp;&nbsp; NO |
+| MetricsEnabled:&nbsp;&nbsp; NO |
+| DebugEnable:&nbsp;&nbsp; YES |
 
 When a custom scheduled task is being used to control System Update, it is recommended to also set the following:
 
 | HKLM:\SOFTWARE\WOW6432Node\Lenovo\System Update\Preferences\UserSettings\Scheduler |
 | --- |
-| SchedulerAbility | NO |
+| SchedulerAbility: &nbsp;&nbsp; NO |
 
 
-## Thin Installer
+## 6.2 Thin Installer
 
 Thin Installer provides an XML file, **ThinInstaller.exe.configuration** , to configure settings. The XML file is located at the root of the Thin Installer folder.
 
@@ -1441,46 +1429,29 @@ The default configuration is shown as follows:
 
 _Figure 7-1. ThinInstaller.exe.configuration file._
 
-Open the **ThinInstaller.exe.configuration** XML file to make changes to RepositoryPath, LogPath, Languages, and more. This can also be set via command line, which takes higher precedence.
 
-The table below gives a brief overview of the **ThinInstaller.exe.configuration** XML tags. The XML file can be edited by the administrator manually and can also be changes via command-line.
-
-| **Configurable Item** | **Description** | **Value** | **Action** |
-| --- | --- | --- | --- |
-| RepositoryPath | Specifies the repository path. By default, Thin Installer searches for updates in a subdirectory under the Thin Installer folder. This can be a local path, UNC path, or URL | Default value: blank | If specified, Thin Installer searches for updates from the specified repository path. |
-| LogPath | Specifies the log path. By default, the log is created in a subdirectory under the Thin Installer folder. | Default value: blank | If Thin Installer does not have write access to the specified log path, Thin Installer will create the log at the default location. |
-| LanguageOverride | Specifies the language to be used | Default value: EN | Changes the language to the specified one. |
-| Possible values: • DA • NL • EN • FI • FR • DE • IT • JP • KO • NO • PT • ES • SV • CHS • CHT |
-| BlockSize | Specifies the number of bytes to be read each time data is downloaded | Default value: 4096 | Sets the number of bytes to the specified one. |
-| Possible values: • 4096 • 8192 |
-| AskBeforeClosing | Prompts the user whether to close Thin Installer. | Default value: NO | • If **YES** , a dialog box will prompt to ask whether to close Thin Installer. • If **NO** , no dialog box will prompt to ask whether to close Thin Installer, and Thin Installer will close directly. |
-|
- |
-| DisplayLicenseNotice | Enables you to skip the license agreement that is displayed before the update package pick list is populated. | Default value: NO | • If **YES** , the license agreement screen will be displayed prior to the update package pick list. • If **NO** , the license agreement screen will not be displayed. |
-| Possible values: • YES • NO |
-| IgnoreLocalLicense | Shows or hides the license dialog when Thin Installer is downloading and installing an update package | Default value: YES | • If **YES** , the license dialog will not be displayed when Thin Installer is downloading and installing an update package. • If **NO** , the license dialog will be displayed when Thin Installer is downloading and installing an update package.
-
-?>Note: Some Microsoft updates may require the end user to accept the license, and this cannot be disabled by the **IgnoreLocalLicense** configurable item. |
-| Possible values: • YES • NO |
-| IgnoreRMLicCRCSize | Use this setting to enable or disable the following functions when Thin Installer downloads packages: • **CRC** - checks the file corruption of readme and license agreement files when you download packages. • **File size** - checks the file size of readme and license agreement files | Default value: YES
- | • If **YES** , Thin Installer skips checking the corruption or the size of these files. • If **NO** , Thin Installer checks the corruption or the size of these files. |
-| Possible values: • YES • NO |
-| DebugEnable | Specifies whether Thin Installer should create the log file named Updates\_ApplicabilityRulesTrace.txt. | Default value: NO
- | • If **YES** , Thin Installer will create the log file. • If **NO** , Thin Installer will not create the log file. |
-| Possible values: • YES • NO |
-| ContentMode | Refers to the status of the update packages. Set the value depending on the status of update packages in the repository. | Default value: Active | • If **Active** , Thin Installer will search the Update Retriever repository for update packages in active status. • If **Test** , Thin Installer will search the Update Retriever repository for update packages in test status.
-
-?>Note: If there is no database.xml file in the Update Retriever repository folder, Thin Installer will ignore the value of **ContentMode** and search for all the update packages. |
-| Possible values: • Active • Test |
+|     Configurable Item       |     Description                                                                                                                                                                                                                                                                                           |     Value                                                                                                               |     Action                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     RepositoryPath          |     Specifies the repository path.  By default, Thin Installer searches  for updates in a subdirectory under  the Thin Installer folder. This can  be a local path, UNC path, or URL.                                                                                                                     |     Default value: blank                                                                                                |     If specified, Thin Installer  searches for updates from the  specified repository path.                                                                                                                                                                                                                                                                                                                                     |
+|     LogPath                 |     Specifies the log path. By default,  the log is created in a subdirectory  under the Thin Installer folder.                                                                                                                                                                                           |     Default value: blank                                                                                                |     If Thin Installer does not have  write access to the specified  log path, Thin Installer will  create the log at the default  location.                                                                                                                                                                                                                                                                                     |
+|     LanguageOverride        |     Specifies the language to be used                                                                                                                                                                                                                                                                     |     Default value: EN<br/><br/>     Possible values:<br/> • DA<br/> • NL<br/> • RN<br/> • FI<br/> • FR<br/> • DE<br/> • IT<br/> • JP<br/> • KO<br/> • NO<br/> • PT<br/> • ES<br/> • SV<br/> • CHS<br/> • CHT |     Changes the language to the  specified one.                                                                                                                                                                                                                                                                                                                                                                                 |
+|     BlockSize               |     Specifies the number of bytes to be read  each time data is downloaded.                                                                                                                                                                                                                               |     Default value: 4096<br/><br/>     Possible values:<br/> • 4096<br/> • 8192                                                              |     Sets the number of bytes to  the specified one.                                                                                                                                                                                                                                                                                                                                                                             |
+|     AskBeforeClosing        |     Prompts the user whether to close  Thin Installer.                                                                                                                                                                                                                                                    |     Default value: NO                                                                                                   |     • If **YES**, a dialog box will  prompt to ask whether to close  Thin Installer.<br/>     • If **NO**, no dialog box will  prompt to ask whether to close  Thin Installer, and Thin Installer  will close directly.                                                                                                                                                                                                                     |
+|     DisplayLicenseNotice    |     Enables you to skip the license agreement  that is displayed before the update package  pick list is populated.                                                                                                                                                                                       |     Default value: NO<br/><br/>     Possible values:<br/> • YES <br/>• NO                                                                   |     • If **YES**, the license agreement  screen will be displayed prior to  the update package pick list.<br/>      • If **NO**, the license agreement  screen will not be displayed.                                                                                                                                                                                                                                                        |
+|     IgnoreLocalLicense      |     Shows or hides the license dialog when  Thin Installer is downloading and  installing an update package.                                                                                                                                                                                              |     Default value: YES<br/><br/>     Possible values:<br/> • YES<br/> • NO                                                                  |     • If **YES**, the license dialog  will not be displayed when  Thin Installer is downloading  and installing an update package.<br/>      • If **NO**, the license dialog will  be displayed when Thin Installer  is downloading and installing an  update package.<br/><br/>        **Note**: Some Microsoft updates may  require the end user to accept the  license, and this cannot be disabled  by the **IgnoreLocalLicense** configurable  item.      |
+|     IgnoreRMLicCRCSize      |     Use this setting to enable or disable the  following functions when Thin Installer  downloads packages:<br/>      • **CRC** - checks the file corruption of  readme and license agreement files when  you download   packages.<br/>      • **File size** - checks the file size of  readme and license agreement files. |     Default value: YES<br/><br/>     Possible values:<br/> • YES<br/> • NO                                                                  |     • If **YES**, Thin Installer skips  checking the corruption or the  size of these files.<br/>      • If **NO**, Thin Installer checks  the corruption or the size of  these files.                                                                                                                                                                                                                                                       |
+|     DebugEnable             |     Specifies whether Thin Installer should  create the log file named  Updates_ApplicabilityRulesTrace.txt.                                                                                                                                                                                              |     Default value: NO<br/><br/>     Possible values:<br/> • YES<br/> • NO                                                                   |     • If **YES**, Thin Installer will  create the log file.<br/>      • If **NO**, Thin Installer will  not create the log file.                                                                                                                                                                                                                                                                                                             |
+|     ContentMode             |     Refers to the status of the update packages.  Set the value depending on the status of  update packages in the repository.                                                                                                                                                                            |     Default value: Active<br/><br/>     Possible values:<br/> • Active<br/> • Test                                                          |     • If **Active**, Thin Installer will search the Update Retriever repository  for update packages in active status.<br/>      • If **Test**, Thin Installer will search  the Update Retriever repository for  update packages in test status.<br/><br/>       **Note**: If there is no database.xml file  in the Update Retriever repository folder,  Thin Installer will ignore the value of  ContentMode and search for all the update  packages.    |
 
 _Table 7-5. Description of configurable items._
 
 
-# Appendix B: Mapdrv Utility
+# 7 Appendix B: Mapdrv Utility
 
 The MapDrv utility provides network share related functions for System Update. To define the network share information, use the MapDrv utility to connect or disconnect network shares. The MapDrv utility maintains network share information in a registry key that is protected by administrator access only. The network share information includes the network share name (in UNC format), user name (saved in the registry as an encrypted string), and the password (saved in the registry as an encrypted string).
 
 The MapDrv utility can be found in the System Update installation directory. The default installation directory is located at ```C:\Program Files (x86)\Lenovo\System Update```.
+
 
 The network share information is stored in the following registry entry:
 
@@ -1489,6 +1460,7 @@ The network share information is stored in the following registry entry:
 If an Active Directory policy is used, these values are stored in the following registry entry:
 
 	HKLM\Software\Policies\Lenovo\MND\TVSUAPPLICATION
+
 
 The strings stored in the **TVSUAPPLICATION** key are:
 
@@ -1504,11 +1476,11 @@ _Table 5-8. The MapDrv settings and values_
 The MapDrv utility also enables an administrator to use the encryption engine to generate an encrypted user name and password, which can be used to pre-populate network share information on multiple systems. Using the encryption engine in this manner does not update the registry on the system.
 
 
-### Command-line Interface
+### 7.1.1 Command-line Interface
 
 The command-line interface to the MapDrv utility is as follows:
 
-	Mapdrv /\&lt;function\&gt;\&lt;app id\&gt; /unc \&lt;sharename\&gt; /user \&lt;username\&gt; /pwd \&lt;password\&gt; [/timeout \&lt;seconds\&gt;] [/s]
+	Mapdrv /<function><app id> /unc <sharename> /user <username\> /pwd <password> [/timeout <seconds>] [/s]
 
 | **Parameter** | **Description** |
 | --- | --- |
@@ -1527,53 +1499,51 @@ The return code is **0** if an operation was successful. Otherwise, the return c
 When the MapDrv utility is launched with no parameters, the end user will be prompted for the network share, user name and password, and then MapDrv will attempt to connect to the specified network share using the specified credentials.
 
 
-### Displaying Encrypted User Name and Password Strings
+### 7.1.2 Displaying Encrypted User Name and Password Strings
 
 This function displays the registry key of the network share information where the encrypted user name and password is stored. Using the /display function will not store the user name and password in the registry. You need to copy the encrypted user name and password to the appropriate registry key.
 
-	mapdrv /view \<app id\> /user \<username\> /pwd \<password\>
+	mapdrv /view <app id> /user <username> /pwd <password>
 
->Example:
->
+Example:
 >mapdrv /view TVSUAPPLICATION /user temp/pwd password
 >
 >app id: TVSUAPPLICATION
 >
 >user: temp
-
 >pwd: password
 
 This command captures the encrypted user name and password to set up the repository with UNC path with authentication.
 
 
-### Storing Network Share Information for a ThinkVantage Application
+### 7.1.3 Storing Network Share Information for a ThinkVantage Application
 
 This function stores the network share information in the registry using to define the subkey from the main MapDrv registry key:
 
-	mapdrv /store \<app id\> /unc \<sharename\> /user \<username\> /pwd \<password\> [/timeout \<seconds\>]
+	mapdrv /store <app id> /unc <sharename> /user <username> /pwd <password> [/timeout <seconds>]
 
 This sets the UNC, user name, and password values in the registry.
 
 
-### Connecting to the network share for a ThinkVantage application
+### 7.1.4 Connecting to the network share for a ThinkVantage application
 
 Connect the network share for the specified ThinkVantage application:
 
-	mapdrv /connect \<app id\> [/s]
+	mapdrv /connect <app id> [/s]
 
 Connects to the share using the UNC, user name, and password values in the registry. The actual connection UNC is output to the NetPath value.
 
 
-### Disconnecting the Network Share for a ThinkVantage Application
+### 7.1.5 Disconnecting the Network Share for a ThinkVantage Application
 
 The following command disconnects the network share for the specified ThinkVantage application if the application is currently connected:
 
-	mapdrv /disconnect \<app id\>
+	mapdrv /disconnect <app id>
 
 Performs a _**net use /d [NetPath stored in registry]**_ to disconnect the network connection.
 
 
-# Appendix C: Notices
+# 8 Appendix C: Notices
 
 Lenovo may not offer the products, services, or features discussed in this document in all countries. Consult your local Lenovo representative for information on the products and services currently available in your area. Any reference to a Lenovo product, program, or service is not intended to state or imply that only that Lenovo product, program, or service may be used. Any functionally equivalent product, program, or service that does not infringe any Lenovo intellectual property right may be used instead. However, it is the user&#39;s responsibility to evaluate and verify the operation of any other product, program, or service.
 
