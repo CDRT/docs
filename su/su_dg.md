@@ -92,7 +92,7 @@ The following table presents the languages and the corresponding language overri
 | Simplified Chinese | 2052 | CHS |
 | Traditional Chinese | 1028 | CHT |
 
-_Table 2-1. System Update language codes_
+<p style="text-align:center;padding-bottom:40px;font-style: italic;"> Table 2-1. System Update language codes</div>
 
 The following are scenarios in which System Update will load the substitute NLS language pack:
 
@@ -206,7 +206,7 @@ The following table presents the languages supported by Update Retriever and the
 | Japanese | 1041 | JP |
 | Simplified Chinese | 2052 | CHS |
 
-_Table 2-2. Update Retriever language codes_
+<p style="text-align:center;padding-bottom:40px;font-style: italic;">Table 2-2. Update Retriever language codes</div>
 
 The registry location for the **LanguageOverride** field for a 32-bit machine is:
 
@@ -238,10 +238,12 @@ If you want to install the program silently and generate installation log files,
 
 If a previous version of Update Retriever is already installed, the following pop-up is displayed. In order to download the newest version of Update Retriever, the use must click **Yes**. After selecting **Yes** , to uninstall the existing version of Update Retriever, a window will appear asking for install instructions. Please proceed with install instructions.The administrator will NOT lose any of their previous downloads, update packages, machines, or any information in Update Retriever or its repository. Everything that was displayed and available in the existing version of Update Retriever, will be in the new version that is being installed **.**
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/su/img2-1.png)
 
 _Figure 2-1. Removing existing version of Update Retriever to download the newest version._
-
+</div>
 
 ### 2.3.4 Uninstall Update Retriever
 
@@ -262,9 +264,12 @@ This section will provide an overview of how System Update can be used to instal
 
 Once System Update has been installed, the tool is ready to run. When launching System Update for the first time, the Welcome tab information will appear, giving the user a brief overview of how the tool can be used. Once the user clicks  **Next** , in the bottom left hand corner on the welcome page, System Update will automatically start searching for updates on the system. Of course, the administrator can make changes in group policy to alter how system update searches for updates, this is just the generic way of how System Update will run. Once the tool has finished searching for updates, it will prompt the user with a License notice. The License agreement notice is for all future package downloads and will not be shown again. The user must agree to proceed with the download and installation. Once the tool searches for updates, the update packages will be displayed in three different severity categories; Critical, Recommended, and optional.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/su/img3-1.png)
 
 _Figure 3-1. Systems Update Welcome Interface._
+</div>
 
 There are multiple functional tabs in System Update, located to the left-hand side of the tool, allowing the user to customize the way they want to update their machine. Designed to help keep systems up-to-date, the System Update tool provides the following functions:
 
@@ -289,6 +294,8 @@ Following the numerical order above, the upcoming sections will explain each of 
 
 System Update will automatically search for new updates from the Lenovo support site based on the machine type and operating system. Once the updates are found, the tool separates each update applicable to the machine, into critical updates, recommended updates, and optional updates. The critical updates will automatically be checked to download, unlike the recommended or optional updates. The user can check and uncheck any of the updates. The user must click on each individual update tab (critical, recommended, and optional updates) to select the desired update packages before continuing. There is an option to select all the updates or the user can individually select them one by one.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/su/img3-2.png)
 
 _Figure 3-2. Searching for new updates._
@@ -304,7 +311,7 @@ _Figure 3-4. Get New Updates Function, selecting critical updates._
 ![](../img/su/img3-5.png)
 
 _Figure 3-5. Get New Updates, item details expanded._
-
+</div>
 Notice that there is a drop-down arrow by each checkbox for each individual package.  When clicked, the item details will expand. The user can either click the down arrow for each individual update package or they can press the &quot;Expand all&quot; red plus sign above the packages. The expanded view provides more information on each update package including the manufacturer, version, installed version, download size, disk space needed, and the option to defer the update. If the user would like to defer the update, the checkbox must be checked. Furthermore, there is a &quot;View details&quot; link, which displays the contents of the readme file for the update package which offers additional details such as supported models, supported operating systems, supported devices, what the package does, changes in the release, determining which version is installed, installation and uninstallation instructions and more.
 
 When using System Update to search for update packages, System Update will display search results in four severity categories, as explained above: Critical, Recommended, and Optional. For a description and example of each category severity level, see the following:
@@ -330,6 +337,8 @@ When using System Update to search for update packages, System Update will displ
 
 Once all the updates desired have been selected, press **Next**. A review of the updates selected will be displayed. This will also provide a second chance to select updates to defer installation or deselect a package before they are downloaded and installed on the machine. Once the &quot;Download&quot; button is clicked, if any of the packages require a reboot after installation, a message box will appear letting the user know which package(s) requires it. Wait for the machine to reboot and finish the installation before doing anything else. Do not manually shut off the machine or put it into sleep mode during this time.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/su/img3-6.png)
 
 _Figure 3-6. Reviewing Updates before downloading packages._
@@ -337,10 +346,13 @@ _Figure 3-6. Reviewing Updates before downloading packages._
 _![](../img/su/img3-7.png)_
 
 _Figure 3-7. Certain update packages require reboot before installation is complete. Do not manually shut off the machine at this time._
+</div>
 
 **2. Install Deferred Updates**
 
 When selecting update packages to download, instead of installing them immediately, the user can defer the installation for a more convenient time. All the deferred updates will be stored in the &quot;Install deferred updates&quot; tab. To defer an update, the user will check the defer installation checkbox package in the &quot;Get new updates&quot; section. Make sure that each of the update packages have been expanded to check the &quot;defer installation&quot; checkbox.
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
 ![](../img/su/img3-8.png)
 
@@ -349,14 +361,18 @@ _Figure 3-8. How to Defer an Update Package from Installing (Download Only)._
 ![](../img/su/img3-9.png)
 
 _Figure 3-9. Installing Deferred Update Packages._
+</div>
 
 **3. Scheduling Updates**
 
 System Update provides an option to schedule an automatic search for new updates, at a specified time interval. The user can download and install updates automatically or receive notifications when updates are available. When enabling the automatic search for updates, the user can define the package type, the search frequency, and the time of day when System Update searches for new updates.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/su/img3-10.png)
 
 _Figure 3-10. Scheduling Updates for installation._
+</div>
 
 **Configuring Automatic Search for Updates**
 
@@ -391,23 +407,32 @@ When installing multiple updates and one of the updates forces a reboot, System 
 
 The history of updates, that were downloaded and installed on each system, are available to view. For each update, the results of the download and installation are noted as either successful or failed. This section will display a list of the downloaded and installed update packages in order of the Name, Version, Date, and Status.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/su/img3-11.png)
 
 _Figure 3-11. Systems Update View Installation History._
+</div>
 
 **5. Restore Hidden Updates**
 
 Updates can be hidden, which means those specific updates will not be displayed as applicable in the future. The user can hide specific versions of an update. One or more updates can be &quot;hidden&quot;, so they don&#39;t show up in subsequent searches.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/su/img3-12.png)
 
 _Figure 3-12. How to hide update packages._
+</div>
 
 However, the hidden updates can be restored. Go to the &quot;Restore Hidden Updates&quot; tab for restoring the hidden updates. If the user wants to hide an update, they must do so in the &quot;Get new updates tab.&quot; For each of the update packages displayed for download, there is a dropdown arrow. When the arrow is clicked, and the package information is expanded, click the &quot;Do not show this update.&quot; By doing so, the update will be removed from the list of applicable updates in the &quot;Get new updates&quot; tab and moved to the &quot;Restore hidden updates&quot; tab. The hidden updates will be displayed in the same way they are in the &quot;Get new updates&quot; tab, by critical, recommended and optional updates.
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
 _![](../img/su/img3-13.png)_
 
 _Figure 3-13. Systems Update, Restore Hidden Updates, function._
+</div>
 
 **Keyboard Shortcuts**
 
@@ -423,7 +448,7 @@ The following table provides the keyboard shortcuts for the main functions of Sy
 | Close  | CTRL+E  |
 | Context Help  | F1  |
 
-_Table 3-1. System Update keyboard shortcuts_
+<p style="text-align:center;padding-bottom:40px;font-style: italic;">Table 3-1. System Update keyboard shortcuts</div>
 
 
 ## 3.2 Thin Installer
@@ -432,26 +457,37 @@ This section will cover how to work with Thin Installer. Although the program is
 
 To use Thin Installer, either run the self-extracting installation package or copy the programs source files to the targeted machine. The default repository that Thin Installer will pull from will be a subfolder within the working directory of Thin Installer. A different repository location can be specified by command line or configured in the Thin Installer configuration file which will described later in this document. Use Update Retriever to create the repository source folder. By default, the program searches for updates in a subdirectory under the Thin Installer folder and expects each update to reside in its own subdirectory.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 _![](../img/su/img3-14.png)_
 
 _Figure 3-14. Default repository._
+</div>
 
 
 ### 3.2.1 Running Thin Installer Manually
 
 In the following scenario, the repository used is local on the target machine. Launch Thin Installer to search for applicable updates based on the machine type and OS.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/su/img3-15.png)
 
 _Figure 3-15. Launching Thin Installer to search for applicable updates._
+</div>
 
 Once the search for updates is completed, the application will either display a window with &quot;No packages found,&quot; meaning your system is up-to-date, or a list of applicable update packages.
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
 ![](../img/su/img3-16.png)
 
 _Figure 3-16. Applicable updates listed in Thin Installer._
+</div>
 
 When updates are found in Thin Installer, they are displayed in one of three categories: Critical, Recommended, and Optional. For more information on each update package, click the Expand all button or the expander next to each update. The user may select one, all, or none of the update packages to download. A review of the updates selected is displayed before proceeding with installation.
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
 ![](../img/su/img3-17.png)
 
@@ -460,12 +496,16 @@ _Figure 3-17. Review installation packages._
 ![](../img/su/img3-18.png)
 
 _Figure 3-18. Installing updates._
+</div>
 
 If a reboot is necessary to complete the installation of a package, the following window will be displayed. Select **OK** to proceed with installation.
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
 ![](../img/su/img3-19.png)
 
 _Figure 3-19. Thin Installer reboot message._
+</div>
 
 ?>Notes: <br/>1. BIOS installations require user's attention to ensure the update is not interrupted. They cannot be deployed in an unattended mode. <br/>2. Thin Installer installs the updates that force a reboot or shut down after all other updates to reduce the number of reboots.
 
@@ -491,26 +531,35 @@ When launching Update Retriever the first time, some initial configuration items
 
    2. Choose between a **Local repository** or a **Lenovo cloud repository** by clicking the appropriate radio button. The **Local repository** option will host packages in a local directory or network share. The **Lenovo cloud repository** will host the actual packages on Lenovo&#39;s global Content Delivery Network and only the repository database and package descriptors will be stored in the local directory or network share. Only System Update supports the **Lenovo cloud repository** feature and not Thin Installer.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/su/img3-20.png)
 
 _Figure 3-20. Update Retriever first time setup._
+</div>
 
    3. Specify a repository folder and set the login information by doing the following:
 
 	- Type or browse to an existing folder path to use as the share repository in the **Repository path** field. This can be a local folder path or a network share path.
 	- Type a **User name** and **Password** for the share drive used as the network share repository in the user name and password fields.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/su/img3-21.png)
 
 _Figure 3-21. Setting the repository path in Update Retriever, first time setup._
+</div>
 
    4. Select a default license and status. The License can either be set to **Default** , **Display** , or **Do not display**. The status can either be set to **Test** or **Active**. If it is set to **Test** the packages will only be visible to clients configured to look for Test packages. This allows updates to be tested on a controlled set of devices before changing the status to Active so that all devices in the production environment can see them.
    
    5. An Advanced Option is available that allows the administrator to control how changes to local package descriptor XML files are handled. Normally Update Retriever will show packages in new search results if it detects that the XML descriptor file on Lenovo&#39;s servers is different than the file in the local repository. If this is not the desired behavior, check the box and the modified items will be recognized as the same updates and will not be offered for download in the search results.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/su/img3-22.png)
 
 _Figure 3-22. Update default status and Advanced Options in Update Retriever first time setup._
+</div>
 
 ?>Note: After the initial settings are complete, the Welcome screen will not open the next time Update Retriever is launched. To change the repository path and update's default status, click Modify settings.
 
@@ -521,9 +570,12 @@ After initial setup is complete, Update Retriever can be used to search for and 
 
    1. In the **Get new updates** panel, click **Add**.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/su/img3-23.png)
 
 _Figure 3-23. Getting new updates with Update Retriever, first time setup._
+</div>
 
    2. In the **Manage systems list** window, set the triplet information for a system by doing the following:
 
@@ -533,6 +585,8 @@ _Figure 3-23. Getting new updates with Update Retriever, first time setup._
 	- d) Click **Add** and then click **Save**. You can do this for multiple model + operating system combinations. Once the systems list is saved, check the box next to the systems to search for and click **Next**. Update Retriever will connect to the Lenovo CDN and search for updates applicable to the selected systems.
 	- e) **Accept** the License agreement to continue. There is a check box available to agree to all future license notices to avoid this dialog for future searches.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/su/img3-24.png)
 
 _Figure 3-24. Searching for updates._
@@ -541,29 +595,39 @@ _Figure 3-24. Searching for updates._
 ![](../img/su/img3-25.png)
 
 _Figure 3-25. Accept the License agreement._
+</div>
 
    3. On the next screen, select the check box next to the applicable updates to be downloaded. The results can be filtered using the filters available above the list of updates.
 
 ?>Note: If you want to select all the update packages found, simply select the **Select all** check box.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/su/img3-26.png)
 
 _Figure 3-26. Selecting update packages from search results._
+</div>
 
    4. Click **Next**. A confirmation summary of the selected updates per system is shown. Click **Finish** to begin downloading the selected updates. Update Retriever will place the updates in the repository folder and update the database file that associates the updates to the systems they support. A completion summary will be displayed at the end.
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
 ![](../img/su/img3-27.png)
 
 _Figure 3-27. Completed download list displayed._
+</div>
 
 
 ### 3.3.3 Manage Repository
 
 To view updates that have been downloaded into the local repository, click on the **Manage repository** tab and then select **Update view**.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/su/img3-28.png)
 
 _Figure 3-28. Viewing updates and managing the repository in Update Retriever._
+</div>
 
 The updates displayed can be by filtered by Operating system, System, Severity, Status and Type. In the Update view panel, the administrator can sort the list of updates by Update ID, Title, Type, Version, Reboot type, Severity, License, or Status by clicking the column header. Double-clicking the Update ID of an item will display the details from the package descriptor. It is recommended that the values displayed are not altered unless directed to do so by Lenovo support personnel. Altering any of the values will invalidate the signature on the package descriptor file which will cause System Update to no longer apply the update. Only Thin Installer can work with modified updates.
 
@@ -572,9 +636,12 @@ The updates displayed can be by filtered by Operating system, System, Severity, 
 
 The Administrator can modify the reboot type, severity, license, and status of one or more update packages in the repository. Select one or more packages by clicking the check box next to the item.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/su/img3-29.png)
 
 _Figure 3-29. Modifying updates._
+</div>
 
 The following table provides the values that an administrator can set for the selected update package(s).
 
@@ -585,7 +652,7 @@ The following table provides the values that an administrator can set for the se
 |     License        |     • (Blank)<br />      • Display<br />      • No display                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |     Status         |     • (Blank)<br />      • Test<br />      • Active<br /><br />      **Attention:** By   default, System Update and Thin Installer will only see packages marked as   Active.  The default value was set in   the first-time setup of Update Retriever. You can change the default value by   using the Modify settings option in the Update Retriever navigation pane.                                                                                                                                                                                                                                |
 
-_Table 3-2. Configurable values for an update package_
+<p style="text-align:center;padding-bottom:40px;font-style: italic;">Table 3-2. Configurable values for an update package</div>
 
   
 #### 3.3.3.2 Create Report
@@ -623,9 +690,12 @@ To create a report, do the following:
 
    !>Note: If the file name already exists in the designated folder, a warning window will be displayed. Click **Yes** to overwrite the old report or click **No** to decline overwriting.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/su/img3-30.png)
 
 _Figure 3-30. Create report with Update Retriever._
+</div>
 
   
 #### 3.3.3.3 Import Updates
@@ -646,9 +716,12 @@ To import updates, do the following:
    5. Click **Next**. Update Retriever searches the folder that you specified for updates. When the search completes, the Review updates to import window opens. You can double-click the title of an update to view its additional details.
    6. Select updates that you want to import or select **Select all** to include all updates displayed. Then click **Import**. The import process begins. When the import process completes, the Import completed window opens and the updates that you have selected are imported into your repository folder.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/su/img3-31.png)
 
 _Figure 3-31. Import Updates with Update Retriever_
+</div>
 
     
 ##### 3.3.3.3.1 Assigning Systems
@@ -685,9 +758,12 @@ To export the driver updates, do the following:
    6. Click **Finish**. The export starts, and you can view the export progress in the right pane.
    7. When the export completes, the results and the location link of the target folder are displayed. You can click the results link to view the export history and click the location link to open the target folder that contains the extracted driver updates.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/su/img3-32.png)
 
 _Figure 3-32. Export Updates with Update Retriever._
+</div>
 
 ?>Note: When exporting updates from a repository located on the network instead of a repository on a local drive, an Open File - Security Warning dialog will be displayed for each update that is to be extracted during the export process. To prevent the dialog from being displayed, you can change the Local intranet settings in the Microsoft Internet Explorer Web browser, either temporarily or permanently as you need.
 
@@ -722,21 +798,30 @@ Follow these steps to use the Manage Driver Pack option in Update Retriever:
    1. Click the Manage Driver packs tab, in Update Retriever.
    2. Specify a parent folder to hold &quot;driver packs&quot; generated by Update Retriever. Select a specific model using brand, series and model values that are available in the drop-down list.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/su/img3-33.png)
 
 _Figure 3-33. Managing Driver Packs in Update Retriever._
+</div>
 
    3. Select specific drivers. Only Windows 10 drivers are supported. Where available, the specific build(s) of Windows 10 supported drivers are listed in the driver title.
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
 ![](../img/su/img3-34.png)
 
 _Figure 3-34. Managing Driver Pack selections in Update Retriever._
+</div>
 
    4. Update Retriever downloads and extracts selected drivers. As Update Retriever executes each package to extract the files, users may notice application focus change. It is recommended to let Update Retriever finish before doing other work.
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
 ![](../img/su/img3-35.png)
 
 _Figure 3-35. Downloading and extracting selected Drivers in Update Retriever._
+</div>
 
 A collection of source files for the driver packages are generated, along with a CSV report text file.
 
@@ -747,9 +832,12 @@ A collection of source files for the driver packages are generated, along with a
 
 The administrator can configure Update Retriever to search for new updates automatically on a scheduled basis. The administrator is notified depending on how Update Retriever was configured, in the form of an e-mail or a balloon tooltip from the application icon in the notification area.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/su/img3-36.png)
 
 _Figure 3-36. Scheduling updates in Update Retriever._
+</div>
 
 The administrator can configure Update Retriever to search for new updates automatically on a scheduled basis by checking the box to **Enable automatic search for new updates**. The following options are available:
 
@@ -781,9 +869,12 @@ If in the future, if the administrator wants to have those updates displayed aga
    2. Check the box next to the update package(s) to unhide it or check the select all updates checkbox to unhide all the update packages in the list.
    3. There may be multiple models that use the same package ID. If the administrator only wants to unhide a package for a certain model type, they need to double click on the package ID and select from the system model type displayed. Once the model type is selected, click OK.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
  ![](../img/su/img3-37.png)
 
 _Figure 3-37. Unhide specific packages in Update Retriever._
+</div>
 
    4. Click the **Unhide** button in the bottom right corner of the tool. The update package will then be displayed in the **Update View**.
 
@@ -797,9 +888,12 @@ The **Modify settings** option allows the administrator to make changes to any o
 
 The **View history** function enables you to view the detailed information about the download history and export history.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/su/img3-38.png)
 
 _Figure 3-38. View download history in Update Retriever._
+</div>
 
 The download history provides detailed information about all updates that the Update Retriever has downloaded to the update repository, as well as updates that are hidden.
 
@@ -958,9 +1052,12 @@ The most common issues encountered with Update Retriever are typically related t
 
 Update Retriever does not create a log file. Instead it generates an Event Log which can be viewed by launching the Event Viewer app. In the Event Viewer, navigate to Application and Service logs -\&gt; Lenovo -\&gt; ThinkVantage -\&gt; Update Retriever to find two event logs that can be used to troubleshoot issues.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/su/img4-1.png)
 
 _Figure 4-1. Update Retriever event logs_
+</div>
 
 The following list contain some common issues and how to address them:
 
@@ -1263,7 +1360,7 @@ The following table lists the configurable and modifiable items for System Updat
 | **SchedulerLock**                                                                                                                        | HKLM\SOFTWARE\WOW6432Node\Lenovo\System   Update\Preferences\UserSettings\Scheduler        |
 | **SearchMode**                                                                                                                           | HKLM\SOFTWARE\WOW6432Node\Lenovo\System   Update\Preferences\UserSettings\Scheduler        |
 
-_Table 7-1. Advanced System Update Registry settings_
+<p style="text-align:center;padding-bottom:40px;font-style: italic;">Table 7-1. Advanced System Update Registry settings</div>
 
 
 ### 6.1.1 Using Active Directory
@@ -1366,7 +1463,7 @@ This table provides the settings for the User Settings policies.
 |                                   |     User                                                                                                                                              |     This setting enables you to use the mapdrv.exe /view  command to create an encrypted value for this field.  The default value is none.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |                                   |     Password                                                                                                                                          |     This setting enables you to use the mapdrv.exe /view  command to create an encrypted value for this field.  The default value is none.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
-_Table 7-2. Computer Configuration \> Administrative Templates \> ThinkVantage \> System Update \> User Settings._
+<p style="text-align:center;padding-bottom:40px;font-style: italic;">Table 7-2. Computer Configuration \> Administrative Templates \> ThinkVantage \> System Update \> User Settings.</div>
 
 **UserSettings Configurable Items**
 
@@ -1380,7 +1477,7 @@ The following table and example provide the settings and values for the **Connec
 |     Password                  |     Specifies the password to  use for the connection.                                                    |     Default value: None<br/><br/>     Possible values: Any string                                                                                                                                    |     This setting is used for  authentication to access  the HTTP proxy server.<br/><br/>     System Update will connect  to the   HTTP proxy server  defined in **ServerName** using  the username defined in **User**.  The end user is prompted for  this information when the  information is needed.          |
 |     AllowProxyFailToDirect    |     If enabled, System Update will  attempt a direct connection if  it cannot connect to proxy server.    |     Default vale:  No<br/><br/>     Possible values:<br/> Yes, No                                                                                                                                         |     This allows users to get updates  while connected to the Internet  away from the office network.                                                                                                                                                                                            |
 
-_Table 7-3. \UserSettings\Connection_
+<p style="text-align:center;padding-bottom:40px;font-style: italic;">Table 7-3. \UserSettings\Connection</div>
 
 
 
@@ -1398,7 +1495,7 @@ The following table and example provide the settings and values for the **Genera
 |     RepositoryLocation1                                                                                                                                                                                                                                                                                                                                                            |     Specifies the repository folder  path. The key value name should be  RepositoryLocation%N% where N is a  number between 1 and 20,  including 1 and 20.                                       |     Default value: SUPPORTCENTER<br/><br/>      Possible values:<br/>  •SUPPORTCENTER<br/> • A local folder path<br/> • A UNC path to a network share<br/> • A URL path to a web-hosted repository |     This setting specifies the repository location that  update packages will be downloaded from and installed.  The default setting is **SUPPORTCENTER** and enables  System Update to download updates from the Lenovo Help Center.    When SUPPORTCENTER is used it should always be specified as  RepositoryLocation1. You can also specify a repository path  on a network share drive or a URL to a web server, and this  will enable System Update to search for update packages in  the network share or web-hosted repository folder.  System Update will present the most current update packages  from the available repositories when multiple locations are  specified.    |
 |     UNCMaxAttempts                                                                                                                                                                                                                                                                                                                                                                 |     Specifies the maximum number of tries  that System Update will attempt when  connecting to a network share folder  before it completely fails.                                               |     Default value: 2<br/><br/>     Possible values: Any valid integer                                                                                                         |     System Update will attempt the number of tries when connecting  to a network share folder.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |                                                                  
 
-_Table 7-4. HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\Lenovo\System Update\Preferences\UserSettings\General_
+<p style="text-align:center;padding-bottom:40px;font-style: italic;">Table 7-4. HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\Lenovo\System Update\Preferences\UserSettings\General</div>
 
 
 ### 6.1.2 Recommendations for Managed Environments
@@ -1425,9 +1522,12 @@ Thin Installer provides an XML file, **ThinInstaller.exe.configuration** , to co
 
 The default configuration is shown as follows:
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/su/img7-1.png)
 
 _Figure 7-1. ThinInstaller.exe.configuration file._
+</div>
 
 
 |     Configurable Item       |     Description                                                                                                                                                                                                                                                                                           |     Value                                                                                                               |     Action                                                                                                                                                                                                                                                                                                                                                                                                                      |
@@ -1443,7 +1543,7 @@ _Figure 7-1. ThinInstaller.exe.configuration file._
 |     DebugEnable             |     Specifies whether Thin Installer should  create the log file named  Updates_ApplicabilityRulesTrace.txt.                                                                                                                                                                                              |     Default value: NO<br/><br/>     Possible values:<br/> • YES<br/> • NO                                                                   |     • If **YES**, Thin Installer will  create the log file.<br/>      • If **NO**, Thin Installer will  not create the log file.                                                                                                                                                                                                                                                                                                             |
 |     ContentMode             |     Refers to the status of the update packages.  Set the value depending on the status of  update packages in the repository.                                                                                                                                                                            |     Default value: Active<br/><br/>     Possible values:<br/> • Active<br/> • Test                                                          |     • If **Active**, Thin Installer will search the Update Retriever repository  for update packages in active status.<br/>      • If **Test**, Thin Installer will search  the Update Retriever repository for  update packages in test status.<br/><br/>       **Note**: If there is no database.xml file  in the Update Retriever repository folder,  Thin Installer will ignore the value of  ContentMode and search for all the update  packages.    |
 
-_Table 7-5. Description of configurable items._
+<p style="text-align:center;padding-bottom:40px;font-style: italic;">Table 7-5. Description of configurable items.</div>
 
 
 # 7 Appendix B: Mapdrv Utility
@@ -1471,7 +1571,7 @@ The strings stored in the **TVSUAPPLICATION** key are:
 | Pwd | The value of this string specifies the stored encrypted password for this share. |
 | NetPath | The value is generated by the MapDrv utility to indicate the actual connection path. It might be in IP dotted format if the **ServerName** string is not working. The actual connection path may not be the same as the stored **UNC** value. |
 
-_Table 5-8. The MapDrv settings and values_
+<p style="text-align:center;padding-bottom:40px;font-style: italic;">Table 8-1. The MapDrv settings and values</div>
 
 The MapDrv utility also enables an administrator to use the encryption engine to generate an encrypted user name and password, which can be used to pre-populate network share information on multiple systems. Using the encryption engine in this manner does not update the registry on the system.
 
@@ -1492,7 +1592,7 @@ The command-line interface to the MapDrv utility is as follows:
 | /timeout seconds | Specifies the connection timeout value to store. The default is 30 seconds. |
 | /s | Enables a silent operation. |
 
-_Table 5-9. Parameters_
+<p style="text-align:center;padding-bottom:40px;font-style: italic;">Table 8-2. Parameters</div>
 
 The return code is **0** if an operation was successful. Otherwise, the return code is greater than **0**.
 
