@@ -111,7 +111,7 @@ The most recent system BIOS can be found at [https://pcsupport.lenovo.com/](http
   
 ### Windows DASH client software
 
-DASH Windows software can be found at [https://pcsupport.lenovo.com/](https://pcsupport.lenovo.com/). Locate the support page for a specific model and select the Drivers &amp; Software menu item on the left side of the page. (Figure 7) Select **Manual Update** , and browse to **Networking: LAN (Ethernet)**
+DASH Windows software can be found at [https://pcsupport.lenovo.com/](https://pcsupport.lenovo.com/). Locate the support page for a specific model and select the Drivers &amp; Software menu item on the left side of the page. Select **Manual Update** , and browse to **Networking: LAN (Ethernet)**
 
 Documentation for attended and unattended installation will be available with the application download and in the installation directory. The default installation location is _C:\Program Files (x86)\AMD Management Console._
 
@@ -133,7 +133,7 @@ AMC supports the following DASH functionality :
 - Firmware Update
 - Alerts
 
-**Note:** Before performing a discovery operation, make sure that the authentication details are correct. Refer to 2.2 Authentication.
+**Note:** Before performing a discovery operation, make sure that the authentication details are correct. Refer to Authentication.
 
 ## Discovery
 
@@ -162,7 +162,7 @@ AMC will scan each IP address in that range and find out if the system with that
   
 ### Active Directory
 
-Each system in the domain is checked for AMD manageability when AMPS is first installed. After installation, system discovery can be done manually or on a schedule. (See [Authentication](https://github.com/CDRT/docs/blob/branch1/dash/dash_top.md#authentication) section above.)
+Each system in the domain is checked for AMD manageability when AMPS is first installed. After installation, system discovery can be done manually or on a schedule. (See [Authentication](#authentication) section above.)
 
 ## Power
 
@@ -848,7 +848,7 @@ To control the power state of a collection node, perform the following steps:
 
 ![DASH Device actions](../img/dash/27-dash.png)
 
-**NOTE:** See [Power States](https://github.com/CDRT/docs/blob/branch1/dash/dash_top.md#power-states) for PC supported power states table.
+**NOTE:** See [Power States](#power-states) for PC supported power states table.
 
   
 ### Scheduled Power Control
@@ -889,7 +889,7 @@ Alternatively, on the Configuration Manager ribbon, select the **DASH** tab, the
   
 ### USB Redirection
 
-USB Redirection provides a Virtual USB device which reads data from a remote image file, allowing the BIOS to boot from a remote image file such as _.iso_. See also [USB Redirection]() above.
+USB Redirection provides a Virtual USB device which reads data from a remote image file, allowing the BIOS to boot from a remote image file such as _.iso_. See also [USB Redirection](#usb redirection) above.
 
 The ISO image file must be available as a _http_ web URL.
 
@@ -911,17 +911,17 @@ The **USB Redirection** screen appears and displays the following:
   
 ### Boot to Text Image
 
-See [Boot to Text Image]()section above. The steps are identical in AMD Management Console and AMPS.
+See [Boot to Text Image](#boot-to-text-image)section above. The steps are identical in AMD Management Console and AMPS.
 
   
 ### Boot to BIOS (KVM Profile)
 
-See [Boot to BIOS [KVM Profile]]() section above. The steps are identical in AMD Management Console and AMPS.
+See [Boot to BIOS [KVM Profile]](#boot-to-bios-[kvm-profile]) section above. The steps are identical in AMD Management Console and AMPS.
 
   
 ### KVM Redirection
 
-See [KVM Redirection]() section above_._ The steps are identical in AMD Management Console and AMPS.
+See [KVM Redirection](#kvm-redirection) section above. The steps are identical in AMD Management Console and AMPS.
 
   
 ### Inventory
