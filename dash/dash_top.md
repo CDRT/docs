@@ -185,10 +185,12 @@ The table below lists all supported power states.
 | Hibernate | 7 | Hibernating/Hibernate | Transition the system to hibernation state. – write system context to non-volatile storage, power off the system and devices. | G1/S4 |
 | Power Off – Soft | 8 | Off/Immediate Power Off | Initiate the transition of the system to off state, in which the system consumes a minimal amount of power. | G2/S5 |
 | Power Cycle (Off Hard) | 9 | N/A | Transition the system to power off state, followed by a transition to on state | G3 to G0/S0 |
+| Power Off - Soft Graceful | 12 | Off/Shutdown | Perform an orderly transition to power off state, in which the system consumes a minimal amount of power | G2/S5 |
+| Power Off - Hard Graceful | 13 | N/A | Perform an orderly transition to power off state in which the power consumption is zero except for the real-time clock. | G3 |
+| Power Cycle (Off – Soft Graceful) | 15 | Restart | Perform an orderly transition of the system to power off state, in which the system consumes a minimal amount of power, followed by a transition to on state | G2/S5 to G0/S0 |
+| Power Cycle (Off - Hard Graceful) | 16 | N/A | Transition the system to power off state, , in which the power consumption is zero except for the real-time clock, followed by a transition to on state | G3 to G0/S0 |
+| Diagnostic Interrupt (NMI) | 11 | Immediate Diagnostic Interrupt | Assert an NMI on the system. | 
 | Master Bus Reset | 10 | Immediate Warm Reset | Perform hardware reset on the system. |
- |
-
-
   
 ### Power Operation on a Single System
 
@@ -288,6 +290,7 @@ This allows the BIOS to boot from a remote ISO image. The ISO Image file must be
 
 AMC has its own ISO webserver. Use AMC to initiate an action to attach the managed systems&#39; USB to a remote URL. This operation can be performed against a single system or on a group of systems. Place ISOs in C:/AMC-ISO and http://xxx.xx.xxxx:3274/ can be used as USB URL (e.g. http://10.10.10.2:3274/dos.iso.)
 
+![USB Redirection](../img/dash/38-dash.png)
   
 ### Boot to Text Image
 
@@ -296,6 +299,8 @@ The AMC Boot to Text Image feature provides an environment where user can boot t
   
 ### Boot to BIOS [KVM Profile]
 
+
+
 **Boot to BIOS** implements the DMTF DASH KVM profile and allows the user to boot the managed system to the BIOS setup screen, and remotely connect to the BIOS screen via the VNC viewer. Through the VNC viewer, the user can access the BIOS screen and interact with mouse and keyboard.
 
 To boot to BIOS:
@@ -303,8 +308,10 @@ To boot to BIOS:
 1. Select the target system you wish to boot into BIOS KVM profile
 2. Either right click on the system and select **Boot to BIOS** menu item or click on the ribbon icon **Boot to BIOS** image.
 3. When the user starts the **Boot to BIOS** workflow by clicking the Start button, the following tasks are initiated:
-4. KVM enable command is sent to the managed system.
-5. The managed system is rebooted.
+    - KVM enable command is sent to the managed system.
+    -  The managed system is rebooted.
+
+![boot to BIOS](../img/dash/39-dash.png)
 
 After the managed system boots to BIOS setup screen and the VNC server is ready, VNC viewer is launched.
 
@@ -313,13 +320,15 @@ After the managed system boots to BIOS setup screen and the VNC server is ready,
   
 ### Remote Access
 
-Remote Access feature provides support for launching of In-band KVM and Remote Desktop tools.
+The AMC **Remote Access** feature provides support for launching of In-band KVM and Remote Desktop tools.
 
 To use In-band KVM feature, ensure the relevant Windows driver package released by the network interface provider is installed on the DASH system.
 
+![remote access on toolbar](../img/dash/40-dash.png)
+
 ## Client Configuration - DASHConfigRT
 
-**DASHConfigRT** is an AMD tool packaged with **AMC** , used to script DASH configuration. The instructions and tool will be in the installation folder, which by default is _C:\Program Files (x86)\AMD Management Console\DASHConfigRT._
+**DASHConfigRT** is an AMD tool packaged with **AMC**, used to script DASH configuration. The instructions and tool will be in the installation folder, which by default is _C:\Program Files (x86)\AMD Management Console\DASHConfigRT._
 
 **NOTE:** _DASHConfigRT.exe_ is the Realtek-specific version of this tool. The name &quot;DASHConfig&quot; is commonly used to reference the tool regardless of version.
 
