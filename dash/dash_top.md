@@ -187,14 +187,7 @@ The table below lists all supported power states.
 | Power Cycle (Off Hard) | 9 | N/A | Transition the system to power off state, followed by a transition to on state | G3 to G0/S0 |
 | Master Bus Reset | 10 | Immediate Warm Reset | Perform hardware reset on the system. |
  |
-| Diagnostic Interrupt (NMI) | 11 | Immediate Diagnostic Interrupt | Assert an NMI on the system. |
- |
-| Power Off - Soft Graceful | 12 | Off/Shutdown | Perform an orderly transition to power off state, in which the system consumes a minimal amount of power | G2/S5 |
-| Power Off - Hard Graceful | 13 | N/A | Perform an orderly transition to power off state in which the power consumption is zero except for the real-time clock. | G3 |
-| Master Bus Reset Graceful | 14 | Warm Restart | Perform an orderly shutdown of the system followed by hardware reset |
- |
-| Power Cycle (Off – Soft Graceful) | 15 | Restart | Perform an orderly transition of the system to power off state, in which the system consumes a minimal amount of power, followed by a transition to on state | G2/S5 to G0/S0 |
-| Power Cycle (Off - Hard Graceful) | 16 | N/A | Transition the system to power off state, , in which the power consumption is zero except for the real-time clock, followed by a transition to on state | G3 to G0/S0 |
+
 
   
 ### Power Operation on a Single System
