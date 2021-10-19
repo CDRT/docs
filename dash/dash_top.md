@@ -665,11 +665,11 @@ AMPS supports up to 3 authentication entries. Each authentication entry has an a
 To configure Active Directory authentication using Configuration Manager console, navigate to **Administration/DASH Management/DASH Configuration** :
 
 1. Right click the server listed and select **Properties**
-2. Go to **Authentication** tab.
-3. Check &quot;Enable Active Directory Authentication&quot;.
-4. Enter the DASH systems domain user and password created earlier.
-5. Check &quot;Use Active Directory as Default Authentication.&quot;
-6. Click **OK**.
+2. Under **Authentication Schemas**, add a unitque _Auth Identifier_ set to schema _Active Directory_
+3. Enter the DASH systems domain user and password created earlier.
+4. Click **OK**.
+
+![AMPS Authentication](../img/dash/41-dash.png)
 
 ## Management and Transport Ports
 AMPS can communicate with the managed DASH computer systems on either HTTP or HTTPS.
@@ -690,7 +690,7 @@ The Wake-on-LAN packet is not guaranteed to wake all the devices in the collecti
 
 To configure the DASH Wakeup feature, perform the following steps:
 
-- Ensure that a working **authentication scheme** is in place (See Authentication section above)
+- Ensure that a working **authentication scheme** is in place (See [Authentication](#Configure-Authentication-for-AMPS) section above)
 
 - In the **DASH Configuration** screen select the **DASH Wakeup** check box, if already not selected.
 - In the **Software Deployment Package,** be sure to enable the Wake-on-LAN option and set a valid future schedule when creating the software deployment package for a device collection.
