@@ -146,9 +146,9 @@ It is recommended to keep System Update running on the most current version; how
 
    1. Using regedit.exe, navigate to the following registry entry:
 
-    ```HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\Lenovo\System Update \Preferences\UCSettings\HTTPSHelloSettings\ServerName```
+    ```HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\Lenovo\System Update``` <br/> ```\Preferences\UCSettings\HTTPSHelloSettings\ServerName```
 
-   2. Delete the ServerName string value, for example: https://download.lenovo.com/ibmdl/pub/pc/pcbs/agent/
+   2. Delete the ServerName string value, for example: <br/> https://download.lenovo.com/ibmdl/pub/pc/pcbs/agent/
    3. Click **OK**.
 
 ## 2.2 Installing Thin Installer
@@ -951,7 +951,7 @@ The following is a list of strings that can be searched for in the log file to f
 
 Example:
 
->Info 2020-01-03 , 05:13:56  
+>Info 2020-01-03 , 05 : 13 : 56  
 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;at Tvsukernel.CommandLineParameters.ValidateArguments(String[] args)  
 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Message: The command is: 
 >-search R -action INSTALL -exporttowmi -nolicense -noicon -noreboot -includerebootpackages 1,3,4,5
@@ -987,7 +987,7 @@ Example:
 
 Example:
 
->Info 2019-10-28 , 05:29:39
+>Info 2019-10-28 , 05 : 29 : 39
 >
 >	at Tvsu.Sdk.SuSdk.InstallUpdates(Update[] updatesInstall, Update[] updatesDefer, downloadingDelegate downDelegate)
 >
@@ -1010,10 +1010,10 @@ In the Update\_ApplicabilityRulesTrace.txt file, installed updates will be shown
 		-DetectInstall(False),
 			-Or(False),
 				-_Driver(False),
-					-HardwareID(NE), PCI\VEN\_8086&DEV\_9DA4
+					-HardwareID(NE), PCI\VEN_8086&DEV_9DA4
 					-Version(NE), 10.1.15.6^
 				-_Driver(False),
-					-HardwareID(NE), PCI\VEN\_8086&DEV\_02A4
+					-HardwareID(NE), PCI\VEN_8086&DEV_02A4
 					-Version(NE), 10.1.27.2^
 	
 	-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-
@@ -1050,7 +1050,7 @@ If assistance is required in troubleshooting Thin Installer issues, please consi
 
 The most common issues encountered with Update Retriever are typically related to the catalogs and the content being pulled from Lenovo servers. Within the process used by Update Retriever to process catalogs for specified models, there are several CRC checks performed on the files that are downloaded. There may be times when the catalogs and the content are out of synch as the catalogs are being refreshed. In this case Update Retriever may report that it failed to download an update or may not offer any update that should be available. These types of issues are typically addressed automatically due to the continuous nature of the catalog maintenance processes but may take a day or two to be resolved. In other cases there may be an incorrect CRC value specified for a file causing it to continuously fail to download. These issues will be identified in the error messages presented by Update Retriever and can be reported in the Enterprise Client Management forum which can be linked to from the Enterprise Deployment Solutions page ([https://support.lenovo.com/us/en/solutions/ht104232](https://support.lenovo.com/us/en/solutions/ht104232)). Please specify the machine type (e.g. 20AN) and operating system combination that was used in the search.
 
-Update Retriever does not create a log file. Instead it generates an Event Log which can be viewed by launching the Event Viewer app. In the Event Viewer, navigate to Application and Service logs -\&gt; Lenovo -\&gt; ThinkVantage -\&gt; Update Retriever to find two event logs that can be used to troubleshoot issues.
+Update Retriever does not create a log file. Instead it generates an Event Log which can be viewed by launching the Event Viewer app. In the Event Viewer, navigate to Application and Service logs > Lenovo > ThinkVantage > Update Retriever to find two event logs that can be used to troubleshoot issues.
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
@@ -1065,7 +1065,8 @@ The following list contain some common issues and how to address them:
 - _An update&#39;s Reboot Type was changed from &quot;Forces Reboot&quot; to &quot;Reboot Required&quot; in Update Retriever; however, systems still reboot when the update is installed:_ In Update Retriever this setting is just a flag to indicate how an update behaves. Update Retriever cannot change how an update was designed to run. Therefore, it is typically recommended to not change this value for any updates using Update Retriever.
 - _Update Retriever has been installed on a new system; however, the System List is empty:_ The System List is recorded in the registry and can be copied from the old system to the new system. Use regedit.exe to copy the &quot;Systems&quot; value from 
 
-	```Computer\HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\Lenovo\Update Retriever\Preferences\UserSettings\General```
+   ```Computer\HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\Lenovo```
+   ```\Update Retriever\Preferences\UserSettings\General```
 
 
 # 5 Command Line Reference
@@ -1135,11 +1136,11 @@ Optional. Specifies by number the reboot types to include in the set of updates 
 
 Optional. Specifies by number a filter for the package types to be applied. Multiple package types can be specified by separating with comma.
 
-   **0** : _Reserved – unused at this time._
-   **1** : Application
-   **2** : Driver
-   **3** : Bios
-   **4** : Firmware
+   **0** : _Reserved – unused at this time._<br/>
+   **1** : Application<br/>
+   **2** : Driver<br/>
+   **3** : Bios<br/>
+   **4** : Firmware<br/>
 
 ?>Note: When used with -includerebootpackages, the resulting set of updates is the intersection of both filters.
 
@@ -1278,7 +1279,7 @@ Optional. Specifies the full path to the local repository location. This can be 
 
 Optional. Causes Thin Installer to store update history data in a WMI table:
 
-root\Lenovo\Lenovo\_Updates\
+	root\Lenovo\Lenovo\_Updates\
 
 **-log**
 
@@ -1344,7 +1345,7 @@ The following table lists the configurable and modifiable items for System Updat
 | **ServerName** for the Self-Update process<br/><br/>   **Note:** The value can be set to an empty string to prevent System Update from  updating itself | HKLM\SOFTWARE\WOW6432Node\Lenovo\System Update\Preferences\UCSettings\HTTPSHelloSettings   |
 | **RetryLimit** for HTTPSPackageSettings.                                                                                                  | HKLM\SOFTWARE\WOW6432Node\Lenovo\System Update\Preferences\UCSettings\HTTPSPackageSettings |
 | **RetryWaitTime** for HTTPSPackageSettings.                                                                                               | HKLM\SOFTWARE\WOW6432Node\Lenovo\System Update\Preferences\UCSettings\HTTPSPackageSettings |
-| Proxy server connection settings.<br/> - CSMaxAttempts<br/> - Password<br/> - User                                                                   | HKLM\Software\WOW6432Node\Lenovo\System Update\Preferences\UserSettings\Connection         |
+| Proxy server connection settings<br/> - CSMaxAttempts<br/> - Password<br/> - User                                                                   | HKLM\Software\WOW6432Node\Lenovo\System Update\Preferences\UserSettings\Connection         |
 | **DebugEnable**                                                                                                                          | HKLM\SOFTWARE\WOW6432Node\Lenovo\System Update\Prefereces\UserSettings\General             |
 | **DisplayLicenseNotice**                                                                                                                 | HKLM\SOFTWARE\WOW6432Node\Lenovo\System Update\Preferences\UserSettings\General            |
 | **DisplayLicenseNoticeSU**                                                                                                               | HKLM\SOFTWARE\WOW6432Node\Lenovo\System Update\Preferences\UserSettings\General            |
@@ -1370,7 +1371,7 @@ Active Directory is a directory service that gives administrators the ability to
    - Command line execution
    - Mapped Network Drive settings
 
-  
+
 #### 6.1.1.1 Managing Network Share Repositories
 
 This section provides a description of the policy settings for the network share repository. Setting these policies will prompt an end user for a username and password when the System Update end user interface is launched or when a scheduled update task runs. When an end user authenticates into a domain and has appropriate rights to access the network share repository, then no prompt for the username and password is displayed on the System Update end user interface.
@@ -1415,7 +1416,8 @@ To add the ADMX file and customize the settings, do the following:
 
    8. Navigate the Group Policy Editor to the following location:
 
-	```Computer Configuration\Policies\Administrative Templates\ThinkVantage\System Update\User Settings\General\RepositoryLocation1```
+	```Computer Configuration\Policies\AdministrativeTemplates\ ```
+	```ThinkVantage\System Update\UserSettings\General\RepositoryLocation1 ```
 
    9. Double-click Repository Location.
    10. In the Local Repository Location 1 field, change the value from SUPPORTCENTER to your network repository share or web repository, for example:
@@ -1428,12 +1430,13 @@ To add the ADMX file and customize the settings, do the following:
 
    11. Click Apply.
 
+
 To apply policy settings immediately after configuring the settings for the ADM file, do the following:
 
    1. From the Windows **Start** menu, click **Run**.
    2. Type _ **gpedit.msc /force** _ and then click **OK**.
 
-  
+
 #### 6.1.1.3 Group Policy Settings
 
 The following tables provide policy settings for System Update.
@@ -1444,13 +1447,13 @@ This table provides the settings for the User Settings policies.
 
 |     Policy                        |     Setting                                                                                                                                           |     Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|     Connection                    |     Allow Proxy Fail to Direct                                                                                                                        |     When enabled, if the proxy server cannot be reached, then System  Update will attempt a direct connection instead.  If disabled and  the proxy server cannot be reached, then System Update will  present an error message and stop.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|     **Connection**                    |     Allow Proxy Fail to Direct                                                                                                                        |     When enabled, if the proxy server cannot be reached, then System  Update will attempt a direct connection instead.  If disabled and  the proxy server cannot be reached, then System Update will  present an error message and stop.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |                                   |     User Name                                                                                                                                         |     This setting specifies the user name for connection.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |                                   |     User Password                                                                                                                                     |     This setting specifies the password for connection.  It stores   the encrypted password of proxy.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |                                   |     Proxy/*/AutoConfigURL<br/>      **Note:** * refers to the number  of different proxy servers  that may be encountered.  The count must not exceed five.    |     This setting stores the automatic configuration Uniform Resource  Locator (URL) path such as file://c:/Proxy1.pac  or http://10.10.1.1/Proxy1.pac.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |                                   |     Proxy/*/ProxyServer<br/>      **Note:** *   refers to the number  of different proxy servers  that may be encountered.  The count must not exceed five.    |     This setting stores the proxy server location such as  http=10.10.1.1:8080 or socks=10.10.1.1:1080.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |                                   |     Proxy/*/ProxyEnable<br/>      **Note:** * refers to the number  of different proxy servers  that may be encountered.  The count must not exceed five.      |     This setting specifies whether proxy is enabled.  “0” stands for the disabled status and “1” stands  for the enabled status.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|     General                       |     Repository Location                                                                                                                               |     This setting specifies the repository location that update  packages will be downloaded from and installed.  The default setting is **SUPPORTCENTER** and enables System  Update to download updates from the Lenovo Help Center.  When SUPPORTCENTER is used it should always be specified  as Repository Location #1. You can also specify a repository  path on a network share drive or a URL to a web server,  and this will enable System Update to search for update  packages in the network share or web-hosted repository folder.  System Update will present the most current update packages  from the available repositories when multiple locations are  specified.                                         |
+|     **General**                       |     Repository Location                                                                                                                               |     This setting specifies the repository location that update  packages will be downloaded from and installed.  The default setting is **SUPPORTCENTER** and enables System  Update to download updates from the Lenovo Help Center.  When SUPPORTCENTER is used it should always be specified  as Repository Location #1. You can also specify a repository  path on a network share drive or a URL to a web server,  and this will enable System Update to search for update  packages in the network share or web-hosted repository folder.  System Update will present the most current update packages  from the available repositories when multiple locations are  specified.                                         |
 |                                   |     UNC Max Attempts                                                                                                                                  |     This setting specifies the maximum number of local  repository authentication attempts allowed.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |                                   |     Ignore Local License                                                                                                                              |     This setting enables you to show or hide the license dialog when  System Update is downloading and installing an update package  located in a repository folder such as the network share repository.<br/><br/>      • If **YES**, the license dialog will not be displayed when a repository  is used to store update   packages.<br/><br/>    **Note:** If you obtain packages directly from the Lenovo Help Center  and do not use a repository for update package storage,  the IgnoreLocalLicense value will be ignored and the  license dialog will be displayed.<br/><br/>           • If **NO**, the license dialog will be displayed when a  repository is used to store update packages.                                                              |
 |                                   |     IgnoreRMLicCRCSize                                                                                                                                |     This setting enables users to enable or disable  the CRC and file size check functions when System  Update downloads update packages from the  Lenovo Help Center Web site.     You can set the value to **YES** or **NO**:<br/>      • If **YES**, System Update will ignore these  files and will not check the file CRC and file size.<br/>        • If **NO**, System Update will check the file  CRC and file size.<br/><br/>      **Note:** System Update does not check file size and  corruption of readme files and license agreement  files when you download packages from a local  repository even if you set this value to NO.                                                                                                                   |
@@ -1458,8 +1461,8 @@ This table provides the settings for the User Settings policies.
 |                                   |     Metrics Enabled                                                                                                                                   |     This setting enables or disables the Metrics collection.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |                                   |     Administrator Command Line                                                                                                                        |     This setting enables the administrator to specify the desired  command-line when launching the tvsu.exe file with the parameter /CM.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |                                   |     OfferEnabled                                                                                                                                      |     **OBSOLETE**:  No longer used.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|     Scheduler                     |     Scheduler Lock                                                                                                                                    |     This setting enables you to show, hide, disable, or lock  the **Schedule updates** option in the System Update user interface.<br/><br/>     • If **SHOW**, the **Schedule updates** option is available  in the left navigation pane.<br/>      • If **HIDE**, the Schedule updates option is not  visible to the end user.<br/><br/>    **Note**: System Update for Windows 7 and later  operating systems provides a weekly scheduler setting.  However, you also can use the Task Scheduler tool  on Windows 7 and later operating systems to create a  customized scheduler for System Update to provide more  scheduler options to   achieve the best scheduling  practice. When using Task Scheduler, it is  recommended to change this setting to **HIDE**.    |
-|     Mapped Network Drive          |     UNC                                                                                                                                               |     This setting specifies the UNC location for the mapped  network drive (format: \\**server\share**).  The default value is none                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|     **Scheduler**                     |     Scheduler Lock                                                                                                                                    |     This setting enables you to show, hide, disable, or lock  the **Schedule updates** option in the System Update user interface.<br/><br/>     • If **SHOW**, the **Schedule updates** option is available  in the left navigation pane.<br/>      • If **HIDE**, the Schedule updates option is not  visible to the end user.<br/><br/>    **Note**: System Update for Windows 7 and later  operating systems provides a weekly scheduler setting.  However, you also can use the Task Scheduler tool  on Windows 7 and later operating systems to create a  customized scheduler for System Update to provide more  scheduler options to   achieve the best scheduling  practice. When using Task Scheduler, it is  recommended to change this setting to **HIDE**.    |
+|     **Mapped Network Drive**          |     UNC                                                                                                                                               |     This setting specifies the UNC location for the mapped  network drive (format: \\**server\share**).  The default value is none                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |                                   |     User                                                                                                                                              |     This setting enables you to use the mapdrv.exe /view  command to create an encrypted value for this field.  The default value is none.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |                                   |     Password                                                                                                                                          |     This setting enables you to use the mapdrv.exe /view  command to create an encrypted value for this field.  The default value is none.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
@@ -1513,7 +1516,7 @@ When a custom scheduled task is being used to control System Update, it is recom
 
 | HKLM:\SOFTWARE\WOW6432Node\Lenovo\System Update\Preferences\UserSettings\Scheduler |
 | --- |
-| SchedulerAbility: &nbsp;&nbsp; NO |
+| SchedulerAbility: &nbsp; NO |
 
 
 ## 6.2 Thin Installer
@@ -1585,8 +1588,8 @@ The command-line interface to the MapDrv utility is as follows:
 | **Parameter** | **Description** |
 | --- | --- |
 | /function | Identifies the function to provide. Valid values are store, connect, disconnect, and display. |
-| app id | Identifies the application. The value specified is used to form the registry key name that contains the network share information, for example: _ **TVSUAPPLICATION** _. |
-| /unc sharename | Identifies the network share name to store. The share name should be in the UNC form, for example: [_ **\\myserver\myshare** _](smb://myserver/myshare) |
+| app id | Identifies the application. The value specified is used to form the registry key name that contains the network share information, for example:  **TVSUAPPLICATION** . |
+| /unc sharename | Identifies the network share name to store. The share name should be in the UNC form, for example: [**\\\myserver\myshare**](smb://myserver/myshare) |
 | /user username | Specifies the user name to store. |
 | /pw password | Specifies the password to store. |
 | /timeout seconds | Specifies the connection timeout value to store. The default is 30 seconds. |

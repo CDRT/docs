@@ -147,3 +147,287 @@ When MAC Address PassThrough is Enabled you will still need the Realtek NIC driv
 
 ![](../img/guides/docks/img4.png)
 </div>
+
+?>Note:Power Pass-Through on Skylake ThinkPad 13 is not supported with USB-C dock. The dock will charge the system with the supplied power adapter but you cannot power the system on or off via the dock's power switch.
+
+
+<hr/>
+
+# ThinkPad Thunderbolt 3 Essential Dock (40AV0135)
+
+The Lenovo Thunderbolt 3 Essential Dock (40AV), powered by Intel’s Thunderbolt 3 technology, is designed to boost your productivity with dual 4k displays, blazing-fast 10Gbps data rates, and a range of optimized ports. A single 65W power cable connected to a Thunderbolt or USB-C notebook is all you need to get to work.
+
+
+Top Features for Thunderbolt 3 Essential Dock
+   - Single Cable Convenience: One cable connection delivers data, display and power to USB-c or Thunderbolt systems
+   - High Performance: Enjoy Dual 4K displays and blazing-fast 10Gbps data transfer rates with Intel Thunderbolt 3 technology inside
+   - Enterprise IT ready: Advanced network security and management features as PXE boot, WOL and MAC address pass thru on selected ThinkPad Notebooks.
+   
+[>> More Information & Drivers](https://support.lenovo.com/us/en/solutions/pd500373)
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px;size:150px">
+
+![](../img/guides/docks/img5.png)
+![](../img/guides/docks/img6.png)
+</div>
+
+[Display Capabilities](https://support.lenovo.com/us/en/solutions/pd029622#Lenovo%20Thunderbolt%203%20Essential%20Dock)
+
+## Connectivity
+
+>Front ports:<br/>
+>   - 1 USB 3.0<br/>
+>   - 1 Thunderbolt 3<bt/>
+>   - 1 Headphone/Mic<br/>
+>
+>Rear ports:<br/>
+>   - 1 USB 3.0 with full-time power<br/>
+>   - 1 DisplayPort<br/>
+>   - 1 HDMI<br/>
+>   - 1 Thunderbolt 3 - To Computer with power<br/>
+>   - 1 Thunderbolt 3<br/>
+>   - 1 Ethernet<br/>
+
+## Deployment 
+
+<table class="deploymentTable">
+<td class="tdDT" rowspan="11" style="width:15%">
+<h5 align="center">Deployment (MDT & SCCM)</h5>
+</td>
+<tr>
+<td rowspan="4" class="tdDT">
+<h5>Query: </h5>
+<tr>
+<td class="tdDT">Ethernet </td>
+<td class="depTableFont">USB\VID_17EF&PID_3082 </td>
+</tr>
+<tr>
+<td class="tdDT">Audio</td>
+<td class="depTableFont">USB\VID_17EF&PID_3092&MI_00</td>
+</tr>
+<tr>
+<td class="tdDT">Billboard </td>
+<td class="depTableFont">USB\VID_17EF&PID_308D</td>
+</tr>
+</td>
+</tr>
+<tr rowspan="1">
+<td rowspan="4" class="tdDT">
+<h5>Driver(s): </h5>
+<tr>
+<td class="tdDT">WinPE </td>
+<td class="depTableFont"><a href="https://pcsupport.lenovo.com/solutions/ht101981" target="_blank">https://pcsupport.lenovo.com/us/en/solutions/ht101981</a></td>
+</tr>
+<tr>
+<td class="tdDT">Windows</td>
+<td class="depTableFont"><a href=https://pcsupport.lenovo.com/downloads/DS542694" target="_blank">https://pcsupport.lenovo.com/downloads/DS542694</a></td>
+</tr>
+<tr>
+<td class="tdDT">Firmware</td>
+<td class="depTableFont">We do not recommend deploying firmware updates during OSD deployment<br></td>
+</tr>
+</tr>
+</td></tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>PXE Capable: </h5>
+</td>
+<td class="depTableFont">Yes &nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>Driver Deployment: </h5>
+</td>
+<td class="depTableFont"><b>MDT</b> (deploy as hardware app in task sequence)<br>
+&nbsp;&nbsp;&nbsp;As Application (tbt_es_dock_driver_v1006.exe /VERYSILENT) <br><br>
+<b>SCCM </b><br> &nbsp;&nbsp;&nbsp;Deploy As Package in task sequence (tbt_es_dock_driver_v1006.exe /VERYSILENT)
+<br> <b>*Restart required*</b> </td>
+</tr>
+</table>
+
+<hr/>
+
+# ThinkPad Thunderbolt 3 Workstation Dock (40AN0170, 40AN0230) / ThinkPad Thunderbolt 3 Dock Gen 2 (40AN0135)
+
+This Intel® Thunderbolt™ Chipset powered Thunderbolt Dock Gen 2 (40AN) invented to boost productivity with extended compatibility on both USB-C and Thunderbolt enabled laptop. Expand your horizons with multiple 4K displays, and transfer files at record speed. It’s everything you need to enhance your creativity and efficiency today. Maximize Your Productivity with a Thunderbolt 3 Dock. Powerful, versatile and incredibly fast!
+
+Top Features for Thunderbolt Dock Gen 2
+   - Expand compatibility on USB-C and Thunderbolt systems
+   - Dual UHD Displays provide the best video experience
+   - Enhanced performance with professional video solution and exclusive network manageability
+	
+[>> More Information & Drivers](https://pcsupport.lenovo.com/us/en/solutions/pd500265)
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px;">
+
+![](../img/guides/docks/twd1.png)
+![](../img/guides/docks/twd2.png)
+![](../img/guides/docks/twd3.png)
+</div>
+
+[Display Capabilities](https://support.lenovo.com/us/en/solutions/pd029622#Thunderbolt%203%20Workstation%20Dock%20Gen%202)
+
+## Connectivity
+
+>Front ports:
+>   - 1 USB 3.0 
+>   - 1 Thunderbolt 3
+>   - 1 Headphone/Mic
+>
+>Rear ports:
+>   - 4 USB 3.0 - 1 with full-time power
+>   - 2 DisplayPort
+>   - 2 HDMI
+>   - 1 Thunderbolt - To Computer with power
+>   - 1 Ethernet
+
+
+## Deployment
+
+<table class="deploymentTable">
+<td class="tdDT" rowspan="11" style="width:15%">
+<h5 align="center">Deployment (MDT & SCCM)</h5>
+</td>
+<tr>
+<td rowspan="4" class="tdDT">
+<h5>Query: </h5>
+<tr>
+<td class="tdDT">Ethernet </td>
+<td class="depTableFont">USB\VID_17EF&PID_3082 </td>
+</tr>
+<tr>
+<td class="tdDT">Audio</td>
+<td class="depTableFont">USB\VID_17EF&PID_3083 </td>
+</tr>
+<tr>
+<td class="tdDT">Billboard </td>
+<td class="depTableFont">USB\VID_2109&PID_8887</td>
+</tr>
+</td>
+</tr>
+<tr rowspan="1">
+<td rowspan="4" class="tdDT">
+<h5>Driver(s): </h5>
+<tr>
+<td class="tdDT">WinPE </td>
+<td class="depTableFont"><a href="https://pcsupport.lenovo.com/solutions/ht101981" target="_blank">https://pcsupport.lenovo.com/us/en/solutions/ht101981</a></td>
+</tr>
+<tr>
+<td class="tdDT">Windows</td>
+<td class="depTableFont"><a href="https://pcsupport.lenovo.com/us/en/downloads/DS505148" target="_blank">https://pcsupport.lenovo.com/us/en/downloads/DS505148</a></td>
+</tr>
+<tr>
+<td class="tdDT">Firmware</td>
+<td class="depTableFont"><a href="https://pcsupport.lenovo.com/us/en/downloads/DS540663" target="_blank">https://pcsupport.lenovo.com/us/en/downloads/DS540663</a><br>We do not recommend deploying firmware updates during OSD deployment<br></td>
+</tr>
+</tr>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>PXE Capable: </h5>
+</td>
+<td class="depTableFont">Yes &nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>Driver Deployment: </h5>
+</td>
+<td class="depTableFont"><b>MDT</b> (deploy as hardware app in task sequence)<br>&nbsp;&nbsp;&nbsp;As Application(thinkpad_tbt3_gen2_ws_dock_driver_10016.exe /VERYSILENT/NORESTART) <br><br>
+<b>SCCM</b><br> &nbsp;&nbsp;&nbsp;Deploy As Package in task sequence (thinkpad_tbt3_gen2_ws_dock_driver_10016.exe /VERYSILENT/NORESTART)
+<br> <b>*Restart required*</b> </td></tr>
+</table>
+
+
+<hr/>
+
+# ThinkPad Thunderbolt 3 Dock (PN 40AC0135)
+
+The ThinkPad Thunderbolt 3 Dock is an unmatched docking solution powered by Intel Thunderbolt 3 technology. All together 13 ports available enables you to connect all your devices while rapidly charging your system via the USB Type-C port. It delivers conclusive 4K video performance with lightning fast data transfer. Having your most productive and space saving workstation as simple as connecting your notebook or tablet to the ThinkPad Thunderbolt 3 Dock. 
+
+[>> More Information & Drivers](https://support.lenovo.com/accessories/ACC100356)
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px;">
+
+![](../img/guides/docks/td1.png)
+![](../img/guides/docks/td2.png)
+</div>
+
+[Display Capabilities](https://support.lenovo.com/us/en/solutions/pd029622#Thunderbolt%203%20Workstation%20Dock)
+
+## Connectivity
+
+>Front Ports
+>   - 1 USB 3.0
+>   - 1 Thunderbolt 3
+>   - 1 Headphone/Mic
+>
+>Rear
+>   - 4 USB 3.0 - 1 with full-time power
+>   - 2 DisplayPort
+>   - 1 HDMI
+>   - 1 VGA
+>   - 1 Thunderbolt - To Computer
+>   - 1 Ethernet
+
+## Deployment
+
+<table class="deploymentTable">
+<td class="tdDT" rowspan="11" style="width:15%">
+<h5 align="center">Deployment (MDT & SCCM)</h5>
+</td>
+<tr>
+<td rowspan="4" class="tdDT">
+<h5>Query: </h5>
+<tr>
+<td class="tdDT">Ethernet </td>
+<td class="depTableFont">USB\VID_17EF&PID_3069 </td>
+</tr>
+<tr>
+<td class="tdDT">Audio</td>
+<td class="depTableFont">USB\VID_17EF&PID_306A </td>
+</tr>
+<tr>
+<td class="tdDT">Billboard </td>
+<td class="depTableFont">USB\VID_0451&PID_ACE1 </td>
+</tr>
+</td>
+</tr>
+<tr rowspan="1">
+<td rowspan="4" class="tdDT">
+<h5>Driver(s): </h5>
+<tr>
+<td class="tdDT">WinPE </td>
+<td class="depTableFont"><a href="https://support.lenovo.com/solutions/ht101981" target="_blank">https://support.lenovo.com/solutions/ht101981</a>>/td>
+</tr>
+<tr>
+<td class="tdDT">Windows</td>
+<td class="depTableFont"><a href="https://pcsupport.lenovo.com/us/en/downloads/DS501904" target="_blank">https://pcsupport.lenovo.com/us/en/downloads/DS501904</a></td>
+</tr>
+<tr>
+<td class="tdDT">Firmware</td>
+<td class="depTableFont">We do not recommend deploying firmware updates during OSD deployment<br><br><a href="https://pcsupport.lenovo.com/us/en/downloads/DS540663" target="_blank">https://pcsupport.lenovo.com/us/en/downloads/DS540663</a></td>
+</tr>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>PXE Capable: </h5>
+</td>
+<td class="depTableFont">Yes &nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>Driver Deployment: </h5>
+</td>
+<td class="depTableFont"><b>MDT</b> (deploy as hardware app in task sequence)<br>
+&nbsp;&nbsp;&nbsp;As Application (thinkpad_thunderbolt-3_dock_and_usb-c_dock_driver_v10017.exe
+/VERYSILENT /NORESTART) <br><br>
+<b>SCCM </b><br> &nbsp;&nbsp;&nbsp;Deploy As Package in task sequence
+(thinkpad_thunderbolt-3_dock_and_usb-c_dock_driver_v10017.exe /VERYSILENT /NORESTART)
+<br><b> *Restart required*</b></td>
+</tr>
+</table>
