@@ -888,7 +888,8 @@ Alternatively, on the Configuration Manager ribbon, select the **DASH** tab, the
   3. The port through which the text will be redirected.
   4. The information/status is stated – e.g., Support for OTP (one time password)
 
-  
+  ![Text Redirection](../img/dash/42-dash.png)
+
 ### USB Redirection
 
 USB Redirection provides a Virtual USB device which reads data from a remote image file, allowing the BIOS to boot from a remote image file such as _.iso_. See also [USB Redirection](#usb redirection) above.
@@ -907,6 +908,8 @@ The **USB Redirection** screen appears and displays the following:
     - The URL that has to be attached to the systems USB.
      If the USB is already attached to the remote URL,then the attached URL is displayed , and the option to edit the URL field is grayed out. You can disconnect the attached USB by clicking the **Disconnect** button on the screen.
     -  If the USB is not attached, you can replace/update any existing URL or enter a new valid URL and click the **Connect** button
+
+![USB Redirection](../img/dash/43-dash.png)
 
  To close the USB Redirection screen, click the **Close** button.
 
@@ -928,13 +931,13 @@ See [KVM Redirection](#kvm-redirection) section above. The steps are identical i
   
 ### Inventory
 
-Configuration Manager shows the Information that it collects about the managed device in the **Resource Explorer** window. Information collected by the AMPS plugin also ends up in the Resource explorer. DASH inventory is displayed in the path **SystemName** \&gt; **Hardware**.
+Configuration Manager shows the Information that it collects about the managed device in the **Resource Explorer** window. Information collected by the AMPS plugin also ends up in the Resource explorer. DASH inventory is displayed in the path **SystemName\Hardware**.
 
 Inventory is successful after successful client push, and can also be initiated manually. DASH inventory is populated using out-of-band DASH protocol.
 
 To collect inventory, perform the following steps:
 
-1. In the Configuration Manager console, navigate to **Assets and Compliance** \&gt; **Overview** \&gt; **Devices** \&gt; **All Systems.**
+1. In the Configuration Manager console, navigate to **Assets and Compliance\Overview\Devices\All Systems**
 2. In the right pane, right-click the device on which you want to collect the inventory.
 
 In the shortcut menu select **DASH,** then click **Inventory.** Alternatively, click the DASH toolbar button to initiate the inventory
