@@ -729,17 +729,15 @@ The steps to create the software package are as follows:
 - Run: Normal
 - Run with Administrative Rights
 
-**NOTE:** For details of all the command options refer to the **DASHConfig\_RT\_guide.pdf** located at _C:\Program Files (x86)\AMD Management Plugin for SCCM\DASHConfigRT_
+**NOTE:** For details of all the command options refer to the **DASHConfigRTguide.pdf** located at _C:\Program Files (x86)\AMD Management Plugin for SCCM\DASHConfigRT_
 
 1. Next, accept the defaults on the **Requirements** page
 2. Next, verify the information in the **Summary** and click Next, thenClose
 3. Right click on the newly created DASHConfig Package and select **Properties**.
 4. On the **Data Access** tab, check &quot;Copy the content in this package to a package share on distribution points.&quot;
 5. On the **Distribution Settings** tab
-    
-
-- Set the Distribution Priority to High
-- Check &quot;Distribute the content for this package to preferred distribution points,&quot; and select &quot;Automatically download content when packages are assigned to distribution points.&quot;
+    -  Set the Distribution Priority to High
+    - Check &quot;Distribute the content for this package to preferred distribution points,&quot; and select &quot;Automatically download content when packages are assigned to distribution points.&quot;
 
 ## Distribute the DASHConfig Software Package
 
@@ -747,7 +745,7 @@ To distribute the software package:
 
  In the Configuration Manager console navigate to **Software Library \&gt; Application Management**
 
- Click on the **Package** node and select the DASHConfig Package
+ 1. Click on the **Package** node and select the DASHConfig Package
 2. Right click the DASHConfig package and select **Deploy** to launch the deploy software wizard.
 3. On the **Content** page, Verify the distribution point is added, if not click on the **Add** button and add manually
 4. Next, **Schedule** the deployment as needed and click Next
@@ -769,7 +767,7 @@ Steps to run DASHConfigRT on one system:
 
  Invoke DASHConfigRT using following command line:
 
-DASHConfigRT -xf:\&lt;DASHConfig.xml\&gt; -dxf -mif -lf:DASHConfig.log
+DASHConfigRT -xf:DASHConfig.xml -dxf -mif -lf:DASHConfig.log
 
 ## Performing DASH Operations
 
@@ -777,29 +775,18 @@ The AMPS installation creates a collection node called **All DASH Capable System
 
 Devices in **All DASH Capable Systems** support the following DASH operations:
 
-·    Discovery
-
-·    Power Control
-
-·    Boot Control
-
-·    Text Redirection
-
-·    USB Redirection
-
-·    Alerts
-
-·    Inventory
-
-·    Log Entry
-
-·    Boot to Text Image
-
-·    Firmware Update
-
-·    Boot to BIOS( KVM Profile)
-
-·    KVM Redirection
+- Discovery
+- Power Control
+- Boot Control
+- Text Redirection
+- USB Redirection
+- Alerts
+- Inventory
+- Log Entry
+- Boot to Text Image
+- Firmware Update
+- Boot to BIOS( KVM Profile)
+- KVM Redirection
 
   
 ### Discovering a collection
@@ -828,9 +815,7 @@ This feature enables you to discover a single DASH capable system.
 To discover an individual DASH capable system, perform the following steps:
 
  1. Expand the **Assets and Compliance/Devices/All Systems** node.
-
  2. Expand the **Devices** node and click **All Systems**.
-
  3. In the right pane, right-click the device for which you want to discover DASH.
 4.  In the shortcut menu, point to **DASH** and then click **Discover**.
 
@@ -899,7 +884,6 @@ The ISO image file must be available as a _http_ web URL.
 To initiate a USB redirection for a system, perform the following steps:
 
  1. In Configuration Manager navigate to **Assets and Compliance\Overview \Devices\All Systems** node. Expand the **Devices** node and click **All Systems**.
-
  2. In the right pane, right-click the device on which you want to perform USB redirection.
 3. In the shortcut menu that opens, point to **DASH** and then click **USB Redirection**.
 The **USB Redirection** screen appears and displays the following:
@@ -954,11 +938,10 @@ The managed DASH systems maintain log file for all events that are generated.
 To view the log entry of a managed device:
 
  1. In the Configuration Manager console, navigate to **Assets and Compliance\Overview\Devices\All Systems**.
-
  In the right pane, right-click the device where you want to view the log.
 2. The shortcut menu is displayed. In the shortcut menu, point to **DASH** and then click **Log Entry**. The log entry screen appears.
-
-The Log Entry screen displays the latest 20 log entries. Use the **Next** and **Previous** navigation buttons to view additional log entries. Double click an entry to launch the **Status Message Detail** window for that entry.
+The Log Entry screen displays the latest 20 log entries. 
+3. Use the **Next** and **Previous** navigation buttons to view additional log entries. Double click an entry to launch the **Status Message Detail** window for that entry.
 
 ![DASH Log](../img/dash/31-dash.png)
   
@@ -969,15 +952,12 @@ AMPS allow you update the firmware for an individual system or a Collection.
 To update the firmware on a system/collection, perform the following steps:
 
 1.  Expand **Assets and Compliance\Overview\Devices** or **Device Collections** node.
-
  2. In the right pane, the list of systems or all the available collections appears.
 3. Right-click the target. The shortcut menu appears.
 4. In the shortcut menu, select **DASH** and then click **Firmware Upgrade**.
-
 5. The **Firmware Update** dialog box appears.  In the Firmware Upgrade dialog box, select the **Software Module** from the drop-down list. The default (and only available) Software module is **Management Controller Firmware**. 
 'Schedule Time' can be immediate, or you can set a scheduled time.
   6. The grid in the **Firmware Upgrade** windows lists the firmware URLs of the devices. Use the (+) and (-) buttons below the list to add and remove firmware URLs.
-
 7. Select the checkboxes next to the devices or collections you wish to update and click on the **Apply** button. The firmware update executes at once.
 
  ![Firmware Update](../img/dash/37-dash.png)
@@ -992,10 +972,8 @@ The types of alerts are Platform, Boot Progress, and Lifecycle Events (temperatu
 #### To configure alerts:
 
  1. Navigate to **Assets and Compliance/Overview/All Systems**
-
  2. In the right pane, right-click the device on which you want to perform Alert configuration.
 The shortcut menu appears.
-
 3. In the shortcut menu, point to **DASH** and then click **Alerts**.
 
 Alternatively, click the ribbon icon **Alerts**.
