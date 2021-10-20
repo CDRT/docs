@@ -99,7 +99,9 @@ The following are scenarios in which System Update will load the substitute NLS 
 - **_Loading the language pack set in the Windows Regional and Language Options settings_**: If the LanguageOverride field is empty or with an invalid value, or the value specified in the LanguageOverride field is not installed on the system, System Update will get the language override code of the operating system set in the Regional and Language Options settings. If System Update successfully loads the language pack corresponding to the language set in the Regional and Language Options settings, System Update will display the rest of the session in that language.
 - **_Loading the language pack set in the DefaultLanguage field_**: If the language pack corresponding to the language set in the Regional and Language Options settings is not available on the system, System Update will attempt to get the default language that has been set in the DefaultLanguage field when the end user used the System Update installer and selected a language during the installation. System Update will load the language pack corresponding to the default language set in the DefaultLanguage field, and display the rest of the session in that language. If the 8 System Update Solution Deployment Guide language pack corresponding to the default language set in the DefaultLanguage field is on the system, System Update will load the default language pack and display the rest of the session. The registry location for the DefaultLanguage field is:
 
-    ```HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Lenovo\System Update\DefaultLanguage```
+    ```
+	HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Lenovo\System Update\DefaultLanguage
+	```
 
 - **_Loading the US English language pack_**: If the DefaultLanguage field is empty or contains an invalid value, or if the language pack corresponding to the default language set in the DefaultLanguage field is not on the system, the default language will not be used. System Update will attempt to load the US English language pack. If the US English language pack is not on the system, an error message will be displayed, saying &quot;System Update has found a critical problem and must close.&quot; This error message is in the US English language.
 
@@ -146,9 +148,14 @@ It is recommended to keep System Update running on the most current version; how
 
    1. Using regedit.exe, navigate to the following registry entry:
 
-    ```HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\Lenovo\System Update``` <br/> ```\Preferences\UCSettings\HTTPSHelloSettings\ServerName```
+    ```
+	HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\Lenovo\System Update\Preferences\UCSettings\HTTPSHelloSettings\ServerName
+	```
 
-   2. Delete the ServerName string value, for example: <br/> https://download.lenovo.com/ibmdl/pub/pc/pcbs/agent/
+   2. Delete the ServerName string value, for example:
+    ```
+	https://download.lenovo.com/ibmdl/pub/pc/pcbs/agent/ 
+	```
    3. Click **OK**.
 
 ## 2.2 Installing Thin Installer
@@ -1065,8 +1072,10 @@ The following list contain some common issues and how to address them:
 - _An update&#39;s Reboot Type was changed from &quot;Forces Reboot&quot; to &quot;Reboot Required&quot; in Update Retriever; however, systems still reboot when the update is installed:_ In Update Retriever this setting is just a flag to indicate how an update behaves. Update Retriever cannot change how an update was designed to run. Therefore, it is typically recommended to not change this value for any updates using Update Retriever.
 - _Update Retriever has been installed on a new system; however, the System List is empty:_ The System List is recorded in the registry and can be copied from the old system to the new system. Use regedit.exe to copy the &quot;Systems&quot; value from 
 
-   ```Computer\HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\Lenovo```
-   ```\Update Retriever\Preferences\UserSettings\General```
+   ```
+   Computer\HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\Lenovo
+   \Update Retriever\Preferences\UserSettings\General
+   ```
 
 
 # 5 Command Line Reference
@@ -1416,17 +1425,23 @@ To add the ADMX file and customize the settings, do the following:
 
    8. Navigate the Group Policy Editor to the following location:
 
-	```Computer Configuration\Policies\AdministrativeTemplates\ ```
-	```ThinkVantage\System Update\UserSettings\General\RepositoryLocation1 ```
+	```
+	Computer Configuration\Policies\AdministrativeTemplates\
+	ThinkVantage\System Update\UserSettings\General\RepositoryLocation1 
+	```
 
    9. Double-click Repository Location.
    10. In the Local Repository Location 1 field, change the value from SUPPORTCENTER to your network repository share or web repository, for example:
 
-	```\\Server\_X\TVSU\_repository\ ``` 
+	```
+	\\Server\_X\TVSU\_repository\ 
+	``` 
 
     Or
 
-	```https://server\_x.net/repository ```
+	```
+	https://server\_x.net/repository 
+	```
 
    11. Click Apply.
 

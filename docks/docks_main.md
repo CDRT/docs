@@ -167,8 +167,8 @@ Top Features for Thunderbolt 3 Essential Dock
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px;size:150px">
 
-![](../img/guides/docks/img5.png)
-![](../img/guides/docks/img6.png)
+![](../img/guides/docks/tbe1.png)
+![](../img/guides/docks/tbe2.png)
 </div>
 
 [Display Capabilities](https://support.lenovo.com/us/en/solutions/pd029622#Lenovo%20Thunderbolt%203%20Essential%20Dock)
@@ -351,8 +351,8 @@ The ThinkPad Thunderbolt 3 Dock is an unmatched docking solution powered by Inte
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px;">
 
-![](../img/guides/docks/td1.png)
-![](../img/guides/docks/td2.png)
+![](../img/guides/docks/t3d1.png)
+![](../img/guides/docks/t3d2.png)
 </div>
 
 [Display Capabilities](https://support.lenovo.com/us/en/solutions/pd029622#Thunderbolt%203%20Workstation%20Dock)
@@ -431,3 +431,97 @@ The ThinkPad Thunderbolt 3 Dock is an unmatched docking solution powered by Inte
 <br><b> *Restart required*</b></td>
 </tr>
 </table>
+
+
+# ThinkPad Hybrid USB-C with USB-A Dock (PN 40AF0135)
+
+The ThinkPad Hybrid USB-C with USB-A Dock (40AF) expands the capabilities of most any laptop, new or old, making it perfect for enterprise customers with mixed-PC or shared-desk environments. Featuring enterprise-class manageability like PXE boot and MAC address Pass-through the ThinkPad Hybrid USB-C with USB-A offers three high-speed USB3.1 ports, up to dual UHD 4K resolution and rapid charging on ThinkPad notebooks. And, with the included USB-C to USB-A adaptor it can also provide port replication to non-Lenovo or USB-C notebooks. 
+
+[>> More Information & Drivers](https://support.lenovo.com/us/en/solutions/PD500180)
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px;">
+
+![](../img/guides/docks/husbca1.png)
+![](../img/guides/docks/husbca3.png)
+</div>
+
+[Display Capabilities](https://support.lenovo.com/us/en/solutions/pd029622#Hybrid%20Dock)
+
+## Connectivity
+
+>   - Docking interface: USB-C cable with USB-C to USB-A dongle
+>   - 2 x DisplayPort, 2 x HDMI 
+>   - 3 x USB-A gen2, 1 x USB-C gen2, 2 x USB2.0
+>   - 10/100/1000 Gigabit Ethernet
+>   - 1 x Audio combo Jack 
+
+## Deployment
+
+<table class="deploymentTable">
+<tr>
+<td class="tdDT" rowspan="12" style="width:15%">
+<h5 align="center">Deployment (MDT & SCCM)</h5>
+</td>
+</tr>
+<tr>
+<td rowspan="5" class="tdDT">
+<h5>Query: </h5>
+<tr>
+<td class="tdDT">Ethernet </td>
+<td class="depTableFont">USB\VID_17EF&PID_A359 </td>
+</tr>
+<tr>
+<td class="tdDT">Audio</td>
+<td class="depTableFont">USB\VID_17EF&PID_6015 </td>
+</tr>
+<tr>
+<td class="tdDT">Display</td>
+<td class="depTableFont">USB\VID_17EF&PID_6015 </td>
+</tr>
+<tr>
+<td class="tdDT">Billboard </td>
+<td class="depTableFont">USB\VID_17EF&PID_A354 </td>
+</tr>
+</td>
+</tr>
+<tr rowspan="1">
+<td rowspan="4" class="tdDT">
+<h5>Driver(s): </h5>
+<tr>
+<td class="tdDT">WinPE </td>
+<td class="depTableFont"><a href="https://support.lenovo.com/solutions/ht101981" target="_blank"> https://pcsupport.lenovo.com/us/en/solutions/ht101981</a></td>
+</tr>
+<tr>
+<td class="tdDT">Windows</td>
+<td class="depTableFont"><a href="https://support.lenovo.com/us/en/downloads/DS502119"
+	target="_blank">https://support.lenovo.com/us/en/downloads/DS502119</a></td>
+</tr>
+<tr>
+<td class="tdDT">Firmware</td>
+<td class="depTableFont">We do not recommend deploying firmware updates during OSD
+deployment<br><br><a href="https://pcsupport.lenovo.com/us/en/downloads/DS504448" target="_blank">https://pcsupport.lenovo.com/us/en/downloads/DS504448</a></td>
+</tr>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>PXE Capable: </h5>
+</td>
+<td class="depTableFont">Yes &nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>Driver Deployment: </h5>
+</td>
+<td class="depTableFont"><b>MDT</b> (deploy as hardware app in task sequence)<br>
+&nbsp;&nbsp;&nbsp;As Application (thinkpad_hybrid_usb-c_with_usb-a_dock_driver_web_v1.0.0.21.exe
+/VERYSILENT /NORESTART) <br><br>
+<b>SCCM </b><br> &nbsp;&nbsp;&nbsp;Deploy As Package in task sequence
+(thinkpad_hybrid_usb-c_with_usb-a_dock_driver_web_v1.0.0.21.exe /VERYSILENT /NORESTART)
+<br> <b>*Restart required*</b> </td>
+</tr>
+</table>
+
+
+# 
