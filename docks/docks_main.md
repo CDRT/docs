@@ -432,6 +432,7 @@ The ThinkPad Thunderbolt 3 Dock is an unmatched docking solution powered by Inte
 </tr>
 </table>
 
+<hr/>
 
 # ThinkPad Hybrid USB-C with USB-A Dock (PN 40AF0135)
 
@@ -523,5 +524,702 @@ deployment<br><br><a href="https://pcsupport.lenovo.com/us/en/downloads/DS504448
 </tr>
 </table>
 
+<hr/>
 
-# 
+# ThinkPad USB-C Dock Gen 2 (PN 40AS0090)
+
+The ThinkPad USB-C Dock Gen 2 (40AS) is the next generation of USB-C one-cable universal docking solutions for ThinkPad devices. The ThinkPad USB-C Dock Gen 2 supports vivid 4K displays or multiple 1080p screens, will charge your notebook, connect legacy USB peripherals, has a wired network port, and will rapidly charge your mobile devices. 
+
+[>> More Information & Drivers](https://support.lenovo.com/us/en/solutions/ACC500106)
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px;">
+
+![](../img/guides/docks/usbc2g1.png)
+![](../img/guides/docks/usbc2g2.png)
+</div>
+
+[Display Capabilities](https://support.lenovo.com/us/en/solutions/pd029622#USB-C%20dock%20Gen%202)
+
+## Connectivity
+
+>Front Ports:
+>   - 1 USB 3.1
+>   - 1 USB-C
+>   - 1 Headphone / Mic
+>
+>Rear Ports:
+>   - 2 USB 3.1 – 1 with full time power
+>   - 2 USB 2.0
+>   - 2 Display
+>   - 1 HDMI
+>   - 1 USB-C – To Computer
+>   - 1 Ethernet
+
+## Deployment
+
+<table class="deploymentTable">
+<tr>
+<td class="tdDT" rowspan="11" style="width:15%">
+<h5 align="center">Deployment (MDT & SCCM)</h5>
+</td>
+</tr>
+<tr>
+<td rowspan="3" class="tdDT">
+<h5>Query: </h5>
+<td class="tdDT">Ethernet </td>
+<td class="depTableFont">USB\VID_17EF&PID_A387 </td>
+</tr>
+<tr>
+<td class="tdDT">Audio</td>
+<td class="depTableFont">USB\VID_17EF&PID_A396 </td>
+</tr>
+<tr>
+<td class="tdDT">Billboard</td>
+<td class="depTableFont">USB\VID_17EF&PID_A38F </td>
+</tr>
+</td>
+</tr>
+<tr rowspan="1">
+<td rowspan="4" class="tdDT">
+<h5>Driver(s): </h5>
+<tr>
+<td class="tdDT">WinPE </td>
+<td class="depTableFont"><a
+href="https://download.lenovo.com/km/media/attachment/USBCG2.zip" target="_blank">
+https://download.lenovo.com/km/media/attachment/USBCG2.zip</a></td>
+</tr>
+<tr>
+<td class="tdDT">Windows</td>
+<td class="depTableFont"><a href="https://pcsupport.lenovo.com/us/en/downloads/DS539091"
+target="_blank">https://pcsupport.lenovo.com/us/en/downloads/DS539091</a></td>
+</tr>
+<tr>
+<td class="tdDT">Firmware</td>
+<td class="depTableFont">We do not recommend deploying firmware updates during OSD
+deployment<br><br><a href="http://pcsupport.lenovo.com/us/en/downloads/DS539092"
+target="_blank">http://pcsupport.lenovo.com/us/en/downloads/DS539092</a></td>
+</tr>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>PXE Capable: </h5>
+</td>
+<td class="depTableFont">Yes &nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>Driver Deployment: </h5>
+</td>
+<td class="depTableFont"><b>MDT</b> (deploy as hardware app in task sequence)<br>
+&nbsp;&nbsp;&nbsp;Deploy as Application:
+<br>&nbsp;&nbsp;&nbsp;thinkpad_usb-c_dock_gen2_drivers_v1.0.3.03241.exe /VERYSILENT
+/NORESTART <br>
+<b>SCCM </b><br> &nbsp;&nbsp;&nbsp;Deploy as Package in task
+sequence:<br>&nbsp;&nbsp;&nbsp; thinkpad_usb-c_dock_gen2_drivers_v1.0.3.03241.exe
+/VERYSILENT /NORESTART
+<br> <b>*Restart required*</b> </td>
+</tr>
+</table>
+
+<hr/>
+
+# ThinkPad USB-C Dock (PN 40A90090)
+
+The ThinkPad USB-C Dock is a new universal docking solution ensuring a productive workstation. Experience all your productivity needs including video, data, and wired network all while delivering continuous power to your laptop via a robust USB Type-C port. Simply connect your laptop or tablet with the dock and boost your productivity in no time. Single UHD display30Hz or dual FHD displays allows you to enjoy a vivid video experience. 
+
+[>> More Information & Drivers](https://support.lenovo.com/accessories/ACC100348)
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px;">
+
+![](../img/guides/docks/usbc1.png)
+![](../img/guides/docks/usbc2.png)
+</div>
+
+[Display Capabilities](https://support.lenovo.com/us/en/solutions/pd029622#USB-C%20dock)
+
+## Connectivity
+
+>   - 3x USB 3.0 – 1 provide always-on mobile device charging
+>   - 2x USB 2.0
+>   - 1x USB-C upstream connector
+>   - 1x VGA
+>   - 2x DP
+>   - 1x Gigabit Ethernet
+>   - 1x Stereo/Mic Combo Port 
+>   - 1 x Security lock slot
+
+## Deployment 
+
+<table class="deploymentTable">
+<tr>
+<td class="tdDT" rowspan="12" style="width:15%">
+<h5 align="center">Deployment (MDT & SCCM)</h5>
+</td>
+</tr>
+<tr>
+<td rowspan="3" class="tdDT">
+<h5>WMI PNP Query String: </h5>
+<td class="tdDT">Ethernet </td>
+<td class="depTableFont">USB\VID_17EF&PID_3062 </td>
+</tr>
+<tr>
+<td class="tdDT">Audio</td>
+<td class="depTableFont">USB\VID_17EF&PID_3063 </td>
+</tr>
+<tr>
+<td class="tdDT">Billboard</td>
+<td class="depTableFont">USB\VID_17EF&PID_3060 </td>
+</tr>
+</td>
+</tr>
+<tr rowspan="1">
+<td rowspan="4" class="tdDT">
+<h5>Driver(s): </h5>
+<tr>
+<td class="tdDT">WinPE </td>
+<td class="depTableFont"><a href="https://support.lenovo.com/solutions/ht101981"
+target="_blank"> https://support.lenovo.com/solutions/ht101981</a></td>
+</tr>
+<tr>
+<td class="tdDT">Windows</td>
+<td class="depTableFont"><a href="https://pcsupport.lenovo.com/downloads/DS501902"
+target="_blank">https://pcsupport.lenovo.com/downloads/DS501902</a></td>
+</tr>
+<tr>
+<td class="tdDT">Firmware</td>
+<td class="depTableFont">We do not recommend deploying firmware updates during OSD
+deployment<br><br><a href="https://support.lenovo.com/us/en/downloads/DS501903"
+target="_blank">https://support.lenovo.com/us/en/downloads/DS501903</a></td>
+</tr>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>PXE Capable: </h5>
+</td>
+<td class="depTableFont">Yes &nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>Driver Deployment: </h5>
+</td>
+<td class="depTableFont"><b>MDT</b> (deploy as hardware app in task sequence)<br>
+&nbsp;&nbsp;&nbsp;As Application (thinkpad_thunderbolt-3_dock_and_usb-c_dock_driver_v10017.exe
+/VERYSILENT /NORESTART) <br><br>
+<b>SCCM </b><br> &nbsp;&nbsp;&nbsp;Deploy As Package in task sequence
+(thinkpad_thunderbolt-3_dock_and_usb-c_dock_driver_v10017.exe /VERYSILENT /NORESTART)
+<br> <b>*Restart required*</b> </td>
+</tr>
+</table>
+
+<hr/>
+
+# ThinkPad OneLink+ Dock (PN 40A40090)
+
+The ThinkPad OneLink+ Dock, powered by Lenovo’s revolutionary OneLink+ technology transforms your new ThinkPad into a full featured machine in the office or at home. Not only does the new convenient OneLink+ connector deliver super-fast data transfers with USB 3.0 and up to Ultra High Definition (UHD) video but it also charges your notebook, cell phone and tablet while you work or play!
+
+Unlike USB docks the OneLink+ Dock delivers video with no compression, no drivers and no impact on image quality and notebook performance. Simply connect your notebook with the ThinkPad OneLink+ Dock and get connected to power, Internet and workplace accessories through a convenient single connector. Expect nothing short of outstanding value with connections for two external displays, a keyboard, a mouse, and a printer. It also comes with a ThinkPad 90w slim tip AC Adapter.
+
+The docking station comes equipped with a stereo/microphone combination audio port and 2x USB 3.0 ports on the front panel with one of those as an “always (power) on” port for mobile device charging. The rear panel has 2x USB 2.0 ports and 2x USB 3.0 ports, allowing for maximum device connectivity. The OneLink+ dock also comes with a 10/1000 Gigabit Ethernet port, one VGA port, and two DisplayPort 1.2 ports for up to 3 video outputs* with a maximum 4k2k resolution (3840 x 2160). For security, the dock can be secured via a cable lock. 
+
+[>> More Information & Drivers](https://support.lenovo.com/solutions/acc100252)
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px;">
+
+![](../img/guides/docks/olp1.png)
+![](../img/guides/docks/olp2.png)
+</div>
+
+[Display Capabilities](https://support.lenovo.com/us/en/solutions/pd029622#OneLink+%20Dock)
+
+## Connectivity
+
+>   - 4x USB 3.0 – 1 provide always-on mobile device charging
+>   - 2x USB 2.0
+>   - 1x OneLink+ upstream connector
+>   - 2x DP
+>   - 1x VGA
+>   - 1x Gigabit Ethernet
+>   - 1x Stereo/Mic Combo Port
+>   - 1 x Security lock hole
+>   - 1x DC in
+
+## Deployment 
+
+<table class="deploymentTable">
+<tr>
+<td class="tdDT" rowspan="11" style="width:15%">
+<h5 align="center">Deployment (MDT & SCCM)</h5>
+</td>
+</tr>
+<tr>
+<td rowspan="2" class="tdDT">
+<h5>WMI PNP Query String: </h5>
+<td class="tdDT">Ethernet </td>
+<td class="depTableFont">USB\VID_17EF&PID_3054</td>
+</tr>
+<tr>
+<td class="tdDT">Audio</td>
+<td class="depTableFont">USB\VID_17EF&PID_3055 </td>
+</tr>
+</td>
+</tr>
+<tr rowspan="1">
+<td rowspan="4" class="tdDT">
+<h5>Driver(s): </h5>
+<tr>
+<td class="tdDT">WinPE </td>
+<td class="depTableFont"><a href="https://support.lenovo.com/solutions/ht101981"
+target="_blank"> https://support.lenovo.com/solutions/ht101981</a></td>
+</tr>
+<tr>
+<td class="tdDT">Windows</td>
+<td class="depTableFont"><a href="https://pcsupport.lenovo.com/documents/ACC100252"
+target="_blank">https://pcsupport.lenovo.com/documents/ACC100252</a></td>
+</tr>
+<tr>
+<td class="tdDT">Firmware</td>
+<td class="depTableFont">We do not recommend deploying firmware updates during OSD
+deployment<br><br><a href="https://pcsupport.lenovo.com/documents/ACC100252"
+target="_blank">https://pcsupport.lenovo.com/documents/ACC100252</a></td>
+</tr>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>PXE Capable: </h5>
+</td>
+<td class="depTableFont">Yes &nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>Driver Deployment: </h5>
+</td>
+<td class="depTableFont"><b>MDT</b> (deploy as hardware app in task sequence)<br>
+&nbsp;&nbsp;&nbsp;As Application (tp_onelink_driver.exe
+/VERYSILENT /NORESTART) <br><br>
+<b>SCCM </b><br> &nbsp;&nbsp;&nbsp;Deploy As Package in task sequence
+(tp_onelink_driver.exe /VERYSILENT /NORESTART)
+<br> <b>*Restart required*</b> </td>
+</tr>
+</table>
+
+
+<hr/>
+
+# ThinkPad OneLink Pro Dock (PN 4X10E52935)
+
+The ThinkPad OneLink Pro Dock, powered by Lenovo’s revolutionary OneLink technology transforms your new ThinkPad into a full featured machine in the office or at home. Unlike USB docks the OneLink Pro Dock delivers video with no compression, no drivers and no impact on image quality and notebook performance. Simply connect your notebook into the ThinkPad Pro Dock and get connected to power, Internet and workplace accessories through a convenient single connector. Expect nothing short of outstanding value with an included ThinkPad 90w slim tip AC Adapter, connections for two external displays, a keyboard, a mouse and a printer. The docking station comes equipped with a stereo/microphone combination audio port and 2x USB 3.0 ports on the front panel, one of the USB port is always-power on for mobile device charging. Meanwhile, the rear panel has 2x USB 2.0 ports and 2x USB 3.0 ports, allowing for maximum device connectivity. The pro dock also comes with a 10/1000 Gigabit Ethernet port and a DisplayPort 1.2 for full dual video output with a maximum resolution of 2560 x 1600. For security, the dock can be secured via a cable lock.
+
+[>> More Information & Drivers](https://support.lenovo.com/solutions/pd029981)
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px;">
+
+![](../img/guides/docks/olpro1.png)
+![](../img/guides/docks/olpro2.png)
+</div>
+
+[Display Capabilities]()
+
+## Connectivity
+
+>Front ports:
+>   - 2x USB 3.0 (One with Always-On Mobile Device Charging) - Ideal for use with memory keys, hard drives and other quick access devices.
+>   - Stereo / Mic Combo Audio Port
+>
+>Rear ports:
+>   - 2x USB 2.0 - Ideal for most USB devices, including printers, keyboards, and mice.
+>   - 2x USB 3.0 – great for backup hard drives and other high speed USB accessories which you usually leave at your desk
+>   - DisplayPort with maximum resolution 2560x1600*
+>   - DVI-I with maximum 1920x1200 resolution and DVI to VGA adapter included in the box
+>   - Gigabit Ethernet (10/100/1000) with Boot over LAN support on selected systems**
+>   - Gigabit Ethernet (10/100/1000) with Boot over LAN support on selected systems**
+>   - Cable lock slot for physical security on the side of the ThinkPad OneLink dock 
+>   - Includes 90W AC adapter (slim tip) to support charging your notebook
+
+
+## Deployment 
+
+<table class="deploymentTable">
+<td class="tdDT" rowspan="10" style="width:15%">
+<h5 align="center">Deployment (MDT & SCCM)</h5>
+</td>
+<tr>
+<td rowspan="3" class="tdDT">
+<h5>WMI PNP Query String: </h5>
+<tr>
+<td class="tdDT">Ethernet </td>
+<td class="depTableFont">USB\VID_17EF&PID_304F </td>
+</tr>
+<tr>
+<td class="tdDT">Audio</td>
+<td class="depTableFont">USB\VID_17EF&PID_304E </td>
+</tr>
+</td>
+</tr>
+<tr rowspan="1">
+<td rowspan="4" class="tdDT">
+<h5>Driver(s): </h5>
+<tr>
+<td class="tdDT">WinPE </td>
+<td class="depTableFont"><a href="https://support.lenovo.com/solutions/ht101981"
+target="_blank">https://support.lenovo.com/solutions/ht101981</a></td>
+</tr>
+<tr>
+<td class="tdDT">Windows</td>
+<td class="depTableFont"><a href="https://support.lenovo.com/solutions/pd029981"
+target="_blank">https://support.lenovo.com/solutions/pd029981</a></td>
+</tr>
+<tr>
+<td class="tdDT">Firmware</td>
+<td class="depTableFont">We do not recommend deploying firmware updates during OSD
+deployment<br><br><a href="https://support.lenovo.com/id/en/solutions/pd029981"
+target="_blank">https://support.lenovo.com/id/en/solutions/pd029981</a>
+<a href=""></a>
+</td>
+</tr>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>PXE Capable: </h5>
+</td>
+<td class="depTableFont">Yes &nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>Driver Deployment: </h5>
+</td>
+<td class="depTableFont"><b>MDT</b> (deploy as hardware app in task sequence)<br>
+&nbsp;&nbsp;&nbsp;As Application (tp_onelink_driver.exe -s) <br><br>
+<b>SCCM </b><br> &nbsp;&nbsp;&nbsp;Deploy As Package in task sequence
+(tp_onelink_driver.exe -s)</td>
+</tr>
+</table>
+
+<hr/>
+
+# ThinkPad OneLink Dock (PN 4X10A06077)
+
+The dock is a portable expansion module that enables you to easily connect your notebook computer to the Ethernet and multiple devices, such as a High Definition Multimedia Interface (HDMI) monitor or projector, a headset and microphone combo jack, and Universal Serial Bus (USB) devices. It provides two USB 3.0 connectors for higher bandwidth and better performance, and two USB 2.0 connectors for common USB devices. The dock also supports Gigabit Ethernet speed when you connect it to networks. 
+
+[>> More Information & Drivers](https://pcsupport.lenovo.com/accessories/PD026944)
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px;">
+
+![](../img/guides/docks/ol1.png)
+</div>
+
+[User Guide]()
+[Display Capabilities]()
+
+## Connectivity
+
+>Front Ports
+>   - 2x USB 3.0 (One with Always-On Mobile Device Charging) - Ideal for use with memory keys, hard drives and other quick access devices
+>   - Stereo / Mic Combo Audio Port
+>
+>Rear Ports
+>   - 2x USB 2.0 - Ideal for most USB devices, including printers, keyboards, and mice
+>   - HDMI - support maximum resolution up to 1920 x 1200@60hz.
+>   - Gigabit Ethernet (10/100/1000)
+>   - DC Power
+>
+>Cable lock slot for physical security on the side of the ThinkPad OneLink dock
+
+## Deployment
+
+<table class="deploymentTable">
+<td class="tdDT" rowspan="10" style="width:15%">
+<h5 align="center">Deployment (MDT & SCCM)</h5>
+</td>
+<tr rowspan="1">
+<td rowspan="4" class="tdDT">
+<h5>Driver(s): </h5>
+<tr>
+<td class="tdDT">WinPE </td>
+<td class="depTableFont"><a href="https://support.lenovo.com/solutions/ht101981"
+target="_blank">https://support.lenovo.com/solutions/ht101981</a></td>
+</tr>
+<tr>
+<td class="tdDT">Windows</td>
+<td class="depTableFont"><a href="https://pcsupport.lenovo.com/accessories/PD026944"
+target="_blank">https://pcsupport.lenovo.com/accessories/PD026944</a></td>
+</tr>
+<tr>
+<td class="tdDT">Firmware</td>
+<td class="depTableFont">We do not recommend deploying firmware updates during OSD
+deployment<br><br>
+<a href=""></a>
+</td>
+</tr>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>PXE Capable: </h5>
+</td>
+<td class="depTableFont">No</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>Driver Deployment: </h5>
+</td>
+<td class="depTableFont"><b>MDT</b> (deploy as hardware app in task sequence)<br>
+&nbsp;&nbsp;&nbsp;As Application (tp_onelink_driver.exe -s) <br><br>
+<b>SCCM </b><br> &nbsp;&nbsp;&nbsp;Deploy As Package in task sequence
+(tp_onelink_driver.exe -s)</td>
+</tr>
+</table>
+
+<hr/>
+
+# ThinkPad USB 3.0 Ultra Dock (PN 40A80045)
+
+The ThinkPad USB 3.0 Ultra Dock is an universal USB docking solution that not only delivers a premium display experience (up to 4k2k resolution via DP port), but also provides quick and easy connection to all the workspace peripherals you use every day. Simply plug in a single USB 3.0 cable into your Lenovo PC for instant access to up to two external monitors, USB ports, Gigabit Ethernet, headphones/speakers, USB printers, scanners, keyboard, mouse and so on for daily use. The Dock can also charge your mobile devices via two USB ports that are always powered. Dock requires included AC power adapter to operate. 
+
+[>> More Information & Drivers](https://pcsupport.lenovo.com/solutions/acc100183)
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px;">
+
+![](../img/guides/docks/usb3u1.png)
+![](../img/guides/docks/usb3u2.png)
+</div>
+
+[Display Capabilities](https://support.lenovo.com/us/en/solutions/pd029622#Ultra%20Docking)
+
+## Connectivity
+
+>   - 4x USB 3.0 – 2 provide always-on mobile device charging
+>   - 2x USB 2.0
+>   - 1x USB 3.0 upstream connector
+>   - 1x HDMI
+>   - 1x DP
+>   - 1x Gigabit Ethernet
+>   - 1x Stereo/Mic Combo Port 
+>   - 1 x Security lock hole
+
+## Deployment 
+
+<table class="deploymentTable">
+<td class="tdDT" rowspan="18" style="width:15%">
+<h5 align="center">Deployment (MDT & SCCM)</h5>
+</td>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>WMI PNP Query String: </h5>
+</td>
+<td class="depTableFont">USB\VID_17E9&PID_4340&REV_0101 - USB Composite Device</td>
+</tr>
+<tr rowspan="1">
+<td rowspan="4" class="tdDT">
+<h5>Driver(s): </h5>
+<tr>
+<td class="tdDT">WinPE </td>
+<td class="depTableFont"><a href="https://support.lenovo.com/solutions/ht104480"
+target="_blank">https://support.lenovo.com/solutions/ht104480</a></td>
+</tr>
+<tr>
+<td class="tdDT">Windows</td>
+<td class="depTableFont"><a href="https://pcsupport.lenovo.com/solutions/acc100183"
+target="_blank">https://pcsupport.lenovo.com/solutions/acc100183</a></td>
+</tr>
+<tr>
+<td class="tdDT">Firmware</td>
+<td class="depTableFont">We do not recommend deploying firmware updates during OSD
+deployment<br></td>
+</tr>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>PXE Capable: </h5>
+</td>
+<td class="depTableFont">Yes &nbsp;&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>Driver Deployment: </h5>
+</td>
+<td class="depTableFont"><b>MDT</b> (deploy as hardware app in task sequence)<br>
+&nbsp;&nbsp;&nbsp;As Application (generic_displaylink_driver_for_usb_docks_and_adapters_v9333240.exe -silent) <br><br>
+<b>SCCM </b><br> &nbsp;&nbsp;&nbsp;Deploy As Package in task sequence (generic_displaylink_driver_for_usb_docks_and_adapters_v9333240.exe
+-silent)</td>
+</tr>
+</table>
+
+<hr/>
+
+# ThinkPad USB 3.0 Pro Dock (PN 40A70045)
+
+The ThinkPad USB 3.0 Pro Dock delivers a professional universal USB docking solution with fast USB 3.0 ports and digital video ports for quick and easy connection to all the workspace peripherals you use every day. Simply plug in a single USB 3.0 cable into your Lenovo PC for instant access to up to two external monitors, Gigabit Ethernet, headphones/speakers, USB printers, scanners, keyboard, mouse and so on for daily use. The Dock can also charge your mobile device via an always powered USB port. Dock requires included AC power adapter to operate. 
+
+[>> More Information & Drivers](https://support.lenovo.com/solutions/acc100184)
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px;">
+
+![](../img/guides/docks/usb3pro1.png)
+![](../img/guides/docks/usb3pro2.png)
+</div>
+
+[Display Capabilities](https://support.lenovo.com/us/en/solutions/pd029622#Pro%20Docking)
+
+## Connectivity
+
+>   - 3x USB 3.0 – 1 provides always-on mobile device charging
+>   - 2x USB 2.0
+>   - 1x USB 3.0 upstream connector
+>   - 1x DVI
+>   - 1x DP
+>   - 1x Gigabit Ethernet
+>   - 1x Combo audio Port
+>   - 1 x Security lock hole
+
+## Deployment
+
+<table class="deploymentTable">
+<td class="tdDT" rowspan="18" style="width:15%">
+<h5 align="center">Deployment (MDT & SCCM)</h5>
+</td>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>WMI PNP Query String: </h5>
+</td>
+<td class="depTableFont">USB\VID_17E9&PID_433F&REV_0101
+</td>
+</tr>
+<tr rowspan="1">
+<td rowspan="4" class="tdDT">
+<h5>Driver(s): </h5>
+<tr>
+<td class="tdDT">WinPE </td>
+<td class="depTableFont"><a href="https://support.lenovo.com/solutions/ht104480"
+target="_blank">https://support.lenovo.com/solutions/ht104480</a></td>
+</tr>
+<tr>
+<td class="tdDT">Windows</td>
+<td class="depTableFont"><a href="https://support.lenovo.com/solutions/acc100184"
+target="_blank"> https://support.lenovo.com/solutions/acc100184</a></td>
+</tr>
+<tr>
+<td class="tdDT">Firmware</td>
+<td class="depTableFont">We do not recommend deploying firmware updates during OSD
+deployment<br></td>
+</tr>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>PXE Capable: </h5>
+</td>
+<td class="depTableFont">Yes &nbsp;&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>Driver Deployment: </h5>
+</td>
+<td class="depTableFont"><b>MDT</b> (deploy as hardware app in task sequence)<br>
+&nbsp;&nbsp;&nbsp;As Application (generic_displaylink_driver_for_usb_docks_and_adapters_v9333240.exe -silent) <br><br>
+<b>SCCM </b><br> &nbsp;&nbsp;&nbsp;Deploy As Package in task sequence (generic_displaylink_driver_for_usb_docks_and_adapters_v9333240.exe
+-silent)</td>
+</tr>
+</table>
+
+<hr/>
+
+# ThinkPad USB 3.0 Basic Dock (PN 40AA0045)
+
+Transform any notebook into the heart of your office, instantly connecting mice, keyboards, printers, a monitor & mobile devices, all with a single cable using the ThinkPad USB 3.0 Basic Dock. It delivers the power of SuperSpeed USB 3.0 and high-performance HD video in one convenient, amazingly affordable docking station. The use of one single USB cable reduces annoying cable clutter on your desk. The ThinkPad USB 3.0 Basic Dock also lets you charge a mobile device, even when your notebook is away. The dock comes with 2 x USB 3.0 ports which are ideal for connecting memory keys, hard drives and other accessory devices. It features 2 x USB 2.0 ports for connecting all of your typical office peripherals such as printers and keyboards. It includes 1 x Stereo / Mic Combo Audio Port, Gigabit Ethernet (10/100/1000) connectivity and a cable lock slot for physical security. There is a DVI slot on the rear of the docking station. DVI to VGA adapter is included. 
+
+[>> More Information & Drivers](https://support.lenovo.com/solutions/acc100315)
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px;">
+
+![](../img/guides/docks/usb3b2.png)
+</div>
+
+[Display Capabilities](https://support.lenovo.com/us/en/solutions/pd029622#Baisc%20Dock)
+
+## Connectivity
+
+>Front ports:
+>   - 2x USB 3.0 (One with Always-On Mobile Device Charging) - Ideal for use with memory keys, hard drives and other quick accessdevices.
+>   - Stereo / Mic Combo Audio Port
+>
+>Rear ports:
+>   - 2x USB 2.0- Ideal for most USB devices, including printers, keyboards, and mice.
+>   - 1x DVI
+>   - Includes DVI to VGA adapter
+>   - Gigabit Ethernet (10/100/1000)
+>   - Power In
+
+
+## Deployment
+
+<table class="deploymentTable">
+<td class="tdDT" rowspan="18" style="width:15%">
+<h5 align="center">Deployment (MDT & SCCM)</h5>
+</td>
+<tr>
+<td rowspan="3" class="tdDT">
+<h5>WMI PNP Query String: </h5>
+<tr>
+<td class="tdDT">Ethernet </td>
+<td class="depTableFont">USB\VID_17E9&PID_431F&MI_05
+</td>
+</tr>
+<tr>
+<td class="tdDT">Audio</td>
+<td class="depTableFont">USB\VID_17E9&PID_431F&MI_02</td>
+</tr>
+<tr>
+<td class="tdDT">Display</td>
+<td class="depTableFont">USB\VID_17E9&PID_431F&MI_00</td>
+</tr>
+</td>
+</tr>
+<tr rowspan="1">
+<td rowspan="4" class="tdDT">
+<h5>Driver(s): </h5>
+<tr>
+<td class="tdDT">WinPE </td>
+<td class="depTableFont"><a href="https://support.lenovo.com/solutions/ht104480"
+target="_blank">https://support.lenovo.com/solutions/ht104480</a></td>
+</tr>
+<tr>
+<td class="tdDT">Windows</td>
+<td class="depTableFont"><a href="https://support.lenovo.com/solutions/acc100315"
+target="_blank">https://support.lenovo.com/solutions/acc100315</a></td>
+</tr>
+<tr>
+<td class="tdDT">Firmware</td>
+<td class="depTableFont">We do not recommend deploying firmware updates during OSD
+deployment<br></td>
+</tr>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>PXE Capable: </h5>
+</td>
+<td class="depTableFont">Yes
+<!--<button class="uk-butoon uk-button-primary" id="pxeBasicModel" onclick="displayChart(this)">View list of supported Models</button>-->
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>Driver Deployment: </h5>
+</td>
+<td class="depTableFont"><b>MDT</b> (deploy as hardware app in task sequence)<br>
+&nbsp;&nbsp;&nbsp;As Application (generic_displaylink_driver_for_usb_docks_and_adapters_v9333240.exe -silent) <br><br>
+<b>SCCM </b><br> &nbsp;&nbsp;&nbspDeploy As Package in task sequence (generic_displaylink_driver_for_usb_docks_and_adapters_v9333240.exe -silent)
+</td>
+</tr>
+</table>
