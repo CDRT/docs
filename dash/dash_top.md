@@ -481,6 +481,8 @@ Select desired system to see inventory details in the **Inventory** area below t
 
 After discovery, all the DASH capable systems are added to the default group **All Systems**. New groups can be added to the computer groups list by right clicking on the **Computer Groups** menu item and selecting **Add Group** or by clicking on the **Add** menu item under **Group** ribbon icon
 
+![add group](../img/dash/45-dash.png)
+
 Groups can be deleted by right clicking the relevant group and selecting **Delete Group** or by selecting the **Delete** menu item under **Group** ribbon icon.
 
   
@@ -488,14 +490,11 @@ Groups can be deleted by right clicking the relevant group and selecting **Delet
 
 To add systems to any group, right click on the group to which systems are to be added and select **Add systems** in the menu and select the systems from the new screen. Click on Ok.
 
-
-
+![add to group](../img/dash/44-dash.png)
 
 # AMD Management Plugin for SCCM (AMPS)
 
 ## Overview
-
-
 
 ## Prerequisites and System Requirements
 
@@ -725,7 +724,7 @@ The steps to create the software package are as follows:
  Next, complete the **Standard Program** information:
 
 - Name: DASHConfigRT
-- Command: DASHConfigRT.exe -xf:Config.xml -dxf -mif -lf:DASHConfig.log
+- Command: DASHConfigRT.exe -xf:Config.xml -dxf -mif 
 - Run: Normal
 - Run with Administrative Rights
 
