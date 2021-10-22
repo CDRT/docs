@@ -4,7 +4,25 @@
 
 This page will present the policies found in the Dock Manager ADMX template, along with the OMA-URIs which can be used to configure the application on clients.
 
-Refer to the [Dock Manager blog article](dm/dm) on how to create the Win32 app and for steps on how to ingest the Dock Manager ADMX in Intune.
+Refer to the [Dock Manager blog article](dm/dm) on how to create the Win32 app.
+
+### **ADMX Ingestion**
+
+Sign in to the [MEM admin center](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesWindowsMenu/configProfiles) and create a new Configuration profile for **Windows 10 and later**, selecting the **Custom** template profile.  Enter the required information for the new profile, for example:
+
+**Name**: Lenovo Dock Manager ADMX Ingest
+
+In the Custom OMA-URI Settings menu, click Add to add a new setting.
+
+**Name**: ADMX Ingest
+
+**OMA-URI**: ./Device/Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/DockManager/Policy/DockManager
+
+**Data Type**: String
+
+**Value**: Copy the contents of the .admx into this field
+
+Click OK to complete adding the new OMA-URI row.  Repeat the same steps and add any additional policies you want to manage to the profile.
 
 ### **General**
 
