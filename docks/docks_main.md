@@ -1223,3 +1223,590 @@ deployment<br></td>
 </td>
 </tr>
 </table>
+
+<hr/>
+
+
+# Dock/Port Comparison
+
+
+<table class="PDComparisonTable">
+<tr>
+<th colspan="2"></th>
+<th>ThinkPad Thunderbolt 3 Essential Dock</th>
+<th>ThinkPad Thunderbolt 3 Workstation Dock / ThinkPad Thunderbolt 3 Dock Gen 2</th>
+<th>ThinkPad Thunderbolt 3 Dock</th>
+<th>ThinkPad Hybrid USB-C with USB-A Dock</th>
+<th>ThinkPad USB-C Dock (Gen1 & Gen2)</th>
+<th>ThinkPad OneLink Plus Dock</th>
+<th>ThinkPad OneLink Pro Dock</th>
+<th>ThinkPad OneLink Dock</th>
+<th>ThinkPad USB 3.0 Ultra Dock</th>
+<th>ThinkPad USB 3.0 Pro Dock</th>
+<th>ThinkPad Basic USB 3.0 Dock</th>
+</tr>
+<tr>
+<th rowspan="5">USB Connection</th>
+</tr>
+<tr>
+<th>Thunderbolt 3</th>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th>USB-C</th>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th>USB 3.0</th>
+<td>2</td>
+<td>4+1</td>
+<td>4+1</td>
+<td>2+1</td>
+<td>2+1</td>
+<td>3+1</td>
+<td>3+1</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1+1</td>
+</tr>
+<tr>
+<th>USB 2.0</th>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<th rowspan="4">Connection to Comp</th>
+<th>Thunderbolt 3</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<tr>
+<th>USB-C</th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th>OneLink / OneLink Pro</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1 - OL Plus</td>
+<td>1 - OL</td>
+<td>1 - OL</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th>USB 3.0 </th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tr>
+<tr>
+<th rowspan="1">Audio</th>
+<th>Headphone/ Microphone</th>
+<td>1</td>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<th rowspan="4">Video</th>
+<th>HDMI</th>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>1<br>(Gen2 only)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<tr>
+<th>Display</th>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th>DVI</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<th>VGA</th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td>1 (Gen1 only)</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tr>
+<tr>
+<th rowspan="2">Ethernet</th>
+<th>10/100/1000</th>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<tr>
+<th>PXE Capable</th>
+<td><a href="https://support.lenovo.com/us/en/accessories/um006391" />Yes</a></td>
+<td><a href="https://support.lenovo.com/us/en/accessories/um006391" />Yes</a></td>
+<td><a href="https://support.lenovo.com/us/en/accessories/um006391" />Yes</a></td>
+<td><a href="https://support.lenovo.com/us/en/accessories/um006391" />Yes</a></td>
+<td><a href="https://support.lenovo.com/us/en/accessories/um006391" />Yes</a></td>
+<td><a href="https://support.lenovo.com/us/en/accessories/um006391" />Yes</a></td>
+<td><a href="https://support.lenovo.com/us/en/accessories/um006391" />Yes</a></td>
+<td>No</td>
+<td><a href="https://support.lenovo.com/us/en/accessories/um006391" />Yes</a></td>
+<td><a href="https://support.lenovo.com/us/en/accessories/um006391" />Yes</a></td>
+<td><a href="https://support.lenovo.com/us/en/accessories/um006391" />Yes</a></td>
+</tr>
+</tr>
+</table>
+
+<hr/>
+
+
+# Known Issues
+
+**ThinkPad USB 3.0 Dock Tips**: https://support.lenovo.com/us/en/solutions/ht078725
+
+**USB-C**:  https://support.lenovo.com/us/en/solutions/HT504163
+
+<hr/>
+
+
+# ThinkPad Ultra Docking Station (40AJ0135)
+
+ThinkPad® Ultra Docking Station (40AJ) provides a docking experience for Large Enterprise ThinkPad customers. The innovative side connector, designed exclusively for ThinkPad notebooks, provides a driver-free way to connect conveniently and securely to a range of USB accessories and external displays, while rapid charging support and a mirrored power button make going mobile even easier. It supports: PXE boot, Wake-on-LAN, and MAC address pass-through, simplifying asset management for IT managers.
+
+[>> More Information & Drivers]()
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px;">
+
+![](../img/guides/docks/uds1.png)
+![](../img/guides/docks/uds2.png)
+</div>
+
+[Display Capabilities](https://support.lenovo.com/us/en/solutions/pd029622#Ultra%20Docking)
+
+## Connectivity
+
+>Ports:
+>   - 4 USB 3.1
+>   - 2 USB-C
+>   - 2 DisplayPort
+>   - 1 HDMI
+>   - 1 Ethernet
+>   - 1 Headphone/Mic
+
+## Deployment
+
+<table class="deploymentTable">
+<td class="tdDT" rowspan="10" style="width:15%">
+<h5 align="center">Deployment (MDT & SCCM)</h5>
+</td>
+<tr>
+<td rowspan="3" class="tdDT">
+<h5>WMI PNP Query String: </h5>
+<tr>
+<td class="tdDT">Ethernet </td>
+<td class="depTableFont">None</td>
+</tr>
+<tr>
+<td class="tdDT">Audio</td>
+<td class="depTableFont">USB\VID_17EF&PID_306F&MI_00</td>
+</tr>
+</td>
+</tr>
+<tr rowspan="1">
+<td rowspan="4" class="tdDT">
+<h5>Driver(s): </h5>
+<tr>
+<td class="tdDT">WinPE </td>
+<td class="depTableFont"><a href="" target="_blank">None</a></td>
+</tr>
+<tr>
+<td class="tdDT">Windows</td>
+<td class="depTableFont"><a href="https://pcsupport.lenovo.com/downloads/DS502204"
+target="_blank">https://pcsupport.lenovo.com/downloads/DS502204</a></td>
+</tr>
+<tr>
+<td class="tdDT">Firmware</td>
+<td class="depTableFont"><a href="https://pcsupport.lenovo.com/downloads/DS540663"
+target="_blank">https://pcsupport.lenovo.com/downloads/DS540663<br></td>
+</tr>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>PXE Capable: </h5>
+</td>
+<td class="depTableFont">Yes
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>Driver Deployment: </h5>
+</td>
+<td class="depTableFont"><b>MDT</b> (extract the .zip file and import into the Out-of-Box
+Drivers node for the required models)<br> &nbsp;&nbsp;&nbsp;As Application (setup.exe
+-silent) <br><br>
+<b>SCCM </b><br> &nbsp;&nbsp;&nbspDeploy As Package in task sequence (extract the .zip
+file and import into the driver packages for the needed models)</td>
+</tr>
+</table>
+
+<hr/>
+
+# ThinkPad Pro Docking Station (40AH0135)
+
+ThinkPad® Pro Docking Station (40AH) provides a docking experience for Large Enterprise ThinkPad customers. The innovative side-connector, designed exclusively for ThinkPad notebooks, provides a driver-free way to connect conveniently and securely to a range of USB accessories and external displays, while rapid charging support and a mirrored power button make going mobile even easier. Designed for large enterprise environments, ThinkPad Docking Stations support PXE boot, Wake-on-LAN, and MAC address pass-through, simplifying asset management for IT managers.
+
+[>> More Information & Drivers](https://support.lenovo.com/us/en/solutions/pd500174)
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px;">
+
+![](../img/guides/docks/pds1.png)
+![](../img/guides/docks/pds2.png)
+</div>
+
+[Display Capabilities](https://support.lenovo.com/us/en/solutions/pd029622#Pro%20Docking)
+
+## Connectivity
+
+>Ports:
+>   - 2 USB 3.1 
+>   - 2 USB 2.0
+>   - 1 USB-C
+>   - 1 DisplayPort
+>   - 1 Ethernet
+>   - 1 Headphone/Mic
+
+
+## Deployment 
+
+<table class="deploymentTable">
+<td class="tdDT" rowspan="10" style="width:15%">
+<h5 align="center">Deployment (MDT & SCCM)</h5>
+</td>
+<tr>
+<td rowspan="3" class="tdDT">
+<h5>WMI PNP Query String: </h5>
+<tr>
+<td class="tdDT">Ethernet </td>
+<td class="depTableFont">None</td>
+</tr>
+<tr>
+<td class="tdDT">Audio</td>
+<td class="depTableFont">USB\VID_17EF&PID_306F&MI_00</td>
+</tr>
+</td>
+</tr>
+<tr rowspan="1">
+<td rowspan="4" class="tdDT">
+<h5>Driver(s): </h5>
+<tr>
+<td class="tdDT">WinPE </td>
+<td class="depTableFont"><a href="" target="_blank">None</a></td>
+</tr>
+<tr>
+<td class="tdDT">Windows</td>
+<td class="depTableFont"><a href="https://pcsupport.lenovo.com/downloads/DS502204"
+target="_blank">https://pcsupport.lenovo.com/downloads/DS502204</a></td>
+</tr>
+<tr>
+<td class="tdDT">Firmware</td>
+<td class="depTableFont"><a href="https://pcsupport.lenovo.com/downloads/DS540663"
+target="_blank">https://pcsupport.lenovo.com/downloads/DS540663<br></td>
+</tr>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>PXE Capable: </h5>
+</td>
+<td class="depTableFont">Yes
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>Driver Deployment: </h5>
+</td>
+<td class="depTableFont"><b>MDT</b> (extract the .zip file and import into the Out-of-Box
+Drivers node for the required models)<br> &nbsp;&nbsp;&nbsp;As Application (setup.exe
+-silent) <br><br>
+<b>SCCM </b><br> &nbsp;&nbsp;&nbspDeploy As Package in task sequence (extract the .zip
+file and import into the driver packages for the needed models)</td>
+</tr>
+</table>
+
+
+<hr/>
+
+# ThinkPad Basic Docking Station (PN 40AG0135)
+
+ThinkPad® Basic Docking Station (40AG) provides a docking experience for Large Enterprise ThinkPad customers. The innovative side-connector, designed exclusively for ThinkPad notebooks, provides a driver-free way to connect conveniently and securely to a range of USB accessories and external displays, while rapid charging support and a mirrored power button make going mobile even easier. It supports: PXE boot, Wake-on-LAN, and MAC address pass-through, simplifying asset management for IT managers.
+
+[>> More Information & Drivers](https://support.lenovo.com/us/en/solutions/pd500172)
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px;">
+
+![](../img/guides/docks/bds1.png)
+![](../img/guides/docks/bds2.png)
+</div>
+
+[Display Capabilities](https://support.lenovo.com/us/en/solutions/pd029622#Basic%20Docking)
+
+## Connectivity
+
+>Ports:
+>   - 2 USB 3.1 
+>   - 2 USB 2.0
+>   - 1 DisplayPort
+>   - 1 VGA
+>   - 1 Ethernet
+>   - 1 Headphone/Mic
+
+## Deployment
+
+<table class="deploymentTable">
+<td class="tdDT" rowspan="10" style="width:15%">
+<h5 align="center">Deployment (MDT & SCCM)</h5>
+</td>
+<tr>
+<td rowspan="3" class="tdDT">
+<h5>WMI PNP Query String: </h5>
+<tr>
+<td class="tdDT">Ethernet </td>
+<td class="depTableFont">None</td>
+</tr>
+<tr>
+<td class="tdDT">Audio</td>
+<td class="depTableFont">USB\VID_17EF&PID_306F&MI_00</td>
+</tr>
+</td>
+</tr>
+<tr rowspan="1">
+<td rowspan="4" class="tdDT">
+<h5>Driver(s): </h5>
+<tr>
+<td class="tdDT">WinPE </td>
+<td class="depTableFont"><a href="" target="_blank">None</a></td>
+</tr>
+<tr>
+<td class="tdDT">Windows</td>
+<td class="depTableFont"><a href="https://pcsupport.lenovo.com/downloads/DS502204"
+target="_blank">https://pcsupport.lenovo.com/downloads/DS502204</a></td>
+</tr>
+<tr>
+<td class="tdDT">Firmware</td>
+<td class="depTableFont"><a href="https://pcsupport.lenovo.com/downloads/DS502204"
+target="_blank">https://pcsupport.lenovo.com/downloads/DS540663<br></td>
+</tr>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>PXE Capable: </h5>
+</td>
+<td class="depTableFont">Yes
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>Driver Deployment: </h5>
+</td>
+<td class="depTableFont"><b>MDT</b> (extract the .zip file and import into the Out-of-Box
+Drivers node for the required models)<br> &nbsp;&nbsp;&nbsp;As Application (setup.exe
+-silent) <br><br>
+<b>SCCM </b><br> &nbsp;&nbsp;&nbspDeploy As Package in task sequence (extract the .zip
+file and import into the driver packages for the needed models)</td>
+</tr>
+</table>
+ 
+ 
+ 
+<hr/>
+
+# Side-connected Docks/Port Comparison
+
+<table class="PDComparisonTable">
+<tr>
+<th colspan="2"></th>
+<th>ThinkPad Ultra Docking Station</th>
+<th>ThinkPad Pro Docking Station</th>
+<th>ThinkPad Basic Docking Station</th>
+</tr>
+<tr>
+<th rowspan="5">USB Connection</th>
+</tr>
+<tr>
+<th>Thunderbolt 3</th>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th>USB-C</th>
+<td>2</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<th>USB 3.0</th>
+<td>3+1</td>
+<td>3</td>
+<td>2</td>
+</tr>
+<tr>
+<th>USB 2.0</th>
+<td></td>
+<td>1+1</td>
+<td>1+1</td>
+</tr>
+<tr>
+<th rowspan="1">Audio</th>
+<th>Headphone/ Microphone</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<th rowspan="4">Video</th>
+<th>HDMI</th>
+<td>1</td>
+<td></td>
+<td></td>
+<tr>
+<th>Display</th>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+<tr>
+<th>DVI</th>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th>VGA</th>
+<td>1</td>
+<td></td>
+<td>1</td>
+</tr>
+</tr>
+<tr>
+<th rowspan="2">Ethernet</th>
+<th>10/100/1000</th>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<tr>
+<th>PXE Capable</th>
+<td><a href="https://support.lenovo.com/us/en/accessories/um006391" />Yes</a></td>
+<td><a href="https://support.lenovo.com/us/en/accessories/um006391" />Yes</a></td>
+<td><a href="https://support.lenovo.com/us/en/accessories/um006391" />Yes</a></td>
+</tr>
+</tr>
+</table>
