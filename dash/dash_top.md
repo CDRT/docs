@@ -1099,8 +1099,86 @@ AMPS Status message in **Monitoring** category of Configuration Manager allows u
 
 ![AMPS Status](../img/dash/36-dash.png)
 
+# Troubleshooting
 
-# resources and support
+| **Screen** | **Error** | **Remediation** |
+| --- | --- | --- |
+| Configuration | The authentication account was not found. | Check authentication accounts |
+| |The configuration was not updated since one or more of the tranpsort parameters is invalid. | Check HTTP input port value |
+| |The configuration was not updated since one or more of the authentication parameters is invalid. | Check input credentials properly |
+| |The configuration was not updated since one or more of the setting(s) is invalid. | Check input credentials properly |
+|| The domain user name or password is incorrect. | Check Domain username and password correctly. |
+| Power | Power task on the system failed. | While doing power operation based on selected power state failed please retry again or please check your credentials once again |
+| |Power task on the group failed. | Supported power status not available in selected group of  target machines or please check your credentials once again(ex: power OFF, power ON, Sleep, Hibernate etc.) |
+| |No power state available. | Supported power status not available in selected target machine(ex: power OFF, power ON, Sleep, Hibernate etc.) |
+|| Unauthorized. Verify authentication credentials or port configuration. | Please check the credentials |
+| Boot Config | No boot configuration instances found. | Boot configuration instances are not found in selected target, please verify the target once |
+| |Changed Boot order had failed. | Changing boot order on selected target is failed please retry again |
+|| Default configuration failed. | Changing default configuration on selected target is failed please retry again |
+| |Object reference not set to an instance of object | When Boot Config profile has not devices listed. The NIC vendor has not added Devices in Boot config. |
+|| Boot config failed. | Please check the credentials |
+| |Boot config enumeration failed. | Please check the credentials |
+| |Boot config change boot order failed. | Error ocurred while changing Boot order please retry again. |
+| |Next configuration failed. | Changing next configuration on selected target is failed please retry again |
+| Text Redirection | End the existing session and try again. | Please close the current Putty window. |
+|| Verify if the system supports Text Redirection and try again. | Text Redirection not supported by selected target or please verify your credentials once |
+|| Text redirection failed. Verify if the system supports text redirection and try again. | When there are no instances in text redirection. This message is seen. If the platform claims support for Text redirection, at least one instance needs to be supported. Please contact the NIC vendor for a fix to this issue |
+| |No text redirection instance found. | Text Redirection not enabled on the selected target machine |
+| USB Redirection | Verify if the system supports USB Redirection and try again. | Selected target not supports USB Redirection or please verify your credentials once |
+|| No USB Redirection instance found. | USB Redirection not enabled on the selected target |
+|| Already USB Redirected, either Modify or Disconnect. | USB Redirection already enabled in the selected target you may disconnect it or you can modify it. |
+|| No USB Redirection instance found. | USB Redirection not enabled on the selected target |
+|| USB Redirection failed. | Check input credentials properly and check whether target suppots USB Rdirection |
+||USB Redirection disconnect failed. | Error ocurred while disconecting USB attached on target device please retry again. |
+|| Length of URI specified is beyond allowed limit | Check Image URL properly and try again |
+| |USB Redirection connect failed. | Error while attaching USB file on target . Please retry again |
+|| Verify if URL exists. | May be Entered URL doesn&#39;t exist check again |
+| |Text redirection failed. Verify if the system supports text redirection and try again. | When there are no instances in USB redirection. This message is seen. If the platform claims support for USB redirection, at least one instance needs to be supported. Please contact the NIC vendor for a fix to this issue |
+| KVM Redirection | System does not support KVM redirection. | KVM redirection not supported by selected target or please verify your credentials once |
+|| Supported KVM Redirection Instance not found. | KVM instance not found on the selected target please verify it once |
+|| KVM Redirection connect failed. | There is an error while connecting to the target |
+|| KVM Redirection timed out. | Time expired while connecting to target |
+| |KVM Redirection request aborted. | Connection aborted by the target |
+| |Unable to perform operation, Verify if KVM Redirection is supported by the managed system. | Please check the credentials and whether target supports KVM Redirection |
+| |Enumeration failed for IP Interface | Check targets suppotrs KVM Extended mode |
+| |Unable to connect to AMC Service. | Check your AMC service once, Go to services.msc and check these **AMCAlertservice, AMCDASHService, AMCWebservice** |
+| |System Health | System Health information not found. | System health not supported on selected target or please verify your target once |
+| Firmware Upgrade | Firmware Upgrade is not supported for this device. | Firmware upgrade not supported on selected target or please verify your credentials once |
+|| Firmware Upgrade task failed.. | Firmware upgrade failed on selected target please retry again |
+| Log Entry | Log Entry operation failed. | Log Entry not supported on selected target or please verify your credentials once |
+| Alerts | No Indication filters were found. | Alerts are not supported on selected target or please verify your credentials once |
+| |Indications failed. | Please check the credentials |
+| |Subscription of indication failed. | Operation failed on subscribing alerts please retry once again |
+|| Unsubscription of indication failed. | Operation failed on Unsubscribing alerts please retry once again |
+|| Subscription quota limit is reached. | Alerts subscription limit is reached. |
+| |Enumeration of filter collections failed. | Error while getting the alerts list please try again . |
+|| Enumeration of subscribed indications failed. | Error while getting the alerts list please try again . |
+| |Subscribed filter list had failed. | Operation failed on subscribing alerts please retry once again |
+| |Enumeration of subscribed indication failed | When the platform does not support any events for subscription this error can be seen. |
+| Boot to Text | Boot To Text Power state change failed. | Please check the credentials |
+| |Boot To Text Power task not allowed on localsystem. | Please try Boot To Text on remote system. |
+|| Boot To Text Power Management enumeration failed. | Please check the credentials and try again. |
+|| Boot To Text USB Instances are not found. | Check whether target supports Boot To Text and retry again |
+| |Boot To Text URL diconnect failed. | Error while disconnecting Boot To Text on target, please try again. |
+| |Boot To Text URL connect failed. | Error while connecting Boot To Text on target, please try again. |
+| |Boot To Text Get instance failed. | Check credentials and try again. |
+|| Boot To Text Boot Order change failed. | Error while changing Boot order change. |
+|| Boot To Text Boot instances are not found. | Check credentials and try again. |
+|| Boot To Text Boot config change boot order failed. | Error while changing Boot order change. |
+| |Boot To Text Boot device decription string retrieval failed. | Error while changing Boot order change. |
+| |Boot To Text Boot config change order failed. | Error while changing Boot order change. |
+| |Boot To Text failed to perform Text Redirection | Check credentials and try again. |
+|| Boot To Text Text Redirection Disable failed | Error while disabling Boot To Text on target please try again |
+|| Boot To Text failed to perform Text Redirection connect operation | Error while connecting Boot To Text on target please try again |
+|| No BootToTextImage data found in the response | Boot text image not supported on selected target or please verify your credentials once |
+| |Boot to BIOS | KVM redirection failed. | KVM Redirection failed on selected target please verify your credentials once |
+|| System does not support KVM redirection. | Selected target doesn&#39;t supports KVM Redirection please verify your target |
+|| Supported KVM Redirection Instance not found. | KVM Instance not found in the selected target |
+|| KVM Redirection enumeration failed | Upon enumeration 0 instances are found. Check with NIC vendor if KVM support is added |
+| Remote Access | Supported KVM Redirection Instance not found. | Please check target whether it supports In band KVM |
+| KVM Redirection enumeration failed | Upon enumeration 0 instances are found. Check with NIC vendor if KVM support is added |
+
+# Resources and Support
 
 More details about AMPS features and AMPS updates can be found at:
 
