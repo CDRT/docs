@@ -1100,6 +1100,7 @@ AMPS Status message in **Monitoring** category of Configuration Manager allows u
 ![AMPS Status](../img/dash/36-dash.png)
 
 # Troubleshooting
+## Troubleshooting DASH Operations
 
 | **Screen** | **Error** | **Remediation** |
 | --- | --- | --- |
@@ -1177,6 +1178,17 @@ AMPS Status message in **Monitoring** category of Configuration Manager allows u
 || KVM Redirection enumeration failed | Upon enumeration 0 instances are found. Check with NIC vendor if KVM support is added |
 | Remote Access | Supported KVM Redirection Instance not found. | Please check target whether it supports In band KVM |
 | KVM Redirection enumeration failed | Upon enumeration 0 instances are found. Check with NIC vendor if KVM support is added |
+
+## Troubleshooting KVM issues
+
+| Serial Number | Error code | Friendly Name | Description |
+| --- | --- | --- | --- |
+| 1 | Error 20 | Key Parse Failed | This error can be seen if some file related to installation has been modified. Issue can be resolved by reinstalling AMC |
+| 2 | Error 21 | Connection Failed | This error can be seen if the platform did not successfully connect to the remote system via SSH. Re attempting to connect may resolve issue. If issue persists, please contact platform vendors |
+| 3 | Error 22 | Host name not found | This error can be seen if the platform did not allow a socket connection with the client. This issue can occur if IP address changes in KVM session or if the KVM session is not enabled due to SSH failure. Please contact vendor if issue recurs. |
+| 4 | Error 23 | Connection Key failed | This error can be seen if the platform did not successfully connect to the SSH connection with the provided key for KVM 1.9 and above. When this error occurs, SSH connection with KVM 1.8 is then attempted for KVM Redirection |
+| 5 | Error 24 | Not Supported | This error can be seen when KVM Redirection is not supported on the platform where it was launched |
+| 6 | Error 25 | Connection Forcibly Closed | This error can be seen if some activity in the platform forced it to close the connection |
 
 # Resources and Support
 
