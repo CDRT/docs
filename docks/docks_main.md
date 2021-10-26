@@ -109,8 +109,7 @@ Intel 5th generation processors with CPU designation i3-5xxx, i5-5xxx, i7-5xxx)
 Intel 6th generation processors with CPU designation i3-6xxx, i5-6xxx, i7-6xxx
 
    - USB 3.0 docks supported on all Skylake systems.
-   - OneLink+ docks supported on models with OneLink+ port.
-   
+   - OneLink+ docks supported on models with OneLink+ port.  
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
 ![](../img/guides/docks/img2.png)
@@ -123,7 +122,7 @@ Intel 6th generation processors with CPU designation i3-6xxx, i5-6xxx, i7-6xxx
 | ThinkPad P50       | Supported | Supported     | Not Supported            |
 | ThinkPad P70       | Supported | Supported     | Not Supported            |
 
-* Requires BIOS R0CET28W – Ver. 1.16 or newer for Mac Address Pass-Through
+\* Requires BIOS R0CET28W – Ver. 1.16 or newer for Mac Address Pass-Through
 
 On ThinkPad 13 systems, When MAC Address PassThrough is Enabled you will still need the Realtek NIC driver as it is actually "cloning" (or passing through) the laptop's built-in Intel NIC card's MAC Address. OSD deployments in SCCM are generally targeted to the "unknown computers" collection which is determined by MAC Address up to version 1610 which allows you to Manage Duplicate Identifiers. Whether you have configured SCCM to use an alternate Identifier or not, MAC Address Pass-Through setting allows you to use the same dock for multiple deployments over time. This setting is also suggested for pushing software updates because it will allow management of the system even when it is not docked.
 
@@ -220,7 +219,7 @@ Top Features for Thunderbolt 3 Essential Dock
 </tr>
 <tr>
 <td class="tdDT">Windows</td>
-<td class="depTableFont"><a href=https://pcsupport.lenovo.com/downloads/DS542694" target="_blank">https://pcsupport.lenovo.com/downloads/DS542694</a></td>
+<td class="depTableFont"><a href=https://pcsupport.lenovo.com/downloads/DS542694" target="_blank">https://pcsupport.lenovo.com/us/en/downloads/ds542694-driver-for-windows-10-64-bit-lenovo-thunderbolt-3-essential-dock</a></td>
 </tr>
 <tr>
 <td class="tdDT">Firmware</td>
@@ -400,7 +399,7 @@ The ThinkPad Thunderbolt 3 Dock is an unmatched docking solution powered by Inte
 <h5>Driver(s): </h5>
 <tr>
 <td class="tdDT">WinPE </td>
-<td class="depTableFont"><a href="https://support.lenovo.com/solutions/ht101981" target="_blank">https://support.lenovo.com/solutions/ht101981</a>>/td>
+<td class="depTableFont"><a href="https://support.lenovo.com/solutions/ht101981" target="_blank">https://support.lenovo.com/solutions/ht101981</a></td>
 </tr>
 <tr>
 <td class="tdDT">Windows</td>
@@ -819,11 +818,21 @@ The ThinkPad OneLink Pro Dock, powered by Lenovo’s revolutionary OneLink techn
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px;">
 
-![](../img/guides/docks/olpro1.png)
+![](../img/guides/docks/olp1.png)
 ![](../img/guides/docks/olpro2.png)
 </div>
 
-[Display Capabilities]()
+<details>
+<summary>Display Capabilities</summary>
+
+**ThinkPad OneLink Pro Dock Display Capabilities**
+
+\* Maximum resolution of 1920x1200 supported if second monitor is attached to DVI output
+
+Full Dual video output is supported on ThinkPads with DisplayPort 1.2. ThinkPads with DisplayPort 1.1(ThinkPad Edge E431/E531/S431/S531) have some limitations with video output configurations.
+
+\**Gigabit Ethernet by USB, installing a driver may be required.
+</details>
 
 ## Connectivity
 
@@ -915,8 +924,27 @@ The dock is a portable expansion module that enables you to easily connect your 
 ![](../img/guides/docks/ol1.png)
 </div>
 
-[User Guide]()
-[Display Capabilities]()
+[User Guide](https://download.lenovo.com/pccbbs/options/tp_onelink_dock_ug_en_sp40a02137.pdf)
+
+<details>
+<summary>Display Capabilities</summary>
+
+**ThinkPad OneLink Display Capabilities**
+
+**Extend Mode:** When the dock is in extended mode, it splits your display across two monitors. Your notebook computer monitor becomes the primary display and the external monitor becomes the secondary display. By default, the external monitor display is on the right side of the notebook computer monitor display. 
+   
+In extend mode, you can drag and drop windows from one display to the other. Also, you can increase your productivity by doing the following:
+   - Reading emails on one display and opening the attachments on the other
+   - Expanding a spreadsheet across two displays 
+   - Increasing your work area by putting all the palette and toolbars on the other display when you are doing graphics editing
+   - Keeping the desktop on one display and watching videos on the other
+
+**Mirror Mode:** When the dock is in mirror mode, it clones your notebook computer screen to the external monitor. The dock automatically selects the settings (screen resolution, color quality, and refresh rate) for the external monitor, which will enable the best resolution on your notebook computer.
+
+**Single-display Mode:** When the dock is in a single-display mode, it enables you to show your desktop on only one screen.
+</details>
+      
+
 
 ## Connectivity
 
@@ -1480,7 +1508,7 @@ deployment<br></td>
 
 ThinkPad® Ultra Docking Station (40AJ) provides a docking experience for Large Enterprise ThinkPad customers. The innovative side connector, designed exclusively for ThinkPad notebooks, provides a driver-free way to connect conveniently and securely to a range of USB accessories and external displays, while rapid charging support and a mirrored power button make going mobile even easier. It supports: PXE boot, Wake-on-LAN, and MAC address pass-through, simplifying asset management for IT managers.
 
-[>> More Information & Drivers]()
+[>> More Information & Drivers](https://support.lenovo.com/us/en/solutions/pd500173-thinkpad-ultra-docking-station-overview-and-service-parts)
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px;">
 
@@ -1524,7 +1552,7 @@ ThinkPad® Ultra Docking Station (40AJ) provides a docking experience for Large 
 <h5>Driver(s): </h5>
 <tr>
 <td class="tdDT">WinPE </td>
-<td class="depTableFont"><a href="" target="_blank">None</a></td>
+<td class="depTableFont">None</td>
 </tr>
 <tr>
 <td class="tdDT">Windows</td>
@@ -1608,7 +1636,7 @@ ThinkPad® Pro Docking Station (40AH) provides a docking experience for Large En
 <h5>Driver(s): </h5>
 <tr>
 <td class="tdDT">WinPE </td>
-<td class="depTableFont"><a href="" target="_blank">None</a></td>
+<td class="depTableFont">None</td>
 </tr>
 <tr>
 <td class="tdDT">Windows</td>
@@ -1692,7 +1720,7 @@ ThinkPad® Basic Docking Station (40AG) provides a docking experience for Large 
 <h5>Driver(s): </h5>
 <tr>
 <td class="tdDT">WinPE </td>
-<td class="depTableFont"><a href="" target="_blank">None</a></td>
+<td class="depTableFont">None</td>
 </tr>
 <tr>
 <td class="tdDT">Windows</td>
