@@ -728,8 +728,8 @@ The docking station comes equipped with a stereo/microphone combination audio po
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px;">
 
-![](../img/guides/docks/olp1.png)
 ![](../img/guides/docks/olp2.png)
+![](../img/guides/docks/olp1.png)
 </div>
 
 [Display Capabilities](https://support.lenovo.com/us/en/solutions/pd029622#OneLink+%20Dock)
@@ -818,7 +818,7 @@ The ThinkPad OneLink Pro Dock, powered by Lenovo’s revolutionary OneLink techn
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px;">
 
-![](../img/guides/docks/olp1.png)
+![](../img/guides/docks/olpro1.png)
 ![](../img/guides/docks/olpro2.png)
 </div>
 
