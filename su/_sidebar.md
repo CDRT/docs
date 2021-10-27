@@ -4,6 +4,8 @@
 
 **System Update Suite**
 
+- [System Update Suite Deployment Guide](su/su_dg.md)
+
 - [Deployment Guide ![ ](../img/link.png)](https://download.lenovo.com/cdrt/docs/DG-SystemUpdateSuite.pdf)
 
 ---
