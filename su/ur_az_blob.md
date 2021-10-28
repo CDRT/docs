@@ -1,6 +1,6 @@
 ## Hosting an Update Retriever Repository in an Azure Blob ![](../img/guides/ur/az_blob/azureblob.png)
 
-?> System Update v5.07.0110 and later supports Blob storage access via HTTPS
+?>System Update v5.07.0110 and later supports Blob storage access via HTTPS
 
 When it comes to managing a centralized Update Retriever repository, challenges arise with widely distributed environments.  This is where leveraging a cloud storage solution can bring value.
 
