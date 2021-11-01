@@ -1,10 +1,11 @@
-## Hosting an Update Retriever Repository in an Azure Blob ![](../img/guides/ur/az_blob/azureblob.png)
+## Hosting an Update Retriever Repository in an Azure Blob ![](../img/guides/ur/az_blob/azureblob.png) 
+*Author: Philip Jorgensen*
 
 ?>System Update v5.07.0110 and later supports Blob storage access via HTTPS
 
 When it comes to managing a centralized Update Retriever repository, challenges arise with widely distributed environments.  This is where leveraging a cloud storage solution can bring value.
 
-I thought this post may be helpful for anyone piloting a "modern" way of updating their Think products.  This walk-through assumes the following tools are in place:
+This post may be helpful for anyone piloting a "modern" way of updating their Think products.  This walk-through assumes the following tools are in place:
 
 * [Update Retriever](https://support.lenovo.com/us/en/solutions/ht037099#ur)
 * [Thin Installer](https://support.lenovo.com/us/en/solutions/ht037099#ti) or [System Update](https://support.lenovo.com/us/en/solutions/ht037099#tvsu) on the client
@@ -90,4 +91,4 @@ Simply update the **AdminCommandLine** registry value to point to your Blob URL.
 /CM -search A -action LIST -includerebootpackages 1,3,5 -packagetypes 1,2,3,4 -nolicense -repository https://yourblob.blob.core.windows.net/repository -exporttowmi 
 ```
 
-Refer to the System Update Suite Deployment [Guide](https://download.lenovo.com/cdrt/docs/DG-SystemUpdateSuite.pdf) for available command line options.
+Refer to the System Update Suite Deployment [Guide](https://docs.lenovocdrt.com/#/su/su_dg) for available command line options.
