@@ -8,27 +8,7 @@ This guide is intended for skilled IT administrators who are responsible for dep
 
 If you have suggestions, comments, or questions, please talk to us on our forum! A team of deployment engineers (including the author of this document) is standing by, ready to help with any deployment challenges you are facing: [https://forums.lenovo.com/t5/Enterprise-Client-Management/bd-p/sa01\_eg](https://forums.lenovo.com/t5/Enterprise-Client-Management/bd-p/sa01_eg)
 
-## Chapter 1. Overview
-
-**Commercial Vantage** provides a user interface for changing hardware settings, checking for Lenovo software and driver updates, and more. **Commercial Vantage** is a slimmed-down and customizable version of Lenovo Vantage which has been available in the Microsoft Store since December 2017. To use **Commercial Vantage** , you must first uninstall any existing version of Lenovo Vantage, Lenovo Companion, or Lenovo Settings that may already exist on your PC.
-
-The following software components are required to take full advantage of the Commercial Vantage features:
-
-- **The application: Commercial Vantage**
-
-This Windows 10 store application provides the user interface. You can install the application from the Microsoft Store, or you can side-load it using the MSIXBUNDLE files that we provide. Note that any previous version of Lenovo Vantage, Lenovo Companion, or Lenovo Settings must be uninstalled before installing Commercial Vantage.
-
-- **Lenovo System Interface Foundation**
-
-This driver is required to allow the **Commercial Vantage** to provide control of system features. The driver is installed to **Device Manager -> System Devices** as **System Interface Foundation V2 Device**. The driver also installs the **System Interface Foundation Service**. The service uses a plugin framework which provides the individual features of **Commercial Vantage**. The System Interface Foundation Service and these plugins are automatically updated by Lenovo to fix bugs and provide new features.
-
-- **Lenovo Vantage Service**
-
-This package installs the Lenovo System Interface Foundation plugins that are required for **Commercial Vantage**
-
-This document provides details how to deploy and configure **Commercial Vantage**.
-
-## Chapter 2. Deployment
+## Deployment
 
 **Commercial Vantage Application**
 
@@ -60,7 +40,7 @@ VantageService.3.6.15.0-lite.exe /verysilent /NORESTART
 
 Lenovo provides a batch file, `setup-commercial-vantage.bat`, that deploys the above components. This batch file can be used as-is, or it can be modified to deploy optional configurations as documented in the next chapters.
 
-# Chapter 3. Configuration
+# Configuration
 
 Lenovo understands that some features of Commercial Vantage may not be appropriate for end users in a managed corporate environment. Therefore, most features of Commercial Vantage can be hidden or disabled so that your end users cannot access them. There are two ways to configure Commercial Vantage:
 
@@ -89,7 +69,7 @@ Commercial Vantage can also be configured by importing .reg file(s) to your PCs 
 9. Save the registry file to your PC
 10. On the PCs where you are deploying Commercial Vantage, import this registry file. This can be done before, during, or after the deployment of Commercial Vantage.
 
-# Chapter 4. Features and Sample Configurations
+# Features and Sample Configurations
 
 1. **Commercial Vantage – show/hide application features**
 
@@ -106,8 +86,8 @@ Again, this is just a sample. You can deploy any available policy setting in thi
 
 By default, the System Update feature of Commercial Vantage automatically installs the following updates on a weekly schedule:
 
-- All &quot;Critical&quot; updates (BIOS, firmware, drivers, and software)
-- All &quot;Recommended&quot; driver updates (not BIOS, firmware, or software)
+- All "Critical" updates (BIOS, firmware, drivers, and software)
+- All "Recommended" driver updates (not BIOS, firmware, or software)
 
 These automatic updates can be disabled in **Computer Configuration -> Administrative Templates -> Commercial Vantage -> Device -> System Update -> Auto Update**. Or, you can use the **VantageDisableAutomaticSystemUpdates.reg** file which is included in the deployment packagee.
 
