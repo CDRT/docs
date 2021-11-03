@@ -9,9 +9,13 @@
 -- [System Update, Update Retriever, Thin Installer](su/su_top.md)
 -- [Think BIOS Config Tool](tbct/tbct_top.md)
 
+<!--
+- [Deployment Guides](guides/deployment_guides.md) 
+- [Reference Material](reference/reference.md)-->
 ---
 - **Reference Material**
 -- [Scripting Samples](samples/samples.md)
+-- [Docks Reference](docks/docks_top.md)
 -- [BIOS Reference](bios/bios_top.md)
 -- [AMD DASH](dash/dash_top.md)
 
