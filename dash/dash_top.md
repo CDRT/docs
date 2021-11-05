@@ -81,26 +81,26 @@ Prerequisites:
 
 **Note**: DashConfig, an AMD tool, is packaged with AMC and can be used for configuration. Refer the release notes of DASH Config tool or see [Provisioning tools for DASH standalone systems](https://community.amd.com/t5/amd-manageability-community-tkb/provisioning-tools-for-dash-standalone-systems/ta-p/420927)
 
-Two different DashConfig tools are available: DashConfig for Broadcom and DashConfigRT for Realtek. Most all Lenovo systems will require the DASHConfigRT tool.
+Two different DashConfig tools are available: DashConfig for Broadcom and DashConfigRT for Realtek. All Lenovo systems will require the DASHConfigRT tool.
 
 ## DASH setup
 
   
 ### Enable DASH in BIOS
 
-The most recent system BIOS can be found at [https://pcsupport.lenovo.com/](https://pcsupport.lenovo.com/).
+It is recommended to check that the most recent BIOS has been applied to the system.  The most recent system BIOS can be found at [https://pcsupport.lenovo.com/](https://pcsupport.lenovo.com/).
 
- 1. First boot into system BIOS and locate DASH Configuration under Security.
+ 1. First boot into system BIOS and locate **DASH Configuration** under Security.
 
     ![BIOS - DASH Configuration](../img/dash/4-dash.jpg)
 
-2. DASH Configuration - Set DASH to Enabled
+2. **DASH Configuration** - Set DASH to Enabled
 
     ![DASH Support setting](../img/dash/5-dash.jpg)
 
- 3. RealTek LAN Controller - Reset the DASH Credentials under RealManage Setup. These credentials are used for Digest Authentication of the management service to the client. Refer to manufacturer documentation for default credentials. It is recommended to change the default credentials.
+ 3. **RealTek LAN Controller** - Reset the DASH Credentials under RealManage Setup. These credentials are used for Digest Authentication of the management service to the client.  You may need to scroll down to see **Realtek Manage Setup**.
 
-**NOTE:** You may need to scroll down to see Realtek Manage Setup
+  **Note** The default credentials are Administrator/Realtek. *Both* username and password are case sensitive.
 
    ![RealManage Setup](../img/dash/6-dash.png)
 
@@ -110,10 +110,9 @@ The most recent system BIOS can be found at [https://pcsupport.lenovo.com/](http
 
   
 ### Windows DASH client software
+The Realtek DASH Windows software can be found at [https://pcsupport.lenovo.com/](https://pcsupport.lenovo.com/). Locate the support page for a specific model and select the **Drivers &amp; Software** menu item on the left side of the page. Select **Manual Update** and browse to **Networking: LAN (Ethernet)**.
 
-DASH Windows software can be found at [https://pcsupport.lenovo.com/](https://pcsupport.lenovo.com/). Locate the support page for a specific model and select the Drivers &amp; Software menu item on the left side of the page. Select **Manual Update** , and browse to **Networking: LAN (Ethernet)**
-
-Documentation for attended and unattended installation will be available with the application download and in the installation directory. The default installation location is _C:\Program Files (x86)\AMD Management Console._
+Documentation for attended and unattended installation will be available with the application download in the installation directory. The default installation location is _C:\Program Files (x86)\AMD Management Console._
 
 ![Drivers & Software - Manual Updates](../img/dash/8-dash.png)
 
