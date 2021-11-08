@@ -319,3 +319,79 @@ The result will map to one of the values in the table below:
 
 ?>NOTE: The information provided by the script will only return the state of the passwords, it will not return the actual passwords.
 
+### OS Optimized Defaults
+
+To make our BIOS compliant with the Microsoft Windows 8 and/or Windows 10 Certification Requirements, Lenovo has implemented a single setting, that when enabled and the default settings loaded, will set a group of settings to ensure the computer meets the requirements set forth by Microsoft and allow Windows 8 and newer operating systems to be installed on the hardware. When the setting is disabled and the default settings are loaded, the OS Optimized Defaults will set the settings in a state where they will not be compliant to the Microsoft Windows 8 and/or Windows 10 Certification Requirements and allow all (Windows 7 and prior) operating systems to be installed on the hardware.
+
+The settings that OS Optimized Defaults controls are as follows:
+
+| ThinkPad     | CSM Support, UEFI/Legacy Boot, UEFI/Legacy Boot Priority, Secure Boot, and Secure Rollback Prevention |
+|--------------|-------------------------------------------------------------------------------------------------------|
+| **ThinkCentre**  | CSM Support, Boot Mode, Boot Priority, and Secure Boot                                                |
+| **ThinkStation** | CSM Support, Boot Mode, Boot Priority, and Secure Boot                                                |
+
+Once Secure Boot is Enabled on a system, the setting cannot be changed to Disabled by script using the WMI BIOS Interface. It has to be manually disabled if there is a need. With security being a high profile topic in organizations, we took the step of only allowing our scripting to make the computer more secure, not less secure. Any action to make the computer less secure would have to be performed with physical presence.
+
+### WMI BIOS Interface
+
+Through WMI methods, Lenovo has provided the ability to read and configure some BIOS Settings via scripting. The settings available to be changed by scripts are limited to non-security settings. Lenovo provides [VBScripts](https://support.lenovo.com/us/en/solutions/ht100612) as well as an [HTA Tool](http://thinkdeploy.blogspot.com/2016/08/the-think-bios-config-tool.html) called Think BIOS Config tool to facilitate easier manipulation of BIOS settings from both a scripted context as well as a graphical context. These capabilities are implemented on most Think branded devices.
+
+To find more information on a particular BIOS setting for a system such as name, explanation or default value, navigate to [https://pcsupport.lenovo.com](https://pcsupport.lenovo.com/) . Type in the Model or MTM of the system and select the correct one from the drop down list. Click on Documentation and then look for the User Guide in the list of documents. In the User Guide, there will be a full listing of settings, descriptions, available values, and default values to reference.
+
+The Think BIOS Config tool is an HTA that can be run with an interface or directly from a command line to perform BIOS configurations. When double clicking the .hta file, it will run and provide a dynamic interface that shows all settings in the BIOS that are configurable by script for that computer.
+
+?>NOTE: Think BIOS Config tool will ask for UAC elevation, since accessing the BIOS through WMI requires elevated privileges.
+
+Each setting will show the current value associated with the setting. In drop down lists it will provide all possible values for that setting. When a value is changed for a setting, the setting name will turn red as a visual indicator that the setting is now different. To commit changes to be applied on the next reboot, use the Save Changed Settings button.
+
+The interface also has the ability to create an .INI file with a full list of settings to use for other systems of the same model. The interface has the ability to import a previously created .INI file to configure a full set of settings or a subset of settings to be applied to a computer.
+
+The Think BIOS Config tool has the ability to be run from a command line for System Administrators to change settings through a SCCM software push or SCCM or MDT task sequence for deploying an operating system.
+
+Full documentation for the execution of the Think BIOS Config tool can be found in the User Guide which is included in the .zip file available in this [blog post](http://thinkdeploy.blogspot.com/2016/08/the-think-bios-config-tool.html).
+
+In addition to the Think BIOS Config tool, Lenovo has VBScripts to assist with changing and viewing BIOS Settings. The 5 scripts are ListAll.vbs, LoadDefaults.vbs, SetConfig.vbs, SetConfigPassword.vbs, and SetSupervisorPassword.vbs.
+
+The ListAll.vbs script iterates through all settings, displaying the setting name, the current setting, and a list of all possible settings. The ListAll.vbs script is best used in an Administrator command prompt with cscript.
+
+	Microsoft Windows [Version 10.0.15063]
+	(c) 2017 Microsoft Corporation. All rights reserved.
+
+	C:\WINDOWS\system32>cscript.exe ListAll.vbs
+
+The LoadDefaults.vbs script will load the factory defaults for the computer. To find the defaults, reference the User Guide documentation for the specific model.
+
+The SetConfig.vbs and SetConfigPassword.vbs are used to set individual settings. The only difference between to the two scripts is that SetConfigPassword.vbs requires an extra parameter for the input of the Supervisor password to change the setting, when a Supervisor password is set on the BIOS.
+
+The final script is the SetSupervisorPassword.vbs script. This script facilitates the change of the Supervisor password when one is currently set on the BIOS. This script does not allow for the initial setting of the BIOS Supervisor Password.
+
+The provided VBScripts can also be incorporated into a software deployment through SCCM or through a SCCM or MDT task sequence for OSD.
+
+For PowerShell examples, see Appendix B. Sample PowerShell commands in the [BIOS Setup using Windows Management Instrumentation Deployment Guide](https://support.lenovo.com/us/en/solutions/ht100612).
+
+
+## OS Specific Considerations
+
+Specific BIOS considerations need to be taken when deploying an operating system, such as BIOS Mode, secure boot status, and other features that can enhance the experience provided by the operating system. Below, we have laid out suggested settings in the BIOS for getting the best performance, upgradability, and features for a specific operating system or group of operating systems.
+
+| **Windows 10 x64 / Windows 8.1 x64** | UEFI   | On the Restart tab in BIOS, set OS Optimized Defaults – Enabled and then load default settings. These settings will allow the hardware to run in UEFI mode These settings will allow for a GPT partition, Device Guard/Credential Guard (with supervisor password), and Secure Boot enabled, all of which will allow an organization to leverage the full potential of Windows 10 operating system.       |
+|----------------------------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Windows 7 x64**                    | UEFI   | On the Restart tab in BIOS, set OS Optimized Defaults – Disabled and load the defaults. On the Startup Tab, set the UEFI/Legacy (Boot Mode) to UEFI Only. On the Config Tab, in the Network group, set both UEFI IPv4 Network Stack and UEFI IPv6 Network Stack to Enabled. Deploy Windows 7 x64 to the hardware with a GPT partition. This will enable an easier transition to Windows 10 in the future. |
+| **Windows 7 x86/ Windows 7 x64**     | Legacy | On the Restart Tab in BIOS, set OS Optimized Defaults – Disabled and load the defaults. Doing this will allow the computer to create an MBR partition and run all hardware in Legacy Mode for the older operating system.                                                                                                                                                                                 |
+
+
+## Common Terms and Acronyms
+
+**BIOS** – Basic Input/Output System
+
+**SCCM** – Configuration Manager or System Center Configuration Manager
+
+**MDT** – Microsoft Deployment Toolkit
+
+**OSD** – Operating System Deployment
+
+**TPM** – Trusted Platform Module
+
+**UEFI** – Unified Extensible Firmware Interface
+
+**WMI** – Windows Management Interface
