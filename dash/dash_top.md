@@ -132,7 +132,7 @@ AMC supports the following DASH functionality :
 - Firmware Update
 - Alerts
 
-**Note:** Before performing a discovery operation, make sure that the authentication details are correct. Refer to Authentication.
+**Note:** Before performing a discovery operation, make sure that the authentication details are correct. Refer to [Authentication](#Authentication).
 
 ## Discovery
 
@@ -140,7 +140,7 @@ AMC can only discover systems that have hardware which supports the DMTF managem
 
 AMC supports four methods of discovery, which are described below.
 
-**Note:** Discovery requests are queued. If a user chooses Active Directory discovery and then tries to do any of the other types of discovery, then that discovery will be done after the completion of Active Directory discovery.
+**Note:** Discovery requests are queued. If a user chooses Active Directory discovery, then tries to do any of the other types of discovery, the other  discovery will be done after Active Directory discovery completes.
 
  ![Discovery criteria window](../img/dash/9-dash.png)
 
@@ -167,7 +167,6 @@ Each system in the domain is checked for AMD manageability when AMPS is first in
 
 AMC can be used to monitor, report, and manage the power state of client systems remotely.
 
-  
 ### Power States
 
 The table below lists all supported power states.
@@ -195,11 +194,11 @@ The table below lists all supported power states.
 
 1. Right click on the specific system on which the power operation is to be performed.
 2. Select **Power** from the menu. You will get the Power screen.
-3. The Power Screen will show:
-  - The system name against which you are going to perform the power operation
+3. The **Power Screen** will show:
+  - The system name against which you are going to perform the power operation,
   - The current power state of the system.
   - The list of power states which the system can accept from its current state is shown in the &#39;select power state to apply&#39; drop down list.
-4. To start the transition of the system to the new power state, click **Apply**
+4. To start the transition of the system to the new power state, click **Apply**.
 5. The result of the operation will be displayed. Click **Finish** to close the Power window.
 
 ![ Power operation on single system](../img/dash/10-dash.png)
@@ -213,15 +212,15 @@ The table below lists all supported power states.
   
 ### Boot
 
-A boot configuration specifies the order of boot devices. A computer system can have one or more boot configurations. If there is more than one boot configuration for a computer system, the settings data associated with the boot configurations, is used to determine which boot configurations and boot order should be followed during next boot process.
+A boot configuration specifies the order of boot devices. A computer system can have one or more boot configurations.
 
-AMC&#39;s Boot task shows all the boot configurations available for the system being managed. For each boot configuration, it shows the current boot order and allows the user to modify the boot order if required. AMC only informs the present value of the setting data (will it be used for next boot, will it be used only for next boot, will it not be used for next boot) but does not allow the user to modify this.
+AMC&#39;s Boot task shows all the boot configurations available for the system being managed. For each boot configuration, it shows the current boot order and allows the user to modify the boot order. AMC only informs the present value of the setting data (will it be used for next boot, will it be used only for next boot, will it not be used for next boot) but does not allow the user to modify this.
 
 To manage Boot settings:
 
  1. Select the target system.
 
- 2. Either right click on the system and select **Boot** menu item or click on the ribbon icon **Boot**.
+ 2. Either right click on the system and select the **Boot** menu item or click on the ribbon icon **Boot**.
 
   3. The Boot Screen appears and displays a drop-down list with all the boot configurations available for the system.
 
@@ -249,7 +248,7 @@ To manage Boot settings:
   
 ### Text Redirection
 
-Text redirection provides BIOS-assisted console and keyboard redirection to a remote computer terminal. Boot progress, BIOS setup screen, command line OS or command line diagnostic console text are redirected to the AMC terminal. Text redirection can be to use either Telnet or SSH
+Text redirection provides BIOS-assisted console and keyboard redirection to a remote computer terminal. Boot progress, BIOS setup screen, command line OS or command line diagnostic console text are redirected to the AMC terminal. Text redirection can be set to use either Telnet or SSH
 
 To use text redirection:
 
@@ -295,12 +294,9 @@ AMC has its own ISO webserver. Use AMC to initiate an action to attach the manag
 
 The AMC Boot to Text Image feature provides an environment where user can boot the managed system to a user defined text based remote image (e.g. .iso image).
 
-  
 ### Boot to BIOS [KVM Profile]
 
-
-
-**Boot to BIOS** implements the DMTF DASH KVM profile and allows the user to boot the managed system to the BIOS setup screen, and remotely connect to the BIOS screen via the VNC viewer. Through the VNC viewer, the user can access the BIOS screen and interact with mouse and keyboard.
+**Boot to BIOS** implements the DMTF DASH KVM profile so the user to boot the managed system to the BIOS setup screen, and remotely connect to the BIOS screen via the VNC viewer. Through the VNC viewer, the user can access the BIOS screen and interact with mouse and keyboard.
 
 To boot to BIOS:
 
@@ -316,7 +312,7 @@ After the managed system boots to BIOS setup screen and the VNC server is ready,
 
 **NOTE:** When the VNC Viewer is closed, the managed system is rebooted.
 
-  
+
 ### Remote Access
 
 The AMC **Remote Access** feature provides support for launching of In-band KVM and Remote Desktop tools.
@@ -354,13 +350,12 @@ To use In-band KVM feature, ensure the relevant Windows driver package released 
   
 ### DASHConfigRT Tool
 
-DASHConfig provides six case-sensitive parameters ( –v, -xf, -lf, -dxf, -mif and –help ) that are defined in the following table.
+DASHConfig provides six case-sensitive parameters ( –v, -xf, -dxf, -mif and –help ) that are defined in the following table.
 
 | Parameter | Description |
 | --- | --- |
 | -v | Displays the DASHConfig version information to the console |
-| -xf | Represents the XML file parameter that informs the tool of the location of the XML file used to provision a DASH-capable system. |
-| -lf | Creates the log file to the user-specified path |
+| -xf | Represents the XML file parameter that informs the tool of the location of the XML file used to provision a DASH-capable system.|
 | -dxf | Instructs the DASHConfig utility to delete the provisioning XML file after processing has been completed. |
 | -mif | Instructs the DASHConfig utility to create a Microsoft installation status MIF file on exit. This is for integration into Microsoft Configuration Manager. |
 | -help | This parameter will print out short help documentation about the command line parameters to the console. |
@@ -405,7 +400,7 @@ DASHConfig provides six case-sensitive parameters ( –v, -xf, -lf, -dxf, -mif a
 | \<ROLES\> | Defines the roles (privileges) given to the newly created user account. Up to 3 roles can be defined for a particular user account. |
 | \<ROLE\> | 3 acceptable values: Administrator (full control), Operator (can invoke operations), and Read Only |
 | \<ACTIVEDIRECTORY\> | Required if provisioning Active Directory support |
-| \<ENABLESUPPORT\> | Required if Active Directory support is provisionedfalse = disabled, true = enabled. |
+| \<ENABLESUPPORT\> | Required if Active Directory support is provisioned false = disabled, true = enabled. |
 | \<ACTIVEDIRECTORY\_SPNACCOUNT\> | Name string of the Active Directory user account whose SPN property has been updated to include the target&#39;s service principal name (SPN) |
 | \<SPNACCOUNT\_PASSWORD\> | Active Directory stored password for the user account defined by the \<ACTIVEDIRECTORY\_SPNACCOUNT\> node. |
 | \<ACTIVEDIRECTORY\_GROUPS\> | There is a limit of 3provisioned groups on any single management target because a DASH Role can only be associated to a single Active Directory group and are only 3 defined roles. |
@@ -413,7 +408,7 @@ DASHConfig provides six case-sensitive parameters ( –v, -xf, -lf, -dxf, -mif a
 | \<GROUPNAME\> | Necessary if any Active Directory group(s) are to be provisioned on the management target. |
 | \<OBJECTSID\> | Security descriptor string in the standard string representation (S-R-I-S-S) for the Active Directory User Group defined by the \<GROUPNAME\> node. |
 | \<ROLES\> | Defines the role(s) (privileges) given to the associated Active Directory group. Up to 3 roles can be defined for a particular Active Directory group. **NOTE:** The individual DASH roles can only be associated to a single Active Directory group. |
-| \<ROLE\> | - Required. Currently there are only 3 acceptable values: Administrator Role, Operator Role and Read Only Role. Administrators have full control over the management target and its settings. Operators can invoke operational methods. |
+| \<ROLE\> |  Required. Currently there are only 3 acceptable values: Administrator Role, Operator Role and Read Only Role. Administrators have full control over the management target and its settings. Operators can invoke operational methods. |
 
 
 ## Health
@@ -458,7 +453,7 @@ For AMC, System Properties are:
 
 - Discovery Port
 - MAC Address
-- Authentication type:
+- Authentication type
 - Username
 - Transport protocol
 - Transport Port
@@ -498,9 +493,10 @@ To add systems to any group, right click on the group to which systems are to be
 ## Prerequisites and System Requirements
 
 - SPN must be configured in AD
+- Authentication must be configured
 - Systems BIOS must be DASH enabled
 - Third party software (Windows) for network adapters should be installed and working.
-- Authentication must be configured
+
 
 ## Installing and Uninstalling AMPS
 
@@ -544,7 +540,7 @@ Alternatively,
 
 This section offers a brief description of how to create SPN account.
 
-Authorization must be configured in both Active Directory and in the DASH targets. Active Directory authentication with the DASHConfigRT utility provides greater security to administrators performing DASH operations. Only authorized users can communicate with the assigned DASH targets.
+Authentication must be configured in both Active Directory and in the DASH targets. Active Directory authentication with the DASHConfigRT utility provides greater security to administrators performing DASH operations. Only authorized users can communicate with the assigned DASH targets.
 
   
 ### Create DASH SPN User account
