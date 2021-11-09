@@ -62,7 +62,7 @@ As the last steps, IT admins should check Task Scheduler on the same client PC.
    
    4. Check **Last Run Time** and **Last Run Result** to find more details and possible cause.
 
-![](../img/guides/dm/ts7.PMG)
+![](../img/guides/dm/ts7.PNG)
 
 #### Conclusion
 
