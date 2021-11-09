@@ -6,6 +6,7 @@
 
 - [Deployment](dm/dm.md)
 - [Management](dm/dm_policies.md)
+- [Troubleshooting](dm/dm_troubleshooting.md)
 - [FAQ ](dm/dock_manager_faq.md)
 
 ---
