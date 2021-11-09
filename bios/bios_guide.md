@@ -175,9 +175,9 @@ Some versions of WFlash2.exe support the /sccm parameter. The /sccm parameter is
 If there is a Supervisor password controlling access to the BIOS and the Require Admin Pass when Flashing BIOS setting is set to NO, there is nothing to do to apply the BIOS update. In the event that there is a Supervisor password controlling access to the BIOS and the Require Admin Pass when Flashing BIOS setting is set to YES, WFlash2.exe has a command line parameter to allow input of the password for execution in an automated solution. The command line parameter is /pass:nnnnnn where nnnnnn is the password.
 
 Example: 
-
-	Flash.cmd /quiet /pass:Qwerty 
-
+```
+Flash.cmd /quiet /pass:Qwerty 
+```
 </details>
 
 <details>
@@ -228,9 +228,11 @@ _While the update executes, the keyboard and mouse will be inaccessible. This is
 
 To automate the ThinkStation BIOS update, either AFUWIN.exe or AFUWINx64.exe can be executed with a set of command line parameters. Use the following command to perform the silent update:
 
-	X86: AFUWIN.exe  /P /B /N /R /SP /RTB /FIT /Q
+```
+X86: AFUWIN.exe  /P /B /N /R /SP /RTB /FIT /Q
 	OR
-	X64: AFUWINx64.exe  /P /B /N /R /SP /RTB /FIT /Q
+X64: AFUWINx64.exe  /P /B /N /R /SP /RTB /FIT /Q
+```
 
 If there is a Supervisor password controlling access to the BIOS and the Require Admin Pass when Flashing BIOS setting is set to NO, there is nothing to do to apply the BIOS update. In the event that there is a Supervisor password controlling access to the BIOS and the Require Admin Pass when Flashing BIOS setting is set to YES, then steps will need to be taken to switch the setting to NO using the Think BIOS Configuration Tool or the BIOS Settings VBScripts. After that is set to allow the update to be run, the BIOS can be updated. If needed, utilize the tools mentioned to change the setting back after applying the BIOS update.
 </details>
@@ -248,23 +250,26 @@ When planning the build of the WinPE image, it is best to understand which Think
 All of the Think branded products will require the following optional components to be installed in the WinPE boot image.
 
 **Scripting:**
-
-	\WinPE_OCs\WinPE-Scripting.cab
-	\WinPE_OCs\<Language>\WinPE-Scripting_<Language>.cab
+```
+\WinPE_OCs\WinPE-Scripting.cab
+\WinPE_OCs\<Language>\WinPE-Scripting_<Language>.cab
+```
 	
 **WMI:**
-
-	\WinPE_OCs\WinPE-WMI.cab
-	\WinPE_OCs\<Language>\WinPE-WMI_<Language>.cab
+```
+\WinPE_OCs\WinPE-WMI.cab
+\WinPE_OCs\<Language>\WinPE-WMI_<Language>.cab
+```
 	
 ?>NOTE [WinPE: Add Packages (Optional Components Reference)](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/winpe-add-packages--optional-components-reference)
 
 ThinkPad will require an additional optional component to be installed in the WinPE boot image. The ThinkPad BIOS Update tool runs some HTML components in the background, requiring the HTA Optional Component be installed.
 
 **HTA:**
-
-	\WinPE_OCs\WinPE-HTA.cab
-	\WinPE_OCs\<Language>\WinPE-HTA_<Language>.cab
+```
+\WinPE_OCs\WinPE-HTA.cab
+\WinPE_OCs\<Language>\WinPE-HTA_<Language>.cab
+```
 
 During testing, the order of installation was determined to be of importance. The order was found to be:
 
@@ -277,9 +282,9 @@ The default configuration for MDT will install the required optional components.
 ThinkPad has one other requirement for installing the BIOS while in WinPE. It requires the battery.inf to be loaded. This enables the installers to verify there is a fully charged battery and ensure that the system meets the requirements of the installer. The battery.inf can be loaded from %systemroot%\INF\ using the command drvload.
 
 **The command is as follows:**
-
-	drvload %systemroot%\INF\Battery.inf
-	
+```
+drvload %systemroot%\INF\Battery.inf
+```
 
 
 ## Configuring BIOS
@@ -355,10 +360,11 @@ In addition to the Think BIOS Config tool, Lenovo has VBScripts to assist with c
 
 The ListAll.vbs script iterates through all settings, displaying the setting name, the current setting, and a list of all possible settings. The ListAll.vbs script is best used in an Administrator command prompt with cscript.
 
-	Microsoft Windows [Version 10.0.15063]
-	(c) 2017 Microsoft Corporation. All rights reserved.
+ 
+Microsoft Windows [Version 10.0.15063]
+(c) 2017 Microsoft Corporation. All rights reserved.
 
-	C:\WINDOWS\system32>cscript.exe ListAll.vbs
+C:\WINDOWS\system32>cscript.exe ListAll.vbs
 
 The LoadDefaults.vbs script will load the factory defaults for the computer. To find the defaults, reference the User Guide documentation for the specific model.
 
