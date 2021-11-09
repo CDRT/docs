@@ -302,8 +302,9 @@ Lenovo leverages WMI through scripting API’s to detect if any of the BIOS pass
 
 Using the following PowerShell script, running as administrator, the return code will range from 0 to 7.
 
-
-	(gwmi -Class Lenovo_BIOSPasswordSettings -Namespace root\wmi).PasswordState
+```powershell 
+(gwmi -Class Lenovo_BIOSPasswordSettings -Namespace root\wmi).PasswordState
+```
 
 The result will map to one of the values in the table below:
 

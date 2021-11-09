@@ -4,5 +4,5 @@
 
 **BIOS Reference**
 
-- [Deployment Guide ![ ](../img/link.png)](bios/bios_guide.md)
+- [Deployment Guide](bios/bios_guide.md)
 - [System Deployment Boot Mode](bios/sdbm.md)
