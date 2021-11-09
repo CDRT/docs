@@ -54,15 +54,15 @@ As the last steps, IT admins should check Task Scheduler on the same client PC.
 
    - Task Scheduler should be launched with elevated privileges otherwise some tasks may not be shown.
 
-   ![](../img/guides/dm/ts6.PNG)
+![](../img/guides/dm/ts6.PNG)
 	
    2. Make sure a task named **DockManager – Task Scheduler** is under the illustrated folder.​
    
-   3. Make sure **Triggers** is configured correctly. Refer to the screenshot:
-   
-   ![](../img/guides/dm/ts7.PMG)
+   3. Make sure **Triggers** is configured correctly. Refer to the screenshot
    
    4. Check **Last Run Time** and **Last Run Result** to find more details and possible cause.
+
+![](../img/guides/dm/ts7.PMG)
 
 #### Conclusion
 
