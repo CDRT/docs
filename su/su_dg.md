@@ -69,9 +69,9 @@ System Update requires Microsoft .NET Framework 4.5.2 or a later version. A comp
 System Update supports all NLS (National Language Support) language packs. In normal cases, System Update loads the language pack set in the LanguageOverride field. That is, at startup, System Update checks the Windows registry for a valid language override code in the LanguageOverride field. If the language override code in the LanguageOverride field is valid and the language pack is available on the system, System Update will load the language pack corresponding to the language override code specified in the LanguageOverride field and display the rest of the session in that language.
 
 The registry location for the LanguageOverride field is:
-
-    HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Lenovo\System Update\LanguageOverride
-
+```
+HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Lenovo\System Update\LanguageOverride
+```
 The following table presents the languages and the corresponding language override codes for System Update.
 
 | **Language** | **Identifier** | **Language Override Code** |
@@ -109,18 +109,18 @@ The following are scenarios in which System Update will load the substitute NLS 
 ### 2.1.3 Installation Command Lines
 
 System Update can be installed manually by executing the installation package downloaded from Lenovo. System Update can also be installed silently with the following command line:
-
-    c:\\[System Update installation file name].exe /VERYSILENT /NORESTART
-
+```
+c:\\[System Update installation file name].exe /VERYSILENT /NORESTART
+```
 To install System Update silently and control where the installation package extracts to, use the following command:
-
-    C:\\[System Update installation file name].exe /VERYSILENT /NORESTART /DIR="C:\tvsu\temp"
-    
+```
+C:\\[System Update installation file name].exe /VERYSILENT /NORESTART /DIR="C:\tvsu\temp"
+``` 
 
 System Update is installed to the following folder:
-
-    %ProgramFiles%\Lenovo\System Update
-
+```
+%ProgramFiles%\Lenovo\System Update
+```
 System Update supports the following installation scenarios:
 
 - Clean installation: System Update will be installed with default preferences
@@ -128,17 +128,18 @@ System Update supports the following installation scenarios:
 
 An installation log file, _tvsusetup.log_, will be automatically generated and stored in the _%temp%_ directory. The location and filename of the log file can be controlled by command line parameter also:
 
-    C:\\[System Update installation file name].exe /VERYSILENT /NORESTART /LOG=c:\tvsu.log
-
+```
+C:\\[System Update installation file name].exe /VERYSILENT /NORESTART /LOG=c:\tvsu.log
+```
 
 ### 2.1.4 Uninstalling System Update
 
 System Update can be uninstalled by using the **Add or Remove Programs** applet located in the Windows operating system. After the uninstall is complete, all program files and settings are deleted.
 
 Alternatively, a command-line can be used to perform a silent uninstall. To silently uninstall System Update, use the following command:
-
-    [Your install dir]\unins000.exe /verysilent /norestart
-
+```
+[Your install dir]\unins000.exe /verysilent /norestart
+```
 
 ### 2.1.5 Updating System Update
 
@@ -216,33 +217,33 @@ The following table presents the languages supported by Update Retriever and the
 <p style="text-align:center;padding-bottom:40px;font-style: italic;">Table 2-2. Update Retriever language codes</div>
 
 The registry location for the **LanguageOverride** field for a 32-bit machine is:
-
-	HKEY\_LOCAL\_MACHINE\SOFTWARE\Lenovo\Update Retriever\LanguageOverride
-	
+```
+HKEY\_LOCAL\_MACHINE\SOFTWARE\Lenovo\Update Retriever\LanguageOverride
+```	
 
 The registry location for the **LanguageOverride** field for a 64-bit machine is:
-
-	HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\Lenovo\Update Retriever\LanguageOverride
-
+```
+HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\Lenovo\Update Retriever\LanguageOverride
+```
 
 ### 2.3.3 Installation Command Lines
 
 Update Retriever can be installed manually by executing the installation package downloaded from Lenovo. Update Retriever can also be installed silently with the following command line:
-
-	c:\\[Update Retriever installation file name].exe /VERYSILENT /NORESTART
-
+```
+c:\\[Update Retriever installation file name].exe /VERYSILENT /NORESTART
+```
 To silently extract to a specific folder followed by an installation, use the DIR parameter. For example:
-
-	[Update Retriever installation file name].exe /VERYSILENT /NORESTART /DIR="C:\temp"
-
+```
+[Update Retriever installation file name].exe /VERYSILENT /NORESTART /DIR="C:\temp"
+```
 The installation log file contains information that can be used to debug installation problems. For Update Retriever, the log file name is _tvursetup.log_.
 
 If you install the program by double-clicking the setup.exe file, the log file will be automatically generated and stored in the _%temp%_ directory.
 
 If you want to install the program silently and generate installation log files, use the following command:
-
-	[Update Retriever installation file name].exe /VERYSILENT /NORESTART /LOG=c:\tvur.log
-
+```
+[Update Retriever installation file name].exe /VERYSILENT /NORESTART /LOG=c:\tvur.log
+```
 If a previous version of Update Retriever is already installed, the following pop-up is displayed. In order to download the newest version of Update Retriever, the use must click **Yes**. After selecting **Yes** , to uninstall the existing version of Update Retriever, a window will appear asking for install instructions. Please proceed with install instructions.The administrator will NOT lose any of their previous downloads, update packages, machines, or any information in Update Retriever or its repository. Everything that was displayed and available in the existing version of Update Retriever, will be in the new version that is being installed **.**
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
@@ -255,9 +256,9 @@ _Figure 2-1. Removing existing version of Update Retriever to download the newes
 ### 2.3.4 Uninstall Update Retriever
 
 Update Retriever can be uninstalled by using the Add or Remove Programs applet in Windows operating systems. After the uninstall is complete, all program files and settings are deleted. Alternatively, you can use command-lines to perform a silent uninstall. To silently uninstall Update Retriever, use the following command-line:
-
-	[Your install dir]\unins000.exe /verysilent /norestart
-
+```
+[Your install dir]\unins000.exe /verysilent /norestart
+```
 
 # 3 General Usage
 
@@ -936,17 +937,18 @@ To view the export history, do the following:
 Typically the first step in isolating issues when running System Update is to make sure System Update can access the repository, whether that is over the Internet to access content directly from Lenovo or over an intranet network to access a local repository. Use standard network troubleshooting steps to verify the logged-on user account has access as required.
 
 When pulling content from Lenovo, System Update uses HTTPS to access content at [https://download.lenovo.com/catalog](https://download.lenovo.com/catalog) and [https://download.lenovo.com/pccbbs](https://download.lenovo.com/pccbbs). These sites may need to be white listed to have access through a corporate firewall. There are no special ports required to be opened for System Update. In some cases the System Update application itself will need to white listed to have access to the Internet. To ensure complete access for System Update to function properly, enable the following programs:
-
-	%PROGRAMFILES%\Lenovo\System Update\TvsuCommandLauncher.exe	
-
-	%PROGRAMFILES%\Lenovo\System Update\Tvsukernel.exe
-
+```
+%PROGRAMFILES%\Lenovo\System Update\TvsuCommandLauncher.exe	
+```
+```
+%PROGRAMFILES%\Lenovo\System Update\Tvsukernel.exe
+```
 The next step would be to review the log files generated by System Update. These files can be found in C:\ProgramData\Lenovo\SystemUpdate\logs. System Update will create a new log file each time it performs a search and install session. The log file name will include a timestamp to ensure the files are unique, such as: tvsu\_200103171352.log
 
 The log file may be quite long. If there is a particular update that is having an issue, it may help to search the log file for the title of the update. In some cases an update may not be installing because System Update has determined it is not applicable based on the package descriptor meta data for the package. It may be easier to see the results of this applicability check when running System Update by command line if the &quot;-exporttowmi&quot; parameter is used. Various tools such as WMI Explorer can be used to then view the information located at:
-
-	root\Lenovo\Lenovo Updates
-
+```
+root\Lenovo\Lenovo Updates
+```
 Here you will find information similar to:
 
 |     n2irx01w    |     Critical    |     NotApplicable    |     Intel PRO/1000 LAN Adapter Software (Windows 10 Version   1709 and 1803) - 10 [64]    |
@@ -1044,7 +1046,8 @@ In the Update\_ApplicabilityRulesTrace.txt file, installed updates will be shown
 					-Level(True), *
 					-Level(True), N2IET*
 					-Level(False), N2RET*
-				-_ExternalDetection(False), %PACKAGEPATH%\inboxdrivercheck.exe 				n2ic202w_2_.xml
+				-_ExternalDetection(False), %PACKAGEPATH%\inboxdrivercheck.exe
+	-n2ic202w_2_.xml
 				-Not(True),
 					-_ExternalDetection(False), %PACKAGEPATH%\getw10ver6.exe
 	
@@ -1073,8 +1076,7 @@ The following list contain some common issues and how to address them:
 - _Update Retriever has been installed on a new system; however, the System List is empty:_ The System List is recorded in the registry and can be copied from the old system to the new system. Use regedit.exe to copy the &quot;Systems&quot; value from 
 
    ```
-   Computer\HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\Lenovo
-   \Update Retriever\Preferences\UserSettings\General
+   Computer\HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\Lenovo\Update Retriever\Preferences\UserSettings\General
    ```
 
 
@@ -1084,15 +1086,16 @@ The following list contain some common issues and how to address them:
 ## 5.1 System Update
 
 System Update can be controlled via command line by leveraging the group policy control for the Administrator Command Line. A typical scenario would have System Update executed by a task in the Windows Task Scheduler set to run on a recurring basis to ensure the device stays current. That scheduled task would execute:
-
-	C:\Program Files (x86)\Lenovo\System Update\tvsu.exe /CM
-
+```
+C:\Program Files (x86)\Lenovo\System Update\tvsu.exe /CM
+```
 The rest of the command line parameters would be specified as a Policy in the registry using either Group Policy or by manipulating the registry directly at:
-
-	HKLM\Software\Policies\Lenovo\System Update\UserSettings\General
-
-	Value: [REG\_SZ] AdminCommandLine
-
+```
+HKLM\Software\Policies\Lenovo\System Update\UserSettings\General
+```
+```
+Value: [REG\_SZ] AdminCommandLine
+```
 ?>Note: When using a custom scheduled task, a new task should be created, and the default task created when System Update is installed should be disabled. Additionally, the &quot;SchedulerAbility&quot; setting must be set to &quot;NO&quot; in the registry at: ```HKLM:\SOFTWARE\WOW6432Node\Lenovo\System Update\Preferences\UserSettings\Scheduler```
 
 This will prevent System Update from re-enabling the default tasks.
@@ -1176,9 +1179,9 @@ Optional. Specifies the full path to the local repository location. This must be
 **-exporttowmi**
 
 Optional. Causes System Update to store update history data in a WMI table:
-
-	Root\Lenovo\Lenovo\_Updates\
-
+```
+Root\Lenovo\Lenovo\_Updates\
+```
 
 ### 5.1.1 User Prompt Handling
 
@@ -1193,9 +1196,9 @@ When System Update finds updates that will cause a restart of the system, it wil
 ## 5.2 Thin Installer
 
 Thin Installer must be executed with administrative privileges in order to function properly and it can be controlled by command line. Since Thin Installer does not require installation it can be executed from the folder it resides in, such as:
-
-	C:\\<source folder>\ThinInstaller.exe /CM -search R -action INSTALL -includerebootpackages 3 -noreboot -noicon -repository <path> -exporttowmi
-
+```
+C:\\<source folder>\ThinInstaller.exe /CM -search R -action INSTALL -includerebootpackages 3 -noreboot -noicon -repository <path> -exporttowmi
+```
 **Parameters:**
 
 **/CM**
@@ -1287,9 +1290,9 @@ Optional. Specifies the full path to the local repository location. This can be 
 **-exporttowmi**
 
 Optional. Causes Thin Installer to store update history data in a WMI table:
-
-	root\Lenovo\Lenovo\_Updates\
-
+```
+root\Lenovo\Lenovo\_Updates\
+```
 **-log**
 
 Optional. Specifies fully qualified path for storing the log file
@@ -1317,9 +1320,9 @@ There are specific return codes used by Thin Installer based on which -action pa
 ## 5.3 Update Retriever
 
 Update Retriever can be launched from its default installation location at
-
-	C:\Program Files (x86)\Lenovo\Update Retriever\UpdateRetriever.exe
-
+```
+C:\Program Files (x86)\Lenovo\Update Retriever\UpdateRetriever.exe
+```
 It does require Administrator privileges to run.
 
 **/SCHEDULER**
@@ -1572,13 +1575,13 @@ The MapDrv utility can be found in the System Update installation directory. The
 
 
 The network share information is stored in the following registry entry:
-
-	HKLM\Software\Wow6432Node\Lenovo\MND\TVSUAPPLICATION
-
+```
+HKLM\Software\Wow6432Node\Lenovo\MND\TVSUAPPLICATION
+```
 If an Active Directory policy is used, these values are stored in the following registry entry:
-
-	HKLM\Software\Policies\Lenovo\MND\TVSUAPPLICATION
-
+```
+HKLM\Software\Policies\Lenovo\MND\TVSUAPPLICATION
+```
 
 The strings stored in the **TVSUAPPLICATION** key are:
 
@@ -1597,9 +1600,9 @@ The MapDrv utility also enables an administrator to use the encryption engine to
 ### 7.1.1 Command-line Interface
 
 The command-line interface to the MapDrv utility is as follows:
-
-	Mapdrv /<function><app id> /unc <sharename> /user <username\> /pwd <password> [/timeout <seconds>] [/s]
-
+```
+Mapdrv /<function><app id> /unc <sharename> /user <username\> /pwd <password> [/timeout <seconds>] [/s]
+```
 | **Parameter** | **Description** |
 | --- | --- |
 | /function | Identifies the function to provide. Valid values are store, connect, disconnect, and display. |
@@ -1620,9 +1623,9 @@ When the MapDrv utility is launched with no parameters, the end user will be pro
 ### 7.1.2 Displaying Encrypted User Name and Password Strings
 
 This function displays the registry key of the network share information where the encrypted user name and password is stored. Using the /display function will not store the user name and password in the registry. You need to copy the encrypted user name and password to the appropriate registry key.
-
-	mapdrv /view <app id> /user <username> /pwd <password>
-
+```
+mapdrv /view <app id> /user <username> /pwd <password>
+```
 Example:
 >mapdrv /view TVSUAPPLICATION /user temp/pwd password
 >
@@ -1637,27 +1640,27 @@ This command captures the encrypted user name and password to set up the reposit
 ### 7.1.3 Storing Network Share Information for a ThinkVantage Application
 
 This function stores the network share information in the registry using to define the subkey from the main MapDrv registry key:
-
-	mapdrv /store <app id> /unc <sharename> /user <username> /pwd <password> [/timeout <seconds>]
-
+```
+mapdrv /store <app id> /unc <sharename> /user <username> /pwd <password> [/timeout <seconds>]
+```
 This sets the UNC, user name, and password values in the registry.
 
 
 ### 7.1.4 Connecting to the network share for a ThinkVantage application
 
 Connect the network share for the specified ThinkVantage application:
-
-	mapdrv /connect <app id> [/s]
-
+```
+mapdrv /connect <app id> [/s]
+```
 Connects to the share using the UNC, user name, and password values in the registry. The actual connection UNC is output to the NetPath value.
 
 
 ### 7.1.5 Disconnecting the Network Share for a ThinkVantage Application
 
 The following command disconnects the network share for the specified ThinkVantage application if the application is currently connected:
-
-	mapdrv /disconnect <app id>
-
+```
+mapdrv /disconnect <app id>
+```
 Performs a _**net use /d [NetPath stored in registry]**_ to disconnect the network connection.
 
 
