@@ -360,15 +360,16 @@ In addition to the Think BIOS Config tool, Lenovo has VBScripts to assist with c
 
 The ListAll.vbs script iterates through all settings, displaying the setting name, the current setting, and a list of all possible settings. The ListAll.vbs script is best used in an Administrator command prompt with cscript.
 
- 
-Microsoft Windows [Version 10.0.15063]
-(c) 2017 Microsoft Corporation. All rights reserved.
+```
+	Microsoft Windows [Version 10.0.15063]
+	(c) 2017 Microsoft Corporation. All rights reserved.
 
-C:\WINDOWS\system32>cscript.exe ListAll.vbs
+	C:\WINDOWS\system32>cscript.exe ListAll.vbs
+```
 
 The LoadDefaults.vbs script will load the factory defaults for the computer. To find the defaults, reference the User Guide documentation for the specific model.
 
-The SetConfig.vbs and SetConfigPassword.vbs are used to set individual settings. The only difference between to the two scripts is that SetConfigPassword.vbs requires an extra parameter for the input of the Supervisor password to change the setting, when a Supervisor password is set on the BIOS.
+The SetConfig.vbs and SetConfigPassword.vbs are used to set individual settings. The only difference between the two scripts is that SetConfigPassword.vbs requires an extra parameter for the input of the Supervisor password to change the setting, when a Supervisor password is set on the BIOS.
 
 The final script is the SetSupervisorPassword.vbs script. This script facilitates the change of the Supervisor password when one is currently set on the BIOS. This script does not allow for the initial setting of the BIOS Supervisor Password.
 
