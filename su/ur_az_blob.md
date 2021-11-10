@@ -1,4 +1,6 @@
-## Hosting an Update Retriever Repository in an Azure Blob ![](../img/guides/ur/az_blob/azureblob.png) 
+### Hosting a repository in an Azure blob 
+![](../img/guides/ur/az_blob/azureblob.png) 
+
 *Author: Philip Jorgensen*
 
 ?>System Update v5.07.0110 and later supports Blob storage access via HTTPS
@@ -13,7 +15,7 @@ This post may be helpful for anyone piloting a "modern" way of updating their Th
 
 I won't cover creating the Storage account or Blob, just the process of uploading the Update Retriever content to the Blob container and how to configure the ThinInstaller Configuration XML on the client.  Note though, the Container access level should be set to **Blob (anonymous read access for blobs only)**.
 
-### Populating the Update Retriever Repository
+### Populating the Update Retriever repository
 
 First, you'll need to download any new updates to your local machine or network share.  Currently, you can only set a repository location to a local drive or UNC path.
 
@@ -71,7 +73,7 @@ An example capture once the upload kicks off
 
 ![](../img/guides/ur/az_blob/image7.jpg)
 
-### Client Side Configuration
+### Client side configuration
 
 **Thin Installer**
 
