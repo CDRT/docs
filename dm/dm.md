@@ -5,25 +5,30 @@ Dock Manager is provided as an executable.  Here's an example of how to deploy w
 In the console, navigate to the **Software > Application Management > Applications** node and click **Create Application** in the ribbon bar.
 
 Tick the **Manually specify the application information** radio button, click Next
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
 ![](../img/guides/dm/image1.PNG)
-
+</div>
 Specify information about the app, click **Next**
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
 ![](../img/guides/dm/image2.PNG)
-
+</div>
 Enter Software Center details, click **Next**
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
 ![](../img/guides/dm/image3.PNG)
-
+</div>
 Set the deployment type to **Script Installer** and click **Next**
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
 ![](../img/guides/dm/image4.PNG)
-
+</div>
 Set the deployment type name and click **Next**
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
 ![](../img/guides/dm/image5.PNG)
-
+</div>
 Enter the content location path to the Dock Manager executable
 
 Install command:
@@ -38,8 +43,10 @@ Uninstall start in:
 ```
 %ProgramFiles%\Lenovo\Dock Manager
 ```
-![](../img/guides/dm/image6.PNG)
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
+![](../img/guides/dm/image6.PNG)
+</div>
 Set the detection rule setting type to **Registry**
 
 Hive: **HKLM**
@@ -60,14 +67,17 @@ Value:
 ```
 1.0.0.125
 ```
-![](../img/guides/dm/image7.PNG)
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
+![](../img/guides/dm/image7.PNG)
+</div>
 Set the installation behavior to **Install for system** and logon requirement to **Whether or not a user is logged on**
 
 Add any installation requirements such as Operating system is One of Windows 10 (64-bit)
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
 ![](../img/guides/dm/image8.PNG)
-
+</div>
 Complete the deployment type and App wizards.  Deploy to a Device Collection.
 
 ## Deploying with Microsoft Intune
@@ -77,17 +87,19 @@ Using the Win32 Content Prep [Tool](https://github.com/Microsoft/Microsoft-Win32
 ```
 IntuneWinAppUtil.exe -c "C:\IntuneWin\DM\" -s "dock_manager_setup.exe" -o "C:\IntuneWin\output\" -q
 ```
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
 ![](../img/guides/dm/image9.PNG)
-
+</div>
 Login to the Endpoint admin center [portal](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/AppsWindowsMenu/windowsApps) to create a new Windows app and select the **Windows app (Win32)** type.
 
 Select the **dock_manager_setup.intunewin** app package file.
 
 Enter required and optional information about the app
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
 ![](../img/guides/dm/image10.PNG)
-
+</div>
 Enter the Install command
 ```
 dock_manager_setup.exe /VERYSILENT
@@ -96,8 +108,10 @@ and Uninstall command
 ```
 %ProgramFiles%\Lenovo\Dock Manager\unins000.exe /SILENT
 ```
-![](../img/guides/dm/image11.PNG)
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
+![](../img/guides/dm/image11.PNG)
+</div>
 Set the requirements.  You can take it a bit further with a detection script to check if a supported dock is currently connected to the system.  Here's a sample PowerShell script
 ```
 # Check for Thunderbolt 3 Dock Gen 2
@@ -109,8 +123,10 @@ else {
     Exit 1
 }
 ```
-![](../img/guides/dm/image12.PNG)
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
+![](../img/guides/dm/image12.PNG)
+</div>
 Enter the detection rules to verify the current version of Dock Manager is installed
 
 Key path:
@@ -125,9 +141,10 @@ Detection method: **String comparison**
 Operator: **Equals**
 
 Value: **1.0.0.125**
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
 ![](../img/guides/dm/image13.PNG)
-
+</div>
 Finish out the wizard and assign to a group.
 
 ## WMI Classes
@@ -137,9 +154,12 @@ You can [extend hardware inventory](https://docs.microsoft.com/en-us/mem/configm
 [Download](https://download.lenovo.com/cdrt/blog/ConfigMgr-MOF-DockManager.zip)
 
 An example from Resource Explorer
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
 ![](../img/guides/dm/image14.PNG)
-
+</div>
 Sample report of what can be gathered using SSRS
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
 ![](../img/guides/dm/image15.PNG)
+</div>

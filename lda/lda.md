@@ -76,8 +76,10 @@ connects to the CM.
 !>For the LDA to function properly please do not delete the Shared Database.
 
 If you have connected to the CM environment at least once entering Site Code, FQDN of Site Server, and UNC path, LDA pre-populates the fields the next time it is launched.
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
 ![](../img/reference/lda/image1.png)
+</div>
 
 ### Create Application and Configuration Item
 LDA offers tools to easily create applications and their CIs in CM to deploy to client PCs.
@@ -88,7 +90,11 @@ LDA offers tools to easily create applications and their CIs in CM to deploy to 
 
     Release notes for the specific version of the application can be viewed by clicking the "Version \<version number\>" link under the application description.
 
+
+<div style="text-align:center;padding-bottom:20px;padding-top:20px">
+
 ![](../img/reference/lda/image2.png)
+</div>
 
 ?>NOTE: Full version of the Release Notes can be viewed in a Browser in .txt format by
 clicking the “View more information” in the pop-up.
@@ -97,11 +103,17 @@ clicking the “View more information” in the pop-up.
 
     Here you can see the summary of the applications and CIs to be created in CM. On the right hand bar the application is presented as about to be created by being highlighted in orange font.
 
-![](../img/reference/lda/image3.png)
-
     You can select another application for creation on the Summary screen, however there is no possibility to select the respective CI. In order to do it, you can go to the application screen by clicking the "View Details" link on the right hand bar.
 
+<div style="text-align:center;padding-bottom:20px;padding-top:40px">
+
+![](../img/reference/lda/image3.png)
+</div>
+
+<div style="text-align:center;padding-bottom:0px;padding-top:20px">
+
 ![](../img/reference/lda/image4.png)
+</div>
 
 4. Click the “Finish” button.
 5. The "Finish" screen can only be viewed when you have clicked the "Finish" button on the "Summary" screen. Otherwise, the screen is not available (greyed out). 
@@ -113,33 +125,49 @@ clicking the “View more information” in the pop-up.
 6. You can see the successfully created applications and CIs next time you launch the
 application.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image5.png)
+</div>
 
 You can find all the created Lenovo applications in the corresponding section of the CM Console. Every Lenovo application is located in "Lenovo -> Application Name -> Application Version" folder. 
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image6.png)
+</div>
 
 ?>NOTE: All the applications created by LDA have the "Created by LDA" text in the Administrative comment.
 
 If the CI was also selected for the respective application it will be created in CM in the Assets and and Compliance tab menu.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image7.png)
+</div>
 
 ?>NOTE: All the CIs created by LDA have the "Created by LDA" text in the Description.
 
 ### Create Next Version of Application
 Once the new version of the application is available the “New version available” section appears on the UI. Also the system notifies you about the update by showing indication in the Bell icon and bullets in the tab menu.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image8.png)
+</div>
 
 1. Go to the desired application tab menu.
 2. Select the "Create New Version <Application Version>" checkbox.
 
     It is optional to select “Supersedence Relationship”. You can also select the CI if it was not created previously.
+	
+	Release notes for the current and next versions of the application can be viewed by clicking the corresponding "Version <Application Version>" link. 
+
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
 ![](../img/reference/lda/image9.png) 
-
-   Release notes for the current and next versions of the application can be viewed by clicking the corresponding "Version <Application Version>" link. 
+</div>
 
 ?>NOTE: Full version of the Release Notes can be viewed in a Browser in .txt format by clicking the “View more information” in the pop-up.
 
@@ -147,7 +175,11 @@ Once the new version of the application is available the “New version availabl
 
     Here you can see the summary of the new versions of the applications and CIs to be created in CM. The system shows it highlighted in orange font "\<old version\>" → "\<new version\>".
 
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image10.png)
+</div>
 
 4. Click the “Finish” button.
 5. Wait until the process of creation is finished.
@@ -158,26 +190,40 @@ You can find all the created Lenovo applications in the corresponding section of
 Configuration Manager Console. Every Lenovo application is located in "Lenovo -> Application
 Name -> Application Version" folder.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image11.png)
+</div>
 
 ?>NOTE: All the applications created by LDA have the "Created by LDA" text in the Administrative comment.
 
 ### Update Configuration Item
 Once the new version of the CI is available the system displays it on the UI. Also the system notifies you about the update by showing indication in the Bell icon and bullets in the tab menu.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image12.png)
+</div>
 
 1. Go to the application tab menu where the CI update is located and you will see the sign “Will be modified”.
 
     The CI update does not require selecting it manually and will be performed automatically when clicking the "Finish" button on the Summary screen.
 
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image13.png)
+</div>
 
 2. Go to the Summary screen.
 
     Here you can see the CI is displayed on the right hand bar and presented as about to be created (highlighted in orange font).
 
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image14.png)
+</div>
 
 3. Click the “Finish” button.
 4. Wait until the process of creation is finished.
@@ -198,13 +244,20 @@ LDA provides an option to select Lenovo Inventory Data item (group of WMI classe
 1. Go to the Lenovo Inventory Data tab menu
 2. Select the required Inventory Data element
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image15.png)
+</div>
 
 3. Go to the Summary screen
 
     Here you can see the summary of the Inventory Data to be created in CM. Furthermore, on the right hand bar the item is presented as about to be created by being highlighted in orange font.
 
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image16.png)
+</div>
 
    You can control the creation of Inventory Data by selecting/deselecting them in the Lenovo Inventory Data panel.
 
@@ -217,24 +270,39 @@ LDA provides an option to select Lenovo Inventory Data item (group of WMI classe
 
    In order to collect the client data by hardware inventory, you must select the custom classes in the appropriate Client Settings definition in the CM console.
 
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image17.png)
+</div>
 
 ### Update Lenovo Inventory Data
 Once the new version of the Lenovo Inventory Data is available the system displays it on the UI. Also the system notifies you about the update by showing indication in the Bell icon and bullets in the tab menu.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image18.png)
+</div>
 
 1. Go to the Lenovo Inventory Data tab menu and you will see the sign “will be modified”.
 
     The Inventory Data update does not require selecting it manually and will be performed automatically when clicking the "Finish" button on the Summary screen.
 
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image19.png)
+</div>
 
 2. Go to the Summary screen.
 
     Here you can see the Lenovo Inventory Data items are displayed on the right hand bar and presented as about to be created (highlighted in orange font).
 
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image20.png)
+</div>
 
 3. Click the “Finish” button.
 4. Wait until the process of creation is finished.
@@ -249,13 +317,20 @@ that you may want to perform an action against.
 1. Go to the Custom Collection tab menu
 2. Select the required Custom Collection
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image21.png)
+</div>
 
 3. Go to the Summary screen
 
     Here you can see the summary of the Custom Collection to be created in CM. Furthermore, on the right hand bar the item is presented as about to be created by being highlighted in orange font. 
 
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image22.png)
+</div>
 
    You can control the creation of Custom Collections by selecting/deselecting them in the Custom Collections panel.
 
@@ -268,18 +343,29 @@ that you may want to perform an action against.
 
     You can find all the created Custom Collections in the corresponding section of the CM console. Every Lenovo Custom Collection is located in the "Lenovo" folder.
 
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image23.png)
+</div>
 
 ### Update Custom Collection
 Once the new version of the Custom Collection item is available the system displays it on the UI. Also the system notifies you about the update by showing indication in the Bell icon and bullets in the tab menu.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image24.png)
+</div>
 
 1. Go to the Custom Collection tab menu and you will see the sign “Will be modified”.
 
    The Custom Collection update does not require selecting it manually and will be performed automatically when clicking the "Finish" button on the Summary screen.
 
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image25.png)
+</div>
 
 2. Go to the Summary screen.
 
@@ -287,7 +373,11 @@ Once the new version of the Custom Collection item is available the system displ
 
     Here you can see the Custom Collection item is displayed on the right hand bar and presented as about to be created (highlighted in orange font).
 
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image26.png)
+</div>
 
 3. Click the “Finish” button.
 4. Wait until the process of creation is finished.
@@ -314,7 +404,10 @@ You are able to skip the update by clicking the “Exit” button in this case t
 
 You are able to view the Release Notes in the pop-up.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image27.png)
+</div>
 
 ?>NOTE: The full version of the Release Notes can be viewed in a Browser in .txt format by clicking the “View more information” in the pop-up.
 
@@ -324,24 +417,39 @@ You can check the current version of the application at the bottom of the screen
 
     The system will initiate the downloading process.
 
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image28.png)
+</div>
 
 2. After the download is complete the installation process will be run.
 
     The LDA is closed and the Installation Wizard appears. Please see Installing LDA.
 
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image29.png)
+</div>
 
 3. After the installation is complete the new version of LDA will be opened.
 
     You can check the new version of the application at the bottom of the screen (e.g. Version 1.6.0.121).
 
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image30.png)
+</div>
 
 ### Regular Update
 Once the Regular update is available you will be notified with the bell notification showing the update details.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image31.png)
+</div>
 
 You are able to skip the update and use the current version of the application.
 
@@ -351,17 +459,28 @@ You are able to view the Release Notes in the pop-up or download the update.
 
     The system will initiate the downloading process.
 
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image32.png)
+</div>
 
 2. Once the download is complete you can start the installation by clicking the "Install" button.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image33.png)
+</div>
 
 3. In the opened pop up you may see the Release Notes.
 
     You can initiate the installation process by clicking the “Install” button. The LDA is closed and the Installation Wizard appears. Please see [Installing LDA](#installation).
 
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image34.png)
+</div>
 
 4. After installation is complete the new version of LDA will be opened.
 
@@ -393,25 +512,40 @@ already created or NOT created in CM.
 ### Synchronizing with Configuration Manager
 1. Click the “ Synchronization with ConfigMgr” link
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image35.png)
+</div>
 
 2. In the opened pop-up select the items that you want to scan for the sync.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image36.png)
+</div>
 
 3. Wait until the scanning process is completed.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image37.png)
+</div>
 
 4. Select items which should be synchronized and click the "Start the sync" button.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image38.png)
+</div>
 
 ?>NOTE: Since CI is dependent on the application, CI will be disabled (greyed out) until the respective application is not marked as created in LDA or the respective application is not selected on the "Scanning Result" screen.
 
 5. Wait until the sync process completes and check that the selected items reflect the same state in LDA as in CM.
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image39.png)
+</div>
 
 ## Logging
 ### Overview
@@ -424,14 +558,18 @@ The logging process can be initiated from any screen of the application.
 
 1. Check the “Enable Logging” checkbox at the left bottom of the screen.
 
-![](../img/reference/lda/image40.png)
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
+![](../img/reference/lda/image40.png)
+</div>
 2. Confirm the logging by clicking the “Confirm” button.
 3. Perform the actions in LDA.
 4. Go to %PROGRAMDATA%\Lenovo\Deployment Assistant\Log Files folder and check that the log .TXT file with name "lda_yyyymmdd_hhmm.txt" is created.
 
-![](../img/reference/lda/image41.png)
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
+![](../img/reference/lda/image41.png)
+</div>
 The logging continues for further LDA runs and stops only when you deselect the "Enable Logging" checkbox.
 
 ## Troubleshooting
@@ -444,7 +582,10 @@ Or if you get an Error Message with an error code, you can click the “Report�
 
 ### How to ask questions on the Lenovo forum
 
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
 ![](../img/reference/lda/image42.png)
+</div>
 
 1. Please specify a clear Subject for the question;
 2. Provide an Error Code if there is one (e.g. EC002);
