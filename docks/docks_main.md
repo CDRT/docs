@@ -73,13 +73,13 @@ Each USB Dock or Cable Dock listed below has one or more WMI queries to assist w
 An example of the query for a ThinkPad Thunderbolt 3 Essential Dock using the DeviceID of the Billboard device would look like:
 
 PowerShell:
-
-	Get-CimInstance -Namespace ROOT\CIMv2 -ClassName Win32_PNPEntity | Where-Object {$_.DeviceID -LIKE "USB\VID_17EF&PID_308D"}
-	
+```powershell
+Get-CimInstance -Namespace ROOT\CIMv2 -ClassName Win32_PNPEntity | Where-Object {$_.DeviceID -LIKE "USB\VID_17EF&PID_308D"}
+```	
 WQL*:
-
-	SELECT * FROM Win32_PNPEntity WHERE DeviceID LIKE "USB\\VID_17EF&PID_308D"
-	
+```wql
+SELECT * FROM Win32_PNPEntity WHERE DeviceID LIKE "USB\\VID_17EF&PID_308D"
+```	
 ?>Note: WQL requires a second “\” character to escape the first “\” character so it is processed as part of the search string.
 
 <hr/>
