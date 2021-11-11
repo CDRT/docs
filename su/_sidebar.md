@@ -11,6 +11,7 @@
 ---
 - Update Retriever
     - [Azure Blob Storage](su/ur_az_blob.md)
+    - [Azure File Share](su/ur_az_fs.md)
 ---
 
 - [FAQ](su/system_update_faq.md)
