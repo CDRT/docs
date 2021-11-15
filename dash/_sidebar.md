@@ -1,8 +1,8 @@
 ![Commercial Deployment Readiness Team](../img/cdrt.png)
 
-[Home](/)
+[**Home**](/)
 
 **AMD DASH**
 
-- [Deployment Guide](#)
+- [Deployment Guide](dash/dash_top.md)
 
