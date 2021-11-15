@@ -507,7 +507,7 @@ You can deploy AMPS in three possible scenarios:
 
 3. AMPS with CAS (Central Administration Site): Here, the IT infrastructure will have CAS and one or more primary sites, along with optional secondary sites.
 
-The DASH Plug-in help file provides detailed information on support for role-based authorization in DASH Plug-in. The default location for the help file and other supporting material is located at _C:\Program Files (x86)\AMD Management Plugin for SCCM\doc_
+**NOTE:** The DASH Plug-in help file provides detailed information on support for role-based authorization in DASH Plug-in. The default location for the help file and other supporting material is located at _C:\Program Files (x86)\AMD Management Plugin for SCCM\doc_
 
 ## Installing/Upgrading AMPS
 
@@ -538,9 +538,9 @@ Alternatively,
 
 ## Configure AMPS to work with Active Directory
 
-This section offers a brief description of how to create SPN account.
+This section offers a brief description of how to create the necessary SPN account.
 
-Authentication must be configured in both Active Directory and in the DASH targets. Active Directory authentication with the DASHConfigRT utility provides greater security to administrators performing DASH operations. Only authorized users can communicate with the assigned DASH targets.
+Authentication must be configured in both Active Directory and in the DASH targets. Active Directory authentication with the DASHConfigRT utility provides greater security to administrators performing DASH operations, as only authorized users can communicate with assigned DASH targets.
 
   
 ### Create DASH SPN User account
@@ -570,13 +570,18 @@ When using the [Setspn](https://docs.microsoft.com/en-us/previous-versions/windo
   
 ### Create DASH Admins group in Active Directory and obtain SID
 
-Create a security group for DASH Administrators, named &quot;DASH Admins&quot; or another name suitable to your policies. Under **Properties** for the new group, select the **Attribute Editor** tab. Scroll down the **Attributes** list box until you find the **objectSID** attribute item. Record the security ID string in the value field for the **objectSID** attribute.
+To manually create the Security group and obtain the SID:
+
+1. Create a security group for DASH Administrators, named &quot;DASH Admins&quot; or another name suitable to your policies. 
+2. Under **Properties** for the new group, select the **Attribute Editor** tab. 
+3. Scroll down the **Attributes** list box until you find the **objectSID** attribute item.
+4.  Record the security ID string in the value field for the **objectSID** attribute.
 
 ![object SID in DASH Admins group Properties](../img/dash/23-dash.png)
 
-Alternatively, use PowerShell:
+Alternatively, you can obtain the SID using PowerShell:
 
-Get-ADGroup -Identity _[&#39;DASHADMINS&#39;]_ | select SID
+      Get-ADGroup -Identity [DASHADMINS]| select SID
 
   
 ### Add user(s) to the created group
@@ -643,7 +648,7 @@ Also add the domain user accounts that require access to the DASH Systems to the
 		
 ### Run DASHConfig utility on DASH managed system
 
-The DASHConfig/DASHConfigRT utility can run on DASH systems manually or you can use Configuration Manager to run the script.
+The **DASHConfig/DASHConfigRT** utility can run on DASH systems manually or you can use Configuration Manager to run the script.
 ### Configuration Manager DASH Plugin settings
 
 The **DASH Configuration** node allows you to configure for Authentication, Management Port, Management Transport, and DASH Wake-Up. Before performing any DASH operation on the client device, configure DASH with correct Authentication, Management Port and Management Transport.
@@ -652,7 +657,10 @@ The **DASH Configuration** node allows you to configure for Authentication, Mana
 
 AMPS supports two types of authentication schemes: Digest and Active Directory.
 
-AMPS supports up to 3 authentication entries. Each authentication entry has an authentication identifier, scheme and corresponding credentials.
+AMPS supports up to 3 authentication entries. Each authentication entry has the components:
+  - an authentication identifier, which must be unique
+  - an authentication scheme (digest or Active Directory)
+  - corresponding credentials
 
 ### Configure Authentication for AMPS
 
@@ -757,9 +765,9 @@ The DASHConfigRT utility must be run locally with administrative privileges.
 
 Steps to run DASHConfigRT on one system:
 
- From an administrative command prompt, navigate to the directory with the DASHConfigRT executable and provisioning XML.
+ 1. From an administrative command prompt, navigate to the directory with the DASHConfigRT executable and provisioning XML.
 
- Invoke DASHConfigRT using following command line:
+ 2. Invoke DASHConfigRT using following command line:
 
         DASHConfigRT -xf:DASHConfig.xml -dxf -mif 
 
@@ -799,11 +807,11 @@ To discover DASH capable client systems in a collection, perform the following s
  The shortcut menu appears.
 3. In the shortcut menu, Point to **DASH** and then click **Discover**.
 
-The **Discover Collection** dialog box appears
+4. The **Discover Collection** dialog box appears
 
 ![Discovery Dialog](../img/dash/27-2-dash.png)
 
- To discover DASH capable systems in the collections, click the **Yes** button.
+5.  To discover DASH capable systems in the collections, click the **Yes** button.
 
   
 ### Discovering a Device
@@ -840,7 +848,7 @@ To control the power state of a collection node, perform the following steps:
 
 To power on all the systems in a Collection at a specific time on a one-time or recurring schedule, perform the following steps:
 
-1.  Utilize the **Power Control** feature screen as illustrated in Figure 26 above.
+1. Open the **Power Control** feature screen
 2. Click the **Schedule** button.
 3. Configure the schedule as desired and click **OK,** then **Apply,** then **Close.**
 
@@ -893,7 +901,7 @@ The **USB Redirection** screen appears and displays the following:
 
 ![USB Redirection](../img/dash/43-dash.png)
 
- To close the USB Redirection screen, click the **Close** button.
+ 4. To close the USB Redirection screen, click the **Close** button.
 
   
 ### Boot to Text Image
@@ -922,11 +930,11 @@ To collect inventory, perform the following steps:
 1. In the Configuration Manager console, navigate to **Assets and Compliance\Overview\Devices\All Systems**
 2. In the right pane, right-click the device on which you want to collect the inventory.
 
-In the shortcut menu select **DASH,** then click **Inventory.** Alternatively, click the DASH toolbar button to initiate the inventory
+3. In the shortcut menu select **DASH,** then click **Inventory.** Alternatively, click the DASH toolbar button to initiate the inventory
 
 ![Device Inventory dialog](../img/dash/30-dash.png)
 
- A confirmation should appear. Click **OK**.
+ 4. A confirmation should appear. Click **OK**.
 
   
 ### Log Entry
@@ -1078,9 +1086,9 @@ To view the scheduled DASH tasks:
 
  1. Navigate to the **Administration** tab in Configuration Manager.
 
- Click **Overview/DASH Management/DASH Scheduled Tasks**
+2. Click **Overview/DASH Management/DASH Scheduled Tasks**
 
- Select the target server and click **Properties**
+3. Select the target server and click **Properties**
 
 ![Accessing DASH Scheduled Tasks](../img/dash/35-dash.png)
 
