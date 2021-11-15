@@ -1099,7 +1099,9 @@ This will prevent System Update from re-enabling the default tasks.
 
 **Parameters:**
 
+<!--
 ?>NOTE: The parameters of -defaultupdate and -schtask should not be used in a custom command line.
+-->
 
 **/CM**
 
