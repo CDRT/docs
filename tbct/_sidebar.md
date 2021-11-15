@@ -2,7 +2,7 @@
 
 [**Home**](/)
 
-**Think BIOS Config Tool**
+[Think BIOS Config Tool](tbct/tbct_top.md)
 
 - [User Guide](tbct/tbct.md)
 
