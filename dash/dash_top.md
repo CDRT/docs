@@ -746,7 +746,7 @@ To distribute the software package:
 5. Specify the **User Experience** and other installation behavior according to your organization&#39;s needs
 6. Select the **Deployment Option** s to &quot;Download content from distribution point and run locally.&quot;
 
- Next, verify the information in the **Summary**
+7. Next, verify the information in the **Summary**
 2. Next, you should receive a **Confirmation** page indicating &quot;The Deploy Software Wizard completed successfully&quot; and you can close the Wizard.
 3. To get status, check the Configuration Manger System Status logs and the execmgr.log file in the DASH machine&#39;s _C:\Windows\System32\CCM\Logs_ folder. Alternatively, you can check the package&#39;s folder for the DASHConfig.log file.
 
@@ -761,7 +761,11 @@ Steps to run DASHConfigRT on one system:
 
  Invoke DASHConfigRT using following command line:
 
-DASHConfigRT -xf:DASHConfig.xml -dxf -mif -lf:DASHConfig.log
+        DASHConfigRT -xf:DASHConfig.xml -dxf -mif 
+
+**NOTE:** The optional _-dxf_ switch deletes the Config.xml file, whih is recommended as the file includes the password. The _-mif_ parameter
+The -mif parameter creates a Microsoft installation status MIF file on exit.
+
 
 ## Performing DASH Operations
 
@@ -972,7 +976,7 @@ The shortcut menu appears.
 
 Alternatively, click the ribbon icon **Alerts**.
 
-![DASH Alerts on toolbar](../img/dash/-dash.png)
+![DASH Alerts on toolbar](../img/dash/32-dash.png)
 
  4. AMPS shows the list of available alerts and currently subscribed alerts. Adjust the subscribed alerts using the left-right arrow buttons and click **Apply.**
 
@@ -1025,11 +1029,12 @@ The security rights model applies for modifying DASH settings in the **DASH Conf
 
 The DASH settings that can be changed in the **DASH Configuration** window are:
 
-- Manage inventory schedules
 - Modify digest and active directory authentication
 - Modify HTTP/HTTPS settings
 - Change DASH port numbers
 - Enable/Disable DASH Auto Discovery and DASH wakeup
+
+![DASH Configuration](../img/dash/46-dash.png)
 
 The **Full Control** security right allows Read or Modify on Site class or Site class instance control. Full Control can modify and save all settings and user security rights assignments.
 
@@ -1073,7 +1078,7 @@ To view the scheduled DASH tasks:
 
  1. Navigate to the **Administration** tab in Configuration Manager.
 
- Click **Overview/DASH Managemen/DASH Scheduled Tasks**
+ Click **Overview/DASH Management/DASH Scheduled Tasks**
 
  Select the target server and click **Properties**
 
