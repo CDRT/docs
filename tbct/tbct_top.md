@@ -2,7 +2,7 @@
 
 Think BIOS Config Tool from Lenovo is a free, lightweight HTML Application (HTA) tool designed to let IT view and update BIOS settings directly or remotely from a simple Graphic User Interface (GUI), allowing for the automation of BIOS configurations with a simple initialization file (INI).
 
-### Why Think BIOS Config Tool?
+### Why Think BIOS Config Tool? <!-- {docsify-ignore} -->
 
 - Build a consistent BIOS configuration across a diverse hardware environment.
 - Reduce time required to ensure systems are deployed with the correct initial BIOS configuration.
@@ -10,7 +10,7 @@ Think BIOS Config Tool from Lenovo is a free, lightweight HTML Application (HTA)
 - Eliminate the need for time-consuming, machine-by-machine BIOS configuration.
 - Give IT a common GUI tool to consolidate configuration of any ThinkPad®, ThinkCentre®, or ThinkStation® PC
 
-### It's so easy to get started
+### It's so easy to get started <!-- {docsify-ignore} -->
 
 - Think BIOS Config Tool can be launched on a local machine. BIOS settings can be seen and updated.
 - These changes can be saved to an .INI file.
