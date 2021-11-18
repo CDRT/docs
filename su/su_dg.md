@@ -1,13 +1,13 @@
 ![](../img/guides/su/imglogo.png)
 
-# Deployment Guide: Lenovo System Update Suite
+# Deployment Guide:<br>Lenovo System Update Suite
 
 **_System Update, Update Retriever, Thin Installer_**
 
 
 ?>Note: Before using this information and the product it supports, read the general information in **Appendix C: Notices**
 
-**Tenth Edition (October 2021)**
+**Online Edition (November 2021)**
 
 **© Copyright Lenovo 2009, 2021.**
 
