@@ -1570,6 +1570,7 @@ _Figure 7-1. ThinInstaller.exe.configuration file._
 <div style="text-align:center;padding-bottom:40px;font-style: italic;">Table 7-5. Description of configurable items.</div>
 
 
+
 # 7 Appendix B: Mapdrv Utility
 
 The MapDrv utility provides network share related functions for System Update. To define the network share information, use the MapDrv utility to connect or disconnect network shares. The MapDrv utility maintains network share information in a registry key that is protected by administrator access only. The network share information includes the network share name (in UNC format), user name (saved in the registry as an encrypted string), and the password (saved in the registry as an encrypted string).
@@ -1597,8 +1598,7 @@ The strings stored in the **TVSUAPPLICATION** key are:
 
 The MapDrv utility also enables an administrator to use the encryption engine to generate an encrypted user name and password, which can be used to pre-populate network share information on multiple systems. Using the encryption engine in this manner does not update the registry on the system.
 
-
-### 7.1.1 Command-line Interface
+## 7.1 Command-line Interface
 
 The command-line interface to the MapDrv utility is as follows:
 
@@ -1623,7 +1623,7 @@ The return code is **0** if an operation was successful. Otherwise, the return c
 When the MapDrv utility is launched with no parameters, the end user will be prompted for the network share, user name and password, and then MapDrv will attempt to connect to the specified network share using the specified credentials.
 
 
-### 7.1.2 Displaying Encrypted User Name and Password Strings
+## 7.2 Displaying Encrypted User Name and Password Strings
 
 This function displays the registry key of the network share information where the encrypted user name and password is stored. Using the /display function will not store the user name and password in the registry. You need to copy the encrypted user name and password to the appropriate registry key.
 ```
@@ -1640,7 +1640,7 @@ Example:
 This command captures the encrypted user name and password to set up the repository with UNC path with authentication.
 
 
-### 7.1.3 Storing Network Share Information for a ThinkVantage Application
+## 7.3 Storing Network Share Information for a ThinkVantage Application
 
 This function stores the network share information in the registry using to define the subkey from the main MapDrv registry key:
 ```
@@ -1649,7 +1649,7 @@ This function stores the network share information in the registry using to defi
 This sets the UNC, user name, and password values in the registry.
 
 
-### 7.1.4 Connecting to the network share for a ThinkVantage application
+## 7.4 Connecting to the network share for a ThinkVantage application
 
 Connect the network share for the specified ThinkVantage application:
 ```
@@ -1658,7 +1658,7 @@ Connect the network share for the specified ThinkVantage application:
 Connects to the share using the UNC, user name, and password values in the registry. The actual connection UNC is output to the NetPath value.
 
 
-### 7.1.5 Disconnecting the Network Share for a ThinkVantage Application
+## 7.5 Disconnecting the Network Share for a ThinkVantage Application
 
 The following command disconnects the network share for the specified ThinkVantage application if the application is currently connected:
 ```
