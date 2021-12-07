@@ -2,7 +2,7 @@
 
 [**Home**](/)
 
-**Commercial Vantage**
+[Commercial Vantage](cv/cv_top)
 
 - [Deployment Guide](cv/commercial_vantage.md)
 - [Management](cv/cv_policies.md)

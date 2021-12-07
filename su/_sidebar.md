@@ -2,7 +2,9 @@
 
 [**Home**](/)
 
-**System Update Suite**
+[System Update Suite](su/su_top.md)
+
+- [System Update Suite Deployment Guide](su/su_dg.md)
 
 - [System Update Suite Deployment Guide](su/su_dg.md)
 

@@ -170,7 +170,9 @@ Values:
 
 ?>Note: Added in version 10.2109
 
-This policy setting allows Commercial Vantage to write the computer battery information into the Lenovo Namespace WMI table. If you enable it, the battery information will be written to WMI.
+This policy setting allows Commercial Vantage to write the computer battery information into the Lenovo Namespace WMI table. If you enable it, the battery information will be written to WMI.  The information written will appear as follows:
+
+![battery info](../img/cv/battery_info.png)
 
 This policy setting allows the Administrator to configure the schedule type, schedule day, and schedule time for writing the computer battery information to WMI.
 The Schedule type value should be a number (0-2), where 0 means daily, 1 means weekly, 2 means monthly.
