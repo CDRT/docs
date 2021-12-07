@@ -4,5 +4,5 @@
 
 **BIOS Reference**
 
-- [Deployment Guide ![ ](../img/link.png)](https://download.lenovo.com/cdrt/wp/bios.html)
+- [Deployment Guide](bios/bios_guide.md)
 - [System Deployment Boot Mode](bios/sdbm.md)
