@@ -16,7 +16,7 @@
 - **Reference Material**
 -- [Scripting Samples](samples/samples.md)
 -- [Docks Reference](docks/docks_top.md)
--- [BIOS Reference](bios/bios_top.md)
+-- [BIOS Reference](bios/bios_guide.md)
 -- [AMD DASH](dash/dash_top.md)
 
 ---
