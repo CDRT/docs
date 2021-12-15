@@ -1,4 +1,4 @@
-### Deploying Commercial Vantage <br> with ConfigMgr
+### Deploying Commercial Vantage <br> with ConfigMgr   <!-- {docsify-ignore} -->
 *Author: Philip Jorgensen*
 
 ![](../img/guides/cv/cv_configmgr_deploy/cv.jpg)
