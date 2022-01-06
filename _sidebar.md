@@ -5,8 +5,8 @@
 - **Product Guides**
 -- [Commercial Vantage](cv/cv_top.md)
 -- [Dock Manager](dm/dm_top.md)
--- [Lenovo Deployment Assistant](lda/lda_top.md)
--- [System Update, Update Retriever, Thin Installer](su/su_top.md)
+-- [Lenovo Deployment <br>Assistant](lda/lda_top.md)
+-- [System Update, <br>Update Retriever, <br>Thin Installer](su/su_top.md)
 -- [Think BIOS Config Tool](tbct/tbct_top.md)
 
 <!--
