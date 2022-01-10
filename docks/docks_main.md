@@ -152,6 +152,106 @@ When MAC Address PassThrough is Enabled you will still need the Realtek NIC driv
 
 <hr/>
 
+# ThinkPad Universal Thunderbolt 4 Dock (40B0)
+
+The ThinkPad® Universal Thunderbolt™ 4 Dock (40B0) is engineered to expand into new horizons. Bringing forth the next generation of Intel® Thunderbolt™ technology, packed with game-changing features like support for 8K @ 30 Hz display, Intel® vPro® functionality support (*1), smart remote manageability, and dynamic power charging up to 100W. The ThinkPad Universal Thunderbolt™ 4 Dock truly is the pinnacle of premium docking. 
+
+Features:
+- One Cable. All Your Needs: A single Thunderbolt™ cable is all you need to take your productivity to new heights. Adding an 8K @ 30 Hz display or up to four 4K @ 60 Hz displays, lightning-fast 40 Gbps transfer speeds, vPro® pass-through support, and enhanced dynamic power charging up to 100W. You can do it all with the ThinkPad® Universal Thunderbolt™ 4 Dock.
+- Compatibility. Made Limitless: Freedom is the key to productivity. That’s why we’ve engineered the ThinkPad Thunderbolt™ 4 Dock to be limitlessly adaptable — supporting up to 100W PD and unrivaled performance on all Thunderbolt™ 3 and 4, USB 4, and USB-C Windows-based systems (*2).
+- Remote Management. But Smarter: Remote dock management just got a whole lot smarter. Thanks to Lenovo Dock Manager and our latest hardware, firmware updates can be done without any end-user interruption, which means productivity is never compromised.
+   
+**Notes**:
+1. Intel® Active Management Technology capable with select 11th Generation Intel® Core™ vPro® processor-based PCs only.
+2. Lenovo USB-C & Thunderbolt™ Docks function with notebooks that support industry standard USB-C Alt-Mode or Thunderbolt™ protocols through their Type-C™ port. Lenovo USB-C and Thunderbolt™ Docks support additional features, such as MAC address passthrough, WOL and mirrored power button, on most Lenovo ThinkPad notebooks, but such features may not be available on certain other Lenovo notebooks or non-Lenovo branded notebook systems.
+
+[>> More Information & Drivers](https://support.lenovo.com/us/en/solutions/pd500503)
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px;size:150px">
+
+<!-- ![](../img/guides/docks/utbt4-1.png) -->
+![](../img/guides/docks/utbt4-2.png)
+![](../img/guides/docks/utbt4-3.png)
+</div>
+
+[Display Capabilities](https://support.lenovo.com/us/en/solutions/pd029622)
+
+## Connectivity
+
+>Front ports:<br/>
+>   - 1 USB 3.0<br/>
+>   - 1 Thunderbolt<br/>
+>   - 1 3.5mm Audio Headphone/Mic combo jack<br/>
+>
+>Rear ports:<br/>
+>   - 3 USB 3.0 <br/>
+>   - 2 DisplayPort 1.4<br/>
+>   - 1 HDMI 2.1<br/>
+>   - 1 Thunderbolt - To Computer with power<br/>
+>   - 1 Thunderbolt - To device<br/>
+>   - 1 Ethernet<br/>
+>   - 1 135W AC power input<br/>
+
+## Deployment 
+
+<table class="deploymentTable">
+<td class="tdDT" rowspan="11" style="width:15%">
+<h5 align="center">Deployment (MDT & SCCM)</h5>
+</td>
+<tr>
+<td rowspan="4" class="tdDT">
+<h5>Query: </h5>
+<tr>
+<td class="tdDT">Ethernet </td>
+<td class="depTableFont">PCI\VEN_8086&DEV_5502 </td>
+</tr>
+<tr>
+<td class="tdDT">Audio</td>
+<td class="depTableFont">USB\VID_17EF&PID_30BB</td>
+</tr>
+<tr>
+<td class="tdDT">Billboard </td>
+<td class="depTableFont">USB\VID_17EF&PID_30B5</td>
+</tr>
+</td>
+</tr>
+<tr rowspan="1">
+<td rowspan="4" class="tdDT">
+<h5>Driver(s): </h5>
+<tr>
+<td class="tdDT">WinPE </td>
+<td class="depTableFont"><a href="https://pcsupport.lenovo.com/accessories/pd500503" target="_blank">https://pcsupport.lenovo.com/accessories/pd500503</a></td>
+</tr>
+<tr>
+<td class="tdDT">Windows</td>
+<td class="depTableFont"><a href="https://pcsupport.lenovo.com/accessories/pd500503" target="_blank">https://pcsupport.lenovo.com/accessories/pd500503</a></td>
+</tr>
+<tr>
+<td class="tdDT">Firmware</td>
+<td class="depTableFont">We do not recommend deploying firmware updates during OSD deployment<br></td>
+</tr>
+</tr>
+</td></tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>PXE Capable: </h5>
+</td>
+<td class="depTableFont">Yes &nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>Driver Deployment: </h5>
+</td>
+<td class="depTableFont"><b>MDT</b> (deploy as hardware app in task sequence)<br>
+&nbsp;&nbsp;&nbsp;As Application ( tbt4_grdockdriver_v1006.exe /VERYSILENT ) <br><br>
+<b>SCCM </b><br> &nbsp;&nbsp;&nbsp;Deploy As Package in task sequence ( tbt4_grdockdriver_v1006.exe /VERYSILENT )
+<br> <b>*Restart required*</b> </td>
+</tr>
+</table>
+
+<hr/>
+
 # ThinkPad Thunderbolt 3 Essential Dock (40AV0135)
 
 The Lenovo Thunderbolt 3 Essential Dock (40AV), powered by Intel’s Thunderbolt 3 technology, is designed to boost your productivity with dual 4k displays, blazing-fast 10Gbps data rates, and a range of optimized ports. A single 65W power cable connected to a Thunderbolt or USB-C notebook is all you need to get to work.
