@@ -27,4 +27,4 @@ Wake on LAN from Dock function may be blocked due to password configuration.
 
 ### WiFi Configuration ###
 ![](./img/wifi.png)
-
+Test change from BA. Another change.
