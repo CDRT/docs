@@ -3,7 +3,7 @@
 [**Home**](/)
 
 [**Lenovo Docks**](docks/docks_top.md)
-- [Deployment Guide](docks/docks_main.md)
+- [Dock Deployment Guide](docks/docks_main.md)
 
 <hr/>
 
