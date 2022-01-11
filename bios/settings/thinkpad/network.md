@@ -43,6 +43,42 @@ Additional information is here: [Lenovo Cloud Deploy](https://www.lenovoclouddep
 Additional information is here: [Client Virtualization & Infrastructure Solutions - Lenovo](https://www.lenovo.com/lt/lt/data-center/solutions/client-virtualization) and [Windows Virtual Desktop](https://www.microsoft.com/en-us/microsoft-365/blog/2019/09/30/windows-virtual-desktop-generally-available-worldwide/).
 </details>
 
+<details><summary>UEFI WI-FI Network Boot</summary>
+One of 2 possible states:<br>
+
+1. On - function is turned on. UEFI Wi-Fi driver is loaded at next boot and can connect to Access point.
+2. **Off** - function is turned off. Default.
+
+**Note**: Secure Boot must be enabled to use UEFI Network Boot.
+</details>
+
+<details><summary>UEFI IPv4 Network Stack</summary>
+One of 2 possible states:<br>
+
+1. On - function is turned on. UEFI IPv4 Network Stack for UEFI environment is enabled. Default.
+2. Off - function is turned off.
+</details>
+
+<details><summary>UEFI IPv6 Network Stack</summary>
+One of 2 possible states:<br>
+
+1. **On** - function is turned on. UEFI IPv6 Network Stack for UEFI environment is enabled. Default.
+2. Off - function is turned off.
+</details>
+
+<details><summary>UEFI Network Boot Priority</summary>
+One of 2 possible options for Network Stack priority for UEFI PXE Boot:<br>
+
+1. **IPv4 First** – Default.
+2. IPv6 First
+</details>
+
+<details><summary>Wireless Auto Disconnection</summary>
+One of 2 possible states for Wireless Auto Disconnection feature when Ethernet cable is connected to Ethernet LAN on system:<br>
+
+1. On - function is turned on. Wireless LAN radios is automatically turned off whenever Ethernet cable is connected.
+2. **Off** - function is turned off. Default.
+</details>
 
 ### WiFi Configuration ###
 ![](./img/wifi.png)
