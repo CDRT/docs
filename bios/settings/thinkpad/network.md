@@ -9,7 +9,21 @@ One of 3 possible states: <br>
 3.	AC and Battery - Wake On LAN function works with both AC and Battery.
 
 **Note**: AC is required with magic packet type Wake On LAN. 
-Wake On LAN function may be blocked due to password configuration. 
+Wake On LAN function may be blocked due to password configuration.  <br><br>
+
+*WMI commands*
+```powershell
+#Read:
+ gwmi -class Lenovo_BiosSetting -namespace root\wmi | Where-Object {$_.CurrentSetting.split(",",[StringSplitOptions]::RemoveEmptyEntries) -eq "WakeOnLAN"} | Format-List CurrentSetting
+```
+```powershell
+#Get possible values:
+(gwmi -class Lenovo_GetBiosSelections -namespace root\wmi).GetBiosSelections("WakeOnLAN")| Format-List Selections
+```
+```powershell
+#Modify:
+(gwmi -class Lenovo_SetBiosSetting –namespace root\wmi).SetBiosSetting("WakeOnLAN,Enable")
+```   
 </details>
 
 <details><summary>Wake On LAN from Dock</summary>
@@ -22,7 +36,21 @@ One of 2 possible states:
 2.	Off - function is turned off. 
 
    **Note**: Wake On LAN from Dock works only when ThinkPad USB-C Dock or ThinkPad Thunderbolt 3 Dock is attached.
-Wake on LAN from Dock function may be blocked due to password configuration.
+Wake on LAN from Dock function may be blocked due to password configuration.<br><br>
+
+*WMI commands*
+```powershell
+#Read:
+gwmi -class Lenovo_BiosSetting -namespace root\wmi | Where-Object {$_.CurrentSetting.split(",",[StringSplitOptions]::RemoveEmptyEntries) -eq " WakeOnLANDock "} | Format-List CurrentSetting
+```
+```powershell
+#Get possible values:
+(gwmi -class Lenovo_GetBiosSelections -namespace root\wmi).GetBiosSelections("WakeOnLANDock")| Format-List Selections
+```
+```powershell
+#Modify:
+(gwmi -class Lenovo_SetBiosSetting –namespace root\wmi).SetBiosSetting("WakeOnLANDock,Enable")
+```   
 </details>
 
 <details><summary>Lenovo Cloud Services</summary>
