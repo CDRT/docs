@@ -54,7 +54,7 @@ Use the table below to find the appropriate WinPE driver for your dock:
 
 | Docks                                                                                                                                                                                          | WinPE Driver       |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|
-| USB-C Dock<br/>  USB-C Travel Hub<br/>  Thunderbolt Dock<br/>  Hybrid USB-C with USB-A Dock<br/>  OneLink Dock<br/>  OneLink+ Dock<br/>  OneLink+ to RJ45 Adapter<br/>  3-in-1 ThinkPad<br/> OneLink Adapter <br/> USB 3.0 Ethernet Adapter | [Realtek USB Driver](https://pcsupport.lenovo.com/solutions/HT101981) |
+| USB-C Dock<br/>  USB-C Travel Hub<br/>  Thunderbolt Dock<br/>  Hybrid USB-C with USB-A Dock<br/>  OneLink Dock<br/>  OneLink+ Dock<br/>  OneLink+ to RJ45 Adapter<br/>  3-in-1 ThinkPad<br/> OneLink Adapter <br/> USB 3.0 Ethernet Adapter <br/>USB-C to Ethernet Adapter  | [Realtek USB Driver](https://pcsupport.lenovo.com/us/en/downloads/ds504778) |
 | USB 3.0 Basic Dock<br/>  USB 3.0 Pro Dock<br/>  USB 3.0 Ultra Dock                                                                                                                                       | [DisplayLink Driver](https://pcsupport.lenovo.com/solutions/HT104480) |
 
 You will also need the appropriate driver for the version of Windows (links provided below in deployment recipe table for each dock) that you are deploying.
