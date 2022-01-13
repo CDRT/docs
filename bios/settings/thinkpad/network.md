@@ -112,7 +112,9 @@ Number of current available networks around. View only.
 <details><summary>[SSID Value](Status)</summary><blockquote>
 SSID value.<br>
 Shows “Connected” if the device is currently connected to this network.<br> 
-Every SSID on the list leads to additional information about the network. See descriptions below.
+Every SSID on the list leads to additional information about the network. See descriptions below.<br><br>
+
+![](./img/wifinetworkconfig.png)
 
 <details><summary>Connection Status</summary>
 View only. One of 2 possible statuses:
@@ -193,3 +195,6 @@ Displays security type of the network. View only. Possible values:
 1.	Secured
 2.	Open
 </details>
+
+### Add Wi-Fi Network ###
+![](./img/addwifinetwork.png)
