@@ -178,6 +178,7 @@ Field for entering EAP password. Requirements to password length: 1-63 character
 Visible only for networks with security WPA2-Enterprise.
 </details>
 
+
 </details>
 
 
