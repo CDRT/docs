@@ -3,7 +3,12 @@
 [**Home**](/)
 
 [**Lenovo Docks**](docks/docks_top.md)
+<<<<<<< Updated upstream
 - [Deployment Guide](docks/docks_main.md)
+=======
+- [Dock Deployment Guide](docks/docks_main.md)
+- [ConfigMgr Dock Queries](docks/configmgr_dock_queries.md)
+>>>>>>> Stashed changes
 
 <hr/>
 
