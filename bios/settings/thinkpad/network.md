@@ -113,26 +113,69 @@ Number of current available networks around. View only.
 SSID value. Shows “Connected” if the device is currently connected to this network. 
 Leads to additional information. See descriptions below.
 
-* **Connection Status**<br>
-   One of 2 possible statuses:
+<details><summary>Connection Status</summary>
+ View only. One of 2 possible statuses:
 
    1.	**Disconnected** - device is not connected to this Wi-Fi network. Default.
-   2.	Connected - device is connected to this Wi-Fi network.
-   View only.
+   2.	Connected - device is connected to this Wi-Fi network.    
+</details>
 
-* **SSID**<br>
-   SSID (Service Set Identifier) is the name of the wireless network. View only.
+<details><summary>SSID</summary>
+ SSID (Service Set Identifier) is the name of the wireless network. View only.
+</details>
 
-* **Security**<br>
-   Security type of this Wi-Fi network. View only.Possible values:
+<details><summary>Security</summary>
+ Security type of this Wi-Fi network. View only.Possible values:
 
    1.	Open
    2.	WPA2-Personal
    3.	WPA2-Enterprise
-
-* **Password**<br>
+   4. PEAP
+   5. EAP-TLS
+</details>
+   
+<details><summary>Password</summary>
    Field for entering password. Visible only for networks with security WPA2-Personal.<br>
    Password length: 8-63 characters.
+</details>
+
+<details><summary>EAP Authentication Method</summary>
+   Selected EAP Authentication Method. View only. Visible only for networks with security WPA2-Enterprise. Default value depends on the network. Possible values:
+
+   1. PEAP
+   2.	EAP-TLS 
+</details>
+
+<details><summary>EAP Second Authentication Method</summary>
+   Selected EAP Second Authentication Method. View only. Visible only for networks with security WPA2-Enterprise and if ‘EAP Authentication Method’ is ‘PEAP’. Default value depends on the network. Possible values:
+
+   1. MSCHAPv2
+</details>
+
+<details><summary>Enroll CA Cert</summary>
+   This is the option to enroll CA (Certification Authority) certificate. Empty by default.
+   Visible only for networks with security WPA2-Enterprise.
+</details>
+
+<details><summary>Enroll Client Cert</summary>
+   This is the option to enroll client certificate. Empty by default.
+   Visible only for networks with security WPA2-Enterprise and if ‘EAP Authentication Method’ is ‘EAP-TLS’.
+</details>
+
+<details><summary>Enroll Client Private Key</summary>
+   This is the option to enroll client private key. Empty by default.
+   Visible only for networks with security WPA2-Enterprise and if ‘EAP Authentication Method’ is ‘EAP-TLS’.
+</details>
+
+<details><summary>Identity</summary>
+   Identity value if there is any. View only.Identity length: 6-20 characters.
+   Visible only for networks with security WPA2-Enterprise.
+</details>
+
+<details><summary>EAP Password</summary>
+   Field for entering EAP password. Requirements to password length: 1-63 characters.
+   Visible only for networks with security WPA2-Enterprise.
+</details>
 
 </details>
 
