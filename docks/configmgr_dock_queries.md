@@ -1,6 +1,6 @@
 # WQL Queries for Lenovo Docks
 
-This section contains example queries that can be used in your ConfigMgr hierarchy.  The results from these queries will return the **Device Name**, **IP Addresses**, and **Last Logged On User**.
+This section contains example queries that can be used in your ConfigMgr hierarchy.  The results from these queries will return the **Device Name** connected to the dock, **IP Addresses**, and **Last Logged On User**.
 
 [OneLink+](https://support.lenovo.com/solutions/acc100252)
 ```wql
