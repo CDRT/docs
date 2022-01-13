@@ -109,9 +109,10 @@ For every MAC Address the following information is shown:<br>
 Number of current available networks around. View only.
 </details>
 
-<details><summary>SSID</summary><blockquote>
-SSID value. Shows “Connected” if the device is currently connected to this network. 
-Leads to additional information. See descriptions below.
+<details><summary>[SSID Value](Status)</summary><blockquote>
+SSID value.<br>
+Shows “Connected” if the device is currently connected to this network.<br> 
+Every SSID on the list leads to additional information about the network. See descriptions below.
 
 <details><summary>Connection Status</summary>
 View only. One of 2 possible statuses:
@@ -178,6 +179,17 @@ Field for entering EAP password. Requirements to password length: 1-63 character
 Visible only for networks with security WPA2-Enterprise.
 </details>
 
+<details><summary>[Action]</summary>
+One of 2 possible actions:
+
+1.	Connect to this network - visible if device is not connected to this Wi-Fi network
+2.	Disconnect - visible if device is connected to this Wi-Fi network
+</details>
 </details>
 
+<details><summary>[Secured\Open]</summary>
+Displays security type of the network. View only. Possible values:
 
+1.	Secured
+2.	Open
+</details>
