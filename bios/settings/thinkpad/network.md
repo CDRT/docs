@@ -80,5 +80,60 @@ One of 2 possible states for Wireless Auto Disconnection feature when Ethernet c
 2. **Off** - function is turned off. Default.
 </details>
 
+<details><summary>MAC Address Pass Through</summary>
+One of 3 possible options for MAC Address Pass Through function when dock is attached:<br>
+
+1. **Disabled** - Dock Ethernet uses its own MAC Address. Default
+2. Internal MAC Address - Dock Ethernet uses same MAC Address as internal LAN.
+3. Second MAC Address - Dock Ethernet uses its own MAC Address.
+</details>
+
 ### WiFi Configuration ###
 ![](./img/wifi.png)
+<details><summary>MAC Address</summary>
+Media access control (MAC) address of the wireless network interface controller. View only.
+Note. There could be several MAC addresses in case there are several wireless network interface controllers. 
+<br>
+For every MAC Address the following information is shown:<br>
+
+* MAC Address - Media access control (MAC) address of the selected wireless network interface controller. View only.
+* [State] - One of 2 possible states: 
+   1. **Disconnected** - device is not connected to a Wi-Fi network. Default.
+   2. Connected to [SSID] - device is connected to a Wi-Fi network which has displayed SSID.
+</details>
+
+### Wi-Fi Network List ###
+![](./img/wifinetworklist.png)
+
+<details><summary>Number of networks </summary>
+Number of current available networks around. View only.
+</details>
+
+<details><summary>SSID</summary>
+SSID value. Shows “Connected” if the device is currently connected to this network. 
+Leads to additional information. See descriptions below.
+
+* **Connection Status**<br>
+   One of 2 possible statuses:
+
+   1.	**Disconnected** - device is not connected to this Wi-Fi network. Default.
+   2.	Connected - device is connected to this Wi-Fi network.
+   View only.
+
+* **SSID**<br>
+   SSID (Service Set Identifier) is the name of the wireless network. View only.
+
+* **Security**<br>
+   Security type of this Wi-Fi network. View only.Possible values:
+
+   1.	Open
+   2.	WPA2-Personal
+   3.	WPA2-Enterprise
+
+* **Password**<br>
+   Field for entering password. Visible only for networks with security WPA2-Personal.<br>
+   Password length: 8-63 characters.
+
+</details>
+
+
