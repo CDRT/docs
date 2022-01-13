@@ -73,7 +73,7 @@ FROM   sms_r_system
        INNER JOIN sms_g_system_system_enclosure
                ON sms_g_system_system_enclosure.resourceid =
                   sms_r_system.resourceid
-WHERE  sms_g_system_pnp_device_driver.pnpdeviceid LIKE "usb\\vid_17ef&pid_308d%"
+WHERE  sms_g_system_pnp_device_driver.pnpdeviceid LIKE "usb\\vid_17ef&pid_a354%"
        AND sms_g_system_system_enclosure.chassistypes IN (
            "8", "9", "10", "11",
            "12", "14", "18", "21",
@@ -101,18 +101,21 @@ WHERE  sms_g_system_pnp_device_driver.pnpdeviceid LIKE "usb\\vid_17ef&pid_3069%"
 
 [USB-C](https://support.lenovo.com/accessories/ACC100348)
 ```wql
-SELECT sms_r_system.NAME,
-       sms_r_system.ipaddresses,
-       sms_r_system.lastlogonusername
+SELECT DISTINCT sms_r_system.NAME,
+                sms_r_system.ipaddresses,
+                sms_r_system.lastlogonusername
 FROM   sms_r_system
        INNER JOIN sms_g_system_pnp_device_driver
                ON sms_g_system_pnp_device_driver.resourceid =
                   sms_r_system.resourceid
-WHERE  sms_g_system_pnp_device_driver.NAME = "thinkpad usb-c dock ethernet"
+       INNER JOIN sms_g_system_system_enclosure
+               ON sms_g_system_system_enclosure.resourceid =
+                  sms_r_system.resourceid
+WHERE  sms_g_system_pnp_device_driver.pnpdeviceid LIKE "usb\\vid_17ef&pid_3060%"
        AND sms_g_system_system_enclosure.chassistypes IN (
            "8", "9", "10", "11",
            "12", "14", "18", "21",
-           "30", "31", "32" ) 
+           "30", "31", "32" )
 ```
 
 [OneLink+](https://support.lenovo.com/solutions/acc100252)
