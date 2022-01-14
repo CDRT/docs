@@ -4,6 +4,7 @@
 
 [**Lenovo Docks**](docks/docks_top.md)
 - [Dock Deployment Guide](docks/docks_main.md)
+- [ConfigMgr Dock Queries](docks/configmgr_dock_queries.md)
 
 <hr/>
 
