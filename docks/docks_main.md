@@ -488,12 +488,6 @@ The ThinkPad Thunderbolt 3 Dock is an unmatched docking solution powered by Inte
 <td class="tdDT">Audio</td>
 <td class="depTableFont">USB\VID_17EF&PID_306A </td>
 </tr>
-<tr>
-<td class="tdDT">Billboard </td>
-<td class="depTableFont">USB\VID_0451&PID_ACE1 </td>
-</tr>
-</td>
-</tr>
 <tr rowspan="1">
 <td rowspan="4" class="tdDT">
 <h5>Driver(s): </h5>
