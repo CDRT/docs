@@ -127,7 +127,7 @@ Values:
 
 `<disabled/>`
 
-?>Note: Valid inputs includes any time of the day in 24:MM:SS format which can be inputted inside the textbox in the options panel.
+?>Note: Valid inputs includes any time of the day in `24:MM:SS` format which can be inputted inside the textbox in the options panel.
 
 ### Run Days
 
@@ -152,7 +152,7 @@ Values:
 
 If this setting is enabled, it will edit the month/s when the next scheduled task's execute date should be updated. 
 
-Valid inputs are January-December and can be separated by a comma (e.g. January,February) which can be inputted inside the textbox in the options panel.  
+Valid inputs are the full month names such as "January". Multiple months can be specified separated by a comma (e.g. "January,February,March") which can be inputted inside the textbox in the options panel.  
 
 OMA-URI:
 ```
