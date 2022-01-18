@@ -198,3 +198,77 @@ Displays security type of the network. View only. Possible values:
 
 ### Add Wi-Fi Network ###
 ![](./img/addwifinetwork.png)
+
+<details><summary>SSID</summary>
+Field for entering SSID value.
+</details>
+
+<details><summary>Security</summary>
+Field to select the security type of this Wi-Fi network. Possible values:
+
+1.	**Open** – Default
+2.	WPA2-Personal
+3.	WPA2-Enterprise
+</details>
+
+<details><summary>Password</summary>
+Field for entering password. Visible only for a network with security WPA2-Personal.<br>
+Password length: 8-63 characters.
+</details>
+
+<details><summary>EAP Authentication Method</summary>
+Field to select EAP Authentication Method. Possible values:
+
+1.	**PEAP** – Default
+2.	EAP-TLS
+
+Visible only for a network with security WPA2-Enterprise. 
+</details>
+
+<details><summary>EAP Second Authentication Method</summary>
+Field to select EAP Second Authentication Method. Possible values:
+
+1.	**MSCHAPv2** – Default. 
+
+Visible only for a network with security WPA2-Enterprise and if ‘EAP Authentication Method’ is ‘PEAP’. 
+</details>
+
+<details><summary>Enroll CA Cert</summary>
+This is the option to enroll CA (Certification Authority) certificate. Empty by default.<br>
+Visible only for networks with security WPA2-Enterprise.
+</details>
+
+<details><summary>Enroll Client Cert</summary>
+This is the option to enroll client certificate. Empty by default.<br>
+Visible only for networks with security WPA2-Enterprise and if ‘EAP Authentication Method’ is ‘EAP-TLS’.
+</details>
+
+<details><summary>Enroll Client Private Key</summary>
+This is the option to enroll client private key. Empty by default.<br>
+Visible only for networks with security WPA2-Enterprise and if ‘EAP Authentication Method’ is ‘EAP-TLS’.
+</details>
+
+<details><summary>Identity</summary>
+Field for entering identity value if there is any.<br> 
+Requirements to identity length: 6-20 characters.<br>
+Visible only for a network with security WPA2-Enterprise. 
+</details>
+
+<details><summary>EAP Password</summary>
+Field for entering EAP password. <br>
+Requirements to password length: 1-63 characters.<br>
+Visible only for a network with security WPA2-Enterprise. 
+</details>
+
+<details><summary>Scan Anyway</summary>
+Field to define whether to scan even when this network is not broadcasting its name. One of 2 possible options:
+
+1.	**On** - the network will be scanned when it does not broadcast its name. Default. 
+2.	Off - the network will not be scanned when it does not broadcast its name.
+
+Visible only for a network with security WPA2-Enterprise.
+</details>
+
+<details><summary>Commit Changes and Exit</summary>
+This is the option to save changes and exits back to the Manage Wi-Fi network page. 
+</details>
