@@ -112,7 +112,7 @@ Number of current available networks around. View only.
 <details><summary>[SSID Value](Status)</summary><blockquote>
 SSID value.<br>
 Shows “Connected” if the device is currently connected to this network.<br> 
-Every SSID on the list leads to additional information about the network. See descriptions below.<br><br>
+Every SSID on the list leads to additional information about the network. See descriptions below.<br>
 
 ![](./img/wifinetworkconfig.png)
 
@@ -271,4 +271,27 @@ Visible only for a network with security WPA2-Enterprise.
 
 <details><summary>Commit Changes and Exit</summary>
 This is the option to save changes and exits back to the Manage Wi-Fi network page. 
+</details>
+
+### Manage Wi-Fi Network ###
+![](./img/managewifilist.png)
+
+
+<details><summary>[SSID Value][Type] </summary><blockquote>
+SSID value and its type.<br>
+Every SSID on the list leads to details for this network. See descriptions below.<br>
+
+![](./img/managewificonfig.png)
+
+
+
+</details>
+
+
+<details><summary>Change Priority</summary><blockquote>
+
+![](./img/managewifipriority.png)
+
+
+
 </details>
