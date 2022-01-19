@@ -9,6 +9,7 @@
 - Config
    - [Network](bios/settings/thinkpad/network.md)
    - [USB](bios/settings/thinkpad/usb.md)
+   - [Keyboard/Mouse](bios/settings/thinkpad/keyboardmouse.md)
    
 - Security
   - [Placeholder]()
