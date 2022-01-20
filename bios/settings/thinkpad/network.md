@@ -271,7 +271,7 @@ This is the option to save changes and exits back to the Manage Wi-Fi network pa
 ![](./img/managewifilist.png)
 
 
-<details><summary>[SSID Value][Type] </summary><blockquote>
+<details><summary>[SSID Value][Type] </summary>
 SSID value and its type.<br>
 Every SSID on the list leads to details for this network. See descriptions below.<br>
 
@@ -357,7 +357,7 @@ This is the option to forget the settings for the selected network and disconnec
 </details>
 
 
-<details><summary>Change Priority</summary><blockquote>
+<details><summary>Change Priority</summary>
 Leads to the list of saved Wi-Fi networks.<br>  
 The option will show a warning message if Network List is empty. See descriptions below.<br>
 
