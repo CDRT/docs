@@ -10,7 +10,7 @@ One of 2 possible options to select the mode of Intel (R) SteedStep Technology a
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| SpeedStep |  |
 </details>
 
 <details><summary>Scheme for AC</summary>
@@ -23,7 +23,7 @@ One of 2 possible options of thermal management scheme to use:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| AdaptiveThermalManagementAC |  |
 </details>
 
 <details><summary>Scheme for Battery</summary>
@@ -36,7 +36,7 @@ One of 2 possible options of thermal management scheme to use:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| AdaptiveThermalManagementBattery |  |
 </details>
 
 <details><summary>CPU Power Management</summary>
@@ -49,7 +49,7 @@ One of 2 possible options:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| CPUPowerManagement |  |
 </details>
 
 <details><summary>Power On with AC Attach</summary>
@@ -60,7 +60,7 @@ One of 2 possible options for a feature that powers on the system when AC is att
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| OnByAcAttach |  |
 </details>
 
 <details><summary>Disable Built-in Battery</summary>
@@ -69,10 +69,6 @@ This option requests additional confirmation. <br>
 After selecting this item, the system will be automatically powered off, then ready to be serviced.
 
 **Note**. The battery will be automatically enabled when the AC adapter is reconnected.
-
-| WMI Setting name | Values |
-|:---|:---|
-|  |  |
 </details>
 
 ### Automatic Power On ###
