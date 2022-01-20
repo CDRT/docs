@@ -11,6 +11,7 @@
    - [USB](bios/settings/thinkpad/usb.md)
    - [Keyboard/Mouse](bios/settings/thinkpad/keyboardmouse.md)
    - [Display](bios/settings/thinkpad/display.md)
+   - [Power](bios/settings/thinkpad/power.md)
    
 - Security
   - [Placeholder]()
