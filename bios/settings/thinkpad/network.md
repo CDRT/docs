@@ -90,6 +90,7 @@ One of 3 possible options for MAC Address Pass Through function when dock is att
 
 ### WiFi Configuration ###
 ![](./img/wifi.png)
+
 <details><summary>MAC Address</summary>
 Media access control (MAC) address of the wireless network interface controller. View only.
 Note. There could be several MAC addresses in case there are several wireless network interface controllers. 
@@ -101,18 +102,17 @@ For every MAC Address the following information is shown:<br>
    1. **Disconnected** - device is not connected to a Wi-Fi network. Default.
    2. Connected to [SSID] - device is connected to a Wi-Fi network which has displayed SSID.
 </details>
+<br>
 
 ### Wi-Fi Network List ###
 ![](./img/wifinetworklist.png)
 
-<details><summary>Number of networks </summary>
-Number of current available networks around. View only.
-</details>
+**Number of networks:** Number of current available networks around. View only.
 
-<details><summary>[SSID Value](Status)</summary><blockquote>
-SSID value.<br>
-Shows “Connected” if the device is currently connected to this network.<br> 
-Every SSID on the list leads to additional information about the network. See descriptions below.<br>
+For each network the Security Type is shown.  Possible values are "Open" and "Secured".  If Secured, the security type is displayed. This is view only.
+
+Each SSID can be selected to display more details.
+<details><summary>[SSID Value](Status)</summary>
 
 ![](./img/wifinetworkconfig.png)
 
@@ -188,13 +188,7 @@ One of 2 possible actions:
 2.	Disconnect - visible if device is connected to this Wi-Fi network
 </details>
 </details>
-
-<details><summary>[Secured\Open]</summary>
-Displays security type of the network. View only. Possible values:
-
-1.	Secured
-2.	Open
-</details>
+<br>
 
 ### Add Wi-Fi Network ###
 ![](./img/addwifinetwork.png)

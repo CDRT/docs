@@ -7,7 +7,10 @@ One of 2 possible states:
 1.	Off - Built-in Track point is disabled.
 2.	**On** - Built-in TrackPoint is enabled. Default. 
 
-> WMI name: **TrackPoint**
+| WMI Setting name | Values |
+|:---|:---|
+| TrackPoint | Enable, Disable |
+
 </details>
 
 <details><summary>Trackpad</summary>
@@ -80,5 +83,9 @@ Possible options:
 27.	Czech
 
 **Note**. On latest machines in BIOS added support for ASCII special characters and symbols such as @, ! ,?, etc. Those characters depend on keyboard layout and BIOS cannot know the attached keyboard, therefore users have to select keyboard layout if they replace keyboard.
+
+| WMI Setting name | Values |
+|:---|:---|
+| KeyboardLayout | US English, Canadian French Multilingual, ... |
 
 </details>
