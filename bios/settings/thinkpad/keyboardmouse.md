@@ -19,7 +19,9 @@ One of 2 possible states:
 1.	Off - Built-in Trackpad is disabled.
 2.	**On** - Built-in Trackpad is enabled. Default.
 
-WMI name: **TouchPad**
+| WMI Setting name | Values |
+|:---|:---|
+| TouchPad |  |
 </details>
 
 <details><summary>Fn and Ctrl Key swap</summary>
@@ -28,29 +30,37 @@ One of 2 possible states:
 1.	**Off** - Fn key and Ctrl key behaviour is as printed on the keyboard. Default.
 2.	On - Fn key works as Ctrl key. Ctrl key works as Fn key. Note. Bottom-Left key will wake the system from sleep state.
 
-* WMI name: **FnCtrlKeySwap**
+| WMI Setting name | Values |
+|:---|:---|
+| FnCtrlKeySwap |  |
 </details>
 
 <details><summary>Fn Sticky Key</summary>
-
-WMI name: **FnSticky**<br>
 
 One of 2 possible states:
 
 1.	**Off** - Fn key will not switch to sticky state. Default.
 2.	On - User can press Fn key to keep it in a pressed condition, then press the desired function key. The action is equivalent to pressing the required key and the Fn key simultaneously. When User presses the Fn key twice, the state is locked until User presses the Fn key again.
+
+| WMI Setting name | Values |
+|:---|:---|
+| FnSticky |  |
 </details>
 
-<details><summary>F1-F12 as Primary Function - "FnKeyAsPrimary"</summary>
+<details><summary>F1-F12 as Primary Function</summary>
 One of 2 possible states:
 
 1.	On - Executes the F1-F12 function.
 2.	**Off** - Executes the special function. Default. 
 
 Alternatively, to switch to above two options, press Fn+Esc to use FnLk (Fn Lock). LED in on when FnLk is enabled.
+
+| WMI Setting name | Values |
+|:---|:---|
+| FnKeyAsPrimary |  |
 </details>
 
-<details><summary>Keyboard Layout - "KeyboardLayout"</summary>
+<details><summary>Keyboard Layout</summary>
 Field to select keyboard layout in pre-OS environment. This configuration does not affect OS.
 Possible options:
 
