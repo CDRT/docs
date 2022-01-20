@@ -10,6 +10,10 @@ One of 3 possible states: <br>
 
 **Note**: AC is required with magic packet type Wake On LAN. 
 Wake On LAN function may be blocked due to password configuration.
+
+| WMI Setting name | Values |
+|:---|:---|
+| WakeOnLAN |  |
 </details>
 
 <details><summary>Wake On LAN from Dock</summary>
@@ -23,6 +27,10 @@ One of 2 possible states:
 
    **Note**: Wake On LAN from Dock works only when ThinkPad USB-C Dock or ThinkPad Thunderbolt 3 Dock is attached.
 Wake on LAN from Dock function may be blocked due to password configuration.
+
+| WMI Setting name | Values |
+|:---|:---|
+| WakeOnLANDock  |  |
 </details>
 
 <details><summary>Lenovo Cloud Services</summary>
@@ -41,6 +49,10 @@ When “Lenovo Cloud Services” booted, then following options will be availabl
 Additional information is here: [Lenovo Cloud Deploy](https://www.lenovoclouddeploy.com/en/auth/welcome)
 2. **Windows Virtual Desktop (VDI)** – it provides the VDI environment to customer. VDI itself will be setup by the customer (IT Admin). If this option is selected, then it will become available as a boot option.  
 Additional information is here: [Client Virtualization & Infrastructure Solutions - Lenovo](https://www.lenovo.com/lt/lt/data-center/solutions/client-virtualization) and [Windows Virtual Desktop](https://www.microsoft.com/en-us/microsoft-365/blog/2019/09/30/windows-virtual-desktop-generally-available-worldwide/).
+
+| WMI Setting name | Values |
+|:---|:---|
+| LenovoCloudServices  |  |
 </details>
 
 <details><summary>UEFI WI-FI Network Boot</summary>
@@ -50,6 +62,10 @@ One of 2 possible states:<br>
 2. **Off** - function is turned off. Default.
 
 **Note**: Secure Boot must be enabled to use UEFI Network Boot.
+
+| WMI Setting name | Values |
+|:---|:---|
+| WiFiNetworkBoot  |  |
 </details>
 
 <details><summary>UEFI IPv4 Network Stack</summary>
@@ -57,6 +73,10 @@ One of 2 possible states:<br>
 
 1. **On** - function is turned on. UEFI IPv4 Network Stack for UEFI environment is enabled. Default.
 2. Off - function is turned off.
+
+| WMI Setting name | Values |
+|:---|:---|
+| IPv4NetworkStack  |  |
 </details>
 
 <details><summary>UEFI IPv6 Network Stack</summary>
@@ -64,6 +84,10 @@ One of 2 possible states:<br>
 
 1. **On** - function is turned on. UEFI IPv6 Network Stack for UEFI environment is enabled. Default.
 2. Off - function is turned off.
+
+| WMI Setting name | Values |
+|:---|:---|
+| IPv6NetworkStack  |  |
 </details>
 
 <details><summary>UEFI Network Boot Priority</summary>
@@ -71,6 +95,10 @@ One of 2 possible options for Network Stack priority for UEFI PXE Boot:<br>
 
 1. **IPv4 First** – Default.
 2. IPv6 First
+
+| WMI Setting name | Values |
+|:---|:---|
+| UefiPxeBootPriority  |  |
 </details>
 
 <details><summary>Wireless Auto Disconnection</summary>
@@ -78,6 +106,10 @@ One of 2 possible states for Wireless Auto Disconnection feature when Ethernet c
 
 1. On - function is turned on. Wireless LAN radios is automatically turned off whenever Ethernet cable is connected.
 2. **Off** - function is turned off. Default.
+
+| WMI Setting name | Values |
+|:---|:---|
+| WirelessAutoDisconnection  |  |
 </details>
 
 <details><summary>MAC Address Pass Through</summary>
@@ -86,6 +118,10 @@ One of 3 possible options for MAC Address Pass Through function when dock is att
 1. **Disabled** - Dock Ethernet uses its own MAC Address. Default
 2. Internal MAC Address - Dock Ethernet uses same MAC Address as internal LAN.
 3. Second MAC Address - Dock Ethernet uses its own MAC Address.
+
+| WMI Setting name | Values |
+|:---|:---|
+| MACAddressPassThrough  |  |
 </details>
 
 ### WiFi Configuration ###
