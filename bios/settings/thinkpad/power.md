@@ -142,3 +142,6 @@ Possible values:
 |:---|:---|
 |  |  |
 </details>
+
+### Automatic Power On - User Defined Alarm ###
+![](./img/autopoweronuserdefined.png)
