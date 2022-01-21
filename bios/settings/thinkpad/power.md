@@ -72,3 +72,4 @@ After selecting this item, the system will be automatically powered off, then re
 </details>
 
 ### Automatic Power On ###
+![](./img/autopoweron.png)
