@@ -21,11 +21,13 @@ No longer requires user interaction if a call to clear the TPM was performed.  I
 | L-Series | P-Series | T-Series | X-Series |
 |----------|----------|----------|----------|
 | L14/15 (Intel) | P14s/15s | T14 (AMD)| X1 Carbon 8/X1 Yoga 5 |
-| | P15/17 | T14/15 (Intel) | X13 NEC |
+| L14/15 (AMD) | P15/17 | T14/15 (Intel) | X13 NEC |
 | | P15v | T14s/X13 | X13/T14s (AMD) |
 | | P43s/53s | T15p | X390 (CML) |
 | | | T490 (CML) | X390 NEC |
 | | | T490/T590 | X390 (WHL) |
+
+!> Note: For L14/15 AMD Gen1 models, be sure to update to the latest BIOS to ensure you have the System Deployment Boot Mode feature. 
 
 
 ## Activating System Deployment Boot Mode
