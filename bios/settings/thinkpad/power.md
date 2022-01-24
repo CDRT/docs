@@ -87,7 +87,7 @@ One of 5 possible options for defining when the system shall turn on automatical
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| WakeUponAlarm |  |
 </details>
 
 <details><summary>Alarm Date (MM/DD/YYYY)</summary>
@@ -102,7 +102,7 @@ Possible values:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| AlarmDate |  |
 </details>
 
 <details><summary>Alarm Time (HH : MM : SS)</summary>
@@ -122,7 +122,7 @@ Possible values:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| AlarmTime |  |
 </details>
 
 <details><summary>Alarm Day of Week</summary>
@@ -140,8 +140,100 @@ Possible values:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| AlarmDayofWeek |  |
 </details>
 
 ### Automatic Power On - User Defined Alarm ###
 ![](./img/autopoweronuserdefined.png)
+
+<details><summary>Sunday</summary>
+One of 2 states to select:
+
+1.	**Off** - the system will not turn on automatically on this day. Default.
+2.	On – the system will turn on automatically on this day.
+
+| WMI Setting name | Values |
+|:---|:---|
+| UserDefinedAlarmSunday |  |
+</details>
+
+<details><summary>Monday</summary>
+One of 2 states to select:
+
+1.	**Off** - the system will not turn on automatically on this day. Default.
+2.	On – the system will turn on automatically on this day.
+
+| WMI Setting name | Values |
+|:---|:---|
+| UserDefinedAlarmMonday |  |
+</details>
+
+<details><summary>Tuesday</summary>
+One of 2 states to select:
+
+1.	**Off** - the system will not turn on automatically on this day. Default.
+2.	On – the system will turn on automatically on this day.
+
+| WMI Setting name | Values |
+|:---|:---|
+| UserDefinedAlarmTuesday |  |
+</details>
+
+<details><summary>Wednesday</summary>
+One of 2 states to select:
+
+1.	**Off** - the system will not turn on automatically on this day. Default.
+2.	On – the system will turn on automatically on this day.
+
+| WMI Setting name | Values |
+|:---|:---|
+| UserDefinedAlarmWednesday |  |
+</details>
+
+<details><summary>Thursday</summary>
+One of 2 states to select:
+
+1.	**Off** - the system will not turn on automatically on this day. Default.
+2.	On – the system will turn on automatically on this day.
+
+| WMI Setting name | Values |
+|:---|:---|
+| UserDefinedAlarmThursday |  |
+</details>
+
+<details><summary>Friday</summary>
+One of 2 states to select:
+
+1.	**Off** - the system will not turn on automatically on this day. Default.
+2.	On – the system will turn on automatically on this day.
+
+| WMI Setting name | Values |
+|:---|:---|
+| UserDefinedAlarmFriday |  |
+</details>
+
+<details><summary>Saturday</summary>
+One of 2 states to select:
+
+1.	**Off** - the system will not turn on automatically on this day. Default.
+2.	On – the system will turn on automatically on this day.
+
+| WMI Setting name | Values |
+|:---|:---|
+| UserDefinedAlarmSaturday |  |
+</details>
+
+<details><summary>User Defined Alarm Time (HH : MM : SS)</summary>
+Field to select the exact time for the system to turn on.
+Possible values:
+
+1.	**N/A** – Default
+2.	HH : MM : SS<br>
+    a. HH - Hour:  00 ~ 23<br>
+    b. MM - Minute:  00 ~ 59<br>
+    c. SS - Second:  00 ~ 59<br>
+
+| WMI Setting name | Values |
+|:---|:---|
+| UserDefinedAlarmTime |  |
+</details>
