@@ -12,6 +12,7 @@
    - [Keyboard/Mouse](bios/settings/thinkpad/keyboardmouse.md)
    - [Display](bios/settings/thinkpad/display.md)
    - [Power](bios/settings/thinkpad/power.md)
+   - [Beep and Alarm](bios/settings/thinkpad/beepalarm.md)
    
 - Security
   - [Placeholder]()
