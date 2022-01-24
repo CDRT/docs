@@ -14,6 +14,7 @@
    - [Power](bios/settings/thinkpad/power.md)
    - [Beep and Alarm](bios/settings/thinkpad/beepalarm.md)
    - [CPU](bios/settings/thinkpad/cpu.md)
+   - [Thunderbolt (TM) 4](bios/settings/thinkpad/thunderbolttm4.md)
    
 - Security
   - [Placeholder]()
