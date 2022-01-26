@@ -6,6 +6,8 @@ This page will present the policies found in the Commercial Vantage ADMX templat
 
 Refer to this [Commercial Vantage blog article](https://thinkdeploy.blogspot.com/2020/11/deploying-commercial-vantage-with-intune.html 'target=_blank') on how to create the Win32 app and [Managing Commercial Vantage in Intune](https://thinkdeploy.blogspot.com/2020/11/manage-commercial-vantage-with-intune.html) for steps on how to ingest the ADMX file in Intune.
 
+?> If new policies have been introduced, you will need to ingest the updated ADMX file contained in the Commercial Vantage zip.
+
 ### **Dashboard**
 
 #### Dashboard
@@ -535,6 +537,24 @@ When you use this policy to disable the EULA and Privacy window, a notification 
 OMA-URI:
 ```
 ./Device/Vendor/MSFT/Policy/Config/CommercialVantage~Policy~03E445D7B5956335BEDEF9340AC7E092~261C3D29FFEB46D46D29941DC7D22786/423D78F64EDE5D50939BFF9E369A1FC4
+```
+
+Values:
+
+`<enabled/>`
+`<disabled/>`
+
+### **Hardware Scan**
+
+#### Hardware Scan
+
+?> Added in version 10.2201
+
+When this policy is enabled, Hardware Scan feature of Commercial Vantage will be turned off.
+
+OMA-URI:
+```
+./Device/Vendor/MSFT/Policy/Config/CommercialVantage~Policy~03E445D7B5956335BEDEF9340AC7E092~672B78317E5E489502DF875C1DDBFA5C/1057F3806CBD334F560026BE4D5A57C8
 ```
 
 Values:
