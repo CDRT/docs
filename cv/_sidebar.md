@@ -10,4 +10,5 @@
 
 ---
 
-- [Deploying Commercial Vantage <br> using Config Manager](cv/cv_configmgr_deploy.md)
+- [Deploying Commercial Vantage <br> with ConfigMgr](cv/cv_configmgr_deploy.md)
+- [Deploying Commercial Vantage <br> with Intune](cv/cv_intune_deploy.md)
