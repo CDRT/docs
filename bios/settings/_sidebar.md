@@ -16,7 +16,9 @@
    - [CPU](bios/settings/thinkpad/cpu.md)
    - [Thunderbolt(TM) 4](bios/settings/thinkpad/thunderbolttm4.md)
    - [Intel(R) AMT](bios/settings/thinkpad/intelramt.md)
-   
+
+- [Date/Time](bios/settings/thinkpad/datetime.md)
+
 - Security
   - [Placeholder]()
 
