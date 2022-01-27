@@ -69,6 +69,10 @@ This option requests additional confirmation. <br>
 After selecting this item, the system will be automatically powered off, then ready to be serviced.
 
 **Note**. The battery will be automatically enabled when the AC adapter is reconnected.
+
+| WMI Setting name | Values |
+|:---|:---|
+| Not available via WMI |  |
 </details>
 
 ### Automatic Power On ###
