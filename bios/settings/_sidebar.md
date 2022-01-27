@@ -6,7 +6,7 @@
 
 **ThinkPad**
 
-- Config
+- [Config](bios/settings/thinkpad/config.md)
    - [Network](bios/settings/thinkpad/network.md)
    - [USB](bios/settings/thinkpad/usb.md)
    - [Keyboard/Mouse](bios/settings/thinkpad/keyboardmouse.md)
@@ -16,7 +16,6 @@
    - [CPU](bios/settings/thinkpad/cpu.md)
    - [Thunderbolt(TM) 4](bios/settings/thinkpad/thunderbolttm4.md)
    - [Intel(R) AMT](bios/settings/thinkpad/intelramt.md)
-   - [Setup UI](bios/settings/thinkpad/setupui.md)
    
 - Security
   - [Placeholder]()

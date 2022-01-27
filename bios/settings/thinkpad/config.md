@@ -1,5 +1,5 @@
-# Setup UI Settings #
-![](./img/setupui.png)
+# Config #
+![](./img/config.png)
 
 <details><summary>Setup UI</summary>
 One of 2 possible options for interface of Setup:
