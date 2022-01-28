@@ -20,6 +20,7 @@
 - [Date/Time](bios/settings/thinkpad/datetime.md)
 
 - [Security](bios/settings/thinkpad/security.md)
+  - [Password](bios/settings/thinkpad/password.md)
   - [Placeholder]()
 
 ---
