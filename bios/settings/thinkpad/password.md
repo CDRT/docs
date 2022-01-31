@@ -264,3 +264,52 @@ One of 2 possible options:
 </details>
 
 ### System Management Password Access Control ###
+![](./img/smpaccesscontrol.png)
+
+
+<details><summary>System Management Password Control</summary>
+One of 2 possible options:
+
+1.	**Off** – Default.
+2.	On – allow System Management Password to have the same authority as Supervisor Password to control System Management Password.
+
+| WMI Setting name | Values |
+|:---|:---|
+| SystemManagementPasswordControl |  |
+</details>
+
+
+<details><summary>Power-On Password Control</summary>
+One of 2 possible options:
+
+1.	**Off** - Default.
+2.	On - allow System Management Password to have the same authority as Supervisor Password to control Power-On Password.
+
+| WMI Setting name | Values |
+|:---|:---|
+| PowerOnPasswordControl |  |
+</details>
+
+
+<details><summary>Hard Disk Password Control</summary>
+One of 2 possible options:
+
+1.	**Off** - Default.
+2.	On - allow System Management Password to have the same authority as Supervisor Password to control Hard Disk Password.
+
+| WMI Setting name | Values |
+|:---|:---|
+| HardDiskPasswordControl |  |
+</details>
+
+
+<details><summary>BIOS Setup Configurations</summary>
+One of 2 possible options:
+
+1.	**Off** - Default.
+2.	On - allow System Management Password to have the same authority as Supervisor Password to control BIOS setup items.
+
+| WMI Setting name | Values |
+|:---|:---|
+| BIOSSetupConfigurations |  |
+</details>
