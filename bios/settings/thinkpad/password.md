@@ -130,9 +130,21 @@ When prompted to enter an NVMe password, press F1 to switch between the admin NV
 
 [More information about passwords on support.lenovo.com.](https://support.lenovo.com/at/en/solutions/ht036206-types-of-password-for-thinkpad)
 
-| WMI Setting name | Values |
+| WMI Setting name for Hard Disk Password (HDP) | Values |
 |:---|:---|
-|  |  |
+| **uhdp1** : Single Password or Dual Password User 1 |  |
+| **mhdp1** : Master HDP 1 |  |
+| **uhdp2** : Single Password or Dual Password User 2 |  |
+| **mhdp2** : Master HDP 2 |  |
+| **uhdp3** : Single Password or Dual Password User 3 |  |
+| **mhdp3** : Master HDP 3 |  |
+
+| WMI Setting name for NVMe1 Password | Values |
+|:---|:---|
+| **adrp1** : Single Password or Dual Password Admin 1 |  |
+| **udrp1** : Dual Password User 1 |  |
+| **adrp2** : Single Password or Dual Password Admin 2 |  |
+| **udrp2** : Dual Password User 2 |  |
 </details>
 
 
