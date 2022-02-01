@@ -23,6 +23,7 @@
   - [Password](bios/settings/thinkpad/password.md)
   - [Fingerprint](bios/settings/thinkpad/fingerprint.md)
   - [Security Chip](bios/settings/thinkpad/securitychip.md)
+  - [UEFI BIOS Update Option](bios/settings/thinkpad/uefibiosupdate.md)
 
 ---
 
