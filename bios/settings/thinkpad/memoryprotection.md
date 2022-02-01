@@ -11,7 +11,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| DataExecutionPrevention |  |
 </details>
 
 
@@ -25,5 +25,5 @@ One of 2 possible states for Total Memory Encryption (TME) to protect DRAM data 
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| TotalMemoryEncryption |  |
 </details>
