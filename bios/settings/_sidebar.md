@@ -21,6 +21,7 @@
 
 - [Security](bios/settings/thinkpad/security.md)
   - [Password](bios/settings/thinkpad/password.md)
+  - [Fingerprint](bios/settings/thinkpad/fingerprint.md)
   - [Placeholder]()
 
 ---
