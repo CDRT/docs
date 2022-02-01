@@ -25,6 +25,7 @@
   - [Security Chip](bios/settings/thinkpad/securitychip.md)
   - [UEFI BIOS Update Option](bios/settings/thinkpad/uefibiosupdate.md)
   - [Memory Protection](bios/settings/thinkpad/memoryprotection.md)
+  - [Virtualization](bios/settings/thinkpad/virtualization.md)
 
 ---
 
