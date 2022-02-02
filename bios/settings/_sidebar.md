@@ -26,6 +26,7 @@
   - [UEFI BIOS Update Option](bios/settings/thinkpad/uefibiosupdate.md)
   - [Memory Protection](bios/settings/thinkpad/memoryprotection.md)
   - [Virtualization](bios/settings/thinkpad/virtualization.md)
+  - [I/O Port Access](bios/settings/thinkpad/ioportaccess.md)
 
 ---
 
