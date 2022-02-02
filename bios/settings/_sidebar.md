@@ -30,6 +30,7 @@
   - [Internal Device Access](bios/settings/thinkpad/internaldeviceaccess.md)
   - [Absolute Persistence(R) Module](bios/settings/thinkpad/abspersistencemodule.md)
   - [Secure Boot](bios/settings/thinkpad/secureboot.md)
+  - [Device Guard](bios/settings/thinkpad/deviceguard.md)
 
 ---
 
