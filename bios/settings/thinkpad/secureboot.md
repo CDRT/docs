@@ -71,3 +71,4 @@ The option requires additional confirmation.
 
 
 ### Key Management ###
+![](./img/securebootkeysmanagement.png)
