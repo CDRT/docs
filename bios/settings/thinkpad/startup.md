@@ -18,7 +18,7 @@ One of 9 possible options:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| NetworkBoot |  |
 </details>
 
 
@@ -30,7 +30,7 @@ One of 2 possible values:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| BootMode |  |
 </details>
 
 
@@ -42,7 +42,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| StartupOptionKeys |  |
 </details>
 
 
@@ -55,7 +55,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| BootDeviceListF12Option |  |
 </details>
 
 
@@ -67,10 +67,48 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| BootOrderLock |  |
 </details>
 
 
 ### Boot ###
 ![](./img/boot.png)
 
+<details><summary>Boot Priority Order</summary>
+The ordered list of currently defined boot priority order.
+Keys used to view or configure devices: 
+
+* '↑' and '↓' arrows Select a device. 
+* '+' and '-' move the device up or down. 
+* 'Shift + 1' enables or disables a device. 
+* 'Delete' deletes an unprotected device.
+
+Possible items on the list:
+
+1.	Windows Boot Manager
+2.	USB CD
+3.	USB FDD
+4.	NVMe0
+5.	USB HDD
+6.	PXE Boot – sub-menu appears only when multiple network stacks are available.<br>
+    a.	Intel (R) Gigabit x.x.xx-Ipv4<br>
+    b.	Intel (R) Gigabit x.x.xx-Ipv6<br>
+7.	LENOVO CLOUD
+8.	ON-PREMISE
+
+| WMI Setting name | Values |
+|:---|:---|
+| BootOrder |  |
+</details>
+
+
+<details><summary>Excluded from boot priority order</summary>
+By default, the following items are excluded from boot priority order:
+
+1.	Other CD
+2.	Other HDD
+
+| WMI Setting name | Values |
+|:---|:---|
+| Not available via WMI. If needed, you can get the list of possible values and compare them with the current settings. |  |
+</details>
