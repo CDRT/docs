@@ -34,7 +34,8 @@
   - [ThinkShield Secure Wipe](bios/settings/thinkpad/thinkshieldsecurewipe.md)
 
 - [Startup](bios/settings/thinkpad/startup.md)
-  - [Placeholder]()
+
+- [Restart](bios/settings/thinkpad/restart.md)
 
 ---
 
