@@ -39,7 +39,7 @@ Load default values for all Setup items. The following changes WILL NO be discar
 </details>
 
 
-<details><summary>LOS Optimized Defaults</summary>
+<details><summary>OS Optimized Defaults</summary>
 One of 2 possible states:
 
 1.	**Off** - OS Optimized Defaults are disabled. Default.
