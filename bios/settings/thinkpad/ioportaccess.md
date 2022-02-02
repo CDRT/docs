@@ -12,7 +12,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| EthernetLANAccess |  |
 </details>
 
 
@@ -25,7 +25,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| WirelessLANAccess |  |
 </details>
 
 
@@ -38,7 +38,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| WirelessWANAccess |  |
 </details>
 
 
@@ -52,7 +52,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| BluetoothAccess |  |
 </details>
 
 
@@ -68,7 +68,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| USBPortAccess |  |
 </details>
 
 
@@ -81,7 +81,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| MemoryCardSlotAccess |  |
 </details>
 
 
@@ -95,7 +95,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| SmartCardSlotAccess |  |
 </details>
 
 
@@ -106,11 +106,11 @@ One of 2 possible states:
 1.	**On** – enables use of RFID. Default.
 2.	Off – disables use of RFID and keeps it disabled in the OS environment.
 
-**Note**. This feature is supported only for the [healthcare model](https://techtoday.lenovo.com/jp/ja/solutions/media/3970), where RFID is installed instead of Smart Card.
+**Note**. This feature is supported only for the [healthcare model](https://techtoday.lenovo.com/jp/ja/solutions/media/3970), where RFID is installed instead of Smart Card. Therefore, parameter for WMI command will be the same as for Smart Card.
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| SmartCardSlotAccess |  |
 </details>
 
 
@@ -123,7 +123,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| IntegratedCameraAccess |  |
 </details>
 
 
@@ -136,7 +136,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| IntegratedAudioAccess |  |
 </details>
 
 
@@ -149,7 +149,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| MicrophoneAccess |  |
 </details>
 
 
@@ -162,7 +162,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| FingerprintReaderAccess |  |
 </details>
 
 
@@ -178,7 +178,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| ThunderboltAccess |  |
 </details>
 
 
@@ -191,5 +191,5 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-|  |  |
+| NfcAccess |  |
 </details>
