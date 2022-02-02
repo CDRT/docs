@@ -28,6 +28,7 @@
   - [Virtualization](bios/settings/thinkpad/virtualization.md)
   - [I/O Port Access](bios/settings/thinkpad/ioportaccess.md)
   - [Internal Device Access](bios/settings/thinkpad/internaldeviceaccess.md)
+  - [Absolute Persistence(R) Module](bios/settings/thinkpad/abspersistencemodule.md)
 
 ---
 
