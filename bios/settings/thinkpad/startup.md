@@ -72,3 +72,5 @@ One of 2 possible states:
 
 
 ### Boot ###
+![](./img/boot.png)
+
