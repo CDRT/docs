@@ -12,7 +12,7 @@ One of 3 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| AbsolutePersistenceModuleActivation |  |
+| AbsolutePersistenceModuleActivation | Disable,Enable,PermanentlyDisable |
 </details>
 
 
