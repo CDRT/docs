@@ -10,7 +10,7 @@ One of 2 possible options:
 
 | WMI Setting name | Values |
 |:---|:---|
-| SecureBoot |  |
+| SecureBoot | Disable,Enable |
 </details>
 
 
