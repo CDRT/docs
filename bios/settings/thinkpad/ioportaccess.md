@@ -12,7 +12,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| EthernetLANAccess |  |
+| EthernetLANAccess | Disable,Enable |
 </details>
 
 
@@ -25,7 +25,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| WirelessLANAccess |  |
+| WirelessLANAccess | Disable,Enable |
 </details>
 
 
@@ -38,7 +38,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| WirelessWANAccess |  |
+| WirelessWANAccess | Disable,Enable |
 </details>
 
 
@@ -52,7 +52,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| BluetoothAccess |  |
+| BluetoothAccess | Disable,Enable |
 </details>
 
 
@@ -68,7 +68,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| USBPortAccess |  |
+| USBPortAccess | Disable,Enable |
 </details>
 
 
@@ -81,7 +81,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| MemoryCardSlotAccess |  |
+| MemoryCardSlotAccess | Disable,Enable |
 </details>
 
 
@@ -95,7 +95,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| SmartCardSlotAccess |  |
+| SmartCardSlotAccess | Disable,Enable |
 </details>
 
 
@@ -110,7 +110,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| SmartCardSlotAccess |  |
+| SmartCardSlotAccess | Disable,Enable |
 </details>
 
 
@@ -123,7 +123,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| IntegratedCameraAccess |  |
+| IntegratedCameraAccess | Disable,Enable |
 </details>
 
 
@@ -136,7 +136,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| IntegratedAudioAccess |  |
+| IntegratedAudioAccess | Disable,Enable |
 </details>
 
 
@@ -149,7 +149,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| MicrophoneAccess |  |
+| MicrophoneAccess | Disable,Enable |
 </details>
 
 
@@ -162,7 +162,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| FingerprintReaderAccess |  |
+| FingerprintReaderAccess | Disable,Enable |
 </details>
 
 
@@ -178,7 +178,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| ThunderboltAccess |  |
+| ThunderboltAccess | Disable,Enable |
 </details>
 
 
@@ -191,5 +191,5 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| NfcAccess |  |
+| NfcAccess | Disable,Enable |
 </details>
