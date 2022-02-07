@@ -10,7 +10,7 @@ One of 2 possible states:
 | WMI Setting name | Values |
 |:---|:---|
 | TrackPoint | Enable, Disable (on AMD-based machine) |
-|  | Enable, Disable (on Intel-based machine)|
+|  | Disable,Automatic (on Intel-based machine)|
 
 </details>
 
