@@ -9,5 +9,5 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| ThinkShieldsecurewipe |  |
+| ThinkShieldsecurewipe | Disable,Enable |
 </details>
