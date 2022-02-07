@@ -10,7 +10,7 @@ One of 2 possible options:
 
 | WMI Setting name | Values |
 |:---|:---|
-| BootDisplayDevice |  |
+| BootDisplayDevice | LCD,ExternalDisplay |
 </details>
 
 <details><summary>Total Graphics Memory</summary>
@@ -21,7 +21,7 @@ One of 2 possible options to allocate total memory which Intel (R) internal grap
 
 | WMI Setting name | Values |
 |:---|:---|
-| TotalGraphicsMemory |  |
+| TotalGraphicsMemory | 256MB,512MB |
 </details>
 
 <details><summary>Boot Time Extension</summary>
@@ -39,5 +39,5 @@ Option to define the amount of time to extend the boot process, in seconds.
 
 | WMI Setting name | Values |
 |:---|:---|
-| BootTimeExtension |  |
+| BootTimeExtension | Disable,1,2,3,5,10 |
 </details>
