@@ -15,7 +15,7 @@ One of 2 possible options:
 
 <details><summary>Total Graphics Memory</summary>
 
-***Intel-based machine***
+**Intel-based machine**
 
 One of 2 possible options to allocate total memory which Intel (R) internal graphics device shares:
 
@@ -26,7 +26,7 @@ One of 2 possible options to allocate total memory which Intel (R) internal grap
 |:---|:---|
 | TotalGraphicsMemory | 256MB,512MB |
 
-***AMD-based machine***
+**AMD-based machine**
 
 One of 5 possible options to allocate UMA (Unified Memory Architecture) frame buffer size:
 
