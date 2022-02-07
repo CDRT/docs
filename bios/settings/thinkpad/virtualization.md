@@ -12,7 +12,7 @@ Requires additional confirmation of changing these settings.
 
 | WMI Setting name | Values |
 |:---|:---|
-| KernelDMAProtection |  |
+| KernelDMAProtection | Disable,Enable |
 </details>
 
 
@@ -27,7 +27,7 @@ Additional information is here: [How to enable Virtualization Technology on Leno
 
 | WMI Setting name | Values |
 |:---|:---|
-| VirtualizationTechnology |  |
+| VirtualizationTechnology | Disable,Enable |
 </details>
 
 
@@ -42,7 +42,7 @@ More information on the [official Intel site](https://software.intel.com/content
 
 | WMI Setting name | Values |
 |:---|:---|
-| VTdFeature |  |
+| VTdFeature | Disable,Enable |
 </details>
 
 
@@ -55,5 +55,5 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| EnhancedWindowsBiometricSecurity |  |
+| EnhancedWindowsBiometricSecurity | Disable,Enable |
 </details>
