@@ -16,7 +16,10 @@ Requires additional confirmation of changing these settings.
 </details>
 
 
-<details><summary>Intel (R) Virtualization Technology</summary>
+<details><summary>Intel (R) Virtualization Technology \ AMD-V</summary>
+
+**Intel-based machine** 
+
 One of 2 possible states:
 
 1.	On – a VMM (Virtual Machine Monitor) can utilize the additional hardware capabilities provided by Intel (R) Virtualization technology. Default, if ‘OS Optimized Defaults’ has value ‘Off’.<br>
@@ -28,6 +31,18 @@ Additional information is here: [How to enable Virtualization Technology on Leno
 | WMI Setting name | Values |
 |:---|:---|
 | VirtualizationTechnology | Disable,Enable |
+
+**AMD-based machine**
+
+One of 2 possible states:
+
+1. On - 
+2. Off
+
+
+| WMI Setting name | Values |
+|:---|:---|
+| AmdVt | Enable,Disable |
 </details>
 
 
