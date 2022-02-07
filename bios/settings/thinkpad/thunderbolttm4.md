@@ -13,6 +13,6 @@ The USB functions of USB4 based devices that are Thunderbolt 4 certified may sti
 
 | WMI Setting name | Values |
 |:---|:---|
-| PCIeTunneling |  |
+| PCIeTunneling | Disable,Enable |
 </details>
 

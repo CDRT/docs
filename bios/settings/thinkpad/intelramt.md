@@ -12,7 +12,7 @@ One of 3 possible options:
 
 | WMI Setting name | Values |
 |:---|:---|
-| AMTControl |  |
+| AMTControl | Disable,Enable,PermanentlyDisable |
 </details>
 
 <details><summary>USB Key Provisioning</summary>
@@ -25,7 +25,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| USBKeyProvisioning |  |
+| USBKeyProvisioning | Disable,Enable |
 </details>
 
 <details><summary>CIRA Timeout</summary>
