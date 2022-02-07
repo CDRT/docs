@@ -9,7 +9,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| BIOSUpdateByEndUsers |  |
+| BIOSUpdateByEndUsers | Disable,Enable |
 </details>
 
 
@@ -21,7 +21,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| SecureRollBackPrevention |  |
+| SecureRollBackPrevention | Disable,Enable |
 </details>
 
 
@@ -33,5 +33,5 @@ One of 2 possible options:
 
 | WMI Setting name | Values |
 |:---|:---|
-| WindowsUEFIFirmwareUpdate |  |
+| WindowsUEFIFirmwareUpdate | Disable,Enable |
 </details>
