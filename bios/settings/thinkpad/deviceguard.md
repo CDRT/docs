@@ -11,5 +11,5 @@ This option requires additional confirmation.
 
 | WMI Setting name | Values |
 |:---|:---|
-| DeviceGuard |  |
+| DeviceGuard | Disable,Enable |
 </details>
