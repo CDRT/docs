@@ -12,7 +12,7 @@ One of 2 possible states for the password beep:
 
 | WMI Setting name | Values |
 |:---|:---|
-| PasswordBeep |  |
+| PasswordBeep | Disable,Enable |
 </details>
 
 <details><summary>Keyboard Beep</summary>
@@ -24,5 +24,5 @@ One of 2 possible states for the keyboard beep:
 
 | WMI Setting name | Values |
 |:---|:---|
-| KeyboardBeep |  |
+| KeyboardBeep | Disable,Enable |
 </details>
