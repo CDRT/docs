@@ -156,7 +156,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| BlockSIDAuthentication |  |
+| BlockSIDAuthentication | Disable,Enable |
 </details>
 
 
@@ -170,7 +170,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| LockBIOSSetting |  |
+| LockBIOSSetting | Disable,Enable |
 </details>
 
 
@@ -185,7 +185,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| BIOSPasswordAtUnattendedBoot |  |
+| BIOSPasswordAtUnattendedBoot | Disable,Enable |
 </details>
 
 
@@ -199,7 +199,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| BIOSPasswordAtReboot |  |
+| BIOSPasswordAtReboot | Disable,Enable |
 </details>
 
 
@@ -213,7 +213,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| BIOSPasswordAtBootDeviceList |  |
+| BIOSPasswordAtBootDeviceList | Disable,Enable |
 </details>
 
 
@@ -226,7 +226,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| PasswordCountExceededError |  |
+| PasswordCountExceededError | Disable,Enable |
 </details>
 
 
@@ -248,7 +248,7 @@ One of 9 options:
 
 | WMI Setting name | Values |
 |:---|:---|
-| MinimumPasswordLength |  |
+| MinimumPasswordLength | Disable,4,5,6,7,8,9,10,11,12 |
 </details>
 
 
@@ -260,7 +260,7 @@ One of 2 possible options:
 
 | WMI Setting name | Values |
 |:---|:---|
-| StrongPassword |  |
+| StrongPassword | Disable,Enable |
 </details>
 
 ### System Management Password Access Control ###
@@ -275,7 +275,7 @@ One of 2 possible options:
 
 | WMI Setting name | Values |
 |:---|:---|
-| SystemManagementPasswordControl |  |
+| SystemManagementPasswordControl | Disable,Enable |
 </details>
 
 
@@ -287,7 +287,7 @@ One of 2 possible options:
 
 | WMI Setting name | Values |
 |:---|:---|
-| PowerOnPasswordControl |  |
+| PowerOnPasswordControl | Disable,Enable |
 </details>
 
 
@@ -299,7 +299,7 @@ One of 2 possible options:
 
 | WMI Setting name | Values |
 |:---|:---|
-| HardDiskPasswordControl |  |
+| HardDiskPasswordControl | Disable,Enable |
 </details>
 
 
@@ -311,5 +311,5 @@ One of 2 possible options:
 
 | WMI Setting name | Values |
 |:---|:---|
-| BIOSSetupConfigurations |  |
+| BIOSSetupConfigurations | Disable,Enable |
 </details>
