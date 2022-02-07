@@ -13,7 +13,7 @@ Wake On LAN function may be blocked due to password configuration.
 
 | WMI Setting name | Values |
 |:---|:---|
-| WakeOnLAN |  |
+| WakeOnLAN | Disable,ACOnly,ACandBattery,Enable |
 </details>
 
 <details><summary>Wake On LAN from Dock</summary>
@@ -30,7 +30,7 @@ Wake on LAN from Dock function may be blocked due to password configuration.
 
 | WMI Setting name | Values |
 |:---|:---|
-| WakeOnLANDock  |  |
+| WakeOnLANDock  | Disable,Enable |
 </details>
 
 <details><summary>Lenovo Cloud Services</summary>
@@ -52,7 +52,7 @@ Additional information is here: [Client Virtualization & Infrastructure Solution
 
 | WMI Setting name | Values |
 |:---|:---|
-| LenovoCloudServices  |  |
+| LenovoCloudServices  | Disable,Enable |
 </details>
 
 <details><summary>UEFI WI-FI Network Boot</summary>
@@ -65,7 +65,7 @@ One of 2 possible states:<br>
 
 | WMI Setting name | Values |
 |:---|:---|
-| WiFiNetworkBoot  |  |
+| WiFiNetworkBoot  | Disable,Enable |
 </details>
 
 <details><summary>UEFI IPv4 Network Stack</summary>
@@ -76,7 +76,7 @@ One of 2 possible states:<br>
 
 | WMI Setting name | Values |
 |:---|:---|
-| IPv4NetworkStack  |  |
+| IPv4NetworkStack  | Disable,Enable |
 </details>
 
 <details><summary>UEFI IPv6 Network Stack</summary>
@@ -87,7 +87,7 @@ One of 2 possible states:<br>
 
 | WMI Setting name | Values |
 |:---|:---|
-| IPv6NetworkStack  |  |
+| IPv6NetworkStack  | Disable,Enable |
 </details>
 
 <details><summary>UEFI Network Boot Priority</summary>
@@ -98,7 +98,7 @@ One of 2 possible options for Network Stack priority for UEFI PXE Boot:<br>
 
 | WMI Setting name | Values |
 |:---|:---|
-| UefiPxeBootPriority  |  |
+| UefiPxeBootPriority  | IPv6First,IPv4First |
 </details>
 
 <details><summary>Wireless Auto Disconnection</summary>
@@ -109,7 +109,7 @@ One of 2 possible states for Wireless Auto Disconnection feature when Ethernet c
 
 | WMI Setting name | Values |
 |:---|:---|
-| WirelessAutoDisconnection  |  |
+| WirelessAutoDisconnection  | Disable,Enable |
 </details>
 
 <details><summary>MAC Address Pass Through</summary>
@@ -121,7 +121,7 @@ One of 3 possible options for MAC Address Pass Through function when dock is att
 
 | WMI Setting name | Values |
 |:---|:---|
-| MACAddressPassThrough  |  |
+| MACAddressPassThrough  | Disable,Enable,Second |
 </details>
 
 ### WiFi Configuration ###
