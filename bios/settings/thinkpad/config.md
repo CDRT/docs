@@ -9,5 +9,5 @@ One of 2 possible options for interface of Setup:
 
 | WMI Setting name | Values |
 |:---|:---|
-| SetupUI |  |
+| SetupUI | SimpleText,Graphical |
 </details>
