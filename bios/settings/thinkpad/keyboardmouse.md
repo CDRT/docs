@@ -9,7 +9,8 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| TrackPoint | Enable, Disable |
+| TrackPoint | Enable, Disable (on AMD-based machine) |
+|  | Enable, Disable (on Intel-based machine)|
 
 </details>
 
@@ -21,7 +22,8 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| TouchPad |  |
+| TouchPad | Disable,Enable (on AMD-based machine)|
+|  | Disable,Automatic (on Intel-based machine)|
 </details>
 
 <details><summary>Fn and Ctrl Key swap</summary>
@@ -32,7 +34,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| FnCtrlKeySwap |  |
+| FnCtrlKeySwap | Disable,Enable |
 </details>
 
 <details><summary>Fn Sticky Key</summary>
@@ -44,7 +46,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| FnSticky |  |
+| FnSticky | Disable,Enable |
 </details>
 
 <details><summary>F1-F12 as Primary Function</summary>
@@ -57,7 +59,7 @@ Alternatively, to switch to above two options, press Fn+Esc to use FnLk (Fn Lock
 
 | WMI Setting name | Values |
 |:---|:---|
-| FnKeyAsPrimary |  |
+| FnKeyAsPrimary | Disable,Enable |
 </details>
 
 <details><summary>Keyboard Layout</summary>
@@ -96,6 +98,6 @@ Possible options:
 
 | WMI Setting name | Values |
 |:---|:---|
-| KeyboardLayout | US English, Canadian French Multilingual, ... |
+| KeyboardLayout | English_US,CanadianFrenchMultilingual,CanadianFrench,Spanish_LA,Portuguese_BR,Belgian,Danish,Spanish,French,German,Hungarian,Icelandic,Italian,Norwegian,Portuguese,Slovenian,Swedish,Swiss,Turkish,English_UK,Japanese,Korean,TraditionalChinese,Turkish-F,Estonian,Finnish,Czech |
 
 </details>
