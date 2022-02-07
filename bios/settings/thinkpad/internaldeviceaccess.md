@@ -11,7 +11,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| BottomCoverTamperDetected |  |
+| BottomCoverTamperDetected | Disable,Enable |
 </details>
 
 
