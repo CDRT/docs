@@ -18,7 +18,7 @@ One of 9 possible options:
 
 | WMI Setting name | Values |
 |:---|:---|
-| NetworkBoot |  |
+| NetworkBoot | HDD0,HDD1,HDD2,HDD3,HDD4,PXEBOOT,ATAPICD0,ATAPICD1,ATAPICD2,USBFDD,USBCD,USBHDD,OtherHDD,OtherCD,NVMe0,NVMe1,HTTPSBOOT,LENOVOCLOUD,ON-PREMISE,NODEV |
 </details>
 
 
@@ -30,7 +30,7 @@ One of 2 possible values:
 
 | WMI Setting name | Values |
 |:---|:---|
-| BootMode |  |
+| BootMode | Quick,Diagnostics |
 </details>
 
 
@@ -42,7 +42,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| StartupOptionKeys |  |
+| StartupOptionKeys | Disable,Enable |
 </details>
 
 
@@ -55,7 +55,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| BootDeviceListF12Option |  |
+| BootDeviceListF12Option | Disable,Enable |
 </details>
 
 
@@ -67,7 +67,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| BootOrderLock |  |
+| BootOrderLock | Disable,Enable |
 </details>
 
 
@@ -98,7 +98,7 @@ Possible items on the list:
 
 | WMI Setting name | Values |
 |:---|:---|
-| BootOrder |  |
+| BootOrder | HDD0,HDD1,HDD2,HDD3,HDD4,PXEBOOT,ATAPICD0,ATAPICD1,ATAPICD2,USBFDD,USBCD,USBHDD,OtherHDD,OtherCD,NVMe0,NVMe1,HTTPSBOOT,LENOVOCLOUD,ON-PREMISE,NODEV |
 </details>
 
 
