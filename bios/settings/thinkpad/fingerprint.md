@@ -9,7 +9,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| FingerprintPredesktopAuthentication |  |
+| FingerprintPredesktopAuthentication | Disable,Enable |
 </details>
 
 
@@ -21,7 +21,7 @@ One of 2 possible options:
 
 | WMI Setting name | Values |
 |:---|:---|
-| FingerprintSecurityMode |  |
+| FingerprintSecurityMode | Normal,High |
 </details>
 
 
@@ -37,7 +37,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| FingerprintPasswordAuthentication |  |
+| FingerprintPasswordAuthentication | Disable,Enable |
 </details>
 
 
