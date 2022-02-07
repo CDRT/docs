@@ -127,6 +127,8 @@ One of 3 possible options for MAC Address Pass Through function when dock is att
 ### WiFi Configuration ###
 ![](./img/wifi.png)
 
+**Note**. All the settings in this group are not available via WMI.
+
 <details><summary>MAC Address</summary>
 Media access control (MAC) address of the wireless network interface controller. View only.
 Note. There could be several MAC addresses in case there are several wireless network interface controllers. 
@@ -142,6 +144,8 @@ For every MAC Address the following information is shown:<br>
 
 ### Wi-Fi Network List ###
 ![](./img/wifinetworklist.png)
+
+**Note**. All the settings in this group are not available via WMI.
 
 **Number of networks:** Number of current available networks around. View only.
 
@@ -229,6 +233,8 @@ One of 2 possible actions:
 ### Add Wi-Fi Network ###
 ![](./img/addwifinetwork.png)
 
+**Note**. All the settings in this group are not available via WMI.
+
 <details><summary>SSID</summary>
 Field for entering SSID value.
 </details>
@@ -306,6 +312,7 @@ This is the option to save changes and exits back to the Manage Wi-Fi network pa
 ### Manage Wi-Fi Network ###
 ![](./img/managewifilist.png)
 
+**Note**. All the settings in this group are not available via WMI.
 
 <details><summary>[SSID Value][Type] </summary>
 SSID value and its type.<br>
