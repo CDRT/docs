@@ -11,7 +11,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| AlwaysOnUSB |  |
+| AlwaysOnUSB | Disable,Enable |
 </details>
 
 <details><summary>Charge in Battery Mode</summary>
@@ -23,5 +23,5 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| ChargeInBatteryMode |  |
+| ChargeInBatteryMode | Disable,Enable |
 </details>
