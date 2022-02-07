@@ -22,7 +22,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| SecurityChip |  |
+| SecurityChip | Active,Inactive,Disable,Enable |
 </details>
 
 
@@ -51,7 +51,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| TXTFeature |  |
+| TXTFeature | Disable,Enable |
 </details>
 
 
@@ -64,7 +64,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values |
 |:---|:---|
-| PhysicalPresenceForTpmClear  |  |
+| PhysicalPresenceForTpmClear  | Disable,Enable |
 **Note**. It is possible to change the value from Enable to Disable only when Supervisor Password exists, because it is required to confirm the action.
 </details>
 
