@@ -10,7 +10,7 @@ One of 2 possible options to select the mode of Intel (R) SteedStep Technology a
 
 | WMI Setting name | Values |
 |:---|:---|
-| SpeedStep |  |
+| SpeedStep | Disable,Enable |
 </details>
 
 <details><summary>Scheme for AC</summary>
@@ -23,7 +23,7 @@ One of 2 possible options of thermal management scheme to use:
 
 | WMI Setting name | Values |
 |:---|:---|
-| AdaptiveThermalManagementAC |  |
+| AdaptiveThermalManagementAC | MaximizePerformance,Balanced |
 </details>
 
 <details><summary>Scheme for Battery</summary>
@@ -36,7 +36,7 @@ One of 2 possible options of thermal management scheme to use:
 
 | WMI Setting name | Values |
 |:---|:---|
-| AdaptiveThermalManagementBattery |  |
+| AdaptiveThermalManagementBattery | MaximizePerformance,Balanced |
 </details>
 
 <details><summary>CPU Power Management</summary>
@@ -49,7 +49,7 @@ One of 2 possible options:
 
 | WMI Setting name | Values |
 |:---|:---|
-| CPUPowerManagement |  |
+| CPUPowerManagement | Disable,Enable |
 </details>
 
 <details><summary>Power On with AC Attach</summary>
@@ -60,7 +60,7 @@ One of 2 possible options for a feature that powers on the system when AC is att
 
 | WMI Setting name | Values |
 |:---|:---|
-| OnByAcAttach |  |
+| OnByAcAttach | Disable,Enable |
 </details>
 
 <details><summary>Disable Built-in Battery</summary>
@@ -91,7 +91,7 @@ One of 5 possible options for defining when the system shall turn on automatical
 
 | WMI Setting name | Values |
 |:---|:---|
-| WakeUponAlarm |  |
+| WakeUponAlarm | Disable,UserDefined,WeeklyEvent,DailyEvent,SingleEvent |
 </details>
 
 <details><summary>Alarm Date (MM/DD/YYYY)</summary>
@@ -106,7 +106,7 @@ Possible values:
 
 | WMI Setting name | Values |
 |:---|:---|
-| AlarmDate |  |
+| AlarmDate | MM/DD/YYYY |
 </details>
 
 <details><summary>Alarm Time (HH : MM : SS)</summary>
@@ -126,7 +126,7 @@ Possible values:
 
 | WMI Setting name | Values |
 |:---|:---|
-| AlarmTime |  |
+| AlarmTime | HH/MM/SS |
 </details>
 
 <details><summary>Alarm Day of Week</summary>
@@ -144,7 +144,7 @@ Possible values:
 
 | WMI Setting name | Values |
 |:---|:---|
-| AlarmDayofWeek |  |
+| AlarmDayofWeek | Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday |
 </details>
 
 ### Automatic Power On - User Defined Alarm ###
@@ -158,7 +158,7 @@ One of 2 states to select:
 
 | WMI Setting name | Values |
 |:---|:---|
-| UserDefinedAlarmSunday |  |
+| UserDefinedAlarmSunday | Disable,Enable |
 </details>
 
 <details><summary>Monday</summary>
@@ -169,7 +169,7 @@ One of 2 states to select:
 
 | WMI Setting name | Values |
 |:---|:---|
-| UserDefinedAlarmMonday |  |
+| UserDefinedAlarmMonday | Disable,Enable |
 </details>
 
 <details><summary>Tuesday</summary>
@@ -180,7 +180,7 @@ One of 2 states to select:
 
 | WMI Setting name | Values |
 |:---|:---|
-| UserDefinedAlarmTuesday |  |
+| UserDefinedAlarmTuesday | Disable,Enable |
 </details>
 
 <details><summary>Wednesday</summary>
@@ -191,7 +191,7 @@ One of 2 states to select:
 
 | WMI Setting name | Values |
 |:---|:---|
-| UserDefinedAlarmWednesday |  |
+| UserDefinedAlarmWednesday | Disable,Enable |
 </details>
 
 <details><summary>Thursday</summary>
@@ -202,7 +202,7 @@ One of 2 states to select:
 
 | WMI Setting name | Values |
 |:---|:---|
-| UserDefinedAlarmThursday |  |
+| UserDefinedAlarmThursday | Disable,Enable |
 </details>
 
 <details><summary>Friday</summary>
@@ -213,7 +213,7 @@ One of 2 states to select:
 
 | WMI Setting name | Values |
 |:---|:---|
-| UserDefinedAlarmFriday |  |
+| UserDefinedAlarmFriday | Disable,Enable |
 </details>
 
 <details><summary>Saturday</summary>
@@ -224,7 +224,7 @@ One of 2 states to select:
 
 | WMI Setting name | Values |
 |:---|:---|
-| UserDefinedAlarmSaturday |  |
+| UserDefinedAlarmSaturday | Disable,Enable |
 </details>
 
 <details><summary>User Defined Alarm Time (HH : MM : SS)</summary>
@@ -239,5 +239,5 @@ Possible values:
 
 | WMI Setting name | Values |
 |:---|:---|
-| UserDefinedAlarmTime |  |
+| UserDefinedAlarmTime | HH/MM/SS |
 </details>
