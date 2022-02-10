@@ -11,9 +11,9 @@ One of 3 possible states: <br>
 **Note**: AC is required with magic packet type Wake On LAN. 
 Wake On LAN function may be blocked due to password configuration.
 
-| WMI Setting name | Values |
-|:---|:---|
-| WakeOnLAN | Disable,ACOnly,ACandBattery,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| WakeOnLAN | Disable, ACOnly, ACandBattery, Enable | No | Both |
 </details>
 
 <details><summary>Wake On LAN from Dock</summary>
@@ -28,9 +28,9 @@ One of 2 possible states:
    **Note**: Wake On LAN from Dock works only when ThinkPad USB-C Dock or ThinkPad Thunderbolt 3 Dock is attached.
 Wake on LAN from Dock function may be blocked due to password configuration.
 
-| WMI Setting name | Values |
-|:---|:---|
-| WakeOnLANDock  | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| WakeOnLANDock  | Disable, Enable | No | Both |
 </details>
 
 <details><summary>Lenovo Cloud Services</summary>
@@ -43,16 +43,16 @@ One of 2 possible states:
 2.	Off - function is turned off. 
 
 **Additional information**<br>
-Once the feature is enabled, then it becomes available for selection in “BIOS -> Startup -> Edit Boot Order”, or “BIOS -> Startup -> Network Boot”, or via F12 Boot Menu. 
+Once the feature is enabled,  then it becomes available for selection in “BIOS -> Startup -> Edit Boot Order”, or “BIOS -> Startup -> Network Boot”, or via F12 Boot Menu. 
 When “Lenovo Cloud Services” booted, then following options will be available for selection:
 1. **Lenovo Cloud Deploy (ITC)** – it is a method to send Factory-Style images to customers for deployment in the field. 
 Additional information is here: [Lenovo Cloud Deploy](https://www.lenovoclouddeploy.com/en/auth/welcome)
 2. **Windows Virtual Desktop (VDI)** – it provides the VDI environment to customer. VDI itself will be setup by the customer (IT Admin). If this option is selected, then it will become available as a boot option.  
 Additional information is here: [Client Virtualization & Infrastructure Solutions - Lenovo](https://www.lenovo.com/lt/lt/data-center/solutions/client-virtualization) and [Windows Virtual Desktop](https://www.microsoft.com/en-us/microsoft-365/blog/2019/09/30/windows-virtual-desktop-generally-available-worldwide/).
 
-| WMI Setting name | Values |
-|:---|:---|
-| LenovoCloudServices  | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| LenovoCloudServices  | Disable, Enable | No | Intel |
 </details>
 
 <details><summary>UEFI WI-FI Network Boot</summary>
@@ -63,9 +63,9 @@ One of 2 possible states:<br>
 
 **Note**: Secure Boot must be enabled to use UEFI Network Boot.
 
-| WMI Setting name | Values |
-|:---|:---|
-| WiFiNetworkBoot  | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| WiFiNetworkBoot  | Disable, Enable | No | Intel |
 </details>
 
 <details><summary>UEFI IPv4 Network Stack</summary>
@@ -74,9 +74,9 @@ One of 2 possible states:<br>
 1. **On** - function is turned on. UEFI IPv4 Network Stack for UEFI environment is enabled. Default.
 2. Off - function is turned off.
 
-| WMI Setting name | Values |
-|:---|:---|
-| IPv4NetworkStack  | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| IPv4NetworkStack  | Disable, Enable | No | Both |
 </details>
 
 <details><summary>UEFI IPv6 Network Stack</summary>
@@ -85,9 +85,9 @@ One of 2 possible states:<br>
 1. **On** - function is turned on. UEFI IPv6 Network Stack for UEFI environment is enabled. Default.
 2. Off - function is turned off.
 
-| WMI Setting name | Values |
-|:---|:---|
-| IPv6NetworkStack  | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| IPv6NetworkStack  | Disable, Enable | No | Both |
 </details>
 
 <details><summary>UEFI Network Boot Priority</summary>
@@ -96,9 +96,9 @@ One of 2 possible options for Network Stack priority for UEFI PXE Boot:<br>
 1. **IPv4 First** – Default.
 2. IPv6 First
 
-| WMI Setting name | Values |
-|:---|:---|
-| UefiPxeBootPriority  | IPv6First,IPv4First |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| UefiPxeBootPriority  | IPv6First, IPv4First | No | Both |
 </details>
 
 <details><summary>Wireless Auto Disconnection</summary>
@@ -107,9 +107,9 @@ One of 2 possible states for Wireless Auto Disconnection feature when Ethernet c
 1. On - function is turned on. Wireless LAN radios is automatically turned off whenever Ethernet cable is connected.
 2. **Off** - function is turned off. Default.
 
-| WMI Setting name | Values |
-|:---|:---|
-| WirelessAutoDisconnection  | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| WirelessAutoDisconnection  | Disable, Enable | No | Both |
 </details>
 
 <details><summary>MAC Address Pass Through</summary>
@@ -119,9 +119,9 @@ One of 3 possible options for MAC Address Pass Through function when dock is att
 2. Internal MAC Address - Dock Ethernet uses same MAC Address as internal LAN.
 3. Second MAC Address - Dock Ethernet uses its own MAC Address.
 
-| WMI Setting name | Values |
-|:---|:---|
-| MACAddressPassThrough  | Disable,Enable,Second |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| MACAddressPassThrough  | Disable, Enable, Second | No | Both |
 </details>
 
 ### WiFi Configuration ###
