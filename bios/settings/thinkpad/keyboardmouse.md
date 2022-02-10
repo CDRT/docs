@@ -98,6 +98,6 @@ Possible options:
 
 | WMI Setting name | Values |
 |:---|:---|
-| KeyboardLayout | English_US,CanadianFrenchMultilingual,CanadianFrench,Spanish_LA,Portuguese_BR,Belgian,Danish,Spanish,French,German,Hungarian,Icelandic,Italian,Norwegian,Portuguese,Slovenian,Swedish,Swiss,Turkish,English_UK,Japanese,Korean,TraditionalChinese,Turkish-F,Estonian,Finnish,Czech |
+| KeyboardLayout | English_US, CanadianFrenchMultilingual, CanadianFrench, Spanish_LA, Portuguese_BR,<br>Belgian, Danish, Spanish, French, German, Hungarian, Icelandic, Italian,<br>Norwegian, Portuguese, Slovenian, Swedish, Swiss, Turkish, English_UK, Japanese,<br>Korean, TraditionalChinese, Turkish-F, Estonian, Finnish, Czech |
 
 </details>
