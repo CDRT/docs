@@ -2,7 +2,7 @@
 
 [**Home**](/)
 
-**Lenovo BIOS Settings Reference**
+[**Lenovo BIOS Reference**](bios/bios_top.md)
 
 **ThinkPad**
 
@@ -40,17 +40,9 @@
 ---
 
 **ThinkCentre**
-- Placeholder
-  - [Placeholder]()
-
-- Placeholder
-  - [Placeholder]()
+> *Coming Soon*
 
 ---
 
 **ThinkStation**
-- Placeholder
-  - [Placeholder]()
-
-- Placeholder
-  - [Placeholder]()
+> *Coming Soon*
