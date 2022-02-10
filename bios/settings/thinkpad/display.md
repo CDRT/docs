@@ -14,6 +14,9 @@ One of 2 possible options:
 </details>
 
 <details><summary>Total Graphics Memory</summary>
+
+**Intel-based machine**
+
 One of 2 possible options to allocate total memory which Intel (R) internal graphics device shares:
 
 1.	**256 MB** - Default. 
@@ -22,6 +25,21 @@ One of 2 possible options to allocate total memory which Intel (R) internal grap
 | WMI Setting name | Values |
 |:---|:---|
 | TotalGraphicsMemory | 256MB,512MB |
+
+**AMD-based machine**
+
+One of 5 possible options to allocate UMA (Unified Memory Architecture) frame buffer size:
+
+1.	**Auto** - Default. 
+2. 1GB
+3. 2GB
+4. 4GB
+5. 8GB
+
+| WMI Setting name | Values |
+|:---|:---|
+| UMAFramebufferSize | Auto,1GB,2GB,4GB,8GB |
+
 </details>
 
 <details><summary>Boot Time Extension</summary>
