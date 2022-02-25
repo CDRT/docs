@@ -27,6 +27,6 @@ When you first launch LDA, you specify your connection details for your CM Site 
 
  Lenovo Deployment Assistant will be available this Fall 2021. Contact your Lenovo Sales representative if interested.
 
- ### Video Demo
+ **Video Demo**
 
  <video src="/lda/lda_demo2.mp4" controls width="100%">Not supported</video>
