@@ -9,9 +9,9 @@ One of 2 possible states:
 
 **Note**. Bottom Cover Tamper Detection will not take effect unless Supervisor Password is enabled.
 
-| WMI Setting name | Values |
-|:---|:---|
-| BottomCoverTamperDetected | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| BottomCoverTamperDetected | Disable, Enable | No | Both |
 </details>
 
 
@@ -21,7 +21,4 @@ One of 2 possible states:
 1.	On – enables detecting removal of any fixed or removable Internal storage while the system is in sleep state (S3). If a storage is removed while the system is in S3 state, the system will shutdown when woken from S3. Unsaved data will be lost.
 2.	**Off** – disables the tamper detection. Default.
 
-| WMI Setting name | Values |
-|:---|:---|
-|  |  |
 </details>
