@@ -9,7 +9,7 @@ This is a setup feature to support Microsoft (R) Device Guard. To complete the c
 
 This option requires additional confirmation.
 
-| WMI Setting name | Values |
-|:---|:---|
-| DeviceGuard | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| DeviceGuard | Disable, Enable | No | Intel |
 </details>
