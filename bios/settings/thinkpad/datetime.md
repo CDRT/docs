@@ -12,9 +12,6 @@ Possible values:
     c. YYYY – Year: 1980 ~ 2099 <br>
 
 
-| WMI Setting name | Values |
-|:---|:---|
-| Not available via WMI |  |
 </details>
 
 <details><summary>System Time</summary>
@@ -28,7 +25,4 @@ Possible values:
     c. SS - Second:  00 ~ 59<br>
 
 
-| WMI Setting name | Values |
-|:---|:---|
-| Not available via WMI |  |
 </details>

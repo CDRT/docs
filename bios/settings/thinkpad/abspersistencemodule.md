@@ -22,7 +22,4 @@ Shows the current status. One of 2 possible values:
 1.	**Not Activated** – module is turned off. Default.
 2.	Activated – Absolute Persistence is activated on OS.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| Not available via WMI | N/A | N/A | N/A |
 </details>
