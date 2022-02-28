@@ -7,9 +7,9 @@ One of 2 possible states:
 1.	**On** - authentication by a fingerprint is enabled at predesktop. Default.
 2.	Off - authentication by a fingerprint is disabled at predesktop.
 
-| WMI Setting name | Values |
-|:---|:---|
-| FingerprintPredesktopAuthentication | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| FingerprintPredesktopAuthentication | Disable, Enable | No | Both |
 </details>
 
 
@@ -19,9 +19,9 @@ One of 2 possible options:
 1.	**Normal** - Power-On Password or Supervisor Password must be entered to boot a system when no fingerprint is authenticated. Default.
 2.	High - Supervisor password must be entered to boot a system when no fingerprint is authenticated. Power-On Password is not accepted.
 
-| WMI Setting name | Values |
-|:---|:---|
-| FingerprintSecurityMode | Normal,High |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| FingerprintSecurityMode | Normal, High | No | Both |
 </details>
 
 
@@ -35,9 +35,9 @@ One of 2 possible states:
     **Note**. Administrators are authenticated by a Supervisor Password.
 
 
-| WMI Setting name | Values |
-|:---|:---|
-| FingerprintPasswordAuthentication | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| FingerprintPasswordAuthentication | Disable, Enable | No | Both |
 </details>
 
 
@@ -46,7 +46,5 @@ This option is used to erase all fingerprint data stored in the fingerprint read
 As a result, any power-on security features previously enabled will not be able to work until they are re-enabled in fingerprint software. <br>
 The option requires additional confirmation for erasing the fingerprint data.
 
-| WMI Setting name | Values |
-|:---|:---|
-| Not available via WMI |  |
+
 </details>
