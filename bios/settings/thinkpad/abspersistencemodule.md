@@ -10,9 +10,9 @@ One of 3 possible states:
 3.	Permanently Disabled – permanently disables the activation.<br> 
     **Note**. This selection requires additional confirmation. If this module is permanently disabled, then you will be never able to enable this setting again. 
 
-| WMI Setting name | Values |
-|:---|:---|
-| AbsolutePersistenceModuleActivation | Disable,Enable,PermanentlyDisable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| AbsolutePersistenceModuleActivation | Disable, Enable, PermanentlyDisable | No | Both |
 </details>
 
 
@@ -22,7 +22,7 @@ Shows the current status. One of 2 possible values:
 1.	**Not Activated** – module is turned off. Default.
 2.	Activated – Absolute Persistence is activated on OS.
 
-| WMI Setting name | Values |
-|:---|:---|
-| Not available via WMI |  |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| Not available via WMI | N/A | N/A | N/A |
 </details>
