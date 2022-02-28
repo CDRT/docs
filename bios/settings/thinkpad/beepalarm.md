@@ -10,9 +10,9 @@ One of 2 possible states for the password beep:
     **Note**. Different beeps will be sounded when the entered password matches or does not match the configured password.
 
 
-| WMI Setting name | Values |
-|:---|:---|
-| PasswordBeep | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| PasswordBeep | Disable, Enable | No | Both |
 </details>
 
 <details><summary>Keyboard Beep</summary>
@@ -22,7 +22,7 @@ One of 2 possible states for the keyboard beep:
 2.	Off - a beep is disabled.
 
 
-| WMI Setting name | Values |
-|:---|:---|
-| KeyboardBeep | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| KeyboardBeep | Disable, Enable | No| Both |
 </details>
