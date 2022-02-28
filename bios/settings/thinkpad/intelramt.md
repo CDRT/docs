@@ -10,9 +10,9 @@ One of 3 possible options:
 
     **Attention**. If ‘Permanently Disabled’ is selected, then it will be impossible to turn back on Intel (R) AMT Control. 
 
-| WMI Setting name | Values |
-|:---|:---|
-| AMTControl | Disable,Enable,PermanentlyDisable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel | 
+|:---|:---|:---|:---|
+| AMTControl | Disable, Enable, PermanentlyDisable | No | Intel |
 </details>
 
 <details><summary>USB Key Provisioning</summary>
@@ -23,9 +23,9 @@ One of 2 possible states:
 2.	On - enables USB key provisioning. 
  
 
-| WMI Setting name | Values |
-|:---|:---|
-| USBKeyProvisioning | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| USBKeyProvisioning | Disable, Enable | No | Intel |
 </details>
 
 <details><summary>CIRA Timeout</summary>
@@ -36,9 +36,7 @@ The value is in seconds and can be varied from 1 to 254. <br>
 * **0** - use the default timeout of 60 seconds. Default.
 * 255 - wait until the connection succeeds. 
 
-| WMI Setting name | Values |
-|:---|:---|
-| Not available via WMI |  |
+
 </details>
 
 <details><summary>Console Type</summary>
@@ -51,7 +49,5 @@ One of 4 possible options to enable a specified console type:
 
 **Note**. This console type must match the Intel AMT remote console.
 
-| WMI Setting name | Values |
-|:---|:---|
-| Not available via WMI |  |
+
 </details>
