@@ -4,7 +4,7 @@
 
 This page will present the policies found in the Commercial Vantage ADMX template, along with the OMA-URIs which can be used to configure the application on clients.
 
-Refer to this [Commercial Vantage blog article](https://thinkdeploy.blogspot.com/2020/11/deploying-commercial-vantage-with-intune.html 'target=_blank') on how to create the Win32 app and [Managing Commercial Vantage in Intune](https://thinkdeploy.blogspot.com/2020/11/manage-commercial-vantage-with-intune.html) for steps on how to ingest the ADMX file in Intune.
+For steps on how to create and deploy Commercial Vantage as a Win32 app, reference this [page](https://docs.lenovocdrt.com/#/cv/cv_intune_deploy).
 
 ?> If new policies have been introduced, you will need to ingest the updated ADMX file contained in the Commercial Vantage zip.
 
