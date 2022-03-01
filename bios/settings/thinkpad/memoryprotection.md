@@ -9,9 +9,9 @@ One of 2 possible states:
 
 **Note**. Reset to ‘Off’ if your required applications cannot run.
 
-| WMI Setting name | Values |
-|:---|:---|
-| DataExecutionPrevention | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| DataExecutionPrevention | Disable, Enable | No | Both |
 </details>
 
 
@@ -23,7 +23,7 @@ One of 2 possible states for Total Memory Encryption (TME) to protect DRAM data 
     * System performance will degrade by estimated 3-5%.
 2.	**Off** – TME is off. Default.
 
-| WMI Setting name | Values |
-|:---|:---|
-| TotalMemoryEncryption | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| TotalMemoryEncryption | Disable, Enable | No | Intel |
 </details>
