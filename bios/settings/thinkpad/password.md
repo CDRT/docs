@@ -148,7 +148,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
    |:---|:---|:---|:---|
-| BlockSIDAuthentication | Disable, Enable | Yes | Both |
+| BlockSIDAuthentication | Disable, Enable | No | Both |
 </details>
 
 
@@ -162,7 +162,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
    |:---|:---|:---|:---|
-| LockBIOSSetting | Disable, Enable | Yes | Both |
+| LockBIOSSetting | Disable, Enable | No | Both |
 </details>
 
 
@@ -240,7 +240,7 @@ One of 9 options:
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
    |:---|:---|:---|:---|
-| MinimumPasswordLength | Disable, 4, 5, 6, 7, 8, 9, 10, 11, 12 | Yes | Both |
+| MinimumPasswordLength | Disable, 4, 5, 6, 7, 8, 9, 10, 11, 12 | No | Both |
 </details>
 
 

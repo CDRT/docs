@@ -5,9 +5,6 @@
 Exit Setup and save your changes.<br>
 The option requires additional confirmation.
 
-| WMI Setting name | Values |
-|:---|:---|
-| Not applicable via WMI. |  |
 </details>
 
 
@@ -21,9 +18,6 @@ Exit Setup without saving changes. The following changes WILL NOT be discarded a
 
 The option requires additional confirmation.
 
-| WMI Setting name | Values |
-|:---|:---|
-| Not applicable via WMI. |  |
 </details>
 
 
@@ -33,9 +27,6 @@ Load default values for all Setup items. The following changes WILL NO be discar
 1.	Security
 2.	Date & Time
 
-| WMI Setting name | Values |
-|:---|:---|
-|  |  |
 </details>
 
 
@@ -53,9 +44,6 @@ Affected settings are:
 3.	Virtualization features
 
 
-| WMI Setting name | Values |
-|:---|:---|
-| Not applicable via WMI. |  |
 </details>
 
 
@@ -69,15 +57,10 @@ Load previous values for most Setup items. The following changes WILL NOT be dis
 
 The option requires additional confirmation.
 
-| WMI Setting name | Values |
-|:---|:---|
-| Not applicable via WMI. |  |
+
 </details>
 
 <details><summary>Save Changes</summary>
 Save Setup data.
 
-| WMI Setting name | Values |
-|:---|:---|
-|  |  |
 </details>
