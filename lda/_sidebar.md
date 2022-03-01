@@ -2,7 +2,7 @@
 
 [**Home**](/)
 
-**Lenovo Deployment Assistant**
+[**Lenovo Deployment Assistant**](lda/lda_top.md)
 
 - [User Guide](lda/lda.md)
 
