@@ -29,9 +29,9 @@ When enabled, Supervisor Password prevents unauthorized users from accessing the
 
 **Note**. To have a beep sound when the system is waiting for this password, enable the [Password Beep feature in the Alarm submenu](bios/settings/thinkpad/beepalarm.md).
 
-| WMI Setting name | Values |
-|:---|:---|
-| pap |  |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| pap | Disable, Enable | Yes | Both |
 </details>
 
 <details><summary>System Management Password</summary>
@@ -61,9 +61,9 @@ When enabled System Management Password presents unauthorized users from accessi
 
 **Note**. To have a beep sound when the system is waiting for this password, enable the [Password Beep feature in the Alarm submenu](bios/settings/thinkpad/beepalarm.md).
 
-| WMI Setting name | Values |
-|:---|:---|
-| smp |  |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| SystemManagementPasswordControl | Disable, Enable | Yes | Both |
 </details>
 
 
@@ -86,9 +86,9 @@ When enabled Power-On Password prevents unauthorized users from booting your com
 
 **Note**. To have a beep sound when the system is waiting for this password, enable the [Password Beep feature in the Alarm submenu](bios/settings/thinkpad/beepalarm.md).
 
-| WMI Setting name | Values |
-|:---|:---|
-| pop |  |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| PowerOnPasswordControl | Disable, Enable | Yes | Both |
 </details>
 
 
@@ -130,21 +130,13 @@ When prompted to enter an NVMe password, press F1 to switch between the admin NV
 
 [More information about passwords on support.lenovo.com.](https://support.lenovo.com/at/en/solutions/ht036206-types-of-password-for-thinkpad)
 
-| WMI Setting name for Hard Disk Password (HDP) | Values |
-|:---|:---|
-| **uhdp1** : Single Password or Dual Password User 1 |  |
-| **mhdp1** : Master HDP 1 |  |
-| **uhdp2** : Single Password or Dual Password User 2 |  |
-| **mhdp2** : Master HDP 2 |  |
-| **uhdp3** : Single Password or Dual Password User 3 |  |
-| **mhdp3** : Master HDP 3 |  |
+| WMI Setting name for Hard Disk Password (HDP) | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| HardDiskPasswordControl | **uhdp1** : Single Password or Dual Password User 1 <br> **mhdp1** : Master HDP 1 <br> **uhdp2** : Single Password or Dual Password User 2 <br> **mhdp2** : Master HDP 2 <br> **uhdp3** : Single Password or Dual Password User 3 <br> **mhdp3** : Master HDP 3 <br> | Yes | Both |
 
-| WMI Setting name for NVMe1 Password | Values |
-|:---|:---|
-| **adrp1** : Single Password or Dual Password Admin 1 |  |
-| **udrp1** : Dual Password User 1 |  |
-| **adrp2** : Single Password or Dual Password Admin 2 |  |
-| **udrp2** : Dual Password User 2 |  |
+| WMI Setting name for NVMe1 Password | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| **adrp1** : Single Password or Dual Password Admin 1 <br> **udrp1** : Dual Password User 1 <br> **adrp2** : Single Password or Dual Password Admin 2 <br> **udrp2** : Dual Password User 2 | Yes | Both |
 </details>
 
 
@@ -154,9 +146,9 @@ One of 2 possible states:
 1.	**On** - TCG (Trusted Computing Group) Storage device will block attempts to authenticate the SID (Security Identifier) authority until a subsequent device power cycle occurs. Default.
 2.	Off - allow SID authentication in TCG Storage device at the next system boot only, not all subsequent boots.
 
-| WMI Setting name | Values |
-|:---|:---|
-| BlockSIDAuthentication | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+   |:---|:---|:---|:---|
+| BlockSIDAuthentication | Disable, Enable | Yes | Both |
 </details>
 
 
@@ -168,9 +160,9 @@ One of 2 possible states:
 
 **Note**. UEFI BIOS Lock will not take effect unless Supervisor password is enabled.
 
-| WMI Setting name | Values |
-|:---|:---|
-| LockBIOSSetting | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+   |:---|:---|:---|:---|
+| LockBIOSSetting | Disable, Enable | Yes | Both |
 </details>
 
 
@@ -183,9 +175,9 @@ One of 2 possible states:
     **Note**. To protect unauthorized access to the system it is recommended to set user authentication on the OS.
 
 
-| WMI Setting name | Values |
-|:---|:---|
-| BIOSPasswordAtUnattendedBoot | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+   |:---|:---|:---|:---|
+| BIOSPasswordAtUnattendedBoot | Disable, Enable | Yes | Both |
 </details>
 
 
@@ -197,9 +189,9 @@ One of 2 possible states:
 
     **Note**. To protect unauthorized access to the system it is recommended to set user authentication on the OS.
 
-| WMI Setting name | Values |
-|:---|:---|
-| BIOSPasswordAtReboot | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+   |:---|:---|:---|:---|
+| BIOSPasswordAtReboot | Disable, Enable | Yes | Both |
 </details>
 
 
@@ -211,9 +203,9 @@ One of 2 possible states:
 2.	**Off** - system will proceed without any user action required. Default. 
 
 
-| WMI Setting name | Values |
-|:---|:---|
-| BIOSPasswordAtBootDeviceList | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+   |:---|:---|:---|:---|
+| BIOSPasswordAtBootDeviceList | Disable, Enable | Yes | Both |
 </details>
 
 
@@ -224,9 +216,9 @@ One of 2 possible states:
 2.	Off - hide the POST 0199 error and proceed without any user action required. 
 
 
-| WMI Setting name | Values |
-|:---|:---|
-| PasswordCountExceededError | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+   |:---|:---|:---|:---|
+| PasswordCountExceededError | Disable, Enable | Yes | Both |
 </details>
 
 
@@ -246,9 +238,9 @@ One of 9 options:
 
 **Note**. If a supervisor password is set, you cannot change the minimum length until you log in as a supervisor.
 
-| WMI Setting name | Values |
-|:---|:---|
-| MinimumPasswordLength | Disable,4,5,6,7,8,9,10,11,12 |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+   |:---|:---|:---|:---|
+| MinimumPasswordLength | Disable, 4, 5, 6, 7, 8, 9, 10, 11, 12 | Yes | Both |
 </details>
 
 
@@ -258,9 +250,9 @@ One of 2 possible options:
 1.	**Disabled** - no specific requirements to passwords. Default. 
 2.	Enabled - Supervisor Password, System Management Password, Power-On and Hard Disk password lengths must be equal or longer than 8 characters, must include at least one uppercase character, one lowercase character and one number.
 
-| WMI Setting name | Values |
-|:---|:---|
-| StrongPassword | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+   |:---|:---|:---|:---|
+| StrongPassword | Disable, Enable | Yes | Both |
 </details>
 
 ### System Management Password Access Control ###
@@ -273,9 +265,9 @@ One of 2 possible options:
 1.	**Off** – Default.
 2.	On – allow System Management Password to have the same authority as Supervisor Password to control System Management Password.
 
-| WMI Setting name | Values |
-|:---|:---|
-| SystemManagementPasswordControl | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+   |:---|:---|:---|:---|
+| SystemManagementPasswordControl | Disable, Enable | Yes | Both |
 </details>
 
 
@@ -285,9 +277,9 @@ One of 2 possible options:
 1.	**Off** - Default.
 2.	On - allow System Management Password to have the same authority as Supervisor Password to control Power-On Password.
 
-| WMI Setting name | Values |
-|:---|:---|
-| PowerOnPasswordControl | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+   |:---|:---|:---|:---|
+| PowerOnPasswordControl | Disable, Enable | Yes | Both |
 </details>
 
 
@@ -297,9 +289,9 @@ One of 2 possible options:
 1.	**Off** - Default.
 2.	On - allow System Management Password to have the same authority as Supervisor Password to control Hard Disk Password.
 
-| WMI Setting name | Values |
-|:---|:---|
-| HardDiskPasswordControl | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+   |:---|:---|:---|:---|
+| HardDiskPasswordControl | Disable, Enable | Yes | Both |
 </details>
 
 
@@ -309,7 +301,7 @@ One of 2 possible options:
 1.	**Off** - Default.
 2.	On - allow System Management Password to have the same authority as Supervisor Password to control BIOS setup items.
 
-| WMI Setting name | Values |
-|:---|:---|
-| BIOSSetupConfigurations | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+   |:---|:---|:---|:---|
+| BIOSSetupConfigurations | Disable, Enable | Yes | Both |
 </details>
