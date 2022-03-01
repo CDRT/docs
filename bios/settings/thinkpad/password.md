@@ -29,9 +29,6 @@ When enabled, Supervisor Password prevents unauthorized users from accessing the
 
 **Note**. To have a beep sound when the system is waiting for this password, enable the [Password Beep feature in the Alarm submenu](bios/settings/thinkpad/beepalarm.md).
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| pap | Disable, Enable | Yes | Both |
 </details>
 
 <details><summary>System Management Password</summary>
@@ -61,9 +58,6 @@ When enabled System Management Password presents unauthorized users from accessi
 
 **Note**. To have a beep sound when the system is waiting for this password, enable the [Password Beep feature in the Alarm submenu](bios/settings/thinkpad/beepalarm.md).
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| SystemManagementPasswordControl | Disable, Enable | Yes | Both |
 </details>
 
 
@@ -86,9 +80,6 @@ When enabled Power-On Password prevents unauthorized users from booting your com
 
 **Note**. To have a beep sound when the system is waiting for this password, enable the [Password Beep feature in the Alarm submenu](bios/settings/thinkpad/beepalarm.md).
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| PowerOnPasswordControl | Disable, Enable | Yes | Both |
 </details>
 
 
@@ -130,13 +121,6 @@ When prompted to enter an NVMe password, press F1 to switch between the admin NV
 
 [More information about passwords on support.lenovo.com.](https://support.lenovo.com/at/en/solutions/ht036206-types-of-password-for-thinkpad)
 
-| WMI Setting name for Hard Disk Password (HDP) | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| HardDiskPasswordControl | **uhdp1** : Single Password or Dual Password User 1 <br> **mhdp1** : Master HDP 1 <br> **uhdp2** : Single Password or Dual Password User 2 <br> **mhdp2** : Master HDP 2 <br> **uhdp3** : Single Password or Dual Password User 3 <br> **mhdp3** : Master HDP 3 <br> | Yes | Both |
-
-| WMI Setting name for NVMe1 Password | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| **adrp1** : Single Password or Dual Password Admin 1 <br> **udrp1** : Dual Password User 1 <br> **adrp2** : Single Password or Dual Password Admin 2 <br> **udrp2** : Dual Password User 2 | Yes | Both |
 </details>
 
 
