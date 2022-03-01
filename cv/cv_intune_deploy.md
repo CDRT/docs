@@ -70,15 +70,24 @@ For the detection rule, a custom script detection will be used.  Commercial Vant
 
 This sample PowerShell script can be used for detection 
 
-?> If the Store is not blocked in your environment, remove the version from the string match.  Vantage will automatically update itself as new versions are released. )
+?> If the Store is not blocked in your environment, Vantage will automatically update itself as new versions are released. )
 
 ```powershell
 If (Get-Service -Name ImControllerService -ErrorAction SilentlyContinue) {
     If (Get-Service -Name LenovoVantageService -ErrorAction SilentlyContinue) {
-        If (Get-AppxPackage -AllUsers | Where-Object { $_.PackageFullName -match "LenovoSettingsforEnterprise_10.2010.11.0" }) {
+        # For specific Appx version
+        # If (Get-AppxPackage -AllUsers | Where-Object { $_.PackageFullName -match "LenovoSettingsforEnterprise_10.2102.10.0" }) {
+        
+        # For package name only    
+        If (Get-AppxPackage -AllUsers | Where-Object { $_.Name -eq "E046963F.LenovoSettingsforEnterprise" }) {
             Write-Host "All Services and App Present"
+            Exit 0
         }
     }
+}
+else {
+    Write-Host "Required Services Missing"
+    Exit 1
 }
 ```
 
