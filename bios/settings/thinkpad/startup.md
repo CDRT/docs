@@ -16,9 +16,9 @@ One of 9 possible options:
 8.	Other CD
 9.	Other HDD
 
-| WMI Setting name | Values |
-|:---|:---|
-| NetworkBoot | HDD0,HDD1,HDD2,HDD3,HDD4,PXEBOOT,ATAPICD0,ATAPICD1,ATAPICD2,USBFDD,USBCD,USBHDD,OtherHDD,OtherCD,NVMe0,NVMe1,HTTPSBOOT,LENOVOCLOUD,ON-PREMISE,NODEV |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| NetworkBoot | HDD0, HDD1, HDD2, HDD3, HDD4, <br>PXEBOOT, ATAPICD0, ATAPICD1, ATAPICD2, USBFDD, <br>USBCD, USBHDD, OtherHDD, OtherCD, NVMe0, <br>NVMe1, HTTPSBOOT, LENOVOCLOUD, ON-PREMISE, NODEV | No | Both |
 </details>
 
 
@@ -28,9 +28,9 @@ One of 2 possible values:
 1.	**Quick** – the diagnostic splash screen does not display unless you press Esc during boot. Default.
 2.	Diagnostics – the diagnostic splash screen always displays during boot.
 
-| WMI Setting name | Values |
-|:---|:---|
-| BootMode | Quick,Diagnostics |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| BootMode | Quick, Diagnostics | No | Both |
 </details>
 
 
@@ -40,9 +40,9 @@ One of 2 possible states:
 1.	**On** – system will show the option key message when the system is booted. Default.
 2.	Off – system will not show the option key message. 
 
-| WMI Setting name | Values |
-|:---|:---|
-| StartupOptionKeys | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| StartupOptionKeys | Disable, Enable | No | Both |
 </details>
 
 
@@ -53,9 +53,9 @@ One of 2 possible states:
     **Note**. This option is only available when Supervisor enters setup.
 2.	Off – F12 does not invoke a pop-up Boot device list.
 
-| WMI Setting name | Values |
-|:---|:---|
-| BootDeviceListF12Option | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| BootDeviceListF12Option | Disable, Enable | Yes | Both |
 </details>
 
 
@@ -65,9 +65,9 @@ One of 2 possible states:
 1.	On – Boot Priority Order is locked.
 2.	**Off** – Boot Priority Order is not locked. Default. 
 
-| WMI Setting name | Values |
-|:---|:---|
-| BootOrderLock | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| BootOrderLock | Disable, Enable | No | Both |
 </details>
 
 
@@ -96,9 +96,9 @@ Possible items on the list:
 7.	LENOVO CLOUD
 8.	ON-PREMISE
 
-| WMI Setting name | Values |
-|:---|:---|
-| BootOrder | HDD0,HDD1,HDD2,HDD3,HDD4,PXEBOOT,ATAPICD0,ATAPICD1,ATAPICD2,USBFDD,USBCD,USBHDD,OtherHDD,OtherCD,NVMe0,NVMe1,HTTPSBOOT,LENOVOCLOUD,ON-PREMISE,NODEV |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| BootOrder | HDD0, HDD1, HDD2, HDD3, HDD4, <br>PXEBOOT, ATAPICD0, ATAPICD1, ATAPICD2, USBFDD, <br>USBCD, USBHDD, OtherHDD, OtherCD, NVMe0, NVMe1, HTTPSBOOT,<br>LENOVOCLOUD, ON-PREMISE, NODEV | No | Both |
 </details>
 
 
@@ -108,7 +108,4 @@ By default, the following items are excluded from boot priority order:
 1.	Other CD
 2.	Other HDD
 
-| WMI Setting name | Values |
-|:---|:---|
-| Not available via WMI. If needed, you can get the list of possible values and compare them with the current settings. |  |
 </details>
