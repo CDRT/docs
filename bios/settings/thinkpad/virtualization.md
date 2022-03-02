@@ -10,9 +10,9 @@ One of 2 possible states:
 
 Requires additional confirmation of changing these settings.
 
-| WMI Setting name | Values |
-|:---|:---|
-| KernelDMAProtection | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| KernelDMAProtection | Disable, Enable | No | Both |
 </details>
 
 
@@ -28,9 +28,9 @@ One of 2 possible states:
 
 Additional information is here: [How to enable Virtualization Technology on Lenovo PC computers](https://support.lenovo.com/de/en/solutions/ht500006).
 
-| WMI Setting name | Values |
-|:---|:---|
-| VirtualizationTechnology | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| VirtualizationTechnology | Disable, Enable | No | Intel |
 
 **AMD-based machine**
 
@@ -40,9 +40,9 @@ One of 2 possible states:
 2. Off
 
 
-| WMI Setting name | Values |
-|:---|:---|
-| AmdVt | Enable,Disable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| AmdVt | Enable, Disable | No | AMD |
 </details>
 
 
@@ -55,9 +55,9 @@ One of 2 possible states:
 
 More information on the [official Intel site](https://software.intel.com/content/www/us/en/develop/articles/intel-virtualization-technology-for-directed-io-vt-d-enhancing-intel-platforms-for-efficient-virtualization-of-io-devices.html).
 
-| WMI Setting name | Values |
-|:---|:---|
-| VTdFeature | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| VTdFeature | Disable, Enable | No | Intel |
 </details>
 
 
@@ -68,7 +68,7 @@ One of 2 possible states:
 2.	**Off** – does not allow Windows to use ‘Enhanced sign-in security’ for biometrics. Default. <br>
     **Note**. This option is recommended for Windows 10 October 2018 Update and for Windows 10 version 2004 and earlier, which do not support this feature.
 
-| WMI Setting name | Values |
-|:---|:---|
-| EnhancedWindowsBiometricSecurity | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| EnhancedWindowsBiometricSecurity | Disable, Enable | No | Both |
 </details>
