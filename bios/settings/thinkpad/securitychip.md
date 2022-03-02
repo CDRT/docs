@@ -5,9 +5,7 @@
 <details><summary>Security Chip Type</summary>
 Shows the security chip type. View-only value. 
 
-| WMI Setting name | Values |
-|:---|:---|
-| Read-only value. Available via [standard Windows commands](https://docs.microsoft.com/en-us/powershell/module/trustedplatformmodule/?view=windowsserver2019-ps&preserve-view=true&viewFallbackFrom=win10-ps) |  |
+ Read-only value. Available via [standard Windows commands](https://docs.microsoft.com/en-us/powershell/module/trustedplatformmodule/?view=windowsserver2019-ps&preserve-view=true&viewFallbackFrom=win10-ps)
 </details>
 
 
@@ -20,9 +18,9 @@ One of 2 possible states:
 **Note**. If shows ‘MFG Mode’ (manufacturing mode), then TPM (Trusted Platform Module) must be provisioned correctly.
 
 
-| WMI Setting name | Values |
-|:---|:---|
-| SecurityChip | Active,Inactive,Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| SecurityChip | Active, Inactive, Disable, Enable | No | Both |
 </details>
 
 
@@ -33,11 +31,7 @@ This option is used to clear encryption keys.<br>
 **Note**. It will not be possible to access already encrypted data after these keys are cleared.
 
 The option requires additional confirmation for clearing the keys.
-
-
-| WMI Setting name | Values |
-|:---|:---|
-| Available via standard Windows commands: [Clear-Tpm](https://docs.microsoft.com/en-us/powershell/module/trustedplatformmodule/clear-tpm?view=windowsserver2019-ps) |  |
+ Available via standard Windows commands: [Clear-Tpm](https://docs.microsoft.com/en-us/powershell/module/trustedplatformmodule/clear-tpm?view=windowsserver2019-ps) 
 </details>
 
 
@@ -49,9 +43,9 @@ One of 2 possible states:
 1.	On
 2.	**Off** – Default.
 
-| WMI Setting name | Values |
-|:---|:---|
-| TXTFeature | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| TXTFeature | Disable, Enable | No | Intel |
 </details>
 
 
@@ -62,9 +56,10 @@ One of 2 possible states:
 1.	**On** - display user confirmation screen when clearing. Default. 
 2.	Off - No user confirmation screen when clearing.
 
-| WMI Setting name | Values |
-|:---|:---|
-| PhysicalPresenceForTpmClear  | Disable,Enable |
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| PhysicalPresenceForTpmClear  | Disable, Enable | Yes | Both |
+
 **Note**. It is possible to change the value from Enable to Disable only when Supervisor Password exists, because it is required to confirm the action.
 </details>
 
@@ -82,7 +77,4 @@ One of 2 possible states:
 1.	**On** - reporting of SMBIOS data is enabled. Changes to corresponding UEFI BIOS data are logged in a location, (PCR1, defined in the TCG standards), which other authorized programs can monitor, read, and analyze. Default. 
 2.	Off - reporting of SMBIOS data is disabled.
 
-| WMI Setting name | Values |
-|:---|:---|
-| Not available via WMI |  |
 </details>
