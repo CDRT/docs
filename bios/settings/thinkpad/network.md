@@ -115,9 +115,11 @@ One of 2 possible states for Wireless Auto Disconnection feature when Ethernet c
 <details><summary>MAC Address Pass Through</summary>
 One of 3 possible options for MAC Address Pass Through function when dock is attached:<br>
 
-1. **Disabled** - Dock Ethernet uses its own MAC Address. Default
-2. Internal MAC Address - Dock Ethernet uses same MAC Address as internal LAN.
-3. Second MAC Address - Dock Ethernet uses its own MAC Address.
+1. **Disabled** - Dock Ethernet uses its own MAC address. Default
+2. Internal MAC Address - Dock Ethernet uses same MAC address as internal LAN.
+3. Second MAC Address - Dock Ethernet uses the second MAC address that is stored in the system's EEPROM. This allows for a device-specific MAC address that is different from the internal NIC's MAC address so they can be managed separately if necessary. 
+
+For systems that do not have an internal NIC, there will only be two options:  off, which means the dock will use it's own MAC Address; or on, which means the dock will use MAC address stored in the system EEPROM.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
