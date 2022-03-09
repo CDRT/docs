@@ -13,6 +13,18 @@ One of 2 possible options:
 | BootDisplayDevice | LCD, ExternalDisplay | No | Both |
 </details>
 
+<details><summary>Graphics Device</summary>
+One of 2 possible options if the system includes a discrete graphics adapter:
+
+1.	**Hybrid Graphics** - Both the integrated and the discrete graphics adapters are available to the OS. Default.
+2.	Discrete Graphics - Only the discrete graphics adapater is available to the OS.
+
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| GraphicsDevice | SwitchableGfx, DiscreteGfx | No | Both |
+</details>
+
 <details><summary>Total Graphics Memory</summary>
 
 **Intel-based machine**
