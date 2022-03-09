@@ -25,7 +25,7 @@ One of 2 possible states:
 
 2.	Off - function is turned off. 
 
-   **Note**: Wake On LAN from Dock works only when ThinkPad USB-C Dock or ThinkPad Thunderbolt 3 Dock is attached.
+   **Note**: Wake On LAN from Dock works only when ThinkPad USB-C Dock or ThinkPad Thunderbolt Dock is attached.
 Wake on LAN from Dock function may be blocked due to password configuration.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |

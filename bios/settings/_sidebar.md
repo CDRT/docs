@@ -2,9 +2,13 @@
 
 [**Home**](/)
 
-[**Lenovo BIOS Reference**](bios/bios_top.md)
+[**BIOS Reference**](bios/bios_top.md) 
 
-**ThinkPad**
+---
+
+[**BIOS Settings Dictionary**](bios/settings/dictionary.md)
+
+***ThinkPad***
 
 - [Config](bios/settings/thinkpad/config.md)
    - [Network](bios/settings/thinkpad/network.md)
@@ -39,10 +43,10 @@
 
 ---
 
-**ThinkCentre**
+***ThinkCentre***
 > *Coming Soon*
 
 ---
 
-**ThinkStation**
+***ThinkStation***
 > *Coming Soon*
