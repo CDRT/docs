@@ -6,7 +6,7 @@
 Option to select top priority of the Boot Priority Order when waking from LAN.
 One of 9 possible options:
 
-1.	**PXE BOTT** – Default
+1.	**PXE BOOT** – Default
 2.	USB CD
 3.	USB FDD
 4.	NVMe0
@@ -15,6 +15,8 @@ One of 9 possible options:
 7.	ON-PREMISE
 8.	Other CD
 9.	Other HDD
+
+!> LENOVO CLOUD and ON-PREMISE may not be available on all models.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -95,6 +97,8 @@ Possible items on the list:
     b.	Intel (R) Gigabit x.x.xx-Ipv6<br>
 7.	LENOVO CLOUD
 8.	ON-PREMISE
+
+!> LENOVO CLOUD and ON-PREMISE may not be available on all models.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|

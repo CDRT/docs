@@ -42,7 +42,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| AmdVt | Enable, Disable | No | AMD |
+| AmdVt | Disable, Enable | No | AMD |
 </details>
 
 
