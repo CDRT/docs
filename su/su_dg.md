@@ -1171,7 +1171,7 @@ Optional. Suppresses the license notice from System Update.
 
 **-rebootprompt**
 
-Optional. Forces the display of the reboot prompt dialog before installing updates that will require a restart. This parameter is used in conjunction with the -noicon parameter to skip the toast message but still have the warning before reboot.
+Optional. Forces the display of the reboot prompt dialog after installing updates that will require a restart. This parameter is only applicable when the -noicon parameter is used and the -noreboot parameter is NOT used. In this scenario, if the -rebootprompt parameter were not used, the system could be rebooted without any warning to the user.
 
 **-repository**
 
