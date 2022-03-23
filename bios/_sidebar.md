@@ -5,5 +5,6 @@
 [**BIOS Reference**](bios/bios_top.md)
 
 - [Deployment Guide](bios/bios_guide.md)
+- [WMI BIOS Interface Guide](bios/wmibios.md)
 - [BIOS Settings Dictionary](bios/settings/dictionary.md)
 - [System Deployment Boot Mode](bios/sdbm.md)
