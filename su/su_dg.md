@@ -288,7 +288,7 @@ There are multiple functional tabs in System Update, located to the left-hand si
 
 1. **Install Deferred Updates**
 
-1. **Schedule Ppdates**
+1. **Schedule Updates**
 
 1. **View Installation History**
 
