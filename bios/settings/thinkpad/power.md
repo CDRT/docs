@@ -84,7 +84,7 @@ One of 5 possible options for defining when the system shall turn on automatical
 4.	Weekly Event - the system will turn on every week on the specified day and time.
 5.	User Defined - this option enables ‘User Defined Alarm’ group of settings. 
 
-**Note**. Values for the ‘Wake Up on Alarm’ group of settings can be overwritten by the operating system.
+**Note**. Wake up will only occur on AC power.  Values for the ‘Wake Up on Alarm’ group of settings can be overwritten by the operating system. 
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
    |:---|:---|:---|:---|
