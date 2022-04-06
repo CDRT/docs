@@ -30,6 +30,8 @@ On the **Configuration Settings** screen, click **Add** and enter the following:
 
 - **Value**: Copy the contents of the Dock Manager ADMX into this field
 
+?> The **Group Policy Template File** that contains the ADMX can be found under the Dock Manager section on [Lenovo Tools for Administrators](https://support.lenovo.com/solutions/ht037099) page.
+
 ### **General**
 
 ### Ask Before Firmware Update
