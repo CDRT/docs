@@ -4,6 +4,32 @@
 
 This page will present the policies found in the Dock Manager ADMX template, along with the OMA-URIs which can be used to configure the application on clients.
 
+### **ADMX Ingestion**
+
+Sign in to the Microsoft Endpoint Manager [admin center](https://endpoint.microsoft.com)
+
+Navigate to **Devices** > **Windows** > **Configuration Profiles**. Click **Create Profile** 
+- Select **Windows 10 and later** for the platform.
+- Select **Templates** for **Profile Type** and choose **Custom** from the list and click **Create**
+
+Enter the required information for the new profile, for example:
+
+- **Name**: Lenovo System Update configuration
+
+- **Description**: (Optional)
+
+On the **Configuration Settings** screen, click **Add** and enter the following:
+
+- **Name**: Dock Manager ADMX Ingest
+
+- **Description**: (Optional)
+
+- **OMA-URI**: ./Device/Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/DockManager/Policy/DockManager
+
+- **Data Type**: String
+
+- **Value**: Copy the contents of the Dock Manager ADMX into this field
+
 ### **General**
 
 ### Ask Before Firmware Update
