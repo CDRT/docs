@@ -4,8 +4,6 @@
 
 This page will present the policies found in the Dock Manager ADMX template, along with the OMA-URIs which can be used to configure the application on clients.
 
-Refer to the [Dock Manager blog article](dm/dm) on how to create the Win32 app and for steps on how to ingest the Dock Manager ADMX in Intune.
-
 ### **General**
 
 ### Ask Before Firmware Update
