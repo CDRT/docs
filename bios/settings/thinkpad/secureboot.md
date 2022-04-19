@@ -10,7 +10,9 @@ One of 2 possible options:
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SecureBoot | Disable, Enable | No | Both |
+| SecureBoot | Disable, Enable | Yes* | Both |
+
+**NOTE** On systems produced after 2020, Secure Boot setting can only be set to Disable using WMI when an SVP is passed. Secure Boot can always be set to Enable without a password.
 </details>
 
 
