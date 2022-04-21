@@ -22,9 +22,9 @@ Requires additional confirmation of changing these settings.
 
 One of 2 possible states:
 
-1.	On – a VMM (Virtual Machine Monitor) can utilize the additional hardware capabilities provided by Intel (R) Virtualization technology. Default, if ‘OS Optimized Defaults’ has value ‘Off’.<br>
+1.	On – a VMM (Virtual Machine Monitor) can utilize the additional hardware capabilities provided by Intel (R) Virtualization technology. Default, if ‘OS Optimized Defaults’ has value ‘On’.<br>
     **Note**. It is automatically enabled and cannot be disabled if ‘Kernel DMA Protection’ is enabled.
-2.	Off - Intel (R) Virtualization Technology is off. Default, if ‘OS Optimized Defaults’ has value ‘On’.
+2.	Off - Intel (R) Virtualization Technology is off. Default, if ‘OS Optimized Defaults’ has value ‘Off’.
 
 Additional information is here: [How to enable Virtualization Technology on Lenovo PC computers](https://support.lenovo.com/de/en/solutions/ht500006).
 
@@ -36,8 +36,8 @@ Additional information is here: [How to enable Virtualization Technology on Leno
 
 One of 2 possible states:
 
-1. On - 
-2. Off
+1. On - AMD-V (AMD Virtualization) set of on-chip features is enabled to improve the performance of virtualization resources.
+2. Off - AMD-V is turned off. 
 
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
