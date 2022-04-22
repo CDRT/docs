@@ -36,7 +36,8 @@ Additional information is here: [How to enable Virtualization Technology on Leno
 
 One of 2 possible states:
 
-1. On - AMD-V (AMD Virtualization) set of on-chip features is enabled to improve the performance of virtualization resources.
+1. **On** - VMM (Virtual Machine Monitor) can utilize the additional hardware capabilities provided by AMD-V (AMD Virtualization). Default.<br>
+    **Note**. The setting becomes enabled automatically when "Device Guard" is set to "On".
 2. Off - AMD-V is turned off. 
 
 
