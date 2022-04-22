@@ -51,3 +51,5 @@
 
 ***ThinkStation***
 > *Coming Soon*
+
+- [System Time & Date](bios/settings/thinkstation/systemtimedate.md)
