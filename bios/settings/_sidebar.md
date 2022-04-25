@@ -56,3 +56,6 @@
 
 - [Devices](bios/settings/thinkstation/devices.md)
   - [Serial Port Setup](bios/settings/thinkstation/serialportsetup.md)
+  - [Parallel Port Setup](bios/settings/thinkstation/parallelportsetup.md)
+
+  
