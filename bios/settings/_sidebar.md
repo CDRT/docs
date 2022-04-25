@@ -55,3 +55,4 @@
 - [System Time & Date](bios/settings/thinkstation/systemtimedate.md)
 
 - [Devices](bios/settings/thinkstation/devices.md)
+  - [Serial Port Setup](bios/settings/thinkpad/serialportsetup.md)
