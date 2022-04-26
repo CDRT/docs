@@ -58,4 +58,4 @@
   - [Serial Port Setup](bios/settings/thinkstation/serialportsetup.md)
   - [Parallel Port Setup](bios/settings/thinkstation/parallelportsetup.md)
   - [USB Setup](bios/settings/thinkstation/usbsetup.md)
-  
+  - [ATA Drive Setup](bios/settings/thinkstation/atadrivesetup.md)
