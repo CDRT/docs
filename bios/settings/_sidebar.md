@@ -59,3 +59,4 @@
   - [Parallel Port Setup](bios/settings/thinkstation/parallelportsetup.md)
   - [USB Setup](bios/settings/thinkstation/usbsetup.md)
   - [ATA Drive Setup](bios/settings/thinkstation/atadrivesetup.md)
+  - [Video Setup](bios/settings/thinkstation/videosetup.md)
