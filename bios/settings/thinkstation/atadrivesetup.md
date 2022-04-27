@@ -49,8 +49,7 @@ One of 2 possible states for the hot-plug port:
 One of 3 possible options for SATA configuration mode:
 
 1. **ANCI** – Default. When selecting, it requires additional confirmation.<br> 
-    **Note**. If you change the SATA mode to ANCI you may not boot the system due to the failure of Intel(R) RST with Intel(R) Optane (RAID) function.
-
+    **Note**. If you change the SATA mode to ANCI you may not boot the system due to the failure of Intel(R) RST with Intel(R) Optane (RAID) function.<br>
 2. Intel(R) RST with Intel(R) Optane
 3. RAID – When selecting, it requires additional confirmation.<br> 
     **Note**. Please do not disable SATA drives in RAID mode. Otherwise you may not boot the system due to the failure of RAID function.
