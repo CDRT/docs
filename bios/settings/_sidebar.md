@@ -61,3 +61,5 @@
   - [ATA Drive Setup](bios/settings/thinkstation/atadrivesetup.md)
   - [Video Setup](bios/settings/thinkstation/videosetup.md)
   - [Audio Setup](bios/settings/thinkstation/audiosetup.md)
+  - [Network Setup](bios/settings/thinkstation/networksetup.md)
+  - [PCI Express Configuration](bios/settings/thinkstation/pciexpresscofig.md)
