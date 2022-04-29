@@ -131,15 +131,42 @@ One of 2 states for Win VDI (Virtual Desktop Infrastructure) Boot:
 
 
 
-
-
-<details><summary>Tls Auth Configuration</summary>
+### Tls Auth Configuration ### 
+<!-- TBD if Need to add image  -->
 Visible only if "HTTPs Boot" has "Enabled" status.<br>
-Press <Enter> to configure Server CA (Certificate Authority) for HTTPs Boot. 
+Press < Enter > to configure Server CA (Certificate Authority) for HTTPs Boot. 
 
-</details>
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+|  |  |  | Both |
 
 
 
 ### Wi-Fi Configuration ###
 ![](./img/wificonfig.png)
+
+<details><summary>Automatic Connection Support</summary>
+One of 2 possible states for the automatic connection on every boot:
+
+1. Enabled – enables automatic connection on every boot.
+2. **Disabled** – disables automatic connection on every boot. Default. 
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+|  |  |  | Both |
+</details>
+
+
+<details><summary>Current Connection</summary>
+Shows Connection State, if the device is connected to any Wi-Fi network. View only.
+Shows "No Connection. Connection State" if there is no connection. 
+
+</details>
+
+<details><summary>Wi-Fi Scan</summary>
+Press < Enter > to scan the available connections.
+</details>
+
+<details><summary>Wi-Fi Scan</summary>
+Scanned Wi-Fi nodes for selection to connect.
+</details>
