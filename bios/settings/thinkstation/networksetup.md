@@ -130,3 +130,16 @@ One of 2 states for Win VDI (Virtual Desktop Infrastructure) Boot:
 ![](./img/httpsbootconfig.png) <!-- Need to add image  -->
 
 
+
+
+
+<details><summary>Tls Auth Configuration</summary>
+Visible only if "HTTPs Boot" has "Enabled" status.<br>
+Press <Enter> to configure Server CA (Certificate Authority) for HTTPs Boot. 
+
+</details>
+
+
+
+### Wi-Fi Configuration ###
+![](./img/wificonfig.png)
