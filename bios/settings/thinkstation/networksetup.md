@@ -129,6 +129,48 @@ One of 2 states for Win VDI (Virtual Desktop Infrastructure) Boot:
 ### HTTPs Boot Configuration ###
 ![](./img/httpsbootconfig.png) <!-- Need to add image  -->
 
+<details><summary>Input the description</summary>
+Press < Enter > to input a label for new created URL and it will be displayed in the boot sequence menu.
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+|  |  |  | Both |
+</details>
+
+
+<details><summary>Internet Protocol</summary>
+One of 2 options:
+
+1. **Ipv4** – Default. 
+2. Ipv6
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+|  |  |  | Both |
+</details>
+
+
+<details><summary>Boot URL</summary>
+A new Boot Option will be created according to this Boot URL. <br>
+"https://" support only. (e.g., https://webserver/boot.efi) <br>
+Please use the "Tls Auth Configuration" to import the CA (Certificate Authority) to support the HTTPs boot.
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+|  |  |  | Both |
+</details>
+
+
+<details><summary>Delete HTTPs Boot Option from List</summary>
+The list of HTTPs Boot options. <br>
+Select and Press < Enter > to remove an EFI HTTPs boot option.
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+|  |  |  | Both |
+</details>
+
+
 
 
 ### Tls Auth Configuration ### 
@@ -139,6 +181,7 @@ Press < Enter > to configure Server CA (Certificate Authority) for HTTPs Boot.
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
+
 
 
 
