@@ -65,3 +65,4 @@
   - [PCI Express Configuration](bios/settings/thinkstation/pciexpresscofig.md)
 
 - [Advanced](bios/settings/thinkstation/advanced.md)
+  - [CPU Setup](bios/settings/thinkstation/cpusetup.md)
