@@ -63,3 +63,5 @@
   - [Audio Setup](bios/settings/thinkstation/audiosetup.md)
   - [Network Setup](bios/settings/thinkstation/networksetup.md)
   - [PCI Express Configuration](bios/settings/thinkstation/pciexpresscofig.md)
+
+- [Advanced](bios/settings/thinkstation/advanced.md)
