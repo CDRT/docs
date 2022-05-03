@@ -210,6 +210,6 @@ Shows "No Connection. Connection State" if there is no connection.
 Press < Enter > to scan the available connections.
 </details>
 
-<details><summary>Wi-Fi Scan</summary>
+<details><summary>Scanned List</summary>
 Scanned Wi-Fi nodes for selection to connect.
 </details>
