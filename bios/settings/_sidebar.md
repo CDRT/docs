@@ -66,3 +66,4 @@
 
 - [Advanced](bios/settings/thinkstation/advanced.md)
   - [CPU Setup](bios/settings/thinkstation/cpusetup.md)
+  - [Intel(R) Manageability](bios/settings/thinkstation/intelmanageability.md)
