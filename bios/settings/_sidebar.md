@@ -70,3 +70,4 @@
   - [Intel(R) Thunderbolt](bios/settings/thinkstation/intelthunderbolt.md)
 
 - [Power](bios/settings/thinkstation/power.md)
+  - [Automatic Power On](bios/settings/thinkstation/autopoweron.md)
