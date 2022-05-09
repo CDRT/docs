@@ -43,6 +43,7 @@ One of 2 states:
 
 <details><summary>Intelligent Cooling</summary>
 Group of settings for Lenovo unique system thermal management solution. 
+
 ![](./img/intelligentcooling.png)
 
 <details><summary>Performance Mode</summary>
