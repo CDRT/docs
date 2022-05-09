@@ -14,10 +14,11 @@ One of 2 possible states:
 
 
 <details><summary>Intel(R) DPTF Support</summary>
-One of 2 possible states for Intel(R) Dynamic Platform and Thermal Framework (DPTF):
+Intel(R) Dynamic Platform and Thermal Framework (DPTF) is a software that helps managing power to the CPU vs temperature. Keeping CPU temperature down while still delivering good performance.<br>
+One of 2 possible states for Intel(R) DPTF:
 
-1. **Enabled** – Default.
-2. Disabled.
+1. **Enabled** – Intel(R) DRTF is turned on. Default.
+2. Disabled - Intel(R) DRTF is turned off.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
