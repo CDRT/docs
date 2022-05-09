@@ -1,5 +1,4 @@
 # Power #
-### General ###
 ![](./img/power.png)
 
 <details><summary>After Power Loss</summary>
