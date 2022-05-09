@@ -68,3 +68,5 @@
   - [CPU Setup](bios/settings/thinkstation/cpusetup.md)
   - [Intel(R) Manageability](bios/settings/thinkstation/intelmanageability.md)
   - [Intel(R) Thunderbolt](bios/settings/thinkstation/intelthunderbolt.md)
+
+- [Power](bios/settings/thinkstation/power.md)
