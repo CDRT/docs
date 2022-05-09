@@ -104,3 +104,81 @@ Possible values:
 
 
 ### User Defined Alarm ###
+![](./img/userdefinedalarm.png)
+
+<details><summary>Sunday</summary>
+One of 2 states to select:
+
+1. **Off** - the system will not turn on automatically on this day. Default.
+2. On – the system will turn on automatically on this day.
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+   |:---|:---|:---|:---|
+|   |   | No | Both |
+</details>
+
+<details><summary>Monday</summary>
+One of 2 states to select:
+
+1. **Off** - the system will not turn on automatically on this day. Default.
+2. On – the system will turn on automatically on this day.
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+   |:---|:---|:---|:---|
+|   |   | No | Both |
+</details>
+
+<details><summary>Tuesday</summary>
+One of 2 states to select:
+
+1. **Off** - the system will not turn on automatically on this day. Default.
+2. On – the system will turn on automatically on this day.
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+   |:---|:---|:---|:---|
+|   |   | No | Both |
+</details>
+
+<details><summary>Wednesday</summary>
+One of 2 states to select:
+
+1. **Off** - the system will not turn on automatically on this day. Default.
+2. On – the system will turn on automatically on this day.
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+   |:---|:---|:---|:---|
+|   |   | No | Both |
+</details>
+
+<details><summary>Thursday</summary>
+One of 2 states to select:
+
+1. **Off** - the system will not turn on automatically on this day. Default.
+2. On – the system will turn on automatically on this day.
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+   |:---|:---|:---|:---|
+|   |   | No | Both |
+</details>
+
+<details><summary>Friday</summary>
+One of 2 states to select:
+
+1. **Off** - the system will not turn on automatically on this day. Default.
+2. On – the system will turn on automatically on this day.
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+   |:---|:---|:---|:---|
+|   |   | No | Both |
+</details>
+
+<details><summary>Saturday</summary>
+One of 2 states to select:
+
+1. **Off** - the system will not turn on automatically on this day. Default.
+2. On – the system will turn on automatically on this day.
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+   |:---|:---|:---|:---|
+|   |   | No | Both |
+</details>
