@@ -71,3 +71,8 @@
 
 - [Power](bios/settings/thinkstation/power.md)
   - [Automatic Power On](bios/settings/thinkstation/autopoweron.md)
+
+
+
+
+- [Startup](bios/settings/thinkstation/startup.md)
