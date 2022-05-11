@@ -72,6 +72,8 @@
 - [Power](bios/settings/thinkstation/power.md)
   - [Automatic Power On](bios/settings/thinkstation/autopoweron.md)
 
+- [Security](bios/settings/thinkstation/security.md)
+
 - [Startup](bios/settings/thinkstation/startup.md)
   - [Boot Priority Order](bios/settings/thinkstation/bootpriorityorder.md)
 
