@@ -74,3 +74,5 @@
 
 - [Startup](bios/settings/thinkstation/startup.md)
   - [Boot Priority Order](bios/settings/thinkstation/bootpriorityorder.md)
+
+- [Exit](bios/settings/thinkstation/exit.md)
