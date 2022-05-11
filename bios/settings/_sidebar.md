@@ -45,7 +45,7 @@
 ---
 
 ***ThinkCentre***
-> *Coming Soon*
+- [Main](bios/settings/thinkcenter/main.md)
 
 ---
 
