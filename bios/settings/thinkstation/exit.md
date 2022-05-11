@@ -1,0 +1,2 @@
+# Exit #
+![](./img/exit.png)
