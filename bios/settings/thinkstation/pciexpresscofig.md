@@ -1,5 +1,5 @@
 # PCI Express Configuration #
-![](./img/pciexpresscofig.png) <!--- Need to add image --->
+![](./img/pciexpressconfig.png)
 
 <details><summary>ASPM Support</summary>
 One of 2 possible states for ASPM (Active State Power Management) Support:
