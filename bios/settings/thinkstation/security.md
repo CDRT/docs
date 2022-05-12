@@ -160,6 +160,47 @@ One of 2 states:
 </details>
 
 
+<details><summary>Computrace</summary>
+Group of settings for Absolute Persistence Module.
+Absolute(c) is a service designed to help track devices and provide recovery services in the event a device is lost or stolen.
+Once installed, the Absolute agent communicates with the Absolute Monitoring Center and programmed intervals to provide the tracking service.<br> 
+
+By installing the agent and activating the service, you consent to the transmission of information between your device and the Absolute Monitoring Center.<br>
+
+For customers who have purchased the Absolute service, the firmware Persistence Module checks for the presence and health of Absolute on boot, and restores the functionality in case of agent removal or tampering.
+Absolute and Persistence are registered trademarks of Absolute Software Corporation.
+
+![](./img/computrace.png)
+
+<details><summary>Absolute Persistence Version</summary>
+Shows Absolute Persistence Version. View only. 
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+|  |  |  | Both |
+</details>
+
+<details><summary>Absolute Persistence Module</summary>
+Use this setting to enable or disable the firmware Persistence Module of the optional service from Absolute.<br>
+
+One of 3 states:
+
+1.	**Enabled** – Absolute Persistence Module is enabled. Default. 
+2.	Disabled – Absolute Persistence Module is disabled.
+3.	Permanently Disabled – Absolute Persistence Module is permanently disabled. 
+
+Selecting this option requires additional confirmation, because if comutrace activation is permanently disabled, then you can never enable this setting again. <br>
+
+More information on the official site of [Absolute Software Corporation](https://www.absolute.com/partners/device-manufacturers/lenovo/).
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+|  |  |  | Both |
+</details>
+
+</details>
+
+
 <details><summary>Device Guard</summary>
 Device Guard enables PCs to be protected against malware by introducing a collective set of restrictions on a device across several technologies. <br>
 One of 2 states:
