@@ -73,6 +73,7 @@
   - [Automatic Power On](bios/settings/thinkstation/autopoweron.md)
 
 - [Security](bios/settings/thinkstation/security.md)
+  - [System Management Password Access Control](bios/settings/thinkstation/smpaccesscontrol.md)
 
 - [Startup](bios/settings/thinkstation/startup.md)
   - [Boot Priority Order](bios/settings/thinkstation/bootpriorityorder.md)
