@@ -48,7 +48,7 @@
 - [Main](bios/settings/thinkcenter/main.md)
 
 - [Devices](bios/settings/thinkcenter/devices.md)
-
+  - [Serial Port Setup](bios/settings/thinkcenter/serial_port_setup.md)
 ---
 
 ***ThinkStation***
