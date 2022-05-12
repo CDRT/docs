@@ -49,6 +49,7 @@
 
 - [Devices](bios/settings/thinkcenter/devices.md)
   - [Serial Port Setup](bios/settings/thinkcenter/serial_port_setup.md)
+  - [Parallel Port Setup (S only)](bios/settings/thinkcenter/parallel_port_setup.md)
 ---
 
 ***ThinkStation***
