@@ -55,12 +55,12 @@ Option to set, change or delete the Supervisor Password (SVP).<br>
 
 **Note**. To delete Supervisor Password, enter blank fields foe each new password line item.
 
-While enabling the following parameters are available TBD:
+While enabling the following parameters are available:
 1. [ Enter New Password ]
 2. [ Confirm New Password ]
 3. Show Password – [ On\Off ] statuses
 4. Keyboard layout <!-- TBD if this parameter is relevant for ThinkStation -->
-5. <Actions>:<br>
+5. < Actions >:<br>
     a. **Save** – default<br>
     b. Cancel
 
@@ -80,7 +80,7 @@ While enabling the following parameters are available TBD:
 2. [ Confirm New Password ]
 3. Show Password – [ On\Off ] statuses
 4. Keyboard layout: <!-- TBD if this parameter is relevant for ThinkStation -->
-5. <Actions>:<br>
+5. < Actions >:<br>
     a. **Save** – default<br>
     b. Cancel
 
@@ -100,7 +100,7 @@ While enabling the following parameters are available TBD:
 2. [ Confirm New Password ]
 3. Show Password – [ On\Off ] statuses
 4. Keyboard layout: <!-- TBD if this parameter is relevant for ThinkStation -->
-5. <Actions>:<br>
+5. < Actions >:<br>
     a. **Save** – default<br>
     b. Cancel
 
