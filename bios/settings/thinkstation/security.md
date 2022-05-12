@@ -59,10 +59,155 @@ While enabling the following parameters are available TBD:
 1. [ Enter New Password ]
 2. [ Confirm New Password ]
 3. Show Password – [ On\Off ] statuses
-4. Keyboard layout: XXXX – Possible values are the same as in Config Section | Keyboard\Mouse -> Keyboard Layout
+4. Keyboard layout <!-- TBD if this parameter is relevant for ThinkStation -->
 5. <Actions>:<br>
     a. **Save** – default<br>
     b. Cancel
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+|  |  |  | Both |
+</details>
+
+
+<details><summary>Set Power-On Password</summary>
+Option to set, change or delete the Power-On Password.
+
+**Note**. To delete Power-On Password, enter blank fields foe each new password line item.
+
+While enabling the following parameters are available TBD:
+1. [ Enter New Password ]
+2. [ Confirm New Password ]
+3. Show Password – [ On\Off ] statuses
+4. Keyboard layout: <!-- TBD if this parameter is relevant for ThinkStation -->
+5. <Actions>:<br>
+    a. **Save** – default<br>
+    b. Cancel
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+|  |  |  | Both |
+</details>
+
+
+<details><summary>Set System Management Password</summary>
+Option to set, change or delete the System Management Password (SMP).
+
+**Note**. To delete System Management Password, enter blank fields foe each new password line item.
+
+While enabling the following parameters are available TBD:
+1. [ Enter New Password ]
+2. [ Confirm New Password ]
+3. Show Password – [ On\Off ] statuses
+4. Keyboard layout: <!-- TBD if this parameter is relevant for ThinkStation -->
+5. <Actions>:<br>
+    a. **Save** – default<br>
+    b. Cancel
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+|  |  |  | Both |
+</details>
+
+
+<details><summary>Secure Roll Back Prevention</summary>
+One of 2 states:
+
+1. **Yes** – Flash BIOS to a previous or current version is not allowed. This is the default setting.
+2. No – Flash BIOS to a previous or current version is allowed.
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+|  |  |  | Both |
+</details>
+
+
+<details><summary>Windows UEFI Firmware Update</summary>
+One of 2 states:
+
+1. **Enabled** – allow windows UEFI firmware update. Default.
+2. Disabled – BIOS will skip windows UEFI firmware update.
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+|  |  |  | Both |
+</details>
+
+
+<details><summary>Smart USB Protection</summary>
+Smart USB Protection could block copying data from the computer to the USB storage device in windows.<br>
+One of 3 modes:
+
+1. **Disabled** – the user can copy data from and to USB storage device. Default. 
+2. Read Only – the user can copy data from USB storage device to the Computer but cannot copy data from the computer to USB storage device.
+3. No Access – the user cannot use USB storage device in windows.
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+|  |  |  | Both |
+</details>
+
+
+<details><summary>Secure wipe</summary>
+One of 2 states:
+
+1. Enabled – display “secure wipe” option on the F12 BIOS Startup Menu. Users can select this option to securely erase HDD data. 
+2. **Disabled** – hidden the “secure wipe” option on the F12 BIOS Startup Menu. Default. 
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+|  |  |  | Both |
+</details>
+
+
+<details><summary>Device Guard</summary>
+Device Guard enables PCs to be protected against malware by introducing a collective set of restrictions on a device across several technologies. <br>
+One of 2 states:
+
+1. Enabled – CPU Virtualization Technology to be enabled, IOMMU (Intel Input\Output Memory Management Unit), such as Intel VT-d, AMD-Vi to be enabled, TPM to be enabled. 
+Ethernet, USB, CD, and other boot methods to be disabled, only SATA device to be allowed.
+2. **Disabled** – Ethernet, USB, CD, and other boot methods to be enabled. Default. 
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+|  |  |  | Both |
+</details>
+
+
+<details><summary>Electronic Lock</summary>
+One of 2 states:
+
+1. Lock – lock the chassis to prevent unauthorized physical access to the system components. 
+2. **Unlock** – the chassis is unlocked. Default. 
+
+**Note**. The setting is effective on the next startup after BIOS setting is saved. For more information, please refer to [user manual](https://thinkstation-specs.com/thinkstation/p350-tower/). 
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+|  |  |  | Both |
+</details>
+
+
+<details><summary>Cover Tamper Detected</summary>
+Chassis Intrusion Detection is a utility that can tell whether someone has opened the case (intruded into the chassis).<br>
+One of 2 states:
+
+1. **Disabled** – detection is disabled. Default. 
+2. Enabled – detection is enabled.
+
+**Note**. If chassis tamper occurs, you can only enter setup to clear this error.
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+|  |  |  | Both |
+</details>
+
+
+<details><summary>Configuration Change Detection</summary>
+One of 2 states:
+
+1. Enabled – when a device is installed or remove, the system will notify the user during POST (Power On Self Test). This notice can only be cleared by entering BIOS setup, saving, and then exiting.
+2. **Disabled** – configuration change detection is disabled. Default.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
