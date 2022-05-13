@@ -77,6 +77,7 @@
   - [Hard Disk Password](bios/settings/thinkstation/harddiskpass.md) 
   - [Password Policies](bios/settings/thinkstation/passwordpolicies.md) 
   - [TCG Feature Setup](bios/settings/thinkstation/tcgfeaturesetup.md)
+  - [System Event Log](bios/settings/thinkstation/systemeventlog.md)
 
 - [Startup](bios/settings/thinkstation/startup.md)
   - [Boot Priority Order](bios/settings/thinkstation/bootpriorityorder.md)
