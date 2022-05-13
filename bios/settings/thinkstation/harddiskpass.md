@@ -62,3 +62,15 @@ One of 2 states:
 
 ### Security Erase HDD Data ###
 ![](./img/securityerasehdd.png)
+
+<details><summary>Erase [ DriveType ] [ N ] Data</summary>
+[ DriveType ] stands for the drive type.<br>
+[ N ] stands for the order number of a drive.<br>
+
+Erasing data is available per each drive individually.
+The action requires additional confirmation, because all hard drive data will be erased and the hard disk password will be deleted. 
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+|  |  |  | Both |
+</details>

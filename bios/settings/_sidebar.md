@@ -75,6 +75,7 @@
 - [Security](bios/settings/thinkstation/security.md)
   - [System Management Password Access Control](bios/settings/thinkstation/smpaccesscontrol.md)
   - [Hard Disk Password](bios/settings/thinkstation/harddiskpass.md) 
+  - [Password Policies](bios/settings/thinkstation/passwordpolicies.md) 
 
 - [Startup](bios/settings/thinkstation/startup.md)
   - [Boot Priority Order](bios/settings/thinkstation/bootpriorityorder.md)
