@@ -33,6 +33,8 @@ One of 4 possible options for Language:
 
 <details><summary>Setup Mode Select</summary>
 
+<!-- MODEL: S only-->
+
 One of 2 possible options for interface of Setup Mode:
 
 1.  **Text** - enables simple text interface with navigation and actions available only via keyboard. Default.
