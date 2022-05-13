@@ -1,4 +1,6 @@
-# Parallel Port Setup (S only) #
+# Parallel Port Setup #
+
+<!-- MODEL: S only -->
 
 ![](./img/thinkcenter_parallel_port_setup.png)
 <details><summary>Parallel Port Address</summary>
