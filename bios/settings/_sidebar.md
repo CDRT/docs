@@ -50,7 +50,9 @@
 - [Devices](bios/settings/thinkcenter/devices.md)
   - [Serial Port Setup](bios/settings/thinkcenter/serial_port_setup.md)
   - [Parallel Port Setup](bios/settings/thinkcenter/parallel_port_setup.md)
-  - [USB Setup ](bios/settings/thinkcenter/usb_setup.md)---
+  - [USB Setup ](bios/settings/thinkcenter/usb_setup.md)
+  - [ATA Drive Setup](bios/settings/thinkcenter/ata_drive_setup.md)
+
 
 ***ThinkStation***
 > *Coming Soon*
