@@ -61,4 +61,4 @@ One of 2 states:
 
 
 ### Security Erase HDD Data ###
-<!-- To Do  -->
+![](./img/securityerasehdd.png)
