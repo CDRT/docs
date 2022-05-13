@@ -78,6 +78,7 @@
   - [Password Policies](bios/settings/thinkstation/passwordpolicies.md) 
   - [TCG Feature Setup](bios/settings/thinkstation/tcgfeaturesetup.md)
   - [System Event Log](bios/settings/thinkstation/systemeventlog.md)
+  - [Secure Boot](bios/settings/thinkstation/secureboot.md)
 
 - [Startup](bios/settings/thinkstation/startup.md)
   - [Boot Priority Order](bios/settings/thinkstation/bootpriorityorder.md)
