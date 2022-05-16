@@ -54,6 +54,7 @@
   - [ATA Drive Setup](bios/settings/thinkcenter/ata_drive_setup.md)
   - [Video Setup](bios/settings/thinkcenter/video_setup.md)
   - [Audio Setup](bios/settings/thinkcenter/audio_setup.md)
+  - [Network Setup](bios/settings/thinkcenter/network_setup.md)
 
 ---
 
