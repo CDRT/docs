@@ -57,6 +57,7 @@
   - [Network Setup](bios/settings/thinkcenter/network_setup.md)
   - [PCI Express Configuration](bios/settings/thinkcenter/pci_express_configuration.md)
 
+- [Advanced](bios/settings/thinkcenter/advanced.md)
 ---
 
 ***ThinkStation***
