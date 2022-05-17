@@ -55,6 +55,7 @@
   - [Video Setup](bios/settings/thinkcenter/video_setup.md)
   - [Audio Setup](bios/settings/thinkcenter/audio_setup.md)
   - [Network Setup](bios/settings/thinkcenter/network_setup.md)
+  - [PCI Express Configuration](bios/settings/thinkcenter/pci_express_configuration.md)
 
 ---
 

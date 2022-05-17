@@ -16,6 +16,7 @@ One of 2 possible options for the onboard ethernet controller:
 <details><summary>Wireless LAN Access</summary>
 
 Controls access to wifi.
+
 One of 2 possible options for wireless LAN (wifi):
 
 1.  **Enabled** - enables wireless LAN. Default.
@@ -43,24 +44,29 @@ One of 2 possible options for PXE support:
 </details>
 
 <details><summary>Wireless Auto Disconnection</summary>
+
 Disable wireless LAN when onboard Ethernet is connected.
+
 One of 2 possible options for auto disconnection:
 
 1.  **Disabled** - enables auto disconnection. Default.
 2.  Enable - enables auto disconnection.
+
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | WirelessAutoDisconnection | setting_values | yes_no | amd_intel |
 -->
+
 </details>
+
 
 <details><summary>PXE IPV4 Network Stack</summary>
 
 One of 2 possible options for IPV4 PXE:
 
-1.  **Disabled** - enables IPV4 PXE. Default.
-2.  Enabled - enables IPV4 PXE.
+1. **Disabled** - enables IPV4 PXE. Default.
+2. Enabled - enables IPV4 PXE.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -69,6 +75,7 @@ One of 2 possible options for IPV4 PXE:
 -->
 
 </details>
+
 
 <details><summary>PXE IPV6 Network Stack</summary>
 
@@ -93,6 +100,7 @@ One of 2 possible options for custom HTTPS boot:
 2.  Enabled - enables custom HTTPS boot.
 
 > **Note** If enabled, `HTTPs Boot Configuration` and `Tls Auth Configuration` will be shown.
+
 </details>
 
 <details><summary>Lenovo Cloud Services</summary>
@@ -164,6 +172,7 @@ Server CA configuration.
 ![](./img/thinkcenter_wifi_configuration.png)
 
 <details><summary>Automatic Connection Support</summary>
+
 Automatically connect to WiFi on boot.
 
 One of 2 possible options for Automatic connection:
@@ -177,7 +186,9 @@ One of 2 possible options for Automatic connection:
 </details>
 
 <details><summary>Wi-Fi Scan</summary>
+
 Press `Enter` to scan the available connections.</details>
 
 <details><summary>Scanned List</summary>
+List of available connections.
 </details>
