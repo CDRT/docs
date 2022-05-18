@@ -58,7 +58,7 @@
   - [PCI Express Configuration](bios/settings/thinkcenter/pci_express_configuration.md)
 
 - [Advanced](bios/settings/thinkcenter/advanced.md)
----
+  - [CPU Setup](bios/settings/thinkcenter/cpu_setup.md)
 
 ***ThinkStation***
 > *Coming Soon*
