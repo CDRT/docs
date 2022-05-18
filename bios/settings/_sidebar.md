@@ -61,5 +61,7 @@
   - [CPU Setup](bios/settings/thinkcenter/cpu_setup.md)
   - [Intel(R) Manageability](bios/settings/thinkcenter/intel_r_manageability.md)
 
+- [Power](bios/settings/thinkcenter/power.md)
+
 ***ThinkStation***
 > *Coming Soon*
