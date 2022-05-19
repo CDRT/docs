@@ -62,6 +62,6 @@
   - [Intel(R) Manageability](bios/settings/thinkcenter/intel_r_manageability.md)
 
 - [Power](bios/settings/thinkcenter/power.md)
-
+  - [Automatic Power On](bios/settings/thinkcenter/automatic_power_on.md)
 ***ThinkStation***
 > *Coming Soon*
