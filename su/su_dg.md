@@ -1159,7 +1159,7 @@ Optional. Specifies by number a filter for the package types to be applied. Mult
 
 **-noreboot**
 
-Optional. In normal operation, if System Update installs one or more Reboot Type 3 (Requires reboot) updates, it will initiate a reboot after the last installation completes. To suppress this reboot simply specify this parameter. This parameter only has an effect for Reboot Type 3 packages. For Reboot Type 1 and4, the reboot or shutdown is orchestrated by the update itself and is not under the control of System Update. For Reboot Type 5 packages a reboot must be executed immediately after update and is forced by System Update.
+Optional. In normal operation, if System Update installs one or more Reboot Type 3 (Requires reboot) updates, it will initiate a reboot after the last installation completes. To suppress this reboot simply specify this parameter. This parameter only has an effect for Reboot Type 3 packages. For Reboot Type 1 and 4, the reboot or shutdown is orchestrated by the update itself and is not under the control of System Update. For Reboot Type 5 packages a reboot must be executed immediately after update and is forced by System Update.
 
 **-noicon**
 
@@ -1297,7 +1297,6 @@ Optional. Causes Thin Installer to store update history data in a WMI table:
 **-log**
 
 Optional. Specifies fully qualified path for storing the log file
-
 
 ### 5.2.1 Thin Installer Return Codes
 
