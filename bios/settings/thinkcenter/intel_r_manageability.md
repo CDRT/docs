@@ -3,9 +3,7 @@
 ![](./img/thinkcenter_intel_r_manageability.png)
 
 <details><summary>Intel(R) Manageability Control</summary>
-
 <!-- TODO: feature confirmation-->
-
 One of 2 possible options for Intel(R) Manageability Control:
 
 1.  **Enabled** - enables Intel(R) Manageability Control. Default.
@@ -25,7 +23,6 @@ enter ME-BX or BIOS to re-enable Intel(R) Manageability.</strong></i>.
 
 
 <details><summary>Intel(R) Manageability Reset</summary>
-
 Return Intel(R) Manageability settings to
 detault configuration.
 One of 2 possible options for Intel(R) Manageability Reset:
@@ -38,7 +35,6 @@ One of 2 possible options for Intel(R) Manageability Reset:
 </details>
 
 <details><summary>ME Firmware Version</summary>
-
 Displays the firmware version.
 
 <!-- TODO: styles-->
@@ -52,8 +48,6 @@ Displays the firmware version.
 </details>
 
 <details><summary>USB Provisioning</summary>
-
-description.
 One of 2 possible options for USB provisioning:
 
 1.  **Enabled** - enables USB provisioning. Default.

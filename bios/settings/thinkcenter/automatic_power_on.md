@@ -3,7 +3,6 @@
 ![](./img/thinkcenter_automatic_power_on.png)
 
 <details><summary>Wake on LAN</summary>
-
 Controls the wake up event from onboard LAN and PCI LAN.
 One of 2 possible options for Wake on LAN:
 
@@ -19,7 +18,6 @@ One of 2 possible options for Wake on LAN:
 </details>
 
 <details><summary>Wake from Serial Port Ring</summary>
-
 Select whether to enable Wake from Serial Port Ring., and/or which Startup Sequence to use after a serial port wake event.
 One of 3 possible options for Wake from Serial Port Ring:
 
@@ -36,7 +34,6 @@ One of 3 possible options for Wake from Serial Port Ring:
 
 
 <details><summary>Wake Up on Alarm</summary>
-
 Options to turn on your system on a specific day of the month, specific day of the week, or daily at a given time. A single wake up event, or series of alarm events, can also be defined.
 One of 5 possible options for Wake Up on Alarm:
 
@@ -54,12 +51,11 @@ One of 5 possible options for Wake Up on Alarm:
 
 > <i> Selecting `User Defined` enables the `User Defined Alarm` settings.
 >
-> Values in these fields may be overwritten by tne operating system.</i>
+> Values in these fields may be overwritten by the operating system.</i>
 
 </details>
 
 <details><summary>Startup Sequence</summary>
-
 Select the startup sequence after a Wake Up on Alarm event.
 One of 2 possible options for startup sequence:
 
@@ -136,7 +132,6 @@ Select the day(s) of the week when the system is to wake up.
 </details>
 
 <details><summary>User Defined Alarm Time (HH : MM : SS)</summary>
-
 Specify the time when the system is to wake up.
 
 <!-- SIMULATOR DOES NOT SUPPORT -->
