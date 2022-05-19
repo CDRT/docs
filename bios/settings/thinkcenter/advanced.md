@@ -3,7 +3,6 @@
 ![](./img/thinkcenter_advanced.png)
 
 <details><summary>Intel(R) SIPP Support</summary>
-
 Intel(R) Stable Image Platform program aligns and stabilizes
 key Intel platform components, enabling a predictable transition
 from one technology generation to the next.
@@ -22,7 +21,6 @@ One of 2 possible options for SIPP:
 </details>
 
 <details><summary>Dust Shield Alert</summary>
-
 The user is reminded to clean the Dust Shield.
 One of 2 possible options for the Dust Shield reminder:
 
@@ -40,7 +38,6 @@ One of 2 possible options for the Dust Shield reminder:
 
 
 <details><summary>Intel (R) DPTF Support</summary>
-
 Intel(R) Dynamic Platform and Thermal Framework.
 
 One of 2 possible options for DPTF:
@@ -53,7 +50,6 @@ One of 2 possible options for DPTF:
 </details>
 
 <details><summary>Windows Modern Standby</summary>
-
 [Windows Modern Standby](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/modern-standby) is the replacement for the legacy Sleep state.
 
 One of 2 possible options for Windows Modern Standby:
@@ -66,7 +62,6 @@ One of 2 possible options for Windows Modern Standby:
 </details>
 
 <details><summary>BIOS Self-healing</summary>
-
 One of 2 possible options for BIOS Self-healing:
 
 1.  **Enabled** - enables BIOS Self-healing. Default.

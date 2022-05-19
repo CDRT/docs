@@ -27,7 +27,7 @@ One of 2 possible options for EPP standard:
 2.  1.7 - enables version 1.7.
 
 <!-- TODO: add WMI -->
-> **Note** Version 1.7 is supported as an optional setting for backward compatibility with older devices.
+**Note**: Version 1.7 is supported as an optional setting for backward compatibility with older devices.
 </details>
 
 <details><summary>Parallel Port IRQ</summary>
