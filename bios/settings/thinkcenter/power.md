@@ -3,8 +3,7 @@
 ![](./img/thinkcenter_power.png)
 
 <details><summary>After Power Loss</summary>
-
-Whetner the system Will stay on after AC
+Whether the system will stay on after AC
 power is removed and then restored.
 
 One of 3 possible options:
@@ -24,7 +23,6 @@ One of 3 possible options:
 </details>
 
 <details><summary>Enhanced Power Saving Mode</summary>
-
 The total power consumption is lower during power off.
 One of 2 possible options for Enhanced Power Saving Mode:
 
@@ -37,7 +35,7 @@ One of 2 possible options for Enhanced Power Saving Mode:
 | EnhancedPowerSavingMode | setting_values | yes_no | amd_intel |
 -->
 
-> <i> Note: In enhanced power saving mode, only the `Wake up on Alarm` function is supported. Other wake up functions are not. System Will not enter `Enhanced Power Saving Mode` if Intel ME is required to be active in Sx states and host is in AC mode. </i>.
+**Note**: In enhanced power saving mode, only the `Wake up on Alarm` function is supported. Other wake up functions are not. System Will not enter `Enhanced Power Saving Mode` if Intel ME is required to be active in Sx states and host is in AC mode.
 
 </details>
 
@@ -60,9 +58,8 @@ One of 2 possible options for Smart Power On:
 
 ### Intelligent Cooling  ###
 
-<details><summary>Performance Mode</summary>
 
-description.
+<details><summary>Performance Mode</summary>
 One of 3 possible options for cooling performance:
 
 1. **Best Performance** - The system will run at best system performance with normal acoustic level. Default.

@@ -3,7 +3,6 @@
 ![](./img/thinkcenter_cpu_setup.png)
 
 <details><summary>EIST Support</summary>
-
 EIST (Enhanced Intel SpeedStep(R) Technology) dynamically adjusts processor voltage and core frequency, to decrease average power consumption and heat production.
 
 One of 2 possible options for EIST support:
@@ -20,7 +19,6 @@ One of 2 possible options for EIST support:
 </details>
 
 <details><summary>Intel(R) Hyper-Threading Technology</summary>
-
 Intel(R) Hyper-Threading Technology allows multiple logical processors within the same processor core to share execution resources and cache hierarchy.
 
 One of 2 possible options for feature:
@@ -37,7 +35,6 @@ One of 2 possible options for feature:
 </details>
 
 <details><summary>Core Multi-Processing</summary>
-
 Whether all CPU (multi-)cores are available to the OS, or only one core.
 
 One of 2 possible options for multi-processing:
@@ -54,7 +51,6 @@ One of 2 possible options for multi-processing:
 </details>
 
 <details><summary>Intel(R) Virtualization Technology</summary>
-
 Intel(R) Virtualization Tecnnology multiple applications and operating systems to run simultaneously in independent partitions.
 
 One of 2 possible options for Intel(R) Virtualization Technology:
@@ -71,7 +67,6 @@ One of 2 possible options for Intel(R) Virtualization Technology:
 </details>
 
 <details><summary>VT-d Feature</summary>
-
 VT-d provides improved isolation of I/O
 resources for greater reliability, security, and availability.
 One of 2 possible options for VT-d:
@@ -88,7 +83,6 @@ One of 2 possible options for VT-d:
 </details>
 
 <details><summary>TxT</summary>
-
 Trusted Execution Technology (TxT) provides hardware-based mechanisms to protect against software-based attacks, and protect data stored or created on the client.
 
 One of 2 possible options for TxT:
@@ -105,7 +99,6 @@ One of 2 possible options for TxT:
 </details>
 
 <details><summary>CIE Support</summary>
-
 Enhanced C1 state (C1E) is where the processor is not executing instructions (but can return to an executing state immediately) to reduce power consumption.
 
 One of 2 possible options for CIE Support:
@@ -122,8 +115,7 @@ One of 2 possible options for CIE Support:
 </details>
 
 <details><summary>C State Support</summary>
-
-"Select supported CPU power management status to minimize the idle power consumption of processor.
+Select supported CPU power management status to minimize the idle power consumption of processor.
 
 One of 6 possible options for C states:
 
@@ -143,7 +135,6 @@ One of 6 possible options for C states:
 </details>
 
 <details><summary>Turbo Mode</summary>
-
 Turbo Mode allows the processor to assess its own thermals, current, and power, to calculate a dynamic upper limit on its frequency benefit.
 
 One of 2 possible options for Turbo Mode:
@@ -160,7 +151,6 @@ One of 2 possible options for Turbo Mode:
 </details>
 
 <details><summary>CPU ID</summary>
-
 Displays the processor ID.
 
 <!-- TODO: styles -->
@@ -168,7 +158,6 @@ Displays the processor ID.
 </details>
 
 <details><summary>Microcode Revision (MM/DD/YYYY)</summary>
-
 CPU microcode revision.
 
 <!-- TODO: styles -->

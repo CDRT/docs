@@ -50,7 +50,7 @@ One of 2 possible options for DPTF:
 </details>
 
 <details><summary>Windows Modern Standby</summary>
-[Windows Modern Standby](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/modern-standby) is the replacement for the legacy Sleep state.
+<a href="https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/modern-standby">Windows Modern Standby</a> is the replacement for the legacy Sleep state.
 
 One of 2 possible options for Windows Modern Standby:
 
