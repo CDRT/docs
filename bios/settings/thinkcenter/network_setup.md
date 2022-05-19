@@ -3,7 +3,6 @@
 ![](./img/thinkcenter_network_setup.png)
 
 <details><summary>Onboard Ethernet Controller</summary>
-
 One of 2 possible options for the onboard ethernet controller:
 
 1.  **Enabled** - enables the onboard ethernet controller. Default.
@@ -14,7 +13,6 @@ One of 2 possible options for the onboard ethernet controller:
 </details>
 
 <details><summary>Wireless LAN Access</summary>
-
 Controls access to wifi.
 
 One of 2 possible options for wireless LAN (wifi):
@@ -27,7 +25,6 @@ One of 2 possible options for wireless LAN (wifi):
 </details>
 
 <details><summary>Wireless LAN PXE boot</summary>
-
 Select whether to load Wireless LAN UNDI Driver to support wireless LAN PXE boot or https boot.
 
 One of 2 possible options for PXE support:
@@ -44,7 +41,6 @@ One of 2 possible options for PXE support:
 </details>
 
 <details><summary>Wireless Auto Disconnection</summary>
-
 Disable wireless LAN when onboard Ethernet is connected.
 
 One of 2 possible options for auto disconnection:
@@ -62,7 +58,6 @@ One of 2 possible options for auto disconnection:
 
 
 <details><summary>PXE IPV4 Network Stack</summary>
-
 One of 2 possible options for IPV4 PXE:
 
 1. **Disabled** - enables IPV4 PXE. Default.
@@ -78,7 +73,6 @@ One of 2 possible options for IPV4 PXE:
 
 
 <details><summary>PXE IPV6 Network Stack</summary>
-
 One of 2 possible options for IPV6 PXE:
 
 1.  **Disabled** - enables IPV6 PXE. Default.
@@ -99,7 +93,7 @@ One of 2 possible options for custom HTTPS boot:
 1.  **Disabled** - disables custom HTTPS boot. Default.
 2.  Enabled - enables custom HTTPS boot.
 
-> **Note** If enabled, `HTTPs Boot Configuration` and `Tls Auth Configuration` will be shown.
+**Note**: If enabled, `HTTPs Boot Configuration` and `Tls Auth Configuration` will be shown.
 
 </details>
 
@@ -136,7 +130,6 @@ Configure HTTPs Boot parameters.
 </details>
 
 <details><summary>Internet Protocol</summary>
-
 One of 2 possible options for IP version:
 
 1.  **Ipv4** - enables IPV4. Default.
@@ -172,7 +165,6 @@ Server CA configuration.
 ![](./img/thinkcenter_wifi_configuration.png)
 
 <details><summary>Automatic Connection Support</summary>
-
 Automatically connect to WiFi on boot.
 
 One of 2 possible options for Automatic connection:
@@ -187,7 +179,8 @@ One of 2 possible options for Automatic connection:
 
 <details><summary>Wi-Fi Scan</summary>
 
-Press `Enter` to scan the available connections.</details>
+> <i>Press `Enter` to scan the available connections.</i>
+</details>
 
 <details><summary>Scanned List</summary>
 List of available connections.

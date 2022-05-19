@@ -19,7 +19,8 @@ Displays system information, including:
 
 ![](./img/thinkcenter_system_time_and_date.png)
 
-Shows the current system time and date. Can be changed.</details>
+Shows the current system time and date. Can be changed.
+</details>
 
 <details><summary>Language</summary>
 One of 4 possible options for Language:
@@ -28,13 +29,10 @@ One of 4 possible options for Language:
 2.	French
 3.  Russian
 4.  Chinese (Mandarin)
-
 </details>
 
 <details><summary>Setup Mode Select</summary>
-
 <!-- MODEL: S only-->
-
 One of 2 possible options for interface of Setup Mode:
 
 1.  **Text** - enables simple text interface with navigation and actions available only via keyboard. Default.

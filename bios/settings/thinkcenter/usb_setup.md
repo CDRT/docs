@@ -29,7 +29,7 @@ One of 2 possible options for the front USB ports (numbered):
 1.  **Enabled** - enables front USB ports. Default.
 2.  Disabled - disables front USB ports, numbered.
 
-> **Note**. When `Disabled` is selected, settings for all front USB ports will not be shown.
+**Note**: When `Disabled` is selected, settings for all front USB ports will not be shown.
 </details>
 
 <details><summary>USB Port #</summary>
@@ -46,7 +46,7 @@ One of 2 possible options for the rear USB ports (numbered):
 
 1.  **Enabled** - enables rear USB ports. Default.
 2.  Disabled - disables rear USB ports, numbered.
-> **Note**. When `Disabled` is selected, settings for all rear USB ports will not be shown.
+**Note**: When `Disabled` is selected, settings for all rear USB ports will not be shown.
 
 </details>
 
