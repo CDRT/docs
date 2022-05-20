@@ -128,11 +128,11 @@ One of 2 possible options for Win VDI Boot:
 
 Configure HTTPs Boot parameters.
 
-> <i>Only one URL can be entered at a time. The configuration will take effect after a system reboot.</i>
+**Note:** Only one URL can be entered at a time. The configuration will take effect after a system reboot.
 
 <details><summary>Input the description</summary>
 
-> <i>Press `Enter` to input a label for new created URL and it will be displayed in the boot sequence menu.</i>
+**Note:** Press `Enter` to input a label for new created URL and it will be displayed in the boot sequence menu.
 </details>
 
 <details><summary>Internet Protocol</summary>
@@ -148,14 +148,14 @@ One of 2 possible options for IP version:
 <details><summary>Boot URL</summary>
 Create a new boot option based on a HTTPS URL.
 
-> <i> Use the [TLS Auth configuration] to import the CA to
-support the HTTPs boot </i>
+**Note:**  Use the [TLS Auth configuration] to import the CA to
+support the HTTPs boot 
 
 </details>
 
 <details><summary>Delete HTTPs Boot Option from List</summary>
 
-> <i> Select and press `Enter` to remove an EFI HTTPs boot option.</i>.
+**Note:**  Select and press `Enter` to remove an EFI HTTPs boot option..
 </details>
 
 
@@ -163,7 +163,7 @@ support the HTTPs boot </i>
 
 Server CA configuration.
 
-> <i>Press `Enter` to select TLS auto configuration for HTTPS boot.</i>
+**Note:** Press `Enter` to select TLS auto configuration for HTTPS boot.
 
 
 ### WiFi Configuration ###

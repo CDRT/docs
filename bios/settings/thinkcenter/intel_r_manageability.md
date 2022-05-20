@@ -13,13 +13,13 @@ One of 2 possible options for Intel(R) Manageability Control:
 
 <!-- TODO: add WMI -->
 
-> <i> WARNING: If you set Intel(R) Manageability Control to "Disabled"
->
-> 1. If system is provisioned, MEBx Will be unprovisioned
+**WARNING:** If you set Intel(R) Manageability Control to "Disabled":
+
+ 1. If system is provisioned, MEBx Will be unprovisioned
 first. <strong>When the unprovsioning prompt appears, select YES.</strong>
->
-> 2. Manageability functions will be disabled. <strong>You can
-enter ME-BX or BIOS to re-enable Intel(R) Manageability.</strong></i>.
+
+ 2. Manageability functions will be disabled. <strong>You can
+enter ME-BX or BIOS to re-enable Intel(R) Manageability.</strong>.
 
 </details>
 
@@ -33,7 +33,7 @@ One of 2 possible options for Intel(R) Manageability Reset:
 1. **Enabled** - enables Intel(R) Manageability Reset. Default.
 2. Disabled - disables Intel(R) Manageability Reset.
 
-> <i> WARNING: the MEBx password will also be reset. </i>.
+**Note:**  WARNING: the MEBx password will also be reset. .
 
 </details>
 
@@ -53,7 +53,7 @@ Displays the firmware version.
 
 <details><summary>USB Provisioning</summary>
 
-description.
+
 One of 2 possible options for USB provisioning:
 
 1.  **Enabled** - enables USB provisioning. Default.

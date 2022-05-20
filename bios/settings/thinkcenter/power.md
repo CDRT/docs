@@ -19,7 +19,7 @@ One of 3 possible options:
 | AfterPowerLoss | setting_values | yes_no | amd_intel |
 -->
 
-> <i> Select "Power on" it you use a power strip to turn the system on.</i>
+**Note:**  Select "Power on" it you use a power strip to turn the system on.
 
 </details>
 
@@ -37,13 +37,13 @@ One of 2 possible options for Enhanced Power Saving Mode:
 | EnhancedPowerSavingMode | setting_values | yes_no | amd_intel |
 -->
 
-> <i> Note: In enhanced power saving mode, only the `Wake up on Alarm` function is supported. Other wake up functions are not. System Will not enter `Enhanced Power Saving Mode` if Intel ME is required to be active in Sx states and host is in AC mode. </i>.
+**Note:** In enhanced power saving mode, only the `Wake up on Alarm` function is supported. Other wake up functions are not. System Will not enter `Enhanced Power Saving Mode` if Intel ME is required to be active in Sx states and host is in AC mode. .
 
 </details>
 
 <details><summary>Smart Power On</summary>
 
-When enabled, the user can use `Alt+P` to power on if a USB keyboard is plugged in tne correct USB port.
+When enabled, the user can use `Alt+P` to power on if a USB keyboard is plugged in the correct USB port.
 
 One of 2 possible options for Smart Power On:
 
@@ -62,7 +62,7 @@ One of 2 possible options for Smart Power On:
 
 <details><summary>Performance Mode</summary>
 
-description.
+
 One of 3 possible options for cooling performance:
 
 1. **Best Performance** - The system will run at best system performance with normal acoustic level. Default.

@@ -52,9 +52,9 @@ One of 5 possible options for Wake Up on Alarm:
 | WakeUponAlarm | setting_values | yes_no | amd_intel |
 -->
 
-> <i> Selecting `User Defined` enables the `User Defined Alarm` settings.
->
-> Values in these fields may be overwritten by tne operating system.</i>
+**Note:**  Selecting `User Defined` enables the `User Defined Alarm` settings.
+
+**Note:**  Values in these fields may be overwritten by the operating system.
 
 </details>
 
