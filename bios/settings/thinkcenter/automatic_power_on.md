@@ -76,7 +76,7 @@ One of 2 possible options for startup sequence:
 
 ### Alarm Time (HH : MM : SS) ###
 
-Specify the time wnen the system iS to wake up.
+Specify the time when the system is to wake up.
 
 <!-- SIMULATOR DOES NOT SUPPORT -->
 

@@ -10,7 +10,7 @@ One of 3 possible options for primary video device:
 2.  IGD - enables IGD (Integrated Graphics Device).
 3.  PEG - enables PEG (PCIe Graphic).
 > **Note**
-> - If `Auto` is seleted, the system will select a graphics output, prioritizing PEG.
+> - If `Auto` is selected, the system will select a graphics output, prioritizing PEG.
 > - The "IGD" option will not appear if not supported by the CPU.
 <!-- TODO: add WMI -->
 </details>

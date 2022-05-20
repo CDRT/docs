@@ -55,7 +55,7 @@ One of 2 possible options for multi-processing:
 
 <details><summary>Intel(R) Virtualization Technology</summary>
 
-Intel(R) Virtualization Tecnnology multiple applications and operating systems to run simultaneously in independent partitions.
+Intel(R) Virtualization Technology multiple applications and operating systems to run simultaneously in independent partitions.
 
 One of 2 possible options for Intel(R) Virtualization Technology:
 

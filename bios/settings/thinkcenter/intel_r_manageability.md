@@ -15,7 +15,7 @@ One of 2 possible options for Intel(R) Manageability Control:
 
 **WARNING:** If you set Intel(R) Manageability Control to "Disabled":
 
- 1. If system is provisioned, MEBx Will be unprovisioned
+ 1. If system is provisioned, MEBx will be unprovisioned
 first. <strong>When the unprovsioning prompt appears, select YES.</strong>
 
  2. Manageability functions will be disabled. <strong>You can

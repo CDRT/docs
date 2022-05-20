@@ -4,7 +4,7 @@
 
 <details><summary>After Power Loss</summary>
 
-Whetner the system Will stay on after AC
+Whether the system will stay on after AC
 power is removed and then restored.
 
 One of 3 possible options:
@@ -37,7 +37,7 @@ One of 2 possible options for Enhanced Power Saving Mode:
 | EnhancedPowerSavingMode | setting_values | yes_no | amd_intel |
 -->
 
-**Note:** In enhanced power saving mode, only the `Wake up on Alarm` function is supported. Other wake up functions are not. System Will not enter `Enhanced Power Saving Mode` if Intel ME is required to be active in Sx states and host is in AC mode. .
+**Note:** In enhanced power saving mode, only the `Wake up on Alarm` function is supported. Other wake up functions are not. System will not enter `Enhanced Power Saving Mode` if Intel ME is required to be active in Sx states and host is in AC mode. .
 
 </details>
 
