@@ -50,7 +50,7 @@
 - [Devices](bios/settings/thinkcenter/devices.md)
   - [Serial Port Setup](bios/settings/thinkcenter/serial_port_setup.md)
   - [Parallel Port Setup](bios/settings/thinkcenter/parallel_port_setup.md)
-  - [USB Setup ](bios/settings/thinkcenter/usb_setup.md)
+  - [USB Setup](bios/settings/thinkcenter/usb_setup.md)
   - [ATA Drive Setup](bios/settings/thinkcenter/ata_drive_setup.md)
   - [Video Setup](bios/settings/thinkcenter/video_setup.md)
   - [Audio Setup](bios/settings/thinkcenter/audio_setup.md)
@@ -63,5 +63,12 @@
 
 - [Power](bios/settings/thinkcenter/power.md)
   - [Automatic Power On](bios/settings/thinkcenter/automatic_power_on.md)
+
+- [Security](bios/settings/thinkcenter/security.md)
+  - [Hard Disk Password](bios/settings/thinkcenter/hard_disk_password.md)
+  - [Password Policies](bios/settings/thinkcenter/password_policies.md)
+
+---
+
 ***ThinkStation***
 > *Coming Soon*
