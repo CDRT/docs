@@ -3,6 +3,9 @@
 
 ![](./img/thinkcenter_password_policy.png)
 
+ - [More information at Lenovo Support - types of password](https://support.lenovo.com/us/en/solutions/ht513634)
+ - [More information at Lenovo Support - password manager](https://support.lenovo.com/us/en/solutions/ht103666-introduction-to-password-manager-thinkpad-thinkcentre-thinkstation)
+
 <details><summary>Set Minimum Length</summary>
 
 One of 10 possible options for password length:
@@ -14,9 +17,9 @@ One of 10 possible options for password length:
 **NOTE:** If no minimum is set, passwords may be 1 to 128 characters long.
 
 **NOTE:** If a minimum is set, it applies to:
- - Supervisor Password
- - System Management password
- - Power-on and Hard Disk passwords
+ - Supervisor Password (SVP)
+ - System Management Password (SMP)
+ - Power-on (POP) and Hard Disk Passwords 
 
 
 **NOTE:** If both `Set Minimum Length` and `Set Strong Password` are enabled, the longest value for minimum length applies.
@@ -41,6 +44,8 @@ One of 2 possible options for required password strength:
 |:---|:---|:---|:---|
 | SetStrongPassword | setting_values | yes_no | amd_intel |
 -->
+
+
 
 </details>
 
@@ -182,5 +187,7 @@ One of 2 possible options for showing the POST 0199 error and password prompt:
 |:---|:---|:---|:---|
 | PasswordCountExceededError | setting_values | yes_no | amd_intel |
 -->
+
+ - [More information at Lenovo Support](https://support.lenovo.com/lt/en/solutions/ht052093-error-0199-system-security-security-password-retry-count-exceeded-thinkcentre-m90-m90p-thinkserver-ts200v-thinkstation-e20)
 
 </details>
