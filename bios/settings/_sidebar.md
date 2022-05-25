@@ -70,6 +70,8 @@
 
 - [Startup](bios/settings/thinkcenter/startup.md)
 
+- [Exit](bios/settings/thinkcenter/exit.md)
+
 ---
 
 ***ThinkStation***
