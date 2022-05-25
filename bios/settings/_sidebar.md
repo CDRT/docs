@@ -68,6 +68,8 @@
   - [Hard Disk Password](bios/settings/thinkcenter/hard_disk_password.md)
   - [Password Policies](bios/settings/thinkcenter/password_policies.md)
 
+- [Startup](bios/settings/thinkcenter/startup.md)
+
 ---
 
 ***ThinkStation***
