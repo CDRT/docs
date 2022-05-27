@@ -69,6 +69,7 @@
   - [Password Policies](bios/settings/thinkcenter/password_policies.md)
   - [TCG Feature Setup](bios/settings/thinkcenter/tcg_feature_setup.md)
   - [System Event Log](bios/settings/thinkcenter/system_event_log.md)
+  - [Secure Boot](bios/settings/thinkcenter/secure_boot.md)
 
 - [Startup](bios/settings/thinkcenter/startup.md)
 
