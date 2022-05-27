@@ -1013,7 +1013,7 @@ Troubleshooting Thin Installer issues will generally follow the same path as tro
 
 The log file for Thin Installer will be placed in a &quot;logs&quot; folder within the working directory of Thin Installer unless a different path is specified by the -log command line parameter or in the \<LogPath\> tag within the ThinInstaller.exe.configuration XML file. The default file name of the log file will be similar to &quot;Update\_log\_190328112207.txt&quot; with a timestamp portion to make each log file name unique.
 
-The same search strings provided above for System Update can be used to traverse the Thin Installer log file. Likewise the &quot;-exportowmi&quot; parameter can also be used to obtain applicability status data for updates processed by Thin Installer. In addition to this information source, Thin Installer also can generate the **Update\_ApplicabilityRulesTrace.txt** by either specifying the &quot;-debug&quot; parameter or specifying YES for \<DebugEnable\> in the ThinInstaller.exe.configuration file.
+The same search strings provided above for System Update can be used to traverse the Thin Installer log file. Likewise the &quot;-exportowmi&quot; parameter can also be used to obtain applicability status data for updates processed by Thin Installer. In addition to this information source, Thin Installer can also generate the **Update\_ApplicabilityRulesTrace.txt** by either specifying the &quot;-debug&quot; parameter; specifying the **SCAN** action; or specifying YES for \<DebugEnable\> in the ThinInstaller.exe.configuration file.
 
 In the Update\_ApplicabilityRulesTrace.txt file, installed updates will be shown with &quot;**-DetectInstall(True)**&quot; and applicable updates will be shown with &quot;**-DetectInstall(False)**&quot; and &quot;**-Dependencies(True)**&quot;. Updates that are not applicable to the target system will be shown with &quot;**-DetectInstall(False)**&quot; and &quot;**-Dependencies(False)**&quot; as shown in the example below:
 
@@ -1159,7 +1159,7 @@ Optional. Specifies by number a filter for the package types to be applied. Mult
 
 **-noreboot**
 
-Optional. In normal operation, if System Update installs one or more Reboot Type 3 (Requires reboot) updates, it will initiate a reboot after the last installation completes. To suppress this reboot simply specify this parameter. This parameter only has an effect for Reboot Type 3 packages. For Reboot Type 1 and4, the reboot or shutdown is orchestrated by the update itself and is not under the control of System Update. For Reboot Type 5 packages a reboot must be executed immediately after update and is forced by System Update.
+Optional. In normal operation, if System Update installs one or more Reboot Type 3 (Requires reboot) updates, it will initiate a reboot after the last installation completes. To suppress this reboot simply specify this parameter. This parameter only has an effect for Reboot Type 3 packages. For Reboot Type 1 and 4, the reboot or shutdown is orchestrated by the update itself and is not under the control of System Update. For Reboot Type 5 packages a reboot must be executed immediately after update and is forced by System Update.
 
 **-noicon**
 
@@ -1219,9 +1219,9 @@ Required. Specifies the updates to search for based on severity. Possible values
 Required. Specifies the action to take with the updates found. It can only specify one action; cannot specify combination of actions. Possible values are:
 
    - **DOWNLOAD** : Applicable updates for the system are automatically downloaded only; updates can be filtered using -includerebootpackages and -packagetypes parameters
-   - **LIST** : User is notified with a list of available updates to choose from
+   - **LIST** : User is notified with a list of available updates to choose from; as of version 1.3.0041 the updates can be filtered using -includerebootpackages and -packagetypes parameters
    - **INSTALL** : Updates are downloaded and installed; updates can be filtered using -includerebootpackages and -packagetypes parameters
-   - **SCAN** : Assesses applicability of updates available in the repository; generates an Update\_ApplicabilityRulesTrace.txt file automatically; updates **cannot** be filtered using -includerebootpackages and -packagetypes parameters
+   - **SCAN** : Assesses applicability of updates available in the repository; generates an Update\_ApplicabilityRulesTrace.txt file automatically; as of version 1.3.0041 updates can be filtered using -includerebootpackages and -packagetypes parameters
    - **INSTALLDEFERRED** : install the updates which were previously downloaded using the DOWNLOAD parameter; any filtering parameters on the command line are **ignored**
 
 ?>Note: The return codes used by Thin Installer will vary by the action performed. See section 5.2.1 Thin Installer Return Codes
@@ -1297,7 +1297,6 @@ Optional. Causes Thin Installer to store update history data in a WMI table:
 **-log**
 
 Optional. Specifies fully qualified path for storing the log file
-
 
 ### 5.2.1 Thin Installer Return Codes
 
