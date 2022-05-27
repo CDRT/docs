@@ -68,6 +68,7 @@
   - [Hard Disk Password](bios/settings/thinkcenter/hard_disk_password.md)
   - [Password Policies](bios/settings/thinkcenter/password_policies.md)
   - [TCG Feature Setup](bios/settings/thinkcenter/tcg_feature_setup.md)
+  - [System Event Log](bios/settings/thinkcenter/system_event_log.md)
 
 - [Startup](bios/settings/thinkcenter/startup.md)
 
