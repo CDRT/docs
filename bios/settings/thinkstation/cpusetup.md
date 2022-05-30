@@ -76,7 +76,7 @@ Additional information is available here: [VT-d Feature](https://www.intel.com/c
 <details><summary>TxT</summary>
 One of 2 possible states:
 
-1. Enabled –Trusted Execution Technology (TxT) provides hardware-based mechanisms that help protect against software-based attacks and protects the confidentiality and integrity of all data stored or creted on the client PC.
+1. Enabled –Trusted Execution Technology (TxT) provides hardware-based mechanisms that help protect against software-based attacks and protects the confidentiality and integrity of all data stored or created on the client PC.
 Note. If TxT is set to “Enabled”, then the Security Chip will be set to “Enabled” automatically.
 2. **Disabled** – TxT feature is turned off. Default.
 
