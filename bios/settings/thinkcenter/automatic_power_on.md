@@ -94,43 +94,57 @@ Alarm Day of Week.
 
 Select the day(s) of the week when the system is to wake up.
 
-<details><summary>Sunday</summary>One of 2 possible options for waking up this day:
+<details><summary>Sunday</summary>
+
+One of 2 possible options for waking up this day:
 
 1.  **Disabled** - disables wake-up. Default.
 2.  Enabled - enables wake-up.
 
 </details>
-<details><summary>Monday</summary>One of 2 possible options for waking up this day:
+<details><summary>Monday</summary>
+
+One of 2 possible options for waking up this day:
 
 1.  **Disabled** - disables wake-up. Default.
 2.  Enabled - enables wake-up.
 
 </details>
-<details><summary>Tuesday</summary>One of 2 possible options for waking up this day:
+<details><summary>Tuesday</summary>
+
+One of 2 possible options for waking up this day:
 
 1.  **Disabled** - disables wake-up. Default.
 2.  Enabled - enables wake-up.
 
 </details>
-<details><summary>Wednesday</summary>One of 2 possible options for waking up this day:
+<details><summary>Wednesday</summary>
+
+One of 2 possible options for waking up this day:
 
 1.  **Disabled** - disables wake-up. Default.
 2.  Enabled - enables wake-up.
 
 </details>
-<details><summary>Thursday</summary>One of 2 possible options for waking up this day:
+<details><summary>Thursday</summary>
+
+One of 2 possible options for waking up this day:
 
 1.  **Disabled** - disables wake-up. Default.
 2.  Enabled - enables wake-up.
 
 </details>
-<details><summary>Friday</summary>One of 2 possible options for waking up this day:
+<details><summary>Friday</summary>
+
+One of 2 possible options for waking up this day:
 
 1.  **Disabled** - disables wake-up. Default.
 2.  Enabled - enables wake-up.
 
 </details>
-<details><summary>Saturday</summary>One of 2 possible options for waking up this day:
+<details><summary>Saturday</summary>
+
+One of 2 possible options for waking up this day:
 
 1.  **Disabled** - disables wake-up. Default.
 2.  Enabled - enables wake-up.
