@@ -4,9 +4,7 @@
 
 <details><summary>Intel(R) SIPP Support</summary>
 
-Intel(R) Stable Image Platform program aligns and stabilizes
-key Intel platform components, enabling a predictable transition
-from one technology generation to the next.
+Intel(R) Stable Image Platform program aligns and stabilizes key Intel platform components, enabling a predictable transition from one technology generation to the next.
 
 One of 2 possible options for SIPP:
 
@@ -24,16 +22,18 @@ One of 2 possible options for SIPP:
 <details><summary>Dust Shield Alert</summary>
 
 The user is reminded to clean the Dust Shield.
+
 One of 2 possible options for the Dust Shield reminder:
 
 1.  **Enabled** - enables the Dust Shield alert. Default.
-2.  Disabled - disables the Dust Shield alert.
+1.  Disabled - disables the Dust Shield alert.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | DustShieldAlert | setting_values | yes_no | amd_intel |
 -->
+
 **Note:**  If the Dust Shield is not cleaned, it will lose its effectiveness and the machine may overheat.
 
 </details>
@@ -41,7 +41,7 @@ One of 2 possible options for the Dust Shield reminder:
 
 <details><summary>Intel (R) DPTF Support</summary>
 
-Intel(R) Dynamic Platform and Thermal Framework.
+Intel(R) Dynamic Platform and Thermal Framework (DPTF).
 
 One of 2 possible options for DPTF:
 
@@ -62,6 +62,8 @@ One of 2 possible options for Windows Modern Standby:
 2. Disabled - disables Windows Modern Standby.
 
 <!-- TODO: add WMI-->
+
+<!-- MODEL: NOT M70s-->
 
 </details>
 
