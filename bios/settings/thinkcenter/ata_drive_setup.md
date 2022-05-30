@@ -12,7 +12,9 @@ One of 2 possible options for enabling the SATA controller:
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | SATAController | setting_values | yes_no | amd_intel |
-> **Note**. If the "SATA Controller" is set to "Disabled", then “Configure SATA as” and "SATA Drive #" will be hidden.
+
+> **Note**: If the "SATA Controller" is set to "Disabled", then “Configure SATA as” and "SATA Drive #" will be hidden.
+
 </details>
 
 <details><summary>SATA DRIVE #</summary>
@@ -40,10 +42,11 @@ One of 2 possible options for the SATA drive controller:
 
 </details>
 
+<!-- SIMULATOR DOES NOT SUPPORT 
 <details><summary>Intel Rapid Storage Technology</summary>
 
-<!-- SIMULATOR DOES NOT SUPPORT -->
 </details>
+-->
 
 <details><summary>Hard Disk Pre-Delay</summary>
 This delay ensures the hard disk has initialized after power up, prior to being accessed, to avoid the disk hanging.
