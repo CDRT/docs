@@ -72,8 +72,8 @@ One of 2 possible options for Intel(R) Virtualization Technology:
 
 <details><summary>VT-d Feature</summary>
 
-VT-d provides improved isolation of I/O
-resources for greater reliability, security, and availability.
+VT-d provides improved isolation of I/O resources for greater reliability, security, and availability.
+
 One of 2 possible options for VT-d:
 
 1.  **Enabled** - enables VT-d. Default.
@@ -104,14 +104,14 @@ One of 2 possible options for TxT:
 
 </details>
 
-<details><summary>CIE Support</summary>
+<details><summary>C1E Support</summary>
 
-Enhanced C1 state (C1E) is where the processor is not executing instructions (but can return to an executing state immediately) to reduce power consumption.
+Enhanced C1 state (C1E) is where the processor is not executing instructions (but can return to an executing state immediately), to reduce power consumption.
 
-One of 2 possible options for CIE Support:
+One of 2 possible options for C1E Support:
 
-1.  **Enabled** - enables CIE Support. Default.
-2.  Disabled - disables CIE Support.
+1.  **Enabled** - enables C1E Support. Default.
+2.  Disabled - disables C1E Support.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -123,7 +123,7 @@ One of 2 possible options for CIE Support:
 
 <details><summary>C State Support</summary>
 
-"Select supported CPU power management status to minimize the idle power consumption of processor.
+Select supported CPU power management status to minimize the idle power consumption of processor.
 
 One of 6 possible options for C states:
 
@@ -132,7 +132,7 @@ One of 6 possible options for C states:
 1. C1C3C6 - C1,C3 and C6
 1. C1C3C6C7 - C1,C3,C6 and C7
 1. C1C3C6C7C8 - C1,C3,C6,C7 and C8
-1. C1C3C6C7C8C10 - C1,C3,C6,C7.C8 and C10
+1. C1C3C6C7C8C10 - C1,C3,C6,C7,C8 and C10
 
 <!--
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
