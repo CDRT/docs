@@ -5,6 +5,7 @@
 <details><summary>Wake on LAN</summary>
 
 Controls the wake up event from onboard LAN and PCI LAN.
+
 One of 2 possible options for Wake on LAN:
 
 1.  **Enabled** - enables Wake on LAN. Default.
@@ -20,7 +21,8 @@ One of 2 possible options for Wake on LAN:
 
 <details><summary>Wake from Serial Port Ring</summary>
 
-Select whether to enable Wake from Serial Port Ring., and/or which Startup Sequence to use after a serial port wake event.
+Select whether to enable Wake from Serial Port Ring., and/or which Startup Sequence to use after a serial port wake up event.
+
 One of 3 possible options for Wake from Serial Port Ring:
 
 1. **Enabled** - enables Wake from Serial Port Ring. Default.
