@@ -21,4 +21,7 @@ One of 2 possible options for the internal speaker:
 2.  Disabled - disables the internal speaker.
 
 <!-- TODO: add WMI -->
+
+<!-- MODEL: NOT M90q -->
+
 </details>
