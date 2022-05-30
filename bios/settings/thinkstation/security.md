@@ -189,7 +189,7 @@ One of 3 states:
 2.	Disabled – Absolute Persistence Module is disabled.
 3.	Permanently Disabled – Absolute Persistence Module is permanently disabled. 
 
-Selecting this option requires additional confirmation, because if comutrace activation is permanently disabled, then you can never enable this setting again. <br>
+Selecting this option requires additional confirmation, because if Computrace activation is permanently disabled, then you can never enable this setting again. <br> 
 
 More information on the official site of [Absolute Software Corporation](https://www.absolute.com/partners/device-manufacturers/lenovo/).
 
