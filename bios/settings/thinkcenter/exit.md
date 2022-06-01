@@ -1,8 +1,6 @@
 # Exit
 
-
 ![](./img/thinkcenter_exit.png)
-
 
 ### Save Changes and Exit ###
 
@@ -18,7 +16,6 @@ Exit system setup without saving any changes.
 
 ### Load Optimal Defaults ###
 
-Restore/Load default values tor all the setup options.
+Restore/Load default values for all the setup options.
 
 **WARNING:** Load default configuration.
-
