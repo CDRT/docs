@@ -9,10 +9,11 @@ One of 2 possible options for enabling the SATA controller:
 1.  **Enable** - enables the SATA controller. Default.
 2.  Disable - disables the SATA controller.
 
+<!-- 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | SATAController | setting_values | yes_no | amd_intel |
-
+-->
 > **Note**: If the "SATA Controller" is set to "Disabled", then “Configure SATA as” and "SATA Drive #" will be hidden.
 
 </details>
