@@ -1,5 +1,7 @@
 # ThinkPad BIOS Setup using WMI Deployment Guide 
 
+Fifth Edition (March 2018)
+
 ## Introduction
 
 IT administrators are always looking for easier ways to manage client computer BIOS settings, which include
@@ -75,15 +77,15 @@ The following interface details can be used to access Lenovo BIOS settings.
  + Base Class: "Lenovo_BIOSElement"
  + Interface details (see Table 1 Interface Details.) 
 
-| Class Name                  	| Type   	| Parameter / Return                                             	| Example                             	|
-|-----------------------------	|--------	|----------------------------------------------------------------	|-------------------------------------	|
-| Lenovo_BiosSetting          	| Query  	| CurrentSetting: "Item,Value"                                   	| "WakeOnLAN,Enable"                  	|
-| Lenovo_GetBiosSelections    	| Method 	| “Item”                                                         	| “WakeOnLAN”                         	|
-| Lenovo_SetBiosSetting       	| Method 	| "Item,Value,Password,Encoding, KbdLang;"                       	| "WakeOnLAN,Disable,pswd, ascii,us;" 	|
-| Lenovo_SaveBios Settings    	| Method 	| "Password,Encoding,KbdLang;"                                   	| "pswd,ascii,us;"                    	|
-| Lenovo_DiscardBios Settings 	| Method 	| "Password,Encoding,KbdLang;"                                   	| "pswd,ascii,us;"                    	|
-| Lenovo_LoadDefault Settings 	| Method 	| "Password,Encoding,KbdLang;"                                   	| "pswd,ascii,us;"                    	|
-| Lenovo_SetBios Password     	| Method 	| "PasswordType,CurrentPassword, NewPassword, Encoding,KbdLang;" 	| "pop,oldpop,newpop,ascii,us;”       	|
+| Class Name                  	| Type   	| Parameter / Return                                                    	| Example                                     	|
+|-----------------------------	|--------	|-----------------------------------------------------------------------	|---------------------------------------------	|
+| Lenovo_BiosSetting          	| Query  	| CurrentSetting: “Item, Value”                                         	| “WakeOnLAN, Enable”                         	|
+| Lenovo_GetBiosSelections    	| Method 	| “Item”                                                                	| “WakeOnLAN”                                 	|
+| Lenovo_SetBiosSetting       	| Method 	| “Item, Value, Password, Encoding, <br> KbdLang;”                      	| “WakeOnLAN, Disable, <br> pswd, ascii, us;” 	|
+| Lenovo_SaveBios Settings    	| Method 	| “Password, Encoding, KbdLang;”                                        	| “pswd, ascii, us;”                          	|
+| Lenovo_DiscardBios Settings 	| Method 	| “Password, Encoding, KbdLang;”                                        	| “pswd, ascii, us;”                          	|
+| Lenovo_LoadDefault Settings 	| Method 	| “Password, Encoding, KbdLang;”                                        	| “pswd, ascii, us;”                          	|
+| Lenovo_SetBios Password     	| Method 	| “PasswordType, CurrentPassword, <br> NewPassword, Encoding, KbdLang;” 	| “pop, oldpop, newpop, <br> ascii, us;”      	|
 
 <div style="text-align:center;">
 
@@ -118,13 +120,13 @@ _**Table 2.** Return Types_
 If a supervisor password is already set, you must specify that supervisor password before you can change any
 BIOS settings.
 
-The format for password parameters is "abc,ascii,us" with descriptions in the following table
+The format for password parameters is "abc, ascii, us" with descriptions in the following table
 
-| Parameter   	| Description                                                      	| Possible Selections                                                                                                                                                                                                                                                                                                              	|
-|-------------	|------------------------------------------------------------------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| Parameter 1 	| Current Password                                                 	| • “abc” - raw ascii character   <br>     • “1e302e” - scancode                                                                                                                                                                                                                                                                   	|
-| Parameter 2 	| Password encoding                                                	| • “ascii” <br>     • “scancode”                                                                                                                                                                                                                                                                                                  	|
-| Parameter 3 	| Keyboard languages (valid only   if encoding is<br>     "ascii") 	| • "us" - English US,   English<br>     UK, Chinese-Traditional,<br>     Danish, Dutch, FrenchCanadian, Italian, Japanese,<br>     Korean, Norwegian, Polish,<br>     Portuguese, SpanishEuropean, Spanish-Latin<br>     American, Swiss, Turkish <br>     • "fr" - French-European,<br>     Belgian<br>     • "gr" - German, Cze 	|
+| Parameter   	| Description                                                    	| Possible Selections                                                                                                                                                                                                                                                                                   	|
+|-------------	|----------------------------------------------------------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Parameter 1 	| Current Password                                               	| • “abc” - raw ascii character<br>• “1e302e” - scancode                                                                                                                                                                                                                                                	|
+| Parameter 2 	| Password encoding                                              	| • “ascii”<br>• “scancode”                                                                                                                                                                                                                                                                             	|
+| Parameter 3 	| Keyboard languages <br>(valid only if encoding <br>is “ascii”) 	| • “us” - English US, English, UK, <br>  Chinese-Traditional, Danish, Dutch, <br>  French, Canadian, Italian, Japanese, <br>  Korean, Norwegian, Polish, Portuguese, <br>  Spanish, European, Spanish-Latin American, <br>  Swiss, Turkish<br>• “fr” - French-European, Belgian<br>• “gr” - German, Cz 	|
 
 <div style="text-align:center;">
 
@@ -170,15 +172,15 @@ To restore default BIOS settings, use the Lenovo_LoadDefaultSettings class, then
 
 ### Changing an Existing BIOS Password 
 
-To update a password, specify a password type and format the password. The format for password parameters is "pop,abc,def,ascii,us" with descriptions in Table 4 (see sample scripts) 
+To update a password, specify a password type and format the password. The format for password parameters is "pop, abc, def, ascii, us" with descriptions in Table 4 (see sample scripts) 
 
-| Parameter   	| Description             	| Possible Selections                                                                                                                                                                                                                                                                                         	|
-|-------------	|-------------------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| Parameter 1 	| Password type string    	| • “pap": Supervisor <br>     • “POP": Power-on <br>     • "uhdp1": User HDP 1 <br>     • "mhdp1": Master HDP 1 <br>     • "uhdp2": User HDP 2 <br>     • "mhdp2": Master HDP 2 <br>     • "uhdp3": User HDP 3 <br>     • "mhdp3": Master HDP 3                                                              	|
-| Parameter 2 	| Current password string 	| • “abc” - raw ascii   character<br>     • “1e302e” - scancode                                                                                                                                                                                                                                               	|
-| Parameter 3 	| New password string     	| • Raw ascii "def"   <br>     • Scan code "201221"                                                                                                                                                                                                                                                           	|
-| Parameter 4 	| Password encoding       	| • “ascii” <br>     • “scancode”                                                                                                                                                                                                                                                                             	|
-| Parameter 5 	| Keyboard languages      	| • "us" - English US,   English UK, Chinese-Traditional, Danish, Dutch, French-Canadian, Italian,   Japanese, Korean, Norwegian, Polish, Portuguese, SpanishEuropean,   Spanish-Latin American, Swiss, Turkish <br>     • "fr" - French-European, Belgian <br>     • "gr" - German, Czech, Slovak, Slovenian 	|
+| Parameter   	| Description             	| Possible Selections                                                                                                                                                                                                                                                                                                  	|
+|-------------	|-------------------------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Parameter 1 	| Password type string    	| • “pap”: Supervisor<br>• “POP”: Power-on<br>• “uhdp1”: User HDP 1<br>• “mhdp1”: Master HDP 1<br>• “uhdp2”: User HDP 2<br>• “mhdp2”: Master HDP 2<br>• “uhdp3”: User HDP 3<br>• “mhdp3”: Master HDP 3                                                                                                                 	|
+| Parameter 2 	| Current password string 	| • “abc” - raw ascii character<br>• “1e302e” - scancode                                                                                                                                                                                                                                                               	|
+| Parameter 3 	| New password string     	| • Raw ascii “def”<br>• Scan code “201221”                                                                                                                                                                                                                                                                            	|
+| Parameter 4 	| Password encoding       	| • “ascii”<br>• “scancode”                                                                                                                                                                                                                                                                                            	|
+| Parameter 5 	| Keyboard languages      	| • “us” - English US, English UK, <br> Chinese-Traditional, Danish, Dutch, <br> French-Canadian, Italian, Japanese, <br> Korean, Norwegian, Polish, Portuguese, <br> Spanish, European, Spanish-Latin American, <br> Swiss, Turkish<br>• “fr” - French-European, Belgian<br>• “gr” - German, Czech, Slovak, Slovenian 	|
 
 <div style="text-align:center;">
 
@@ -377,7 +379,7 @@ Use the following command as a template to display all possible values for a par
 ### Set a BIOS Setting 
 
 Use the following command as a template to set the value of a setting. This is a two-step process: set and then
-save. Note: The setting string is case sensitive and should be in the format "<item>,<value>".
+save. Note: The setting string is case sensitive and should be in the format ```<item>,<value>```.
 
  ```
  (gwmi -class Lenovo_SetBiosSetting –namespace root\wmi).SetBiosSetting("WakeOnLAN,Disable")
@@ -392,7 +394,7 @@ save. Note: The setting string is case sensitive and should be in the format "<i
 
 Use the following command as a template to set the value of a setting when a supervisor password exists. This is
 a two-step process: set and then save. Note: The setting string is case sensitive and should be in the format
-"<item>,<value>,<password + encoding>". 
+```<item>, <value>, <password + encoding>```. 
 
  ```
  (gwmi -class Lenovo_SetBiosSetting –namespace root\wmi).SetBiosSetting("WakeOnLAN,Disable,password,ascii,us")
