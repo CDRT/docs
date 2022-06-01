@@ -92,57 +92,9 @@ Alarm Day of Week.
 
 ![](./img/thinkcenter_user_defined_alarm.png)
 
-Select the day(s) of the week when the system is to wake up.
+Select the day(s) of the week when the system is to wake up. Each {Day} has its own setting.
 
-<details><summary>Sunday</summary>
-
-One of 2 possible options for waking up this day:
-
-1.  **Disabled** - disables wake-up. Default.
-2.  Enabled - enables wake-up.
-
-</details>
-<details><summary>Monday</summary>
-
-One of 2 possible options for waking up this day:
-
-1.  **Disabled** - disables wake-up. Default.
-2.  Enabled - enables wake-up.
-
-</details>
-<details><summary>Tuesday</summary>
-
-One of 2 possible options for waking up this day:
-
-1.  **Disabled** - disables wake-up. Default.
-2.  Enabled - enables wake-up.
-
-</details>
-<details><summary>Wednesday</summary>
-
-One of 2 possible options for waking up this day:
-
-1.  **Disabled** - disables wake-up. Default.
-2.  Enabled - enables wake-up.
-
-</details>
-<details><summary>Thursday</summary>
-
-One of 2 possible options for waking up this day:
-
-1.  **Disabled** - disables wake-up. Default.
-2.  Enabled - enables wake-up.
-
-</details>
-<details><summary>Friday</summary>
-
-One of 2 possible options for waking up this day:
-
-1.  **Disabled** - disables wake-up. Default.
-2.  Enabled - enables wake-up.
-
-</details>
-<details><summary>Saturday</summary>
+<details><summary>{Day}</summary>
 
 One of 2 possible options for waking up this day:
 
@@ -156,6 +108,4 @@ One of 2 possible options for waking up this day:
 Specify the time when the system is to wake up.
 
 <!-- SIMULATOR DOES NOT SUPPORT -->
-
-
 </details>
