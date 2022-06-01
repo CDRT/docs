@@ -2,6 +2,8 @@
 
 ![](./img/thinkcenter_intel_r_manageability.png)
 
+ - [More information at Intel.com](https://software.intel.com/sites/manageability/AMT_Implementation_and_Reference_Guide/default.htm)
+
 <details><summary>Intel(R) Manageability Control</summary>
 
 <!-- TODO: feature confirmation-->
@@ -26,26 +28,26 @@ enter ME-BX or BIOS to re-enable Intel(R) Manageability.</strong>.
 
 <details><summary>Intel(R) Manageability Reset</summary>
 
-Return Intel(R) Manageability settings to
-detault configuration.
+Return Intel(R) Manageability settings to default configuration.
+
 One of 2 possible options for Intel(R) Manageability Reset:
 
 1. **Enabled** - enables Intel(R) Manageability Reset. Default.
 2. Disabled - disables Intel(R) Manageability Reset.
 
-**Note:**  WARNING: the MEBx password will also be reset. .
+**Note:**  WARNING: the MEBx password will also be reset.
 
 </details>
 
-<details><summary>ME Firmware Version</summary>
+### ME Firmware Version ###
 
 Displays the firmware version.
 
 <!-- TODO: styles-->
 
-</details>
+### Manageability Type ###
 
-<details><summary>Manageability Type</summary>
+Displays the manageability type.
 
 <!-- TODO: styles-->
 
