@@ -62,20 +62,14 @@ The items are only available when corresponding hard disk password is present.
 
 ![](./img/thinkcenter_secure_erase_hdd_data.png)
 
-<details><summary>Erase M.2 Drive {Number} Data</summary>
+### Erase M.2 Drive {Number} Data ###
 
 Securely erase this M.2 Drive data.
 
-</details>
-
-<details><summary>Erase PCIe Drive {Number} Data</summary>
+### Erase PCIe Drive {Number} Data ###
 
 Securely erase this PCIe Drive data.
 
-</details>
-
-<details><summary>Erase SATA Drive {Number} Data</summary>
+### Erase SATA Drive {Number} Data ###
 
 Securely erase this SATA Drive data.
-
-</details>
