@@ -40,6 +40,7 @@ One of 3 possible options for Wake from Serial Port Ring:
 <details><summary>Wake Up on Alarm</summary>
 
 Options to turn on your system on a specific day of the month, specific day of the week, or daily at a given time. A single wake up event, or series of alarm events, can also be defined.
+
 One of 5 possible options for Wake Up on Alarm:
 
 1.  **Disabled** - Disables Wake Up on Alarm. Default.
@@ -63,6 +64,7 @@ One of 5 possible options for Wake Up on Alarm:
 <details><summary>Startup Sequence</summary>
 
 Select the startup sequence after a Wake Up on Alarm event.
+
 One of 2 possible options for startup sequence:
 
 1.  **Primary** - enables primary startup sequence. Default.
