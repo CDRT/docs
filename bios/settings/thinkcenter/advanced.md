@@ -2,9 +2,9 @@
 
 ![](./img/thinkcenter_advanced.png)
 
-<details><summary>Intel(R) SIPP Support</summary>
+<details><summary>Intel (R) SIPP Support</summary>
 
-Intel(R) Stable Image Platform program aligns and stabilizes key Intel platform components, enabling a predictable transition from one technology generation to the next.
+Intel (R) Stable Image Platform program aligns and stabilizes key Intel platform components, enabling a predictable transition from one technology generation to the next.
 
 One of 2 possible options for SIPP:
 
@@ -18,6 +18,20 @@ One of 2 possible options for SIPP:
 -->
 
 </details>
+
+<details><summary>Intel (R) Thunderbolt</summary>
+
+Enable or Disable Intel (R) Thunderbolt.
+
+One of number possible options for Intel (R) Thunderbolt:
+
+1.  **Disabled** - disables Intel (R) Thunderbolt. Default.
+2.  Enabled - enables Intel (R) Thunderbolt.
+
+<!-- TODO: add WMI -->
+
+</details>
+
 
 <details><summary>Dust Shield Alert</summary>
 
@@ -41,7 +55,7 @@ One of 2 possible options for the Dust Shield reminder:
 
 <details><summary>Intel (R) DPTF Support</summary>
 
-Intel(R) Dynamic Platform and Thermal Framework (DPTF).
+Intel (R) Dynamic Platform and Thermal Framework (DPTF).
 
 One of 2 possible options for DPTF:
 
