@@ -56,8 +56,8 @@ One of 4 options to select PCI Express port speed:
 </details>
 
 
-<details><summary>PCIe 1x Slot Speed</summary>
-The xx is the item name based on the motherboard silkscreen.<br>
+<details><summary>PCIe {xx} Slot Speed</summary>
+The {xx} is the item name based on the motherboard silkscreen.<br>
 One of 4 options:
 
 1. **Auto** – Default. 
@@ -67,5 +67,5 @@ One of 4 options:
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| PCIe{xx}Slot1Speed |  |  | Both |
 </details>
