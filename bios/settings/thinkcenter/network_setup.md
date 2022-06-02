@@ -9,21 +9,27 @@ One of 2 possible options for the onboard ethernet controller:
 1.  **Enabled** - enables the onboard ethernet controller. Default.
 2.  Disabled - disables all [Intel (R) AMT](https://software.intel.com/sites/manageability/AMT_Implementation_and_Reference_Guide/default.htm) related functions.
 
-<!-- TODO: add WMI --> 
-
+<!-- TODO: add WMI
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| OnboardEthernetController | setting_values | yes_no | amd_intel |
+-->
 </details>
 
 <details><summary>Wireless LAN Access</summary>
 
-Controls access to wifi.
+Controls access to WiFi.
 
-One of 2 possible options for wireless LAN (wifi):
+One of 2 possible options for wireless LAN (WiFi):
 
 1.  **Enabled** - enables wireless LAN. Default.
 2.  Disabled - enables wireless LAN.
 
-<!-- TODO: add WMI --> 
-
+<!-- TODO: add WMI
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| WirelessLANAccess | setting_values | yes_no | amd_intel |
+-->
 </details>
 
 <details><summary>Wireless LAN PXE boot</summary>
@@ -35,8 +41,11 @@ One of 2 possible options for PXE support:
 1.  **Disabled** - disables PXE. Default.
 2.  Enabled - enables PXE.
 
-<!-- TODO: add WMI --> 
-
+<!-- TODO: add WMI
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| WirelessLANPXE | setting_values | yes_no | amd_intel |
+-->
 </details>
 
 <details><summary>Wireless Certified Information</summary>
@@ -93,7 +102,9 @@ One of 2 possible options for IPV6 PXE:
 </details>
 
 <details><summary>HTTPS Boot</summary>
+
 Custom HTTPS boot.
+
 One of 2 possible options for custom HTTPS boot:
 
 1.  **Disabled** - disables custom HTTPS boot. Default.
@@ -101,9 +112,11 @@ One of 2 possible options for custom HTTPS boot:
 
 > **Note** If enabled, `HTTPs Boot Configuration` and `Tls Auth Configuration` will be shown.
 
+<!-- WMI: no -->
 </details>
 
 <details><summary>Lenovo Cloud Services</summary>
+
 When enabled, boot with `Lenovo Cloud` selected in boot menu to boot from Lenovo Cloud server directly.
 
 One of 2 possible options for Lenovo Cloud Services:
@@ -111,9 +124,11 @@ One of 2 possible options for Lenovo Cloud Services:
 1.  **Disabled** - enables Lenovo Cloud Services. Default.
 2. Enabled - enables Lenovo Cloud Services.
 
+<!-- WMI: no -->
 </details>
 
 <details><summary>Win VDI Boot</summary>
+
 When enabled, boot with `Win VDI Boot` selected in boot menu to boot from Lenovo Cloud server and load VDI service.
 
 One of 2 possible options for Win VDI Boot:
@@ -121,6 +136,7 @@ One of 2 possible options for Win VDI Boot:
 1. **Disabled** - enables Win VDI Boot. Default.
 2. Enabled - enables Win VDI Boot.
 
+<!-- WMI: no -->
 
 </details>
 
@@ -133,6 +149,9 @@ Configure HTTPs Boot parameters.
 <details><summary>Input the description</summary>
 
 **Note:** Press `Enter` to input a label for new created URL and it will be displayed in the boot sequence menu.
+
+<!-- WMI: no -->
+
 </details>
 
 <details><summary>Internet Protocol</summary>
@@ -142,22 +161,28 @@ One of 2 possible options for IP version:
 1.  **Ipv4** - enables IPV4. Default.
 2.  Ipv6 - enables IPV6.
 
+<!-- WMI: no -->
 
 </details>
 
 <details><summary>Boot URL</summary>
+
 Create a new boot option based on a HTTPS URL.
 
-**Note:**  Use the [TLS Auth configuration] to import the CA to
+**Note:**  Use the `TLS Auth configuration` to import the CA to
 support the HTTPs boot 
+
+<!-- WMI: no -->
 
 </details>
 
 <details><summary>Delete HTTPs Boot Option from List</summary>
 
 **Note:**  Select and press `Enter` to remove an EFI HTTPs boot option..
-</details>
 
+<!-- WMI: no -->
+
+</details>
 
 ### TLS Auth Configuration ###
 
@@ -165,11 +190,9 @@ Server CA configuration.
 
 **Note:** Press `Enter` to select TLS auto configuration for HTTPS boot.
 
-
 ### WiFi Configuration ###
 
-
-![](./img/thinkcenter_wifi_configuration.png)
+![](./img/thinkcenter_WiFi_configuration.png)
 
 <details><summary>Automatic Connection Support</summary>
 
@@ -180,15 +203,15 @@ One of 2 possible options for Automatic connection:
 1. **Enabled** - enables automatic connection. Default.
 2. Disabled - enables automatic connection.
 
+<!-- WMI: no -->
+
 </details>
 
-<details><summary>Current Connection</summary>
-</details>
+### Current Connection ###
 
-<details><summary>Wi-Fi Scan</summary>
+### Wi-Fi Scan ###
 
-Press `Enter` to scan the available connections.</details>
+Press `Enter` to scan the available connections.
 
-<details><summary>Scanned List</summary>
+### Scanned List ###
 List of available connections.
-</details>
