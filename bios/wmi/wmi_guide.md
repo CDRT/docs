@@ -1,6 +1,5 @@
-# ThinkPad BIOS Setup using WMI Deployment Guide 
+# Lenovo WMI BIOS Interface Guide
 
-Fifth Edition (March 2018)
 
 ## Introduction
 
@@ -10,6 +9,10 @@ these settings. Lenovo has developed a BIOS interface that can be manipulated th
 Instrumentation (WMI). The Lenovo BIOS WMI interface enables IT administrators to make queries on current
 BIOS settings, restore settings to their factory defaults, change single settings, reset or change passwords, and
 modify the boot order either at client computers or remotely. 
+
+If you have suggestions, comments, or questions, please talk to us on our forum! A team of deployment engineers
+(including the author of this document) is standing by, ready to help with any deployment challenges you are facing:
+https://forums.lenovo.com/t5/Enterprise-Client-Management/bd-p/sa01_eg
 
 ### Using Windows Management Instrumentation 
 
@@ -45,8 +48,10 @@ disk drive (HDD) passwords
  + Easy to adopt for various management servers
  + Common interface for different products
 
+
 ### Supported Computers
- 
+
+**ThinkPad**: 
 BIOS setup through WMI is supported on the following ThinkPad products:
  + All ThinkPad models from 2018 or newer
  + Selected ThinkPad models from 2017 or older: 
@@ -64,6 +69,41 @@ BIOS setup through WMI is supported on the following ThinkPad products:
    + ThinkPad Yoga 260, Yoga 460, Yoga 370
    + ThinkPad E470, E570
    + ThinkPad S1, S2, S5
+
+
+**ThinkCentre**:
+BIOS setup through WMI descripted in this document is supported on Think Centre M-series products only.
+
+**ThinkStation**:
+
+
+## Overview of Changes
+
+Recent ThinkPad models (2020 and newer) support complex BIOS passwords. Acceptable characters for BIOS
+password are the following: 
+
+The following illustration shows how WMI can be used to access Lenovo BIOS settings 
+
+ + Alphabet (case sensitive) {‘A-Z‘, ‘a-z‘}
+ + Number {‘0-9‘}
+ + Space ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ ¥ ] ^ _ ` { | } ~
+ 
+To support these complex BIOS passwords, a new WMI class is required. If you don’t need complex passwords,
+you can continue using the same WMI classes and methods that you have always used. You only need to change
+WMI classes and methods if you want to use complex BIOS passwords
+
+### Set/Save a Setting 
+
+In previous ThinkPad models, it was required to specify the supervisor password in both Lenovo_SetBiosSetting
+and Lenovo_SaveBiosSettings. This is no longer required. Instead, the supervisor password is specified using a
+new class, Lenovo_WmiOpcodeInterface. The new process is: Lenovo_SetBiosSetting,
+Lenovo_WmiOpcodeInterface, and then Lenovo_SaveBiosSettings. 
+
+### Specifying the BIOS Supervisor Password 
+
+In previous ThinkPad models, it was required to specify the BIOS supervisor password such as
+“mypassword,ascii,us”. In new ThinkPad models, specify the BIOS supervisor password as
+“WmiOpcodePasswordAdmin:MyPassword” using the Lenovo_WmiOpcodeInterface class. 
 
 
 ##  Script Classes and Parameters 
@@ -117,10 +157,16 @@ _**Table 2.** Return Types_
 
 ### Password Authentication
 
-If a supervisor password is already set, you must specify that supervisor password before you can change any
-BIOS settings.
+In previous models, it was required to specify the supervisor password in both Lenovo_SetBiosSetting and Lenovo_SaveBiosSettings. This is no longer required. Instead, the supervisor password is specified using a new class, Lenovo_WmiOpcodeInterface. The new process is: Lenovo_SetBiosSetting, Lenovo_WmiOpcodeInterface, and then Lenovo_SaveBiosSettings.
 
-The format for password parameters is "abc, ascii, us" with descriptions in the following table
+For 2017 and newer models, the password is specified using the Lenovo_WmiOpcodeInterface class. A single parameter in the format of “WmiOpcodePasswordAdmin:MyPassword” (where MyPassword is your actual password) is used.
+
+For 2016 and older models, if a supervisor password is already set, you must specify that supervisor password before you can change any BIOS settings. The format for password parameters is "abc, ascii, us" with descriptions in the following table. For Example, if the Current passwordis “abc”, Password encoding is “ascii”,Keyboard language is “ascii” Lenovo_SaveBiosSettings should be called with parameters as “abc, ascii, us;” 
+
+Table 3 described the password parameters for old models that produced before 2017.
+Table 4 described the password parameters for 2017 or later
+produced models. 
+
 
 | Parameter   	| Description                                                    	| Possible Selections                                                                                                                                                                                                                                                                                   	|
 |-------------	|----------------------------------------------------------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
@@ -133,6 +179,19 @@ The format for password parameters is "abc, ascii, us" with descriptions in the 
 _**Table 3.** Password parameters format, password authentication_
 </div>
 
+For 2017 or later computers, you need first call Class
+Lenovo_WmiOpcodeInterface with below parametes before change any BIOS
+settings, andthe password just support ascii encode.
+Please refer to Table 8 for the supported characters
+
+| Parameters  	| Description                                                                         	| Possible Selections                                                                     	|
+|-------------	|-------------------------------------------------------------------------------------	|-----------------------------------------------------------------------------------------	|
+| Parameter 1 	| Current password, need begin   <br>     with the key words: WmiOpcodePasswordAdmin: 	| For example, if BIOS password is   set with “abc”, <br>     WmiOpcodePasswordAdmin:abc; 	|
+
+<div style="text-align:center;">
+
+_**Table 4.** 2017 and later password parameters format, password authentication_
+</div>
 
 ## Typical Usage
 
@@ -189,35 +248,26 @@ _**Table 4.** Password parameters format, changing existing BIOS password_
 
 ### Limitations and Notes
 
- 1. BIOS settings cannot be changed at the same boot as power-on passwords (POP) and hard disk passwords
-(HDP). If you want to change BIOS settings and POP or HDP, you must reboot the system after changing one of them.
- 2. A password cannot be set using this method when one does not already exist. Passwords can only be updated or cleared.
+ 1. BIOS settings cannot be changed at the same boot as power-on passwords and hard disk passwords. If you
+want to change BIOS settings and passwords, you must reboot the system after changing one of them.
+
+ 2. A password cannot be set using this method when one does not already exist. Passwords can only be
+changed or cleared.
+
  3. To remove the power-on password when a supervisor password is set, it must be done in three steps total:
  <ol type="a">
-   <li> Change the supervisor password. It’s OK to specify the same password as both the current and the new, in case you don’t really want to change it. But you must do this step.</li>
-   <li> Change the power-on password by specifying the current password and a NULL string as the newpassword</li>
-   <li> Reboot the system (do not reboot between steps A and B).</li>
-   </ol>
- 4. Some security-related settings cannot be disabled by WMI. For example, the following BIOS settings cannot be changed from Enable to Disable:
- <ol type="a">
-   <li> SecureBoot</li>
-   <li> SecureRollbackPrevention</li>
-   <li> PhysicalPresneceForTpmClear </li>
-   <li> PhysicalPresenceForTpmProvision</li>
-   </ol>
- 5. It is not possible to change the Security Chip Selection (e.g. Discrete TPM or Intel PTT)
- 6. Note for Discrete TPM: the following values are supported for SecurityChip:
-  <ol type="a">
-   <li> Active</li>
-   <li> Inactive</li>
-   <li> Disable</li>
-   </ol>
- 7. Note for Intel PTT: the following values are supported for SecurityChip:
-  <ol type="a">
-   <li> Enable</li>
-   <li> Disable</li>
-   </ol>
+  <li> Change the supervisor password. It’s OK to specify the same password as both the current and the new, in case you don’t really want to change it. But you must do this step.</li>
+  <li> Change the power-on password by specifying the current password and a NULL string as the new password</li>
+  <li> Reboot (do not reboot between steps A and B) </li>
+ </ol>
 
+ 4. Some security-related settings can only be disabled when a Supervisor password exists. For example, the following BIOS settings cannot be changed from Enable to Disable unless you have a Supervisor password:
+ <ol type="a">
+  <li> SecureBoot</li>
+  <li> SecureRollbackPrevention</li>
+  <li> PhysicalPresneceForTpmClear</li>
+  <li> PhysicalPresenceForTpmProvision</li>
+ </ol>
 
 ## Security
 
@@ -227,9 +277,8 @@ connection as follows:
 
  1. Set an impersonation level of "impersonate"
  2. Set an authentication level of "pktPrivacy"
- 
-See Appendix A Sample Visual Basic scripts for configuring BIOS settings for sample scripts used to implement
-WMI-based administration scripts that include these parameters for encryption. 
+
+See Appendix A Sample Visual Basic scripts for configuring BIOS settings for sample scripts used to implement WMI-based administration scripts that include these parameters for encryption. 
 
 ## Appendix A. Sample Visual Basic Scripts 
 
@@ -356,13 +405,11 @@ Use the following command as a template to display all current BIOS settings:
  ```
 
 
-### Show a Particular BIOS Setting
+### Get a Particular BIOS Setting
 Use the following command as a template to display a particular BIOS setting:
 
  ```
- gwmi -class Lenovo_BiosSetting -namespace root\wmi | Where-Object
- {$_.CurrentSetting.split(",",[StringSplitOptions]::RemoveEmptyEntries) -eq
- "WakeOnLAN"} | Format-List CurrentSetting
+ gwmi -class Lenovo_BiosSetting -namespace root\wmi | Where-Object{$_.CurrentSetting.split(",",[StringSplitOptions]::RemoveEmptyEntries) -eq "WakeOnLAN"} | Format-List CurrentSetting
  ```
 
 
@@ -371,24 +418,29 @@ Use the following command as a template to display a particular BIOS setting:
 Use the following command as a template to display all possible values for a particular BIOS setting: 
 
  ```
- (gwmi –class Lenovo_GetBiosSelections –namespace root\wmi).GetBiosSelections("WakeOnLAN") |
- Format-List Selections
+ (gwmi –class Lenovo_GetBiosSelections –namespace root\wmi).GetBiosSelections("WakeOnLAN") | Format-List Selections
  ```
+ 
 
+### Set and Save a BIOS Setting 
 
-### Set a BIOS Setting 
+Use the following commands to set the value of a BIOS setting. This is a multi-step process: 
 
-Use the following command as a template to set the value of a setting. This is a two-step process: set and then
-save. Note: The setting string is case sensitive and should be in the format ```<item>,<value>```.
-
+1. Change the setting
  ```
- (gwmi -class Lenovo_SetBiosSetting –namespace root\wmi).SetBiosSetting("WakeOnLAN,Disable")
+ (gwmi -class Lenovo_SetBiosSetting –namespace root\wmi).SetBiosSetting("WakeOnLANDock,Disable")
  ```
-
+2. Specify the supervisor password (if it exists). 
+ ```
+ (gwmi -class Lenovo_WmiOpcodeInterface -namespace root\wmi).WmiOpcodeInterface("WmiOpcodePasswordAdmin:MyPassword")
+ ```
+   **Note**: Step 2 can be omitted if you don’t have a supervisor password. 
+ 
+3. Save the new setting
  ```
  (gwmi -class Lenovo_SaveBiosSettings -namespace root\wmi).SaveBiosSettings()
  ```
-
+**Note**: The setting string is case sensitive and should be in the format ```<item>,<value>```. 
 
 ### Set a BIOS Setting When a Supervisor Password Exists 
 
@@ -399,7 +451,42 @@ a two-step process: set and then save. Note: The setting string is case sensitiv
  ```
  (gwmi -class Lenovo_SetBiosSetting –namespace root\wmi).SetBiosSetting("WakeOnLAN,Disable,password,ascii,us")
  ```
-
  ```
  (gwmi -class Lenovo_SaveBiosSettings -namespace root\wmi).SaveBiosSettings("password,ascii,us”)
  ```
+
+### Change a BIOS Password
+
+Use the following commands to change the BIOS supervisor password. Note that you cannot use this method to
+set an initial password; it can only be used to change an existing password. This is a multi-step process:
+
+1. Specify the password type
+ ```
+ (gwmi -class Lenovo_WmiOpcodeInterface -namespace root\wmi).WmiOpcodeInterface("WmiOpcodePasswordType:pap")
+ ```
+2. Specify the current password
+ ```
+ (gwmi -class Lenovo_WmiOpcodeInterface -namespace root\wmi).WmiOpcodeInterface("WmiOpcodePasswordCurrent01:MyCurrentPassword")
+ ```
+3. Specify the new password
+ ```
+ (gwmi -class Lenovo_WmiOpcodeInterface -namespace root\wmi).WmiOpcodeInterface("WmiOpcodePasswordNew01:MyNewPassword")
+ ```
+4. Save the new password
+ ```
+ (gwmi -class Lenovo_WmiOpcodeInterface -namespace root\wmi).WmiOpcodeInterface("WmiOpcodePasswordSetUpdate")
+ ```
+
+
+The password type can be one of the following values:
+ + WmiOpcodePasswordType:pap - Supervisor
+ + WmiOpcodePasswordType:pop - Power-on
+ + WmiOpcodePasswordType:smp - System Management
+ + WmiOpcodePasswordType:uhdp1 - User HDP 1
+ + WmiOpcodePasswordType:mhdp1 - Master HDP 1
+ + WmiOpcodePasswordType:uhdp2 - User HDP 2
+ + WmiOpcodePasswordType:mhdp2 - Master HDP 2
+ + WmiOpcodePasswordType:adrp1 - (NVMe only) Single Password or Dual Password Admin 1
+ + WmiOpcodePasswordType:udrp1 - (NVMe only) Dual Password User 1
+ + WmiOpcodePasswordType:adrp2 - (NVMe only) Single Password or Dual Password Admin 2
+ + WmiOpcodePasswordType:udrp2 - (NVMe only) Dual Password User 2
