@@ -209,6 +209,8 @@ One of 2 possible options for Automatic connection:
 
 ### Current Connection ###
 
+Displays the current WiFi connection.
+
 ### Wi-Fi Scan ###
 
 Press `Enter` to scan the available connections.
