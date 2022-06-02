@@ -1,4 +1,4 @@
-# Security Settings #
+# Security #
 ![](./img/security.png)
 
 <details><summary>Supervisor Password</summary>
