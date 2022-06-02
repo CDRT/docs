@@ -72,6 +72,7 @@
   - [Secure Boot](bios/settings/thinkcenter/secure_boot.md)
 
 - [Startup](bios/settings/thinkcenter/startup.md)
+  - [Boot Priority Order](bios/settings/thinkcenter/boot_priority_order.md)
 
 - [Exit](bios/settings/thinkcenter/exit.md)
 
