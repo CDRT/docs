@@ -1,4 +1,4 @@
-# PCI Express Configuration #
+# PCI Express Configuration Settings #
 ![](./img/pciexpressconfig.png)
 
 <details><summary>ASPM Support</summary>

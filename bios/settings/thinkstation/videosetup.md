@@ -1,4 +1,4 @@
-# Video Setup #
+# Video Setup Settings #
 ![](./img/videosetup.png)
 
 <details><summary>Select Active Video</summary>

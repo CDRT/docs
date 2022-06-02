@@ -1,4 +1,4 @@
-# Network Setup #
+# Network Setup Settings #
 ### General ###
 ![](./img/networksetup.png)
 

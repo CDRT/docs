@@ -1,4 +1,4 @@
-# Serial Port Setup #
+# Serial Port Setup Settings #
 ![](./img/serialportsetup.png)
 
 <details><summary>Serial Port1 Address</summary>

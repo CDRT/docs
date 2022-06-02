@@ -1,4 +1,4 @@
-# ATA Drive Setup #
+# ATA Drive Setup Settings #
 ![](./img/atadrivesetup.png)
 
 <details><summary>SATA Controller</summary>

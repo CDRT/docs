@@ -1,4 +1,4 @@
-# Audio Setup #
+# Audio Setup Settings #
 ![](./img/audiosetup.png)
 
 <details><summary>Onboard Audio Controller</summary>

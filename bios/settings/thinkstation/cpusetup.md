@@ -1,4 +1,4 @@
-# CPU Setup #
+# CPU Setup Settings #
 ![](./img/cpusetup.png)
 
 <details><summary>Intel(R) Speed Shift Technology</summary>

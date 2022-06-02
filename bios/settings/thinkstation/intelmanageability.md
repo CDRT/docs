@@ -1,4 +1,4 @@
-# Intel(R) Manageability #
+# Intel(R) Manageability Settings #
 ![](./img/intelmanageability.png)
 
 <details><summary>Intel(R) Manageability</summary>

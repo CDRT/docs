@@ -1,4 +1,4 @@
-# Parallel Port Setup #
+# Parallel Port Setup Settings #
 ![](./img/parallelportsetup.png)
 
 <details><summary>Parallel Port Address</summary>

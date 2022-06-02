@@ -1,4 +1,4 @@
-# USB Setup #
+# USB Setup Settings #
 ![](./img/usbsetup.png)
 
 <details><summary>USB Port Access</summary>

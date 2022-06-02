@@ -1,4 +1,4 @@
-# Intel(R) Thunderbolt #
+# Intel(R) Thunderbolt Settings #
 ![](./img/intelthunderbolt.png)
 
 <details><summary>Intel Thunderbolt Technology</summary>
