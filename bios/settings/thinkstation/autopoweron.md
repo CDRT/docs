@@ -1,4 +1,4 @@
-# Automatic Power On #
+# Automatic Power On Settings #
 ### General ###
 ![](./img/autopoweron.png)
 
