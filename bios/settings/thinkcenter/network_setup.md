@@ -4,10 +4,10 @@
 
 <details><summary>Onboard Ethernet Controller</summary>
 
-One of 2 possible options for the onboard ethernet controller:
+Options:
 
-1.  **Enabled** - enables the onboard ethernet controller. Default.
-2.  Disabled - disables all [Intel (R) AMT](https://software.intel.com/sites/manageability/AMT_Implementation_and_Reference_Guide/default.htm) related functions.
+1.  **Enabled** - Default.
+2.  Disabled - **WARNING:** also disables all [Intel (R) AMT](https://software.intel.com/sites/manageability/AMT_Implementation_and_Reference_Guide/default.htm) related functions.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -20,7 +20,7 @@ One of 2 possible options for the onboard ethernet controller:
 
 Controls access to WiFi.
 
-One of 2 possible options for wireless LAN (WiFi):
+Options:
 
 1.  **Enabled** - enables wireless LAN. Default.
 2.  Disabled - enables wireless LAN.
@@ -34,12 +34,12 @@ One of 2 possible options for wireless LAN (WiFi):
 
 <details><summary>Wireless LAN PXE boot</summary>
 
-Select whether to load Wireless LAN UNDI Driver to support wireless LAN PXE boot or https boot.
+Select whether to load Wireless LAN UNDI Driver to support wireless LAN PXE boot or HTTPS boot.
 
-One of 2 possible options for PXE support:
+Options:
 
-1.  **Disabled** - disables PXE. Default.
-2.  Enabled - enables PXE.
+1.  **Disabled** - Default.
+2.  Enabled.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -48,90 +48,81 @@ One of 2 possible options for PXE support:
 -->
 </details>
 
-<details><summary>Wireless Certified Information</summary>
+### Wireless Certified Information ###
 <!-- SIMULATOR DOES NOT SUPPORT -->
-</details>
 
 <details><summary>Wireless Auto Disconnection</summary>
 
 Disable wireless LAN when onboard Ethernet is connected.
 
-One of 2 possible options for auto disconnection:
-
-1.  **Disabled** - enables auto disconnection. Default.
-2.  Enable - enables auto disconnection.
+1.  **Disabled** - Default.
+2.  Enable.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | WirelessAutoDisconnection | setting_values | yes_no | amd_intel |
 -->
-
 </details>
-
 
 <details><summary>PXE IPV4 Network Stack</summary>
 
-One of 2 possible options for IPV4 PXE:
+Options:
 
-1. **Disabled** - enables IPV4 PXE. Default.
-2. Enabled - enables IPV4 PXE.
+1. **Disabled** - Default.
+2. Enabled.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | PXEIPV4NetworkStack | setting_values | yes_no | amd_intel |
 -->
-
 </details>
 
 
 <details><summary>PXE IPV6 Network Stack</summary>
 
-One of 2 possible options for IPV6 PXE:
+Options:
 
-1.  **Disabled** - enables IPV6 PXE. Default.
-2.  Enabled - enables IPV6 PXE.
+1.  **Disabled** - Default.
+2.  Enabled.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | PXEIPV6NetworkStack | setting_values | yes_no | amd_intel |
 -->
-
 </details>
 
 <details><summary>HTTPS Boot</summary>
 
 Custom HTTPS boot.
 
-One of 2 possible options for custom HTTPS boot:
+Options:
 
-1.  **Disabled** - disables custom HTTPS boot. Default.
-2.  Enabled - enables custom HTTPS boot.
+1.  **Disabled** - Default.
+2.  Enabled.
 
-> **Note** If enabled, `HTTPs Boot Configuration` and `Tls Auth Configuration` will be shown.
+**Note:** If enabled, `HTTPs Boot Configuration` and `Tls Auth Configuration` will be shown.
 
 <!-- WMI: no -->
 </details>
 
 <details><summary>Lenovo Cloud Services</summary>
 
-When enabled, boot with `Lenovo Cloud` selected in boot menu to boot from Lenovo Cloud server directly.
+Whether to boot with `Lenovo Cloud` selected in boot menu to boot from Lenovo Cloud server directly.
 
-One of 2 possible options for Lenovo Cloud Services:
-
-1.  **Disabled** - enables Lenovo Cloud Services. Default.
-2. Enabled - enables Lenovo Cloud Services.
+1.  **Disabled** - Default.
+2. Enabled.
 
 <!-- WMI: no -->
 </details>
 
 <details><summary>Win VDI Boot</summary>
 
-When enabled, boot with `Win VDI Boot` selected in boot menu to boot from Lenovo Cloud server and load VDI service.
+Whether to boot with `Win VDI Boot` selected in boot menu, to boot from Lenovo Cloud server and load VDI service.
 
-One of 2 possible options for Win VDI Boot:
+Options:
 
 1. **Disabled** - enables Win VDI Boot. Default.
 2. Enabled - enables Win VDI Boot.
@@ -142,9 +133,11 @@ One of 2 possible options for Win VDI Boot:
 
 ### HTTPs Boot Configuration  ###
 
-Configure HTTPs Boot parameters.
 
-**Note:** Only one URL can be entered at a time. The configuration will take effect after a system reboot.
+![](./img/thinkcenter_https_boot_configuration.png)
+
+
+**Note:** Only one configuration can be entered at a time. The configuration will take effect after a system reboot.
 
 <details><summary>Input the description</summary>
 
@@ -198,10 +191,8 @@ Server CA configuration.
 
 Automatically connect to WiFi on boot.
 
-One of 2 possible options for Automatic connection:
-
-1. **Enabled** - enables automatic connection. Default.
-2. Disabled - enables automatic connection.
+1. **Enabled** - Default.
+2. Disabled.
 
 <!-- WMI: no -->
 
