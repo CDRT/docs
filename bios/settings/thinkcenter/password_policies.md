@@ -8,11 +8,10 @@
 
 <details><summary>Set Minimum Length</summary>
 
-One of 10 possible options for password length:
+Options:
 
  *  **Disabled** - no minimum (see below). Default.
- *   4 - 12 characters long or more.
-
+ *   4 - 12 characters minimum.
 
 **NOTE:** If no minimum is set, passwords may be 1 to 128 characters long.
 
@@ -20,7 +19,6 @@ One of 10 possible options for password length:
  - Supervisor Password (SVP)
  - System Management Password (SMP)
  - Power-on (POP) and Hard Disk Passwords 
-
 
 **NOTE:** If both `Set Minimum Length` and `Set Strong Password` are enabled, the longest value for minimum length applies.
 
@@ -34,25 +32,23 @@ One of 10 possible options for password length:
 
 <details><summary>Set Strong Password</summary>
 
-One of 2 possible options for required password strength:
+Options:
 
-2.  **Enabled** - enables strong password support. Upper case, lower case and numeric characters are all required. Special characters are optional. The minimum length is 8. Default.
-1.  **Disabled** - disables strong password support. The minimum length is 1 character.
+1.  **Enabled** - Upper case, lower case and numeric characters are all required. Special characters are optional. The minimum length is 8. Default.
+1.  Disabled - The minimum length is 1 character.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | SetStrongPassword | setting_values | yes_no | amd_intel |
 -->
-
-
-
 </details>
 
 <details><summary>Keyboard Layout</summary>
+
 Select the keyboard language for password.
 
-One of 5 possible options for password keyboard layout (language):
+Options:
 
 1.  **English** - Default.
 2.  French
@@ -60,74 +56,69 @@ One of 5 possible options for password keyboard layout (language):
 4.  Russian
 5.  Chinese
 
-
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | KeyboardLayout | setting_values | yes_no | amd_intel |
 -->
-
-
 </details>
 
 <details><summary>BIOS Password At System Boot</summary>
 
-One of 2 possible options for BIOS password prompt at system boot (when the system starts from the full off or hibernate state):
+Whether to give a BIOS password prompt at system boot (when the system starts from the full off or hibernate state):
 
-1.  **Yes** - enables password prompt. Default.
-1.  No - disables password prompt.
+1.  **Yes** - Default.
+1.  No.
 
-**WARNING:** To prevent unauthorized access to the system, recommend to set user authentication on the OS.
-
-</details>
-
-<details><summary>BIOS Password At Reboot</summary>
-
-Whether the power-on password is required when system restarts.
-
-One of 2 possible options for password on reboot:
-
-2.  **No** - disables password prompt on reboot. Default.
-1.  Yes - enables password prompt on reboot.
-
+**WARNING:** To prevent unauthorized access to the system, we recommend setting user authentication on the OS.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| BIOS Password At Reboot | setting_values | yes_no | amd_intel |
+| BIOSPasswordAtSystemBoot | setting_values | yes_no | amd_intel |
 -->
+</details>
 
+<details><summary>BIOS Password At Reboot</summary>
 
+Whether the power-on password (POP) is required when system restarts.
+
+Options:
+
+1.  **No** - disables password prompt on reboot. Default.
+1.  Yes - enables password prompt on reboot.
+
+<!-- TODO: add WMI
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| BIOSPasswordAtReboot | setting_values | yes_no | amd_intel |
+-->
 </details>
 
 <details><summary>BIOS Password At Boot Device List</summary>
 
-If yes and an administrator password is set, the user is prompted for a password when F12 iS pressed during POST.
+Whether the user is prompted for a password when F12 is pressed during POST (and an administrator password was set).
 
-One of 2 possible options for password prompt during POST:
+Options:
 
-2.  **No** - disables password prompt during POST. Default.
-1.  Yes - enables password prompt during POST.
-
+1.  **No** - Default.
+1.  Yes.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | BIOSPasswordAtBootDeviceList | setting_values | yes_no | amd_intel |
 -->
-
-
 </details>
 
 <details><summary>Require SVP when Flashing</summary>
 
-Whether the supervisor password is required when updating the system firmware.
+Whether the supervisor password (SVP) is required when updating the system firmware.
 
-One of 2 possible options for password prompt at firmware update:
+Options:
 
-1.  **No** - disables password prompt at firmware update. Default.
-1.  Yes - enables password prompt at firmware update.
-
+1.  **No** - Default.
+1.  Yes.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -140,21 +131,18 @@ One of 2 possible options for password prompt at firmware update:
 
 <details><summary>POP Changeable by User</summary>
 
-Whether the Power-On Password can be changed by users, or else, only with the supervisor password.
+Whether the Power-On Password (POP) can be changed by users, or else, only with the Supervisor Password (SVP).
 
-One of 2 possible options for POP change to require SVP:
+Options:
 
-1.  **Yes** - enables POP change by user. Default.
-2.  No - allows POP change only with SVP.
-
+1.  **Yes** - Default.
+2.  No.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | POPChangeablebyUser | setting_values | yes_no | amd_intel |
 -->
-
-
 </details>
 
 <details><summary>Allow the Jumper to Clear SVP</summary>
@@ -162,25 +150,26 @@ One of 2 possible options for POP change to require SVP:
 Whether to allow the hardware jumper to clear the Supervisor
 password.
 
-One of 2 possible options for letting the hardware jumper clear the Supervisor Password:
+Options:
 
-1.  **Yes** - enables letting the hardware jumper clear the Supervisor Password. Default.
-2.  No - disables letting the hardware jumper clear the Supervisor Password.
+1.  **Yes** - Default.
+2.  No.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | AllowJumperClearSVP | setting_values | yes_no | amd_intel |
 -->
+**WARNING** When disabled, no action can reset the SVP if you forget it.
 
-**WARNING** When disabled, no action can reset the SVP if you forget it.</details>
+</details>
 
 <details><summary>Password Count Exceeded Error</summary>
 
-One of 2 possible options for showing the POST 0199 error and password prompt:
+Whether to show the POST 0199 error and password prompt:
 
-1.  **Enabled** - show the POST 0199 error and password prompt.
-2.  Disabled - hide the POST 0199 error and proceed Without any user action required. Default.
+1.  **Enabled** - Default.
+2.  Disabled.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
