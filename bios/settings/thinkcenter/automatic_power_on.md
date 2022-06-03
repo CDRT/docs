@@ -86,7 +86,7 @@ Specify the time when the system is to wake up.
 
 ### Alarm Date (MM / DD / YYYY) ###
 
-Alarm Day of Week.
+Alarm day of week.
 
 <!-- SIMULATOR DOES NOT SUPPORT -->
 

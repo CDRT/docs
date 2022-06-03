@@ -4,10 +4,9 @@
 
 <details><summary>After Power Loss</summary>
 
-Whether the system will stay on after AC
-power is removed and then restored.
+Whether the system will stay on after AC power is removed and then restored.
 
-One of 3 possible options:
+Options:
 
 1. **Last State** - return to the previous state. Default.
 2.  Power Off - remain off.
@@ -18,26 +17,25 @@ One of 3 possible options:
 |:---|:---|:---|:---|
 | AfterPowerLoss | setting_values | yes_no | amd_intel |
 -->
-
-**Note:**  Select "Power on" it you use a power strip to turn the system on.
+**Note:**  Select "Power on" if you use a power strip to turn the system on.
 
 </details>
 
 <details><summary>Enhanced Power Saving Mode</summary>
 
 The total power consumption is lower during power off.
-One of 2 possible options for Enhanced Power Saving Mode:
 
-1. **Disabled** - disables Enhanced Power Saving Mode. Default.
-2.  Enabled - enables Enhanced Power Saving Mode.
+Options:
+
+1. **Disabled** - Default.
+2.  Enabled.
 
 <!-- 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | EnhancedPowerSavingMode | setting_values | yes_no | amd_intel |
 -->
-
-**Note:** In enhanced power saving mode, only the `Wake up on Alarm` function is supported. Other wake up functions are not. System will not enter `Enhanced Power Saving Mode` if Intel ME is required to be active in Sx states and host is in AC mode. .
+**Note:** In Enhanced Power Saving Mode, only the `Wake up on Alarm` function is supported. Other wake-up functions are not. System will not enter `Enhanced Power Saving Mode` if Intel ME is required to be active in Sx states, and host is in AC mode.
 
 </details>
 
@@ -55,28 +53,23 @@ One of 2 possible options for Smart Power On:
 |:---|:---|:---|:---|
 | SmartPowerOn | setting_values | yes_no | amd_intel |
 -->
-
 </details>
 
 ### Intelligent Cooling  ###
 
 <details><summary>Performance Mode</summary>
 
+Options for cooling performance:
 
-One of 3 possible options for cooling performance:
-
-1. **Best Performance** - The system will run at best system performance with normal acoustic level. Default.
-2. Best Experience - The system will with balanced noise and better performance.
-3. Full Speed - All fans in the system will run at full speed.
+1. **Best Performance** - Best system performance with normal acoustic level. Default.
+2. Best Experience - TheBalanced noise and better performance.
+3. Full Speed - All fans at full speed.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | IntelligentCoolingPerformanceMode | setting_values | yes_no | amd_intel |
 -->
-
 </details>
 
-
-### Automatic Power On  ###
-
+<!-- ### Automatic Power On  ### -->
