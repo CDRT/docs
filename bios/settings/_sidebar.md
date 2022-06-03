@@ -70,6 +70,7 @@
   - [TCG Feature Setup](bios/settings/thinkcenter/tcg_feature_setup.md)
   - [System Event Log](bios/settings/thinkcenter/system_event_log.md)
   - [Secure Boot](bios/settings/thinkcenter/secure_boot.md)
+<!--   - [Key Management](bios/settings/thinkcenter/key_management.md) -->
 
 - [Startup](bios/settings/thinkcenter/startup.md)
   - [Boot Priority Order](bios/settings/thinkcenter/boot_priority_order.md)

@@ -1,6 +1,5 @@
 # Secure Boot
 
-
 ![](./img/thinkcenter_secure_boot.png)
 
 
@@ -18,46 +17,41 @@
 -->
 </details>
 
-<details><summary>Restore Factory Keys</summary>
+### Restore Factory Keys ###
 
-Restore Factory Keys Will put secure boot into factory defaults.
+Restore Factory Keys resets secure boot to factory defaults.
 
 Press `Yes` to proceed, or `No` to cancel.
 
-</details>
+### Reset Platform to Setup Mode ###
 
-<details><summary>Reset Platform to Setup Mode</summary>
+Reset to setup mode will change secure boot to setup mode.
 
-Reset to setup mode will move secure boot to setup mode.
-
-</details>
-
-<details><summary>Enter Audit Mode</summary>
+### Enter Audit Mode ###
 
 Enter Audit Mode workflow.
 
-Transition from user to Audit Mode will result in erasing PK variable.
+**NOTE:** Transition from user to Audit Mode will result in erasing PK (Platform Key) variable.
 
-</details>
+**WARNING:** Removing PK (Platform Key) will reset the system to setup / audit mode.
 
-<details><summary>Enter Deployed Mode</summary>
+### Enter Deployed Mode ###
 
 Transition between Deployment and User Modes.
 
-</details>
-
 <details><summary>Allow Microsoft 3rd Party UEFI CA</summary>
 
-One of 2 possible options for Microsoft 3rd Party UEFI CA:
+Options:
 
-1.  **Enabled** - enables Microsoft 3rd Party UEFI CA. Default.
-2.  Disabled - disables Microsoft 3rd Party UEFI CA.
+1.  **Enabled** - Default.
+2.  Disabled.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+
+<!-- | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| AllowMicrosoft3rdPartyUEFICA | setting_values | yes_no | amd_intel |
+| AllowMicrosoft3rdPartyUEFICA | setting_values | yes_no | amd_intel | -->
 
-**NOTE:** If add-on Cards are supported, Microsoft 3rd Party UEFI CA will not be removed until load boot loader.
+**NOTE:** If add-on cards are supported, Microsoft 3rd Party UEFI CA will not be removed until the boot loader is loaded.
 
 <!-- MODEL: Only M90t/s-3 -->
 
