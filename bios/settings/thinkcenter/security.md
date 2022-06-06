@@ -6,9 +6,7 @@
 
 <details><summary>Supervisor Password</summary>
 
-Shows the status of the password.
-
-One of 2 possible options for password status:
+Options:
 
 1.  **Not Installed** - password disabled. Default.
 2.  Installed -  password enabled.
@@ -17,9 +15,7 @@ One of 2 possible options for password status:
 
 <details><summary>Power-On Password</summary>
 
-Shows the status of the password.
-
-One of 2 possible options for password status:
+Options:
 
 1. **Not Installed** - password disabled. Default.
 2. Installed -  password enabled.
@@ -28,9 +24,7 @@ One of 2 possible options for password status:
 
 <details><summary>System Management Password</summary>
 
-Shows the status of the password.
-
-One of 2 possible options for password status:
+Options:
 
 1. **Not Installed** - password disabled. Default.
 2. Installed -  password enabled.
@@ -67,12 +61,12 @@ The System Management Password prevents unauthorized users from accessing BIOS S
 
 <details><summary>Access Security Settings</summary>
 
-Set the level of security settings access for the SMP.
+Enable or disable security settings access for the SMP.
 
-One of 2 possible options for SMP security settings access:
+Options:
 
-1.  **Disabled** - disables security settings access.
-2.  Enabled - enables security settings access. Default.
+1.  **Disabled**.
+2.  Enabled - Default.
 
 <!--
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -86,10 +80,12 @@ One of 2 possible options for SMP security settings access:
 
 <details><summary>Remote Set SMP</summary>
 
-One of 2 possible options for remote setting of the SMP:
+Whether SMP (System Management Password) may be set remotely:
 
-1.  **Disabled** - disables remote setting of the SMP.
-2.  Enabled - enables remote setting of the SMP. Default.
+Options:
+
+1.  **Disabled**.
+2.  Enabled - Default.
 
 <!--
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -112,8 +108,12 @@ Configure the password policies
 
 <details><summary>Secure Roll Back Prevention</summary>
 
-1.  **Yes** - Flashing BIOS to a previous or current version is NOT allowed. Default.
-1.  No - Flashing BIOS to a previous or current version is allowed.
+Whether flashing BIOS to a previous or current version is prevented (NOT allowed).
+
+Options:
+
+1.  **Yes** - Flashing NOT allowed. Default.
+1.  No - Flashing BIOS allowed.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -124,12 +124,10 @@ Configure the password policies
 
 <details><summary>Windows UEFI Firmware Update</summary>
 
-This option enables or disables Windows UEFI firmware update feature.
+Options:
 
-One of 2 possible options for Windows UEFI firmware updates:
-
-1. **Enabled** - Allow Windows UEFI firmware update. Default.
-1. Disabled - BIOS Will Skip Windows UEFI firmware update.
+1. **Enabled** - Default.
+1. Disabled - BIOS will skip Windows UEFI firmware update.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -141,30 +139,26 @@ One of 2 possible options for Windows UEFI firmware updates:
 
 <details><summary>Smart USB Protection</summary>
 
-Smart USB Protection could block copying data from the
-computer to the USB storage device in windows.
+Block USB write access (copying data from computer to USB storage device) in Windows.
 
-One of 2 possible options for Smart USB Protection:
+Options:
 
 1.  **Disabled** - disables Smart USB Protection. Default.
-1.  Read Only - The user can copy data from USB storage device to the computer but cannot copy data from the computer to USB storage device.
-1.  NO Access - The user cannot use usa storage device in windows
-
+1.  Read Only - The user can copy data from USB to computer, but not from computer to USB.
+1.  NO Access - The user cannot use USB storage device in Windows.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | SmartUSBProtection | setting_values | yes_no | amd_intel |
 -->
-
-
 </details>
 
 <details><summary>Secure Wipe</summary>
 
 Hide or display the "Secure Wipe" option on the F12 BIOS Startup Menu.
 
-One of 2 possible options for Secure Wipe:
+Options:
 
 1.  **Disabled** - disables Secure Wipe. Default.
 2.  Enabled - enables Secure Wipe.
@@ -202,7 +196,7 @@ if System runs in user MOde.
 
 Device Guard protects against malware by restricting the device across several technologies.   
 
-One of 2 possible options for Device Guard:
+Options:
 
 1.  **Disabled** - Ethernet, USB, CD, and other boot methods are enabled.
 1.  Enabled - CPU Virtualization Technology，IOMMU (Intel VT-d, AMD-Vi),  Secure boot, and TPM are enabled. Ethernet, USB, CD, and other boot methods are disabled. Only SATA devices are allowed.
@@ -217,63 +211,57 @@ One of 2 possible options for Device Guard:
 
 <details><summary>Secure Core PC Level3</summary>
 
-One of 2 possible options for support Windows 10/11 Secured-core PCs Level3:
+Whether to support Windows 10/11 Secured-core PCs' Level3:
 
-1.  **Disabled** - disables support for Windows 10/11 Secured-core PCs Level3. Default.
-2.  Enabled - enables support for Windows 10/11 Secured-core PCs Level3.
+1.  **Disabled** - Default.
+2.  Enabled.
 
  - [More information at Microsoft Docs](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-highly-secure)
 
 </details>
 
 <details><summary>Electronic Lock</summary>
-Select whether to lock the chassis to prevent unauthorized physical access to the system components.
 
+Whether to lock the chassis to prevent unauthorized physical access to the system components.
 
 **NOTE:** Effective on the next startup after BIOS setting is saved.
 
-One of 2 possible options for Electronic Lock:
+Options:
 
-1.  **Disabled** - disables Electronic Lock. Default.
-2.  Enabled - enables Electronic Lock.
-
+1.  **Disabled** - Default.
+2.  Enabled.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | setting_name | setting_values | yes_no | amd_intel |
 -->
-
-
 </details>
 
 <details><summary>Cover Tamper Detected</summary>
 
 Chassis Intrusion Detection is a utility that can tell whether someone has opened the case (intruded into the chassis).
 
-One of 2 possible options for Chassis Intrusion Detection:
+Options:
 
-1.  **Disabled** - disables Chassis Intrusion Detection. Default.
-2.  Enabled - enables Chassis Intrusion Detection.
+1.  **Disabled** - Default.
+1.  Enabled.
 
 **NOTE:** If chassis tamper occurs, you can only clear this error by entering setup.
-
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | CoverTamperDetected | setting_values | yes_no | amd_intel |
 -->
-
 </details>
 
 <details><summary>Configuration Change Detection</summary>
 
-One of 2 possible options for Configuration Change Detection:
+Options:
 
-1.  **Disabled** - disables Configuration Change Detection. Default.
-2.  Enabled - enables Configuration Change Detection. When a device is installed or removed, the system will notify the user during POST.
-
+1.  **Disabled** - Default.
+2.  Enabled. When a device is installed or removed, the system will notify the user during POST.
 
 **NOTE:** This notice can only be cleared by entering BIOS setup, saving and then exiting.
 
@@ -282,8 +270,6 @@ One of 2 possible options for Configuration Change Detection:
 |:---|:---|:---|:---|
 | ConfigurationChangeDetection | setting_values | yes_no | amd_intel |
 -->
-
-
 </details>
 
 <!-- <details><summary>Password Count Exceeded Error</summary>
