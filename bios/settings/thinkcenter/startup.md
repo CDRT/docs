@@ -1,20 +1,16 @@
+# Startup
+
+![](./img/thinkcenter_startup.png)
+
 ### Boot Priority Order ###
 
 This sequence is used when the system is powered up normally.
 
-**NOTE:** Use up and down arrows to select. `+` and `-` increase or decrease priority. Use `x` to exclude the device from the boot sequence.
-
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| BootOrder | setting_values | yes_no | amd_intel |
--->
-
 <details><summary>First Boot Device</summary>
 
-Select the first boot priority group. BIOS will try to boot from the group first before trying the boot order.
+Select the first boot priority group. BIOS will try to boot from this group first before trying the boot order.
 
-One of 7 possible options for first boot priority group:
+Options:
 
 1. **Boot Order**. Default.
 1. Network
@@ -37,7 +33,7 @@ Select the first boot device from the designated group.
 
 **WARNING:** if disabled, the system will try to boot from all the devices in the group.
 
-One of 3 possible options for first network device:
+Options:
 
 1. **Disabled** - the system will try to boot from all the devices in the group. Default.
 1. Network1
@@ -47,31 +43,30 @@ One of 3 possible options for first network device:
 
 <details><summary>Boot Up Num-Lock Status</summary>
 
-This field indicates the state Of the NumLock feature Of the keyboard after Startup.
+Whether keypad keys will act as numeric keys.
 
-One of 2 possible options for NumLock:
+Options:
 
-1. **On** - keypad keys will act as numeric keys. Default.
-1. Off - Keypad keys will act as cursor keys.
+1. **On** - Default.
+1. Off.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | BootUpNumLockStatus | setting_values | yes_no | amd_intel |
 -->
-
 </details>
 
 <details><summary>Fast Boot</summary>
 
-This feature can record the last successful startup state to reduce the POST time at the next startup.
+Record the last successful startup state to reduce the POST time at the next startup.
 
 **WARNING:** We recommended turning off Fast Boot if you often use CD/DVD or network to load your operating system.
 
-One of 2 possible options for Fast Boot:
+Options:
 
-1.  **Enabled** - enables Fast Boot. Default.
-1.  Disabled - disables Fast Boot.
+1.  **Enabled** - Default.
+1.  Disabled.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -87,8 +82,8 @@ Controls the system software option key prompts (such as the F1 key) when the sy
 
 One of 2 possible options for option key prompts:
 
-1.  **Disabled** - disables option key prompts. Default.
-2.  Enabled - enables option key prompts.
+1.  **Disabled** - Default.
+2.  Enabled.
 
 **NOTE:** Disabling the prompts will not affect the function of a specific key.
 
