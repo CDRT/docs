@@ -34,7 +34,7 @@ Options:
 
 <details><summary>Wireless LAN PXE boot</summary>
 
-Select whether to load Wireless LAN UNDI Driver to support wireless LAN PXE boot or HTTPS boot.
+Whether to load Wireless LAN UNDI Driver to support wireless LAN PXE boot or HTTPS boot.
 
 Options:
 
@@ -110,7 +110,7 @@ Options:
 
 <details><summary>Lenovo Cloud Services</summary>
 
-Whether to boot with `Lenovo Cloud` selected in boot menu to boot from Lenovo Cloud server directly.
+Whether `Lenovo Cloud` will be selected in boot menu, to boot from Lenovo Cloud server directly.
 
 1.  **Disabled** - Default.
 2. Enabled.
@@ -120,7 +120,7 @@ Whether to boot with `Lenovo Cloud` selected in boot menu to boot from Lenovo Cl
 
 <details><summary>Win VDI Boot</summary>
 
-Whether to boot with `Win VDI Boot` selected in boot menu, to boot from Lenovo Cloud server and load VDI service.
+Whether `Win VDI Boot` will be selected in boot menu, to boot from Lenovo Cloud server and load VDI service.
 
 Options:
 
@@ -149,7 +149,7 @@ Options:
 
 <details><summary>Internet Protocol</summary>
 
-One of 2 possible options for IP version:
+Options:
 
 1.  **Ipv4** - enables IPV4. Default.
 2.  Ipv6 - enables IPV6.
