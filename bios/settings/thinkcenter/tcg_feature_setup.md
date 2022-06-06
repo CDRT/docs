@@ -37,7 +37,7 @@ Whether the TCG security feature is fully functional.
 
 Whether to clear TCG Security Feature.
 
-**WARNING**: Any data in TPM Will be cleared.
+**WARNING**: Any data in TPM will be cleared.
 
 Options:
 
