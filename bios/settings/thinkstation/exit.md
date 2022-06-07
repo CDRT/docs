@@ -1,4 +1,4 @@
-# Exit #
+# Exit Settings#
 ![](./img/exit.png)
 
 <details><summary>Save Changes and Exit</summary>
