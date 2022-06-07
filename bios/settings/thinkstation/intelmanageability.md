@@ -9,7 +9,7 @@ One of 2 possible states:
     a. If system is provisioned, MEBx (Management Engine BIOS Extension) will be unprovisioned first.<br>
     b. Manageability functions will be disabled. You can enter BIOS to re-enable Intel(R) Manageability.<br>
 
-**Note**. When changing the setting from "Enabled" to "Disabled", after saving and existing SETUP, need to unplug the AC power cord and plug it in again.
+**Note**. When changing the setting from `Enabled` to `Disabled`, after saving and existing SETUP, need to unplug the AC power cord and plug it in again.
 
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -34,7 +34,7 @@ One of 2 possible states:
 <details><summary>Press < Ctrl-P > to Enter MEBx</summary>
 One of 2 possible states:
 
-1. **Enabled** – Default. Management Engine BIOS Extension (MEBx) provides platform-level configuration options for you to configure the behaviour of Management Engine (ME) platform.
+1. **Enabled** – Default. Management Engine BIOS Extension (MEBx) provides platform-level configuration options for you to configure the behavior of Management Engine (ME) platform.
 2. Disabled. 
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |

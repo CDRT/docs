@@ -41,7 +41,7 @@ One of 2 possible states for all Front USB Ports:
 {Number} is the order number of the front USB port. 
 One of 2 possible states to select per each Front USB Port:
 
-1. **Enabled** – the corresponding Front USB Port is enabled. Default, if ‘Enabled’ is selected in ‘Front USB Ports’. 
+1. **Enabled** – the corresponding Front USB Port is enabled. Default, if `Enabled` is selected in `Front USB Ports`. 
 2. Disabled – the corresponding Front USB Port is disabled. 
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -66,7 +66,7 @@ One of 2 possible states for all Rear USB Ports:
 {Number} is the order number of the rear USB port. 
 One of 2 possible states to select per each Rear USB Port:
 
-1. **Enabled** – the corresponding Rear USB Port is enabled. Default, if ‘Enabled’ is selected in ‘Rear USB Ports’. 
+1. **Enabled** – the corresponding Rear USB Port is enabled. Default, if `Enabled` is selected in `Rear USB Ports`. 
 2. Disabled – the corresponding Rear USB Port is disabled.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |

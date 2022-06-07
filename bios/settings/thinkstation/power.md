@@ -20,7 +20,7 @@ One of 2 states:
 1. Enabled – the system will enter to Enhanced Power Saving Mode during power off. The total power consumption will be lower during power off. 
 2. **Disabled** – disables the function of Enhanced Power Save Mode. Default.
 
-**Note**: When enabled "Enhanced Power Saving Mode", only the "Wake Up on Alarm" function is supported. Other wake up functions are not supported. System will not enter to "Enhanced Power Saving Mode" if Intel ME (Management Engine) is required to be active in Sx states (aka Sleep states) and host is in AC mode.
+**Note**: When enabled `Enhanced Power Saving Mode`, only the `Wake Up on Alarm` function is supported. Other wake up functions are not supported. System will not enter to `Enhanced Power Saving Mode` if Intel ME (Management Engine) is required to be active in Sx states (aka Sleep states) and host is in AC mode.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|

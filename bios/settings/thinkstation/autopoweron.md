@@ -35,7 +35,7 @@ One of 5 options to select whether to enable Wake Up on Alarm, to turn on your s
 2. Single Event - the system will turn on one-time on the specified day and time. 
 3. Daily Event - the system will turn on every day at the specified time.
 4. Weekly Event - the system will turn on every week on the specified day and time.
-5. User Defined - this option enables 'User Defined Alarm' group of settings. 
+5. User Defined - this option enables `User Defined Alarm` group of settings. 
 
 **Note**. Values in these fields may be overwritten by the operating system. 
 
@@ -47,7 +47,8 @@ One of 5 options to select whether to enable Wake Up on Alarm, to turn on your s
 
 <details><summary>Alarm Time ( HH : MM : SS)</summary>
 Field to select the exact time for the system to turn on. <br>
-Active when ‘Wake Up on Alarm’ has one of the values:
+
+Active when `Wake Up on Alarm` has one of the values:
 
 * Single Event
 * Daily Event
@@ -69,7 +70,8 @@ Possible values:
 
 <details><summary>Alarm Date (MM/DD/YYYY) </summary>
 Field to select the exact day for the system to turn on.<br> 
-Active only when 'Wake Up on Alarm' has value 'Single Event'. <br>
+
+Active only when `Wake Up on Alarm` has value `Single Event`. <br>
 Possible values:
 
 1.	**01/01/YYYY** – Default.
@@ -86,7 +88,8 @@ Possible values:
 
 <details><summary>Alarm Day of Week</summary>
 Field to select the exact day for the system to turn on. <br>
-Active only when 'Wake Up on Alarm' has value 'Weekly Event'.<br>
+
+Active only when `Wake Up on Alarm` has value `Weekly Event`.<br>
 Possible values:
 
 1. **Sunday** – Default
@@ -106,77 +109,13 @@ Possible values:
 ### User Defined Alarm ###
 ![](./img/userdefinedalarm.png)
 
-<details><summary>Sunday</summary>
+Settings per {Weekday}.
+
+<details><summary>{Weekday}</summary>
 One of 2 states to select:
 
-1. **Off** - the system will not turn on automatically on this day. Default.
-2. On – the system will turn on automatically on this day.
-
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-   |:---|:---|:---|:---|
-|   |   | No | Both |
-</details>
-
-<details><summary>Monday</summary>
-One of 2 states to select:
-
-1. **Off** - the system will not turn on automatically on this day. Default.
-2. On – the system will turn on automatically on this day.
-
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-   |:---|:---|:---|:---|
-|   |   | No | Both |
-</details>
-
-<details><summary>Tuesday</summary>
-One of 2 states to select:
-
-1. **Off** - the system will not turn on automatically on this day. Default.
-2. On – the system will turn on automatically on this day.
-
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-   |:---|:---|:---|:---|
-|   |   | No | Both |
-</details>
-
-<details><summary>Wednesday</summary>
-One of 2 states to select:
-
-1. **Off** - the system will not turn on automatically on this day. Default.
-2. On – the system will turn on automatically on this day.
-
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-   |:---|:---|:---|:---|
-|   |   | No | Both |
-</details>
-
-<details><summary>Thursday</summary>
-One of 2 states to select:
-
-1. **Off** - the system will not turn on automatically on this day. Default.
-2. On – the system will turn on automatically on this day.
-
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-   |:---|:---|:---|:---|
-|   |   | No | Both |
-</details>
-
-<details><summary>Friday</summary>
-One of 2 states to select:
-
-1. **Off** - the system will not turn on automatically on this day. Default.
-2. On – the system will turn on automatically on this day.
-
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-   |:---|:---|:---|:---|
-|   |   | No | Both |
-</details>
-
-<details><summary>Saturday</summary>
-One of 2 states to select:
-
-1. **Off** - the system will not turn on automatically on this day. Default.
-2. On – the system will turn on automatically on this day.
+1. **Off** - the system will not turn on automatically on this day of the week. Default.
+2. On – the system will turn on automatically on this day of the week.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
    |:---|:---|:---|:---|

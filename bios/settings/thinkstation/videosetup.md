@@ -10,7 +10,7 @@ One of 3 options to select primary video device that will be used for graphics o
 2. IGD – Internal Graphics Device will be used.
 3. PEG – PCI-e Graphics Device will be used.
 
-**Note**. If CPU does not support integrated graphics, there will be no “IGD” option.
+**Note**. If CPU does not support integrated graphics, there will be no `IGD` option.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|

@@ -73,7 +73,7 @@ While enabling the following parameters are available:
 <details><summary>Set Power-On Password</summary>
 Option to set, change or delete the Power-On Password.
 
-**Note**. To delete Power-On Password, enter blank fields foe each new password line item.
+**Note**. To delete Power-On Password, enter blank fields for each new password line item.
 
 While enabling the following parameters are available TBD:
 1. [ Enter New Password ]
@@ -93,7 +93,7 @@ While enabling the following parameters are available TBD:
 <details><summary>Set System Management Password</summary>
 Option to set, change or delete the System Management Password (SMP).
 
-**Note**. To delete System Management Password, enter blank fields foe each new password line item.
+**Note**. To delete System Management Password, enter blank fields for each new password line item.
 
 While enabling the following parameters are available TBD:
 1. [ Enter New Password ]

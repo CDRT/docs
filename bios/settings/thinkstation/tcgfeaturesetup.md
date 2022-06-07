@@ -35,7 +35,7 @@ One of 2 states:
 
 1. **Enabled** – TCG security feature is full function. Default. 
 2. Disabled – TCG security feature is no functional.<br> 
-    **Note**. When set to "Disabled", then TxT will be set to "Disabled" automatically and "Clear TCG Security Feature" becomes unavailable. 
+    **Note**. When set to `Disabled`, then TxT will be set to `Disabled` automatically and `Clear TCG Security Feature` becomes unavailable. 
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -44,7 +44,8 @@ One of 2 states:
 
 
 <details><summary>Clear TCG Security Feature</summary>
-Available only when "Security Chip 2.0" has "Enabled" state.<br>
+
+Available only when `Security Chip 2.0` has `Enabled` state.<br>
 One of two options:
 
 1. Yes – clear TCG Security Feature.<br> 

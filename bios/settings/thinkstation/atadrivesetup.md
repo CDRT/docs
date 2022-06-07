@@ -16,14 +16,13 @@ One of 2 possible states for the SATA controller:
 </details>
 
 
-<details><summary>SATA Drive [N]</summary>
-[N] is the order number of a SATA Drive.<br>
-One of 2 possible states for each SATA Drive:
+<details><summary>SATA Drive {Number}</summary>
+One of 2 possible states for each SATA Drive numbered {Number}:
 
 1. **Enabled** – the corresponding SATA Drive is enabled. Default. 
 2. Disabled – the corresponding SATA Drive is disabled.
 
-**Note**. The fields are unavailable, if “SATA Controller” is set to “Disabled”.
+**Note**. The fields are unavailable, if `SATA Controller` is set to `Disabled`.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -37,7 +36,7 @@ One of 2 possible states for the hot-plug port:
 1. Enabled – the hot-plug port is enabled. 
 2. **Disabled** – the hot-plug port is disabled. Default.
 
-**Note**. The field is unavailable, if “SATA Controller” is set to “Disabled”.
+**Note**. The field is unavailable, if `SATA Controller` is set to `Disabled`.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -49,7 +48,7 @@ One of 2 possible states for the hot-plug port:
 One of 3 possible options for SATA configuration mode:
 
 1. **ANCI** – Default. When selecting, it requires additional confirmation.<br> 
-    **Note**. If you change the SATA mode to ANCI you may not boot the system due to the failure of Intel(R) RST with Intel(R) Optane (RAID) function.<br>
+    **Note**. If you change the SATA mode to `ANCI` you may not boot the system due to the failure of Intel(R) RST with Intel(R) Optane (RAID) function.<br>
 2. Intel(R) RST with Intel(R) Optane
 3. RAID – When selecting, it requires additional confirmation.<br> 
     **Note**. Please do not disable SATA drives in RAID mode. Otherwise you may not boot the system due to the failure of RAID function.

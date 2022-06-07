@@ -124,7 +124,7 @@ One of 2 options:
 <details><summary>Password Count Exceeded Error</summary>
 One of 2 states:
 
-1. **Enabled** – select this option to shoe the POST 0199 error and prompt for password. Default.
+1. **Enabled** – select this option to show the POST 0199 error and prompt for password. Default.
 2. Disabled – Select to hide the POST 0199 error and proceed without any user action required.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |

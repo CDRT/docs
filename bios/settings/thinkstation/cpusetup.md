@@ -21,7 +21,7 @@ One of 2 possible states:
 1. **Enabled** – Default. 
 2. Disabled – Intel(R) Hyper-Threading Technology is turned off. 
 
-**Note**. If "TXT" has "Enabled" status, then this item will be enabled and not available for disabling. 
+**Note**. If `TxT` has `Enabled` status, then this item will be enabled and not available for disabling. 
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -47,7 +47,7 @@ One of 2 possible states:
 One of 2 possible states:
 
 1. **Enabled** – Default. Intel(R) Virtualization Technology allows PC platforms to run multiple applications and operating systems simultaneously in independent partitions, to help to manage and protect the multi-functional capabilities of PCs.
-2. Disabled – Intel(R) Virtualization Technology is turned off and following items get “Disabled” status and become unavailable:<br>
+2. Disabled – Intel(R) Virtualization Technology is turned off and following items get `Disabled` status and become unavailable:<br>
   a. VT-d Feature<br>
   b. TxT
 
@@ -77,7 +77,7 @@ Additional information is available here: [VT-d Feature](https://www.intel.com/c
 One of 2 possible states:
 
 1. Enabled –Trusted Execution Technology (TxT) provides hardware-based mechanisms that help protect against software-based attacks and protects the confidentiality and integrity of all data stored or created on the client PC.
-Note. If TxT is set to “Enabled”, then the Security Chip will be set to “Enabled” automatically.
+Note. If TxT is set to `Enabled`, then the Security Chip will be set to `Enabled` automatically.
 2. **Disabled** – TxT feature is turned off. Default.
 
 Additional information is available here: [Intel(R) TXT Overview](https://www.intel.com/content/www/us/en/support/articles/000025873/technologies.html).

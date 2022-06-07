@@ -4,7 +4,7 @@
 <details><summary>Parallel Port Address</summary>
 One of 3 possible options to define settings for the Parallel Port:
 
-1. Disabled – if selected, then the Parallel Port will not be seen by the OS, and “Parallel Port Mode”,  “EPP Version” and “Parallel Port IRQ” will become unavailable. 
+1. Disabled – if selected, then the Parallel Port will not be seen by the OS, and `Parallel Port Mode`,  `EPP Version` and `Parallel Port IRQ` will become unavailable. 
 2. **378** – Default. 
 3. 278
 

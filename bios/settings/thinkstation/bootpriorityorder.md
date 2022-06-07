@@ -5,8 +5,8 @@
 The ordered list of currently defined boot priority order.<br>
 
 * User Up and Down arrows to select a device.
-* ' + '  and ' - ' move the device up or down. 
-* ' x ' excludes/includes the device to boot.
+* `+`  and `-` move the device up or down. 
+* `x` excludes/includes the device to boot.
 
 Possible items on the list depends on the machine configuration. For every item on the list system shows:
 [Device Type] [Device Model Number].
