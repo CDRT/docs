@@ -42,14 +42,14 @@ One of 2 possible options of thermal management scheme to use:
 <details><summary>CPU Power Management</summary>
 One of 2 possible options:
 
-1.	**Enabled** - enabled power saving feature that stops the microprocessor clock automatically when there are no system activities. Default. 
+1.	**Automatic** - enabled power saving feature that stops the microprocessor clock automatically when there are no system activities. Default. 
 2.	Disabled - disabled power saving feature.
 
 **Note**. Normally, it is not necessary to change this setting.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
    |:---|:---|:---|:---|
-| CPUPowerManagement | Disable, Enable | No | Both |
+| CPUPowerManagement | Disable, Automatic | No | Both |
 </details>
 
 <details><summary>Power On with AC Attach</summary>
