@@ -53,7 +53,7 @@ disk drive (HDD) passwords
 
 **ThinkPad**: 
 BIOS setup through WMI is supported on the following ThinkPad products:
- + All ThinkPad models from 2018 or newer
+ + All ThinkPad models from 2017 or newer
  + Selected ThinkPad models from 2017 or older: 
    + ThinkPad L430, L530, L440, L540, L450, L460, L560, L470, L570
    + ThinkPad T430, T430s, T430u, T530, T440, T440p, T440s, T540p, T450, T450s, T550, W550s, T460, T460p, T460s, T560, T470, T470s, T470p, T570
@@ -117,6 +117,9 @@ The following interface details can be used to access Lenovo BIOS settings.
  + Base Class: "Lenovo_BIOSElement"
  + Interface details (see Table 1 Interface Details.) 
 
+
+**ThinkPad**:
+
 | Class Name                  	| Type   	| Parameter / Return                                                    	| Example                                     	|
 |-----------------------------	|--------	|-----------------------------------------------------------------------	|---------------------------------------------	|
 | Lenovo_BiosSetting          	| Query  	| CurrentSetting: “Item, Value”                                         	| “WakeOnLAN, Enable”                         	|
@@ -129,13 +132,30 @@ The following interface details can be used to access Lenovo BIOS settings.
 
 <div style="text-align:center;">
 
-_**Table 1.** Interface Details_
+_**Table 1.** ThinkPad Interface Details_
+</div>
+
+**ThinkCentre**:
+
+| Class Name                  	| Type   	| Parameter / Return                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      	| Example                                                                                                                                                                                                                                                                                                                         	|
+|-----------------------------	|--------	|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Lenovo_BiosSetting          	| Query  	| CurrentSetting: "Item,Value"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            	| “Wake Up on LAN,Eanbled”                                                                                                                                                                                                                                                                                                        	|
+| Lenovo_SetBiosSetting       	| Method 	| “Item,Value;”                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           	| “Wake Up on LAN,Disabled;”                                                                                                                                                                                                                                                                                                      	|
+| Lenovo_SaveBios Settings    	| Method 	| ";"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     	| ";"                                                                                                                                                                                                                                                                                                                             	|
+| Lenovo_DiscardBios Settings 	| Method 	| ";"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     	| ";"                                                                                                                                                                                                                                                                                                                             	|
+| Lenovo_LoadDefault Settings 	| Method 	| ";"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     	| ";"                                                                                                                                                                                                                                                                                                                             	|
+| Lenovo_BiosPasswordSettings 	| Method 	| PasswordMode:”Value”<br>-0:Legacy Mode<br>-Others: Reserved PasswordState:”Value”<br>-BIT0=1: User password is installed<br>-BIT1=1:Admin password isinstalled<br>-BIT2=1:Hard disk passwords are installed <br>MinLength:”Value”<br>-1:always one byte MaxLength:”Value”<br>-64:always 64 byte SupportedKeyboard:”Value”<br>-BIT0=1:Support US keyboard<br>-BIT1=1:Support French keyboard<br>-BIT2=1:Support German keyboard <br>SupportedEncodings:”Value”<br>-BIT0=1: support ASCII password input<br>-BIT1=1:support scancode password input <br>Port0HardDiskPasswordState:”Value”<br>-BIT0=1:User hard disk password is installed<br>-BIT1=1:Master hard disk password is installed<br>   Port1HardDiskPasswordState:”Value”<br>   Port2HardDiskPasswordState:”Value”<br>   Port3HardDiskPasswordState:”Value”<br>   Port4HardDiskPasswordState:”Value”<br>   Port5HardDiskPasswordState:”Value” 	| PasswordMode:1 <br>PasswordState:0 <br>MinLength:1 <br>MaxLength:64 <br>SuportedKeyboard:7 <br>SupportedEncodings:3 <br>Port0HardDiskPasswordState:00 <br>Port1HardDiskPasswordState:00 <br>Port2HardDiskPasswordState:00 <br>Port3HardDiskPasswordState:00 <br>Port4HardDiskPasswordState:00 <br>Port5HardDiskPasswordState:00 	|
+| Lenovo_SetBios Password     	| Method 	| "PasswordType,CurrentPassword, NewPassword, <br>Encoding,KbdLang;"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      	| “pop,oldpop,newpop,ascii,us;”                                                                                                                                                                                                                                                                                                   	|
+| Lenovo_WmiOpcodeInterface   	| Method 	| WmiOpcodePasswordAdmin:<br>   Adminstrator password;<br>   WmiOpcodePasswordType:password type;<br>   WmiOpcodePasswordCurrent01:current password;<br>   WmiOpcodePasswordNew01:New password;<br>   WmiOpcodePasswordSetUpdate;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         	| WmiOpcodePassworType:pap; <br>WmiOpcodePasswordCurrent01:12; <br>WmiOpcodePassworNew01:456;<br>WmiOpcodePassworSetUpdate;                                                                                                                                                                                                       	|
+
+<div style="text-align:center;">
+
+_**Table 2.** ThinkCentre Interface Details_
 </div>
 
 **Notes**:
  + See Appendix A Sample Visual Basic scripts for configuring BIOS settings for Visual Basic sample scripts.
  + See Appendix B Sample PowerShell commands for remote BIOS management for PowerShell sample scripts.
-
 
 ### Return Types
 
@@ -151,7 +171,7 @@ You will receive one of the following return types after making changes to BIOS 
 
 <div style="text-align:center;">
 
-_**Table 2.** Return Types_
+_**Table 3.** Return Types_
 </div>
 
 
@@ -161,10 +181,10 @@ In previous models, it was required to specify the supervisor password in both L
 
 For 2017 and newer models, the password is specified using the Lenovo_WmiOpcodeInterface class. A single parameter in the format of “WmiOpcodePasswordAdmin:MyPassword” (where MyPassword is your actual password) is used.
 
-For 2016 and older models, if a supervisor password is already set, you must specify that supervisor password before you can change any BIOS settings. The format for password parameters is "abc, ascii, us" with descriptions in the following table. For Example, if the Current passwordis “abc”, Password encoding is “ascii”,Keyboard language is “ascii” Lenovo_SaveBiosSettings should be called with parameters as “abc, ascii, us;” 
+For 2017 and older models, if a supervisor password is already set, you must specify that supervisor password before you can change any BIOS settings. The format for password parameters is "abc, ascii, us" with descriptions in the following table. For Example, if the Current passwordis “abc”, Password encoding is “ascii”,Keyboard language is “ascii” Lenovo_SaveBiosSettings should be called with parameters as “abc, ascii, us;” 
 
-Table 3 described the password parameters for old models that produced before 2017.
-Table 4 described the password parameters for 2017 or later
+Table 4 described the password parameters for old models that produced before 2017.
+Table 5 described the password parameters for 2017 or newer
 produced models. 
 
 
@@ -176,13 +196,12 @@ produced models.
 
 <div style="text-align:center;">
 
-_**Table 3.** Password parameters format, password authentication_
+_**Table 4.** Password parameters format, password authentication_
 </div>
 
-For 2017 or later computers, you need first call Class
+For 2017 or newer computers, you need first call Class
 Lenovo_WmiOpcodeInterface with below parametes before change any BIOS
 settings, andthe password just support ascii encode.
-Please refer to Table 8 for the supported characters
 
 | Parameters  	| Description                                                                         	| Possible Selections                                                                     	|
 |-------------	|-------------------------------------------------------------------------------------	|-----------------------------------------------------------------------------------------	|
@@ -190,7 +209,7 @@ Please refer to Table 8 for the supported characters
 
 <div style="text-align:center;">
 
-_**Table 4.** 2017 and later password parameters format, password authentication_
+_**Table 5.** 2017 and later password parameters format, password authentication_
 </div>
 
 ## Typical Usage
@@ -218,12 +237,29 @@ After making changes to the BIOS settings, you must reboot the computer before t
 
 ### Changing the Boot Order 
 
+**ThinkPad**:
+
 To change the boot order, complete the following steps:
  + Determine the current setting for “BootOrder” by using the Lenovo_BiosSetting class.
  + Determine the available boot devices by using the Lenovo_GetBiosSelections class.
  + To set a new boot order, use the Lenovo_SetBiosSetting class, then use the Lenovo_SaveBiosSetting class to save the settings. In the following example, the CD drive 0 is the first boot device and hard disk drive 0 is the second startup device.
  
  ```ATAPICD0:HDD0```
+ 
+**ThinkCentre**:
+
+To change the boot order, complete the following steps:
+ + Determine the current setting for “BootOrder” by using the Lenovo_BiosSetting class.
+ + To set a new boot order, use the Lenovo_SetBiosSettingclass, then use the Lenovo_SaveBiosSetting class to save the settings. Specify a new boot order by listing the boot devices in order, separated by colons. Devices that are not specified are excluded from the boot order. In the following example, the Network Card drive is the first boot device and SATA drive 1 is the second boot device and so on.
+
+ Example: Change primary boot sequence,
+ ```"Primary Boot Sequence” “Network 1:SATA 1:USB HDD:SATA 2:USB CDROM:USB Key"```
+
+**Note**:
+ 1. “Boot Order” settings are case sensitive.
+ 2. Settings may different from projects, recommend List all settings first to identify the BIOS setting wants to change, and put all the listed device to the script parameters, just sequence could be changed .
+ 3. After making changes to the BIOS settings, you must reboot the computer before the changes will take effect. 
+
 
 ### Restoring Default Settings 
 
@@ -231,7 +267,7 @@ To restore default BIOS settings, use the Lenovo_LoadDefaultSettings class, then
 
 ### Changing an Existing BIOS Password 
 
-To update a password, specify a password type and format the password. The format for password parameters is "pop, abc, def, ascii, us" with descriptions in Table 4 (see sample scripts) 
+To update a password, specify a password type and format the password. The format for password parameters is "pop, abc, def, ascii, us" with descriptions in Table 6 (see sample scripts) 
 
 | Parameter   	| Description             	| Possible Selections                                                                                                                                                                                                                                                                                                  	|
 |-------------	|-------------------------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
@@ -243,7 +279,56 @@ To update a password, specify a password type and format the password. The forma
 
 <div style="text-align:center;">
 
-_**Table 4.** Password parameters format, changing existing BIOS password_
+_**Table 6.** Password parameters format, changing existing BIOS password_
+</div>
+
+### Changing an Existing Hardware Password
+
+The ways are different from old computers to 2017 or newer computers to update a password.
+
+**Computers before the year 2017**
+
+The format for password parameters is ″pap,abc,def,ascii,us″ with descriptions in Table 7. 
+
+| Parameter   	| Description                   	| Possible Selections                                                                                                                                                                                                                                                                                                                              	|
+|-------------	|-------------------------------	|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Parameter 1 	| Password type<br>     string  	| “pap”:Administrator password   <br>     “pop”:Power-on password                                                                                                                                                                                                                                                                                  	|
+| Parameter 2 	| Current password              	| “abc”:raw ascii character<br>     “1e302e”:scancode                                                                                                                                                                                                                                                                                              	|
+| Parameter 3 	| New password<br>     string   	| “def”:raw ascii character <br>     “201221”:scancode                                                                                                                                                                                                                                                                                             	|
+| Parameter 4 	| Password<br>     encoding     	| “ascii” <br>     “Scancode”                                                                                                                                                                                                                                                                                                                      	|
+| Parameter 5 	| Keyboard Languages            	| •“us″- English US, English UK,   <br>     Chinese-Traditional, Danish, Dutch, <br>     French-Canadian, Italian, Japanese, <br>     Korean, Norwegian, Polish, Portuguese, <br>     Spanish-European, Spanish-Latin American,<br>      Swiss, Turkish <br>     •″fr″- French-European, Belgian <br>     •″gr″ - German, Czech, Slovak, Slovenian 	|
+
+<div style="text-align:center;">
+
+_**Table 7.** Password parameters format, changing existing hardware password before 2017_
+</div>
+
+
+
+**2017 or newer Computers**
+
+The format for password parameters is as below:
+For example, Password Type is pap, current password is 123, new password will be 456. The parameter should be:
+	
+	WmiOpcodePasswordType:pap;
+	WmiOpcodePasswordCurrent01:123;
+	WmiOpcodePasswordNew01:456;
+	WmiOpcodePasswordSetUpdate;
+
+The different parameters with different key words, each parameter needa Lenovo_WmiOpcodeInterface method call, and the parameter ”WmiOpcodePasswordSetUpdate;” MUST be the LAST call to make the change take effect.
+The parameters are described in Table 8 , the supported characters arelisted in Table 9.
+
+
+| Parameter                  	| Description                                               	| Possible Seletctions                                                                                                                                                                                                     	|
+|----------------------------	|-----------------------------------------------------------	|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| WmiOpcodePasswordType      	| Password type <br>string                                  	| “pap”:Administrator   password<br>“pop”:Power-on password<br>“hdpx”: Hard Disk password, <br> x means the current HDD’s num,   <br> start from 0, hdd0 means the first   HDD.<br>Example:<br> WmiOpcodePasswordType:pap; 	|
+| WmiOpcodePasswordCurrent01 	| Current password <br>string                               	| “abc”:raw ascii character <br>Example:<br> WmiOpcodePasswordCurrent01:abc;                                                                                                                                               	|
+| WmiOpcodePasswordNew01     	| New password <br>string                                   	| “def”:raw ascii character <br>Example: <br> WmiOpcodePasswordCurrent01:def;                                                                                                                                              	|
+| WmiOpcodePasswordSetUpdate 	| The last parameter <br>to make the change <br>take effect 	| WmiOpcodePasswordSetUpdate;                                                                                                                                                                                              	|
+
+<div style="text-align:center;">
+
+_**Table 8.** Password parameters format, changing existing hardware password 2017 or newer_
 </div>
 
 ### Limitations and Notes
@@ -335,6 +420,13 @@ https://support.lenovo.com/us/en/documents/ht100612
  (additional output omitted here) 
  ```
 
+### List all BIOS Setting on a Remote Computer 
+
+**Syntax**: cscript.exe ListAllRemote.vbs
+
+**Example**: cscript.exe ListAllRemote.vbs
+
+
 ### Set a Single BIOS Setting on the Local Computer 
 
 Use the sample scripts in the ZIP file as templates to set a single BIOS setting on the local computer.
@@ -374,6 +466,15 @@ supervisor password exists.
    SaveBiosSettings: Success
    ```
 
+### Set a Single BIOS Setting on the Remote Computer When a Supervisor Password Exists 
+
+Use the sample scripts in the ZIP file as templates to set a single BIOS setting on the local computer when a
+supervisor password exists.
+
+**Syntax**: cscript.exe SetConfigPasswordRemote.vbs [Item] [Value] [Password + Encoding] [Hostname]
+
+**Example**: cscript.exe SetConfigPasswordRemote.vbs WakeOnLAN Disable password, ascii, us
+
 ### Change a Supervisor Password on the Local Computer
 
 Use the sample scripts in the ZIP file as templates to change a supervisor password on the local computer. Note:
@@ -390,6 +491,12 @@ You cannot set a supervisor password if one does not already exist.
  
  SetBiosPassword: Success
  ```
+
+### Set an Administrator Password on a Remote Computer when an Administrator Password Exists
+
+**Syntax**: cscript.exe SetAdminPasswordRemote.vbs [Old Password] [New Password] [Hostname]
+
+**Example**: cscript.exe SetAdminPasswordRemote.vbs oldpass newpass ascii, us
 
 ## Appendix B. Sample PowerShell Commands
 
