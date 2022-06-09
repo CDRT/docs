@@ -5,9 +5,8 @@
 Shows TCG (Trusted Computing Group) Security Device State. View only. <br>
 Possible values: 
 
-1. Discrete TPM 1.2 
-2. Discrete TPM 2.0
-3. Firmware TPM 2.0
+1. Discrete TPM 2.0
+2. Firmware TPM 2.0
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -28,7 +27,6 @@ One of 2 options to select the type of TCG Security Device:
 |  |  |  | Both |
 </details>
 
-<!-- TBF if add Security Chip 1.2 -->
 
 <details><summary>Security Chip 2.0</summary>
 One of 2 states:
@@ -57,7 +55,6 @@ One of two options:
 |  |  |  | Both |
 </details>
 
-<!-- TBF if add Physical Presence for Provisioning (Only show up for TPM1.2) -->
 
 <details><summary>Physical Presence for Clear</summary>
 One of 2 states to select where a confirmation of a user’s physical presence is needed when clearing the security chip:
