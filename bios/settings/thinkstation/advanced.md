@@ -20,6 +20,8 @@ One of 2 possible states for Intel(R) DPTF:
 1. **Enabled** – Intel(R) DRTF is turned on. Default.
 2. Disabled - Intel(R) DRTF is turned off.
 
+**Note**. This feature is optional, so may not be available on all models.
+
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
