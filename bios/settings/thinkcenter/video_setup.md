@@ -9,8 +9,8 @@ The primary video device for graphics output.
 Options:
 
 1.  **Auto** - automatic selection of graphics output by the system. Default.
-1.  IGD - IGD (Integrated Graphics Device).
-1.  PEG - PEG (PCIe Graphic).
+1.  IGD - Select Integrated Graphics Device.
+1.  PEG - Select PCIe Graphic.
 
 > **Notes**
 > - If `Auto` is selected, the system will select a graphics output, **prioritizing PEG**.
@@ -23,7 +23,13 @@ Options:
 
 Allocate memory to the IGD (Internal Graphics Device).
 
-Options: from **32MB** (default) to 160MB, in 32MB increments.
+Options:
+
+1.  **32MB** - Default.
+1.  64MB
+1.  96MB
+1.  128MB
+1.  160MB
 
 <!-- TODO: add WMI -->
 </details>
@@ -46,7 +52,7 @@ Enable support for MST (multi-stream transport), allowing daisy-chaining of grap
 Options:
 
 1.  **MST** - Default.
-2.  SST.
+2.  SST (single-stream transport).
 
 <!-- TODO: add WMI -->
 </details>

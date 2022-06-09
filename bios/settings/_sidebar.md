@@ -65,6 +65,7 @@
   - [Automatic Power On](bios/settings/thinkcenter/automatic_power_on.md)
 
 - [Security](bios/settings/thinkcenter/security.md)
+  - [System Management Password Access Control](bios/settings/thinkcenter/system_management_password_access_control.md)
   - [Hard Disk Password](bios/settings/thinkcenter/hard_disk_password.md)
   - [Password Policies](bios/settings/thinkcenter/password_policies.md)
   - [TCG Feature Setup](bios/settings/thinkcenter/tcg_feature_setup.md)

@@ -22,7 +22,9 @@ BIOS support for USB mouse and keyboard:
 
 <details><summary>USB Enumeration Delay</summary>
 
-Provides extra delay to USB enumeration (detection and recognition of connected USB devices).
+Provides extra delay to USB enumeration (detection and recognition of connected USB devices), to improve compatibility.
+
+**WARNING:** This may increase POST time.
 
 1.  Enable.
 2.  **Disabled** - Default.
@@ -41,7 +43,7 @@ Options for all of the front USB ports (numbered):
 
 <details><summary>USB Port {Number}</summary>
 
-One of the front USB ports, number depending on model.
+One of the front USB ports, total number depending on model.
 
 Options for each specific front USB port:
 

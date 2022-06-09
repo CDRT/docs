@@ -1,3 +1,4 @@
+# Security #
 
 ![](./img/thinkcenter_security.png)
 
@@ -55,45 +56,9 @@ Set, change, or delete the System Management Password (SMP).
 
 </details>
 
-### System Management Password Access Control ###
+<!-- ### System Management Password Access Control ###
 
-The System Management Password prevents unauthorized users from accessing BIOS Setup in default.
-
-<details><summary>Access Security Settings</summary>
-
-Enable or disable security settings access for the SMP.
-
-Options:
-
-1.  **Disabled**.
-2.  Enabled - Default.
-
-<!--
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| AccessSecuritySettings | setting_values | yes_no | amd_intel |
--->
-
-**NOTE:** When enabled, the SMP has the same security settings access permissions as the SVP.
-
-</details>
-
-<details><summary>Remote Set SMP</summary>
-
-Whether SMP (System Management Password) may be set remotely:
-
-Options:
-
-1.  **Disabled**.
-2.  Enabled - Default.
-
-<!--
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| RemoteSetSMP | setting_values | yes_no | amd_intel |
--->
-
-</details>
+The System Management Password prevents unauthorized users from accessing BIOS Setup in default. -->
 
 <!-- 
 ### Hard Disk Password ###

@@ -9,7 +9,7 @@ Options:
 
 1.  **378** - enables logical parallel port 378. Default.
 2.  278 - enables logical parallel port 278.
-3.  Disabled - disables the parallel port.
+3.  Disabled - disables the parallel port. The parallel port will not be seen by the OS.
 
 <!-- TODO: add WMI -->
 </details>

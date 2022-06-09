@@ -14,7 +14,7 @@ One of 2 possible options for enabling the SATA controller:
 |:---|:---|:---|:---|
 | SATAController | setting_values | yes_no | amd_intel |
 -->
-> **Note**: If the "SATA Controller" is set to "Disabled", then “Configure SATA as” and "SATA Drive #" will be hidden.
+> **Note**: If the "SATA Controller" is set to "Disabled", then “Configure SATA as” and "SATA Drive {Number}" will be hidden.
 
 </details>
 
@@ -26,6 +26,7 @@ One of 2 possible options for feature:
 
 1.  **Enabled** - enables this SATA drive. Default.
 2.  Disabled - disables this SATA drive.
+
 <!-- 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -33,6 +34,7 @@ One of 2 possible options for feature:
 
 > **Note** The WMI setting name for Drive 1 is shown. Other drives follow the pattern `SATADrive#` where `#` is the number of the drive.
 -->
+
 </details>
 
 <details><summary>Configure SATA As</summary>
@@ -46,7 +48,6 @@ One of 2 possible options for the SATA drive controller:
 3.  RAID - enables RAID. <!-- MODEL: M70S Gen3 only-->
 
 <!-- TODO: add WMI -->
-
 </details>
 
 <!-- SIMULATOR DOES NOT SUPPORT 
@@ -57,7 +58,7 @@ One of 2 possible options for the SATA drive controller:
 
 <details><summary>Hard Disk Pre-Delay</summary>
 
-This delay ensures the hard disk has initialized after power up, prior to being accessed, to avoid the disk hanging.
+Ensures the hard disk has initialized after power up, prior to being accessed. This avoids the disk hanging because of access by the OS before initialization.
 
 One of 8 possible options for the delay time:
 
