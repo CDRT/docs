@@ -1,4 +1,4 @@
-# Lenovo WMI BIOS Interface Guide
+# Lenovo BIOS WMI Interface Guide
 
 
 ## Introduction
@@ -53,7 +53,7 @@ disk drive (HDD) passwords
 
 **ThinkPad**: 
 BIOS setup through WMI is supported on the following ThinkPad products:
- + All ThinkPad models from 2017 or newer
+ + All ThinkPad models from 2018 or newer
  + Selected ThinkPad models from 2017 or older: 
    + ThinkPad L430, L530, L440, L540, L450, L460, L560, L470, L570
    + ThinkPad T430, T430s, T430u, T530, T440, T440p, T440s, T540p, T450, T450s, T550, W550s, T460, T460p, T460s, T560, T470, T470s, T470p, T570
@@ -72,17 +72,15 @@ BIOS setup through WMI is supported on the following ThinkPad products:
 
 
 **ThinkCentre**:
-BIOS setup through WMI descripted in this document is supported on Think Centre M-series products only.
+BIOS setup through WMI described in this document is supported on ThinkCentre M-series products only starting with M73p, M83, M93, M93p.
 
 **ThinkStation**:
-
+BIOS setup through WMI described in this document is supported on ThinkStation P-series products only starting with P300, P500, P700, P900.
 
 ## Overview of Changes
 
-Recent ThinkPad models (2020 and newer) support complex BIOS passwords. Acceptable characters for BIOS
-password are the following: 
-
-The following illustration shows how WMI can be used to access Lenovo BIOS settings 
+Recent models (2020 and newer ThinkPads, 2017 and newer ThinkCentre and ThinkStations) support complex BIOS passwords. 
+Acceptable characters for BIOS password are the following: 
 
  + Alphabet (case sensitive) {‘A-Z‘, ‘a-z‘}
  + Number {‘0-9‘}
@@ -153,10 +151,6 @@ _**Table 1.** ThinkPad Interface Details_
 _**Table 2.** ThinkCentre Interface Details_
 </div>
 
-**Notes**:
- + See Appendix A Sample Visual Basic scripts for configuring BIOS settings for Visual Basic sample scripts.
- + See Appendix B Sample PowerShell commands for remote BIOS management for PowerShell sample scripts.
-
 ### Return Types
 
 You will receive one of the following return types after making changes to BIOS settings:
@@ -181,7 +175,7 @@ In previous models, it was required to specify the supervisor password in both L
 
 For 2017 and newer models, the password is specified using the Lenovo_WmiOpcodeInterface class. A single parameter in the format of “WmiOpcodePasswordAdmin:MyPassword” (where MyPassword is your actual password) is used.
 
-For 2017 and older models, if a supervisor password is already set, you must specify that supervisor password before you can change any BIOS settings. The format for password parameters is "abc, ascii, us" with descriptions in the following table. For Example, if the Current passwordis “abc”, Password encoding is “ascii”,Keyboard language is “ascii” Lenovo_SaveBiosSettings should be called with parameters as “abc, ascii, us;” 
+For 2017 and older models, if a supervisor password is already set, you must specify that supervisor password before you can change any BIOS settings. The format for password parameters is "abc, ascii, us" with descriptions in the following table. For Example, if the Current password is “abc”, Password encoding is “ascii”, Keyboard language is “ascii” Lenovo_SaveBiosSettings should be called with parameters as “abc, ascii, us;” 
 
 Table 4 described the password parameters for old models that produced before 2017.
 Table 5 described the password parameters for 2017 or newer
@@ -246,7 +240,7 @@ To change the boot order, complete the following steps:
  
  ```ATAPICD0:HDD0```
  
-**ThinkCentre**:
+**ThinkCentre | ThinkStation**:
 
 To change the boot order, complete the following steps:
  + Determine the current setting for “BootOrder” by using the Lenovo_BiosSetting class.
