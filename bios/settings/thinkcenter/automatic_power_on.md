@@ -6,7 +6,7 @@
 
 Controls the wake up event from onboard LAN and PCI LAN.
 
-One of 2 possible options for Wake on LAN:
+Options:
 
 1.  **Enabled** - enables Wake on LAN. Default.
 2.  Disabled - disables Wake on LAN.
@@ -23,10 +23,10 @@ One of 2 possible options for Wake on LAN:
 
 Select whether to enable Wake from Serial Port Ring., and/or which Startup Sequence to use after a serial port wake up event.
 
-One of 3 possible options for Wake from Serial Port Ring:
+Options:
 
-1. **Enabled** - enables Wake from Serial Port Ring. Default.
-2. Disabled - disables Wake from Serial Port Ring.
+1. **Enabled** - Default.
+2. Disabled.
 
 <!-- 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -41,7 +41,11 @@ One of 3 possible options for Wake from Serial Port Ring:
 
 Options to turn on your system on a specific day of the month, specific day of the week, or daily at a given time. A single wake up event, or series of alarm events, can also be defined.
 
-One of 5 possible options for Wake Up on Alarm:
+**Note:**  Selecting `User Defined` enables the `User Defined Alarm` settings.
+
+**Note:**  Values in these fields may be overwritten by the operating system.
+
+Options:
 
 1.  **Disabled** - Disables Wake Up on Alarm. Default.
 2.  User Defined - a series of alarm events.
@@ -55,17 +59,13 @@ One of 5 possible options for Wake Up on Alarm:
 | WakeUponAlarm | setting_values | yes_no | amd_intel |
 -->
 
-**Note:**  Selecting `User Defined` enables the `User Defined Alarm` settings.
-
-**Note:**  Values in these fields may be overwritten by the operating system.
-
 </details>
 
 <details><summary>Startup Sequence</summary>
 
 Select the startup sequence after a Wake Up on Alarm event.
 
-One of 2 possible options for startup sequence:
+Options:
 
 1.  **Primary** - enables primary startup sequence. Default.
 2.  Automatic - disables automatic selection of startup sequence.
@@ -82,11 +82,17 @@ One of 2 possible options for startup sequence:
 
 Specify the time when the system is to wake up.
 
+Hours / minutes / seconds format.
+
 <!-- SIMULATOR DOES NOT SUPPORT -->
 
 ### Alarm Date (MM / DD / YYYY) ###
 
-Alarm day of week.
+Precise date in month / day / year format.
+
+### Alarm day of week. ###
+
+Weekday (Sunday to Saturday).
 
 <!-- SIMULATOR DOES NOT SUPPORT -->
 
@@ -94,9 +100,9 @@ Alarm day of week.
 
 ![](./img/thinkcenter_user_defined_alarm.png)
 
-Select the day(s) of the week when the system is to wake up. Each {Day} has its own setting.
+Select the day(s) of the week when the system is to wake up. Each {Weekday} (Sunday to Saturday) has its own setting.
 
-<details><summary>{Day}</summary>
+<details><summary>{Weekday}</summary>
 
 One of 2 possible options for waking up this day:
 

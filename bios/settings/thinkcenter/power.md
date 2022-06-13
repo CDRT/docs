@@ -6,6 +6,8 @@
 
 Whether the system will stay on after AC power is removed and then restored.
 
+**Note:**  Select `Power on` if you use a power strip to turn the system on.
+
 Options:
 
 1. **Last State** - return to the previous state. Default.
@@ -17,13 +19,14 @@ Options:
 |:---|:---|:---|:---|
 | AfterPowerLoss | setting_values | yes_no | amd_intel |
 -->
-**Note:**  Select `Power on` if you use a power strip to turn the system on.
 
 </details>
 
 <details><summary>Enhanced Power Saving Mode</summary>
 
-The total power consumption is lower during power off.
+When enabled,  total power consumption is lower during power off.
+
+**Note:** In Enhanced Power Saving Mode, only the `Wake up on Alarm` function is supported. Other wake-up functions are not. System will not enter `Enhanced Power Saving Mode` if Intel ME is required to be active in Sx states, and host is in AC mode.
 
 Options:
 
@@ -35,7 +38,6 @@ Options:
 |:---|:---|:---|:---|
 | EnhancedPowerSavingMode | setting_values | yes_no | amd_intel |
 -->
-**Note:** In Enhanced Power Saving Mode, only the `Wake up on Alarm` function is supported. Other wake-up functions are not. System will not enter `Enhanced Power Saving Mode` if Intel ME is required to be active in Sx states, and host is in AC mode.
 
 </details>
 
