@@ -4,19 +4,35 @@
 
 <!-- MODEL: M70s disabled, M70q, M90 s & q enter -->
 
-One setting for each of the drives. Total number of drives depends on model.
+One setting per drive. Total number of drives depends on model.
 
-A Hard Disk Password prevents unauthorized users from accessing the data from the hard disk. In addition to the User Password, a optional Master Password can be used to recover the disk if the user password is lost.
+All of the following passwords default to `Disabled`.
 
-**NOTE** If several disks are present, we recommend setting all Hard Disk Passwords to the same.
+A Hard Disk Password prevents unauthorized users from accessing the data from the hard disk.
+
+In addition to the User Password, a optional Master Password can be used to recover the disk if the user password is lost.
+
+**NOTE:** If several disks are present, we recommend setting all Hard Disk Passwords to the same.
 
 <!-- TODO: Is this really a good recommendation? -->
 
 ### M.2 Drive {Number} Password ###
 
+1. **Disabled** - Default.
+1. Single Password
+1. Dual Password (Admin + User)
+
 ### PCIe Drive {Number} Password ###
 
+1. **Disabled** - Default.
+1. Single Password
+1. Dual Password (Admin + User)
+
 ### SATA Drive {Number} Password ###
+
+1. **Disabled** - Default.
+1. Single Password
+1. Dual Password (Master + User)
 
 <br />
 
@@ -40,10 +56,10 @@ One of 3 possible options for the Hard Disk Password (HDP):
 
 <details><summary>Block SID Authentication</summary>
 
-One of 2 possible options for SID authentication:
+Options:
 
-1.  **Enabled** - enables SID authentication block. Default.
-2.  Disabled - disables SID authentication block.
+1.  **Enabled** - .TCG Storage device will block attempts to authenticate the SID authority until a subsequent device power cycle occurs. Default.
+2.  Disabled - Allow SID authentication in TCG Storage device at the next system boot only, not all subsequent boots.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -52,7 +68,9 @@ One of 2 possible options for SID authentication:
 -->
 </details>
 
-### Security Erase HDD Data ###
+<!-- TODO: feature confirmation -->
+
+<!-- ### Security Erase HDD Data ###
 
 Select this option to security erase HDD data.
 
@@ -72,4 +90,4 @@ Securely erase this PCIe Drive data.
 
 ### Erase SATA Drive {Number} Data ###
 
-Securely erase this SATA Drive data.
+Securely erase this SATA Drive data. -->

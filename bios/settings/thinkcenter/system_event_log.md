@@ -13,3 +13,5 @@ View the system event log.
 ### Clear System Event Log ###
 
 Clear the system event log.
+
+Requires confirmation.

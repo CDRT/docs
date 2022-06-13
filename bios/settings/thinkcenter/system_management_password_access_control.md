@@ -24,8 +24,8 @@ Allow remote setting of the SMP via WMI without SVP (Supervisor Password) verifi
 
 Options:
 
-1.  **Enabled** - Default.
-2.  Disabled.
+1.  **Disabled** - Default.
+2.  Enabled.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |

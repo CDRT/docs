@@ -5,38 +5,34 @@
  - [More information at Lenovo Support - types of password](https://support.lenovo.com/us/en/solutions/ht513634)
  - [More information at Lenovo Support - password manager](https://support.lenovo.com/us/en/solutions/ht103666-introduction-to-password-manager-thinkpad-thinkcentre-thinkstation)
 
-<details><summary>Supervisor Password</summary>
+### Supervisor Password (display only) ###
 
 Options:
 
 1.  **Not Installed** - password disabled. Default.
 2.  Installed -  password enabled.
 
-</details>
-
-<details><summary>Power-On Password</summary>
+### Power-On Password (display only) ###
 
 Options:
 
 1. **Not Installed** - password disabled. Default.
 2. Installed -  password enabled.
 
-</details>
-
-<details><summary>System Management Password</summary>
+### System Management Password (display only) ###
 
 Options:
 
 1. **Not Installed** - password disabled. Default.
 2. Installed -  password enabled.
-
-</details>
 
 <details><summary>Set Supervisor Password</summary>
 
 Set, change, or delete the Supervisor Password.
 
 **NOTE:** To delete Supervisor Password, enter blank fields for each new password line item.
+
+Enter and confirm new password.
 
 </details>
 
@@ -46,6 +42,8 @@ Set, change, or delete the Power-On Password.
 
 **NOTE:** To delete Power-On Password, enter blank fields for each new password line item.
 
+Enter and confirm new password.
+
 </details>
 
 <details><summary>Set System Management Password</summary>
@@ -54,22 +52,9 @@ Set, change, or delete the System Management Password (SMP).
 
 **NOTE:** To delete System Management Password, enter blank fields for each new password line item.
 
+Enter and confirm new password.
+
 </details>
-
-<!-- ### System Management Password Access Control ###
-
-The System Management Password prevents unauthorized users from accessing BIOS Setup in default. -->
-
-<!-- 
-### Hard Disk Password ###
-
-Configure hard disk password.
-
-### Password Policies ###
-
-Configure the password policies
-
--->
 
 <details><summary>Secure Roll Back Prevention</summary>
 
@@ -119,14 +104,14 @@ Options:
 -->
 </details>
 
-<details><summary>Secure Wipe</summary>
+<details><summary>secure wipe</summary>
 
-Hide or display the `Secure Wipe` option on the F12 BIOS Startup Menu.
+Hide or display the `secure wipe` option on the F12 BIOS Startup Menu.
 
 Options:
 
-1.  **Disabled** - disables Secure Wipe. Default.
-2.  Enabled - enables Secure Wipe.
+1.  **Disabled** - hides `secure wipe` option. Default.
+2.  Enabled - shows `secure wipe` option.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -137,18 +122,9 @@ Options:
 <!-- TODO: why is securewipe lowercase? -->
 </details>
 
-<!-- <details><summary>TCG Feature setup</summary>
-contains TCG security features.
-</details>
+<!-- 
 
-<details><summary>System Event Log</summary>
-View or clear the system event log.
-</details>
 
-<details><summary>Sec Boot</summary>
-Secure Boot flow control. Secure Boot is possible only
-if System runs in user MOde.
-</details>
 
 <details><summary>Certificate-based BIOS Authentication</summary>
 </details>
@@ -163,7 +139,7 @@ Device Guard protects against malware by restricting the device across several t
 
 Options:
 
-1.  **Disabled** - Ethernet, USB, CD, and other boot methods are enabled.
+1.  **Disabled** - Ethernet, USB, CD, and other boot methods are enabled. Default.
 1.  Enabled - CPU Virtualization Technology，IOMMU (Intel VT-d, AMD-Vi),  Secure boot, and TPM are enabled. Ethernet, USB, CD, and other boot methods are disabled. Only SATA devices are allowed.
 
 
@@ -238,6 +214,6 @@ Options:
 </details>
 
 <!-- <details><summary>Password Count Exceeded Error</summary>
-select Enabled to snow the POST 0199 error and
+select Enabled to show the POST 0199 error and
 prompt for password. Select Disabled to hide the POST
 0199 error and proceed Without any user action required. -->

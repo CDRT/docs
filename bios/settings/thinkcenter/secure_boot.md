@@ -2,8 +2,16 @@
 
 ![](./img/thinkcenter_secure_boot.png)
 
+### System Mode (display only) ###
 
-### System Mode ###
+<!-- TODO: add description -->
+
+Options:
+
+1. **Deployed Mode** - Default.
+1. Audit Mode
+1. User Mode
+1. Setup Mode
 
 <details><summary>Secure Boot</summary>
 
@@ -43,8 +51,8 @@ Transition between Deployment and User Modes.
 
 Options:
 
-1.  **Enabled** - Default.
-2.  Disabled.
+1.  **Enabled** - Install Microsoft 3rd Party UEFI CA, and trust it in secure boot. Default.
+2.  Disabled. Remove Microsoft 3rd Party UEFI CA in secure boot BD.
 
 
 <!-- | WMI Setting name | Values | SVP Req'd | AMD/Intel |
