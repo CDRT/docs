@@ -121,7 +121,7 @@ Options:
 
 <details><summary>Secure Wipe</summary>
 
-Hide or display the "Secure Wipe" option on the F12 BIOS Startup Menu.
+Hide or display the `Secure Wipe` option on the F12 BIOS Startup Menu.
 
 Options:
 

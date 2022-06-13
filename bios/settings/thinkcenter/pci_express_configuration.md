@@ -6,7 +6,9 @@ Peripheral Component Interconnect (PCI) Express configuration.
 
 <details><summary>ASPM support</summary>
 
-Options for Active-State Power Management (ASPM):
+Active-State Power Management (ASPM).
+
+Options:
 
 1. **Auto** - Configure ASPM automatically according to what the attached device supports in each PCI Express port. Default.
 2. Disable - Disable ASPM support of all PCI Express ports.

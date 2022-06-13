@@ -23,7 +23,7 @@ Whether the TCG security feature is fully functional.
 1.  **Enabled** - Default.
 1.  Disabled.
 
-**NOTE** - If set to "Disabled", the TxT will be set to "Disabled" automatically.
+**NOTE** - If set to `Disabled`, the TxT will be set to `Disabled` automatically.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |

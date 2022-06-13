@@ -132,7 +132,7 @@ One of 6 possible options for C states:
 1. C1C3C6 - C1,C3 and C6
 1. C1C3C6C7 - C1,C3,C6 and C7
 1. C1C3C6C7C8 - C1,C3,C6,C7 and C8
-1. C1C3C6C7C8C10 - C1,C3,C6,C7,C8 and C10
+1. **C1C3C6C7C8C10 - C1,C3,C6,C7,C8 and C10** - Default.
 
 <!--
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |

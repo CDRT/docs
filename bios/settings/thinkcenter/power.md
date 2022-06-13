@@ -17,7 +17,7 @@ Options:
 |:---|:---|:---|:---|
 | AfterPowerLoss | setting_values | yes_no | amd_intel |
 -->
-**Note:**  Select "Power on" if you use a power strip to turn the system on.
+**Note:**  Select `Power on` if you use a power strip to turn the system on.
 
 </details>
 

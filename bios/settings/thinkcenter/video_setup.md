@@ -14,7 +14,7 @@ Options:
 
 > **Notes**
 > - If `Auto` is selected, the system will select a graphics output, **prioritizing PEG**.
-> - The "IGD" option will not appear if not supported by the CPU.
+> - The `IGD` option will not appear if not supported by the CPU.
 
 <!-- TODO: add WMI -->
 </details>
@@ -46,6 +46,8 @@ Options:
 </details>
 
 <details><summary>Dual DisplayPorts</summary>
+
+Dual display ports 1 and 2.
 
 Enable support for MST (multi-stream transport), allowing daisy-chaining of graphics output devices.
 

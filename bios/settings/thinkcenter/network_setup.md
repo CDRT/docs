@@ -48,8 +48,6 @@ Options:
 -->
 </details>
 
-### Wireless Certified Information ###
-<!-- SIMULATOR DOES NOT SUPPORT -->
 
 <details><summary>Wireless Auto Disconnection</summary>
 
@@ -64,6 +62,9 @@ Disable wireless LAN when onboard Ethernet is connected.
 | WirelessAutoDisconnection | setting_values | yes_no | amd_intel |
 -->
 </details>
+
+### Wireless Certified Information (display only) ###
+<!-- SIMULATOR DOES NOT SUPPORT -->
 
 <details><summary>PXE IPV4 Network Stack</summary>
 
@@ -94,6 +95,20 @@ Options:
 -->
 </details>
 
+<details><summary>HTTPS Support</summary>
+
+IPV4 and IPV6 boot support.
+
+Options:
+
+2.  **Disabled** - Default.
+1.  Enabled.
+
+<!-- TODO: add WMI -->
+
+</details>
+
+
 <details><summary>HTTPS Boot</summary>
 
 Custom HTTPS boot.
@@ -120,12 +135,12 @@ Whether `Lenovo Cloud` will be selected in boot menu, to boot from Lenovo Cloud 
 
 <details><summary>Win VDI Boot</summary>
 
-Whether `Win VDI Boot` will be selected in boot menu, to boot from Lenovo Cloud server and load VDI service.
+When enabled, `Win VDI Boot` will be selected in boot menu, to boot from Lenovo Cloud server and load VDI service.
 
 Options:
 
-1. **Disabled** - enables Win VDI Boot. Default.
-2. Enabled - enables Win VDI Boot.
+1. **Disabled** - Default.
+2. Enabled.
 
 <!-- WMI: no -->
 
@@ -136,12 +151,13 @@ Options:
 
 ![](./img/thinkcenter_https_boot_configuration.png)
 
+Create a new boot option based on a HTTPS URL.
 
 **Note:** Only one configuration can be entered at a time. The configuration will take effect after a system reboot.
 
 <details><summary>Input the description</summary>
 
-**Note:** Press `Enter` to input a label for new created URL and it will be displayed in the boot sequence menu.
+**Note:** Press `Enter` to input a label for the newly created URL and it will be displayed in the boot sequence menu.
 
 <!-- WMI: no -->
 
@@ -160,10 +176,7 @@ Options:
 
 <details><summary>Boot URL</summary>
 
-Create a new boot option based on a HTTPS URL.
-
-**Note:**  Use the `TLS Auth configuration` to import the CA to
-support the HTTPs boot 
+**Note:**  Use the `TLS Auth configuration` to import the CA to support the HTTPs boot 
 
 <!-- WMI: no -->
 
@@ -179,7 +192,11 @@ support the HTTPs boot
 
 ### TLS Auth Configuration ###
 
-Server CA configuration.
+
+![](./img/thinkcenter_tls_auth_configuration.png)
+
+
+Server CA configuration (display only).
 
 **Note:** Press `Enter` to select TLS auto configuration for HTTPS boot.
 
@@ -191,20 +208,23 @@ Server CA configuration.
 
 Automatically connect to WiFi on boot.
 
-1. **Enabled** - Default.
-2. Disabled.
+Options:
+
+1. **Disabled** - Default.
+2. Enabled.
 
 <!-- WMI: no -->
 
 </details>
 
-### Current Connection ###
+### Current Connection (display only) ###
 
 Displays the current WiFi connection.
 
 ### Wi-Fi Scan ###
 
-Press `Enter` to scan the available connections.
+**NOTE:** Press `Enter` to scan the available connections.
 
-### Scanned List ###
-List of available connections.
+### Scanned List (display only) ###
+
+Scanned WiFi nodes.

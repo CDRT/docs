@@ -4,28 +4,6 @@
 
  - [More information at Intel.com](https://software.intel.com/sites/manageability/AMT_Implementation_and_Reference_Guide/default.htm)
 
-<details><summary>Intel(R) Manageability Control</summary>
-
-<!-- TODO: feature confirmation-->
-
-One of 2 possible options for Intel(R) Manageability Control:
-
-1.  **Enabled** - enables Intel(R) Manageability Control. Default.
-2.  Disabled - disables Intel(R) Manageability Control.
-
-<!-- TODO: add WMI -->
-
-**WARNING:** If you set Intel(R) Manageability Control to "Disabled":
-
- 1. If system is provisioned, MEBx will be unprovisioned
-first. <strong>When the unprovsioning prompt appears, select YES.</strong>
-
- 2. Manageability functions will be disabled. <strong>You can
-enter ME-BX or BIOS to re-enable Intel(R) Manageability.</strong>.
-
-</details>
-
-
 <details><summary>Intel(R) Manageability Reset</summary>
 
 Return Intel(R) Manageability settings to default configuration.
@@ -35,9 +13,15 @@ One of 2 possible options for Intel(R) Manageability Reset:
 1. **Enabled** - enables Intel(R) Manageability Reset. Default.
 2. Disabled - disables Intel(R) Manageability Reset.
 
-**Note:**  WARNING: the MEBx password will also be reset.
+**WARNING:** the MEBx password will also be reset.
 
 </details>
+
+### Intel(R) MEBx ###
+
+Press `Enter` to enter Intel (R) MEBx (Management Engine BIOS Extension).
+
+ - [More information at Intel.com](https://www.intel.com/content/www/us/en/support/articles/000020917/software/manageability-products.html)
 
 ### ME Firmware Version ###
 
