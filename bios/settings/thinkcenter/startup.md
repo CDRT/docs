@@ -2,10 +2,6 @@
 
 ![](./img/thinkcenter_startup.png)
 
-### Boot Priority Order ###
-
-This sequence is used when the system is powered up normally.
-
 <details><summary>First Boot Device</summary>
 
 Select the first boot priority group. BIOS will try to boot from this group first before trying the boot order.
