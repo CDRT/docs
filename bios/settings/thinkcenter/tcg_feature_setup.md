@@ -6,6 +6,11 @@
 
 Displays the current TCG Security Device (display only).
 
+Select a TPM (Trusted Platform Module).
+
+ - [More information on TPM at Lenovo Support](https://support.lenovo.com/lt/en/solutions/ht512598)
+  - [More information on managing TPM in Windows at Microsoft 365](https://docs.microsoft.com/en-us/windows/security/information-protection/tpm/trusted-platform-module-top-node)
+
 Options:
 
  - Discrete TPM 1.2

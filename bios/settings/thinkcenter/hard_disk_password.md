@@ -16,6 +16,8 @@ In addition to the User Password, a optional Master Password can be used to reco
 
 <!-- TODO: Is this really a good recommendation? -->
 
+<!-- TODO: confirm behavior -->
+
 ### M.2 Drive {Number} Password ###
 
 1. **Disabled** - Default.
@@ -58,7 +60,7 @@ One of 3 possible options for the Hard Disk Password (HDP):
 
 Options:
 
-1.  **Enabled** - .TCG Storage device will block attempts to authenticate the SID authority until a subsequent device power cycle occurs. Default.
+1.  **Enabled** - TCG Storage device will block attempts to authenticate the SID authority until a subsequent device power cycle occurs. Default.
 2.  Disabled - Allow SID authentication in TCG Storage device at the next system boot only, not all subsequent boots.
 
 <!-- TODO: add WMI

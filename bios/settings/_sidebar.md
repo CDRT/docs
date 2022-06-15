@@ -71,6 +71,7 @@
   - [TCG Feature Setup](bios/settings/thinkcenter/tcg_feature_setup.md)
   - [System Event Log](bios/settings/thinkcenter/system_event_log.md)
   - [Secure Boot](bios/settings/thinkcenter/secure_boot.md)
+  - [Certificate Based BIOS Authentication](bios/settings/thinkcenter/certificate_based_bios_authentication.md)
 <!--   - [Key Management](bios/settings/thinkcenter/key_management.md) -->
   - [Computrace](bios/settings/thinkcenter/computrace.md)
 - [Startup](bios/settings/thinkcenter/startup.md)
