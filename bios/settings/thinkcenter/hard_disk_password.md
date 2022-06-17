@@ -18,27 +18,40 @@ In addition to the User Password, a optional Master Password can be used to reco
 
 <!-- TODO: confirm behavior -->
 
-### M.2 Drive {Number} Password ###
+<details><summary>M.2 Drive {Number} Password</summary>
+
+Options:
 
 1. **Disabled** - Default.
 1. Single Password
 1. Dual Password (Admin + User)
 
-### PCIe Drive {Number} Password ###
+</details>
+
+<details><summary>PCIe Drive {Number} Password</summary>
+
+Options:
 
 1. **Disabled** - Default.
 1. Single Password
 1. Dual Password (Admin + User)
 
-### SATA Drive {Number} Password ###
+</details>
+
+<details><summary>SATA Drive {Number} Password</summary>
+
+Options:
 
 1. **Disabled** - Default.
 1. Single Password
 1. Dual Password (Master + User)
 
+</details>
 <br />
 
 <details><summary>Require HDP on System Boot</summary>
+
+Options:
 
 One of 3 possible options for the Hard Disk Password (HDP):
 
@@ -60,6 +73,8 @@ One of 3 possible options for the Hard Disk Password (HDP):
 
 Options:
 
+Options:
+
 1.  **Enabled** - TCG Storage device will block attempts to authenticate the SID authority until a subsequent device power cycle occurs. Default.
 2.  Disabled - Allow SID authentication in TCG Storage device at the next system boot only, not all subsequent boots.
 
@@ -71,25 +86,3 @@ Options:
 </details>
 
 <!-- TODO: feature confirmation -->
-
-<!-- ### Security Erase HDD Data ###
-
-Select this option to security erase HDD data.
-
-The items are only available when corresponding hard disk password is present.
-
-**WARNING:** All HDD data will be erased and the hard disk password will be deleted.
-
-![](./img/thinkcenter_secure_erase_hdd_data.png)
-
-### Erase M.2 Drive {Number} Data ###
-
-Securely erase this M.2 Drive data.
-
-### Erase PCIe Drive {Number} Data ###
-
-Securely erase this PCIe Drive data.
-
-### Erase SATA Drive {Number} Data ###
-
-Securely erase this SATA Drive data. -->
