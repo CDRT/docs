@@ -57,7 +57,7 @@ Options:
 
 Record the last successful startup state to reduce the POST time at the next startup.
 
-**WARNING:** We recommended turning off Fast Boot if you often use CD/DVD or network to load your operating system.
+?> We recommended turning off Fast Boot if you often use CD/DVD or network to load your operating system.
 
 Options:
 
