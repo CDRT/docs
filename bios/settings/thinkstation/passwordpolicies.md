@@ -127,6 +127,10 @@ One of 2 states:
 1. **Enabled** – select this option to show the POST 0199 error and prompt for password. Default.
 2. Disabled – Select to hide the POST 0199 error and proceed without any user action required.
 
+?> If "Password count Exceed Error" is enabled, then after the 3 attempts with incorrect password system will show 0199 error.  
+By pressing F2 the error can be bypassed, and user can work with the system. But 0199 error will be shown until someone enters bios with correct SVP to clear the error condition by pressing F10 or save the settings after this have been verified.
+In case a user wants to change bios settings and uses the wrong password, the system will deny access and after the third wrong password all other attempts will be neglected. No further changes can be made then, and user needs to reboot.
+
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
