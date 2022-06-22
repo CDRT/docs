@@ -4,7 +4,7 @@
 
 <details><summary>Onboard Audio Controller</summary>
 
-One of 2 possible options for the onboard audio controller:
+Options:
 
 1.  **Enabled** - enables onboard audio controller. Default.
 2.  Disabled - disables onboard audio controller.
@@ -15,7 +15,7 @@ One of 2 possible options for the onboard audio controller:
 
 <details><summary>Internal Speaker</summary>
 
-One of 2 possible options for the internal speaker:
+Options:
 
 1.  **Enabled** - enables the internal speaker. Default.
 2.  Disabled - disables the internal speaker.

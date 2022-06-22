@@ -45,7 +45,7 @@ Options:
 
 When enabled, the user can use `Alt+P` to power on if a USB keyboard is plugged in the correct USB port.
 
-One of 2 possible options for Smart Power On:
+Options:
 
 1.  **Enabled** - enables Smart Power On. Default.
 2.  Disabled - disables Smart Power On.

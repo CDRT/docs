@@ -76,7 +76,7 @@ Options:
 
 Controls the system software option key prompts (such as the F1 key) when the system is turned on.
 
-One of 2 possible options for option key prompts:
+Options:
 
 1.  **Disabled** - Default.
 2.  Enabled.

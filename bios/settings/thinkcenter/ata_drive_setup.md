@@ -4,7 +4,7 @@
 
 <details><summary>SATA Controller</summary>
 
-One of 2 possible options for enabling the SATA controller:
+Options:
 
 1.  **Enable** - enables the SATA controller. Default.
 2.  Disable - disables the SATA controller.
@@ -22,7 +22,7 @@ One of 2 possible options for enabling the SATA controller:
 
 One of the (Serial AT Attachment) Drives. Total number of drives depends on model.
 
-One of 2 possible options for feature:
+Options:
 
 1.  **Enabled** - enables this SATA drive. Default.
 2.  Disabled - disables this SATA drive.
@@ -64,7 +64,7 @@ Options:
 
 Ensures the hard disk has initialized after power up, prior to being accessed. This avoids the disk hanging because of access by the OS before initialization.
 
-One of 8 possible options for the delay time:
+Options:
 
 1.  **Disabled** - enables delay. Default.
 2.  3 - 30 seconds - enables delay, in increments of 3 seconds up 15, then 21 or 30.

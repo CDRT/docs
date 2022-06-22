@@ -6,7 +6,7 @@
 
 EIST (Enhanced Intel SpeedStep(R) Technology) dynamically adjusts processor voltage and core frequency, to decrease average power consumption and heat production.
 
-One of 2 possible options for EIST support:
+Options:
 
 1.  **Enabled** - enables EIST support. Default.
 2.  Disabled - enables EIST support.
@@ -23,7 +23,7 @@ One of 2 possible options for EIST support:
 
 Intel(R) Hyper-Threading Technology allows multiple logical processors within the same processor core to share execution resources and cache hierarchy.
 
-One of 2 possible options for feature:
+Options:
 
 1. **Enabled** - enables Hyper-Threading Technology. Default.
 2. Disabled - disables Hyper-Threading Technology.
@@ -40,7 +40,7 @@ One of 2 possible options for feature:
 
 Whether all CPU (multi-)cores are available to the OS, or only one core.
 
-One of 2 possible options for multi-processing:
+Options:
 
 1.  **Enabled** - enables multi-processing. Default.
 2.  Disabled - disables multi-processing.
@@ -57,7 +57,7 @@ One of 2 possible options for multi-processing:
 
 Intel(R) Virtualization Technology multiple applications and operating systems to run simultaneously in independent partitions.
 
-One of 2 possible options for Intel(R) Virtualization Technology:
+Options:
 
 1.  **Enabled** - enables Intel(R) Virtualization Technology. Default.
 2.  Disabled - disables Intel(R) Virtualization Technology.
@@ -74,7 +74,7 @@ One of 2 possible options for Intel(R) Virtualization Technology:
 
 VT-d provides improved isolation of I/O resources for greater reliability, security, and availability.
 
-One of 2 possible options for VT-d:
+Options:
 
 1.  **Enabled** - enables VT-d. Default.
 2.  Disabled - disables VT-d.
@@ -91,7 +91,7 @@ One of 2 possible options for VT-d:
 
 Trusted Execution Technology (TxT) provides hardware-based mechanisms to protect against software-based attacks, and protect data stored or created on the client.
 
-One of 2 possible options for TxT:
+Options:
 
 1.  **Enabled** - enables TxT. Default.
 2.  Disabled - disables TxT.
@@ -108,7 +108,7 @@ One of 2 possible options for TxT:
 
 Enhanced C1 state (C1E) is where the processor is not executing instructions (but can return to an executing state immediately), to reduce power consumption.
 
-One of 2 possible options for C1E Support:
+Options:
 
 1.  **Enabled** - enables C1E Support. Default.
 2.  Disabled - disables C1E Support.
@@ -125,7 +125,7 @@ One of 2 possible options for C1E Support:
 
 Select supported CPU power management status to minimize the idle power consumption of processor.
 
-One of 6 possible options for C states:
+Options:
 
 1. C1 - C1 only
 1. C1C3 - C1 and C3
@@ -146,7 +146,7 @@ One of 6 possible options for C states:
 
 Turbo Mode allows the processor to assess its own thermals, current, and power, to calculate a dynamic upper limit on its frequency benefit.
 
-One of 2 possible options for Turbo Mode:
+Options:
 
 1. **Enabled** - enables Turbo Mode. Default.
 2. Disabled - disables Turbo Mode.

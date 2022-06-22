@@ -104,7 +104,7 @@ Select the day(s) of the week when the system is to wake up. Each {Weekday} (Sun
 
 <details><summary>{Weekday}</summary>
 
-One of 2 possible options for waking up this day:
+Options:
 
 1.  **Disabled** - disables wake-up. Default.
 2.  Enabled - enables wake-up.

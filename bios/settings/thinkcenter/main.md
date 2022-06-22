@@ -24,7 +24,7 @@ Shows the current system time and date. Can be changed.</details>
 
 <details><summary>Language</summary>
 
-One of 4 possible options for Language:
+Options:
 
 1.  **English**
 2.	French
@@ -39,7 +39,7 @@ One of 4 possible options for Language:
 
 <!-- MODEL: S only-->
 
-One of 2 possible options for interface of Setup Mode:
+Options:
 
 1.  **Text** - enables simple text interface with navigation and actions available only via keyboard. Default.
 2.	Graphic - enables graphical interface with possibility to additionally use mouse for navigation and actions.

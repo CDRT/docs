@@ -6,7 +6,7 @@
 
 Intel (R) Stable Image Platform program aligns and stabilizes key Intel platform components, enabling a predictable transition from one technology generation to the next.
 
-One of 2 possible options for SIPP:
+Options:
 
 1. **Enabled** - enables SIPP. Default.
 2. Disabled - disables SIPP.
@@ -37,7 +37,7 @@ One of number possible options for Intel (R) Thunderbolt:
 
 The user is reminded to clean the Dust Shield.
 
-One of 2 possible options for the Dust Shield reminder:
+Options:
 
 1.  **Enabled** - enables the Dust Shield alert. Default.
 1.  Disabled - disables the Dust Shield alert.
@@ -57,7 +57,7 @@ One of 2 possible options for the Dust Shield reminder:
 
 Intel (R) Dynamic Platform and Thermal Framework (DPTF).
 
-One of 2 possible options for DPTF:
+Options:
 
 1.  **Enabled** - enables DPTF. Default.
 2.  Disabled - disables DPTF.
@@ -70,7 +70,7 @@ One of 2 possible options for DPTF:
 
 [Windows Modern Standby](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/modern-standby) is the replacement for the legacy Sleep state.
 
-One of 2 possible options for Windows Modern Standby:
+Options:
 
 1. **Enabled** - enables Windows Modern Standby. Default.
 2. Disabled - disables Windows Modern Standby.
@@ -83,7 +83,7 @@ One of 2 possible options for Windows Modern Standby:
 
 <details><summary>BIOS Self-healing</summary>
 
-One of 2 possible options for BIOS Self-healing:
+Options:
 
 1.  **Enabled** - enables BIOS Self-healing. Default.
 2.  Disabled - disables BIOS Self-healing.

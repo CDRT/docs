@@ -51,9 +51,9 @@ Options:
 
 <details><summary>Require HDP on System Boot</summary>
 
-Options:
+Hard Disk Password (HDP).
 
-One of 3 possible options for the Hard Disk Password (HDP):
+Options:
 
 1.  **Auto** - HDP will be required if the Hard Disk is in lock status when the system starts from the full off, hibernate or restart state. Default.
 2.  Power On - HDP will be required when the system starts from the full off or hibernate state.

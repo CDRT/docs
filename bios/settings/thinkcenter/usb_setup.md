@@ -65,9 +65,9 @@ Options for all of the rear USB ports (numbered):
 
 <details><summary>USB Port {Number / Letter}</summary>
 
-One of the rear USB ports, number depending on model.
+One of the rear USB ports, total number (and labeling) depending on model.
 
-One of 2 possible options for each specific rear USB port:
+Options:
 
 1.  **Enable** - Default.
 2.  Disable.

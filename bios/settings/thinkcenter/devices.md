@@ -4,7 +4,7 @@
 
 <details><summary>Bluetooth</summary>
 
-One of 2 possible options for Bluetooth:
+Options:
 
 1.  **Enabled** - enables Bluetooth connections. Default.
 1.	Disabled - disables Bluetooth connections. Bluetooth will not be available in the OS.
@@ -13,7 +13,7 @@ One of 2 possible options for Bluetooth:
 
 <details><summary>Card Reader</summary>
 
-One of 2 possible options for card reader settings:
+Options:
 
 1.  **Enabled** - enables card reader. Default.
 1.  Disabled - disables card reader.

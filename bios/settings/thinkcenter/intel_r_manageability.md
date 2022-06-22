@@ -8,7 +8,7 @@
 
 Return Intel(R) Manageability settings to default configuration.
 
-One of 2 possible options for Intel(R) Manageability Reset:
+Options:
 
 1. **Enabled** - enables Intel(R) Manageability Reset. Default.
 2. Disabled - disables Intel(R) Manageability Reset.
@@ -39,8 +39,7 @@ Displays the manageability type.
 
 <details><summary>USB Provisioning</summary>
 
-
-One of 2 possible options for USB provisioning:
+Options:
 
 1.  **Enabled** - enables USB provisioning. Default.
 2.  Disabled - disables USB provisioning.
