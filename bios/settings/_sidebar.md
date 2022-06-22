@@ -46,7 +46,8 @@
 
 ***ThinkCentre***
 - [Main](bios/settings/thinkcenter/main.md)
-  - []
+  - [System Summary](bios/settings/thinkcenter/system_summary.md)
+  - [System Time and Date](bios/settings/thinkcenter/system_time_and_date.md)
 
 - [Devices](bios/settings/thinkcenter/devices.md)
   - [Serial Port Setup](bios/settings/thinkcenter/serial_port_setup.md)

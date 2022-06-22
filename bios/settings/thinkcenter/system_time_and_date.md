@@ -1,4 +1,4 @@
-## System Time and Date ##
+# System Time and Date #
 
 ![](./img/thinkcenter_system_time_and_date.png)
 
