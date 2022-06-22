@@ -23,7 +23,7 @@ Options:
 
 Enable or Disable Intel (R) Thunderbolt.
 
-One of number possible options for Intel (R) Thunderbolt:
+Options:
 
 1.  **Disabled** - disables Intel (R) Thunderbolt. Default.
 2.  Enabled - enables Intel (R) Thunderbolt.

@@ -61,7 +61,7 @@ Options:
 
 <details><summary>Performance Mode</summary>
 
-Options for cooling performance:
+Options:
 
 1. **Best Performance** - Best system performance with normal acoustic level. Default.
 2. Best Experience - TheBalanced noise and better performance.

@@ -32,7 +32,7 @@ Provides extra delay to USB enumeration (detection and recognition of connected 
 
 <details><summary>Front USB Ports</summary>
 
-Options for all of the front USB ports (numbered):
+Affects all of the front USB ports (numbered):
 
 1.  **Enabled** - enables front USB ports. Default.
 2.  Disabled - disables front USB ports, numbered.
@@ -45,7 +45,7 @@ Options for all of the front USB ports (numbered):
 
 One of the front USB ports, total number depending on model.
 
-Options for each specific front USB port:
+Options:
 
 1.  **Enable** - Default.
 2.  Disable.
@@ -54,7 +54,7 @@ Options for each specific front USB port:
 
 <details><summary>Rear USB Ports</summary>
 
-Options for all of the rear USB ports (numbered):
+Affects all of the rear USB ports (numbered):
 
 1.  **Enabled** - enables rear USB ports. Default.
 2.  Disabled - disables rear USB ports, numbered.
