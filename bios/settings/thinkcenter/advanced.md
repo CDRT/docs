@@ -48,7 +48,7 @@ One of 2 possible options for the Dust Shield reminder:
 | DustShieldAlert | setting_values | yes_no | amd_intel |
 -->
 
-**Note:**  If the Dust Shield is not cleaned, it will lose its effectiveness and the machine may overheat.
+?> If the Dust Shield is not cleaned, it will lose its effectiveness and the machine may overheat.
 
 </details>
 

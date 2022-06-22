@@ -41,9 +41,9 @@ Options:
 
 Options to turn on your system on a specific day of the month, specific day of the week, or daily at a given time. A single wake up event, or series of alarm events, can also be defined.
 
-**Note:**  Selecting `User Defined` enables the `User Defined Alarm` settings.
+?> Selecting `User Defined` enables the `User Defined Alarm` settings.
 
-**Note:**  Values in these fields may be overwritten by the operating system.
+?> Values in these fields may be overwritten by the operating system.
 
 Options:
 

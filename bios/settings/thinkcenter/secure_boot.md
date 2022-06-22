@@ -39,9 +39,9 @@ Reset to setup mode will change secure boot to setup mode.
 
 Enter Audit Mode workflow.
 
-**NOTE:** Transition from user to Audit Mode will result in erasing PK (Platform Key) variable.
+?> Transition from user to Audit Mode will result in erasing PK (Platform Key) variable.
 
-**WARNING:** Removing PK (Platform Key) will reset the system to setup / audit mode.
+!> Removing PK (Platform Key) will reset the system to setup / audit mode.
 
 ### Enter Deployed Mode ###
 
@@ -59,7 +59,7 @@ Options:
 |:---|:---|:---|:---|
 | AllowMicrosoft3rdPartyUEFICA | setting_values | yes_no | amd_intel | -->
 
-**NOTE:** If add-on cards are supported, Microsoft 3rd Party UEFI CA will not be removed until the boot loader is loaded.
+?> If add-on cards are supported, Microsoft 3rd Party UEFI CA will not be removed until the boot loader is loaded.
 
 <!-- MODEL: Only M90t/s-3 -->
 

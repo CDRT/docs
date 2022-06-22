@@ -7,7 +7,7 @@
 Options:
 
 1.  **Enabled** - Default.
-2.  Disabled - **WARNING:** also disables all [Intel (R) AMT](https://software.intel.com/sites/manageability/AMT_Implementation_and_Reference_Guide/default.htm) related functions.
+2.  Disabled - !> also disables all [Intel (R) AMT](https://software.intel.com/sites/manageability/AMT_Implementation_and_Reference_Guide/default.htm) related functions.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -118,7 +118,7 @@ Options:
 1.  **Disabled** - Default.
 2.  Enabled.
 
-**Note:** If enabled, `HTTPs Boot Configuration` and `Tls Auth Configuration` will be shown.
+?> If enabled, `HTTPs Boot Configuration` and `Tls Auth Configuration` will be shown.
 
 <!-- WMI: no -->
 </details>
@@ -153,11 +153,11 @@ Options:
 
 Create a new boot option based on a HTTPS URL.
 
-**Note:** Only one configuration can be entered at a time. The configuration will take effect after a system reboot.
+?> Only one configuration can be entered at a time. The configuration will take effect after a system reboot.
 
 <details><summary>Input the description</summary>
 
-**Note:** Press `Enter` to input a label for the newly created URL and it will be displayed in the boot sequence menu.
+?> Press `Enter` to input a label for the newly created URL and it will be displayed in the boot sequence menu.
 
 <!-- WMI: no -->
 
@@ -176,7 +176,7 @@ Options:
 
 <details><summary>Boot URL</summary>
 
-**Note:**  Use the `TLS Auth configuration` to import the CA to support the HTTPs boot 
+?> Use the `TLS Auth configuration` to import the CA to support the HTTPs boot 
 
 <!-- WMI: no -->
 
@@ -184,7 +184,7 @@ Options:
 
 <details><summary>Delete HTTPs Boot Option from List</summary>
 
-**Note:**  Select and press `Enter` to remove an EFI HTTPs boot option..
+?> Select and press `Enter` to remove an EFI HTTPs boot option..
 
 <!-- WMI: no -->
 
@@ -198,7 +198,7 @@ Options:
 
 Server CA configuration (display only).
 
-**Note:** Press `Enter` to select TLS auto configuration for HTTPS boot.
+?> Press `Enter` to select TLS auto configuration for HTTPS boot.
 
 ### WiFi Configuration ###
 
@@ -223,7 +223,7 @@ Displays the current WiFi connection.
 
 ### Wi-Fi Scan ###
 
-**NOTE:** Press `Enter` to scan the available connections.
+?> Press `Enter` to scan the available connections.
 
 ### Scanned List (display only) ###
 

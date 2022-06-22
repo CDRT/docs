@@ -13,14 +13,14 @@ Options:
  *  **Disabled** - no minimum (see below). Default.
  *   4 - 12 characters minimum.
 
-**NOTE:** If no minimum is set, passwords may be 1 to 128 characters long.
+?> If no minimum is set, passwords may be 1 to 128 characters long.
 
-**NOTE:** If a minimum is set, it applies to:
+?> If a minimum is set, it applies to:
  - Supervisor Password (SVP)
  - System Management Password (SMP)
  - Power-on (POP) and Hard Disk Passwords 
 
-**NOTE:** If both `Set Minimum Length` and `Set Strong Password` are enabled, the longest value for minimum length applies.
+?> If both `Set Minimum Length` and `Set Strong Password` are enabled, the longest value for minimum length applies.
 
 <!-- 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -70,7 +70,7 @@ Whether to give a BIOS password prompt at system boot (when the system starts fr
 1.  **Yes** - Default.
 1.  No.
 
-**WARNING:** To prevent unauthorized access to the system, we recommend setting user authentication on the OS.
+!> To prevent unauthorized access to the system, we recommend setting user authentication on the OS.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -160,7 +160,7 @@ Options:
 |:---|:---|:---|:---|
 | AllowJumperClearSVP | setting_values | yes_no | amd_intel |
 -->
-**WARNING** When disabled, no action can reset the SVP if you forget it.
+!> When disabled, no action can reset the SVP if you forget it.
 
 </details>
 

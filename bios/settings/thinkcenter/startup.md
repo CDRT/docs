@@ -27,7 +27,7 @@ Options:
 
 Select the first boot device from the designated group.
 
-**WARNING:** if disabled, the system will try to boot from all the devices in the group.
+!> if disabled, the system will try to boot from all the devices in the group.
 
 Options:
 
@@ -81,7 +81,7 @@ One of 2 possible options for option key prompts:
 1.  **Disabled** - Default.
 2.  Enabled.
 
-**NOTE:** Disabling the prompts will not affect the function of a specific key.
+?> Disabling the prompts will not affect the function of a specific key.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |

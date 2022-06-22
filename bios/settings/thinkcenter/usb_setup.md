@@ -24,7 +24,7 @@ BIOS support for USB mouse and keyboard:
 
 Provides extra delay to USB enumeration (detection and recognition of connected USB devices), to improve compatibility.
 
-**WARNING:** This may increase POST time.
+!> This may increase POST time.
 
 1.  Enable.
 2.  **Disabled** - Default.
@@ -37,7 +37,7 @@ Options for all of the front USB ports (numbered):
 1.  **Enabled** - enables front USB ports. Default.
 2.  Disabled - disables front USB ports, numbered.
 
-> **Note:** When `Disabled` is selected, settings for all front USB ports will not be shown.
+> ?> When `Disabled` is selected, settings for all front USB ports will not be shown.
 
 </details>
 
@@ -59,7 +59,7 @@ Options for all of the rear USB ports (numbered):
 1.  **Enabled** - enables rear USB ports. Default.
 2.  Disabled - disables rear USB ports, numbered.
 
-> **Note:** When `Disabled` is selected, settings for all rear USB ports will not be shown.
+> ?> When `Disabled` is selected, settings for all rear USB ports will not be shown.
 
 </details>
 

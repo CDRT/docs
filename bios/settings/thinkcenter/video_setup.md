@@ -12,9 +12,10 @@ Options:
 1.  IGD - Select Integrated Graphics Device.
 1.  PEG - Select PCIe Graphic.
 
-> **Notes**
-> - If `Auto` is selected, the system will select a graphics output, **prioritizing PEG**.
-> - The `IGD` option will not appear if not supported by the CPU.
+
+?> If `Auto` is selected, the system will select a graphics output, **prioritizing PEG**. <br /> 
+
+?> The `IGD` option will not appear if not supported by the CPU.
 
 <!-- TODO: add WMI -->
 </details>

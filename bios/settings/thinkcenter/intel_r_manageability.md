@@ -13,7 +13,7 @@ One of 2 possible options for Intel(R) Manageability Reset:
 1. **Enabled** - enables Intel(R) Manageability Reset. Default.
 2. Disabled - disables Intel(R) Manageability Reset.
 
-**WARNING:** the MEBx password will also be reset.
+!> the MEBx password will also be reset.
 
 </details>
 

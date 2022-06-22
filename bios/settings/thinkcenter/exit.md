@@ -6,16 +6,16 @@
 
 Exit system setup after saving the changes.
 
-**WARNING:** Save configuration and reset.
+!> Save configuration and reset.
 
 ### Discard Changes and Exit ###
 
 Exit system setup without saving any changes.
 
-**WARNING:** Reset without saving.
+!> Reset without saving.
 
 ### Load Optimal Defaults ###
 
 Restore/Load default values for all the setup options.
 
-**WARNING:** Load default configuration.
+!> Load default configuration.

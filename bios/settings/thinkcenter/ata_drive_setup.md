@@ -14,7 +14,7 @@ One of 2 possible options for enabling the SATA controller:
 |:---|:---|:---|:---|
 | SATAController | setting_values | yes_no | amd_intel |
 -->
-> **Note**: If the `SATA Controller` is set to `Disabled`, then `Configure SATA as` and `SATA Drive {Number}` will be hidden.
+?>: If the `SATA Controller` is set to `Disabled`, then `Configure SATA as` and `SATA Drive {Number}` will be hidden.
 
 </details>
 
@@ -32,7 +32,7 @@ One of 2 possible options for feature:
 |:---|:---|:---|:---|
 | SATADrive1 | setting_values | yes_no | amd_intel |
 
-> **Note** The WMI setting name for Drive 1 is shown. Other drives follow the pattern `SATADrive#` where `#` is the number of the drive.
+?> The WMI setting name for Drive 1 is shown. Other drives follow the pattern `SATADrive#` where `#` is the number of the drive.
 -->
 
 </details>
@@ -41,9 +41,9 @@ One of 2 possible options for feature:
 
 Configure the SATA (Serial AT Attachment) drive controller.
 
-**NOTE:** Device driver support is required  for AHCI or Intel(R) RST with Intel(R) Optane.
+?> Device driver support is required  for AHCI or Intel(R) RST with Intel(R) Optane.
 
-**WARNING:** Depending on how the hard disk image was installed, changing this setting may prevent the system from booting.
+!> Depending on how the hard disk image was installed, changing this setting may prevent the system from booting.
 
 Options:
 

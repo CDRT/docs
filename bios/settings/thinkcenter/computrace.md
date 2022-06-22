@@ -14,7 +14,7 @@ Options:
 
 <!-- WMI: no -->
 
-**NOTE:** Absolute® is a service designed to help track devices and provide recovery services in the event a device is lost or stolen.
+?> Absolute® is a service designed to help track devices and provide recovery services in the event a device is lost or stolen.
 
 Once installed, the Absolute agent communicates with the Absolute Monitoring Center at programmed intervals to provide the tracking service.
 
