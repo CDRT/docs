@@ -1,27 +1,6 @@
 # Main #
 ![](./img/thinkcenter_main.png)
 
-## System Summary ##
-
-![](./img/thinkcenter_system_summary.png)
-
-Displays system information, including:
-
- - CPU
- - Memory
- - Video / Audio
- - Ethernet
- - Fan
- - Drives
-
-## System Time and Date ##
-
-![](./img/thinkcenter_system_time_and_date.png)
-
-Shows the current system time and date. Can be changed.</details>
-
-<!-- WMI: no -->
-
 <details><summary>Language</summary>
 
 Options:
