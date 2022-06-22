@@ -73,5 +73,3 @@ Options:
 | IntelligentCoolingPerformanceMode | setting_values | yes_no | amd_intel |
 -->
 </details>
-
-<!-- ### Automatic Power On  ### -->

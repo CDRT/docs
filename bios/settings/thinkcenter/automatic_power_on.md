@@ -90,13 +90,27 @@ Hours / minutes / seconds format.
 
 Precise date in month / day / year format.
 
-### Alarm day of week. ###
+<details><summary>Alarm day of week</summary>
 
-Weekday (Sunday to Saturday).
+Options:
 
-<!-- SIMULATOR DOES NOT SUPPORT -->
+1. **Sunday** - Default.
+2. Monday.
+3. Tuesday.
+4. Wednesday.
+5. Thursday.
+6. Friday.
+7. Saturday.
 
-### User Defined Alarm ###
+<!--
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| setting_name | setting_values | yes_no | amd_intel |
+-->
+
+</details>
+
+## User Defined Alarm ##
 
 ![](./img/thinkcenter_user_defined_alarm.png)
 

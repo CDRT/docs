@@ -1,7 +1,7 @@
 # Main #
 ![](./img/thinkcenter_main.png)
 
-### System Summary ###
+## System Summary ##
 
 ![](./img/thinkcenter_system_summary.png)
 
@@ -14,7 +14,7 @@ Displays system information, including:
  - Fan
  - Drives
 
-<details><summary>System Time and Date</summary>
+## System Time and Date ##
 
 ![](./img/thinkcenter_system_time_and_date.png)
 
