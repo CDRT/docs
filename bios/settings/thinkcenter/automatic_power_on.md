@@ -90,7 +90,7 @@ Hours / minutes / seconds format.
 
 ### Alarm Date (MM / DD / YYYY) ###
 
-Precise date in month / day / year format.
+Specify the precise date in month / day / year format.
 
 <details><summary>Alarm day of week</summary>
 

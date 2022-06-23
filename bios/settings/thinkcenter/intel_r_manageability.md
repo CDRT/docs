@@ -23,13 +23,13 @@ Press `Enter` to enter Intel (R) MEBx (Management Engine BIOS Extension).
 
  - [More information at Intel.com](https://www.intel.com/content/www/us/en/support/articles/000020917/software/manageability-products.html)
 
-### ME Firmware Version ###
+### ME Firmware Version (display only) ###
 
 Displays the firmware version.
 
 <!-- TODO: styles-->
 
-### Manageability Type ###
+### Manageability Type (display only) ###
 
 Displays the manageability type.
 

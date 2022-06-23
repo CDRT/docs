@@ -16,6 +16,6 @@ Exit system setup without saving any changes.
 
 ### Load Optimal Defaults ###
 
-Restore/Load default values for all the setup options.
+Restore / load default values for all the setup options.
 
 !> Load default configuration.

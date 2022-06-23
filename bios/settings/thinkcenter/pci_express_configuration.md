@@ -20,7 +20,7 @@ Options:
 -->
 </details>
 
-### Select PCI Express port speed. ###
+## Select PCI Express port speed. ##
 
 <details><summary>PCIe 16x Slot speed</summary>
 
