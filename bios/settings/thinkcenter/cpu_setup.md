@@ -148,8 +148,8 @@ Turbo Mode allows the processor to assess its own thermals, current, and power, 
 
 Options:
 
-1. **Enabled** - enables Turbo Mode. Default.
-2. Disabled - disables Turbo Mode.
+1. **Enabled** - Default.
+2. Disabled.
 
 <!--- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |

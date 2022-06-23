@@ -20,8 +20,8 @@ Options:
 
 Options:
 
-1.  **Text** - enables simple text interface with navigation and actions available only via keyboard. Default.
-2.	Graphic - enables graphical interface with possibility to additionally use mouse for navigation and actions.
+1.  **Text** - simple text interface with navigation and actions available only via keyboard. Default.
+2.	Graphic - graphical interface with possibility to additionally use mouse for navigation and actions.
 
 <!-- WMI: no -->
 

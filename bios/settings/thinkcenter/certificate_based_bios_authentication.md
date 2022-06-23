@@ -1,6 +1,10 @@
-# Certificate Based Bios Authentication
+# Certificate Based Bios Authentication #
 
 ![](./img/thinkcenter_certificate_based_bios_authentication.png)
+
+Digital signatures replace SVP for authentication.
+
+ - [More information at Lenovo.com](https://download.lenovo.com/pccbbs/thinkcentre_pdf/certificate_based_bios_management_guide.pdf)
 
 ### Certificate Information (display only) ###
 

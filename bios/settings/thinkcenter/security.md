@@ -122,16 +122,6 @@ Options:
 <!-- TODO: why is securewipe lowercase? -->
 </details>
 
-<!-- 
-
-
-
-<details><summary>Certificate-based BIOS Authentication</summary>
-</details>
-
-<details><summary>Computrace</summary>
-</details>
- -->
 
 <details><summary>Device Guard</summary>
 

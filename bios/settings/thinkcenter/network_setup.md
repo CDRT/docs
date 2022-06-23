@@ -146,8 +146,7 @@ Options:
 
 </details>
 
-### HTTPs Boot Configuration  ###
-
+## HTTPs Boot Configuration  ##
 
 ![](./img/thinkcenter_https_boot_configuration.png)
 
@@ -184,13 +183,13 @@ Options:
 
 <details><summary>Delete HTTPs Boot Option from List</summary>
 
-?> Select and press `Enter` to remove an EFI HTTPs boot option..
+?> Select and press `Enter` to remove an EFI HTTPs boot option.
 
 <!-- WMI: no -->
 
 </details>
 
-### TLS Auth Configuration ###
+## TLS Auth Configuration ##
 
 
 ![](./img/thinkcenter_tls_auth_configuration.png)
@@ -200,7 +199,7 @@ Server CA configuration (display only).
 
 ?> Press `Enter` to select TLS auto configuration for HTTPS boot.
 
-### WiFi Configuration ###
+## WiFi Configuration ##
 
 ![](./img/thinkcenter_WiFi_configuration.png)
 

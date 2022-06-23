@@ -21,7 +21,7 @@ Options:
 
 <details><summary>Wake from Serial Port Ring</summary>
 
-Select whether to enable Wake from Serial Port Ring., and/or which Startup Sequence to use after a serial port wake up event.
+Select whether to enable Wake from Serial Port Ring.
 
 Options:
 
@@ -39,7 +39,9 @@ Options:
 
 <details><summary>Wake Up on Alarm</summary>
 
-Options to turn on your system on a specific day of the month, specific day of the week, or daily at a given time. A single wake up event, or series of alarm events, can also be defined.
+Options to turn on your system on a specific day of the month, specific day of the week, or daily at a given time.
+
+A single wake up event, or series of alarm events, can also be defined.
 
 ?> Selecting `User Defined` enables the `User Defined Alarm` settings.
 
