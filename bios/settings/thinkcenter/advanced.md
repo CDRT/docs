@@ -4,7 +4,7 @@
 
 <details><summary>Intel (R) SIPP Support</summary>
 
-Intel (R) Stable Image Platform program aligns and stabilizes key Intel platform components, enabling a predictable transition from one technology generation to the next.
+Intel (R) Stable Image Platform Program aligns and stabilizes key Intel platform components, enabling a predictable transition from one technology generation to the next.
 
 Options:
 
@@ -57,6 +57,8 @@ Options:
 
 Intel (R) Dynamic Platform and Thermal Framework (DPTF).
 
+IDPTF is a power and thermal management solution, used to resolve fan noise, overheating, and performance-related issues of the system.
+
 Options:
 
 1.  **Enabled** - enables DPTF. Default.
@@ -83,10 +85,12 @@ Options:
 
 <details><summary>BIOS Self-healing</summary>
 
+Allows the BIOS to automatically attempt to recover a corrupted BIOS without needing a recovery file on external media.
+
 Options:
 
-1.  **Enabled** - enables BIOS Self-healing. Default.
-2.  Disabled - disables BIOS Self-healing.
+1.  **Enabled** - Default.
+2.  Disabled.
 
 <!--
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |

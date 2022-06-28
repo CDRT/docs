@@ -4,10 +4,12 @@
 
 <details><summary>SATA Controller</summary>
 
+Serial AT Attachment (SATA) drive access.
+
 Options:
 
-1.  **Enable** - enables the SATA controller. Default.
-2.  Disable - disables the SATA controller.
+1.  **Enable** - Default.
+2.  Disable.
 
 <!-- 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -48,17 +50,12 @@ Configure the SATA (Serial AT Attachment) drive controller.
 Options:
 
 1.  **AHCI** - enables AHCI (Advanced Host Controller Interface). Default.
-2.  Intel (R) RST with Intel (R) Optane mode - enables RST.
+2.  Intel (R) RST with Intel (R) Optane mode - enables RST (Rapid Storage Technology).
 3.  RAID - enables RAID. <!-- MODEL: M70S Gen3 only-->
 
 <!-- TODO: add WMI -->
 </details>
 
-<!-- SIMULATOR DOES NOT SUPPORT 
-<details><summary>Intel Rapid Storage Technology</summary>
-
-</details>
--->
 
 <details><summary>Hard Disk Pre-Delay</summary>
 

@@ -8,8 +8,8 @@ EIST (Enhanced Intel SpeedStep(R) Technology) dynamically adjusts processor volt
 
 Options:
 
-1.  **Enabled** - enables EIST support. Default.
-2.  Disabled - enables EIST support.
+1.  **Enabled** - Default.
+2.  Disabled.
 
 <!-- TODO: add WMI
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
