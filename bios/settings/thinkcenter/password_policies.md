@@ -22,11 +22,9 @@ Options:
 
 ?> If both `Set Minimum Length` and `Set Strong Password` are enabled, the longest value for minimum length applies.
 
-<!-- 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| SetMinimumLength | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| SetMinimumLength | Disabled, 4 characters, 5 characters, 6 characters, 7 characters, 8 characters, 9 characters, 10 characters, 11 characters, 12 characters | yes |
 
 </details>
 
@@ -37,11 +35,10 @@ Options:
 1.  **Enabled** - Upper case, lower case and numeric characters are all required. Special characters are optional. The minimum length is 8. Default.
 1.  Disabled - The minimum length is 1 character.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| SetStrongPassword | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| SetStrongPassword | Disabled, Enabled | yes |
+
 </details>
 
 <details><summary>Keyboard Layout</summary>
@@ -57,9 +54,9 @@ Options:
 5.  Chinese
 
 <!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| KeyboardLayout | setting_values | yes_no | amd_intel |
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| KeyboardLayout | English, French, German, Chinese | yes |
 -->
 </details>
 
@@ -72,11 +69,10 @@ Whether to give a BIOS password prompt at system boot (when the system starts fr
 
 !> To prevent unauthorized access to the system, we recommend setting user authentication on the OS.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| BIOSPasswordAtSystemBoot | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| BIOSPasswordAtSystemBoot | No, Yes | yes |
+
 </details>
 
 <details><summary>BIOS Password At Reboot</summary>
@@ -88,11 +84,10 @@ Options:
 1.  **No** - disables password prompt on reboot. Default.
 1.  Yes - enables password prompt on reboot.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| BIOSPasswordAtReboot | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| BIOSPasswordAtReboot | No,Yes | yes |
+
 </details>
 
 <details><summary>BIOS Password At Boot Device List</summary>
@@ -104,11 +99,10 @@ Options:
 1.  **No** - Default.
 1.  Yes.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| BIOSPasswordAtBootDeviceList | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| BIOSPasswordAtBootDeviceList | No, Yes | yes |
+
 </details>
 
 <details><summary>Require SVP when Flashing</summary>
@@ -120,12 +114,9 @@ Options:
 1.  **No** - Default.
 1.  Yes.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| RequireSVPwhenFlashing | setting_values | yes_no | amd_intel |
--->
-
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| RequireSVPwhenFlashing | No, Yes | yes |
 
 </details>
 
@@ -138,11 +129,10 @@ Options:
 1.  **Yes** - Default.
 2.  No.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| POPChangeablebyUser | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| POPChangeablebyUser | No, Yes | yes |
+
 </details>
 
 <details><summary>Allow the Jumper to Clear SVP</summary>
@@ -155,11 +145,10 @@ Options:
 1.  **Yes** - Default.
 2.  No.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| AllowJumperClearSVP | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| AllowJumperClearSVP | No, Yes | yes |
+
 !> When disabled, no action can reset the SVP if you forget it.
 
 </details>
@@ -171,11 +160,9 @@ Whether to show the POST 0199 error and password prompt:
 1.  **Enabled** - Default.
 2.  Disabled.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| PasswordCountExceededError | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| PasswordCountExceededError | Disabled, Enabled | yes |
 
  - [More information at Lenovo Support](https://support.lenovo.com/lt/en/solutions/ht052093-error-0199-system-security-security-password-retry-count-exceeded-thinkcentre-m90-m90p-thinkserver-ts200v-thinkstation-e20)
 

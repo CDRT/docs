@@ -9,7 +9,9 @@ Options:
 1.  **Enabled** - enables onboard audio controller. Default.
 2.  Disabled - disables onboard audio controller.
 
-<!-- TODO: add WMI -->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| OnboardAudioController | Disabled, Enabled | yes |
 
 </details>
 
@@ -20,7 +22,9 @@ Options:
 1.  **Enabled** - enables the internal speaker. Default.
 2.  Disabled - disables the internal speaker.
 
-<!-- TODO: add WMI -->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| InternalSpeaker | Disabled, Enabled | yes |
 
 <!-- MODEL: NOT M90q -->
 

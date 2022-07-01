@@ -17,9 +17,9 @@ Options:
 1. USB CDROM
 
 <!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| Firstbootdevice | setting_values | yes_no | amd_intel |
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| Firstbootdevice | setting_values | yes_no |
 -->
 </details>
 
@@ -46,11 +46,10 @@ Options:
 1. **On** - Default.
 1. Off.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| BootUpNumLockStatus | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| BootUpNumLockStatus | Off, On | yes |
+
 </details>
 
 <details><summary>Fast Boot</summary>
@@ -64,11 +63,9 @@ Options:
 1.  **Enabled** - Default.
 1.  Disabled.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| FastBoot | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| FastBoot | Disabled, Enabled | yes |
 
 </details>
 
@@ -83,10 +80,8 @@ Options:
 
 ?> Disabling the prompts will not affect the function of a specific key.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| OptionKeysDisplay | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| OptionKeysDisplay | Disabled, Enabled | yes |
 
 </details>

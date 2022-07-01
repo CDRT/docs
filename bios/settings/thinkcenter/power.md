@@ -14,11 +14,11 @@ Options:
 2.  Power Off - remain off.
 3.  Power On - turn on.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| AfterPowerLoss | setting_values | yes_no | amd_intel |
--->
+TODO: add WMI
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| AfterPowerLoss | Power Off, Power On, Last State | yes |
+
 
 </details>
 
@@ -33,11 +33,9 @@ Options:
 1. **Disabled** - Default.
 2.  Enabled.
 
-<!-- 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| EnhancedPowerSavingMode | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| EnhancedPowerSavingMode | Disabled, Enabled | yes |
 
 </details>
 
@@ -50,11 +48,10 @@ Options:
 1.  **Enabled** - enables Smart Power On. Default.
 2.  Disabled - disables Smart Power On.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| SmartPowerOn | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| SmartPowerOn | Disabled, Enabled | yes |
+
 </details>
 
 ### Intelligent Cooling  ###
@@ -64,12 +61,11 @@ Options:
 Options:
 
 1. **Best Performance** - Best system performance with normal acoustic level. Default.
-2. Best Experience - TheBalanced noise and better performance.
+2. Best Experience - Balanced noise and better performance.
 3. Full Speed - All fans at full speed.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| IntelligentCoolingPerformanceMode | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| IntelligentCoolingPerformanceMode | Best Performance, Best Experience, Full Speed | yes |
+
 </details>

@@ -65,11 +65,10 @@ Options:
 1.  **Yes** - Flashing NOT allowed. Default.
 1.  No - Flashing BIOS allowed.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| SecureRollBackPrevention | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| SecureRollBackPrevention | No, Yes |  |
+
 </details>
 
 <details><summary>Windows UEFI Firmware Update</summary>
@@ -79,11 +78,9 @@ Options:
 1. **Enabled** - Default.
 1. Disabled - BIOS will skip Windows UEFI firmware update.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| WindowsUEFIFirmwareUpdate | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| WindowsUEFIFirmwareUpdate | Disabled, Enabled |  |
 
 </details>
 
@@ -97,11 +94,10 @@ Options:
 1.  Read Only - The user can copy data from USB to computer, but not from computer to USB.
 1.  NO Access - The user cannot use USB storage device in Windows.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| SmartUSBProtection | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| SmartUSBProtection | Disabled, Read Only, No Access |  |
+
 </details>
 
 <details><summary>secure wipe</summary>
@@ -114,9 +110,9 @@ Options:
 2.  Enabled - shows `secure wipe` option.
 
 <!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| securewipe | setting_values | yes_no | amd_intel |
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| securewipe | setting_values | yes_no |
 -->
 
 <!-- TODO: why is securewipe lowercase? -->
@@ -132,12 +128,10 @@ Options:
 1.  **Disabled** - Ethernet, USB, CD, and other boot methods are enabled. Default.
 1.  Enabled - CPU Virtualization Technology，IOMMU (Intel VT-d, AMD-Vi),  Secure boot, and TPM are enabled. Ethernet, USB, CD, and other boot methods are disabled. Only SATA devices are allowed.
 
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| DeviceGuard | Disabled, Enabled | yes |
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| DeviceGuard | setting_values | yes_no | amd_intel |
--->
 </details>
 
 <details><summary>Secure Core PC Level3</summary>
@@ -163,9 +157,9 @@ Options:
 2.  Enabled.
 
 <!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| setting_name | setting_values | yes_no | amd_intel |
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| setting_name | setting_values | yes_no |
 -->
 </details>
 
@@ -180,11 +174,10 @@ Options:
 
 ?> If chassis tamper occurs, you can only clear this error by entering setup.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| CoverTamperDetected | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| CoverTamperDetected | Disabled, Enabled | yes |
+
 </details>
 
 <details><summary>Configuration Change Detection</summary>
@@ -196,11 +189,10 @@ Options:
 
 ?> This notice can only be cleared by entering BIOS setup, saving and then exiting.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| ConfigurationChangeDetection | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| ConfigurationChangeDetection | Disabled, Enabled | yes |
+
 </details>
 
 <!-- <details><summary>Password Count Exceeded Error</summary>

@@ -11,11 +11,9 @@ Options:
 1.  **Enabled** - enables Wake on LAN. Default.
 2.  Disabled - disables Wake on LAN.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| WakeonLAN | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| WakeonLAN | Primary, Automatic, Disabled | yes |
 
 </details>
 
@@ -28,11 +26,9 @@ Options:
 1. **Enabled** - Default.
 2. Disabled.
 
-<!-- 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| WakefromSerialPortRing | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| WakefromSerialPortRing | Primary, Automatic, Disabled | yes |
 
 </details>
 
@@ -56,9 +52,9 @@ Options:
 5.  Weekly Event
 
 <!-- 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| WakeUponAlarm | setting_values | yes_no | amd_intel |
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| WakeUponAlarm | setting_values | yes_no |
 -->
 
 </details>
@@ -72,11 +68,9 @@ Options:
 1.  **Primary** - enables primary startup sequence. Default.
 2.  Automatic - disables automatic selection of startup sequence.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| setting_name | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| StartupSequence | Primary, Automatic | yes_no |
 
 </details>
 
@@ -92,6 +86,12 @@ Hours / minutes / seconds format.
 
 Specify the precise date in month / day / year format.
 
+
+| WMI Setting name | Values | SVP Req'd |
+|:---|:---|:---|
+| AlarmDate  | (display only) | yes |
+
+
 <details><summary>Alarm day of week</summary>
 
 Options:
@@ -104,11 +104,9 @@ Options:
 6. Friday.
 7. Saturday.
 
-<!--
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| setting_name | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| AlarmDayofWeek  | Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, SaturdayStatus | yes |
 
 </details>
 
@@ -125,11 +123,20 @@ Options:
 1.  **Disabled** - disables wake-up. Default.
 2.  Enabled - enables wake-up.
 
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| UserDefinedAlarmFriday | Disabled, Enabled | yes |
+
+?> The WMI setting name for the wake-up timer week shown here is for Friday. For the other weekdays replace `Friday` with the weekday's name.
+
 </details>
 
 <details><summary>User Defined Alarm Time (HH : MM : SS)</summary>
 
 Specify the time when the system is to wake up.
 
-<!-- SIMULATOR DOES NOT SUPPORT -->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| UserDefinedAlarmTime | (display Only) | yes |
+
 </details>

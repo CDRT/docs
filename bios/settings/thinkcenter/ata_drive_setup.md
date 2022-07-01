@@ -11,11 +11,10 @@ Options:
 1.  **Enable** - Default.
 2.  Disable.
 
-<!-- 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| SATAController | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| SATAController | Disabled, Enabled | yes |
+
 ?>: If the `SATA Controller` is set to `Disabled`, then `Configure SATA as` and `SATA Drive {Number}` will be hidden.
 
 </details>
@@ -29,13 +28,11 @@ Options:
 1.  **Enabled** - enables this SATA drive. Default.
 2.  Disabled - disables this SATA drive.
 
-<!-- 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| SATADrive1 | setting_values | yes_no | amd_intel |
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| SATADrive1 | Disabled, Enabled | yes |
 
 ?> The WMI setting name for Drive 1 is shown. Other drives follow the pattern `SATADrive#` where `#` is the number of the drive.
--->
 
 </details>
 
@@ -53,7 +50,10 @@ Options:
 2.  Intel (R) RST with Intel (R) Optane mode - enables RST (Rapid Storage Technology).
 3.  RAID - enables RAID. <!-- MODEL: M70S Gen3 only-->
 
-<!-- TODO: add WMI -->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| ConfigureSATAas  | AHCI, Intel(R) RST with Intel(R) Optane, [RAID] | yes |
+
 </details>
 
 
@@ -66,5 +66,8 @@ Options:
 1.  **Disabled** - enables delay. Default.
 2.  3 - 30 seconds - enables delay, in increments of 3 seconds up 15, then 21 or 30.
 
-<!-- TODO: add WMI -->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| HardDiskPre-delay | Disabled, 3 Seconds, 6 Seconds, 9 Seconds, 12 Seconds, 15 Seconds, 21 Seconds, 30 Seconds | yes |
+
 </details>

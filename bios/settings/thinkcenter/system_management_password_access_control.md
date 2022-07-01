@@ -11,11 +11,10 @@ Options:
 1.  **Disabled** - Default.
 2.  Enabled.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| AccessSecuritySettings | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| AccessSecuritySettings | Disabled, Enabled | yes |
+
 </details>
 
 <details><summary>Remote Set SMP</summary>
@@ -27,9 +26,8 @@ Options:
 1.  **Disabled** - Default.
 2.  Enabled.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| RemoteSetSMP | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| RemoteSetSMP | Disabled, Enabled | yes |
+
 </details>

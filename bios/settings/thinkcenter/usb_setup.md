@@ -9,6 +9,10 @@ Options:
 1.  **Enabled** - enables USB. Default.
 2.  Disabled - disables USB.
 
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| USBPortAccess | Disabled, Enabled | yes |
+
 </details>
 
 <details><summary>USB Bios Support</summary>
@@ -28,6 +32,11 @@ Provides extra delay to USB enumeration (detection and recognition of connected 
 
 1.  Enable.
 2.  **Disabled** - Default.
+
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| USBEnumerationDelay | Disabled, Enabled | yes |
+
 </details>
 
 <details><summary>Front USB Ports</summary>
@@ -38,6 +47,10 @@ Affects all of the front USB ports (numbered):
 2.  Disabled - disables front USB ports, numbered.
 
 > ?> When `Disabled` is selected, settings for all front USB ports will not be shown.
+
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| FrontUSBPorts | Disabled, Enabled | yes |
 
 </details>
 
@@ -50,6 +63,12 @@ Options:
 1.  **Enable** - Default.
 2.  Disable.
 
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| USBPort1 | Disabled, Enabled | yes |
+
+?> The WMI setting name is shown here for USB port 1. For other ports 2-10 replace the 1 with the port number.
+
 </details>
 
 <details><summary>Rear USB Ports</summary>
@@ -60,6 +79,10 @@ Affects all of the rear USB ports (numbered):
 2.  Disabled - disables rear USB ports, numbered.
 
 > ?> When `Disabled` is selected, settings for all rear USB ports will not be shown.
+
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| RearUSBPorts | Disabled, Enabled | yes |
 
 </details>
 

@@ -6,11 +6,9 @@ This sequence is used when the system is powered up normally.
 
 The exact BIOS interface is determined by the model.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| BootOrder | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| BootOrder |  |  |
 
 ![](./img/./thinkcenter_boot_priority_order.png)
 

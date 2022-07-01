@@ -45,9 +45,9 @@ Options:
 2.  Disabled - disables USB provisioning.
 
 <!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| USBProvisioning | setting_values | yes_no | amd_intel |
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| USBProvisioning | setting_values | yes_no |
 -->
 
 </details>

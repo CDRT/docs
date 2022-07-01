@@ -30,11 +30,9 @@ Whether the TCG security feature is fully functional.
 
 ?> - If set to `Disabled`, the TxT will be set to `Disabled` automatically.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| SecurityChip | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| SecurityChip | setting_values | yes |
 
 </details>
 
@@ -60,10 +58,8 @@ Whether to require confirmation of a user's physical presence when clearing the 
 1.  **Enabled** - Default.
 1.  Disabled.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| PhysicalPresenceforClear | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| PhysicalPresenceforClear | Disabled, Enabled | yes |
 
 </details>

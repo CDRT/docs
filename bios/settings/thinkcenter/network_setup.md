@@ -7,13 +7,14 @@
 Options:
 
 1.  **Enabled** - Default.
-2.  Disabled - !> also disables all [Intel (R) AMT](https://software.intel.com/sites/manageability/AMT_Implementation_and_Reference_Guide/default.htm) related functions.
+2.  Disabled.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| OnboardEthernetController | setting_values | yes_no | amd_intel |
--->
+!> Setting to `Disabled` also disables all [Intel (R) AMT](https://software.intel.com/sites/manageability/AMT_Implementation_and_Reference_Guide/default.htm) related functions.
+
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| OnboardEthernetController | Disabled, Enabled | yes |
+
 </details>
 
 <details><summary>Wireless LAN Access</summary>
@@ -25,11 +26,10 @@ Options:
 1.  **Enabled** - enables wireless LAN. Default.
 2.  Disabled - enables wireless LAN.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| WirelessLANAccess | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| WirelessLANAccess | Disabled, Enabled | yes |
+
 </details>
 
 <details><summary>Wireless LAN PXE boot</summary>
@@ -41,11 +41,10 @@ Options:
 1.  **Disabled** - Default.
 2.  Enabled.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| WirelessLANPXE | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| WirelessLANPXE | Disabled, Enabled | yes |
+
 </details>
 
 
@@ -56,11 +55,10 @@ Disable wireless LAN when onboard Ethernet is connected.
 1.  **Disabled** - Default.
 2.  Enable.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| WirelessAutoDisconnection | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| WirelessAutoDisconnection | Disabled, Enabled | yes |
+
 </details>
 
 ### Wireless Certified Information (display only) ###
@@ -73,11 +71,10 @@ Options:
 1. **Disabled** - Default.
 2. Enabled.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| PXEIPV4NetworkStack | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| PXEIPV4NetworkStack | Disabled, Enabled | yes |
+
 </details>
 
 
@@ -88,11 +85,10 @@ Options:
 1.  **Disabled** - Default.
 2.  Enabled.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| PXEIPV6NetworkStack | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| PXEIPV6NetworkStack | Disabled, Enabled | yes |
+
 </details>
 
 <details><summary>HTTPS Support</summary>

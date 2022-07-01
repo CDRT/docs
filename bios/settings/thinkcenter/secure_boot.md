@@ -18,11 +18,10 @@ Options:
 1.  **Enabled** - BIOS will prevent unauthorized OS from loading.
 1.  Disabled - disables Secure Boot.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| SecureBoot | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| SecureBoot | Disabled, Enabled | yes |
+
 </details>
 
 ### Restore Factory Keys ###
@@ -55,9 +54,9 @@ Options:
 2.  Disabled. Remove Microsoft 3rd Party UEFI CA in secure boot BD.
 
 
-<!-- | WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| AllowMicrosoft3rdPartyUEFICA | setting_values | yes_no | amd_intel | -->
+<!-- | WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| AllowMicrosoft3rdPartyUEFICA | setting_values | yes_no | -->
 
 ?> If add-on cards are supported, Microsoft 3rd Party UEFI CA will not be removed until the boot loader is loaded.
 

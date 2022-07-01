@@ -9,6 +9,10 @@ Options:
 1.  **Enabled** - enables Bluetooth connections. Default.
 1.	Disabled - disables Bluetooth connections. Bluetooth will not be available in the OS.
 
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| Bluetooth  | Disabled, Enabled | yes |
+
 </details>
 
 <details><summary>Card Reader</summary>

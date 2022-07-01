@@ -17,7 +17,10 @@ Options:
 
 ?> The `IGD` option will not appear if not supported by the CPU.
 
-<!-- TODO: add WMI -->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| SelectActiveVideo  | IGD, [PEG], Auto | yes |
+
 </details>
 
 <details><summary>Pre-Allocated Memory Size</summary>

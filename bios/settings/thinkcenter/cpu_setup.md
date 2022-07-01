@@ -11,11 +11,10 @@ Options:
 1.  **Enabled** - Default.
 2.  Disabled.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| EISTSupport | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| EISTSupport | Disabled, Enabled | yes |
+
 
 </details>
 
@@ -28,11 +27,9 @@ Options:
 1. **Enabled** - enables Hyper-Threading Technology. Default.
 2. Disabled - disables Hyper-Threading Technology.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| HyperThreadingTechnology | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| HyperThreadingTechnology | Disabled, Enabled | yes |
 
 </details>
 
@@ -45,11 +42,9 @@ Options:
 1.  **Enabled** - enables multi-processing. Default.
 2.  Disabled - disables multi-processing.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| CoreMultiProcessing | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| CoreMultiProcessing | Enabled, Disabled | yes |
 
 </details>
 
@@ -62,11 +57,9 @@ Options:
 1.  **Enabled** - enables Intel(R) Virtualization Technology. Default.
 2.  Disabled - disables Intel(R) Virtualization Technology.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| VirtualizationTechnology | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| VirtualizationTechnology | Disabled, Enabled | yes |
 
 </details>
 
@@ -79,11 +72,9 @@ Options:
 1.  **Enabled** - enables VT-d. Default.
 2.  Disabled - disables VT-d.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| VTdFeature | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| VTdFeature | Disabled, Enabled | yes |
 
 </details>
 
@@ -96,11 +87,9 @@ Options:
 1.  **Enabled** - enables TxT. Default.
 2.  Disabled - disables TxT.
 
-<!-- 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| TXTFeature | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| TXTFeature | Disabled, Enabled | yes |
 
 </details>
 
@@ -113,11 +102,9 @@ Options:
 1.  **Enabled** - enables C1E Support. Default.
 2.  Disabled - disables C1E Support.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| C1ESupport | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| C1ESupport | Disabled, Enabled | yes |
 
 </details>
 
@@ -134,11 +121,9 @@ Options:
 1. C1C3C6C7C8 - C1,C3,C6,C7 and C8
 1. **C1C3C6C7C8C10 - C1,C3,C6,C7,C8 and C10** - Default.
 
-<!--
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| CStateSupport | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| CStateSupport | C1, C1C3, C1C3C6, C1C3C6C7, C1C3C6C7C8, C1C3C6C7C8C10 | yes |
 
 </details>
 
@@ -151,11 +136,9 @@ Options:
 1. **Enabled** - Default.
 2. Disabled.
 
-<!--- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| TurboMode | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| TurboMode | Disabled, Enabled | yes |
 
 </details>
 

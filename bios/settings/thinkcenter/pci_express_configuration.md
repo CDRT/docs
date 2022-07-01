@@ -13,11 +13,10 @@ Options:
 1. **Auto** - Configure ASPM automatically according to what the attached device supports in each PCI Express port. Default.
 2. Disable - Disable ASPM support of all PCI Express ports.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| setting_name | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| ASPMSupport | Disabled, Auto |  |
+
 </details>
 
 ## Select PCI Express port speed. ##
@@ -33,6 +32,11 @@ Options:
 5.  Gen 4.
 
 <!-- MODEL: S only-->
+
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| PCIe16xSlotSpeed | Disabled, Enabled |  |
+
 </details>
 
 <details><summary>PCIe 8x Slot speed</summary>
@@ -59,6 +63,11 @@ Options:
 5.  Gen 4.
 
 <!-- MODEL: S only-->
+
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| PCIe4xSlotSpeed | Auto, Gen1, Gen2, Gen3 |  |
+
 </details>
 
 <details><summary>PCIe 1x Slot speed</summary>
@@ -71,4 +80,9 @@ Options:
 4.  Gen 3.
 
 <!-- MODEL: not M70 q-->
+
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| PCIe1xSlotSpeed  | Auto, Gen1, Gen2, Gen3 |  |
+
 </details>

@@ -11,11 +11,9 @@ Options:
 1. **Enabled** - enables SIPP. Default.
 2. Disabled - disables SIPP.
 
-<!-- TODO: WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| IntelSIPPSupport | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| IntelSIPPSupport | Disabled, Enabled | yes |
 
 </details>
 
@@ -42,11 +40,9 @@ Options:
 1.  **Enabled** - enables the Dust Shield alert. Default.
 1.  Disabled - disables the Dust Shield alert.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| DustShieldAlert | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| DustShieldAlert | Disabled, Enabled | yes |
 
 ?> If the Dust Shield is not cleaned, it will lose its effectiveness and the machine may overheat.
 
@@ -64,7 +60,9 @@ Options:
 1.  **Enabled** - enables DPTF. Default.
 2.  Disabled - disables DPTF.
 
-<!-- TODO: WMI -->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| IntelDPTFSupport | Disabled, Enabled | yes |
 
 </details>
 
@@ -93,9 +91,9 @@ Options:
 2.  Disabled.
 
 <!--
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| BIOSSelfHealing  | setting_values | yes_no | amd_intel |
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| BIOSSelfHealing  | setting_values | yes_no |
 -->
 
 </details>
