@@ -14,9 +14,6 @@ In addition to the User Password, a optional Master Password can be used to reco
 
 ?> If several disks are present, we recommend setting all Hard Disk Passwords to the same.
 
-<!-- TODO: Is this really a good recommendation? -->
-
-<!-- TODO: confirm behavior -->
 
 <details><summary>M.2 Drive {Number} Password</summary>
 
@@ -77,5 +74,3 @@ Options:
 | BlockSIDAuthentication |  | yes |
 
 </details>
-
-<!-- TODO: feature confirmation -->

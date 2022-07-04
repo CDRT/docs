@@ -109,13 +109,10 @@ Options:
 1.  **Disabled** - hides `secure wipe` option. Default.
 2.  Enabled - shows `secure wipe` option.
 
-<!-- TODO: add WMI
 | WMI Setting name | Values | SVP or SMP Req'd |
 |:---|:---|:---|
-| securewipe | setting_values | yes_no |
--->
+| securewipe | | yes |
 
-<!-- TODO: why is securewipe lowercase? -->
 </details>
 
 
@@ -156,11 +153,6 @@ Options:
 1.  **Disabled** - Default.
 2.  Enabled.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP or SMP Req'd |
-|:---|:---|:---|
-| setting_name | setting_values | yes_no |
--->
 </details>
 
 <details><summary>Cover Tamper Detected</summary>

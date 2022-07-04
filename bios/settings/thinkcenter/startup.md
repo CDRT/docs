@@ -16,11 +16,9 @@ Options:
 1. USB HDD
 1. USB CDROM
 
-<!-- TODO: add WMI
 | WMI Setting name | Values | SVP or SMP Req'd |
 |:---|:---|:---|
-| Firstbootdevice | setting_values | yes_no |
--->
+| Firstbootdevice |  | yes |
 </details>
 
 <details><summary>First Network Device</summary>

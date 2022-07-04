@@ -28,6 +28,5 @@ Options:
 2.  3F8/IRQ4.
 3.  Disabled - the serial port will not be available to the OS.
 
-<!-- TODO: add WMI -->
-
+<!-- NO WMI -->
 </details>

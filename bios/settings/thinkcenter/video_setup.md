@@ -35,7 +35,10 @@ Options:
 1.  128MB
 1.  160MB
 
-<!-- TODO: add WMI -->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| Pre-AllocatedMemorySize |  | yes |
+
 </details>
 
 <details><summary>Total Graphics Memory</summary>
@@ -60,5 +63,5 @@ Options:
 1.  **MST** - Default.
 2.  SST (single-stream transport).
 
-<!-- TODO: add WMI -->
+<!-- NO WMI -->
 </details>

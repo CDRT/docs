@@ -146,7 +146,7 @@ Options:
 
 Displays the processor ID.
 
-<!-- TODO: styles -->
+<!-- NO WMI -->
 
 </details>
 
@@ -154,6 +154,6 @@ Displays the processor ID.
 
 CPU microcode revision.
 
-<!-- TODO: styles -->
+<!-- NO WMI -->
 
 </details>

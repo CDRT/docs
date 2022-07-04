@@ -27,13 +27,9 @@ Press `Enter` to enter Intel (R) MEBx (Management Engine BIOS Extension).
 
 Displays the firmware version.
 
-<!-- TODO: styles-->
-
 ### Manageability Type (display only) ###
 
 Displays the manageability type.
-
-<!-- TODO: styles-->
 
 </details>
 
@@ -44,10 +40,8 @@ Options:
 1.  **Enabled** - enables USB provisioning. Default.
 2.  Disabled - disables USB provisioning.
 
-<!-- TODO: add WMI
 | WMI Setting name | Values | SVP or SMP Req'd |
 |:---|:---|:---|
-| USBProvisioning | setting_values | yes_no |
--->
+| USBProvisioning | Disabled, Enabled | yes |
 
 </details>

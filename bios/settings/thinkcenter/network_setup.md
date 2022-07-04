@@ -100,7 +100,7 @@ Options:
 2.  **Disabled** - Default.
 1.  Enabled.
 
-<!-- TODO: add WMI -->
+<!-- NO WMI -->
 
 </details>
 

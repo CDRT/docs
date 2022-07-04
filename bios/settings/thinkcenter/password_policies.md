@@ -53,11 +53,10 @@ Options:
 4.  Russian
 5.  Chinese
 
-<!-- TODO: add WMI
 | WMI Setting name | Values | SVP or SMP Req'd |
 |:---|:---|:---|
 | KeyboardLayout | English, French, German, Chinese | yes |
--->
+
 </details>
 
 <details><summary>BIOS Password At System Boot</summary>

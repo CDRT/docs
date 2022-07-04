@@ -22,7 +22,7 @@ Options:
 1.  **Enabled** - enables card reader. Default.
 1.  Disabled - disables card reader.
 
-<!-- TODO: add WMI -->
+<!-- NO WMI -->
 
 <!-- MODEL: S only -->
 

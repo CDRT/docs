@@ -17,8 +17,7 @@ Options:
  - Discrete TPM 2.0
  - Firmware TPM 2.0
 
-<!-- TODO: add WMI
--->
+<!-- NO WMI -->
 </details>
 
 <details><summary>Security Chip 2.0</summary>
@@ -47,8 +46,7 @@ Options:
 1.  **No** - Default.
 1.  Yes.
 
-<!-- TODO: add WMI
--->
+<!-- NO WMI -->
 </details>
 
 <details><summary>Physical Presence for Clear</summary>

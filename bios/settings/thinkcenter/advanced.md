@@ -26,7 +26,7 @@ Options:
 1.  **Disabled** - disables Intel (R) Thunderbolt. Default.
 2.  Enabled - enables Intel (R) Thunderbolt.
 
-<!-- TODO: add WMI -->
+<!-- NO WMI -->
 
 </details>
 
@@ -75,7 +75,7 @@ Options:
 1. **Enabled** - enables Windows Modern Standby. Default.
 2. Disabled - disables Windows Modern Standby.
 
-<!-- TODO: add WMI-->
+<!-- NO WMI-->
 
 <!-- MODEL: NOT M70s-->
 
