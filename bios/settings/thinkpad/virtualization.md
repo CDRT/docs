@@ -12,7 +12,7 @@ Requires additional confirmation of changing these settings.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| KernelDMAProtection | Disable, Enable | No | Both |
+| KernelDMAProtection | Disable, Enable | No | Intel |
 </details>
 
 

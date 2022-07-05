@@ -178,7 +178,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| ThunderboltAccess | Disable, Enable | No | Both |
+| ThunderboltAccess | Disable, Enable | No | Intel |
 </details>
 
 
