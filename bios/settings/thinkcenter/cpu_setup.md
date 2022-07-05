@@ -84,7 +84,7 @@ Trusted Execution Technology (TxT) provides hardware-based mechanisms to protect
 
 Options:
 
-1.  **Enabled** - enables TxT. Default.
+1.  **Enabled** - Default.
 2.  Disabled - disables TxT.
 
 | WMI Setting name | Values | SVP or SMP Req'd |
@@ -99,7 +99,7 @@ Enhanced C1 state (C1E) is where the processor is not executing instructions (bu
 
 Options:
 
-1.  **Enabled** - enables C1E Support. Default.
+1.  **Enabled** - Default.
 2.  Disabled - disables C1E Support.
 
 | WMI Setting name | Values | SVP or SMP Req'd |

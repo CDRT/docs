@@ -90,7 +90,7 @@ Block USB write access (copying data from computer to USB storage device) in Win
 
 Options:
 
-1.  **Disabled** - disables Smart USB Protection. Default.
+1.  **Disabled** - Default.
 1.  Read Only - The user can copy data from USB to computer, but not from computer to USB.
 1.  NO Access - The user cannot use USB storage device in Windows.
 

@@ -8,7 +8,7 @@ Controls the wake up event from onboard LAN and PCI LAN.
 
 Options:
 
-1.  **Enabled** - enables Wake on LAN. Default.
+1.  **Enabled** - Default.
 2.  Disabled - disables Wake on LAN.
 
 | WMI Setting name | Values | SVP or SMP Req'd |
@@ -45,7 +45,7 @@ A single wake up event, or series of alarm events, can also be defined.
 
 Options:
 
-1.  **Disabled** - Disables Wake Up on Alarm. Default.
+1.  **Disabled** - Default.
 2.  User Defined - a series of alarm events.
 3.  Single Event
 4.  Daily Event

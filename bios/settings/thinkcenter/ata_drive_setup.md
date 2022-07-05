@@ -63,7 +63,7 @@ Ensures the hard disk has initialized after power up, prior to being accessed. T
 
 Options:
 
-1.  **Disabled** - enables delay. Default.
+1.  **Disabled** - Default.
 2.  3 - 30 seconds - enables delay, in increments of 3 seconds up 15, then 21 or 30.
 
 | WMI Setting name | Values | SVP or SMP Req'd |

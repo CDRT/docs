@@ -37,7 +37,7 @@ Displays the manageability type.
 
 Options:
 
-1.  **Enabled** - enables USB provisioning. Default.
+1.  **Enabled** - Default.
 2.  Disabled - disables USB provisioning.
 
 | WMI Setting name | Values | SVP or SMP Req'd |

@@ -45,7 +45,7 @@ When enabled, the user can use `Alt+P` to power on if a USB keyboard is plugged 
 
 Options:
 
-1.  **Enabled** - enables Smart Power On. Default.
+1.  **Enabled** - Default.
 2.  Disabled - disables Smart Power On.
 
 | WMI Setting name | Values | SVP or SMP Req'd |

@@ -8,7 +8,7 @@ Intel (R) Stable Image Platform Program aligns and stabilizes key Intel platform
 
 Options:
 
-1. **Enabled** - enables SIPP. Default.
+1. **Enabled** - Default.
 2. Disabled - disables SIPP.
 
 | WMI Setting name | Values | SVP or SMP Req'd |
@@ -37,7 +37,7 @@ The user is reminded to clean the Dust Shield.
 
 Options:
 
-1.  **Enabled** - enables the Dust Shield alert. Default.
+1.  **Enabled** - Default.
 1.  Disabled - disables the Dust Shield alert.
 
 | WMI Setting name | Values | SVP or SMP Req'd |
@@ -57,7 +57,7 @@ IDPTF is a power and thermal management solution, used to resolve fan noise, ove
 
 Options:
 
-1.  **Enabled** - enables DPTF. Default.
+1.  **Enabled** - Default.
 2.  Disabled - disables DPTF.
 
 | WMI Setting name | Values | SVP or SMP Req'd |
@@ -72,7 +72,7 @@ Options:
 
 Options:
 
-1. **Enabled** - enables Windows Modern Standby. Default.
+1. **Enabled** - Default.
 2. Disabled - disables Windows Modern Standby.
 
 <!-- NO WMI-->

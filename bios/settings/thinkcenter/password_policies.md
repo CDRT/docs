@@ -80,7 +80,7 @@ Whether the power-on password (POP) is required when system restarts.
 
 Options:
 
-1.  **No** - disables password prompt on reboot. Default.
+1.  **No** - Default.
 1.  Yes - enables password prompt on reboot.
 
 | WMI Setting name | Values | SVP or SMP Req'd |

@@ -6,7 +6,7 @@
 
 Options:
 
-1.  **Enabled** - enables USB. Default.
+1.  **Enabled** - Default.
 2.  Disabled - disables USB.
 
 | WMI Setting name | Values | SVP or SMP Req'd |
@@ -43,7 +43,7 @@ Provides extra delay to USB enumeration (detection and recognition of connected 
 
 Affects all of the front USB ports (numbered):
 
-1.  **Enabled** - enables front USB ports. Default.
+1.  **Enabled** - Default.
 2.  Disabled - disables front USB ports, numbered.
 
 > ?> When `Disabled` is selected, settings for all front USB ports will not be shown.
@@ -75,7 +75,7 @@ Options:
 
 Affects all of the rear USB ports (numbered):
 
-1.  **Enabled** - enables rear USB ports. Default.
+1.  **Enabled** - Default.
 2.  Disabled - disables rear USB ports, numbered.
 
 > ?> When `Disabled` is selected, settings for all rear USB ports will not be shown.
