@@ -18,6 +18,8 @@ Options:
 
 The parallel port mode has only one value: EPP (Enhanced Parallel Port).
 
+1. **EPP** - Default.
+
 <!-- NO WMI -->
 </details>
 

@@ -24,8 +24,8 @@ Intel(R) Hyper-Threading Technology allows multiple logical processors within th
 
 Options:
 
-1. **Enabled** - enables Hyper-Threading Technology. Default.
-2. Disabled - disables Hyper-Threading Technology.
+1. **Enabled** - Default.
+2. Disabled.
 
 | WMI Setting name | Values | SVP or SMP Req'd |
 |:---|:---|:---|
@@ -39,8 +39,8 @@ Whether all CPU (multi-)cores are available to the OS, or only one core.
 
 Options:
 
-1.  **Enabled** - enables multi-processing. Default.
-2.  Disabled - disables multi-processing.
+1.  **Enabled** - Default.
+2.  Disabled.
 
 | WMI Setting name | Values | SVP or SMP Req'd |
 |:---|:---|:---|
@@ -54,8 +54,8 @@ Intel(R) Virtualization Technology multiple applications and operating systems t
 
 Options:
 
-1.  **Enabled** - enables Intel(R) Virtualization Technology. Default.
-2.  Disabled - disables Intel(R) Virtualization Technology.
+1.  **Enabled** - Default.
+2.  Disabled.
 
 | WMI Setting name | Values | SVP or SMP Req'd |
 |:---|:---|:---|
@@ -69,8 +69,8 @@ VT-d provides improved isolation of I/O resources for greater reliability, secur
 
 Options:
 
-1.  **Enabled** - enables VT-d. Default.
-2.  Disabled - disables VT-d.
+1.  **Enabled** - Default.
+2.  Disabled.
 
 | WMI Setting name | Values | SVP or SMP Req'd |
 |:---|:---|:---|

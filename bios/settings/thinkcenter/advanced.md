@@ -19,12 +19,10 @@ Options:
 
 <details><summary>Intel (R) Thunderbolt</summary>
 
-Enable or Disable Intel (R) Thunderbolt.
-
 Options:
 
-1.  **Disabled** - disables Intel (R) Thunderbolt. Default.
-2.  Enabled - enables Intel (R) Thunderbolt.
+1.  **Disabled** - Default.
+2.  Enabled.
 
 <!-- NO WMI -->
 

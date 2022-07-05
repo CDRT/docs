@@ -25,8 +25,8 @@ One of the (Serial AT Attachment) Drives. Total number of drives depends on mode
 
 Options:
 
-1.  **Enabled** - enables this SATA drive. Default.
-2.  Disabled - disables this SATA drive.
+1.  **Enabled** - Default.
+2.  Disabled.
 
 | WMI Setting name | Values | SVP or SMP Req'd |
 |:---|:---|:---|

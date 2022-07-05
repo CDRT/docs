@@ -10,8 +10,8 @@ Return Intel(R) Manageability settings to default configuration.
 
 Options:
 
-1. **Enabled** - enables Intel(R) Manageability Reset. Default.
-2. Disabled - disables Intel(R) Manageability Reset.
+1. **Enabled** - Default.
+2. Disabled.
 
 !> the MEBx password will also be reset.
 

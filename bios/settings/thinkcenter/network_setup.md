@@ -177,13 +177,11 @@ Options:
 
 </details>
 
-<details><summary>Delete HTTPs Boot Option from List</summary>
+### Delete HTTPs Boot Option from List ###
 
 ?> Select and press `Enter` to remove an EFI HTTPs boot option.
 
 <!-- NO WMI -->
-
-</details>
 
 ## TLS Auth Configuration ##
 
