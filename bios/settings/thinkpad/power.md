@@ -83,8 +83,20 @@ This option requests additional confirmation. <br>
 After selecting this item, the system will be automatically powered off, then ready to be serviced.
 
 **Note**. The battery will be automatically enabled when the AC adapter is reconnected.
-
 </details>
+
+
+<details><summary>Lid Sensor</summary>
+One of 2 possible options:
+
+1.	**On** - Enabled the actions when the Lid is closed or opened. Default.
+2.	Off - Disabled the actions when the Lid is closed or opened.
+
+?> Feature is relevant only for AMD-based machines.
+
+Not available via WMI.
+</details>
+
 
 ### Automatic Power On ###
 ![](./img/autopoweron.png)
