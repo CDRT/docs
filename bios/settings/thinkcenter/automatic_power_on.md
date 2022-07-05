@@ -51,11 +51,9 @@ Options:
 4.  Daily Event
 5.  Weekly Event
 
-<!-- 
 | WMI Setting name | Values | SVP or SMP Req'd |
 |:---|:---|:---|
-| WakeUponAlarm | setting_values | yes_no |
--->
+| WakeUponAlarm |  | yes |
 
 </details>
 

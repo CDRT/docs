@@ -186,8 +186,3 @@ Options:
 | ConfigurationChangeDetection | Disabled, Enabled | yes |
 
 </details>
-
-<!-- <details><summary>Password Count Exceeded Error</summary>
-select Enabled to show the POST 0199 error and
-prompt for password. Select Disabled to hide the POST
-0199 error and proceed Without any user action required. -->

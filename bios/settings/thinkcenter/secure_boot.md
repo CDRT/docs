@@ -54,9 +54,9 @@ Options:
 2.  Disabled. Remove Microsoft 3rd Party UEFI CA in secure boot BD.
 
 
-<!-- | WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | SVP or SMP Req'd |
 |:---|:---|:---|
-| AllowMicrosoft3rdPartyUEFICA | setting_values | yes_no | -->
+| AllowMicrosoft3rdPartyUEFICA |  | yes |
 
 ?> If add-on cards are supported, Microsoft 3rd Party UEFI CA will not be removed until the boot loader is loaded.
 

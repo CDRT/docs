@@ -90,10 +90,8 @@ Options:
 1.  **Enabled** - Default.
 2.  Disabled.
 
-<!--
 | WMI Setting name | Values | SVP or SMP Req'd |
 |:---|:---|:---|
-| BIOSSelfHealing  | setting_values | yes_no |
--->
+| BIOSSelfHealing  |  | no |
 
 </details>

@@ -116,7 +116,7 @@ Options:
 
 ?> If enabled, `HTTPs Boot Configuration` and `Tls Auth Configuration` will be shown.
 
-<!-- WMI: no -->
+<!-- NO WMI -->
 </details>
 
 <details><summary>Lenovo Cloud Services</summary>
@@ -126,7 +126,7 @@ Whether `Lenovo Cloud` will be selected in boot menu, to boot from Lenovo Cloud 
 1.  **Disabled** - Default.
 2. Enabled.
 
-<!-- WMI: no -->
+<!-- NO WMI -->
 </details>
 
 <details><summary>Win VDI Boot</summary>
@@ -138,7 +138,7 @@ Options:
 1. **Disabled** - Default.
 2. Enabled.
 
-<!-- WMI: no -->
+<!-- NO WMI -->
 
 </details>
 
@@ -154,7 +154,7 @@ Create a new boot option based on a HTTPS URL.
 
 ?> Press `Enter` to input a label for the newly created URL and it will be displayed in the boot sequence menu.
 
-<!-- WMI: no -->
+<!-- NO WMI -->
 
 </details>
 
@@ -165,7 +165,7 @@ Options:
 1.  **Ipv4** - enables IPV4. Default.
 2.  Ipv6 - enables IPV6.
 
-<!-- WMI: no -->
+<!-- NO WMI -->
 
 </details>
 
@@ -173,7 +173,7 @@ Options:
 
 ?> Use the `TLS Auth configuration` to import the CA to support the HTTPs boot 
 
-<!-- WMI: no -->
+<!-- NO WMI -->
 
 </details>
 
@@ -181,7 +181,7 @@ Options:
 
 ?> Select and press `Enter` to remove an EFI HTTPs boot option.
 
-<!-- WMI: no -->
+<!-- NO WMI -->
 
 </details>
 
@@ -208,7 +208,7 @@ Options:
 1. **Disabled** - Default.
 2. Enabled.
 
-<!-- WMI: no -->
+<!-- NO WMI -->
 
 </details>
 
