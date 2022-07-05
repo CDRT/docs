@@ -98,6 +98,18 @@ Not available via WMI.
 </details>
 
 
+<details><summary>Cool & Quiet on Lap</summary>
+One of 2 possible options:
+
+1.	On - system performance is lowered to maintain a cooler temperature when the device is used on lap.
+2.	**Off** - Cool & Quiet on Lap is disabled. Default.
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+   |:---|:---|:---|:---|
+| CoolQuietOnLap | Disable, Enable | No | Intel |
+</details>
+
+
 ### Automatic Power On ###
 ![](./img/autopoweron.png)
 
