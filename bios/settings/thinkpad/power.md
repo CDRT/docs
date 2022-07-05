@@ -63,6 +63,20 @@ One of 2 possible options for a feature that powers on the system when AC is att
 | OnByAcAttach | Disable, Enable | No | Both |
 </details>
 
+<details><summary>Sleep State</summary>
+One of 2 possible options:
+
+1.	**Windows 10** - Optimized Sleep State for Windows 10(R) and versions of Linux that are compatible with Suspend-to-Idle. Default.
+2.	Linux - Optimized Sleep State for versions of Linux that are not compatible with Suspend-to-Idle.
+
+?> Windows 10(R) shall be used with Windows 10 setting only.
+<!-- TODO: confirm behavior -->
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+   |:---|:---|:---|:---|
+| SleepState | Windows 10, Linux | No | Both |
+</details>
+
 <details><summary>Disable Built-in Battery</summary>
 Option to temporarily disable battery for servicing the system. <br>
 This option requests additional confirmation. <br>
