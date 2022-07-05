@@ -7,7 +7,7 @@ More information about DASH: [https://www.dmtf.org/standards/ws-man](https://www
 One of 2 possible options:
 
 1.	On – DASH support is enabled.
-2.	Off – DASH support is disabled.
+2.	**Off** – DASH support is disabled. Default.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -19,7 +19,7 @@ One of 2 possible options:
 One of 2 possible options:
 
 1.	On – Wireless DASH support is enabled.
-2.	Off – Wireless DASH support is disabled.
+2.	**Off** – Wireless DASH support is disabled. Default.
 
 ?> This setting is available only if machine has wireless card with Pro CPU support.
 <!-- TODO: feature details -->
