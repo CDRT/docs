@@ -24,7 +24,7 @@ Controls access to WiFi.
 Options:
 
 1.  **Enabled** - Default.
-2.  Disabled - enables wireless LAN.
+2.  Disabled.
 
 | WMI Setting name | Values | SVP or SMP Req'd |
 |:---|:---|:---|
