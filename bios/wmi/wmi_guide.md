@@ -223,9 +223,13 @@ For a list of all available BIOS settings that can be changed through WMI on a s
 ### Changing BIOS Settings 
 
 To change a BIOS setting, complete the following steps:
- 1. Identify the BIOS setting you want to change using the Lenovo_BiosSetting class.
- 2. Identify the value to which the setting will be changed, using the Lenovo_GetBiosSelections class.
- 3. Change the BIOS setting to the desired value using the Lenovo_SetBiosSetting class, then use the Lenovo_SaveBiosSetting class to save the settings. **Note**: BIOS settings and values are case sensitive.
+
+ **1**. Identify the BIOS setting you want to change using the Lenovo_BiosSetting class.
+ 
+ **2**. Identify the value to which the setting will be changed, using the Lenovo_GetBiosSelections class.
+ 
+ **3**. Change the BIOS setting to the desired value using the Lenovo_SetBiosSetting class, then use the Lenovo_SaveBiosSetting class to save the settings. 
+ ?>BIOS settings and values are case sensitive.
 
 After making changes to the BIOS settings, you must reboot the computer before the changes will take effect.
 
@@ -249,10 +253,10 @@ To change the boot order, complete the following steps:
  Example: Change primary boot sequence,
  ```"Primary Boot Sequence” “Network 1:SATA 1:USB HDD:SATA 2:USB CDROM:USB Key"```
 
-**Note**:
- 1. “Boot Order” settings are case sensitive.
- 2. Settings may different from projects, recommend List all settings first to identify the BIOS setting wants to change, and put all the listed device to the script parameters, just sequence could be changed .
- 3. After making changes to the BIOS settings, you must reboot the computer before the changes will take effect. 
+
+?> 	**1**. “Boot Order” settings are case sensitive.<br>
+	**2**. Settings may different from projects, recommend List all settings first to identify the BIOS setting wants to change, and put all the listed device to the script parameters, just sequence could be changed. <br>
+	**3**. After making changes to the BIOS settings, you must reboot the computer before the changes will take effect. 
 
 
 ### Restoring Default Settings 
@@ -327,20 +331,18 @@ _**Table 8.** Password parameters format, changing existing hardware password 20
 
 ### Limitations and Notes
 
- 1. BIOS settings cannot be changed at the same boot as power-on passwords and hard disk passwords. If you
-want to change BIOS settings and passwords, you must reboot the system after changing one of them.
+ **1**. BIOS settings cannot be changed at the same boot as power-on passwords and hard disk passwords. If you want to change BIOS settings and passwords, you must reboot the system after changing one of them.
 
- 2. A password cannot be set using this method when one does not already exist. Passwords can only be
-changed or cleared.
+ **2**. A password cannot be set using this method when one does not already exist. Passwords can only be changed or cleared.
 
- 3. To remove the power-on password when a supervisor password is set, it must be done in three steps total:
+ **3**. To remove the power-on password when a supervisor password is set, it must be done in three steps total:
  <ol type="a">
   <li> Change the supervisor password. It’s OK to specify the same password as both the current and the new, in case you don’t really want to change it. But you must do this step.</li>
   <li> Change the power-on password by specifying the current password and a NULL string as the new password</li>
   <li> Reboot (do not reboot between steps A and B) </li>
  </ol>
 
- 4. Some security-related settings can only be disabled when a Supervisor password exists. For example, the following BIOS settings cannot be changed from Enable to Disable unless you have a Supervisor password:
+ **4**. Some security-related settings can only be disabled when a Supervisor password exists. For example, the following BIOS settings cannot be changed from Enable to Disable unless you have a Supervisor password:
  <ol type="a">
   <li> SecureBoot</li>
   <li> SecureRollbackPrevention</li>
@@ -354,8 +356,8 @@ WMI-based administration scripts operating over a remote connection send data ov
 default. You can enhance security by modifying WMI-based administration scripts to establish an encrypted remote
 connection as follows:
 
- 1. Set an impersonation level of "impersonate"
- 2. Set an authentication level of "pktPrivacy"
+ **1**. Set an impersonation level of "impersonate"
+ **2**. Set an authentication level of "pktPrivacy"
 
 See Appendix A Sample Visual Basic scripts for configuring BIOS settings for sample scripts used to implement WMI-based administration scripts that include these parameters for encryption. 
 
@@ -471,8 +473,9 @@ supervisor password exists.
 
 ### Change a Supervisor Password on the Local Computer
 
-Use the sample scripts in the ZIP file as templates to change a supervisor password on the local computer. Note:
-You cannot set a supervisor password if one does not already exist.
+Use the sample scripts in the ZIP file as templates to change a supervisor password on the local computer. 
+
+?>You cannot set a supervisor password if one does not already exist.
 
 **Syntax**: cscript.exe SetSupervisorPassword.vbs [Old Password] [New Password] [encoding]
 
@@ -527,26 +530,28 @@ Use the following command as a template to display all possible values for a par
 
 Use the following commands to set the value of a BIOS setting. This is a multi-step process: 
 
-1. Change the setting
+**1**. Change the setting
  ```
  (gwmi -class Lenovo_SetBiosSetting –namespace root\wmi).SetBiosSetting("WakeOnLANDock,Disable")
  ```
-2. Specify the supervisor password (if it exists). 
+**2**. Specify the supervisor password (if it exists). 
  ```
  (gwmi -class Lenovo_WmiOpcodeInterface -namespace root\wmi).WmiOpcodeInterface("WmiOpcodePasswordAdmin:MyPassword")
  ```
-   **Note**: Step 2 can be omitted if you don’t have a supervisor password. 
+?>Step 2 can be omitted if you don’t have a supervisor password. 
  
-3. Save the new setting
+**3**. Save the new setting
  ```
  (gwmi -class Lenovo_SaveBiosSettings -namespace root\wmi).SaveBiosSettings()
  ```
-**Note**: The setting string is case sensitive and should be in the format ```<item>,<value>```. 
+?>The setting string is case sensitive and should be in the format ```<item>,<value>```. 
 
 ### Set a BIOS Setting When a Supervisor Password Exists 
 
 Use the following command as a template to set the value of a setting when a supervisor password exists. This is
-a two-step process: set and then save. Note: The setting string is case sensitive and should be in the format
+a two-step process: set and then save. 
+
+?>The setting string is case sensitive and should be in the format
 ```<item>, <value>, <password + encoding>```. 
 
  ```
@@ -561,19 +566,19 @@ a two-step process: set and then save. Note: The setting string is case sensitiv
 Use the following commands to change the BIOS supervisor password. Note that you cannot use this method to
 set an initial password; it can only be used to change an existing password. This is a multi-step process:
 
-1. Specify the password type
+**1**. Specify the password type
  ```
  (gwmi -class Lenovo_WmiOpcodeInterface -namespace root\wmi).WmiOpcodeInterface("WmiOpcodePasswordType:pap")
  ```
-2. Specify the current password
+**2**. Specify the current password
  ```
  (gwmi -class Lenovo_WmiOpcodeInterface -namespace root\wmi).WmiOpcodeInterface("WmiOpcodePasswordCurrent01:MyCurrentPassword")
  ```
-3. Specify the new password
+**3**. Specify the new password
  ```
  (gwmi -class Lenovo_WmiOpcodeInterface -namespace root\wmi).WmiOpcodeInterface("WmiOpcodePasswordNew01:MyNewPassword")
  ```
-4. Save the new password
+**4**. Save the new password
  ```
  (gwmi -class Lenovo_WmiOpcodeInterface -namespace root\wmi).WmiOpcodeInterface("WmiOpcodePasswordSetUpdate")
  ```
