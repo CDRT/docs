@@ -1,7 +1,7 @@
 # DASH Configuration Settings #
 
 DASH provides support for the redirection of KVM (Keyboard, Video and Mouse) and text consoles, as well as USB and media, and supports the management of software updates, UEFI BIOS, batteries, NIC, MAC and IP addresses, as well as DNS and DHCP configuration. DASH specifications also address operating system status, opaque data management.
-More information about DASH: [https://www.dmtf.org/standards/ws-man](https://www.dmtf.org/standards/ws-man).
+More information about DASH: [Lenovo and AMD DASH Management](dash/dash_top.md).
 
 <details><summary>DASH Support</summary>
 One of 2 possible options:
@@ -21,8 +21,8 @@ One of 2 possible options:
 1.	On – Wireless DASH support is enabled.
 2.	**Off** – Wireless DASH support is disabled. Default.
 
-?> This setting is available only if machine has wireless card with Pro CPU support.
-<!-- TODO: feature details -->
+?> This setting is available only if machine has Pro CPU and a wireless card which supports DASH.
+
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
