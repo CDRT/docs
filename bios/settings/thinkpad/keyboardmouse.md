@@ -2,6 +2,8 @@
 ![](./img/keyboardmouse.png)
 
 <details><summary>TrackPoint</summary>
+TrackPoint, also called a pointing stick, is a cursor control device. It is sometimes called an eraser pointer because it is roughly the size and shape of a pencil eraser.
+
 One of 2 possible states:
 
 1.	Off - Built-in Track point is disabled.
@@ -19,9 +21,11 @@ One of 2 possible states:
 1.	Off - Built-in Trackpad is disabled.
 2.	**On** - Built-in Trackpad is enabled. Default.
 
+More information about Trackpad: [https://support.lenovo.com/ro/en/solutions/ht103662](https://support.lenovo.com/ro/en/solutions/ht103662)
+
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| TouchPad | Disable, Enable (on AMD-based machi <br> Disable, Automatic (on Intel-based machine)| No | Both |
+| TouchPad | Disable, Enable (on AMD-based machine) <br> Disable, Automatic (on Intel-based machine)| No | Both |
 </details>
 
 <details><summary>Fn and Ctrl Key swap</summary>
