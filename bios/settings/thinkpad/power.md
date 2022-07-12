@@ -70,13 +70,7 @@ One of 2 possible options:
 1.	**Windows 10 and Linux** - Optimized Sleep State for Windows 10(R) and versions of Linux that are compatible with Suspend-to-Idle. Default.
 2.	Linux S3 - Optimized Sleep State for versions of Linux that are not compatible with Suspend-to-Idle.
 
-
-**AMD-based machines**
-1.	**Windows 10** - Optimized Sleep State for Windows 10(R).
-2.	Linux - Optimized Sleep State for Linux.
-
-?> Windows 10(R) shall be used with Windows 10 setting only.
-<!-- TODO: confirm behavior -->
+?> `Windows 10(R) and Linux` shall be used with Windows 10 and Linux setting only.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
    |:---|:---|:---|:---|
