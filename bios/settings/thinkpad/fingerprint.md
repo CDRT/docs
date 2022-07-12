@@ -37,7 +37,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| FingerprintPasswordAuthentication | Disable, Enable | No | Both |
+| FingerprintPasswordAuthentication | Disable, Enable | No | Intel |
 </details>
 
 

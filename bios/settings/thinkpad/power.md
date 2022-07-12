@@ -63,14 +63,58 @@ One of 2 possible options for a feature that powers on the system when AC is att
 | OnByAcAttach | Disable, Enable | No | Both |
 </details>
 
+<details><summary>Sleep State</summary>
+One of 2 possible options:
+
+**Intel-based machines**
+1.	**Windows 10 and Linux** - Optimized Sleep State for Windows 10(R) and versions of Linux that are compatible with Suspend-to-Idle. Default.
+2.	Linux S3 - Optimized Sleep State for versions of Linux that are not compatible with Suspend-to-Idle.
+
+
+**AMD-based machines**
+1.	**Windows 10** - Optimized Sleep State for Windows 10(R).
+2.	Linux - Optimized Sleep State for Linux.
+
+?> Windows 10(R) shall be used with Windows 10 setting only.
+<!-- TODO: confirm behavior -->
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+   |:---|:---|:---|:---|
+| SleepState | Windows 10, Linux | No | Both |
+</details>
+
 <details><summary>Disable Built-in Battery</summary>
 Option to temporarily disable battery for servicing the system. <br>
 This option requests additional confirmation. <br>
 After selecting this item, the system will be automatically powered off, then ready to be serviced.
 
 **Note**. The battery will be automatically enabled when the AC adapter is reconnected.
-
 </details>
+
+
+<details><summary>Lid Sensor</summary>
+One of 2 possible options:
+
+1.	**On** - Enabled the actions when the Lid is closed or opened. Default.
+2.	Off - Disabled the actions when the Lid is closed or opened.
+
+?> Feature is relevant only for AMD-based machines.
+
+Not available via WMI.
+</details>
+
+
+<details><summary>Cool & Quiet on Lap</summary>
+One of 2 possible options:
+
+1.	On - system performance is lowered to maintain a cooler temperature when the device is used on lap.
+2.	**Off** - Cool & Quiet on Lap is disabled. Default.
+
+| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+   |:---|:---|:---|:---|
+| CoolQuietOnLap | Disable, Enable | No | Intel |
+</details>
+
 
 ### Automatic Power On ###
 ![](./img/autopoweron.png)

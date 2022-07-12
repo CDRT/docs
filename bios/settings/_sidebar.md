@@ -36,6 +36,7 @@
   - [Absolute Persistence(R) Module](bios/settings/thinkpad/abspersistencemodule.md)
   - [Secure Boot](bios/settings/thinkpad/secureboot.md)
   - [Device Guard](bios/settings/thinkpad/deviceguard.md)
+  - [DASH Configuration](bios/settings/thinkpad/dashconfiguration.md)
   - [ThinkShield Secure Wipe](bios/settings/thinkpad/thinkshieldsecurewipe.md)
 
 - [Startup](bios/settings/thinkpad/startup.md)

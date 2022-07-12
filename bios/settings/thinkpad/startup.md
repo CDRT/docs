@@ -27,7 +27,7 @@ One of 9 possible options:
 <details><summary>Boot Mode</summary>
 One of 2 possible values:
 
-1.	**Quick** – the diagnostic splash screen does not display unless you press Esc during boot. Default.
+1.	**Quick** – the diagnostic splash screen does not display unless you press `Esc` during boot. Default.
 2.	Diagnostics – the diagnostic splash screen always displays during boot.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -51,9 +51,9 @@ One of 2 possible states:
 <details><summary>Boot device List F12 Option</summary>
 One of 2 possible states:
 
-1.	**On** – F12 key is used to invoke a pop-up Boot devise list. Default.<br>
+1.	**On** – `F12` key is used to invoke a pop-up Boot devise list. Default.<br>
     **Note**. This option is only available when Supervisor enters setup.
-2.	Off – F12 does not invoke a pop-up Boot device list.
+2.	Off – `F12` does not invoke a pop-up Boot device list.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -80,10 +80,10 @@ One of 2 possible states:
 The ordered list of currently defined boot priority order.
 Keys used to view or configure devices: 
 
-* '↑' and '↓' arrows Select a device. 
-* '+' and '-' move the device up or down. 
-* 'Shift + 1' enables or disables a device. 
-* 'Delete' deletes an unprotected device.
+* `↑` and `↓` arrows Select a device. 
+* `+` and `-` move the device up or down. 
+* `Shift` + `1` enables or disables a device. 
+* `Delete` deletes an unprotected device.
 
 Possible items on the list:
 
