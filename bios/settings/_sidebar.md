@@ -50,9 +50,9 @@
 ---
 
 ***ThinkStation***
-> *Coming Soon*
-
-- [System Time & Date](bios/settings/thinkstation/systemtimedate.md)
+- [Main](bios/settings/thinkstation/main.md)
+  - [System Summary](bios/settings/thinkstation/systemsummary.md)
+  - [System Time & Date](bios/settings/thinkstation/systemtimedate.md)
 
 - [Devices](bios/settings/thinkstation/devices.md)
   - [Serial Port Setup](bios/settings/thinkstation/serialportsetup.md)

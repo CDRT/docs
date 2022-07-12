@@ -14,10 +14,13 @@ One of 2 states:
 
 
 <details><summary>Remote Set SMP</summary>
+
+Whether an SVP is needed to set SMP via WMI.
+
 One of 2 states:
 
-1. **Disabled** – an SVP is needed for set SMP via WMI. Default.
-2. Enabled – allows remote set SMP via WMI without an SVP verify.
+1. **Disabled** – Default.
+2. Enabled.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|

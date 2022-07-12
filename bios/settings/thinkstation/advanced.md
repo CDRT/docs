@@ -4,8 +4,10 @@
 <details><summary>Intel(R) SIPP Support</summary>
 One of 2 possible states:
 
-1. **Enabled** – Intel(R) Stable Image Platform Program (SIPP) aligns and stabilizes key Intel platform components, enabling a predictable transition from one technology generation to the next. Default.
+1. **Enabled** – Default.
 2. Disabled - Intel(R) SIPP is turned off.
+
+?> Intel(R) Stable Image Platform Program (SIPP) aligns and stabilizes key Intel platform components, enabling a predictable transition from one technology generation to the next. 
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|

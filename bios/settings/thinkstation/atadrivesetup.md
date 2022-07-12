@@ -5,10 +5,9 @@
 One of 2 possible states for the SATA controller:
 
 1. **Enabled** – SATA controller is enabled. Default.
-2. Disabled – SATA controller is disabled. When selected, then following settings become unavailable:<br>
-    a. SATA Drive from 1 to 5 <br>
-    b. SATA Drive * Hot-Plug Support <br>
-    c. Configure SATA as <br>
+2. Disabled – SATA controller is disabled.
+
+!> When SATA controller is disabled, the following settings become unavailable:<br>    a. SATA Drive (drives 1 to 5) <br>    b. SATA Drive * Hot-Plug Support <br>    c. Configure SATA as <br>
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -47,13 +46,11 @@ One of 2 possible states for the hot-plug port:
 <details><summary>Configure SATA as</summary>
 One of 3 possible options for SATA configuration mode:
 
-1. **ANCI** – Default. When selecting, it requires additional confirmation.<br> 
-    **Note**. If you change the SATA mode to `ANCI` you may not boot the system due to the failure of Intel(R) RST with Intel(R) Optane (RAID) function.<br>
+1. **ANCI** – Default. Requires additional confirmation.<br> 
 2. Intel(R) RST with Intel(R) Optane
-3. RAID – When selecting, it requires additional confirmation.<br> 
-    **Note**. Please do not disable SATA drives in RAID mode. Otherwise you may not boot the system due to the failure of RAID function.
+3. RAID – Requires additional confirmation.<br> 
 
-**Note**. Device driver support is required for ANCI or RAID or Intel(R) RST with Intel(R) Optane. 
+!> If you change the SATA mode to `ANCI` you may not boot the system due to the failure of Intel(R) RST with Intel(R) Optane (RAID) function.<br />Do not disable SATA drives in RAID mode. Otherwise you may not boot the system due to the failure of RAID function. <br /> Device driver support is required for `ANCI` or `RAID` or Intel(R) RST with Intel(R) Optane. 
 Depending on how the hard disk image was installed, changing the setting may prevent the system from booting.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -63,7 +60,13 @@ Depending on how the hard disk image was installed, changing the setting may pre
 
 
 <details><summary>Hard Disk Pre-delay</summary>
-Setting to add a delay before the first access of a hard disk by the system software. Some hard disks hand if accessed before they have initialized themselves. This delay ensures the hard disk has initialized after power up, prior to being accessed.<br>
+
+Add a delay before the first access of a hard disk by the system software. 
+
+Some hard disks hang if accessed before they have initialized themselves.
+
+This delay ensures the hard disk has initialized after power up, prior to being accessed.<br>
+
 One of 8 possible options:
 
 1. **Disabled** – Default.

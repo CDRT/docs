@@ -24,9 +24,12 @@ One of 10 options:
 
 
 <details><summary>Set Strong Password</summary>
+
+?> A strong password is defined as: upper case, lower case, and numeric keys are all required. Special characters are optional. The minimum length is 8.
+
 One of 2 states:
 
-1. Enabled – complex password support, upper case, lower case, and numeric keys are all required. Special characters are optional. The minimum length is 8.
+1. Enabled.
 2. **Disabled** – the minimum length is 1 character. Default. 
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -50,10 +53,15 @@ One of 4 options to select the keyboard language for password:
 
 
 <details><summary>BIOS Password At System Boot</summary>
+
+Whether to prompt for passwords when the system starts from the full off or hibernate state.
+
 One of 2 options:
 
-1. **Yes** – the system prompts for passwords when the system starts from the full off or hibernate state. Default. 
-2. No – passwords are not prompted and continue to boot the OS. To prevent unauthorized access to the system recommend to set user authentication on the OS. 
+1. **Yes** –  Default. 
+2. No.
+
+!> To prevent unauthorized access to the system we recommend to setting user authentication on the OS. 
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -62,10 +70,13 @@ One of 2 options:
 
 
 <details><summary>BIOS Password At Reboot</summary>
+
+Whether to require Power-On Password when system restarts.
+
 One of 2 options:
 
-1. Yes – Power-On Password will be required when system restarts.
-2. **No** – Power-On Password will not be required when system restarts. Default.
+1. Yes.
+2. **No** - Default.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -74,9 +85,12 @@ One of 2 options:
 
 
 <details><summary>BIOS Password At Boot Device List</summary>
+
+?> When `Yes` is selected and Administrator Password is set, then user will be prompted for a password when F12 is pressed during POST (Power On Self Test). 
+
 One of 2 options:
 
-1. Yes – if selected and Administrator Password is set, then user will be prompted for a password when F12 is pressed during POST (Power On Self Test). 
+1. Yes.
 2. **No** – no password will be required when pressed F12 during POST. Default.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -86,10 +100,13 @@ One of 2 options:
 
 
 <details><summary>Require SVP when Flashing</summary>
+
+Whether the supervisor password will be required when updating the system software.
+
 One of 2 options:
 
-1. Yes – the supervisor password will be required when updating the system software.
-2. **No** – the supervisor password will not be required when updating the system software. Default.
+1. Yes.
+2. **No** – Default.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -98,10 +115,13 @@ One of 2 options:
 
 
 <details><summary>POP Changeable by User</summary>
+
+Whether the Power-On Password (POP) can be changed without supervisor password (SVP).
+
 One of 2 options:
 
-1. **Yes** – the Power-On Password can be changed without supervisor password. Default.
-2. No – the Power-On Password can only be changed by the supervisor password.
+1. **Yes** –  Default.
+2. No – the Power-On Password can only be changed with the SVP.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -122,14 +142,15 @@ One of 2 options:
 
 
 <details><summary>Password Count Exceeded Error</summary>
+
+Whether to show the POST 0199 error and prompt for password after three failed attempts.
+
 One of 2 states:
 
-1. **Enabled** – select this option to show the POST 0199 error and prompt for password. Default.
-2. Disabled – Select to hide the POST 0199 error and proceed without any user action required.
+1. **Enabled** – Default.
+2. Disabled.
 
-?> If "Password count Exceed Error" is enabled, then after the 3 attempts with incorrect password system will show 0199 error.  
-By pressing F2 the error can be bypassed, and user can work with the system. But 0199 error will be shown until someone enters bios with correct SVP to clear the error condition by pressing F10 or save the settings after this have been verified.
-In case a user wants to change bios settings and uses the wrong password, the system will deny access and after the third wrong password all other attempts will be neglected. No further changes can be made then, and user needs to reboot.
+?> If `Enabled`, then after 3 attempts with an incorrect password, the system will show a 0199 error.  <br /> •By pressing F2 the error can be bypassed, and user can work with the system. But 0199 error will be shown until someone enters bios with correct SVP to clear the error condition by pressing F10 or saving the settings after this has been verified. <br /> •If a user wants to change bios settings and uses the wrong password, the system will deny access, and after the third wrong password, all other attempts will fail. No further changes can be made then, and user needs to reboot.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|

@@ -105,10 +105,13 @@ While enabling the following parameters are available TBD:
 
 
 <details><summary>Secure Roll Back Prevention</summary>
+
+Whether to prevent Flashing the BIOS to a previous or current version.
+
 One of 2 states:
 
-1. **Yes** – Flash BIOS to a previous or current version is not allowed. This is the default setting.
-2. No – Flash BIOS to a previous or current version is allowed.
+1. **Yes** (prevent) – Default.
+2. No (allow).
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -143,10 +146,13 @@ One of 3 modes:
 
 
 <details><summary>Secure wipe</summary>
+
+Whether to display the `secure wipe` option on the F12 BIOS Startup Menu. Users can select this option to securely erase HDD data.
+
 One of 2 states:
 
-1. Enabled – display “secure wipe” option on the F12 BIOS Startup Menu. Users can select this option to securely erase HDD data. 
-2. **Disabled** – hidden the “secure wipe” option on the F12 BIOS Startup Menu. Default. 
+1. Enabled. 
+2. **Disabled** – Default. 
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -175,17 +181,16 @@ Shows Absolute Persistence Version. View only.
 </details>
 
 <details><summary>Absolute Persistence Module</summary>
-Use this setting to enable or disable the firmware Persistence Module of the optional service from Absolute.<br>
+
+Whether to enable the firmware Persistence Module of the optional service from Absolute.<br>
 
 One of 3 states:
 
-1.	**Enabled** – Absolute Persistence Module is enabled. Default. 
-2.	Disabled – Absolute Persistence Module is disabled.
-3.	Permanently Disabled – Absolute Persistence Module is permanently disabled. 
+1.	**Enabled** – Default. 
+2.	Disabled.
+3.	Permanently Disabled. 
 
-Selecting this option requires additional confirmation, because if Computrace activation is permanently disabled, then you can never enable this setting again. <br> 
-
-More information on the official site of [Absolute Software Corporation](https://www.absolute.com/partners/device-manufacturers/lenovo/).
+!> Selecting `Permanently Disabled` requires additional confirmation, because if Computrace activation is permanently disabled, then you can never enable it again. <br> More information on the official site of [Absolute Software Corporation](https://www.absolute.com/partners/device-manufacturers/lenovo/).
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -210,27 +215,31 @@ Ethernet, USB, CD, and other boot methods to be disabled, only SATA device to be
 
 
 <details><summary>Electronic Lock</summary>
+
+Whether to lock the chassis to prevent unauthorized physical access to the system components.
+
 One of 2 states:
 
-1. Lock – lock the chassis to prevent unauthorized physical access to the system components. 
-2. **Unlock** – the chassis is unlocked. Default. 
+1. Lock. 
+2. **Unlock** – Default. 
 
-**Note**. The setting is effective on the next startup after BIOS setting is saved. For more information, please refer to [user manual](https://thinkstation-specs.com/thinkstation/p350-tower/). 
+?> The setting is effective on the next startup after BIOS setting is saved. <br /> For more information, please refer to [user manual](https://thinkstation-specs.com/thinkstation/p350-tower/). 
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
 </details>
 
-
 <details><summary>Cover Tamper Detected</summary>
-Chassis Intrusion Detection is a utility that can tell whether someone has opened the case (intruded into the chassis).<br>
+
+Chassis Intrusion Detection is a utility that can tell whether someone has opened the case (intruded into the chassis).
+
 One of 2 states:
 
-1. **Disabled** – detection is disabled. Default. 
-2. Enabled – detection is enabled.
+1. **Disabled** – Default. 
+2. Enabled.
 
-**Note**. If chassis tamper occurs, you can only enter setup to clear this error.
+!> If chassis tamper occurs, you must enter setup to clear this error.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -239,10 +248,15 @@ One of 2 states:
 
 
 <details><summary>Configuration Change Detection</summary>
+
+Whether the system will notify the user during POST (Power On Self Test), when a device is installed or removed.
+
+!> This notice can only be cleared by entering BIOS setup, saving, and then exiting.
+
 One of 2 states:
 
-1. Enabled – when a device is installed or remove, the system will notify the user during POST (Power On Self Test). This notice can only be cleared by entering BIOS setup, saving, and then exiting.
-2. **Disabled** – configuration change detection is disabled. Default.
+1. Enabled.
+2. **Disabled** – Default.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|

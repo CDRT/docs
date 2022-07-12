@@ -15,12 +15,13 @@ Possible values:
 
 
 <details><summary>TCG Security Device</summary>
-One of 2 options to select the type of TCG Security Device:
+
+Select the type of TCG Security Device:
 
 1. Firmware TPM 
 2. **Discrete TPM** – Default.
 
-**Note**. Selecting a different option will require additional confirmation. Before change the TCG Security Device, all TPM related applications must be disabled, otherwise you may not be able to access your data.
+!> Selecting a different option will require additional confirmation. <br /> Before changing the TCG Security Device, all TPM related applications must be disabled, otherwise you may not be able to access your data.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -29,11 +30,15 @@ One of 2 options to select the type of TCG Security Device:
 
 
 <details><summary>Security Chip 2.0</summary>
+
+Whether to enable TCG security feature.
+
 One of 2 states:
 
-1. **Enabled** – TCG security feature is full function. Default. 
-2. Disabled – TCG security feature is no functional.<br> 
-    **Note**. When set to `Disabled`, then TxT will be set to `Disabled` automatically and `Clear TCG Security Feature` becomes unavailable. 
+1. **Enabled** - Default. 
+2. Disabled.
+
+!> When set to `Disabled`, then TxT will be set to `Disabled` automatically and `Clear TCG Security Feature` becomes unavailable. 
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -43,12 +48,14 @@ One of 2 states:
 
 <details><summary>Clear TCG Security Feature</summary>
 
-Available only when `Security Chip 2.0` has `Enabled` state.<br>
+Available only when `Security Chip 2.0` is `Enabled`.<br>
+
+!> If set to `Yes`, any data in TPM will be cleared.
+
 One of two options:
 
-1. Yes – clear TCG Security Feature.<br> 
-    **Warning**. Any data in TPM will be cleared.
-2. **No** – TCG Security Feature will not be cleaned. Default.
+1.  Yes.
+2. **No** – Default.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -57,10 +64,13 @@ One of two options:
 
 
 <details><summary>Physical Presence for Clear</summary>
-One of 2 states to select where a confirmation of a user’s physical presence is needed when clearing the security chip:
 
-1. **Enabled** – system will display user confirmation screen when clearing. Default. 
-2. Disabled – no user confirmation screen when clearing.
+Whether confirmation of a user’s physical presence is needed when clearing the security chip.
+
+?> When `Enabled`, the system will display a user confirmation screen when clearing.
+
+1. **Enabled** – Default.
+2. Disabled.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|

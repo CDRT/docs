@@ -2,11 +2,12 @@
 ![](./img/power.png)
 
 <details><summary>After Power Loss</summary>
-One of 3 options to select whether the system will stay on after AC power is removed and then restored:
 
-1. Power On – select this option if you use a power strip to turn the system on.
-2. Power Off – select this option if you want the system to remain off after power restored.
-3. **Last State** – select this option to have the system return to the previous state. Default.
+Whether the system will stay on after AC power is removed and then restored:
+
+1. Power On – select when using a power strip to turn the system on.
+2. Power Off – the system will remain off after power is restored.
+3. **Last State** – the system will return to the previous state. Default.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -15,12 +16,15 @@ One of 3 options to select whether the system will stay on after AC power is rem
 
 
 <details><summary>Enhanced Power Saving Mode</summary>
+
+Whether to enter Enhanced Power Saving Mode during power off, making total power consumption lower.
+
 One of 2 states:
 
-1. Enabled – the system will enter to Enhanced Power Saving Mode during power off. The total power consumption will be lower during power off. 
-2. **Disabled** – disables the function of Enhanced Power Save Mode. Default.
+1. Enabled. 
+2. **Disabled** – Default.
 
-**Note**: When enabled `Enhanced Power Saving Mode`, only the `Wake Up on Alarm` function is supported. Other wake up functions are not supported. System will not enter to `Enhanced Power Saving Mode` if Intel ME (Management Engine) is required to be active in Sx states (aka Sleep states) and host is in AC mode.
+!> When `Enabled`, only the `Wake Up on Alarm` function is supported. Other wake up functions are not supported. System will not enter `Enhanced Power Saving Mode` if Intel ME (Management Engine) is required to be active in Sx states (aka Sleep states) and host is in AC mode.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -29,10 +33,13 @@ One of 2 states:
 
 
 <details><summary>Smart Power On</summary>
+
+Whether the user can use `Alt` + `P` to power on if the USB keyboard is plugged in the correct USB port. 
+
 One of 2 states:
 
-1. **Enabled** – if selected, then user can use Alt+P power on in the USB keyboard is plugged in the correct USB port. Default.
-2. Disabled – if selected, then system does not support USB keyboard power on.
+1. **Enabled** – Default.
+2. Disabled.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -40,8 +47,9 @@ One of 2 states:
 </details>
 
 
-<details><summary>Intelligent Cooling</summary>
-Group of settings for Lenovo unique system thermal management solution. 
+### Intelligent Cooling ###
+
+Lenovo's unique system thermal management solution. 
 
 ![](./img/intelligentcooling.png)
 
@@ -55,6 +63,4 @@ One of 3 options:
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
-</details>
-
 </details>

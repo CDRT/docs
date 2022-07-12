@@ -5,7 +5,9 @@
 One of 2 possible states for the Onboard Audio Controller:
 
 1. **Enabled** – the Onboard Audio Controller is enabled. Default. 
-2. Disabled – the Onboard Audio Controller is disabled. If selected, then `Internal Speaker` setting is unavailable.
+2. Disabled – the Onboard Audio Controller is disabled.
+
+!> If set to `Disabled`, the `Internal Speaker` setting will be unavailable.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|

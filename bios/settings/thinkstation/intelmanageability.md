@@ -5,11 +5,11 @@
 One of 2 possible states:
 
 1. **Enabled** – Default. 
-2. Disabled – when selection this option:<br>
-    a. If system is provisioned, MEBx (Management Engine BIOS Extension) will be unprovisioned first.<br>
-    b. Manageability functions will be disabled. You can enter BIOS to re-enable Intel(R) Manageability.<br>
+2. Disabled.
 
-**Note**. When changing the setting from `Enabled` to `Disabled`, after saving and existing SETUP, need to unplug the AC power cord and plug it in again.
+?> When `Disabled`:<br>    a. If system is provisioned, MEBx (Management Engine BIOS Extension) will be unprovisioned first.<br>    b. Manageability functions will be disabled. You can enter BIOS to re-enable Intel(R) Manageability.<br>
+
+!> When changing from `Enabled` to `Disabled`, after saving and existing SETUP, you need to unplug the AC power cord and plug it in again.
 
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -21,9 +21,10 @@ One of 2 possible states:
 <details><summary>Intel(R) Manageability Reset</summary>
 One of 2 possible states:
 
-1. Enabled – when selected, then Intel(R) Manageability settings will reset to default configuration.<br> 
-    **Note**. The MEBx password will also be reset.<br>
+1. Enabled.
 2. **Disabled** – Default. 
+
+!> When `Enabled`, Intel(R) Manageability settings will reset to default configuration.<br> The MEBx password will also be reset.<br>
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -32,9 +33,12 @@ One of 2 possible states:
 
 
 <details><summary>Press < Ctrl-P > to Enter MEBx</summary>
+
+Management Engine BIOS Extension (MEBx) provides platform-level configuration options for you to configure the behavior of Management Engine (ME) platform.
+
 One of 2 possible states:
 
-1. **Enabled** – Default. Management Engine BIOS Extension (MEBx) provides platform-level configuration options for you to configure the behavior of Management Engine (ME) platform.
+1. **Enabled** – Default.
 2. Disabled. 
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |

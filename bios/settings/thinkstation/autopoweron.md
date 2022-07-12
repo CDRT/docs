@@ -8,7 +8,7 @@ One of 2 states:
 1. **Enabled** – Wake on LAN (Local Area Network) is enabled. Default.
 2. Disabled – Wake on LAN is disabled.
 
-**Note**. This item controls the wake up event from onboard LAN (Local Area Network) and PCI (Peripheral Component Interconnect) LAN.
+?> Controls the wake up event from onboard LAN (Local Area Network) and PCI (Peripheral Component Interconnect) LAN.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -87,9 +87,11 @@ Possible values:
 
 
 <details><summary>Alarm Day of Week</summary>
-Field to select the exact day for the system to turn on. <br>
 
-Active only when `Wake Up on Alarm` has value `Weekly Event`.<br>
+Select the exact day for the system to turn on. <br>
+
+?> Active only when `Wake Up on Alarm` has value `Weekly Event`.
+
 Possible values:
 
 1. **Sunday** – Default
@@ -112,7 +114,8 @@ Possible values:
 Settings per {Weekday}.
 
 <details><summary>{Weekday}</summary>
-One of 2 states to select:
+
+Whether the system will turn on automatically on this day of the week.
 
 1. **Off** - the system will not turn on automatically on this day of the week. Default.
 2. On – the system will turn on automatically on this day of the week.

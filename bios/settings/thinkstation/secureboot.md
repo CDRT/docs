@@ -18,10 +18,13 @@ Possible values:
 
 
 <details><summary>Secure Boot</summary>
+
+Secure Boot means that the BIOS will prevent any un-authorized OS from being loaded.
+
 One of 2 states:
 
-1. **Enabled** – enables Secure Boot, BIOS will prevent un-authorized OS be loaded. Default.
-2. Disabled – disables Secure Boot.
+1. **Enabled** – Default.
+2. Disabled.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
