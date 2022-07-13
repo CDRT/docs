@@ -5,10 +5,10 @@
 
 Whether Card Reader will be available in OS.
 
-One of 2 possible states for Card Reader:
+Options:
 
-1.	**Enabled** – enables use of Card Reader. Default.
-2.	Disabled – disables use of Card Reader.
+1.	**Enabled** - Default.
+2.	Disabled 
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -19,10 +19,10 @@ One of 2 possible states for Card Reader:
 
 Whether Bluetooth will be available in OS.
 
-One of 2 possible states for Bluetooth:
+Options:
 
-1.	**Enabled** – enables use of Bluetooth. Default.
-2.	Disabled – disables use of Bluetooth. 
+1.	**Enabled** - Default.
+2.	Disabled  
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|

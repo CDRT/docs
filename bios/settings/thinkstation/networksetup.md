@@ -22,8 +22,8 @@ Whether Wireless LAN will be available in OS.
 
 One of 2 states for the Wireless LAN Access:
 
-1. **Enabled** – enables use of Wireless LAN. Default. 
-2. Disabled – disables use of Wireless LAN. 
+1. **Enabled** - Default. 
+2. Disabled  
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -35,7 +35,7 @@ One of 2 states for the Wireless LAN Access:
 
 Whether to load Wireless LAN (Local Area Network) UNDI (Universal Network Driver Interface) Driver, to support wireless LAN PXE (Pre-boot Execution Environment) boot or HTTPs boot.
 
-1. Enabled – enables wireless LAN PXE boot.
+1. Enabled 
 2. **Disabled** – Default.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
@@ -199,8 +199,8 @@ Press `Enter` to configure Server CA (Certificate Authority) for HTTPs Boot.
 
 Whether to enable or disable automatic Wifi connection on every boot:
 
-1. Enabled – enables automatic connection on every boot.
-2. **Disabled** – disables automatic connection on every boot. Default. 
+1. Enabled 
+2. **Disabled** - Default. 
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|

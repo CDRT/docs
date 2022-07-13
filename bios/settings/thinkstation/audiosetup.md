@@ -2,10 +2,10 @@
 ![](./img/audiosetup.png)
 
 <details><summary>Onboard Audio Controller</summary>
-One of 2 possible states for the Onboard Audio Controller:
+Options:
 
-1. **Enabled** – the Onboard Audio Controller is enabled. Default. 
-2. Disabled – the Onboard Audio Controller is disabled.
+1. **Enabled**. Default. 
+2. Disabled.
 
 !> If set to `Disabled`, the `Internal Speaker` setting will be unavailable.
 
@@ -16,10 +16,13 @@ One of 2 possible states for the Onboard Audio Controller:
 
 
 <details><summary>Internal Speaker</summary>
-One of 2 possible states for the Internal Speaker:
 
-1. **Enabled** – enables use of Internal Speaker. Default. 
-2. Disabled – disables use of Internal Speaker. It will not be available in OS.
+Whether the internal speaker is available in the OS.
+
+Options:
+
+1. **Enabled** - Default. 
+2. Disabled 
 
 **Note**. The field is unavailable if `Onboarding Audio Controller` is set to `Disabled`.
 

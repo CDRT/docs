@@ -2,7 +2,7 @@
 ![](./img/intelthunderbolt.png)
 
 <details><summary>Intel Thunderbolt Technology</summary>
-One of 2 possible states:
+Options:
 
 1. Enabled – Intel(R) Thunderbolt technology is enabled.
 2. **Disabled** – Default. 
@@ -30,7 +30,7 @@ One of 4 options to select security level:
 
 
 <details><summary>Wake From Thunderbolt Devices</summary>
-One of 2 possible states:
+Options:
 
 1. **Enabled** – Default. 
 2. Disabled

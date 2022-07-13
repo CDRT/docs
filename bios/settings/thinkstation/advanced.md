@@ -2,10 +2,10 @@
 ![](./img/advanced.png)
 
 <details><summary>Intel(R) SIPP Support</summary>
-One of 2 possible states:
+Options:
 
 1. **Enabled** – Default.
-2. Disabled - Intel(R) SIPP is turned off.
+2. Disabled.
 
 ?> Intel(R) Stable Image Platform Program (SIPP) aligns and stabilizes key Intel platform components, enabling a predictable transition from one technology generation to the next. 
 
@@ -17,7 +17,7 @@ One of 2 possible states:
 
 <details><summary>Intel(R) DPTF Support</summary>
 Intel(R) Dynamic Platform and Thermal Framework (DPTF) is a software that helps managing power to the CPU vs temperature. Keeping CPU temperature down while still delivering good performance.<br>
-One of 2 possible states for Intel(R) DPTF:
+Options:
 
 1. **Enabled** – Intel(R) DRTF is turned on. Default.
 2. Disabled - Intel(R) DRTF is turned off.

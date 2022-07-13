@@ -3,7 +3,7 @@
 
 <details><summary>Intel(R) Speed Shift Technology</summary>
 Intel(R) Speed Shift Technology is an energy efficient method of frequency control by the hardware rather than relying on OS control.<br>
-One of 2 possible states:
+Options:
 
 1. **Enabled** – Default. 
 2. Disabled – Intel(R) Speed Shift Technology is turned off. 
@@ -18,7 +18,7 @@ One of 2 possible states:
 
 Intel(R) Hyper-Threading Technology allows multiple logical processors within the same processor core share execution resources and cache hierarchy between logical processors.<br>
 
-One of 2 possible states:
+Options:
 
 1. **Enabled** – Default. 
 2. Disabled – Intel(R) Hyper-Threading Technology is turned off. 
@@ -32,7 +32,7 @@ One of 2 possible states:
 
 
 <details><summary>Core Multi-Processing</summary>
-One of 2 possible states:
+Options:
 
 1. **Enabled** – All CPU cores are available to the OS. Default. 
 2. Disabled – Only one core will be available to the OS.
@@ -49,7 +49,7 @@ One of 2 possible states:
 
 Intel(R) Virtualization Technology allows PC platforms to run multiple applications and operating systems simultaneously in independent partitions, to help to manage and protect the multi-functional capabilities of PCs.
 
-One of 2 possible states:
+Options:
 
 1. **Enabled** – Default.
 2. Disabled.
@@ -68,7 +68,7 @@ Additional information is available here: [How to enable Virtualization Technolo
 
 VT-d support on Intel platforms provides the capability to ensure improved isolation of I/O resources for greater reliability, security, and availability.
 
-One of 2 possible states:
+Options:
 
 1. **Enabled** – Default.
 2. Disabled - VT-d Feature is turned off.
@@ -85,7 +85,7 @@ Additional information is available here: [VT-d Feature](https://www.intel.com/c
 
 Trusted Execution Technology (TxT) provides hardware-based mechanisms that help protect against software-based attacks and protects the confidentiality and integrity of all data stored or created on the client PC.
 
-One of 2 possible states:
+Options:
 
 1. Enabled
 2. **Disabled** – TxT feature is turned off. Default.
@@ -102,7 +102,7 @@ Additional information is available here: [Intel(R) TXT Overview](https://www.in
 
 <details><summary>IOMMU</summary>
 Intel Input\Output Memory Management Unit (IOMMU) is a hardware component that performs address translation from I/O device virtual addresses to physical addresses. This hardware-assisted I/O address translation improves the system performance within a virtual environment.<br>
-One of 2 possible states:
+Options:
 
 1. Enabled – IOMMU is turned on.
 2. **Disabled** – IOMMU is turned off. Default.
@@ -118,7 +118,7 @@ C1 is a state where the processor is not executing instructions, but can return 
 
 Enhanced C1 state (C1E) provides lower power consumption when the computer is idle.  
 
-One of 2 possible states:
+Options:
 
 1. **Enabled** – Default. 
 2. Disabled.
@@ -150,7 +150,7 @@ Options:
 
 Allows the processor to assess its own thermals, current and power to come up with a dynamic upper limit on its frequency benefit.
 
-One of 2 possible states:
+Options:
 
 1. **Enabled** –  Default. 
 2. Disabled - Turbo Mode is turned off. 

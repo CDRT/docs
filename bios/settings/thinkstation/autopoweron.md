@@ -3,10 +3,13 @@
 ![](./img/autopoweron.png)
 
 <details><summary>Wake on LAN</summary>
+
+Wake on LAN (Local Area Network).
+
 One of 2 states:
 
-1. **Enabled** – Wake on LAN (Local Area Network) is enabled. Default.
-2. Disabled – Wake on LAN is disabled.
+1. **Enabled** - Default.
+2. Disabled.
 
 ?> Controls the wake up event from onboard LAN (Local Area Network) and PCI (Peripheral Component Interconnect) LAN.
 
@@ -54,7 +57,7 @@ Active when `Wake Up on Alarm` has one of the values:
 * Daily Event
 * Weekly Event
 
-Possible values:
+Options:
 
 1.	**00 : 00 : 00** – Default
 2.	HH : MM : SS<br>
@@ -72,7 +75,7 @@ Possible values:
 Field to select the exact day for the system to turn on.<br> 
 
 Active only when `Wake Up on Alarm` has value `Single Event`. <br>
-Possible values:
+Options:
 
 1.	**01/01/YYYY** – Default.
 2.	MM/DD/YYYY:<br>
@@ -92,7 +95,7 @@ Select the exact day for the system to turn on. <br>
 
 ?> Active only when `Wake Up on Alarm` has value `Weekly Event`.
 
-Possible values:
+Options:
 
 1. **Sunday** – Default
 2. Monday

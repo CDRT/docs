@@ -2,10 +2,13 @@
 ![](./img/atadrivesetup.png)
 
 <details><summary>SATA Controller</summary>
-One of 2 possible states for the SATA controller:
 
-1. **Enabled** – SATA controller is enabled. Default.
-2. Disabled – SATA controller is disabled.
+Whether to enable or disable the SATA controller.
+
+Options:
+
+1. **Enabled**. Default.
+2. Disabled.
 
 !> When SATA controller is disabled, the following settings become unavailable:<br>    a. SATA Drive (drives 1 to 5) <br>    b. SATA Drive * Hot-Plug Support <br>    c. Configure SATA as <br>
 
@@ -16,10 +19,11 @@ One of 2 possible states for the SATA controller:
 
 
 <details><summary>SATA Drive {Number}</summary>
-One of 2 possible states for each SATA Drive numbered {Number}:
 
-1. **Enabled** – the corresponding SATA Drive is enabled. Default. 
-2. Disabled – the corresponding SATA Drive is disabled.
+Whether to enable each SATA Drive numbered {Number}:
+
+1. **Enabled**. Default. 
+2. Disabled.
 
 **Note**. The fields are unavailable, if `SATA Controller` is set to `Disabled`.
 
@@ -30,7 +34,7 @@ One of 2 possible states for each SATA Drive numbered {Number}:
 
 
 <details><summary>SATA Drive * Hot-Plug Support</summary>
-One of 2 possible states for the hot-plug port:
+Options:
 
 1. Enabled – the hot-plug port is enabled. 
 2. **Disabled** – the hot-plug port is disabled. Default.
@@ -44,7 +48,10 @@ One of 2 possible states for the hot-plug port:
 
 
 <details><summary>Configure SATA as</summary>
-One of 3 possible options for SATA configuration mode:
+
+SATA configuration mode.
+
+Options:
 
 1. **ANCI** – Default. Requires additional confirmation.<br> 
 2. Intel(R) RST with Intel(R) Optane

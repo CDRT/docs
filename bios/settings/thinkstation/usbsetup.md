@@ -5,7 +5,7 @@
 
 Whether to enable or disable USB devices and all other fields for USB settings.
 
-One of 2 possible states for USB (Universal Serial Bus) functions:
+Options:
 
 1. **Enabled** – Default.
 2. Disabled.
@@ -35,7 +35,7 @@ Whether extra delay is added when host performs USB enumeration.
 
 Whether to enable all Front USB ports and relevant setting fields. 
 
-One of 2 possible states for all Front USB Ports:
+Options:
 
 1. **Enabled** – Default.
 2. Disabled.
@@ -49,10 +49,10 @@ One of 2 possible states for all Front USB Ports:
 <details><summary>USB Port {Number}</summary>
 {Number} is the order number of the front USB port. 
 
-One of 2 possible states to select per each Front USB Port:
+For each Front USB Port:
 
-1. **Enabled** – the corresponding Front USB Port is enabled. Default, if `Enabled` is selected in `Front USB Ports`. 
-2. Disabled – the corresponding Front USB Port is disabled. 
+1. **Enabled**. Default, if `Enabled` is selected in `Front USB Ports`. 
+2. Disabled. 
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -64,7 +64,7 @@ One of 2 possible states to select per each Front USB Port:
 
 Whether to enable or disable all rear USB ports and relevant settings. 
 
-One of 2 possible states for all rear USB Ports:
+Options:
 
 1. **Enabled** –  Default.
 2. Disabled.
@@ -79,10 +79,10 @@ One of 2 possible states for all rear USB Ports:
 
 {Number} is the number of the rear USB port (total number of ports dependent on model).
 
-One of 2 possible states to select per each Rear USB Port:
+For each Rear USB Port:
 
-1. **Enabled** – the corresponding Rear USB Port is enabled. Default, if `Enabled` is selected in `Rear USB Ports`. 
-2. Disabled – the corresponding Rear USB Port is disabled.
+1. **Enabled**. Default, if `Enabled` is selected in `Rear USB Ports`. 
+2. Disabled.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|

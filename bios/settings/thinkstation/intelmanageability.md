@@ -2,7 +2,7 @@
 ![](./img/intelmanageability.png)
 
 <details><summary>Intel(R) Manageability</summary>
-One of 2 possible states:
+Options:
 
 1. **Enabled** – Default. 
 2. Disabled.
@@ -19,7 +19,7 @@ One of 2 possible states:
 
 
 <details><summary>Intel(R) Manageability Reset</summary>
-One of 2 possible states:
+Options:
 
 1. Enabled.
 2. **Disabled** – Default. 
@@ -36,7 +36,7 @@ One of 2 possible states:
 
 Management Engine BIOS Extension (MEBx) provides platform-level configuration options for you to configure the behavior of Management Engine (ME) platform.
 
-One of 2 possible states:
+Options:
 
 1. **Enabled** – Default.
 2. Disabled. 
@@ -57,7 +57,7 @@ Management Engine (ME) Firmware version. View only.
 
 
 <details><summary>Manageability Type</summary>
-Manageability Type. View only. Possible values:
+Manageability Type. View only. Options:
 
 1. None
 2. Intel(R) AMT
@@ -95,7 +95,7 @@ One of 7 possible options to specify console type:
 
 
 <details><summary>USB Provisioning </summary>
-One of 2 possible states:
+Options:
 
 1. Enabled – USB provisioning function is allowed.
 2. **Disabled** – USB provisioning function is blocked. Default.

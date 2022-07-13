@@ -2,7 +2,11 @@
 ![](./img/pciexpressconfig.png)
 
 <details><summary>ASPM Support</summary>
-One of 2 possible states for ASPM (Active State Power Management) Support:
+
+ASPM (Active State Power Management).
+
+
+Options:
 
 1. **Auto** – configure ASPM automatically according to what the attached device supports in each PCI (Peripheral Component Interconnect) Express port. Default.
 2. Disabled – Disable ASPM support of all PCI Express ports. 

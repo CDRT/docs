@@ -3,7 +3,7 @@
 
 <details><summary>System Time</summary>
 Fields to set Time. Use Arrow keys to switch between Time fields.<br>
-Possible values:
+Options:
 
 1.	**Currently set date** 
 2.	HH : MM : SS<br>
@@ -16,7 +16,7 @@ Possible values:
 
 <details><summary>System Date</summary>
 Fields to set Date. Use Arrow keys to switch between Date fields.<br>
-Possible values:
+Options:
 
 1.	**Currently set date**
 2.	MM/DD/YYYY:<br>
