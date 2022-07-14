@@ -399,7 +399,6 @@ The following table provides the values that an administrator can set for the se
 
 <div style="text-align:center;padding-bottom:40px;font-style: italic;">Table 3-2. Configurable values for an update package</div>
 
-  
 ### Create Report
 
 Update Retriever can generate a report, which is a list of active updates, archived updates, hidden updates, and test updates. This list is saved in a TXT file that you can use in most spreadsheet applications.
@@ -442,7 +441,6 @@ To create a report, do the following:
 _Figure 3-30. Create report with Update Retriever._
 </div>
 
-  
 ### Import Updates
 
 Update Retriever enables you to import updates to your repository from a local location or network share. Once the updates are in the repository, you can assign them to specific systems and deploy them to multiple computers.
@@ -518,7 +516,7 @@ To change the Local intranet settings in the Microsoft Internet Explorer Web bro
    2. Click **Tools** and select **Internet Options**.
    3. Click the **Security** tab.
    4. Click the **Local intranet** icon and click **Sites**.
-   5. The Local intranet dialog box is displayed. If the **Automatically detect intranet network** check box is selected, clear it and then select **Include all network paths (UNCs)**. It is recommended that you also select **Include all local (intranet) sites not listed in other zones**and** Include all sites that bypass the proxy server** unless otherwise instructed by your system administrator.
+   5. The Local intranet dialog box is displayed. If the **Automatically detect intranet network** check box is selected, clear it and then select **Include all network paths (UNCs)**. It is recommended that you also select **Include all local (intranet) sites not listed in other zones** and **Include all sites that bypass the proxy server** unless otherwise instructed by your system administrator.
    6. Click **OK** to save the Local intranet settings.
    7. On the **Security** tab, click **Default level** to view the default security level. If the security level is set to **Medium-low** or **Low** , no other changes are necessary. Otherwise, go to step 8.
    8. If the security level is set to **High, Medium-high, Medium,** or **Custom** , change the security level to **Medium-low** (the default setting) by moving the security level slider. However, you can keep the security level higher than **Medium-low** yet still be able to prevent the Open File - Security Warning dialog from being displayed by customizing the security setting. To customize the security setting, do the following:
@@ -572,7 +570,6 @@ A collection of source files for the driver packages are generated, along with a
 
 ?>Note: This new feature is intended to support the OS deployment process of new drivers which only works with INF installable hardware drivers. Application updates and firmware updates cannot be included. The feature also only supports ThinkPad, ThinkCentre and ThinkStation PCs launched in 2018 or later.
 
-
 ### 3.3.5 Scheduling the Search for Updates
 
 The administrator can configure Update Retriever to search for new updates automatically on a scheduled basis. The administrator is notified depending on how Update Retriever was configured, in the form of an e-mail or a balloon tooltip from the application icon in the notification area.
@@ -588,18 +585,17 @@ The administrator can configure Update Retriever to search for new updates autom
 
 - **Schedule:**
 
-  - **Select update type:** Choose between Critical, Recommended or Critical &amp; Recommended.
-  - **Frequency:** Choose to search for new updates weekly or monthly.
-  - **Run on:** For weekly checks, a day of the week must be selected. For monthly checks, a date in the month must be selected.
-  - **Run at:** Specify the time of day the search should occur.
+    - **Select update type:** Choose between Critical, Recommended or Critical &amp; Recommended.
+    - **Frequency:** Choose to search for new updates weekly or monthly.
+    - **Run on:** For weekly checks, a day of the week must be selected. For monthly checks, a date in the month must be selected.
+    - **Run at:** Specify the time of day the search should occur.
 
 - **When to notify me:** Two options are available; click the radio button to select the appropriate one.
 
-  - Notify if there are new updates available but do not download them
-  - Download the new updates and notify when complete
+    - Notify if there are new updates available but do not download them
+    - Download the new updates and notify when complete
 
 - **How to notify me:** Update Retriever can notify by sending an email or by popping up a toast message from the application icon in the system tray. If the email option is selected, click the Propertiesbutton to provide additional details. The email option may only work with certain configurations. The e-mail notification includes the date and time of the check, the number of packages found, and a list of updates.
-
 
 ### 3.3.6 Restore Hidden Updates
 
@@ -623,11 +619,9 @@ _Figure 3-37. Unhide specific packages in Update Retriever._
 
    4. Click the **Unhide** button in the bottom right corner of the tool. The update package will then be displayed in the **Update View**.
 
-
 ### 3.3.7 Modify Settings
 
 The **Modify settings** option allows the administrator to make changes to any of the settings that were configured during the first-time setup process. For details on the settings that can be configured, please refer to section 3.3.1 **Update Retriever First Time Setup**.
-
 
 ### 3.3.8 Viewing History
 
