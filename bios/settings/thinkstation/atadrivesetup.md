@@ -31,7 +31,7 @@ Whether to enable each SATA Drive numbered {Number}:
 |:---|:---|:---|:---|
 | SATADrive1 |  | yes | Both |
 
-?> The WMI setting name is for SATA drive 7. For other SATA drives, change the number to that of the desired SATA drive.
+?> The WMI setting name is for SATA drive 1. For other SATA drives, change the number to that of the desired SATA drive.
 
 </details>
 
