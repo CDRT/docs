@@ -8,9 +8,9 @@ Options:
 1. **Enabled** – Default. 
 2. Disabled – Intel(R) Speed Shift Technology is turned off. 
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| SpeedShiftTechnology |  | yes | Both |
 </details>
 
 
@@ -23,15 +23,16 @@ Options:
 1. **Enabled** – Default. 
 2. Disabled – Intel(R) Hyper-Threading Technology is turned off. 
 
-**Note**. If `TxT` has `Enabled` status, then this item will be enabled and not available for disabling. 
+?> If `TxT` is `Enabled`, then this item will be enabled and not available for disabling. 
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| HyperThreadingTechnology |  | yes | Both |
 </details>
 
 
 <details><summary>Core Multi-Processing</summary>
+
 Options:
 
 1. **Enabled** – All CPU cores are available to the OS. Default. 
@@ -39,9 +40,9 @@ Options:
 
 ?> If `TxT` is set to `Enabled`, then this item will always be `Enabled`.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| CoreMultiProcessing |  | yes | Both |
 </details>
 
 
@@ -58,58 +59,60 @@ Options:
 
 Additional information is available here: [How to enable Virtualization Technology on Lenovo PC computers](https://support.lenovo.com/de/en/solutions/ht500006).
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| VirtualizationTechnology |  | yes | Both |
 </details>
 
 
 <details><summary>VT-d Feature</summary>
 
-VT-d support on Intel platforms provides the capability to ensure improved isolation of I/O resources for greater reliability, security, and availability.
+?> VT-d support on Intel platforms provides the capability to ensure improved isolation of I/O resources for greater reliability, security, and availability.
 
 Options:
 
 1. **Enabled** – Default.
-2. Disabled - VT-d Feature is turned off.
+2. Disabled.
 
 Additional information is available here: [VT-d Feature](https://www.intel.com/content/www/us/en/search.html?ws=text#q=VT-d%20Feature&sort=relevancy&f:@tabfilter=[Developers]).
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| VTdFeature |  | yes | Both |
 </details>
 
 
 <details><summary>TxT</summary>
 
-Trusted Execution Technology (TxT) provides hardware-based mechanisms that help protect against software-based attacks and protects the confidentiality and integrity of all data stored or created on the client PC.
+?> Trusted Execution Technology (TxT) provides hardware-based mechanisms that help protect against software-based attacks and protects the confidentiality and integrity of all data stored or created on the client PC.
 
 Options:
 
 1. Enabled
-2. **Disabled** – TxT feature is turned off. Default.
+2. **Disabled** - Default.
 
-?> If TxT is set to `Enabled`, then the `Security Chip` setting will be set to `Enabled` automatically.
+!> If TxT is set to `Enabled`, then the `Security Chip` setting will be set to `Enabled` automatically.
 
 Additional information is available here: [Intel(R) TXT Overview](https://www.intel.com/content/www/us/en/support/articles/000025873/technologies.html).
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| TXTFeature |  | yes | Both |
 </details>
 
 
 <details><summary>IOMMU</summary>
-Intel Input\Output Memory Management Unit (IOMMU) is a hardware component that performs address translation from I/O device virtual addresses to physical addresses. This hardware-assisted I/O address translation improves the system performance within a virtual environment.<br>
+
+?> Intel Input\Output Memory Management Unit (IOMMU) is a hardware component that performs address translation from I/O device virtual addresses to physical addresses. This hardware-assisted I/O address translation improves the system performance within a virtual environment.
+
 Options:
 
-1. Enabled – IOMMU is turned on.
-2. **Disabled** – IOMMU is turned off. Default.
+1. Enabled.
+2. **Disabled** – Default.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| IOMMU |  | yes | Both |
 </details>
 
 
@@ -123,13 +126,14 @@ Options:
 1. **Enabled** – Default. 
 2. Disabled.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| C1ESupport |  | yes | Both |
 </details>
 
 
 <details><summary>C State Support</summary>
+
 Supported CPU power management status to minimize the idle power consumption of processor.
 
 Options:
@@ -140,40 +144,30 @@ Options:
 4. C1C3C6C7C8 – C1, C3, C6, C7 and C8.
 5. **C1C3C6C7C8C10** – C1, C3, C6, C7, C8 and C10. Default.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| CStateSupport |  | yes | Both |
 </details>
-
 
 <details><summary>Turbo Mode</summary>
 
-Allows the processor to assess its own thermals, current and power to come up with a dynamic upper limit on its frequency benefit.
+?> Turbo Mode allows the processor to assess its own thermals, current and power to come up with a dynamic upper limit on its frequency benefit.
 
 Options:
 
 1. **Enabled** –  Default. 
 2. Disabled - Turbo Mode is turned off. 
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| TurboMode |  | yes | Both |
 </details>
 
 
-<details><summary>CPU ID</summary>
+### CPU ID ###
+
 Displays the Processor ID. View only.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-|  |  |  | Both |
-</details>
+### Microcode Revision ( MM/DD/YYYY ) ###
 
-
-<details><summary>Microcode Revision ( MM/DD/YYYY )</summary>
 Displays the CPU Microcode Revision date. View only.
-
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-|  |  |  | Both |
-</details>

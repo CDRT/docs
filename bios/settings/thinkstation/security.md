@@ -15,7 +15,7 @@ View only. Shows the current password state. Possible values:
 1.  Not Installed 
 2. Installed
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
 </details>
@@ -29,7 +29,7 @@ View only. Shows the current password state. Possible values:
 1. Not Installed 
 2. Installed
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
 </details>
@@ -44,16 +44,16 @@ View only. Shows the current password state. Possible values:
 1. Not Installed 
 2. Installed
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
 </details>
 
 
 <details><summary>Set Supervisor Password</summary>
-Option to set, change or delete the Supervisor Password (SVP).<br>
+Set, change or delete the Supervisor Password (SVP).<br>
 
-**Note**. To delete Supervisor Password, enter blank fields foe each new password line item.
+?> To delete Supervisor Password, enter blank fields for each new password line item.
 
 While enabling the following parameters are available:
 1. [ Enter New Password ]
@@ -62,16 +62,16 @@ While enabling the following parameters are available:
     a. **Save** – default<br>
     b. Cancel
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
 </details>
 
 
 <details><summary>Set Power-On Password</summary>
-Option to set, change or delete the Power-On Password.
+Set, change or delete the Power-On Password.
 
-**Note**. To delete Power-On Password, enter blank fields for each new password line item.
+?> To delete Power-On Password, enter blank fields for each new password line item.
 
 While enabling the following parameters are available TBD:
 1. [ Enter New Password ]
@@ -80,16 +80,17 @@ While enabling the following parameters are available TBD:
     a. **Save** – default<br>
     b. Cancel
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
 </details>
 
 
 <details><summary>Set System Management Password</summary>
-Option to set, change or delete the System Management Password (SMP).
 
-**Note**. To delete System Management Password, enter blank fields for each new password line item.
+Set, change or delete the System Management Password (SMP).
+
+?> To delete System Management Password, enter blank fields for each new password line item.
 
 While enabling the following parameters are available TBD:
 1. [ Enter New Password ]
@@ -98,7 +99,7 @@ While enabling the following parameters are available TBD:
     a. **Save** – default<br>
     b. Cancel
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
 </details>
@@ -108,40 +109,43 @@ While enabling the following parameters are available TBD:
 
 Whether to prevent Flashing the BIOS to a previous or current version.
 
-One of 2 states:
+Options:
 
 1. **Yes** (prevent) – Default.
 2. No (allow).
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| SecureRollBackPrevention |  | yes | Both |
 </details>
 
 
 <details><summary>Windows UEFI Firmware Update</summary>
-One of 2 states:
+
+Options:
 
 1. **Enabled** – allow windows UEFI firmware update. Default.
 2. Disabled – BIOS will skip windows UEFI firmware update.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| WindowsUEFIFirmwareUpdate |  | yes | Both |
 </details>
 
 
 <details><summary>Smart USB Protection</summary>
-Smart USB Protection could block copying data from the computer to the USB storage device in windows.<br>
-One of 3 modes:
+
+Smart USB Protection blocks copying data from the computer to the USB storage device in windows.<br>
+
+Options:
 
 1. **Disabled** – the user can copy data from and to USB storage device. Default. 
-2. Read Only – the user can copy data from USB storage device to the Computer but cannot copy data from the computer to USB storage device.
-3. No Access – the user cannot use USB storage device in windows.
+2. Read Only – the user can copy data from USB storage device to the Computer but not from the computer to USB storage device.
+3. No Access – the user cannot use USB storage device in OS.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| SmartUSBProtection |  | yes | Both |
 </details>
 
 
@@ -149,33 +153,30 @@ One of 3 modes:
 
 Whether to display the `secure wipe` option on the F12 BIOS Startup Menu. Users can select this option to securely erase HDD data.
 
-One of 2 states:
+Options:
 
 1. Enabled. 
 2. **Disabled** – Default. 
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| securewipe |  | yes | Both |
 </details>
 
 
 <details><summary>Computrace</summary>
-Group of settings for Absolute Persistence Module.
-Absolute(c) is a service designed to help track devices and provide recovery services in the event a device is lost or stolen.
-Once installed, the Absolute agent communicates with the Absolute Monitoring Center and programmed intervals to provide the tracking service.<br> 
 
-By installing the agent and activating the service, you consent to the transmission of information between your device and the Absolute Monitoring Center.<br>
+Settings for Absolute Persistence Module.
 
-For customers who have purchased the Absolute service, the firmware Persistence Module checks for the presence and health of Absolute on boot, and restores the functionality in case of agent removal or tampering.
-Absolute and Persistence are registered trademarks of Absolute Software Corporation.
+?> Absolute(c) is a service designed to help track devices and provide recovery services in the event a device is lost or stolen. <br /> Once installed, the Absolute agent communicates with the Absolute Monitoring Center and programmed intervals to provide the tracking service.<br> By installing the agent and activating the service, you consent to the transmission of information between your device and the Absolute Monitoring Center.<br> For customers who have purchased the Absolute service, the firmware Persistence Module checks for the presence and health of Absolute on boot, and restores the functionality in case of agent removal or tampering. <br /> Absolute and Persistence are registered trademarks of Absolute Software Corporation.
 
 ![](./img/computrace.png)
 
 <details><summary>Absolute Persistence Version</summary>
+
 Shows Absolute Persistence Version. View only. 
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
 </details>
@@ -184,7 +185,7 @@ Shows Absolute Persistence Version. View only.
 
 Whether to enable the firmware Persistence Module of the optional service from Absolute.<br>
 
-One of 3 states:
+Options:
 
 1.	**Enabled** – Default. 
 2.	Disabled.
@@ -192,25 +193,27 @@ One of 3 states:
 
 !> Selecting `Permanently Disabled` requires additional confirmation, because if Computrace activation is permanently disabled, then you can never enable it again. <br> More information on the official site of [Absolute Software Corporation](https://www.absolute.com/partners/device-manufacturers/lenovo/).
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| AbsolutePersistenceModule |  | yes | Both |
 </details>
 
 </details>
 
 
 <details><summary>Device Guard</summary>
+
 Device Guard enables PCs to be protected against malware by introducing a collective set of restrictions on a device across several technologies. <br>
-One of 2 states:
+
+Options:
 
 1. Enabled – CPU Virtualization Technology to be enabled, IOMMU (Intel Input\Output Memory Management Unit), such as Intel VT-d, AMD-Vi to be enabled, TPM to be enabled. 
 Ethernet, USB, CD, and other boot methods to be disabled, only SATA device to be allowed.
 2. **Disabled** – Ethernet, USB, CD, and other boot methods to be enabled. Default. 
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| DeviceGuard |  | yes | Both |
 </details>
 
 
@@ -218,32 +221,32 @@ Ethernet, USB, CD, and other boot methods to be disabled, only SATA device to be
 
 Whether to lock the chassis to prevent unauthorized physical access to the system components.
 
-One of 2 states:
+Options:
 
 1. Lock. 
 2. **Unlock** – Default. 
 
 ?> The setting is effective on the next startup after BIOS setting is saved. <br /> For more information, please refer to [user manual](https://thinkstation-specs.com/thinkstation/p350-tower/). 
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| ElectronicLock |  | yes | Both |
 </details>
 
 <details><summary>Cover Tamper Detected</summary>
 
-Chassis Intrusion Detection is a utility that can tell whether someone has opened the case (intruded into the chassis).
+Whether to enable Chassis Intrusion Detection, a utility that can tell whether someone has opened the case (intruded into the chassis).
 
-One of 2 states:
+Options:
 
 1. **Disabled** – Default. 
 2. Enabled.
 
 !> If chassis tamper occurs, you must enter setup to clear this error.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| CoverTamperDetected |  | yes | Both |
 </details>
 
 
@@ -253,12 +256,12 @@ Whether the system will notify the user during POST (Power On Self Test), when a
 
 !> This notice can only be cleared by entering BIOS setup, saving, and then exiting.
 
-One of 2 states:
+Options:
 
 1. Enabled.
 2. **Disabled** – Default.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| ConfigurationChangeDetection |  | yes | Both |
 </details>

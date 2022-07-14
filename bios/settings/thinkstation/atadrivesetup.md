@@ -12,9 +12,9 @@ Options:
 
 !> When SATA controller is disabled, the following settings become unavailable:<br>    a. SATA Drive (drives 1 to 5) <br>    b. SATA Drive * Hot-Plug Support <br>    c. Configure SATA as <br>
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| SATAController |  | yes | Both |
 </details>
 
 
@@ -25,25 +25,32 @@ Whether to enable each SATA Drive numbered {Number}:
 1. **Enabled**. Default. 
 2. Disabled.
 
-**Note**. The fields are unavailable, if `SATA Controller` is set to `Disabled`.
+?> Unavailable if `SATA Controller` is set to `Disabled`.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| SATADrive1 |  | yes | Both |
+
+?> The WMI setting name is for SATA drive 7. For other SATA drives, change the number to that of the desired SATA drive.
+
 </details>
 
 
 <details><summary>SATA Drive * Hot-Plug Support</summary>
+
 Options:
 
 1. Enabled – the hot-plug port is enabled. 
 2. **Disabled** – the hot-plug port is disabled. Default.
 
-**Note**. The field is unavailable, if `SATA Controller` is set to `Disabled`.
+?> Unavailable if `SATA Controller` is set to `Disabled`.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| SATADrivexHotPlugSupport |  | yes | Both |
+
+!> `x` is the port number.
+
 </details>
 
 
@@ -60,11 +67,14 @@ Options:
 !> If you change the SATA mode to `ANCI` you may not boot the system due to the failure of Intel(R) RST with Intel(R) Optane (RAID) function.<br />Do not disable SATA drives in RAID mode. Otherwise you may not boot the system due to the failure of RAID function. <br /> Device driver support is required for `ANCI` or `RAID` or Intel(R) RST with Intel(R) Optane. 
 Depending on how the hard disk image was installed, changing the setting may prevent the system from booting.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| ConfigureSATAas |  | yes | Both |
 </details>
 
+### Intel(R) Rapid Storage Technology ###
+
+!> Only appears when the item `Configure SATA as` is set to `Intel(R) RST with Intel(R) Optane`
 
 <details><summary>Hard Disk Pre-delay</summary>
 
@@ -74,7 +84,7 @@ Some hard disks hang if accessed before they have initialized themselves.
 
 This delay ensures the hard disk has initialized after power up, prior to being accessed.<br>
 
-One of 8 possible options:
+Options:
 
 1. **Disabled** – Default.
 2. 3 Seconds
@@ -85,7 +95,7 @@ One of 8 possible options:
 7. 21 Seconds
 8. 30 Seconds
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| HardDiskPre-delay |  | yes | Both |
 </details>

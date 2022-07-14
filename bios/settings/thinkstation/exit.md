@@ -5,7 +5,7 @@
 Exit system Setup after saving the changes. 
 The action will require additional confirmation.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
 </details>
@@ -15,7 +15,7 @@ The action will require additional confirmation.
 Exit system Setup without saving any changes.
 The action will require additional confirmation.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
 </details>
@@ -25,7 +25,7 @@ The action will require additional confirmation.
 Restore/Load Default values for all the setup options.
 The action will require additional confirmation.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
 </details>

@@ -10,9 +10,9 @@ Options:
 1.	**Enabled** - Default.
 2.	Disabled 
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| CardReader |  | yes | Both |
 </details>
 
 <details><summary>Bluetooth</summary>
@@ -24,7 +24,7 @@ Options:
 1.	**Enabled** - Default.
 2.	Disabled  
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| Bluetooth |  | yes | Both |
 </details>

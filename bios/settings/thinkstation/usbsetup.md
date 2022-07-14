@@ -10,9 +10,9 @@ Options:
 1. **Enabled** – Default.
 2. Disabled.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| USBPortAccess |  | yes | Both |
 </details>
 
 
@@ -25,9 +25,9 @@ Whether extra delay is added when host performs USB enumeration.
 1. Enabled.
 2. **Disabled** - Default.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| USBEnumerationDelay |  | yes | Both |
 </details>
 
 
@@ -40,13 +40,14 @@ Options:
 1. **Enabled** – Default.
 2. Disabled.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| FrontUSBPorts |  | yes | Both |
 </details>
 
 
 <details><summary>USB Port {Number}</summary>
+
 {Number} is the order number of the front USB port. 
 
 For each Front USB Port:
@@ -54,9 +55,12 @@ For each Front USB Port:
 1. **Enabled**. Default, if `Enabled` is selected in `Front USB Ports`. 
 2. Disabled. 
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| USBPort1 |  | yes | Both |
+
+?> The WMI setting name is for USB port 1. For other USB ports change the number to that of the desired front USB port.
+
 </details>
 
 
@@ -69,9 +73,9 @@ Options:
 1. **Enabled** –  Default.
 2. Disabled.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| RearUSBPorts |  | yes | Both |
 </details>
 
 
@@ -84,7 +88,10 @@ For each Rear USB Port:
 1. **Enabled**. Default, if `Enabled` is selected in `Rear USB Ports`. 
 2. Disabled.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| USBPort7 |  | yes | Both |
+
+?> The WMI setting name is for USB port 7. For other USB ports change the number to that of the desired rear USB port.
+
 </details>

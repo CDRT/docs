@@ -1,14 +1,17 @@
 # TCG Feature Setup Settings #
+
 ![](./img/tcgfeaturesetup.png)
 
 <details><summary>TCG Security Device State</summary>
+
 Shows TCG (Trusted Computing Group) Security Device State. View only. <br>
+
 Possible values: 
 
 1. Discrete TPM 2.0
 2. Firmware TPM 2.0
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
 </details>
@@ -23,7 +26,7 @@ Select the type of TCG Security Device:
 
 !> Selecting a different option will require additional confirmation. <br /> Before changing the TCG Security Device, all TPM related applications must be disabled, otherwise you may not be able to access your data.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
 </details>
@@ -33,16 +36,17 @@ Select the type of TCG Security Device:
 
 Whether to enable TCG security feature.
 
-One of 2 states:
+Options:
 
 1. **Enabled** - Default. 
 2. Disabled.
 
 !> When set to `Disabled`, then TxT will be set to `Disabled` automatically and `Clear TCG Security Feature` becomes unavailable. 
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| SecurityChip |  | yes | Both |
+
 </details>
 
 
@@ -57,7 +61,7 @@ One of two options:
 1.  Yes.
 2. **No** – Default.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
 </details>
@@ -72,7 +76,7 @@ Whether confirmation of a user’s physical presence is needed when clearing the
 1. **Enabled** – Default.
 2. Disabled.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| PhysicalPresenceforClear |  | yes | Both |
 </details>

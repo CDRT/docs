@@ -9,9 +9,9 @@ Options:
 
 !> If set to `Disabled`, the `Internal Speaker` setting will be unavailable.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| OnboardAudioController |  | yes | Both |
 </details>
 
 
@@ -24,9 +24,9 @@ Options:
 1. **Enabled** - Default. 
 2. Disabled 
 
-**Note**. The field is unavailable if `Onboarding Audio Controller` is set to `Disabled`.
+?> Unavailable if `Onboarding Audio Controller` is set to `Disabled`.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| InternalSpeaker |  | yes | Both |
 </details>

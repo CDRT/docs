@@ -1,28 +1,32 @@
 # System Management Password Access Control Settings #
+
 ![](./img/smpaccesscontrol.png)
 
 <details><summary>Access Security Settings</summary>
-One of 2 states:
 
-1. **Disabled** – SMP cannot control security settings. Default. 
-2. Enabled – allows SMP to have the same authority as SVP to control security settings.
+Whether to allow SMP (System Management Password) to have the same authority as SVP (Supervisor Password) to control security settings.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+Options:
+
+1. **Disabled** – Default. 
+2. Enabled.
+
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| AccessSecuritySettings |  | yes | Both |
 </details>
 
 
 <details><summary>Remote Set SMP</summary>
 
-Whether an SVP is needed to set SMP via WMI.
+Whether an SVP (Supervisor Password) is needed to set SMP (System Management Password) via WMI (Windows Management Instrumentation).
 
-One of 2 states:
+Options:
 
 1. **Disabled** – Default.
 2. Enabled.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| RemoteSetSMP |  | yes | Both |
 </details>
