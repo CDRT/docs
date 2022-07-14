@@ -133,7 +133,7 @@ Update Retriever does not create a log file. Instead it generates an Event Log w
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img4-1.png)
+![](../../img/guides/su/img4-1.png)
 
 _Figure 4-1. Update Retriever event logs_
 </div>

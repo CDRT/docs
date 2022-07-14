@@ -1,6 +1,5 @@
 # 6 Appendix A: Advanced Configurations
 
-
 ## 6.1 System Update
 
 System Update can be configured directly by modifying registry values. It may also be configured through Group Policy.
@@ -35,7 +34,6 @@ The following table lists the configurable and modifiable items for System Updat
 
 <div style="text-align:center;padding-bottom:40px;font-style: italic;">Table 7-1. Advanced System Update Registry settings</div>
 
-
 ### 6.1.1 Using Active Directory
 
 Active Directory is a directory service that gives administrators the ability to manage computers, groups, end users, domains, security policies, and any type of user-defined objects. The mechanism used by Active Directory to accomplish this is known as Group Policy. With Group Policy, administrators define settings that can be applied to computers or users in the domain. The following examples are settings that Active Directory can manage for System Update:
@@ -43,13 +41,11 @@ Active Directory is a directory service that gives administrators the ability to
    - Command line execution
    - Mapped Network Drive settings
 
-
-#### 6.1.1.1 Managing Network Share Repositories
+### 6.1.2 Managing Network Share Repositories
 
 This section provides a description of the policy settings for the network share repository. Setting these policies will prompt an end user for a username and password when the System Update end user interface is launched or when a scheduled update task runs. When an end user authenticates into a domain and has appropriate rights to access the network share repository, then no prompt for the username and password is displayed on the System Update end user interface.
 
-  
-#### 6.1.1.2 Administrative Template Files
+### 6.1.3 Administrative Template Files
 
 The administrative template file (ADMX file) defines policy settings used by applications on the client computers. Policies are specific settings that govern the operation of applications. Policy settings also define whether the end user will be allowed to set specific settings through an application. Settings defined by an administrator on the server are defined as policies. Settings defined by an end user on the client computer for an application are defined as preferences. As defined by Microsoft, policy settings take precedence over preferences. When System Update checks for a setting, it will look for the setting in the following order:
 
@@ -110,14 +106,12 @@ To add the ADMX file and customize the settings, do the following:
 
    11. Click Apply.
 
-
 To apply policy settings immediately after configuring the settings for the ADM file, do the following:
 
    1. From the Windows **Start** menu, click **Run**.
    2. Type _ **gpedit.msc /force** _ and then click **OK**.
 
-
-#### 6.1.1.3 Group Policy Settings
+### 6.1.4 Group Policy Settings
 
 The following tables provide policy settings for System Update.
 
@@ -181,7 +175,7 @@ The following table and example provide the settings and values for the **Genera
 <div style="text-align:center;padding-bottom:40px;font-style: italic;">Table 7-4. HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\Lenovo\System Update\Preferences\UserSettings\General</div>
 
 
-### 6.1.2 Recommendations for Managed Environments
+### 6.1.5 Recommendations for Managed Environments
 
 When System Update is used in a managed environment, the following settings are recommended:
 
@@ -198,7 +192,6 @@ When a custom scheduled task is being used to control System Update, it is recom
 | --- |
 | SchedulerAbility: &nbsp; NO |
 
-
 ## 6.2 Thin Installer
 
 Thin Installer provides an XML file, **ThinInstaller.exe.configuration** , to configure settings. The XML file is located at the root of the Thin Installer folder.
@@ -207,7 +200,7 @@ The default configuration is shown as follows:
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img7-1.png)
+![](../../img/guides/su/img7-1.png)
 
 _Figure 7-1. ThinInstaller.exe.configuration file._
 </div>
@@ -227,5 +220,3 @@ _Figure 7-1. ThinInstaller.exe.configuration file._
 |     ContentMode             |     Refers to the status of the update packages.  Set the value depending on the status of  update packages in the repository.                                                                                                                                                                            |     Default value: Active<br/><br/>     Possible values:<br/> • Active<br/> • Test                                                          |     • If **Active**, Thin Installer will search the Update Retriever repository  for update packages in active status.<br/>      • If **Test**, Thin Installer will search  the Update Retriever repository for  update packages in test status.<br/><br/>       **Note**: If there is no database.xml file  in the Update Retriever repository folder,  Thin Installer will ignore the value of  ContentMode and search for all the update  packages.    |
 
 <div style="text-align:center;padding-bottom:40px;font-style: italic;">Table 7-5. Description of configurable items.</div>
-
-

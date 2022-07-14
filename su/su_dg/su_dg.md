@@ -1,4 +1,4 @@
-![](../img/guides/su/imglogo.png)
+![](../../img/guides/su/imglogo.png)
 
 # Deployment Guide:<br>Lenovo System Update Suite
 

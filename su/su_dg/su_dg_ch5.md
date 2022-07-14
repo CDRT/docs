@@ -1,17 +1,20 @@
 # 5 Command Line Reference
 
-
 ## 5.1 System Update
 
 System Update can be controlled via command line by leveraging the group policy control for the Administrator Command Line. A typical scenario would have System Update executed by a task in the Windows Task Scheduler set to run on a recurring basis to ensure the device stays current. That scheduled task would execute:
 
-	C:\Program Files (x86)\Lenovo\System Update\tvsu.exe /CM
+```CMD
+C:\Program Files (x86)\Lenovo\System Update\tvsu.exe /CM
+```
 
 The rest of the command line parameters would be specified as a Policy in the registry using either Group Policy or by manipulating the registry directly at:
 
-	HKLM\Software\Policies\Lenovo\System Update\UserSettings\General
+```Registry
+HKLM\Software\Policies\Lenovo\System Update\UserSettings\General
 
-	Value: [REG\_SZ] AdminCommandLine
+Value: [REG\_SZ] AdminCommandLine
+```
 
 ?>When using a custom scheduled task, a new task should be created, and the default task created when System Update is installed should be disabled. Additionally, the &quot;SchedulerAbility&quot; setting must be set to &quot;NO&quot; in the registry at: ```HKLM:\SOFTWARE\WOW6432Node\Lenovo\System Update\Preferences\UserSettings\Scheduler```
 
@@ -96,8 +99,9 @@ Optional. Specifies the full path to the local repository location. This must be
 **-exporttowmi**
 
 Optional. Causes System Update to store update history data in a WMI table:
-```
-	Root\Lenovo\Lenovo_Updates\
+
+```WMI
+Root\Lenovo\Lenovo_Updates\
 ```
 
 ### 5.1.1 User Prompt Handling
@@ -114,7 +118,9 @@ When System Update finds updates that will cause a restart of the system, it wil
 
 Thin Installer must be executed with administrative privileges in order to function properly and it can be controlled by command line. Since Thin Installer does not require installation it can be executed from the folder it resides in, such as:
 
-	C:\\<source folder>\ThinInstaller.exe /CM -search R -action INSTALL -includerebootpackages 3 -noreboot -noicon -repository <path> -exporttowmi
+```CMD
+C:\\<source folder>\ThinInstaller.exe /CM -search R -action INSTALL -includerebootpackages 3 -noreboot -noicon -repository <path> -exporttowmi
+```
 
 **Parameters:**
 
@@ -208,7 +214,9 @@ Optional. Specifies the full path to the local repository location. This can be 
 
 Optional. Causes Thin Installer to store update history data in a WMI table:
 
-	root\Lenovo\Lenovo\_Updates\
+```WMI
+root\Lenovo\Lenovo\_Updates\
+```
 
 **-log**
 
@@ -237,7 +245,9 @@ There are specific return codes used by Thin Installer based on which -action pa
 
 Update Retriever can be launched from its default installation location at
 
-	C:\Program Files (x86)\Lenovo\Update Retriever\UpdateRetriever.exe
+```CMD
+C:\Program Files (x86)\Lenovo\Update Retriever\UpdateRetriever.exe
+```
 
 It does require Administrator privileges to run.
 
@@ -252,4 +262,3 @@ Optional. Launches Update Retriever to the &quot;Get new updates&quot; screen.
 **/CATALOGSCAN**
 
 Optional. Launches Update Retriever silently to automatically search for new content since the last search in the catalogs of all the model + OS pairs that have been specified. If there has been no new content released, Update Retriever exits. If new content is found, Update Retriever UI will appear to display the search results.
-

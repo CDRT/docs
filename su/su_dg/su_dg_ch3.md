@@ -1,10 +1,8 @@
 # 3 General Usage
 
-
 ## 3.1 System Update
 
 This section will provide an overview of how System Update can be used to install updates either manually using the application&#39;s interface or automatically based on a scheduled task. The various methods of configuring and launching System Update will be covered.
-
 
 ### 3.1.1 Using System Update
 
@@ -12,7 +10,7 @@ Once System Update has been installed, the tool is ready to run. When launching 
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-1.png)
+![](../../img/guides/su/img3-1.png)
 
 _Figure 3-1. Systems Update Welcome Interface._
 </div>
@@ -42,19 +40,19 @@ System Update will automatically search for new updates from the Lenovo support 
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-2.png)
+![](../../img/guides/su/img3-2.png)
 
 _Figure 3-2. Searching for new updates._
 
-![](../img/guides/su/img3-3.png)
+![](../../img/guides/su/img3-3.png)
 
 _Figure 3-3. Agree to the License notice before proceeding with System Update._
 
-![](../img/guides/su/img3-4.png)
+![](../../img/guides/su/img3-4.png)
 
 _Figure 3-4. Get New Updates Function, selecting critical updates._
 
-![](../img/guides/su/img3-5.png)
+![](../../img/guides/su/img3-5.png)
 
 _Figure 3-5. Get New Updates, item details expanded._
 </div>
@@ -85,11 +83,11 @@ Once all the updates desired have been selected, press **Next**. A review of the
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-6.png)
+![](../../img/guides/su/img3-6.png)
 
 _Figure 3-6. Reviewing Updates before downloading packages._
 
-_![](../img/guides/su/img3-7.png)_
+_![](../../img/guides/su/img3-7.png)_
 
 _Figure 3-7. Certain update packages require reboot before installation is complete. Do not manually shut off the machine at this time._
 </div>
@@ -100,11 +98,11 @@ When selecting update packages to download, instead of installing them immediate
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-8.png)
+![](../../img/guides/su/img3-8.png)
 
 _Figure 3-8. How to Defer an Update Package from Installing (Download Only)._
 
-![](../img/guides/su/img3-9.png)
+![](../../img/guides/su/img3-9.png)
 
 _Figure 3-9. Installing Deferred Update Packages._
 </div>
@@ -115,7 +113,7 @@ System Update provides an option to schedule an automatic search for new updates
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-10.png)
+![](../../img/guides/su/img3-10.png)
 
 _Figure 3-10. Scheduling Updates for installation._
 </div>
@@ -155,7 +153,7 @@ The history of updates, that were downloaded and installed on each system, are a
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-11.png)
+![](../../img/guides/su/img3-11.png)
 
 _Figure 3-11. Systems Update View Installation History._
 </div>
@@ -166,7 +164,7 @@ Updates can be hidden, which means those specific updates will not be displayed 
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-12.png)
+![](../../img/guides/su/img3-12.png)
 
 _Figure 3-12. How to hide update packages._
 </div>
@@ -175,7 +173,7 @@ However, the hidden updates can be restored. Go to the &quot;Restore Hidden Upda
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-_![](../img/guides/su/img3-13.png)_
+_![](../../img/guides/su/img3-13.png)_
 
 _Figure 3-13. Systems Update, Restore Hidden Updates, function._
 </div>
@@ -205,7 +203,7 @@ To use Thin Installer, either run the self-extracting installation package or co
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-_![](../img/guides/su/img3-14.png)_
+_![](../../img/guides/su/img3-14.png)_
 
 _Figure 3-14. Default repository._
 </div>
@@ -217,7 +215,7 @@ In the following scenario, the repository used is local on the target machine. L
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-15.png)
+![](../../img/guides/su/img3-15.png)
 
 _Figure 3-15. Launching Thin Installer to search for applicable updates._
 </div>
@@ -226,7 +224,7 @@ Once the search for updates is completed, the application will either display a 
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-16.png)
+![](../../img/guides/su/img3-16.png)
 
 _Figure 3-16. Applicable updates listed in Thin Installer._
 </div>
@@ -235,11 +233,11 @@ When updates are found in Thin Installer, they are displayed in one of three cat
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-17.png)
+![](../../img/guides/su/img3-17.png)
 
 _Figure 3-17. Review installation packages._
 
-![](../img/guides/su/img3-18.png)
+![](../../img/guides/su/img3-18.png)
 
 _Figure 3-18. Installing updates._
 </div>
@@ -248,7 +246,7 @@ If a reboot is necessary to complete the installation of a package, the followin
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-19.png)
+![](../../img/guides/su/img3-19.png)
 
 _Figure 3-19. Thin Installer reboot message._
 </div>
@@ -278,7 +276,7 @@ When launching Update Retriever the first time, some initial configuration items
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-20.png)
+![](../../img/guides/su/img3-20.png)
 
 _Figure 3-20. Update Retriever first time setup._
 </div>
@@ -290,7 +288,7 @@ _Figure 3-20. Update Retriever first time setup._
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-21.png)
+![](../../img/guides/su/img3-21.png)
 
 _Figure 3-21. Setting the repository path in Update Retriever, first time setup._
 </div>
@@ -301,7 +299,7 @@ _Figure 3-21. Setting the repository path in Update Retriever, first time setup.
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-22.png)
+![](../../img/guides/su/img3-22.png)
 
 _Figure 3-22. Update default status and Advanced Options in Update Retriever first time setup._
 </div>
@@ -317,7 +315,7 @@ After initial setup is complete, Update Retriever can be used to search for and 
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-23.png)
+![](../../img/guides/su/img3-23.png)
 
 _Figure 3-23. Getting new updates with Update Retriever, first time setup._
 </div>
@@ -332,12 +330,12 @@ _Figure 3-23. Getting new updates with Update Retriever, first time setup._
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-24.png)
+![](../../img/guides/su/img3-24.png)
 
 _Figure 3-24. Searching for updates._
 
 	
-![](../img/guides/su/img3-25.png)
+![](../../img/guides/su/img3-25.png)
 
 _Figure 3-25. Accept the License agreement._
 </div>
@@ -348,7 +346,7 @@ _Figure 3-25. Accept the License agreement._
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-26.png)
+![](../../img/guides/su/img3-26.png)
 
 _Figure 3-26. Selecting update packages from search results._
 </div>
@@ -359,7 +357,7 @@ _Figure 3-26. Selecting update packages from search results._
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-27.png)
+![](../../img/guides/su/img3-27.png)
 
 _Figure 3-27. Completed download list displayed._
 </div>
@@ -371,7 +369,7 @@ To view updates that have been downloaded into the local repository, click on th
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-28.png)
+![](../../img/guides/su/img3-28.png)
 
 _Figure 3-28. Viewing updates and managing the repository in Update Retriever._
 </div>
@@ -385,7 +383,7 @@ The Administrator can modify the reboot type, severity, license, and status of o
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-29.png)
+![](../../img/guides/su/img3-29.png)
 
 _Figure 3-29. Modifying updates._
 </div>
@@ -439,7 +437,7 @@ To create a report, do the following:
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-30.png)
+![](../../img/guides/su/img3-30.png)
 
 _Figure 3-30. Create report with Update Retriever._
 </div>
@@ -465,7 +463,7 @@ To import updates, do the following:
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-31.png)
+![](../../img/guides/su/img3-31.png)
 
 _Figure 3-31. Import Updates with Update Retriever_
 </div>
@@ -507,7 +505,7 @@ To export the driver updates, do the following:
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-32.png)
+![](../../img/guides/su/img3-32.png)
 
 _Figure 3-32. Export Updates with Update Retriever._
 </div>
@@ -547,7 +545,7 @@ Follow these steps to use the Manage Driver Pack option in Update Retriever:
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-33.png)
+![](../../img/guides/su/img3-33.png)
 
 _Figure 3-33. Managing Driver Packs in Update Retriever._
 </div>
@@ -556,7 +554,7 @@ _Figure 3-33. Managing Driver Packs in Update Retriever._
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-34.png)
+![](../../img/guides/su/img3-34.png)
 
 _Figure 3-34. Managing Driver Pack selections in Update Retriever._
 </div>
@@ -565,7 +563,7 @@ _Figure 3-34. Managing Driver Pack selections in Update Retriever._
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-35.png)
+![](../../img/guides/su/img3-35.png)
 
 _Figure 3-35. Downloading and extracting selected Drivers in Update Retriever._
 </div>
@@ -581,7 +579,7 @@ The administrator can configure Update Retriever to search for new updates autom
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-36.png)
+![](../../img/guides/su/img3-36.png)
 
 _Figure 3-36. Scheduling updates in Update Retriever._
 </div>
@@ -618,7 +616,7 @@ If in the future, if the administrator wants to have those updates displayed aga
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
- ![](../img/guides/su/img3-37.png)
+ ![](../../img/guides/su/img3-37.png)
 
 _Figure 3-37. Unhide specific packages in Update Retriever._
 </div>
@@ -637,7 +635,7 @@ The **View history** function enables you to view the detailed information about
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
-![](../img/guides/su/img3-38.png)
+![](../../img/guides/su/img3-38.png)
 
 _Figure 3-38. View download history in Update Retriever._
 </div>

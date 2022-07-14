@@ -5,13 +5,17 @@ The MapDrv utility provides network share related functions for System Update. T
 The MapDrv utility can be found in the System Update installation directory. The default installation directory is located at ```C:\Program Files (x86)\Lenovo\System Update```.
 
 The network share information is stored in the following registry entry:
+
+```Registry
+HKLM\Software\Wow6432Node\Lenovo\MND\TVSUAPPLICATION
 ```
-	HKLM\Software\Wow6432Node\Lenovo\MND\TVSUAPPLICATION
-```
+
 If an Active Directory policy is used, these values are stored in the following registry entry:
+
+```Registry
+HKLM\Software\Policies\Lenovo\MND\TVSUAPPLICATION
 ```
-	HKLM\Software\Policies\Lenovo\MND\TVSUAPPLICATION
-```
+
 The strings stored in the **TVSUAPPLICATION** key are:
 
 | **String** | **Description** |
@@ -29,8 +33,8 @@ The MapDrv utility also enables an administrator to use the encryption engine to
 
 The command-line interface to the MapDrv utility is as follows:
 
-```
-	Mapdrv /<function><app id> /unc <sharename> /user <username\> /pwd <password> [/timeout <seconds>] [/s]
+```CMD
+Mapdrv /<function><app id> /unc <sharename> /user <username\> /pwd <password> [/timeout <seconds>] [/s]
 ```
 
 | **Parameter** | **Description** |
@@ -49,47 +53,53 @@ The return code is **0** if an operation was successful. Otherwise, the return c
 
 When the MapDrv utility is launched with no parameters, the end user will be prompted for the network share, user name and password, and then MapDrv will attempt to connect to the specified network share using the specified credentials.
 
-
 ## 7.2 Displaying Encrypted User Name and Password Strings
 
 This function displays the registry key of the network share information where the encrypted user name and password is stored. Using the /display function will not store the user name and password in the registry. You need to copy the encrypted user name and password to the appropriate registry key.
+
+```CMD
+mapdrv /view <app id> /user <username> /pwd <password>
 ```
-	mapdrv /view <app id> /user <username> /pwd <password>
-```
+
 Example:
->mapdrv /view TVSUAPPLICATION /user temp/pwd password
->
->app id: TVSUAPPLICATION
->
->user: temp
->pwd: password
+
+```CMD
+mapdrv /view TVSUAPPLICATION /user temp/pwd password
+
+app id: TVSUAPPLICATION
+
+user: temp
+pwd: password
+```
 
 This command captures the encrypted user name and password to set up the repository with UNC path with authentication.
-
 
 ## 7.3 Storing Network Share Information for a ThinkVantage Application
 
 This function stores the network share information in the registry using to define the subkey from the main MapDrv registry key:
-```
-	mapdrv /store <app id> /unc <sharename> /user <username> /pwd <password> [/timeout <seconds>]
-```
-This sets the UNC, user name, and password values in the registry.
 
+```CMD
+mapdrv /store <app id> /unc <sharename> /user <username> /pwd <password> [/timeout <seconds>]
+```
+
+This sets the UNC, user name, and password values in the registry.
 
 ## 7.4 Connecting to the network share for a ThinkVantage application
 
 Connect the network share for the specified ThinkVantage application:
-```
-	mapdrv /connect <app id> [/s]
-```
-Connects to the share using the UNC, user name, and password values in the registry. The actual connection UNC is output to the NetPath value.
 
+```CMD
+mapdrv /connect <app id> [/s]
+```
+
+Connects to the share using the UNC, user name, and password values in the registry. The actual connection UNC is output to the NetPath value.
 
 ## 7.5 Disconnecting the Network Share for a ThinkVantage Application
 
 The following command disconnects the network share for the specified ThinkVantage application if the application is currently connected:
-```
-	mapdrv /disconnect <app id>
-```
-Performs a _**net use /d [NetPath stored in registry]**_ to disconnect the network connection.
 
+```CMD
+mapdrv /disconnect <app id>
+```
+
+Performs a _**net use /d [NetPath stored in registry]**_ to disconnect the network connection.
