@@ -4,8 +4,6 @@
 
 This section will provide an overview of how System Update can be used to install updates either manually using the application&#39;s interface or automatically based on a scheduled task. The various methods of configuring and launching System Update will be covered.
 
-### 3.1.1 Using System Update
-
 Once System Update has been installed, the tool is ready to run. When launching System Update for the first time, the Welcome tab information will appear, giving the user a brief overview of how the tool can be used. Once the user clicks  **Next** , in the bottom left hand corner on the welcome page, System Update will automatically start searching for updates on the system. Of course, the administrator can make changes in group policy to alter how system update searches for updates, this is just the generic way of how System Update will run. Once the tool has finished searching for updates, it will prompt the user with a License notice. The License agreement notice is for all future package downloads and will not be shown again. The user must agree to proceed with the download and installation. Once the tool searches for updates, the update packages will be displayed in three different severity categories; Critical, Recommended, and optional.
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
@@ -141,7 +139,7 @@ If the application icon is right-clicked, two options are available:  **Launch**
 
 System Update can be configured to automatically search for, download, and install new updates available to system on a specified schedule. New updates will be found and automatically downloaded and installed to the system. When the installation is completed, the user will be notified with a toast message from the application icon in the notification area. If the balloon tooltip is clicked, System Update will be launched and show the updates that were installed and the results. System Update will also launch by double-clicking the application icon.
 
-The user can right-click and select  **Launch**  or **Exit**. Selecting  **Launch**  will launch System Update and display the results screen. Selecting ** Exit**  will remove the application icon and will no longer notify the user when new updates were installed until the next scheduled search for new updates.
+The user can right-click and select  **Launch**  or **Exit**. Selecting  **Launch**  will launch System Update and display the results screen. Selecting **Exit** will remove the application icon and will no longer notify the user when new updates were installed until the next scheduled search for new updates.
 
 **Working with Updates that Force Reboot**
 
@@ -194,7 +192,6 @@ The following table provides the keyboard shortcuts for the main functions of Sy
 
 <div style="text-align:center;padding-bottom:40px;font-style: italic;">Table 3-1. System Update keyboard shortcuts</div>
 
-
 ## 3.2 Thin Installer
 
 This section will cover how to work with Thin Installer. Although the program is most often used in a scripted and unattended scenario, it can also be executed to install updates manually which will be described in this section.
@@ -208,8 +205,7 @@ _![](../../img/guides/su/img3-14.png)_
 _Figure 3-14. Default repository._
 </div>
 
-
-### 3.2.1 Running Thin Installer Manually
+**Running Thin Installer Manually**
 
 In the following scenario, the repository used is local on the target machine. Launch Thin Installer to search for applicable updates based on the machine type and OS.
 
@@ -261,10 +257,9 @@ With considerations for Windows 7 and later operating systems, after you log in 
 
 !>Note: If the **Windows has blocked some startup programs** message does not display on the system tray, you will need to manually run Thin Installer, search for the remaining updates, and install them.
 
-
 ## 3.3 Update Retriever
 
-### 3.3.1 Update Retriever First Time Setup
+**3.3.1 Update Retriever First Time Setup**
 
 When launching Update Retriever the first time, some initial configuration items will need to be set. If launching Update Retriever for the first time, do the following:
 
@@ -294,7 +289,7 @@ _Figure 3-21. Setting the repository path in Update Retriever, first time setup.
 </div>
 
    4. Select a default license and status. The License can either be set to **Default** , **Display** , or **Do not display**. The status can either be set to **Test** or **Active**. If it is set to **Test** the packages will only be visible to clients configured to look for Test packages. This allows updates to be tested on a controlled set of devices before changing the status to Active so that all devices in the production environment can see them.
-   
+
    5. An Advanced Option is available that allows the administrator to control how changes to local package descriptor XML files are handled. Normally Update Retriever will show packages in new search results if it detects that the XML descriptor file on Lenovo&#39;s servers is different than the file in the local repository. If this is not the desired behavior, check the box and the modified items will be recognized as the same updates and will not be offered for download in the search results.
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
@@ -306,8 +301,7 @@ _Figure 3-22. Update default status and Advanced Options in Update Retriever fir
 
 ?>Note: After the initial settings are complete, the Welcome screen will not open the next time Update Retriever is launched. To change the repository path and update's default status, click Modify settings.
 
-
-### 3.3.2 Searching for and Downloading Updates
+**3.3.2 Searching for and Downloading Updates**
 
 After initial setup is complete, Update Retriever can be used to search for and download updates. The following will describe these steps.
 
@@ -334,7 +328,6 @@ _Figure 3-23. Getting new updates with Update Retriever, first time setup._
 
 _Figure 3-24. Searching for updates._
 
-	
 ![](../../img/guides/su/img3-25.png)
 
 _Figure 3-25. Accept the License agreement._
@@ -351,7 +344,7 @@ _Figure 3-25. Accept the License agreement._
 _Figure 3-26. Selecting update packages from search results._
 </div>
 
-?>Note: There is also an option to Hide updates in the Search Results. If there are some updates you will never need, you can choose to hide them so they do not appear in the Search Results. Either select to hide just the specific version being shown or this version and all future versions. Hidden updates can be restored using the **Restore hidden updates** selection under **Options** 
+?>Note: There is also an option to Hide updates in the Search Results. If there are some updates you will never need, you can choose to hide them so they do not appear in the Search Results. Either select to hide just the specific version being shown or this version and all future versions. Hidden updates can be restored using the **Restore hidden updates** selection under **Options**
 
    4. Click **Next**. A confirmation summary of the selected updates per system is shown. Click **Finish** to begin downloading the selected updates. Update Retriever will place the updates in the repository folder and update the database file that associates the updates to the systems they support. A completion summary will be displayed at the end.
 
@@ -362,8 +355,7 @@ _Figure 3-26. Selecting update packages from search results._
 _Figure 3-27. Completed download list displayed._
 </div>
 
-
-### 3.3.3 Manage Repository
+**3.3.3 Manage Repository**
 
 To view updates that have been downloaded into the local repository, click on the **Manage repository** tab and then select **Update view**.
 
@@ -376,8 +368,7 @@ _Figure 3-28. Viewing updates and managing the repository in Update Retriever._
 
 The updates displayed can be by filtered by Operating system, System, Severity, Status and Type. In the Update view panel, the administrator can sort the list of updates by Update ID, Title, Type, Version, Reboot type, Severity, License, or Status by clicking the column header. Double-clicking the Update ID of an item will display the details from the package descriptor. It is recommended that the values displayed are not altered unless directed to do so by Lenovo support personnel. Altering any of the values will invalidate the signature on the package descriptor file which will cause System Update to no longer apply the update. Only Thin Installer can work with modified updates.
 
-  
-### Modify an Update Package
+**Modify an Update Package**
 
 The Administrator can modify the reboot type, severity, license, and status of one or more update packages in the repository. Select one or more packages by clicking the check box next to the item.
 
@@ -399,7 +390,7 @@ The following table provides the values that an administrator can set for the se
 
 <div style="text-align:center;padding-bottom:40px;font-style: italic;">Table 3-2. Configurable values for an update package</div>
 
-### Create Report
+**Create Report**
 
 Update Retriever can generate a report, which is a list of active updates, archived updates, hidden updates, and test updates. This list is saved in a TXT file that you can use in most spreadsheet applications.
 
@@ -441,7 +432,7 @@ To create a report, do the following:
 _Figure 3-30. Create report with Update Retriever._
 </div>
 
-### Import Updates
+**Import Updates**
 
 Update Retriever enables you to import updates to your repository from a local location or network share. Once the updates are in the repository, you can assign them to specific systems and deploy them to multiple computers.
 
@@ -465,9 +456,8 @@ To import updates, do the following:
 
 _Figure 3-31. Import Updates with Update Retriever_
 </div>
-
-    
-### Assigning Systems
+  
+**Assigning Systems**
 
 When updates are imported the will initially have no supported systems associated with them. You can assign and unassign systems to updates in the repository, where system stands for the combination of machine type and operating system. When assigning systems to updates, you can choose one or more systems from the available System/Operating system list.
 
@@ -483,9 +473,8 @@ To assign or unassign systems to updates, do the following:
    5. Click **Save**. The updates are assigned to the systems selected.
 
 ?>Note: There is an icon next to the **Update ID** for each update that is originated from the Lenovo Help Center Web site. You cannot modify the systems assigned to these updates. You can modify the systems assigned to custom updates that were created or imported by the user.
-
   
-### Export Updates
+**Export Updates**
 
 Update Retriever enables you to export driver updates in your repository to a designated target folder. During the export process, Update Retriever will extract each driver update to a subfolder. Then, these extracted driver updates can be easily imported into common operating system deployment tools such as Microsoft System Center Configuration Manager or LANDesk Management Suite for easy integration and deployment.
 
@@ -527,8 +516,7 @@ To change the Local intranet settings in the Microsoft Internet Explorer Web bro
      - e) Click **Yes** to confirm your selection.
      - f) Click **OK** to exit the Internet Options dialog box.
 
-
-### 3.3.4 Manage Driver Packs
+**3.3.4 Manage Driver Packs**
 
 This feature allows an admin to create a collection of the hardware drivers for a specified model in a format that can be imported into Microsoft System Center Configuration Manager (SCCM) or Microsoft Deployment Toolkit (MDT) to support OS deployment.
 
@@ -570,7 +558,7 @@ A collection of source files for the driver packages are generated, along with a
 
 ?>Note: This new feature is intended to support the OS deployment process of new drivers which only works with INF installable hardware drivers. Application updates and firmware updates cannot be included. The feature also only supports ThinkPad, ThinkCentre and ThinkStation PCs launched in 2018 or later.
 
-### 3.3.5 Scheduling the Search for Updates
+**3.3.5 Scheduling the Search for Updates**
 
 The administrator can configure Update Retriever to search for new updates automatically on a scheduled basis. The administrator is notified depending on how Update Retriever was configured, in the form of an e-mail or a balloon tooltip from the application icon in the notification area.
 
@@ -597,7 +585,7 @@ The administrator can configure Update Retriever to search for new updates autom
 
 - **How to notify me:** Update Retriever can notify by sending an email or by popping up a toast message from the application icon in the system tray. If the email option is selected, click the Propertiesbutton to provide additional details. The email option may only work with certain configurations. The e-mail notification includes the date and time of the check, the number of packages found, and a list of updates.
 
-### 3.3.6 Restore Hidden Updates
+**3.3.6 Restore Hidden Updates**
 
 Administrators can hide updates, which means that the hidden updates including the current and future versions will not be displayed as relevant (from the Lenovo Help Center) in the future. There are two options:
 
@@ -619,11 +607,11 @@ _Figure 3-37. Unhide specific packages in Update Retriever._
 
    4. Click the **Unhide** button in the bottom right corner of the tool. The update package will then be displayed in the **Update View**.
 
-### 3.3.7 Modify Settings
+**3.3.7 Modify Settings**
 
 The **Modify settings** option allows the administrator to make changes to any of the settings that were configured during the first-time setup process. For details on the settings that can be configured, please refer to section 3.3.1 **Update Retriever First Time Setup**.
 
-### 3.3.8 Viewing History
+**3.3.8 Viewing History**
 
 The **View history** function enables you to view the detailed information about the download history and export history.
 
