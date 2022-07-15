@@ -8,7 +8,7 @@ Additional information: [AMD Memory Guard](https://www.amd.com/system/files/docu
 
 One of 2 possible options:
 
-1.	On - TSME is enabled.
+1.	On - TSME is enabled. The AddrTweakEn = 1, ForceEncrEn = 1, DataEncrEn = 0 will be set.
 2.	**Off** - TSME is disabled. Default.
 
 ?> When TSME is enabled, then other memory encryptions (inlcuding Secure Encrypted Virtualization (SEV)) are not available.
