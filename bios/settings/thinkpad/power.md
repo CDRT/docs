@@ -67,10 +67,10 @@ One of 2 possible options for a feature that powers on the system when AC is att
 One of 2 possible options:
 
 **Intel-based machines**
-1.	**Windows 10 and Linux** - Optimized Sleep State for Windows 10(R) and versions of Linux that are compatible with Suspend-to-Idle. Default.
+1.	**Windows and Linux** - Optimized Sleep State for Windows 10(R) and versions of Linux that are compatible with Suspend-to-Idle. Default.
 2.	Linux S3 - Optimized Sleep State for versions of Linux that are not compatible with Suspend-to-Idle.
 
-?> `Windows 10(R) and Linux` shall be used with Windows 10 and Linux setting only.
+?> `Windows and Linux` shall be used with Windows 10 and Linux setting only.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
    |:---|:---|:---|:---|
