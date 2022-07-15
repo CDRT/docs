@@ -87,7 +87,7 @@ Specify the precise date in month / day / year format.
 
 | WMI Setting name | Values | SVP Req'd |
 |:---|:---|:---|
-| AlarmDate  | (display only) | yes |
+| AlarmDate  |  | yes |
 
 
 <details><summary>Alarm day of week</summary>
@@ -135,6 +135,6 @@ Specify the time when the system is to wake up.
 
 | WMI Setting name | Values | SVP or SMP Req'd |
 |:---|:---|:---|
-| UserDefinedAlarmTime | (display Only) | yes |
+| UserDefinedAlarmTime |  | yes |
 
 </details>

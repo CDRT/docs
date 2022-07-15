@@ -31,7 +31,7 @@ Whether the TCG security feature is fully functional.
 
 | WMI Setting name | Values | SVP or SMP Req'd |
 |:---|:---|:---|
-| SecurityChip | setting_values | yes |
+| SecurityChip |  | yes |
 
 </details>
 
