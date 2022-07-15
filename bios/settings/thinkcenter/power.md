@@ -14,7 +14,6 @@ Options:
 2.  Power Off - remain off.
 3.  Power On - turn on.
 
-TODO: add WMI
 | WMI Setting name | Values | SVP or SMP Req'd |
 |:---|:---|:---|
 | AfterPowerLoss | Power Off, Power On, Last State | yes |

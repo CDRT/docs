@@ -15,7 +15,7 @@ Options:
 |:---|:---|:---|
 | SATAController | Disabled, Enabled | yes |
 
-?>: If the `SATA Controller` is set to `Disabled`, then `Configure SATA as` and `SATA Drive {Number}` will be hidden.
+?> If the `SATA Controller` is set to `Disabled`, then `Configure SATA as` and `SATA Drive {Number}` will be hidden.
 
 </details>
 

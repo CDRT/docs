@@ -46,7 +46,7 @@ Affects all of the front USB ports (numbered):
 1.  **Enabled** - Default.
 2.  Disabled - disables front USB ports, numbered.
 
-> ?> When `Disabled` is selected, settings for all front USB ports will not be shown.
+?> When `Disabled` is selected, settings for all front USB ports will not be shown.
 
 | WMI Setting name | Values | SVP or SMP Req'd |
 |:---|:---|:---|
@@ -78,7 +78,7 @@ Affects all of the rear USB ports (numbered):
 1.  **Enabled** - Default.
 2.  Disabled - disables rear USB ports, numbered.
 
-> ?> When `Disabled` is selected, settings for all rear USB ports will not be shown.
+?> When `Disabled` is selected, settings for all rear USB ports will not be shown.
 
 | WMI Setting name | Values | SVP or SMP Req'd |
 |:---|:---|:---|

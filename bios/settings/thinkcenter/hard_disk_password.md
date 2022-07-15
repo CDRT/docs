@@ -44,7 +44,7 @@ Options:
 1. Dual Password (Master + User)
 
 </details>
-<br />
+
 
 <details><summary>Require HDP on System Boot</summary>
 
