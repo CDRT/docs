@@ -88,7 +88,7 @@ Transition between User and Deployment modes.
 
 
 ### Key Management ###
-<!-- TBD need to find the image -->
+![](./img/securebootkeysmanagement.png)
 
 <details><summary>Platform Key (PK)</summary>
 
