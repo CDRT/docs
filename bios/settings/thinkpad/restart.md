@@ -31,11 +31,15 @@ Load default values for all Setup items. The following changes WILL NO be discar
 
 
 <details><summary>OS Optimized Defaults</summary>
-One of 2 possible states:
+
+Options:
 
 1.	**Off** - OS Optimized Defaults are disabled. Default.
-Note. When switching from ‘Enabled’ state the option will require additional confirmation.
-2.	On – the default value of settings below are changed accordingly. Select ‘On’ to meet Microsoft (R) Windows 10 (R) Certification Requirement. 
+2.	On – the default value of settings below are changed accordingly.
+
+?> Select `On` to meet Microsoft (R) Windows 10 (R) Certification Requirement. 
+
+?> When switching from `Enabled` state the option will require additional confirmation.
 
 Affected settings are:
 
@@ -48,7 +52,10 @@ Affected settings are:
 
 
 <details><summary>Discard Changes</summary>
-Load previous values for most Setup items. The following changes WILL NOT be discarded and must be reset within ThinkPad Setup:
+
+Load previous values for most Setup items.
+
+The following changes WILL NOT be discarded and must be reset within ThinkPad Setup:
 
 1.	Date & Time
 2.	Supervisor password

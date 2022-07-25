@@ -3,7 +3,10 @@
 ![](./img/power.png)
 
 <details><summary>Intel (R) SpeedStep Technology</summary>
-One of 2 possible options to select the mode of Intel (R) SteedStep Technology at runtime:
+
+Select the mode of Intel (R) SteedStep Technology at runtime.
+
+Options:
 
 1.	**On** – Intel (R) SpeedStep Technology is turned on. Default.
 2.	Off - Intel (R) SpeedStep Technology is turned off.
@@ -14,12 +17,15 @@ One of 2 possible options to select the mode of Intel (R) SteedStep Technology a
 </details>
 
 <details><summary>Scheme for AC</summary>
-One of 2 possible options of thermal management scheme to use:
+
+Select a thermal management scheme for AC power.
+
+Options:
 
 1.	**Maximize Performance** - reduces CPU throttling. Default.
 2.	Balanced - balanced sound, temperature, and performance.
 
-**Note**. Each scheme affects fan sound, temperature, and performance. 
+?> Each scheme affects fan sound, temperature, and performance. 
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
    |:---|:---|:---|:---|
@@ -27,12 +33,15 @@ One of 2 possible options of thermal management scheme to use:
 </details>
 
 <details><summary>Scheme for Battery</summary>
-One of 2 possible options of thermal management scheme to use:
+
+Select a thermal management scheme for the battery.
+
+Options:
 
 1.	Maximize Performance - reduces CPU throttling.
 2.	**Balanced** - balanced sound, temperature, and performance. Default.
 
-**Note**. Each scheme affects fan sound, temperature, and performance.
+?> Each scheme affects fan sound, temperature, and performance.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
    |:---|:---|:---|:---|
@@ -40,12 +49,15 @@ One of 2 possible options of thermal management scheme to use:
 </details>
 
 <details><summary>CPU Power Management</summary>
-One of 2 possible options:
 
-1.	**Automatic** - enabled power saving feature that stops the microprocessor clock automatically when there are no system activities. Default. 
+A power saving feature that stops the microprocessor clock automatically when there are no system activities.
+
+Options:
+
+1.	**Automatic** - enabled. Default. 
 2.	Disabled - disabled power saving feature.
 
-**Note**. Normally, it is not necessary to change this setting.
+?> Normally, it is not necessary to change this setting.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
    |:---|:---|:---|:---|
@@ -53,7 +65,10 @@ One of 2 possible options:
 </details>
 
 <details><summary>Power On with AC Attach</summary>
-One of 2 possible options for a feature that powers on the system when AC is attached:
+
+Whether to power on the system when AC is attached.
+
+Options:
 
 1.	Enabled - the system is powered when AC is attached. When the system is in hibernate state, the system resumes
 2.	**Disabled** - the system is not powered on nor resumed when AC is attached. Default.
@@ -64,7 +79,8 @@ One of 2 possible options for a feature that powers on the system when AC is att
 </details>
 
 <details><summary>Sleep State</summary>
-One of 2 possible options:
+
+Options:
 
 **Intel-based machines**
 1.	**Windows and Linux** - Optimized Sleep State for Windows 10(R) and versions of Linux that are compatible with Suspend-to-Idle. Default.
@@ -78,28 +94,37 @@ One of 2 possible options:
 </details>
 
 <details><summary>Disable Built-in Battery</summary>
-Option to temporarily disable battery for servicing the system. <br>
-This option requests additional confirmation. <br>
-After selecting this item, the system will be automatically powered off, then ready to be serviced.
 
-**Note**. The battery will be automatically enabled when the AC adapter is reconnected.
+Temporarily disables battery for servicing the system.
+
+?> This option requests additional confirmation.
+
+?> After selecting this item, the system will be automatically powered off, then ready to be serviced.
+
+?> The battery will be automatically enabled when the AC adapter is reconnected.
+
 </details>
 
 
 <details><summary>Lid Sensor</summary>
-One of 2 possible options:
+
+Whether to enable actions when the Lid is closed or opened.
+
+Options:
 
 1.	**On** - Enabled the actions when the Lid is closed or opened. Default.
 2.	Off - Disabled the actions when the Lid is closed or opened.
 
-?> Feature is relevant only for AMD-based machines.
+?> Feature only applies to AMD-based machines.
 
-Not available via WMI.
+?> Not available via WMI.
+
 </details>
 
 
 <details><summary>Cool & Quiet on Lap</summary>
-One of 2 possible options:
+
+Options:
 
 1.	On - system performance is lowered to maintain a cooler temperature when the device is used on lap.
 2.	**Off** - Cool & Quiet on Lap is disabled. Default.
@@ -114,15 +139,18 @@ One of 2 possible options:
 ![](./img/autopoweron.png)
 
 <details><summary>Wake Up on Alarm</summary>
-One of 5 possible options for defining when the system shall turn on automatically:
+
+Set when the system should turn on automatically.
+
+Options:
 
 1.	**Disabled** - the system will not turn on automatically. Default.
 2.	Single Event - the system will turn on one-time on the specified day and time. 
 3.	Daily Event - the system will turn on every day at the specified time.
 4.	Weekly Event - the system will turn on every week on the specified day and time.
-5.	User Defined - this option enables ‘User Defined Alarm’ group of settings. 
+5.	User Defined - this option enables `User Defined Alarm` group of settings. 
 
-**Note**. Wake up will only occur on AC power.  Values for the ‘Wake Up on Alarm’ group of settings can be overwritten by the operating system. 
+?> Wake up will only occur on AC power. Values for the `Wake Up on Alarm` group of settings can be overwritten by the operating system. 
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
    |:---|:---|:---|:---|
@@ -130,7 +158,7 @@ One of 5 possible options for defining when the system shall turn on automatical
 </details>
 
 <details><summary>Alarm Date (MM/DD/YYYY)</summary>
-Field to select the exact day for the system to turn on. Active only when ‘Wake Up on Alarm’ has value ‘Single Event’. 
+Field to select the exact day for the system to turn on. Active only when `Wake Up on Alarm` has value `Single Event`. 
 Possible values:
 
 1.	**N/A** – Default.
@@ -145,7 +173,10 @@ Possible values:
 </details>
 
 <details><summary>Alarm Time (HH : MM : SS)</summary>
-Field to select the exact time for the system to turn on. Active when ‘Wake Up on Alarm’ has one of the values:
+
+Field to select the exact time for the system to turn on.
+
+Active when `Wake Up on Alarm` is one of:
 
 * Single Event
 * Daily Event
@@ -165,7 +196,11 @@ Possible values:
 </details>
 
 <details><summary>Alarm Day of Week</summary>
-Field to select the exact day for the system to turn on. Active only when ‘Wake Up on Alarm’ has value ‘Weekly Event’.
+
+Field to select the exact day for the system to turn on.
+
+Active only when `Wake Up on Alarm` has value `Weekly Event`.
+
 Possible values:
 
 1.	**N/A** – Default
@@ -186,7 +221,8 @@ Possible values:
 ![](./img/autopoweronuserdefined.png)
 
 <details><summary>Sunday</summary>
-One of 2 states to select:
+
+Options:
 
 1.	**Off** - the system will not turn on automatically on this day. Default.
 2.	On – the system will turn on automatically on this day.
@@ -197,7 +233,8 @@ One of 2 states to select:
 </details>
 
 <details><summary>Monday</summary>
-One of 2 states to select:
+
+Options:
 
 1.	**Off** - the system will not turn on automatically on this day. Default.
 2.	On – the system will turn on automatically on this day.
@@ -208,7 +245,7 @@ One of 2 states to select:
 </details>
 
 <details><summary>Tuesday</summary>
-One of 2 states to select:
+Options:
 
 1.	**Off** - the system will not turn on automatically on this day. Default.
 2.	On – the system will turn on automatically on this day.
@@ -219,7 +256,7 @@ One of 2 states to select:
 </details>
 
 <details><summary>Wednesday</summary>
-One of 2 states to select:
+Options:
 
 1.	**Off** - the system will not turn on automatically on this day. Default.
 2.	On – the system will turn on automatically on this day.
@@ -230,7 +267,7 @@ One of 2 states to select:
 </details>
 
 <details><summary>Thursday</summary>
-One of 2 states to select:
+Options:
 
 1.	**Off** - the system will not turn on automatically on this day. Default.
 2.	On – the system will turn on automatically on this day.
@@ -241,7 +278,7 @@ One of 2 states to select:
 </details>
 
 <details><summary>Friday</summary>
-One of 2 states to select:
+Options:
 
 1.	**Off** - the system will not turn on automatically on this day. Default.
 2.	On – the system will turn on automatically on this day.
@@ -252,7 +289,7 @@ One of 2 states to select:
 </details>
 
 <details><summary>Saturday</summary>
-One of 2 states to select:
+Options:
 
 1.	**Off** - the system will not turn on automatically on this day. Default.
 2.	On – the system will turn on automatically on this day.

@@ -4,10 +4,11 @@ DASH provides support for the redirection of KVM (Keyboard, Video and Mouse) and
 More information about DASH: [Lenovo and AMD DASH Management](dash/dash_top.md).
 
 <details><summary>DASH Support</summary>
-One of 2 possible options:
 
-1.	On – DASH support is enabled.
-2.	**Off** – DASH support is disabled. Default.
+Options:
+
+1.	On.
+2.	**Off**. Default.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -16,10 +17,11 @@ One of 2 possible options:
 
 
 <details><summary>Wireless DASH Support</summary>
-One of 2 possible options:
 
-1.	On – Wireless DASH support is enabled.
-2.	**Off** – Wireless DASH support is disabled. Default.
+Options:
+
+1.	On.
+2.	**Off**. Default.
 
 ?> This setting is available only if machine has Pro CPU and a wireless card which supports DASH.
 
@@ -31,6 +33,7 @@ One of 2 possible options:
 
 
 <details><summary>Realtek LAN Controller</summary>
+
 View-only information about Realtek Ethernet Controller Configuration.
 
 **Driver Information**

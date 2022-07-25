@@ -2,7 +2,8 @@
 ![](./img/thinkshieldsecurewipe.png)
 
 <details><summary>ThinkShield secure wipe in AppMenu</summary>
-One of 2 possible states:
+
+Options:
 
 1.	**On** – enable the ThinkShield secure wipe in the App Menu Invoked by F12. Default.
 2.	Off – disable the ThinkShield secure wipe in the App Menu Invoked by F12.

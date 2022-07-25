@@ -2,12 +2,15 @@
 ![](./img/memoryprotection.png)
 
 <details><summary>Execution Prevention</summary>
-One of 2 possible states:
 
-1.	On – if your OS supports Data Execution Prevention, this setting can prevent virus\worm attacks that create memory buffer overflows by running code where only data is allowed.
+If OS supports Data Execution Prevention, prevents virus\worm attacks that create memory buffer overflows by running code where only data is allowed.
+
+Options:
+
+1.	On.
 2.	**Off** – normal state. Default.
 
-**Note**. Reset to ‘Off’ if your required applications cannot run.
+?> Reset to `Off` if required applications cannot run.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -16,7 +19,10 @@ One of 2 possible states:
 
 
 <details><summary>Intel(R) Total Memory Encryption</summary>
-One of 2 possible states for Total Memory Encryption (TME) to protect DRAM data from physical attacks:
+
+Total Memory Encryption (TME) protects DRAM data from physical attacks
+
+Options:
 
 1.	On – TME if on. When enabled, it will have the following impacts:
     * System memory tools, such as memtest86 and Lenovo Diagnostic-Memory test, will not work correctly

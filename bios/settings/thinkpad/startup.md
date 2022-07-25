@@ -3,8 +3,10 @@
 ![](./img/startup.png)
 
 <details><summary>Network Boot</summary>
-Option to select top priority of the Boot Priority Order when waking from LAN.
-One of 9 possible options:
+
+Select top priority of the Boot Priority Order when waking from LAN.
+
+Options:
 
 1.	**PXE BOOT** – Default
 2.	USB CD
@@ -25,7 +27,8 @@ One of 9 possible options:
 
 
 <details><summary>Boot Mode</summary>
-One of 2 possible values:
+
+Options:
 
 1.	**Quick** – the diagnostic splash screen does not display unless you press `Esc` during boot. Default.
 2.	Diagnostics – the diagnostic splash screen always displays during boot.
@@ -37,7 +40,8 @@ One of 2 possible values:
 
 
 <details><summary>Option key Display</summary>
-One of 2 possible states:
+
+Options:
 
 1.	**On** – system will show the option key message when the system is booted. Default.
 2.	Off – system will not show the option key message. 
@@ -49,11 +53,13 @@ One of 2 possible states:
 
 
 <details><summary>Boot device List F12 Option</summary>
-One of 2 possible states:
+
+Options:
 
 1.	**On** – `F12` key is used to invoke a pop-up Boot devise list. Default.<br>
-    **Note**. This option is only available when Supervisor enters setup.
 2.	Off – `F12` does not invoke a pop-up Boot device list.
+
+?> This option is only available when Supervisor enters setup.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -62,7 +68,8 @@ One of 2 possible states:
 
 
 <details><summary>Boot Order Lock</summary>
-One of 2 possible states:
+
+Options:
 
 1.	On – Boot Priority Order is locked.
 2.	**Off** – Boot Priority Order is not locked. Default. 
@@ -77,7 +84,9 @@ One of 2 possible states:
 ![](./img/boot.png)
 
 <details><summary>Boot Priority Order</summary>
+
 The ordered list of currently defined boot priority order.
+
 Keys used to view or configure devices: 
 
 * `↑` and `↓` arrows Select a device. 
@@ -107,6 +116,7 @@ Possible items on the list:
 
 
 <details><summary>Excluded from boot priority order</summary>
+
 By default, the following items are excluded from boot priority order:
 
 1.	Other CD
