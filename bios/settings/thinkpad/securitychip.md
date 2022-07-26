@@ -8,7 +8,7 @@ A TPM chip is a secure crypto-processor that helps you with actions such as gene
 
  - [More information at Microsoft.com](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-tpm)
 
-<details><summary>Security Chip Type (display only) </summary>
+### Security Chip Type (display only) ###
 
 Available via [standard Windows commands](https://docs.microsoft.com/en-us/powershell/module/trustedplatformmodule/?view=windowsserver2019-ps&preserve-view=true&viewFallbackFrom=win10-ps)
 </details>

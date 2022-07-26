@@ -18,17 +18,16 @@ Options:
 </details>
 
 
-<details><summary>Secure Boot Mode (display only) </summary>
+### Secure Boot Mode (display only) ###
 
 Possible modes:
 
 1.	Setup mode
 2.	**User mode** - default.
 
-</details>
 
 
-<details><summary>Secure Boot Key State (display only)</summary>
+### Secure Boot Key State (display only) ###
 
 Possible modes:
 

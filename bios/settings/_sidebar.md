@@ -12,6 +12,9 @@
 
 - [Config](bios/settings/thinkpad/config.md)
    - [Network](bios/settings/thinkpad/network.md)
+     - [Add Wifi Network](bios/settings/thinkpad/addwifinetwork.md)
+     - [Wifi Network Configuration](bios/settings/thinkpad/wifinetworkconfiguration.md)
+     - [Manage Wifi Network](bios/settings/thinkpad/managewifinetwork.md)
    - [USB](bios/settings/thinkpad/usb.md)
    - [Keyboard/Mouse](bios/settings/thinkpad/keyboardmouse.md)
    - [Display](bios/settings/thinkpad/display.md)
