@@ -56,7 +56,7 @@ Options:
 2.  Power On - HDP will be required when the system starts from the full off or hibernate state.
 3.  No - HDP will not be required. However, HDP will be required when the hard disk is attached to a different system.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | RequireHDPonSystemBoot| No, Auto | yes |
 
@@ -69,7 +69,7 @@ Options:
 1.  **Enabled** - TCG Storage device will block attempts to authenticate the SID authority until a subsequent device power cycle occurs. Default.
 2.  Disabled - Allow SID authentication in TCG Storage device at the next system boot only, not all subsequent boots.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | BlockSIDAuthentication |  | yes |
 

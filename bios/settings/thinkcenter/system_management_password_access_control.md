@@ -11,7 +11,7 @@ Options:
 1.  **Disabled** - Default.
 2.  Enabled.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | AccessSecuritySettings | Disabled, Enabled | yes |
 
@@ -26,7 +26,7 @@ Options:
 1.  **Disabled** - Default.
 2.  Enabled.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | RemoteSetSMP | Disabled, Enabled | yes |
 

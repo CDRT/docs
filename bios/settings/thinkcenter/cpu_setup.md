@@ -11,7 +11,7 @@ Options:
 1.  **Enabled** - Default.
 2.  Disabled.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | EISTSupport | Disabled, Enabled | yes |
 
@@ -27,7 +27,7 @@ Options:
 1. **Enabled** - Default.
 2. Disabled.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | HyperThreadingTechnology | Disabled, Enabled | yes |
 
@@ -42,7 +42,7 @@ Options:
 1.  **Enabled** - Default.
 2.  Disabled.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | CoreMultiProcessing | Enabled, Disabled | yes |
 
@@ -57,7 +57,7 @@ Options:
 1.  **Enabled** - Default.
 2.  Disabled.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | VirtualizationTechnology | Disabled, Enabled | yes |
 
@@ -72,7 +72,7 @@ Options:
 1.  **Enabled** - Default.
 2.  Disabled.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | VTdFeature | Disabled, Enabled | yes |
 
@@ -87,7 +87,7 @@ Options:
 1.  **Enabled** - Default.
 2.  Disabled - disables TxT.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | TXTFeature | Disabled, Enabled | yes |
 
@@ -102,7 +102,7 @@ Options:
 1.  **Enabled** - Default.
 2.  Disabled - disables C1E Support.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | C1ESupport | Disabled, Enabled | yes |
 
@@ -121,7 +121,7 @@ Options:
 1. C1C3C6C7C8 - C1,C3,C6,C7 and C8
 1. **C1C3C6C7C8C10 - C1,C3,C6,C7,C8 and C10** - Default.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | CStateSupport | C1, C1C3, C1C3C6, C1C3C6C7, C1C3C6C7C8, C1C3C6C7C8C10 | yes |
 
@@ -136,7 +136,7 @@ Options:
 1. **Enabled** - Default.
 2. Disabled.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | TurboMode | Disabled, Enabled | yes |
 

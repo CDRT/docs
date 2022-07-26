@@ -14,7 +14,7 @@ Options:
 2.  Power Off - remain off.
 3.  Power On - turn on.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | AfterPowerLoss | Power Off, Power On, Last State | yes |
 
@@ -32,7 +32,7 @@ Options:
 1. **Disabled** - Default.
 2.  Enabled.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | EnhancedPowerSavingMode | Disabled, Enabled | yes |
 
@@ -47,7 +47,7 @@ Options:
 1.  **Enabled** - Default.
 2.  Disabled - disables Smart Power On.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | SmartPowerOn | Disabled, Enabled | yes |
 
@@ -63,7 +63,7 @@ Options:
 2. Best Experience - Balanced noise and better performance.
 3. Full Speed - All fans at full speed.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | IntelligentCoolingPerformanceMode | Best Performance, Best Experience, Full Speed | yes |
 

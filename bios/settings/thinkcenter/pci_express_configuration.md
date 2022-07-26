@@ -13,7 +13,7 @@ Options:
 1. **Auto** - Configure ASPM automatically according to what the attached device supports in each PCI Express port. Default.
 2. Disable - Disable ASPM support of all PCI Express ports.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | ASPMSupport | Disabled, Auto |  |
 
@@ -33,7 +33,7 @@ Options:
 
 <!-- MODEL: S only-->
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | PCIe16xSlotSpeed | Disabled, Enabled |  |
 
@@ -64,7 +64,7 @@ Options:
 
 <!-- MODEL: S only-->
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | PCIe4xSlotSpeed | Auto, Gen1, Gen2, Gen3 |  |
 
@@ -81,7 +81,7 @@ Options:
 
 <!-- MODEL: not M70 q-->
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | PCIe1xSlotSpeed  | Auto, Gen1, Gen2, Gen3 |  |
 

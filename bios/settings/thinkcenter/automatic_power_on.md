@@ -11,7 +11,7 @@ Options:
 1.  **Enabled** - Default.
 2.  Disabled - disables Wake on LAN.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | WakeonLAN | Primary, Automatic, Disabled | yes |
 
@@ -26,7 +26,7 @@ Options:
 1. **Enabled** - Default.
 2. Disabled.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | WakefromSerialPortRing | Primary, Automatic, Disabled | yes |
 
@@ -51,7 +51,7 @@ Options:
 4.  Daily Event
 5.  Weekly Event
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | WakeUponAlarm |  | yes |
 
@@ -66,7 +66,7 @@ Options:
 1.  **Primary** - enables primary startup sequence. Default.
 2.  Automatic - disables automatic selection of startup sequence.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | StartupSequence | Primary, Automatic | yes_no |
 
@@ -102,7 +102,7 @@ Options:
 6. Friday.
 7. Saturday.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | AlarmDayofWeek  | Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, SaturdayStatus | yes |
 
@@ -121,7 +121,7 @@ Options:
 1.  **Disabled** - disables wake-up. Default.
 2.  Enabled - enables wake-up.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | UserDefinedAlarmFriday | Disabled, Enabled | yes |
 
@@ -133,7 +133,7 @@ Options:
 
 Specify the time when the system is to wake up.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | UserDefinedAlarmTime |  | yes |
 

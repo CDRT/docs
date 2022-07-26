@@ -65,7 +65,7 @@ Options:
 1.  **Yes** - Flashing NOT allowed. Default.
 1.  No - Flashing BIOS allowed.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | SecureRollBackPrevention | No, Yes |  |
 
@@ -78,7 +78,7 @@ Options:
 1. **Enabled** - Default.
 1. Disabled - BIOS will skip Windows UEFI firmware update.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | WindowsUEFIFirmwareUpdate | Disabled, Enabled |  |
 
@@ -94,7 +94,7 @@ Options:
 1.  Read Only - The user can copy data from USB to computer, but not from computer to USB.
 1.  NO Access - The user cannot use USB storage device in Windows.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | SmartUSBProtection | Disabled, Read Only, No Access |  |
 
@@ -109,7 +109,7 @@ Options:
 1.  **Disabled** - hides `secure wipe` option. Default.
 2.  Enabled - shows `secure wipe` option.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | securewipe | | yes |
 
@@ -125,7 +125,7 @@ Options:
 1.  **Disabled** - Ethernet, USB, CD, and other boot methods are enabled. Default.
 1.  Enabled - CPU Virtualization Technology，IOMMU (Intel VT-d, AMD-Vi),  Secure boot, and TPM are enabled. Ethernet, USB, CD, and other boot methods are disabled. Only SATA devices are allowed.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | DeviceGuard | Disabled, Enabled | yes |
 
@@ -166,7 +166,7 @@ Options:
 
 ?> If chassis tamper occurs, you can only clear this error by entering setup.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | CoverTamperDetected | Disabled, Enabled | yes |
 
@@ -181,7 +181,7 @@ Options:
 
 ?> This notice can only be cleared by entering BIOS setup, saving and then exiting.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | ConfigurationChangeDetection | Disabled, Enabled | yes |
 

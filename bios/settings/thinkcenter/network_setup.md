@@ -11,7 +11,7 @@ Options:
 
 !> Setting to `Disabled` also disables all [Intel (R) AMT](https://software.intel.com/sites/manageability/AMT_Implementation_and_Reference_Guide/default.htm) related functions.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | OnboardEthernetController | Disabled, Enabled | yes |
 
@@ -26,7 +26,7 @@ Options:
 1.  **Enabled** - Default.
 2.  Disabled.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | WirelessLANAccess | Disabled, Enabled | yes |
 
@@ -41,7 +41,7 @@ Options:
 1.  **Disabled** - Default.
 2.  Enabled.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | WirelessLANPXE | Disabled, Enabled | yes |
 
@@ -55,7 +55,7 @@ Disable wireless LAN when onboard Ethernet is connected.
 1.  **Disabled** - Default.
 2.  Enable.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | WirelessAutoDisconnection | Disabled, Enabled | yes |
 
@@ -71,7 +71,7 @@ Options:
 1. **Disabled** - Default.
 2. Enabled.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | PXEIPV4NetworkStack | Disabled, Enabled | yes |
 
@@ -85,7 +85,7 @@ Options:
 1.  **Disabled** - Default.
 2.  Enabled.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | PXEIPV6NetworkStack | Disabled, Enabled | yes |
 

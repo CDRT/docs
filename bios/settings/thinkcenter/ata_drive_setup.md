@@ -11,7 +11,7 @@ Options:
 1.  **Enable** - Default.
 2.  Disable.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | SATAController | Disabled, Enabled | yes |
 
@@ -28,7 +28,7 @@ Options:
 1.  **Enabled** - Default.
 2.  Disabled.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | SATADrive1 | Disabled, Enabled | yes |
 
@@ -50,7 +50,7 @@ Options:
 2.  Intel (R) RST with Intel (R) Optane mode - enables RST (Rapid Storage Technology).
 3.  RAID - enables RAID. <!-- MODEL: M70S Gen3 only-->
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | ConfigureSATAas  | AHCI, Intel(R) RST with Intel(R) Optane, [RAID] | yes |
 
@@ -66,7 +66,7 @@ Options:
 1.  **Disabled** - Default.
 2.  3 - 30 seconds - enables delay, in increments of 3 seconds up 15, then 21 or 30.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | HardDiskPre-delay | Disabled, 3 Seconds, 6 Seconds, 9 Seconds, 12 Seconds, 15 Seconds, 21 Seconds, 30 Seconds | yes |
 

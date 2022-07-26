@@ -22,7 +22,7 @@ Options:
 
 ?> If both `Set Minimum Length` and `Set Strong Password` are enabled, the longest value for minimum length applies.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | SetMinimumLength | Disabled, 4 characters, 5 characters, 6 characters, 7 characters, 8 characters, 9 characters, 10 characters, 11 characters, 12 characters | yes |
 
@@ -35,7 +35,7 @@ Options:
 1.  **Enabled** - Upper case, lower case and numeric characters are all required. Special characters are optional. The minimum length is 8. Default.
 1.  Disabled - The minimum length is 1 character.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | SetStrongPassword | Disabled, Enabled | yes |
 
@@ -53,7 +53,7 @@ Options:
 4.  Russian
 5.  Chinese
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | KeyboardLayout | English, French, German, Chinese | yes |
 
@@ -68,7 +68,7 @@ Whether to give a BIOS password prompt at system boot (when the system starts fr
 
 !> To prevent unauthorized access to the system, we recommend setting user authentication on the OS.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | BIOSPasswordAtSystemBoot | No, Yes | yes |
 
@@ -83,7 +83,7 @@ Options:
 1.  **No** - Default.
 1.  Yes.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | BIOSPasswordAtReboot | No,Yes | yes |
 
@@ -98,7 +98,7 @@ Options:
 1.  **No** - Default.
 1.  Yes.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | BIOSPasswordAtBootDeviceList | No, Yes | yes |
 
@@ -113,7 +113,7 @@ Options:
 1.  **No** - Default.
 1.  Yes.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | RequireSVPwhenFlashing | No, Yes | yes |
 
@@ -128,7 +128,7 @@ Options:
 1.  **Yes** - Default.
 2.  No.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | POPChangeablebyUser | No, Yes | yes |
 
@@ -144,7 +144,7 @@ Options:
 1.  **Yes** - Default.
 2.  No.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | AllowJumperClearSVP | No, Yes | yes |
 
@@ -159,7 +159,7 @@ Whether to show the POST 0199 error and password prompt:
 1.  **Enabled** - Default.
 2.  Disabled.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | PasswordCountExceededError | Disabled, Enabled | yes |
 

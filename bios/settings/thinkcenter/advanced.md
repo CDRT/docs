@@ -11,7 +11,7 @@ Options:
 1. **Enabled** - Default.
 2. Disabled - disables SIPP.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | IntelSIPPSupport | Disabled, Enabled | yes |
 
@@ -38,7 +38,7 @@ Options:
 1.  **Enabled** - Default.
 1.  Disabled - disables the Dust Shield alert.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | DustShieldAlert | Disabled, Enabled | yes |
 
@@ -58,7 +58,7 @@ Options:
 1.  **Enabled** - Default.
 2.  Disabled - disables DPTF.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | IntelDPTFSupport | Disabled, Enabled | yes |
 
@@ -88,7 +88,7 @@ Options:
 1.  **Enabled** - Default.
 2.  Disabled.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | BIOSSelfHealing  |  | no |
 

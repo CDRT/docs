@@ -40,7 +40,7 @@ Options:
 1.  **Enabled** - Default.
 2.  Disabled - disables USB provisioning.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | USBProvisioning | Disabled, Enabled | yes |
 

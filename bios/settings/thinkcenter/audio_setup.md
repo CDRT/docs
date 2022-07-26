@@ -9,7 +9,7 @@ Options:
 1.  **Enabled** - Default.
 2.  Disabled - disables onboard audio controller.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | OnboardAudioController | Disabled, Enabled | yes |
 
@@ -22,7 +22,7 @@ Options:
 1.  **Enabled** - Default.
 2.  Disabled - disables the internal speaker.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | InternalSpeaker | Disabled, Enabled | yes |
 

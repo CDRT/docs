@@ -16,7 +16,7 @@ Options:
 1. USB HDD
 1. USB CDROM
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | Firstbootdevice |  | yes |
 </details>
@@ -44,7 +44,7 @@ Options:
 1. **On** - Default.
 1. Off.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | BootUpNumLockStatus | Off, On | yes |
 
@@ -61,7 +61,7 @@ Options:
 1.  **Enabled** - Default.
 1.  Disabled.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | FastBoot | Disabled, Enabled | yes |
 
@@ -78,7 +78,7 @@ Options:
 
 ?> Disabling the prompts will not affect the function of a specific key.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | OptionKeysDisplay | Disabled, Enabled | yes |
 

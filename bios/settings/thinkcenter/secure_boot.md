@@ -18,7 +18,7 @@ Options:
 1.  **Enabled** - BIOS will prevent unauthorized OS from loading.
 1.  Disabled - disables Secure Boot.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | SecureBoot | Disabled, Enabled | yes |
 
@@ -54,7 +54,7 @@ Options:
 2.  Disabled. Remove Microsoft 3rd Party UEFI CA in secure boot BD.
 
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | AllowMicrosoft3rdPartyUEFICA |  | yes |
 

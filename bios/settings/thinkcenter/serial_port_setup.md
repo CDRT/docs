@@ -12,7 +12,7 @@ Options:
 2.  3F8/IRQ4.
 3.  Disabled - the serial port will not be available to the OS.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | SerialPort1Address | 2F8/IRQ3, 3F8/IRQ4, 3E8/IRQ4, 2E8/IRQ3, Disabled | yes |
 

@@ -12,7 +12,7 @@ Options:
 2.  Disabled.
 3.  Permanently disabled.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | AbsolutePersistenceModule  | Disabled, Enabled, PermanentlyDisabled | yes |
 

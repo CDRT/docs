@@ -17,7 +17,7 @@ Options:
 
 ?> The `IGD` option will not appear if not supported by the CPU.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | SelectActiveVideo  | IGD, [PEG], Auto | yes |
 
@@ -35,7 +35,7 @@ Options:
 1.  128MB
 1.  160MB
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | Pre-AllocatedMemorySize |  | yes |
 

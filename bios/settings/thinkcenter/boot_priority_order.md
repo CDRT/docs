@@ -6,7 +6,7 @@ This sequence is used when the system is powered up normally.
 
 The exact BIOS interface is determined by the model.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | BootOrder |  |  |
 

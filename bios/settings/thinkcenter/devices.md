@@ -9,7 +9,7 @@ Options:
 1.  **Enabled** - Default.
 1.	Disabled - disables Bluetooth connections. Bluetooth will not be available in the OS.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | Bluetooth  | Disabled, Enabled | yes |
 

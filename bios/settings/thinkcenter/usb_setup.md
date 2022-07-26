@@ -9,7 +9,7 @@ Options:
 1.  **Enabled** - Default.
 2.  Disabled - disables USB.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | USBPortAccess | Disabled, Enabled | yes |
 
@@ -33,7 +33,7 @@ Provides extra delay to USB enumeration (detection and recognition of connected 
 1.  Enable.
 2.  **Disabled** - Default.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | USBEnumerationDelay | Disabled, Enabled | yes |
 
@@ -48,7 +48,7 @@ Affects all of the front USB ports (numbered):
 
 ?> When `Disabled` is selected, settings for all front USB ports will not be shown.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | FrontUSBPorts | Disabled, Enabled | yes |
 
@@ -63,7 +63,7 @@ Options:
 1.  **Enable** - Default.
 2.  Disable.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | USBPort1 | Disabled, Enabled | yes |
 
@@ -80,7 +80,7 @@ Affects all of the rear USB ports (numbered):
 
 ?> When `Disabled` is selected, settings for all rear USB ports will not be shown.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | RearUSBPorts | Disabled, Enabled | yes |
 
