@@ -3,20 +3,26 @@
 ![](./img/thinkcenter_devices.png)
 
 <details><summary>Bluetooth</summary>
-One of 2 possible options for Bluetooth:
 
-1.  **Enabled** - enables Bluetooth connections. Default.
-2.	Disabled - disables Bluetooth connections. The OS will not offer this option.
+Options:
+
+1.  **Enabled** - Default.
+1.	Disabled - disables Bluetooth connections. Bluetooth will not be available in the OS.
+
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| Bluetooth  | Disabled, Enabled | yes |
+
 </details>
 
 <details><summary>Card Reader</summary>
 
-One of 2 possible options for card reader settings:
+Options:
 
-1.  **Enabled** - enables card reader. Default.
-2.  Disabled - disables card reader.
+1.  **Enabled** - Default.
+1.  Disabled - disables card reader.
 
-<!-- TODO: add WMI -->
+<!-- NO WMI -->
 
 <!-- MODEL: S only -->
 

@@ -33,6 +33,14 @@ To install the LDA on a Windows computer, the following is required:
 #### Languages
 The LDA application only supports English.
 
+#### ConfigMgr Security Roles
+
+To take advantage of all available features in LDA, the following Security Roles should be assigned:
+
+- Application Administrator
+- Asset Manager
+- Compliance Settings Manager
+
 #### Installation Considerations
 This section briefly describes the steps for a desktop-class installation.
 1. Log on to your computer as a member of the administrative group that is authorized to

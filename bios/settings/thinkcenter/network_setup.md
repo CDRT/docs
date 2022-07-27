@@ -3,185 +3,221 @@
 ![](./img/thinkcenter_network_setup.png)
 
 <details><summary>Onboard Ethernet Controller</summary>
-One of 2 possible options for the onboard ethernet controller:
 
-1.  **Enabled** - enables the onboard ethernet controller. Default.
-2.  Disabled - disables all [Intel (R) AMT](https://software.intel.com/sites/manageability/AMT_Implementation_and_Reference_Guide/default.htm) related functions.
+Options:
 
-<!-- TODO: add WMI --> 
+1.  **Enabled** - Default.
+2.  Disabled.
+
+!> Setting to `Disabled` also disables all [Intel (R) AMT](https://software.intel.com/sites/manageability/AMT_Implementation_and_Reference_Guide/default.htm) related functions.
+
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| OnboardEthernetController | Disabled, Enabled | yes |
 
 </details>
 
 <details><summary>Wireless LAN Access</summary>
-Controls access to wifi.
 
-One of 2 possible options for wireless LAN (wifi):
+Controls access to WiFi.
 
-1.  **Enabled** - enables wireless LAN. Default.
-2.  Disabled - enables wireless LAN.
+Options:
 
-<!-- TODO: add WMI --> 
+1.  **Enabled** - Default.
+2.  Disabled.
+
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| WirelessLANAccess | Disabled, Enabled | yes |
 
 </details>
 
 <details><summary>Wireless LAN PXE boot</summary>
-Select whether to load Wireless LAN UNDI Driver to support wireless LAN PXE boot or https boot.
 
-One of 2 possible options for PXE support:
+Whether to load Wireless LAN UNDI Driver to support wireless LAN PXE boot or HTTPS boot.
 
-1.  **Disabled** - disables PXE. Default.
-2.  Enabled - enables PXE.
+Options:
 
-<!-- TODO: add WMI --> 
+1.  **Disabled** - Default.
+2.  Enabled.
+
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| WirelessLANPXE | Disabled, Enabled | yes |
 
 </details>
 
-<details><summary>Wireless Certified Information</summary>
-<!-- SIMULATOR DOES NOT SUPPORT -->
-</details>
 
 <details><summary>Wireless Auto Disconnection</summary>
+
 Disable wireless LAN when onboard Ethernet is connected.
 
-One of 2 possible options for auto disconnection:
+1.  **Disabled** - Default.
+2.  Enable.
 
-1.  **Disabled** - enables auto disconnection. Default.
-2.  Enable - enables auto disconnection.
-
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| WirelessAutoDisconnection | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| WirelessAutoDisconnection | Disabled, Enabled | yes |
 
 </details>
 
+### Wireless Certified Information (display only) ###
+<!-- SIMULATOR DOES NOT SUPPORT -->
 
 <details><summary>PXE IPV4 Network Stack</summary>
-One of 2 possible options for IPV4 PXE:
 
-1. **Disabled** - enables IPV4 PXE. Default.
-2. Enabled - enables IPV4 PXE.
+Options:
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| PXEIPV4NetworkStack | setting_values | yes_no | amd_intel |
--->
+1. **Disabled** - Default.
+2. Enabled.
+
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| PXEIPV4NetworkStack | Disabled, Enabled | yes |
 
 </details>
 
 
 <details><summary>PXE IPV6 Network Stack</summary>
-One of 2 possible options for IPV6 PXE:
 
-1.  **Disabled** - enables IPV6 PXE. Default.
-2.  Enabled - enables IPV6 PXE.
+Options:
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| PXEIPV6NetworkStack | setting_values | yes_no | amd_intel |
--->
+1.  **Disabled** - Default.
+2.  Enabled.
+
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| PXEIPV6NetworkStack | Disabled, Enabled | yes |
 
 </details>
 
+<details><summary>HTTPS Support</summary>
+
+IPV4 and IPV6 boot support.
+
+Options:
+
+2.  **Disabled** - Default.
+1.  Enabled.
+
+<!-- NO WMI -->
+
+</details>
+
+
 <details><summary>HTTPS Boot</summary>
+
 Custom HTTPS boot.
-One of 2 possible options for custom HTTPS boot:
 
-1.  **Disabled** - disables custom HTTPS boot. Default.
-2.  Enabled - enables custom HTTPS boot.
+Options:
 
-**Note**: If enabled, `HTTPs Boot Configuration` and `Tls Auth Configuration` will be shown.
+1.  **Disabled** - Default.
+2.  Enabled.
 
+?> If enabled, `HTTPs Boot Configuration` and `Tls Auth Configuration` will be shown.
+
+<!-- NO WMI -->
 </details>
 
 <details><summary>Lenovo Cloud Services</summary>
-When enabled, boot with `Lenovo Cloud` selected in boot menu to boot from Lenovo Cloud server directly.
 
-One of 2 possible options for Lenovo Cloud Services:
+Whether `Lenovo Cloud` will be selected in boot menu, to boot from Lenovo Cloud server directly.
 
-1.  **Disabled** - enables Lenovo Cloud Services. Default.
-2. Enabled - enables Lenovo Cloud Services.
+1.  **Disabled** - Default.
+2. Enabled.
 
+<!-- NO WMI -->
 </details>
 
 <details><summary>Win VDI Boot</summary>
-When enabled, boot with `Win VDI Boot` selected in boot menu to boot from Lenovo Cloud server and load VDI service.
 
-One of 2 possible options for Win VDI Boot:
+When enabled, `Win VDI Boot` will be selected in boot menu, to boot from Lenovo Cloud server and load VDI service.
 
-1. **Disabled** - enables Win VDI Boot. Default.
-2. Enabled - enables Win VDI Boot.
+Options:
 
+1. **Disabled** - Default.
+2. Enabled.
+
+<!-- NO WMI -->
 
 </details>
 
-### HTTPs Boot Configuration  ###
+## HTTPs Boot Configuration  ##
 
-Configure HTTPs Boot parameters.
+![](./img/thinkcenter_https_boot_configuration.png)
 
-> <i>Only one URL can be entered at a time. The configuration will take effect after a system reboot.</i>
+Create a new boot option based on a HTTPS URL.
+
+?> Only one configuration can be entered at a time. The configuration will take effect after a system reboot.
 
 <details><summary>Input the description</summary>
 
-> <i>Press `Enter` to input a label for new created URL and it will be displayed in the boot sequence menu.</i>
+?> Press `Enter` to input a label for the newly created URL and it will be displayed in the boot sequence menu.
+
+<!-- NO WMI -->
+
 </details>
 
 <details><summary>Internet Protocol</summary>
-One of 2 possible options for IP version:
+
+Options:
 
 1.  **Ipv4** - enables IPV4. Default.
 2.  Ipv6 - enables IPV6.
 
+<!-- NO WMI -->
 
 </details>
 
 <details><summary>Boot URL</summary>
-Create a new boot option based on a HTTPS URL.
 
-> <i> Use the [TLS Auth configuration] to import the CA to
-support the HTTPs boot </i>
+?> Use the `TLS Auth configuration` to import the CA to support the HTTPs boot 
+
+<!-- NO WMI -->
 
 </details>
 
-<details><summary>Delete HTTPs Boot Option from List</summary>
+### Delete HTTPs Boot Option from List ###
 
-> <i> Select and press `Enter` to remove an EFI HTTPs boot option.</i>.
-</details>
+?> Select and press `Enter` to remove an EFI HTTPs boot option.
 
+<!-- NO WMI -->
 
-### TLS Auth Configuration ###
-
-Server CA configuration.
-
-> <i>Press `Enter` to select TLS auto configuration for HTTPS boot.</i>
+## TLS Auth Configuration ##
 
 
-### WiFi Configuration ###
+![](./img/thinkcenter_tls_auth_configuration.png)
 
 
-![](./img/thinkcenter_wifi_configuration.png)
+Server CA configuration (display only).
+
+?> Press `Enter` to select TLS auto configuration for HTTPS boot.
+
+## WiFi Configuration ##
+
+![](./img/thinkcenter_WiFi_configuration.png)
 
 <details><summary>Automatic Connection Support</summary>
+
 Automatically connect to WiFi on boot.
 
-One of 2 possible options for Automatic connection:
+Options:
 
-1. **Enabled** - enables automatic connection. Default.
-2. Disabled - enables automatic connection.
+1. **Disabled** - Default.
+2. Enabled.
+
+<!-- NO WMI -->
 
 </details>
 
-<details><summary>Current Connection</summary>
-</details>
+### Current Connection (display only) ###
 
-<details><summary>Wi-Fi Scan</summary>
+Displays the current WiFi connection.
 
-> <i>Press `Enter` to scan the available connections.</i>
-</details>
+### Wi-Fi Scan ###
 
-<details><summary>Scanned List</summary>
-List of available connections.
-</details>
+?> Press `Enter` to scan the available connections.
+
+### Scanned List (display only) ###
+
+Scanned WiFi nodes.

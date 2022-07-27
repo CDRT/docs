@@ -3,138 +3,138 @@
 ![](./img/thinkcenter_automatic_power_on.png)
 
 <details><summary>Wake on LAN</summary>
-Controls the wake up event from onboard LAN and PCI LAN.
-One of 2 possible options for Wake on LAN:
 
-1.  **Enabled** - enables Wake on LAN. Default.
+Controls the wake up event from onboard LAN and PCI LAN.
+
+Options:
+
+1.  **Enabled** - Default.
 2.  Disabled - disables Wake on LAN.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| WakeonLAN | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| WakeonLAN | Primary, Automatic, Disabled | yes |
 
 </details>
 
 <details><summary>Wake from Serial Port Ring</summary>
-Select whether to enable Wake from Serial Port Ring., and/or which Startup Sequence to use after a serial port wake event.
-One of 3 possible options for Wake from Serial Port Ring:
 
-1. **Enabled** - enables Wake from Serial Port Ring. Default.
-2. Disabled - disables Wake from Serial Port Ring.
+Select whether to enable Wake from Serial Port Ring.
 
-<!-- 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| WakefromSerialPortRing | setting_values | yes_no | amd_intel |
--->
+Options:
+
+1. **Enabled** - Default.
+2. Disabled.
+
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| WakefromSerialPortRing | Primary, Automatic, Disabled | yes |
 
 </details>
 
 
 <details><summary>Wake Up on Alarm</summary>
-Options to turn on your system on a specific day of the month, specific day of the week, or daily at a given time. A single wake up event, or series of alarm events, can also be defined.
-One of 5 possible options for Wake Up on Alarm:
 
-1.  **Disabled** - Disables Wake Up on Alarm. Default.
+Options to turn on your system on a specific day of the month, specific day of the week, or daily at a given time.
+
+A single wake up event, or series of alarm events, can also be defined.
+
+?> Selecting `User Defined` enables the `User Defined Alarm` settings.
+
+?> Values in these fields may be overwritten by the operating system.
+
+Options:
+
+1.  **Disabled** - Default.
 2.  User Defined - a series of alarm events.
 3.  Single Event
 4.  Daily Event
 5.  Weekly Event
 
-<!-- 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| WakeUponAlarm | setting_values | yes_no | amd_intel |
--->
-
-> <i> Selecting `User Defined` enables the `User Defined Alarm` settings.
->
-> Values in these fields may be overwritten by the operating system.</i>
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| WakeUponAlarm |  | yes |
 
 </details>
 
 <details><summary>Startup Sequence</summary>
+
 Select the startup sequence after a Wake Up on Alarm event.
-One of 2 possible options for startup sequence:
+
+Options:
 
 1.  **Primary** - enables primary startup sequence. Default.
 2.  Automatic - disables automatic selection of startup sequence.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| setting_name | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| StartupSequence | Primary, Automatic | yes_no |
 
 </details>
 
 ### Alarm Time (HH : MM : SS) ###
 
-Specify the time wnen the system iS to wake up.
+Specify the time when the system is to wake up.
+
+Hours / minutes / seconds format.
 
 <!-- SIMULATOR DOES NOT SUPPORT -->
 
 ### Alarm Date (MM / DD / YYYY) ###
 
-Alarm Day of Week.
+Specify the precise date in month / day / year format.
 
-<!-- SIMULATOR DOES NOT SUPPORT -->
 
-### User Defined Alarm ###
+| WMI Setting name | Values | SVP Req'd |
+|:---|:---|:---|
+| AlarmDate  |  | yes |
+
+
+<details><summary>Alarm day of week</summary>
+
+Options:
+
+1. **Sunday** - Default.
+2. Monday.
+3. Tuesday.
+4. Wednesday.
+5. Thursday.
+6. Friday.
+7. Saturday.
+
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| AlarmDayofWeek  | Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, SaturdayStatus | yes |
+
+</details>
+
+## User Defined Alarm ##
 
 ![](./img/thinkcenter_user_defined_alarm.png)
 
-Select the day(s) of the week when the system is to wake up.
+Select the day(s) of the week when the system is to wake up. Each {Weekday} (Sunday to Saturday) has its own setting.
 
-<details><summary>Sunday</summary>One of 2 possible options for waking up this day:
+<details><summary>{Weekday}</summary>
 
-1.  **Disabled** - disables wake-up. Default.
-2.  Enabled - enables wake-up.
-
-</details>
-<details><summary>Monday</summary>One of 2 possible options for waking up this day:
+Options:
 
 1.  **Disabled** - disables wake-up. Default.
 2.  Enabled - enables wake-up.
 
-</details>
-<details><summary>Tuesday</summary>One of 2 possible options for waking up this day:
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| UserDefinedAlarmFriday | Disabled, Enabled | yes |
 
-1.  **Disabled** - disables wake-up. Default.
-2.  Enabled - enables wake-up.
-
-</details>
-<details><summary>Wednesday</summary>One of 2 possible options for waking up this day:
-
-1.  **Disabled** - disables wake-up. Default.
-2.  Enabled - enables wake-up.
-
-</details>
-<details><summary>Thursday</summary>One of 2 possible options for waking up this day:
-
-1.  **Disabled** - disables wake-up. Default.
-2.  Enabled - enables wake-up.
-
-</details>
-<details><summary>Friday</summary>One of 2 possible options for waking up this day:
-
-1.  **Disabled** - disables wake-up. Default.
-2.  Enabled - enables wake-up.
-
-</details>
-<details><summary>Saturday</summary>One of 2 possible options for waking up this day:
-
-1.  **Disabled** - disables wake-up. Default.
-2.  Enabled - enables wake-up.
+?> The WMI setting name for the wake-up timer week shown here is for Friday. For the other weekdays replace `Friday` with the weekday's name.
 
 </details>
 
 <details><summary>User Defined Alarm Time (HH : MM : SS)</summary>
+
 Specify the time when the system is to wake up.
 
-<!-- SIMULATOR DOES NOT SUPPORT -->
-
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| UserDefinedAlarmTime |  | yes |
 
 </details>

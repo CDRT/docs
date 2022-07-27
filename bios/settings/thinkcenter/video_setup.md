@@ -3,42 +3,65 @@
 ![](./img/thinkcenter_video_setup.png)
 
 <details><summary>Select Active Video</summary>
+
 The primary video device for graphics output.
-One of 3 possible options for primary video device:
 
-1.  **Auto** - enables automatic selection of graphics output by the system. Default.
-2.  IGD - enables IGD (Integrated Graphics Device).
-3.  PEG - enables PEG (PCIe Graphic).
+Options:
 
-**Note**:
-- If `Auto` is seleted, the system will select a graphics output, prioritizing PEG.
-- The "IGD" option will not appear if not supported by the CPU.
-<!-- TODO: add WMI -->
+1.  **Auto** - automatic selection of graphics output by the system. Default.
+1.  IGD - Select Integrated Graphics Device.
+1.  PEG - Select PCIe Graphic.
+
+
+?> If `Auto` is selected, the system will select a graphics output, **prioritizing PEG**. <br /> 
+
+?> The `IGD` option will not appear if not supported by the CPU.
+
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| SelectActiveVideo  | IGD, [PEG], Auto | yes |
+
 </details>
 
 <details><summary>Pre-Allocated Memory Size</summary>
+
 Allocate memory to the IGD (Internal Graphics Device).
 
-One of 5 possible options, from **32MB** to 160MB, in 32MB increments.
+Options:
 
-<!-- TODO: add WMI -->
+1.  **32MB** - Default.
+1.  64MB
+1.  96MB
+1.  128MB
+1.  160MB
+
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| Pre-AllocatedMemorySize |  | yes |
+
 </details>
 
 <details><summary>Total Graphics Memory</summary>
+
 Total memory shared by all graphics devices.
-One of 3 possible options for total memory:
+
+Options:
 
 1.  **Maximum** - enables maximum memory allocation. Default.
-2.  128MB - enables 128MB of memory allocation.
-3.  256MB - enables 256MB of memory allocation.
+2.  128MB.
+3.  256MB.
 </details>
 
 <details><summary>Dual DisplayPorts</summary>
+
+Dual display ports 1 and 2.
+
 Enable support for MST (multi-stream transport), allowing daisy-chaining of graphics output devices.
-One of 2 possible options for MST:
 
-1.  **MST** - enables multi-stream transport. Default.
-2.  SST - enables single-stream transport.
+Options:
 
-<!-- TODO: add WMI -->
+1.  **MST** - Default.
+2.  SST (single-stream transport).
+
+<!-- NO WMI -->
 </details>

@@ -2,75 +2,94 @@
 
 ![](./img/thinkcenter_advanced.png)
 
-<details><summary>Intel(R) SIPP Support</summary>
-Intel(R) Stable Image Platform program aligns and stabilizes
-key Intel platform components, enabling a predictable transition
-from one technology generation to the next.
+<details><summary>Intel (R) SIPP Support</summary>
 
-One of 2 possible options for SIPP:
+Intel (R) Stable Image Platform Program aligns and stabilizes key Intel platform components, enabling a predictable transition from one technology generation to the next.
 
-1. **Enabled** - enables SIPP. Default.
+Options:
+
+1. **Enabled** - Default.
 2. Disabled - disables SIPP.
 
-<!-- TODO: WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| IntelSIPPSupport | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| IntelSIPPSupport | Disabled, Enabled | yes |
 
 </details>
 
+<details><summary>Intel (R) Thunderbolt</summary>
+
+Options:
+
+1.  **Disabled** - Default.
+2.  Enabled.
+
+<!-- NO WMI -->
+
+</details>
+
+
 <details><summary>Dust Shield Alert</summary>
+
 The user is reminded to clean the Dust Shield.
-One of 2 possible options for the Dust Shield reminder:
 
-1.  **Enabled** - enables the Dust Shield alert. Default.
-2.  Disabled - disables the Dust Shield alert.
+Options:
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| DustShieldAlert | setting_values | yes_no | amd_intel |
--->
-> <i> If the Dust Shield is not cleaned, it will lose its effectiveness and the machine may overheat.</i>
+1.  **Enabled** - Default.
+1.  Disabled - disables the Dust Shield alert.
+
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| DustShieldAlert | Disabled, Enabled | yes |
+
+!> If the Dust Shield is not cleaned, it will lose its effectiveness and the machine may overheat.
 
 </details>
 
 
 <details><summary>Intel (R) DPTF Support</summary>
-Intel(R) Dynamic Platform and Thermal Framework.
 
-One of 2 possible options for DPTF:
+Intel (R) Dynamic Platform and Thermal Framework (DPTF).
 
-1.  **Enabled** - enables DPTF. Default.
+IDPTF is a power and thermal management solution, used to resolve fan noise, overheating, and performance-related issues of the system.
+
+Options:
+
+1.  **Enabled** - Default.
 2.  Disabled - disables DPTF.
 
-<!-- TODO: WMI -->
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| IntelDPTFSupport | Disabled, Enabled | yes |
 
 </details>
 
 <details><summary>Windows Modern Standby</summary>
-<a href="https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/modern-standby">Windows Modern Standby</a> is the replacement for the legacy Sleep state.
 
-One of 2 possible options for Windows Modern Standby:
+[Windows Modern Standby](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/modern-standby) is the replacement for the legacy Sleep state.
 
-1. **Enabled** - enables Windows Modern Standby. Default.
+Options:
+
+1. **Enabled** - Default.
 2. Disabled - disables Windows Modern Standby.
 
-<!-- TODO: add WMI-->
+<!-- NO WMI-->
+
+<!-- MODEL: NOT M70s-->
 
 </details>
 
 <details><summary>BIOS Self-healing</summary>
-One of 2 possible options for BIOS Self-healing:
 
-1.  **Enabled** - enables BIOS Self-healing. Default.
-2.  Disabled - disables BIOS Self-healing.
+Allows the BIOS to automatically attempt to recover a corrupted BIOS without needing a recovery file on external media.
 
-<!--
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| BIOSSelfHealing  | setting_values | yes_no | amd_intel |
--->
+Options:
+
+1.  **Enabled** - Default.
+2.  Disabled.
+
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| BIOSSelfHealing  |  | no |
 
 </details>

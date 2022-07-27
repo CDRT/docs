@@ -3,77 +3,68 @@
 ![](./img/thinkcenter_power.png)
 
 <details><summary>After Power Loss</summary>
-Whether the system will stay on after AC
-power is removed and then restored.
 
-One of 3 possible options:
+Whether the system will stay on after AC power is removed and then restored.
+
+?> Select `Power on` if you use a power strip to turn the system on.
+
+Options:
 
 1. **Last State** - return to the previous state. Default.
 2.  Power Off - remain off.
 3.  Power On - turn on.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| AfterPowerLoss | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| AfterPowerLoss | Power Off, Power On, Last State | yes |
 
-> <i> Select "Power on" it you use a power strip to turn the system on.</i>
 
 </details>
 
 <details><summary>Enhanced Power Saving Mode</summary>
-The total power consumption is lower during power off.
-One of 2 possible options for Enhanced Power Saving Mode:
 
-1. **Disabled** - disables Enhanced Power Saving Mode. Default.
-2.  Enabled - enables Enhanced Power Saving Mode.
+When enabled,  total power consumption is lower during power off.
 
-<!-- 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| EnhancedPowerSavingMode | setting_values | yes_no | amd_intel |
--->
+?> In Enhanced Power Saving Mode, only the `Wake up on Alarm` function is supported. Other wake-up functions are not. System will not enter `Enhanced Power Saving Mode` if Intel ME is required to be active in Sx states, and host is in AC mode.
 
-**Note**: In enhanced power saving mode, only the `Wake up on Alarm` function is supported. Other wake up functions are not. System Will not enter `Enhanced Power Saving Mode` if Intel ME is required to be active in Sx states and host is in AC mode.
+Options:
+
+1. **Disabled** - Default.
+2.  Enabled.
+
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| EnhancedPowerSavingMode | Disabled, Enabled | yes |
 
 </details>
 
 <details><summary>Smart Power On</summary>
 
-When enabled, the user can use `Alt+P` to power on if a USB keyboard is plugged in tne correct USB port.
+When enabled, the user can use `Alt+P` to power on if a USB keyboard is plugged in the correct USB port.
 
-One of 2 possible options for Smart Power On:
+Options:
 
-1.  **Enabled** - enables Smart Power On. Default.
+1.  **Enabled** - Default.
 2.  Disabled - disables Smart Power On.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| SmartPowerOn | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| SmartPowerOn | Disabled, Enabled | yes |
 
 </details>
 
 ### Intelligent Cooling  ###
 
-
 <details><summary>Performance Mode</summary>
-One of 3 possible options for cooling performance:
 
-1. **Best Performance** - The system will run at best system performance with normal acoustic level. Default.
-2. Best Experience - The system will with balanced noise and better performance.
-3. Full Speed - All fans in the system will run at full speed.
+Options:
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| IntelligentCoolingPerformanceMode | setting_values | yes_no | amd_intel |
--->
+1. **Best Performance** - Best system performance with normal acoustic level. Default.
+2. Best Experience - Balanced noise and better performance.
+3. Full Speed - All fans at full speed.
+
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| IntelligentCoolingPerformanceMode | Best Performance, Best Experience, Full Speed | yes |
 
 </details>
-
-
-### Automatic Power On  ###
-

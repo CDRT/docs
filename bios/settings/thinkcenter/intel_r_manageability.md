@@ -2,61 +2,46 @@
 
 ![](./img/thinkcenter_intel_r_manageability.png)
 
-<details><summary>Intel(R) Manageability Control</summary>
-<!-- TODO: feature confirmation-->
-One of 2 possible options for Intel(R) Manageability Control:
-
-1.  **Enabled** - enables Intel(R) Manageability Control. Default.
-2.  Disabled - disables Intel(R) Manageability Control.
-
-<!-- TODO: add WMI -->
-
-> <i> WARNING: If you set Intel(R) Manageability Control to "Disabled"
->
-> 1. If system is provisioned, MEBx Will be unprovisioned
-first. <strong>When the unprovsioning prompt appears, select YES.</strong>
->
-> 2. Manageability functions will be disabled. <strong>You can
-enter ME-BX or BIOS to re-enable Intel(R) Manageability.</strong></i>.
-
-</details>
-
+ - [More information at Intel.com](https://software.intel.com/sites/manageability/AMT_Implementation_and_Reference_Guide/default.htm)
 
 <details><summary>Intel(R) Manageability Reset</summary>
-Return Intel(R) Manageability settings to
-detault configuration.
-One of 2 possible options for Intel(R) Manageability Reset:
 
-1. **Enabled** - enables Intel(R) Manageability Reset. Default.
-2. Disabled - disables Intel(R) Manageability Reset.
+Return Intel(R) Manageability settings to default configuration.
 
-> <i> WARNING: the MEBx password will also be reset. </i>.
+Options:
+
+1. **Enabled** - Default.
+2. Disabled.
+
+!> the MEBx password will also be reset.
 
 </details>
 
-<details><summary>ME Firmware Version</summary>
+### Intel(R) MEBx ###
+
+Press `Enter` to enter Intel (R) MEBx (Management Engine BIOS Extension).
+
+ - [More information at Intel.com](https://www.intel.com/content/www/us/en/support/articles/000020917/software/manageability-products.html)
+
+### ME Firmware Version (display only) ###
+
 Displays the firmware version.
 
-<!-- TODO: styles-->
+### Manageability Type (display only) ###
 
-</details>
-
-<details><summary>Manageability Type</summary>
-
-<!-- TODO: styles-->
+Displays the manageability type.
 
 </details>
 
 <details><summary>USB Provisioning</summary>
-One of 2 possible options for USB provisioning:
 
-1.  **Enabled** - enables USB provisioning. Default.
+Options:
+
+1.  **Enabled** - Default.
 2.  Disabled - disables USB provisioning.
 
-<!-- TODO: add WMI
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| USBProvisioning | setting_values | yes_no | amd_intel |
--->
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| USBProvisioning | Disabled, Enabled | yes |
 
 </details>
