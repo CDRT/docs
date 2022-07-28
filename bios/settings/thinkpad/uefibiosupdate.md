@@ -1,4 +1,5 @@
 # UEFI BIOS Update Option Settings #
+
 ![](./img/uefibiosupdate.png)
 
 <details><summary>Flash BIOS Updating by End-Users</summary>
@@ -11,8 +12,8 @@ Options:
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | BIOSUpdateByEndUsers | Disable, Enable | Yes | Both |
-</details>
 
+</details>
 
 <details><summary>Secure RollBack Prevention</summary>
 
@@ -26,7 +27,6 @@ Options:
 | SecureRollBackPrevention | Disable, Enable | No | Both |
 </details>
 
-
 <details><summary>Windows UEFI Firmware Update</summary>
 
 Options:
@@ -37,4 +37,5 @@ Options:
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | WindowsUEFIFirmwareUpdate | Disable, Enable | No | Both |
+
 </details>

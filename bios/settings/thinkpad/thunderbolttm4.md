@@ -1,4 +1,5 @@
 # Thunderbolt(TM) 4 Settings #
+
 ![](./img/thunderbolttm4.png)
 
 <details><summary>PCIe Tunneling</summary>
@@ -17,5 +18,5 @@ Options:
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | PCIeTunneling | Disable, Enable | No | Both |
-</details>
 
+</details>

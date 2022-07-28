@@ -1,4 +1,5 @@
 # USB Settings #
+
 ![](./img/usb.png)
 
 <details><summary>Always on USB</summary>
@@ -15,6 +16,7 @@ Options:
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | AlwaysOnUSB | Disable, Enable | No | Both |
+
 </details>
 
 <details><summary>Charge in Battery Mode</summary>
@@ -31,4 +33,5 @@ Options:
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | ChargeInBatteryMode | Disable, Enable | No | Both |
+
 </details>

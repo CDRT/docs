@@ -1,4 +1,4 @@
-### WiFi Network Configuration ###
+## WiFi Network Configuration ##
 
 ![](./img/wifinetworkconfig.png)
 

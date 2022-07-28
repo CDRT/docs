@@ -1,4 +1,5 @@
 # ThinkShield Secure Wipe Settings #
+
 ![](./img/thinkshieldsecurewipe.png)
 
 <details><summary>ThinkShield secure wipe in AppMenu</summary>
@@ -11,4 +12,5 @@ Options:
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | ThinkShieldsecurewipe | Disable, Enable | No | Both |
+
 </details>

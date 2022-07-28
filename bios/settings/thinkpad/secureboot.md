@@ -1,5 +1,7 @@
 # Secure Boot Settings #
-### General ###
+
+## General ##
+
 ![](./img/secureboot.png)
 
 <details><summary>Secure Boot</summary>
@@ -65,11 +67,12 @@ The option requires additional confirmation.
 </details>
 
 
-### Key Management ###
+## Key Management ##
+
 ![](./img/securebootkeysmanagement.png)
 
-
 <details><summary>Platform Key (PK)</summary>
+
 The platform key establishes a trust relationship between the platform owner and the platform firmware. The platform owner enrolls the public half of the key into the platform firmware. The platform owner can later use the private half of the key to change platform ownership or to enroll a Key Exchange Key.
 
 Standard Windows commands are supported. For more information please visit the official Microsoft web page: [Windows Secure Boot Key Creation and Management Guidance](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-secure-boot-key-creation-and-management-guidance)

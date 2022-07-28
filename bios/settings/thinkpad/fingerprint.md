@@ -1,4 +1,5 @@
 # Fingerprint Settings #
+
 ![](./img/fingerprint.png)
 
 <details><summary>Predesktop Authentication</summary>

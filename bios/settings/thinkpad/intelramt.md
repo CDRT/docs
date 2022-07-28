@@ -1,4 +1,5 @@
 # Intel(R) AMT Settings #
+
 ![](./img/intelramt.png)
 
 <details><summary>Intel (R) AMT Control</summary>
@@ -14,6 +15,7 @@ Options:
 | WMI Setting name | Values | SVP Req'd | AMD/Intel | 
 |:---|:---|:---|:---|
 | AMTControl | Disable, Enable, PermanentlyDisable | No | Intel |
+
 </details>
 
 <details><summary>USB Key Provisioning</summary>
@@ -29,6 +31,7 @@ Options:
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | USBKeyProvisioning | Disable, Enable | No | Intel |
+
 </details>
 
 <details><summary>CIRA Timeout</summary>
@@ -53,6 +56,5 @@ Options:
 4.	PC ANSI
 
 !> Must match the Intel AMT remote console.
-
 
 </details>

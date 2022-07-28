@@ -1,4 +1,5 @@
 # Display Settings #
+
 ![](./img/display.png)
 
 <details><summary>Boot Display Device</summary>

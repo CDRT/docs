@@ -1,14 +1,17 @@
 # Restart #
+
 ![](./img/restart.png)
 
 <details><summary>Exit Saving Changes</summary>
+
 Exit Setup and save your changes.<br>
 The option requires additional confirmation.
 
-</details>
+</details>-
 
 
 <details><summary>Exit Discarding Changes</summary>
+
 Exit Setup without saving changes. The following changes WILL NOT be discarded and must be reset within ThinkPad Setup:
 
 1.	Date & Time

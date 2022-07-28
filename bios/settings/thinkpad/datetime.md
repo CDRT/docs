@@ -1,7 +1,7 @@
 # Date\Time #
 ![](./img/datetime.png)
 
-<details><summary>System Date</summary>
+### System Date ###
 Shows the currently set system date and can be changed. < Tab >, < Shift-Tab >, or < Enter > selects field.
 Possible values:
 
@@ -11,10 +11,7 @@ Possible values:
     b. DD – Date: 1 ~ 31 <br>
     c. YYYY – Year: 1980 ~ 2099 <br>
 
-
-</details>
-
-<details><summary>System Time</summary>
+### System Time ###
 System Time	Shows the currently set system time and can be changed. <Tab>, <Shift-Tab>, or <Enter> selects field.
 Possible values:
 
@@ -23,6 +20,3 @@ Possible values:
     a. HH - Hour:  00 ~ 23<br>
     b. MM - Minute:  00 ~ 59<br>
     c. SS - Second:  00 ~ 59<br>
-
-
-</details>

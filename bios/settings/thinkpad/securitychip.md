@@ -1,6 +1,6 @@
 # Security Chip Settings #
 
-### General ###
+## General ##
 
 ![](./img/securitychip.png)
 
@@ -78,7 +78,7 @@ Options:
 </details>
 
 
-### Security Reporting Options ###
+## Security Reporting Options ##
 
 ![](./img/securityreportingoptions.png)
 

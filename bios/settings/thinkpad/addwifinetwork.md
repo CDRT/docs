@@ -1,10 +1,11 @@
-### Add Wi-Fi Network ###
+# Add Wi-Fi Network #
 
 ![](./img/addwifinetwork.png)
 
 ?> All the settings in this group are unavailable via WMI.
 
 ### SSID ###
+
 Field for entering SSID value.
 
 

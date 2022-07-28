@@ -1,4 +1,5 @@
 # I/O Port Access Settings #
+
 ![](./img/ioportaccess.png)
 
 <details><summary>Ethernet LAN</summary>
@@ -15,8 +16,8 @@ Options:
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | EthernetLANAccess | Disable, Enable | No | Both |
-</details>
 
+</details>
 
 <details><summary>Wireless LAN</summary>
 
@@ -30,8 +31,8 @@ Options:
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | WirelessLANAccess | Disable, Enable | No | Both |
-</details>
 
+</details>
 
 <details><summary>Wireless WAN</summary>
 
@@ -45,8 +46,8 @@ Options:
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | WirelessWANAccess | Disable, Enable | No | Both |
-</details>
 
+</details>
 
 <details><summary>Bluetooth</summary>
 
@@ -60,8 +61,8 @@ Options:
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | BluetoothAccess | Disable, Enable | No | Both |
-</details>
 
+</details>
 
 <details><summary>USB Port</summary>
 
@@ -77,8 +78,8 @@ Options:
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | USBPortAccess | Disable, Enable | No | Both |
-</details>
 
+</details>
 
 <details><summary>Memory Card Slot</summary>
 
@@ -92,8 +93,8 @@ Options:
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | MemoryCardSlotAccess | Disable, Enable | No | Both |
-</details>
 
+</details>
 
 <details><summary>Smart Card Slot</summary>
 
@@ -104,12 +105,11 @@ Options:
 1.	**On** - Default.
 2.	Off.
 
-
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | SmartCardSlotAccess | Disable, Enable | No | Both |
-</details>
 
+</details>
 
 <details><summary>RFID</summary>
 
@@ -125,8 +125,8 @@ Options:
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | SmartCardSlotAccess | Disable, Enable | No | Both |
-</details>
 
+</details>
 
 <details><summary>Integrated Camera</summary>
 
@@ -140,8 +140,8 @@ Options:
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | IntegratedCameraAccess | Disable, Enable | No | Both |
-</details>
 
+</details>
 
 <details><summary>Integrated Audio</summary>
 
@@ -157,8 +157,8 @@ Options:
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | IntegratedAudioAccess | Disable, Enable | No | Both |
-</details>
 
+</details>
 
 <details><summary>Microphone</summary>
 
@@ -174,8 +174,8 @@ Options:
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | MicrophoneAccess | Disable, Enable | No | Both |
-</details>
 
+</details>
 
 <details><summary>Fingerprint Reader</summary>
 
@@ -189,8 +189,8 @@ Options:
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | FingerprintReaderAccess | Disable, Enable | No | Both |
-</details>
 
+</details>
 
 <details><summary>Thunderbolt (TM) 4</summary>
 
@@ -206,8 +206,8 @@ Options:
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | ThunderboltAccess | Disable, Enable | No | Intel |
-</details>
 
+</details>
 
 <details><summary>NFC Device</summary>
 
@@ -221,4 +221,5 @@ Options:
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | NfcAccess | Disable, Enable | No | Both |
+
 </details>

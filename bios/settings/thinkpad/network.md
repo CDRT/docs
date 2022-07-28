@@ -1,6 +1,6 @@
 # Network Settings #
 
-### General ###
+## General ##
 
 ![](./img/network.png)
 
@@ -155,7 +155,7 @@ Options:<br>
 | MACAddressPassThrough  | Disable, Enable, Second | No | Both |
 </details>
 
-### WiFi Configuration -> MAC Selection ###
+## WiFi Configuration -> MAC Selection ##
 
 ![](./img/wifi.png)
 

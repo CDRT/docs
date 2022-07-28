@@ -1,5 +1,7 @@
 # Power Settings #
-### General ###
+
+## General ##
+
 ![](./img/power.png)
 
 <details><summary>Intel (R) SpeedStep Technology</summary>
@@ -135,7 +137,8 @@ Options:
 </details>
 
 
-### Automatic Power On ###
+## Automatic Power On ##
+
 ![](./img/autopoweron.png)
 
 <details><summary>Wake Up on Alarm</summary>
@@ -217,7 +220,8 @@ Possible values:
 | AlarmDayofWeek | Sunday, Monday, Tuesday, <br>Wednesday, Thursday, Friday, Saturday | No | Both |
 </details>
 
-### Automatic Power On - User Defined Alarm ###
+## Automatic Power On - User Defined Alarm ##
+
 ![](./img/autopoweronuserdefined.png)
 
 <details><summary>Sunday</summary>

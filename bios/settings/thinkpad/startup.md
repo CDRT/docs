@@ -1,5 +1,7 @@
 # Startup #
-### General ###
+
+## General ##
+
 ![](./img/startup.png)
 
 <details><summary>Network Boot</summary>
@@ -80,7 +82,8 @@ Options:
 </details>
 
 
-### Boot ###
+## Boot ##
+
 ![](./img/boot.png)
 
 <details><summary>Boot Priority Order</summary>

@@ -1,6 +1,9 @@
 # DASH Configuration Settings #
 
-DASH provides support for the redirection of KVM (Keyboard, Video and Mouse) and text consoles, as well as USB and media, and supports the management of software updates, UEFI BIOS, batteries, NIC, MAC and IP addresses, as well as DNS and DHCP configuration. DASH specifications also address operating system status, opaque data management.
+DASH provides support for the redirection of KVM (Keyboard, Video and Mouse) and text consoles, as well as USB and media, and supports the management of software updates, UEFI BIOS, batteries, NIC, MAC and IP addresses, as well as DNS and DHCP configuration.
+
+DASH specifications also address operating system status, and opaque data management.
+
 More information about DASH: [Lenovo and AMD DASH Management](dash/dash_top.md).
 
 <details><summary>DASH Support</summary>
@@ -32,9 +35,9 @@ Options:
 </details>
 
 
-<details><summary>Realtek LAN Controller</summary>
+### Realtek LAN Controller (display only) ###
 
-View-only information about Realtek Ethernet Controller Configuration.
+Realtek Ethernet Controller Configuration.
 
 **Driver Information**
 1. Driver name
