@@ -4,11 +4,17 @@
 
  - [More information at Lenovo Support](https://support.lenovo.com/uu/en/solutions/ht511536-smart-features)
 
-<details><summary>User Presence Sensing</summary>summary>
+<details><summary>User Presence Sensing</summary>
+
+Whether to enable functions that rely using the IR camera to recognize the user's presence and if the user is looking at the screen.
+
+!> Before using this feature, ensure you create your Face ID with the IR camera.
+
+ - [More information at Lenovo Support](https://support.lenovo.com/uu/en/solutions/ht511536-smart-features)
 
 Options:
 
-1. *On* - Default.
+1. **On** - Default.
 2. Off
 
 <!-- NO WMI -->
@@ -24,7 +30,7 @@ Whether to allow Windows® service to prioritize the settings of Lenovo Vantage 
 
 Options:
 
-1. *On* - Default.
+1. **On** - Default.
 2. Off. Enforce BIOS settings. 
 
 <!-- NO WMI -->
@@ -37,7 +43,7 @@ Whether to unlock or wake up the computer automatically when you are in front of
 
 Options:
 
-1. *On* - Default.
+1. **On** - Default.
 2. Off.
 
 <!-- NO WMI -->
@@ -68,7 +74,7 @@ Whether to dim the display and lock the computer when user presence is not detec
 
 Options:
 
-1. *On* - Default.
+1. **On** - Default.
 2. Off.
 
 <!-- NO WMI -->
@@ -107,7 +113,7 @@ Options:
 
 Options:
 
-1. *On* - Default.
+1. **On** - Default.
 2. Off.
 
 <!-- NO WMI -->
