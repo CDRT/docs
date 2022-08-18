@@ -70,19 +70,19 @@
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| EEPROM| $2 (also called E2PROM) stands for electrically erasable programmable read-only memory and is a type of non-volatile memory used in computers, integrated in microcontrollers for smart cards and remote keyless systems, and other electronic devices to store relatively small amounts of data by allowing individual bytes to be erased and reprogrammed. <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| EEPROM| $2 Electrically Erasable Programmable Read-Only Memory <br /> Non-volatile memory storing relatively small amounts of data by allowing individual bytes to be erased and reprogrammed. <br /> <br /> *More information:* <br /> <!-- TODO --> <br /> *Relevant settings:* <br /> - [MAC Address Pass Through (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/network) <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| EFI| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| EFI| $2  <br /> Used in the context of HTTPS Boot<br /> *More information:* <br /> <br /> *Relevant settings:* <br /> - [Delete HTTPs Boot Option from List (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/network_setup?id=delete-https-boot-option-from-list) <br />| $3 | $4 UEFI | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| EIST| $2 Enhanced Intel SpeedStep® Technology. More info: https://www.intel.com/content/www/us/en/support/articles/000007073/processors.html <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| EIST| $2 Enhanced Intel SpeedStep® Technology <br /> <br /> Dynamically adjusts processor voltage and core frequency, to decrease average power consumption and heat production. <br /> <br />  *More information:* <br /> -  - ["Overview of Enhanced Intel SpeedStep® Technology for Intel® Processors"at Intel.com] - (https://www.intel.com/content/www/us/en/support/articles/000007073/processors.html) <br /> *Relevant settings:* <br /> - [EIST Support (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/cpu_setup)<br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| EPP| $2 Enhanced Parallel Port <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| EPP| $2 Enhanced Parallel Port <br /> <br /> A high-speed bi-directional mode for non-printer peripherals. <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
