@@ -369,10 +369,8 @@
 |---|---|---|---|---|
 | WMI| $2 Windows Management Interface <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
 
-| Acronym | Term | AKA | See also | asdf |
-|---|---|---|---|---|
+
 
 <!-- | Certificate Mode| $2 (see Password(less?) Mode) use a x509 certificate instead of SVP and SMP. Devin Mcdermott prepared this description but so far it has not been published: BIOS certificate-based features.docx <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
 
-| Acronym | Term | AKA | See also | asdf |
-|---|---|---|---|---| -->
+ -->
