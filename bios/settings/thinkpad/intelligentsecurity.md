@@ -23,7 +23,7 @@ Options:
 
 <details><summary>Allow Lenovo Vantage to Override Setting Below</summary>
 
-Whether to allow Windows® service to prioritize the settings of Lenovo Vantage if Lenovo Vantage is installed.
+Whether to allow Windows® service to prioritize the settings of Lenovo Vantage, if Lenovo Vantage is installed.
 
  - [More information at Lenovo Support](https://support.lenovo.com/us/en/solutions/ht505081-lenovo-vantage-using-your-pc-just-got-easier)
  - [More information at Lenovo.com](https://www.lenovo.com/us/en/software/vantage)
@@ -53,14 +53,15 @@ Options:
 <details><summary>DISTANCE SENSITIVITY ADJUSTING</summary>
 
 !> Depends on Windows® Hello. To use it, turn on face recognition in Windows® settings.
+- [More information at Microsoft.com](https://www.support.microsoft.com/en-us/windows/learn-about-windows-hello-and-set-it-up-dae28983-8242-bb2a-d3d1-87c9d265a5f0)
 
 Options:
 
 1. Near
-1. *Middle* - Default.
+1. **Middle** - Default.
 1. Far
 
-- [More information at Microsoft.com](https://www.support.microsoft.com/en-us/windows/learn-about-windows-hello-and-set-it-up-dae28983-8242-bb2a-d3d1-87c9d265a5f0)
+
 
 <!-- NO WMI -->
 
@@ -88,7 +89,7 @@ Options:
 Options:
 
 1. Near
-1. *Middle* - Default.
+1. **Middle** - Default.
 1. Far
 
 <!-- NO WMI -->
@@ -101,7 +102,7 @@ Options:
 
 Options:
 
-1. *Fast* - Default.
+1. **Fast** - Default.
 1. Medium
 1. Slow
 
