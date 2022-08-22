@@ -82,23 +82,23 @@
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| EPP| $2 Enhanced Parallel Port <br /> <br /> A high-speed bi-directional mode for non-printer peripherals. <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| EPP| $2 Enhanced Parallel Port <br /> <br /> A high-speed bi-directional mode for non-printer peripherals. <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /> - [Parallel Port Mode (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/parallel_port_setup.md)<br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| Flash BIOS| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| Flash BIOS| $2  <br /> <br /> *More information:* <br /> - ["How to update BIOS" at Intel.com](https://www.intel.com/content/www/us/en/gaming/resources/how-to-update-bios.html) <br /> *Relevant settings:* <br /> - ["How to update system BIOS - Windows" at Lenovo.com](https://support.lenovo.com/uu/en/solutions/ht500008-how-to-update-system-bios-windows) <br /> - [Flash BIOS Updating by End-Users (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/uefibiosupdate.md) <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| Form factor| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| | $2  Form factor <br /> <br /> The size and spatial design of the computer and its individual components. Broadly similar or the same across a model line. <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| GPU| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| GPU | $2  Graphics Processing Unit <br /> <br /> *More information:* <br />  - ["What Is a GPU?" at Intel.com](https://www.intel.com/content/www/us/en/products/docs/processors/what-is-a-gpu.html) <br /> *Relevant settings:* <br /> - [PCIe Tunneling (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/thunderbolttm4.md) <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| HDD| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| HDD | $2 Hard Disk Drive <br /> <br /> *More information:* <br />  - ["Laptop Hard Drives, SSD & Storage" at Lenovo.com](https://www.lenovo.com/us/en/faqs/laptop-faqs/hard-drives-ssd-guide/) <br /> *Relevant settings:* <br /> - [First Boot Device (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/startup.md) <br /> - [Boot Priority Order (THinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/startup.md) <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
