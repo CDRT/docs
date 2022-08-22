@@ -6,7 +6,7 @@
 
 <details><summary>User Presence Sensing</summary>
 
-Whether to enable functions that rely using the IR camera to recognize the user's presence and if the user is looking at the screen.
+Whether to enable functions that rely on using the IR camera to recognize the user's presence and if the user is looking at the screen.
 
 !> Before using this feature, ensure you create your Face ID with the IR camera.
 
