@@ -22,7 +22,7 @@
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| Audit mode| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 Custom mode | $5 |
+| Audit mode| $2  Enables programmatic discovery of signature list combinations that successfully authenticate installed EFI images without the risk of rendering a system unbootable. Chosen signature lists configurations can be tested to ensure the system will continue to boot after the system is transitioned out of Audit Mode.<br /> <br /> *More information:* <br /> [UEFI Specification Version 2.9 (March 2021) at UEFI.org](https://uefi.org/sites/default/files/resources/UEFI_Spec_2_9_2021_03_18.pdf) <br /><br /> *Relevant settings:* <br /> - [Enter Audit Mode (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/secure_boot?id=enter-audit-mode) <br />| $3 | $4 Custom mode | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
