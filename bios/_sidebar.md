@@ -7,3 +7,4 @@
 - [Deployment Guide](bios/bios_guide.md)
 - [Settings Dictionary](bios/settings/dictionary.md)
 - [System Deployment Boot Mode](bios/sdbm.md)
+- [Glossary of Terms](bios/glossary.md)
