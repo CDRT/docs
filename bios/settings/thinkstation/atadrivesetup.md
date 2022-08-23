@@ -74,7 +74,19 @@ Depending on how the hard disk image was installed, changing the setting may pre
 
 ### Intel(R) Rapid Storage Technology ###
 
+
+![](./img/intelrapidstoragetechnology.png)
+
 !> Only appears when the item `Configure SATA as` is set to `Intel(R) RST with Intel(R) Optane`
+
+For each disk listed, shows information including:
+ - Port
+ - Model Number
+ - Serial Number
+ - Size
+ - Status
+ - Controller Type
+ - Controller Interface
 
 <details><summary>Hard Disk Pre-delay</summary>
 
