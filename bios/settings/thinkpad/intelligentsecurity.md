@@ -17,7 +17,9 @@ Options:
 1. **On** - Default.
 2. Off
 
-<!-- NO WMI -->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| UserPresenceSensing | Disable,Enable |  |
 
 </details>
 
@@ -33,7 +35,9 @@ Options:
 1. **On** - Default.
 2. Off. Enforce BIOS settings. 
 
-<!-- NO WMI -->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| ZeroTouchAllowOverride | Disable,Enable |  |
 
 </details>
 
@@ -46,7 +50,9 @@ Options:
 1. **On** - Default.
 2. Off.
 
-<!-- NO WMI -->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| ZeroTouchLogin | Disable,Enable |  |
 
 </details>
 
@@ -61,9 +67,9 @@ Options:
 1. **Middle** - Default.
 1. Far
 
-
-
-<!-- NO WMI -->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| ZeroTouchLoginDistanceAdjusting | Near,Middle,Far |  |
 
 </details>
 
@@ -78,7 +84,9 @@ Options:
 1. **On** - Default.
 2. Off.
 
-<!-- NO WMI -->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| ZeroTouchLock | Disable,Enable |  |
 
 </details>
 
@@ -92,7 +100,9 @@ Options:
 1. **Middle** - Default.
 1. Far
 
-<!-- NO WMI -->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| ZeroTouchLockDistanceAdjusting | Near,Middle,Far |  |
 
 </details>
 
@@ -106,7 +116,9 @@ Options:
 1. Medium
 1. Slow
 
-<!-- NO WMI -->
+| WMI Setting name | Values | SVP or SMP Req'd |
+|:---|:---|:---|
+| ZeroTouchLockTimer | Fast,Medium,Slow |  |
 
 </details>
 
