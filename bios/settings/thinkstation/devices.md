@@ -3,7 +3,7 @@
 
 <details><summary>Card Reader</summary>
 
-Whether Card Reader will be available in OS.
+Whether card reader will be available in OS.
 
 Options:
 
@@ -13,6 +13,7 @@ Options:
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | CardReader |  | yes | Both |
+
 </details>
 
 <details><summary>Bluetooth</summary>
@@ -27,4 +28,5 @@ Options:
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | Bluetooth |  | yes | Both |
+
 </details>

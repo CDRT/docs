@@ -1,9 +1,14 @@
 # USB Setup Settings #
+
 ![](./img/usbsetup.png)
+
+?> The number of USB ports may vary depending on model.
 
 <details><summary>USB Port Access</summary>
 
-Whether to enable or disable USB devices and all other fields for USB settings.
+Whether to enable USB devices.
+
+!> When disabled, all other USB settings are removed, except for `USB Enumeration Delay`.
 
 Options:
 
@@ -13,8 +18,8 @@ Options:
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | USBPortAccess |  | yes | Both |
-</details>
 
+</details>
 
 <details><summary>USB Enumeration Delay</summary>
 
@@ -28,8 +33,8 @@ Whether extra delay is added when host performs USB enumeration.
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | USBEnumerationDelay |  | yes | Both |
-</details>
 
+</details>
 
 <details><summary>Front USB Ports</summary>
 
@@ -43,6 +48,7 @@ Options:
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | FrontUSBPorts |  | yes | Both |
+
 </details>
 
 
@@ -77,7 +83,6 @@ Options:
 |:---|:---|:---|:---|
 | RearUSBPorts |  | yes | Both |
 </details>
-
 
 <details><summary>USB Port {Number}</summary>
 

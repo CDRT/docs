@@ -38,10 +38,12 @@ Whether to enable each SATA Drive numbered {Number}:
 
 <details><summary>SATA Drive * Hot-Plug Support</summary>
 
+Whether the hot-plug port is enabled.
+
 Options:
 
-1. Enabled – the hot-plug port is enabled. 
-2. **Disabled** – the hot-plug port is disabled. Default.
+1. Enabled
+2. **Disabled** - Default.
 
 ?> Unavailable if `SATA Controller` is set to `Disabled`.
 
@@ -58,11 +60,13 @@ Options:
 
 SATA configuration mode.
 
+?> The ANCI and RAID options require additional confirmation.
+
 Options:
 
-1. **ANCI** – Default. Requires additional confirmation.<br> 
+1. **ANCI** – Default.<br> 
 2. Intel(R) RST with Intel(R) Optane
-3. RAID – Requires additional confirmation.<br> 
+3. RAID<br> 
 
 !> If you change the SATA mode to `ANCI` you may not boot the system due to the failure of Intel(R) RST with Intel(R) Optane (RAID) function.<br />Do not disable SATA drives in RAID mode. Otherwise you may not boot the system due to the failure of RAID function. <br /> Device driver support is required for `ANCI` or `RAID` or Intel(R) RST with Intel(R) Optane. 
 Depending on how the hard disk image was installed, changing the setting may prevent the system from booting.

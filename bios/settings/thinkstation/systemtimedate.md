@@ -2,7 +2,11 @@
 ![](./img/systemtimedate.png)
 
 <details><summary>System Time</summary>
-Fields to set Time. Use Arrow keys to switch between Time fields.<br>
+
+Set the system time. 
+
+Use arrow keys to switch between time fields.
+
 Options:
 
 1.	**Currently set date** 
@@ -11,11 +15,14 @@ Options:
     b. MM - Minute:  00 ~ 59<br>
     c. SS - Second:  00 ~ 59<br>
 
-
 </details>
 
 <details><summary>System Date</summary>
-Fields to set Date. Use Arrow keys to switch between Date fields.<br>
+
+Set the system date. 
+
+Use arrow keys to switch between date fields.
+
 Options:
 
 1.	**Currently set date**
@@ -24,6 +31,4 @@ Options:
     b. DD – Date: 1 ~ 31 <br>
     c. YYYY – Year: 1980 ~ 2099 <br>
 
-
 </details>
-
