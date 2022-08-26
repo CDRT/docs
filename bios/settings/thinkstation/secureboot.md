@@ -6,7 +6,9 @@
 
 <details><summary>System Mode</summary>
 
-Shows the current system mode. View only.<br>
+Shows the current system mode.
+
+View only.
 
 Possible values:
 

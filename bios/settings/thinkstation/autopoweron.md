@@ -44,10 +44,10 @@ Whether to turn on your system
 
 Options:
 
-1. **Disabled** - the system will not turn on automatically. Default. 
-2. Single Event - turn on one-time on the specified day and time. 
-3. Daily Event - turn on every day at the specified time.
-4. Weekly Event - turn on every week on the specified day and time.
+1. **Disabled** - Default. 
+2. Single Event - one time, on the specified day and time. 
+3. Daily Event - every day, at the specified time.
+4. Weekly Event - every week, on the specified day and time.
 5. User Defined - enables `User Defined Alarm` group of settings. 
 
 !> Values in these fields may be overwritten by the operating system. 
@@ -134,8 +134,8 @@ Settings per {Weekday}.
 
 Whether the system will turn on automatically on this day of the week.
 
-1. **Off** - the system will not turn on automatically on this day of the week. Default.
-2. On – the system will turn on automatically on this day of the week.
+1. **Off** - Default.
+2. On.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
    |:---|:---|:---|:---|

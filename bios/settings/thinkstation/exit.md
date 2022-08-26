@@ -1,8 +1,11 @@
-# Exit Settings#
+# Exit Settings #
+
 ![](./img/exit.png)
 
 <details><summary>Save Changes and Exit</summary>
+
 Exit system Setup after saving the changes. 
+
 The action will require additional confirmation.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
@@ -12,7 +15,9 @@ The action will require additional confirmation.
 
 
 <details><summary>Discard Changes and Exit</summary>
+
 Exit system Setup without saving any changes.
+
 The action will require additional confirmation.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
@@ -22,7 +27,9 @@ The action will require additional confirmation.
 
 
 <details><summary>Load Optimal Defaults</summary>
+
 Restore/Load Default values for all the setup options.
+
 The action will require additional confirmation.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |

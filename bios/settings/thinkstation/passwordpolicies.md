@@ -6,7 +6,7 @@
 
 Options:
 
-1. **Disabled** – passwords can have length from 1 to 128 characters, no requirements for the minimum length. Default. 
+1. **Disabled** – passwords can have 1 to 128 characters. Default. 
 2. 4 Characters
 3. 5 Characters
 4. 6 Characters
@@ -17,7 +17,7 @@ Options:
 9. 11 Characters
 10. 12 Characters
 
-?> If a minimum is set, then Supervisor Password (SVP), System Management Password (SMP), Power-On Password (PoP), and Hard Disk Password (HDP) lengths must be equal to or longer than that number.
+?> A minimum length set here applies to <br /> - Supervisor Password (SVP) <br /> - System Management Password (SMP) <br /> - Power-On Password (PoP) <br /> - Hard Disk Password (HDP).
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -27,7 +27,7 @@ Options:
 
 <details><summary>Set Strong Password</summary>
 
-?> A strong password is defined as: upper case, lower case, and numeric keys are all required. Special characters are optional. The minimum length is 8.
+?> A strong password is defined as: <br /> - Upper case, lower case, and numeric characters are all required <br /> -  Special characters are optional <br /> - The minimum length is 8
 
 Options:
 
@@ -41,6 +41,8 @@ Options:
 
 
 <details><summary>Keyboard Layout</summary>
+
+Keyboard layout for password.
 
 Options:
 
@@ -91,12 +93,14 @@ Options:
 
 <details><summary>BIOS Password At Boot Device List</summary>
 
-Whether, when `Yes` is selected and Administrator Password is set, then user will be prompted for a password when F12 is pressed during POST (Power On Self Test). 
+Whether user is prompted for a password when F12 is pressed during POST (Power On Self Test). 
+
+!> Password prompt requires that Administrator Password is set.
 
 Options:
 
 1. Yes.
-2. **No** – no password will be required when F12 pressed during POST. Default.
+2. **No** – Default.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -107,7 +111,7 @@ Options:
 
 <details><summary>Require SVP when Flashing</summary>
 
-Whether the supervisor password will be required when updating the system software.
+Whether the Supervisor Password (SVP) is required when updating the system software.
 
 Options:
 
@@ -161,7 +165,7 @@ Options:
 1. **Enabled** – Default.
 2. Disabled.
 
-?> If `Enabled`, then after 3 attempts with an incorrect password, the system will show a 0199 error.  <br /> •By pressing F2 the error can be bypassed, and user can work with the system. But 0199 error will be shown until someone enters bios with correct SVP to clear the error condition by pressing F10 or saving the settings after this has been verified. <br /> •If a user wants to change bios settings and uses the wrong password, the system will deny access, and after the third wrong password, all other attempts will fail. No further changes can be made then, and user needs to reboot.
+?> If `Enabled`, then after 3 attempts with an incorrect password, the system will show a 0199 error. <br /> - User can  bypass the error by pressing F2.  <br /> -  0199 error is still shown. <br /> -  Clear the error condition by pressing F10, or saving the settings after this has been verified, by entering bios with correct SVP. <br /> - If a user attempts to change BIOS settings and uses the wrong password, the system will deny access. <br /> - After a third failed attempt, all other attempts will fail. No further changes can be made, and user needs to reboot.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|

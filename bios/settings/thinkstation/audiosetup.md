@@ -1,7 +1,11 @@
 # Audio Setup Settings #
+
 ![](./img/audiosetup.png)
 
 <details><summary>Onboard Audio Controller</summary>
+
+Enable or disable onboard audio controller.
+
 Options:
 
 1. **Enabled**. Default. 
@@ -12,8 +16,8 @@ Options:
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | OnboardAudioController |  | yes | Both |
-</details>
 
+</details>
 
 <details><summary>Internal Speaker</summary>
 
@@ -29,4 +33,5 @@ Options:
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | InternalSpeaker |  | yes | Both |
+
 </details>

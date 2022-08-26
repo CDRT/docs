@@ -3,9 +3,11 @@
 
 <details><summary>Select Active Video</summary>
 
+Select the primary video device for graphics output.
+
 Options:
 
-1. **Auto** – Default. If selected, then system will prioritize video devices as following sequence:<br>
+1. **Auto** – Default. Prioritizes video devices as follows:<br>
     a.	PEG<br>
     b.	IGD<br>
 2. IGD – Internal Graphics Device will be used.
@@ -17,7 +19,6 @@ Options:
 |:---|:---|:---|:---|
 | SelectActiveVideo |  | yes | Both |
 </details>
-
 
 <details><summary>Pre-Allocated Memory Size</summary>
 
@@ -33,7 +34,6 @@ Options:
 |:---|:---|:---|:---|
 | Pre-AllocatedMemorySize |  | yes | Both |
 </details>
-
 
 <details><summary>Total Graphics Memory</summary>
 

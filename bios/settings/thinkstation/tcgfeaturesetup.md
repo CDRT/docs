@@ -4,7 +4,9 @@
 
 <details><summary>TCG Security Device State</summary>
 
-Shows TCG (Trusted Computing Group) Security Device State. View only. <br>
+Shows TCG (Trusted Computing Group) Security Device State.
+
+View only.
 
 Possible values: 
 
@@ -24,7 +26,9 @@ Select the type of TCG Security Device:
 1. Firmware TPM 
 2. **Discrete TPM** – Default.
 
-!> Selecting a different option will require additional confirmation. <br /> Before changing the TCG Security Device, all TPM related applications must be disabled, otherwise you may not be able to access your data.
+?> Selecting a different option requires additional confirmation.
+
+!> Before changing the TCG Security Device, all TPM related applications must be disabled, otherwise you may not be able to access your data.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|

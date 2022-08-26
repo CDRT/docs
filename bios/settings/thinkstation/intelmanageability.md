@@ -1,4 +1,5 @@
 # Intel(R) Manageability Settings #
+
 ![](./img/intelmanageability.png)
 
 <details><summary>Intel(R) Manageability</summary>
@@ -101,8 +102,8 @@ Options:
 
 Options:
 
-1. Enabled – USB provisioning function is allowed.
-2. **Disabled** – USB provisioning function is blocked. Default.
+1. Enabled.
+2. **Disabled** - Default.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|

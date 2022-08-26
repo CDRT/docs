@@ -1,20 +1,21 @@
 # Hard Disk Password Settings #
-### General ###
-![](./img/harddiskpass.png)
 
+### General ###
+
+![](./img/harddiskpass.png)
 
 <details><summary> {DriveType} {Number} Password</summary>
 
 Set a Hard Disk Password (HDP) to prevent unauthorized users from accessing the data on the Hard Disk.
 
-?> In addition to the User password and optional Master Password, can be used to recover the disk if the User Password is lost.
+?> In addition to the User password and optional Master Password, the HDP can be used to recover the disk if the User Password is lost.
 
 One setting for each drive's password:
 
  - {DriveType} - M.2, PCIe, or SATA
  - {Number} - one of a number of the same type of drive.
 
-For each drive it is possible to define a separate password, or leave a drive without a password. <br>
+For each drive it is possible to define a separate password, or leave a drive without a password.
 
 Options:
 
@@ -25,9 +26,15 @@ Additional choice of the password type:
 1. **Single Password** - Default.
 2. Dual Password (User+Admin).
 
-?> When a single HDP is set, the user must enter the user password to access files and applications on the storage drive. <br> The admin HDP is set and used by a system administrator. It enables the administrator to access any storage drive in a system or any computer connected in the same network. The administrator can also assign a user HDP for each computer in the network. The user of the computer can change the user HDP as desired, but only the administrator can remove the user HDP. 
+?> When a single HDP is set, the user must enter the user password to access files and applications on the storage drive.
 
-While enabling the following parameters are available:  <!-- TBD which parameters are requested during adding\editing the password.  -->
+?> The admin HDP is set and used by a system administrator. It enables the administrator to access any storage drive in a system or any computer connected in the same network.
+
+?> The administrator can also assign a user HDP for each computer in the network. The user of the computer can change the user HDP as desired, but only the administrator can remove the user HDP. 
+
+<!-- TODO: confirm parameters -->
+
+While enabling the following parameters are available:
 1. `Enter New Password`
 2. `Confirm New Password`
 3. Show Password – `On` \ `Off` statuses
@@ -42,27 +49,35 @@ While enabling the following parameters are available:  <!-- TBD which parameter
 |  |  |  | Both |
 </details>
 
-
 <details><summary>Require HDP on System Boot</summary>
+
+Whether HDP is required when the Hard Disk is in lock status, and system starts from one of the states:
+- full off
+- hibernate
+- restart
+
+?> When `no` is selected, HDP is still required when the hard disk is attached to a different system.
 
 Options:
 
-1. **Auto** – HDP will be required if the Hard Disk is in lock status when the system starts from the full off, hibernate or restart state. Default.
-2. No – HDP will not be required. However, HDP will be required when the hard disk is attached to a different system.
+1. **Auto** – HDP required. Default.
+2. No – HDP will not be required.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | RequireHDPonSystemBoot |  | yes | Both |
 </details>
 
-
 <details><summary>Block SID Authentication</summary>
+
+Whether TCG (Trusted Computing Group) storage device blocks attempts to authenticate the SID (Security Identifier) authority until a subsequent device power cycle occurs.
 
 Options:
 
-1. **Enabled** – TCG (Trusted Computing Group) storage device will block attempts to authenticate the SID (Security Identifier) authority until a subsequent device power cycle occurs. Default. 
-2. Disabled – Allow SID authentication in TCG storage device at the next boot only, not all subsequent boots.
+1. **Enabled** – Default. 
+2. Disabled.
 
+!> When `Disabled`, system allows SID authentication in TCG storage device at the next boot only, but not subsequent boots.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -71,6 +86,7 @@ Options:
 
 
 ### Security Erase HDD Data ###
+
 ![](./img/securityerasehdd.png)
 
 <details><summary>Erase {DriveType} {N} Data</summary>
@@ -80,7 +96,7 @@ Erase data per individual drive.
 - {DriveType} stands for the drive type.<br>
  - {N} stands for the order number of a drive.<br>
 
-!> The action requires additional confirmation, because all hard drive data will be erased and the hard disk password will be deleted. 
+!> All hard drive data will be erased, and the hard disk password will be deleted. Requires additional confirmation.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|

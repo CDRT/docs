@@ -1,4 +1,5 @@
 # Startup #
+
 ![](./img/startup.png)
 
 <details><summary>First Boot Device</summary>
@@ -60,7 +61,7 @@ Options:
 
  Whether to record the last successful startup state to reduce the POST time at the next startup.
 
-!> We recommended turning off “Fast Boot” if you often use CD/DVD or network to load your operating system.
+!> We recommend turning off “Fast Boot” if you often use CD/DVD or network to load your operating system.
 
 Options:
 

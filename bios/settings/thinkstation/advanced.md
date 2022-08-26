@@ -1,4 +1,5 @@
 # Advanced #
+
 ![](./img/advanced.png)
 
 <details><summary>Intel(R) SIPP Support</summary>
@@ -9,8 +10,6 @@ Options:
 
 1. **Enabled** – Default.
 2. Disabled.
-
- 
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|

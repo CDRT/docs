@@ -6,6 +6,8 @@
 
 <details><summary>Onboard Ethernet Controller</summary>
 
+Whether to enable the Onboard Ethernet Controller.
+
 Options:
 
 1. **Enabled** – Default. 
@@ -35,7 +37,9 @@ Options:
 
 <details><summary>Wireless LAN PXE boot</summary>
 
-Whether to load Wireless LAN (Local Area Network) UNDI (Universal Network Driver Interface) Driver, to support wireless LAN PXE (Pre-boot Execution Environment) boot or HTTPs boot.
+Whether to support wireless LAN PXE (Pre-boot Execution Environment) boot or HTTPs boot.
+
+?> This works by loading the Wireless LAN (Local Area Network) UNDI (Universal Network Driver Interface) Driver.
 
 1. Enabled.
 2. **Disabled** – Default.
@@ -99,12 +103,11 @@ Options:
 
 </details>
 
-
 <details><summary>Lenovo Cloud Services</summary>
 
-?> Setting is available only if `Secure Boot` is `Enabled`.
+?> Only available if `Secure Boot` is `Enabled`.
 
-Whether to boot up the system with `Lenovo Cloud` selected through boot menu, so that BIOS boots to Lenovo Cloud server directly, which provides various cloud services.
+Whether to boot system with `Lenovo Cloud` selected through boot menu, so that BIOS boots to Lenovo Cloud server directly, which provides various cloud services.
 
 Options:
 
@@ -117,8 +120,6 @@ Options:
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  | yes | Both |
-
-<!-- NO WMI -->
 
 </details>
 
@@ -141,19 +142,22 @@ Options:
 
 
 ### HTTPs Boot Configuration ###
+
 ![](./img/httpsbootconfig.png) 
 
 <details><summary>Input the description</summary>
 
-Press `Enter` to input a label for new created URL and it will be displayed in the boot sequence menu.
+Input a label for new created URL, press `Enter`, and it will be displayed in the boot sequence menu.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
 </details>
 
-
 <details><summary>Internet Protocol</summary>
+
+Select Internet Protocol to use for this HTTPs Boot option.
+
 Options:
 
 1. **Ipv4** – Default. 
@@ -164,20 +168,21 @@ Options:
 |  |  | yes | Both |
 </details>
 
-
 <details><summary>Boot URL</summary>
-A new Boot Option will be created according to this Boot URL. <br>
-HTTPs support only. (e.g., https://webserver/boot.efi) <br>
 
-Please use the `Tls Auth Configuration` to import the CA (Certificate Authority) to support the HTTPs boot.
+A new Boot Option will be created according to this Boot URL.
+
+Accepts HTTPs URLs only.
+
+?> Use `Tls Auth Configuration` to import the CA (Certificate Authority) to support the HTTPs boot.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
 </details>
 
-
 <details><summary>Delete HTTPs Boot Option from List</summary>
+
 The list of HTTPs Boot options. <br>
 
 Select and press `Enter` to remove an EFI HTTPs boot option.
@@ -187,11 +192,8 @@ Select and press `Enter` to remove an EFI HTTPs boot option.
 |  |  |  | Both |
 </details>
 
+### Tls Auth Configuration ###
 
-
-
-### Tls Auth Configuration ### 
-<!-- TBD if Need to add image  -->
 Visible only if `HTTPs Boot` has `Enabled` status.<br>
 
 Press `Enter` to configure Server CA (Certificate Authority) for HTTPs Boot. 
@@ -201,11 +203,12 @@ Press `Enter` to configure Server CA (Certificate Authority) for HTTPs Boot.
 |  |  |  | Both |
 
 ### Wi-Fi Configuration ###
+
 ![](./img/wificonfig.png)
 
 <details><summary>Automatic Connection Support</summary>
 
-Whether to enable or disable automatic Wifi connection on every boot:
+Whether to enable or disable automatic Wifi connection on every boot.
 
 1. Enabled 
 2. **Disabled** - Default. 

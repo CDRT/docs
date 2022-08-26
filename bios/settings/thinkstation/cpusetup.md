@@ -1,8 +1,11 @@
 # CPU Setup Settings #
+
 ![](./img/cpusetup.png)
 
 <details><summary>Intel(R) Speed Shift Technology</summary>
-Intel(R) Speed Shift Technology is an energy efficient method of frequency control by the hardware rather than relying on OS control.<br>
+
+Intel(R) Speed Shift Technology is an energy efficient method of frequency control by the hardware rather than relying on OS control.
+
 Options:
 
 1. **Enabled** – Default. 
@@ -16,14 +19,14 @@ Options:
 
 <details><summary>Intel(R) Hyper-Threading Technology</summary>
 
-Intel(R) Hyper-Threading Technology allows multiple logical processors within the same processor core share execution resources and cache hierarchy between logical processors.<br>
+Intel(R) Hyper-Threading Technology allows multiple logical processors, within the same processor core, to share execution resources and cache hierarchy between logical processors.<br>
 
 Options:
 
 1. **Enabled** – Default. 
-2. Disabled – Intel(R) Hyper-Threading Technology is turned off. 
+2. Disabled. 
 
-?> If `TxT` is `Enabled`, then this item will be enabled and not available for disabling. 
+?> If `TxT` is set to `Enabled`, then this item will always be `Enabled`. 
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -33,10 +36,12 @@ Options:
 
 <details><summary>Core Multi-Processing</summary>
 
+How many cores are available to the OS.
+
 Options:
 
-1. **Enabled** – All CPU cores are available to the OS. Default. 
-2. Disabled – Only one core will be available to the OS.
+1. **Enabled** – All CPU cores. Default. 
+2. Disabled – Only one core.
 
 ?> If `TxT` is set to `Enabled`, then this item will always be `Enabled`.
 
@@ -103,7 +108,7 @@ Additional information is available here: [Intel(R) TXT Overview](https://www.in
 
 <details><summary>IOMMU</summary>
 
-?> Intel Input\Output Memory Management Unit (IOMMU) is a hardware component that performs address translation from I/O device virtual addresses to physical addresses. This hardware-assisted I/O address translation improves the system performance within a virtual environment.
+?> Intel Input/Output Memory Management Unit (IOMMU) is a hardware component that performs address translation from I/O device virtual addresses to physical addresses. This hardware-assisted I/O address translation improves the system performance within a virtual environment.
 
 Options:
 
@@ -117,6 +122,7 @@ Options:
 
 
 <details><summary>C1E Support</summary>
+
 C1 is a state where the processor is not executing instructions, but can return to an executing state immediately.<br>
 
 Enhanced C1 state (C1E) provides lower power consumption when the computer is idle.  
@@ -156,7 +162,7 @@ Options:
 Options:
 
 1. **Enabled** –  Default. 
-2. Disabled - Turbo Mode is turned off. 
+2. Disabled. 
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -166,8 +172,12 @@ Options:
 
 ### CPU ID ###
 
-Displays the Processor ID. View only.
+Displays the Processor ID.
+
+View only.
 
 ### Microcode Revision ( MM/DD/YYYY ) ###
 
-Displays the CPU Microcode Revision date. View only.
+Displays the CPU Microcode Revision date.
+
+View only.

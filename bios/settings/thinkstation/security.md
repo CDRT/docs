@@ -2,15 +2,22 @@
 ![](./img/security.png)
 
 <details><summary>Supervisor Password</summary>
-The supervisor password (SVP) protects the system information stored in UEFI BIOS. When entering the UEFI BIOS menu, enter the correct supervisor password in the window prompted. You also can press Enter to
-skip the password prompt. However, you cannot change most of the system configuration options in UEFI
-BIOS.
 
-**The supervisor password can be set only through the UEFI BIOS menu**. Once it is in place, then it can be modified Windows Management Instrumentation (WMI) with the Lenovo client-management interface.
+The supervisor password (SVP) protects the system information stored in UEFI BIOS.
 
-If you have set both the supervisor password and power-on password, you can use the supervisor password to access your computer when you turn it on. The supervisor password overrides the power-on password. 
+!> When entering the UEFI BIOS menu, enter the correct supervisor password in the window prompted. You also can press Enter to skip the password prompt. However, you cannot change most of the system configuration options in UEFI BIOS.
 
-View only. Shows the current password state. Possible values:
+!> **The supervisor password can be set only through the UEFI BIOS menu**. Once it is in place, then it can be modified Windows Management Instrumentation (WMI) with the Lenovo client-management interface.
+
+If you have set both the supervisor password and power-on password, you can use the supervisor password to access your computer when you turn it on.
+
+!> The supervisor password overrides the power-on password. 
+
+View only.
+
+Shows the current password state.
+
+Possible values:
 
 1.  Not Installed 
 2. Installed
@@ -22,9 +29,14 @@ View only. Shows the current password state. Possible values:
 
 
 <details><summary>Power-On Password</summary>
+
 Power-On Password prevents unauthorized users from booting your computer.
 
-View only. Shows the current password state. Possible values:
+View only.
+
+Shows the current password state.
+
+Possible values:
 
 1. Not Installed 
 2. Installed
@@ -36,11 +48,17 @@ View only. Shows the current password state. Possible values:
 
 
 <details><summary>System Management Password</summary>
-The system management password (SMP) can also protect the system information stored in UEFI BIOS like a supervisor password, but it has lower authority by default.
 
-The system management password can be set through the UEFI BIOS menu or through Windows Management Instrumentation (WMI) with the Lenovo client-management interface. You can enable the system management password to have the same authority as the supervisor password to control security-related features.
+The system management password (SMP) protects the system information stored in UEFI BIOS like a supervisor password, but it has lower authority by default.
 
-View only. Shows the current password state. Possible values:
+?> The system management password can be set through the UEFI BIOS menu or through Windows Management Instrumentation (WMI) with the Lenovo client-management interface. You can enable the system management password to have the same authority as the supervisor password to control security-related features.
+
+View only.
+
+Shows the current password state.
+
+Possible values:
+
 1. Not Installed 
 2. Installed
 
@@ -51,11 +69,12 @@ View only. Shows the current password state. Possible values:
 
 
 <details><summary>Set Supervisor Password</summary>
+
 Set, change or delete the Supervisor Password (SVP).<br>
 
 ?> To delete Supervisor Password, enter blank fields for each new password line item.
 
-While enabling the following parameters are available:
+Parameters:
 1. [ Enter New Password ]
 2. [ Confirm New Password ]
 3. < Actions >:<br>
@@ -73,7 +92,9 @@ Set, change or delete the Power-On Password.
 
 ?> To delete Power-On Password, enter blank fields for each new password line item.
 
-While enabling the following parameters are available TBD:
+<!-- TODO: confirm parameters -->
+
+Parameters:
 1. [ Enter New Password ]
 2. [ Confirm New Password ]
 3. < Actions >:<br>
@@ -92,7 +113,9 @@ Set, change or delete the System Management Password (SMP).
 
 ?> To delete System Management Password, enter blank fields for each new password line item.
 
-While enabling the following parameters are available TBD:
+<!-- TODO: confirm parameters -->
+
+Parameters:
 1. [ Enter New Password ]
 2. [ Confirm New Password ]
 3. < Actions >:<br>
@@ -168,13 +191,13 @@ Options:
 
 Settings for Absolute Persistence Module.
 
-?> Absolute(c) is a service designed to help track devices and provide recovery services in the event a device is lost or stolen. <br /> Once installed, the Absolute agent communicates with the Absolute Monitoring Center and programmed intervals to provide the tracking service.<br> By installing the agent and activating the service, you consent to the transmission of information between your device and the Absolute Monitoring Center.<br> For customers who have purchased the Absolute service, the firmware Persistence Module checks for the presence and health of Absolute on boot, and restores the functionality in case of agent removal or tampering. <br /> Absolute and Persistence are registered trademarks of Absolute Software Corporation.
+?> Absolute(c) is a service designed to help track devices and provide recovery services in the event a device is lost or stolen. Once installed, the Absolute agent communicates with the Absolute Monitoring Center and programmed intervals to provide the tracking service. By installing the agent and activating the service, you consent to the transmission of information between your device and the Absolute Monitoring Center. For customers who have purchased the Absolute service, the firmware Persistence Module checks for the presence and health of Absolute on boot, and restores the functionality in case of agent removal or tampering. Absolute and Persistence are registered trademarks of Absolute Software Corporation.
 
 ![](./img/computrace.png)
 
 <details><summary>Absolute Persistence Version</summary>
 
-Shows Absolute Persistence Version. View only. 
+View only. 
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|

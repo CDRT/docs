@@ -1,13 +1,17 @@
 # Intel(R) Thunderbolt Settings #
+
 ![](./img/intelthunderbolt.png)
 
 <details><summary>Intel Thunderbolt Technology</summary>
+
+?> Cable standard combining data, video, and power.
+
 Options:
 
 1. Enabled – Intel(R) Thunderbolt technology is enabled.
 2. **Disabled** – Default. 
 
-More information is available on official Intel websites: [Thunderbolt Technology](https://www.intel.com/content/www/us/en/architecture-and-technology/thunderbolt/overview.html), [Thunderbolt Technology for Developers](https://www.intel.com/content/www/us/en/architecture-and-technology/thunderbolt/thunderbolt-technology-developer.html), [Thunderbolt Solution Briefs](https://www.thunderbolttechnology.net/tech).
+More information at Intel.com and Intel websites: [Thunderbolt Technology](https://www.intel.com/content/www/us/en/architecture-and-technology/thunderbolt/overview.html), [Thunderbolt Technology for Developers](https://www.intel.com/content/www/us/en/architecture-and-technology/thunderbolt/thunderbolt-technology-developer.html), [Thunderbolt Solution Briefs](https://www.thunderbolttechnology.net/tech).
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -16,6 +20,8 @@ More information is available on official Intel websites: [Thunderbolt Technolog
 
 
 <details><summary>Security Level</summary>
+
+Whether to require user confirmation of connections, and for which devices.
 
 Options:
 
@@ -31,6 +37,7 @@ Options:
 
 
 <details><summary>Wake From Thunderbolt Devices</summary>
+
 Options:
 
 1. **Enabled** – Default. 
