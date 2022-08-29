@@ -17,7 +17,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| WakeonLAN |  | yes | Both |
+| WakeonLAN | Enabled,Disabled | yes | Both |
 
 </details>
 
@@ -54,7 +54,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| WakeUponAlarm |  | yes | Both |
+| WakeUponAlarm | Single Event,Daily Event,Weekly Event,Disabled,User Defined | yes | Both |
 </details>
 
 
@@ -121,9 +121,8 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| AlarmDayofWeek |  | yes | Both |
+| AlarmDayofWeek | Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday | yes | Both |
 </details>
-
 
 ### User Defined Alarm ###
 ![](./img/userdefinedalarm.png)
@@ -139,7 +138,7 @@ Whether the system will turn on automatically on this day of the week.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
    |:---|:---|:---|:---|
-| UserDefinedAlarmSunday  |   | yes | Both |
+| UserDefinedAlarmSunday  | Disabled,Enabled | yes | Both |
 
 ?> The WMI setting name shown here is for Sunday. For other week days, change `Sunday` to the desired day of the week.
 

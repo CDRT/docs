@@ -15,7 +15,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SerialPort1Address |  | yes | Both |
+| SerialPort1Address | Disabled,3F8/IRQ4,2F8/IRQ3,3E8/IRQ4,2E8/IRQ3 | yes | Both |
 
 </details>
 

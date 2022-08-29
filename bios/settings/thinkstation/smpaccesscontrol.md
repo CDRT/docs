@@ -13,7 +13,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| AccessSecuritySettings |  | yes | Both |
+| AccessSecuritySettings | Disabled,Enabled | yes | Both |
 </details>
 
 
@@ -28,5 +28,5 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| RemoteSetSMP |  | yes | Both |
+| RemoteSetSMP | Disabled,Enabled | yes | Both |
 </details>

@@ -69,7 +69,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| PXEIPV4NetworkStack |  | yes | Both |
+| PXEIPV4NetworkStack | Disabled,Enabled | yes | Both |
 </details>
 
 
@@ -84,7 +84,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| PXEIPV6NetworkStack |  | yes | Both |
+| PXEIPV6NetworkStack | Disabled,Enabled | yes | Both |
 </details>
 
 

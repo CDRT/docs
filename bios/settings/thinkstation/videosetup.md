@@ -17,7 +17,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SelectActiveVideo |  | yes | Both |
+| SelectActiveVideo | IGD,PEG,Auto | yes | Both |
 </details>
 
 <details><summary>Pre-Allocated Memory Size</summary>

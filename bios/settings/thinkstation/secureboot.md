@@ -34,7 +34,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SecureBoot |  | yes | Both |
+| SecureBoot | Disabled,Enabled | yes | Both |
 </details>
 
 

@@ -65,7 +65,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| RequireHDPonSystemBoot |  | yes | Both |
+| RequireHDPonSystemBoot | No,Auto | yes | Both |
 </details>
 
 <details><summary>Block SID Authentication</summary>

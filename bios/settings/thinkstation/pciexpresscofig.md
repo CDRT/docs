@@ -12,7 +12,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| ASPMSupport |  | yes | Both |
+| ASPMSupport | Disabled,Auto | yes | Both |
 </details>
 
 <details><summary>PCIe 16x Slot Speed</summary>

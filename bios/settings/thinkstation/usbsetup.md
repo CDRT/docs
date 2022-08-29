@@ -17,7 +17,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| USBPortAccess |  | yes | Both |
+| USBPortAccess | Disabled,Enabled | yes | Both |
 
 </details>
 
@@ -47,7 +47,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| FrontUSBPorts |  | yes | Both |
+| FrontUSBPorts | Disabled,Enabled | yes | Both |
 
 </details>
 
@@ -81,7 +81,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| RearUSBPorts |  | yes | Both |
+| RearUSBPorts | Disabled,Enabled | yes | Both |
 </details>
 
 <details><summary>USB Port {Number}</summary>

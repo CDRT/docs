@@ -53,7 +53,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| BootUpNumLockStatus |  | yes | Both |
+| BootUpNumLockStatus | Off,On | yes | Both |
 </details>
 
 
