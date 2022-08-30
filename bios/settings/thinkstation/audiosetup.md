@@ -15,7 +15,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| OnboardAudioController |  | yes | Both |
+| OnboardAudioController | Disabled,Enabled | yes | Intel |
 
 </details>
 
@@ -32,6 +32,6 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| InternalSpeaker |  | yes | Both |
+| InternalSpeaker | Disabled,Enabled | yes | Intel |
 
 </details>

@@ -32,7 +32,7 @@ Whether extra delay is added when host performs USB enumeration.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| USBEnumerationDelay |  | yes | Both |
+| USBEnumerationDelay | Disabled,Enabled | yes | Both |
 
 </details>
 
@@ -63,7 +63,7 @@ For each Front USB Port:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| USBPort1 |  | yes | Both |
+| USBPort1 | Disabled,Enabled | yes | Intel |
 
 ?> The WMI setting name is for USB port 1. For other USB ports change the number to that of the desired front USB port.
 

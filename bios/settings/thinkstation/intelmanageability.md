@@ -16,7 +16,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| ManageabilityControl |  | yes | Intel |
+| ManageabilityControl | Disabled,Enabled | yes | Intel |
 </details>
 
 
@@ -45,7 +45,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| CtrlPEnterMEBx |  | yes | Intel |
+| CtrlPEnterMEBx | Disabled,Enabled | yes | Intel |
 </details>
 
 
@@ -92,7 +92,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SOLConfiguration |  | yes | Intel |
+| SOLConfiguration | VT100,VT100-8bit,PC-ANSI-7bit,PC-ANSI,VT100+,VT-UTF8,ASCII | yes | Intel |
 
 </details>
 
@@ -107,5 +107,5 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| USBProvisioning |  | yes | Intel |
+| USBProvisioning | Disabled,Enabled | yes | Intel |
 </details>

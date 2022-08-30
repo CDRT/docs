@@ -135,7 +135,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| POPChangeablebyUser |  | yes | Both |
+| POPChangeablebyUser | No,Yes | yes | Both |
 </details>
 
 
@@ -169,5 +169,5 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| PasswordCountExceededError |  | yes | Both |
+| PasswordCountExceededError | Disabled,Enabled | yes | Both |
 </details>

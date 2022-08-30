@@ -27,7 +27,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| PCIe16xSlotSpeed |  | yes | Both |
+| PCIe16xSlotSpeed | Auto,Gen1,Gen2,Gen3,Gen4 | yes | Intel |
 </details>
 
 
@@ -42,7 +42,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| PCIe4xSlotSpeed |  | yes | Both |
+| PCIe4xSlotSpeed | Auto,Gen1,Gen2,Gen3 | yes | Intel |
 </details>
 
 
@@ -57,7 +57,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| PCIe1xSlot1Speed |  | yes | Both |
+| PCIe1xSlotSpeed | Auto,Gen1,Gen2,Gen3 | yes | Intel |
 </details>
 
 

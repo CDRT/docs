@@ -81,7 +81,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| BlockSIDAuthentication |  | yes | Both |
+| BlockSIDAuthentication | Enabled,Disabled | yes | Intel |
 </details>
 
 

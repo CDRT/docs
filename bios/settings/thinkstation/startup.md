@@ -18,7 +18,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| FirstBootDevice |  | yes | Both |
+| FirstBootDevice | Boot Order,NetWork,SATA Drive,M.2 Drive,PCIe Drive,USB HDD,USB CDROM | yes | Intel |
 </details>
 
 
@@ -70,7 +70,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| FastBoot |  | yes | Both |
+| FastBoot | Disabled,Enabled | yes | Intel |
 </details>
 
 
@@ -87,7 +87,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| OptionKeysDisplay |  | yes | Both |
+| OptionKeysDisplay | Disabled,Enabled | yes | Both |
 </details>
 
 
@@ -104,5 +104,5 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| OptionKeysDisplayStyle |  | yes | Both |
+| OptionKeysDisplayStyle | Normal/Legacy | yes | Both |
 </details>

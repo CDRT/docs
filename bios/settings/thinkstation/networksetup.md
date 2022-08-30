@@ -17,7 +17,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| OnboardEthernetController |  | yes | Both |
+| OnboardEthernetController | Disabled,Enabled | yes | Both |
 </details>
 
 <details><summary>Wireless LAN Access</summary>

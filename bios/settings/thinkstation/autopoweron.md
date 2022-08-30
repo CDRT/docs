@@ -31,7 +31,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| WakefromSerialPortRing |  | yes | Both |
+| WakefromSerialPortRing | Enabled,Disabled | yes | Both |
 </details>
 
 

@@ -15,7 +15,7 @@ More information at Intel.com and Intel websites: [Thunderbolt Technology](https
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| IntelThunderboltTechnology |  | yes | Intel |
+| IntelThunderboltTechnology | Disabled,Enabled | yes | Intel |
 </details>
 
 

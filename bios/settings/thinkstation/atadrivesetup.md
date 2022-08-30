@@ -49,7 +49,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SATADrivexHotPlugSupport |  | yes | Both |
+| SATADrivexHotPlugSupport | Disabled,Enabled | yes | Both |
 
 !> `x` is the port number.
 

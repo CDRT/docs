@@ -18,7 +18,7 @@ For every item on the list system shows:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  |  | Both |
+| BootPriorityOrder |  |  | Intel |
 </details>
 
 <details><summary>Excluded from boot priority order</summary>
@@ -27,7 +27,4 @@ Shows the items which are excluded from boot priority order.
 
 Can be empty, if there are no excluded items.
 
-| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-|  |  |  | Both |
 </details>

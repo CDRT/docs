@@ -46,7 +46,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SmartPowerOn |  | yes | Both |
+| SmartPowerOn | Disabled,Enabled | yes | Intel |
 
 </details>
 
@@ -67,5 +67,5 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| IntelligentCoolingPerformanceMode |  | yes | Both |
+| IntelligentCoolingPerformanceMode | Best Performance,Best Experience,Full Speed | yes | Intel |
 </details>

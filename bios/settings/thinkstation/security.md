@@ -183,7 +183,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| securewipe |  | yes | Both |
+| securewipe | Disabled,Enabled | yes | Intel |
 </details>
 
 
