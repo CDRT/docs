@@ -56,6 +56,7 @@ Options:
 
 </details>
 
+<div style='margin-left:30px'>
 <details><summary>DISTANCE SENSITIVITY ADJUSTING</summary>
 
 !> Depends on Windows® Hello. To use it, turn on face recognition in Windows® settings.
@@ -72,7 +73,7 @@ Options:
 | ZeroTouchLoginDistanceAdjusting | Near,Middle,Far |  |
 
 </details>
-
+</div>
 <details><summary>Zero Touch Lock</summary>
 
 Whether to dim the display and lock the computer when user presence is not detected.
@@ -89,7 +90,7 @@ Options:
 | ZeroTouchLock | Disable,Enable |  |
 
 </details>
-
+<div style='margin-left:30px'>
 <details><summary>SENSITIVITY ADJUSTING</summary>
 
 ?> Accuracy varies by body size, posture, and frequency of movement.
@@ -121,14 +122,4 @@ Options:
 | ZeroTouchLockTimer | Fast,Medium,Slow |  |
 
 </details>
-
-<details><summary>Override Windows ® Screen time-out settings</summary>
-
-Options:
-
-1. **On** - Default.
-2. Off.
-
-<!-- NO WMI -->
-
-</details>
+</div>
