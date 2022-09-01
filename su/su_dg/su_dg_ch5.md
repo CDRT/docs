@@ -42,8 +42,8 @@ Required. Specifies the action to take with the updates found. Only specify one 
 
 Possible values are:
 
-   - **DOWNLOAD:** Updates for the system are automatically downloaded only; updates can be filtered using -packagetypes parameter only
-   - **LIST:** User is notified with a list of available updates to choose from; updates can be filtered using -packagetypes parameter only
+   - **DOWNLOAD:** Updates for the system are automatically downloaded only; updates can be filtered using -includerebootpackages or -packagetypes parameters
+   - **LIST:** User is notified with a list of available updates to choose from; updates can be filtered using -includerebootpackages or -packagetypes parameter
    - **INSTALL:** Updates are downloaded and installed; updates can be filtered using -includerebootpackages and -packagetypes parameters
 
 **-scheduler**
@@ -52,7 +52,7 @@ Optional. Specifies that System Update is running from a scheduled task so the p
 
 **-includerebootpackages**
 
-Optional. Specifies by number the reboot types to include in the set of updates found to be downloaded and/or installed. Possible values are 1, 3, 4, 5. The values of 0 and 2 have no effect. Multiple reboot types can be specified by separating with a comma.
+Optional. Specifies by number the reboot types to include in the set of updates found. Possible values are 1, 3, 4, 5. The values of 0 and 2 have no effect. Multiple reboot types can be specified by separating with a comma.
 
    **1** : Forced reboot (update itself initiates the reboot)
    
