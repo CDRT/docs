@@ -64,7 +64,7 @@ As the last steps, IT admins should check Task Scheduler on the same client PC.
 
 4.Check **Last Run Time** and **Last Run Result** to find more details and possible cause.
 
-## Conclusion
+#### Conclusion
 
 In Dock Manager, scheduled firmware checking task failing to run is normally caused by improperly deployed group policy settings.​
 
