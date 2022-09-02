@@ -10,4 +10,5 @@
 - [FAQ ](dm/dock_manager_faq.md)
 
 ---
-- [Dock Manager User Guide![ ](../img/link.png)](https://download.lenovo.com/consumer/options/dockmanager_user_manual.pdf)
+
+- [Dock Manager User Guide![Link](../img/link.png)](https://download.lenovo.com/consumer/options/dockmanager_user_manual.pdf)
