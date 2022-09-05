@@ -9,7 +9,7 @@ One of 2 possible states:
 
 **Note**. Bottom Cover Tamper Detection will not take effect unless Supervisor Password is enabled.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | BottomCoverTamperDetected | Disable, Enable | No | Both |
 </details>

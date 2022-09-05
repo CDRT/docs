@@ -7,7 +7,7 @@ One of 2 possible states:
 1.	**On** - authentication by a fingerprint is enabled at predesktop. Default.
 2.	Off - authentication by a fingerprint is disabled at predesktop.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | FingerprintPredesktopAuthentication | Disable, Enable | No | Both |
 </details>
@@ -19,7 +19,7 @@ One of 2 possible options:
 1.	**Normal** - Power-On Password or Supervisor Password must be entered to boot a system when no fingerprint is authenticated. Default.
 2.	High - Supervisor password must be entered to boot a system when no fingerprint is authenticated. Power-On Password is not accepted.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | FingerprintSecurityMode | Normal, High | No | Both |
 </details>
@@ -35,7 +35,7 @@ One of 2 possible states:
     **Note**. Administrators are authenticated by a Supervisor Password.
 
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | FingerprintPasswordAuthentication | Disable, Enable | No | Both |
 </details>

@@ -10,7 +10,7 @@ One of 3 possible options:
 
     **Attention**. If ‘Permanently Disabled’ is selected, then it will be impossible to turn back on Intel (R) AMT Control. 
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel | 
+| WMI Setting name | Values | Locked by SVP | AMD/Intel | 
 |:---|:---|:---|:---|
 | AMTControl | Disable, Enable, PermanentlyDisable | No | Intel |
 </details>
@@ -23,7 +23,7 @@ One of 2 possible states:
 2.	On - enables USB key provisioning. 
  
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | USBKeyProvisioning | Disable, Enable | No | Intel |
 </details>

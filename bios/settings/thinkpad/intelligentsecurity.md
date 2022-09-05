@@ -17,9 +17,9 @@ Options:
 1. **On** - Default.
 2. Off
 
-| WMI Setting name | Values | SVP or SMP Req'd |
-|:---|:---|:---|
-| UserPresenceSensing | Disable,Enable |  |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
+|:---|:---|:---|:---|
+| UserPresenceSensing | Disable,Enable |  |  |
 
 </details>
 
@@ -35,9 +35,9 @@ Options:
 1. **On** - Default.
 2. Off. Enforce BIOS settings. 
 
-| WMI Setting name | Values | SVP or SMP Req'd |
-|:---|:---|:---|
-| ZeroTouchAllowOverride | Disable,Enable |  |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
+|:---|:---|:---|:---|
+| ZeroTouchAllowOverride | Disable,Enable |  |  |
 
 </details>
 
@@ -50,9 +50,9 @@ Options:
 1. **On** - Default.
 2. Off.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
-|:---|:---|:---|
-| ZeroTouchLogin | Disable,Enable |  |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
+|:---|:---|:---|:---|
+| ZeroTouchLogin | Disable,Enable |  |  |
 
 </details>
 
@@ -68,9 +68,9 @@ Options:
 1. **Middle** - Default.
 1. Far
 
-| WMI Setting name | Values | SVP or SMP Req'd |
-|:---|:---|:---|
-| ZeroTouchLoginDistanceAdjusting | Near,Middle,Far |  |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
+|:---|:---|:---|:---|
+| ZeroTouchLoginDistanceAdjusting | Near,Middle,Far |  |  |
 
 </details>
 </div>
@@ -85,9 +85,9 @@ Options:
 1. **On** - Default.
 2. Off.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
-|:---|:---|:---|
-| ZeroTouchLock | Disable,Enable |  |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
+|:---|:---|:---|:---|
+| ZeroTouchLock | Disable,Enable |  |  |
 
 </details>
 <div style='margin-left:30px'>
@@ -101,9 +101,9 @@ Options:
 1. **Middle** - Default.
 1. Far
 
-| WMI Setting name | Values | SVP or SMP Req'd |
-|:---|:---|:---|
-| ZeroTouchLockDistanceAdjusting | Near,Middle,Far |  |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
+|:---|:---|:---|:---|
+| ZeroTouchLockDistanceAdjusting | Near,Middle,Far |  |  |
 
 </details>
 
@@ -117,9 +117,9 @@ Options:
 1. Medium
 1. Slow
 
-| WMI Setting name | Values | SVP or SMP Req'd |
-|:---|:---|:---|
-| ZeroTouchLockTimer | Fast,Medium,Slow |  |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
+|:---|:---|:---|:---|
+| ZeroTouchLockTimer | Fast,Medium,Slow |  |  |
 
 </details>
 </div>

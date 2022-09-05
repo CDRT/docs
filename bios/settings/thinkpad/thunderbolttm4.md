@@ -11,7 +11,7 @@ One of 2 possible states for PCIe (peripheral component interconnect express) Tu
 	
 The USB functions of USB4 based devices that are Thunderbolt 4 certified may still work. 
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | PCIeTunneling | Disable, Enable | No | Both |
 </details>

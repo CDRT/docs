@@ -10,7 +10,7 @@ One of 2 possible states:
 
 **Note**. The setting is removed in the recent versions.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | EthernetLANAccess | Disable, Enable | No | Both |
 </details>
@@ -23,7 +23,7 @@ One of 2 possible states:
 1.	**On** – enables use of Wireless LAN device. Default. 
 2.	Off - disables use of Wireless LAN device and keeps it disabled in the OS environment.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | WirelessLANAccess | Disable, Enable | No | Both |
 </details>
@@ -36,7 +36,7 @@ One of 2 possible states:
 1.	**On** – enables use of Wireless WAN device. Default. 
 2.	Off - disables use of Wireless WAN device and keeps it disabled in the OS environment.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | WirelessWANAccess | Disable, Enable | No | Both |
 </details>
@@ -50,7 +50,7 @@ One of 2 possible states:
 2.	Off - disables use of Bluetooth device. 
 
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | BluetoothAccess | Disable, Enable | No | Both |
 </details>
@@ -66,7 +66,7 @@ One of 2 possible states:
 1.	**On** – enables use of USB ports. Default.
 2.	Off – disables use of USB ports and keeps them disabled in the OS environment.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | USBPortAccess | Disable, Enable | No | Both |
 </details>
@@ -79,7 +79,7 @@ One of 2 possible states:
 1.	**On** – enables use of Memory Card slot. Default.
 2.	Off – disables use of Memory Card slot and keeps it disabled in the OS environment. 
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | MemoryCardSlotAccess | Disable, Enable | No | Both |
 </details>
@@ -93,7 +93,7 @@ One of 2 possible states:
 2.	Off – disables use of Smart Card slot and keeps it disabled in the OS environment.
 
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | SmartCardSlotAccess | Disable, Enable | No | Both |
 </details>
@@ -108,7 +108,7 @@ One of 2 possible states:
 
 **Note**. This feature is supported only for the [healthcare model](https://techtoday.lenovo.com/jp/ja/solutions/media/3970), where RFID is installed instead of Smart Card. Therefore, parameter for WMI command will be the same as for Smart Card.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | SmartCardSlotAccess | Disable, Enable | No | Both |
 </details>
@@ -121,7 +121,7 @@ One of 2 possible states:
 1.	**On** – enables use of Integrated Camera. Default.
 2.	Off – disables use of Integrated Camera and keeps it disabled in the OS environment.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | IntegratedCameraAccess | Disable, Enable | No | Both |
 </details>
@@ -134,7 +134,7 @@ One of 2 possible states:
 1.	**On** – to enable audio functions, select ‘Enabled’ and save the setting. Then fully shut down and power on the system. Default.
 2.	Off – disables use of all audio functions and keeps it disabled in the OS environment.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | IntegratedAudioAccess | Disable, Enable | No | Both |
 </details>
@@ -147,7 +147,7 @@ One of 2 possible states:
 1.	**On** – to enable Microphone, select ‘Enabled’ save the setting. Then fully shut down and power on the system. Default.
 2.	Off – disables use of Microphone.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | MicrophoneAccess | Disable, Enable | No | Both |
 </details>
@@ -160,7 +160,7 @@ One of 2 possible states:
 1.	**On** – enables use of Internal Fingerprint Reader. Default.
 2.	Off – disables use of Internal Fingerprint Reader and keeps it disabled in the OS environment.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | FingerprintReaderAccess | Disable, Enable | No | Both |
 </details>
@@ -176,7 +176,7 @@ One of 2 possible states:
 1.	**On** – enables use of Thunderbolt 4. Default.
 2.	Off – disables use of Thunderbolt 4 ports and keeps them disabled in the OS environment.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | ThunderboltAccess | Disable, Enable | No | Both |
 </details>
@@ -189,7 +189,7 @@ One of 2 possible states:
 1.	**On** – enables use of NFC Device. Default.
 2.	Off – disables use of NFC Device and keeps it disabled in the OS environment.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | NfcAccess | Disable, Enable | No | Both |
 </details>
