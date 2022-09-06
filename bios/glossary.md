@@ -1,7 +1,5 @@
 # Glossary #
 
-<!-- !> To find more details in the table below, scroll to the right. -->
-
 <div class="table-wrapper" >
 
 | Acronym | Term | AKA | See also | asdf |
@@ -102,19 +100,19 @@
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| HDP| $2 Hard Disk Password <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| HDP| $2 Hard Disk Password <br /> <br /> Prevents unauthorized access to the data on the storage drive. Some models may support dual passwords, with a user password and an administrator password. <br /> <br /> *More information:* <br /> <!-- TODO --> <br /> *Relevant settings:* <br /> - [Require HDP on System Boot (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/hard_disk_password) <br /> - [Hard Disk Password (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/hard_disk_password) <br /> | $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| Intel AMT| $2 https://en.wikipedia.org/wiki/Intel_Active_Management_Technology <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| Intel AMT| $2 Intel (R) Active Management Technology. <br /> <br /> Remote management solution from Intel (R). <br /> <br />*More information:* <br /> - ["Intel® Active Management Technology" at Intel.com](https://www.intel.com/content/www/us/en/architecture-and-technology/intel-active-management-technology.html) <br /> *Relevant settings:* <br /> - [Intel(R) Manageability (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/intel_r_manageability) <br /> - [Intel(R) AMT Settings (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/intelramt) <br /> - [Onboard Ethernet Controller (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/network_setup) <br />  | $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| IOMMU| $2 https://lenovopress.lenovo.com/lp1467.pdf <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| IOMMU| $2  Input-Output Memory Management Unit.<br /> <br /> Hardware assisted address translation from I/O device virtual addresses to physical addresses, to improve the system performance in virtual environments. <br /> <br /> *More information:* <br /> - [More information at Lenovo.com](https://lenovopress.lenovo.com/lp1467.pdf) <br /> *Relevant settings:* <br /> - [Device Guard (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/security) <br /> - [Device Guard (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/deviceguard) <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| IRQ| $2 https://en.wikipedia.org/wiki/Interrupt_request_(PC_architecture) <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| IRQ| $2 Interrupt Request Line. <br /> <br /> Hardware line allowing devices to take over processor resources for their function. IRQs are assigned numbers to prioritize devices. <br /> <br /> *More information:* <!-- TODO --> <br /> <br /> *Relevant settings:* <br /> - [Parallel Port IRQ (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/parallel_port_setup) <br /> - [Serial Port Setup (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/serial_port_setup) <br /> | $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
