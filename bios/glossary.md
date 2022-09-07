@@ -116,15 +116,15 @@
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| ITC| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| ITC| $2 Imaging Technology Center. <br /> Lenovo's Cloud Deployment solutions. <br /> *More information:* <br />  - [More information at lenovoclouddeploy.com](https://www.lenovoclouddeploy.com/en/auth/welcome) <br>  - [More information at Lenovo.com](https://static.lenovo.com/na/services/pdfs/4390_Cloud_Imaging_Flyer_FINAL_High_Res.pdf) <br /> *Relevant settings:* <br /> - [Lenovo Cloud Services (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/network) <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| Lenovo Diagnostic-Memory test| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+|  | $2 Lenovo Diagnostics. <br /> Tool for testing Lenovo computers. Composed from Modules (diagnostics for a group of devices), Tools for creating custom diagnostic scripts, system information, and Log History. <br /> *More information:* <br />  - ["Lenovo Diagnostics for Windows" at Lenovo PC Support](https://pcsupport.lenovo.com/us/en/downloads/ds102687) <br /> *Relevant settings:* <br /> - [Intel(R) Total Memory Encryption (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/memoryprotection) <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| Magic packet| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| | $2 Magic packet. <br /> Network packet specific to the network card, used in the Wake On LAN feature. <br /> *More information:* <br />  <br /> *Relevant settings:* <br /> - [Wake On Lan (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/network) <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
