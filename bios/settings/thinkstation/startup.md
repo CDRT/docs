@@ -18,7 +18,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| FirstBootDevice | Boot Order,NetWork,SATA Drive,M.2 Drive,PCIe Drive,USB HDD,USB CDROM | yes | Intel |
+| FirstBootDevice | Boot Order, NetWork, SATA Drive, M.2 Drive, PCIe Drive, USB HDD, USB CDROM | yes | Intel |
 </details>
 
 
@@ -53,7 +53,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| BootUpNumLockStatus | Off,On | yes | Both |
+| BootUpNumLockStatus | Off, On | yes | Both |
 </details>
 
 
@@ -70,7 +70,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| FastBoot | Disabled,Enabled | yes | Intel |
+| FastBoot | Disabled, Enabled | yes | Intel |
 </details>
 
 
@@ -87,7 +87,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| OptionKeysDisplay | Disabled,Enabled | yes | Both |
+| OptionKeysDisplay | Disabled, Enabled | yes | Both |
 </details>
 
 

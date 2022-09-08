@@ -14,7 +14,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| AfterPowerLoss | Power On,Power Off,Last State | yes | Both |
+| AfterPowerLoss | Power On, Power Off, Last State | yes | Both |
 
 </details>
 
@@ -32,7 +32,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| EnhancedPowerSavingMode | Disabled,Enabled | yes | Both |
+| EnhancedPowerSavingMode | Disabled, Enabled | yes | Both |
 </details>
 
 <details><summary>Smart Power On</summary>
@@ -46,7 +46,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SmartPowerOn | Disabled,Enabled | yes | Intel |
+| SmartPowerOn | Disabled, Enabled | yes | Intel |
 
 </details>
 
@@ -67,5 +67,5 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| IntelligentCoolingPerformanceMode | Best Performance,Best Experience,Full Speed | yes | Intel |
+| IntelligentCoolingPerformanceMode | Best Performance, Best Experience, Full Speed | yes | Intel |
 </details>

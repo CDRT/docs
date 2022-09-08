@@ -14,7 +14,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SATAController | Disabled,Enabled | yes | Both |
+| SATAController | Disabled, Enabled | yes | Both |
 </details>
 
 
@@ -29,7 +29,7 @@ Whether to enable each SATA Drive numbered {Number}:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SATADrive1 | Disabled,Enabled | yes | Both |
+| SATADrive1 | Disabled, Enabled | yes | Both |
 
 ?> The WMI setting name is for SATA drive 1. For other SATA drives, change the number to that of the desired SATA drive.
 
@@ -49,7 +49,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SATADrivexHotPlugSupport | Disabled,Enabled | yes | Both |
+| SATADrivexHotPlugSupport | Disabled, Enabled | yes | Both |
 
 !> `x` is the port number.
 
@@ -73,7 +73,7 @@ Depending on how the hard disk image was installed, changing the setting may pre
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| ConfigureSATAas | AHCI,Intel(R) RST with Intel(R) Optane,RAID | yes | Both |
+| ConfigureSATAas | AHCI, Intel(R) RST with Intel(R) Optane, RAID | yes | Both |
 </details>
 
 ### Intel(R) Rapid Storage Technology ###
@@ -113,5 +113,5 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| HardDiskPre-delay | Disable,3 Seconds,6 Seconds,9 Seconds,12 Seconds,15 Seconds,21 Seconds,30 Seconds | yes | Both |
+| HardDiskPre-delay | Disable, 3 Seconds, 6 Seconds, 9 Seconds, 12 Seconds, 15 Seconds, 21 Seconds, 30 Seconds | yes | Both |
 </details>

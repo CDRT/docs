@@ -49,7 +49,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SecurityChip | Disabled,Enabled | yes | Both |
+| SecurityChip | Disabled, Enabled | yes | Both |
 
 </details>
 
@@ -82,5 +82,5 @@ Whether confirmation of a user’s physical presence is needed when clearing the
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| PhysicalPresenceforClear | Disabled,Enabled | yes | Both |
+| PhysicalPresenceforClear | Disabled, Enabled | yes | Both |
 </details>

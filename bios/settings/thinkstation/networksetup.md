@@ -17,7 +17,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| OnboardEthernetController | Disabled,Enabled | yes | Both |
+| OnboardEthernetController | Disabled, Enabled | yes | Both |
 </details>
 
 <details><summary>Wireless LAN Access</summary>
@@ -69,7 +69,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| PXEIPV4NetworkStack | Disabled,Enabled | yes | Both |
+| PXEIPV4NetworkStack | Disabled, Enabled | yes | Both |
 </details>
 
 
@@ -84,7 +84,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| PXEIPV6NetworkStack | Disabled,Enabled | yes | Both |
+| PXEIPV6NetworkStack | Disabled, Enabled | yes | Both |
 </details>
 
 

@@ -17,7 +17,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| USBPortAccess | Disabled,Enabled | yes | Both |
+| USBPortAccess | Disabled, Enabled | yes | Both |
 
 </details>
 
@@ -32,7 +32,7 @@ Whether extra delay is added when host performs USB enumeration.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| USBEnumerationDelay | Disabled,Enabled | yes | Both |
+| USBEnumerationDelay | Disabled, Enabled | yes | Both |
 
 </details>
 
@@ -47,7 +47,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| FrontUSBPorts | Disabled,Enabled | yes | Both |
+| FrontUSBPorts | Disabled, Enabled | yes | Both |
 
 </details>
 
@@ -63,7 +63,7 @@ For each Front USB Port:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| USBPort1 | Disabled,Enabled | yes | Intel |
+| USBPort1 | Disabled, Enabled | yes | Intel |
 
 ?> The WMI setting name is for USB port 1. For other USB ports change the number to that of the desired front USB port.
 
@@ -81,7 +81,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| RearUSBPorts | Disabled,Enabled | yes | Both |
+| RearUSBPorts | Disabled, Enabled | yes | Both |
 </details>
 
 <details><summary>USB Port {Number}</summary>

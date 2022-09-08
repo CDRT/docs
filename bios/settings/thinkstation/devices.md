@@ -12,7 +12,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| CardReader |Disabled,Enabled  | yes | Intel |
+| CardReader |Disabled, Enabled  | yes | Intel |
 
 </details>
 

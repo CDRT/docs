@@ -13,7 +13,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| IntelSIPPSupport | Disabled,Enabled | yes | Intel |
+| IntelSIPPSupport | Disabled, Enabled | yes | Intel |
 </details>
 
 
@@ -30,6 +30,6 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| IntelDPTFSupport | Disabled,Enabled | yes | Intel |
+| IntelDPTFSupport | Disabled, Enabled | yes | Intel |
 
 </details>

@@ -21,7 +21,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SetMinimumLength | Disable,4 Characters,5 Characters,6 Characters,7 Characters,8 Characters,9 Characters,10 Characters,11 Characters,12 Characters | yes | Both |
+| SetMinimumLength | Disable, 4 Characters, 5 Characters, 6 Characters, 7 Characters, 8 Characters, 9 Characters, 10 Characters, 11 Characters, 12 Characters | yes | Both |
 </details>
 
 
@@ -36,7 +36,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SetStrongPassword | Disabled,Enabled | yes | Both |
+| SetStrongPassword | Disabled, Enabled | yes | Both |
 </details>
 
 
@@ -53,7 +53,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| KeyboardLayout | English,French,German,Chinese | yes | Both |
+| KeyboardLayout | English, French, German, Chinese | yes | Both |
 
 </details>
 
@@ -71,7 +71,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| BIOSPasswordAtSystemBoot | No,Yes | yes | Both |
+| BIOSPasswordAtSystemBoot | No, Yes | yes | Both |
 
 </details>
 
@@ -87,7 +87,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| BIOSPasswordAtReboot | No,Yes | yes | Both |
+| BIOSPasswordAtReboot | No, Yes | yes | Both |
 </details>
 
 
@@ -104,7 +104,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| BIOSPasswordAtBootDeviceList | No,Yes | yes | Both |
+| BIOSPasswordAtBootDeviceList | No, Yes | yes | Both |
 
 </details>
 
@@ -120,7 +120,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| RequireSVPwhenFlashing | No,Yes | yes | Both |
+| RequireSVPwhenFlashing | No, Yes | yes | Both |
 
 </details>
 
@@ -135,7 +135,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| POPChangeablebyUser | No,Yes | yes | Both |
+| POPChangeablebyUser | No, Yes | yes | Both |
 </details>
 
 
@@ -152,7 +152,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| AllowJumperClearSVP | No,Yes | yes | Both |
+| AllowJumperClearSVP | No, Yes | yes | Both |
 </details>
 
 
@@ -169,5 +169,5 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| PasswordCountExceededError | Disabled,Enabled | yes | Both |
+| PasswordCountExceededError | Disabled, Enabled | yes | Both |
 </details>

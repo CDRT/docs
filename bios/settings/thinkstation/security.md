@@ -139,7 +139,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SecureRollBackPrevention | No,Yes | yes | Both |
+| SecureRollBackPrevention | No, Yes | yes | Both |
 </details>
 
 
@@ -152,7 +152,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| WindowsUEFIFirmwareUpdate | Disabled,Enabled | yes | Both |
+| WindowsUEFIFirmwareUpdate | Disabled, Enabled | yes | Both |
 </details>
 
 
@@ -168,7 +168,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SmartUSBProtection | Disabled,Read Only,No Access | yes | Both |
+| SmartUSBProtection | Disabled, Read Only, No Access | yes | Both |
 </details>
 
 
@@ -183,7 +183,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| securewipe | Disabled,Enabled | yes | Intel |
+| securewipe | Disabled, Enabled | yes | Intel |
 </details>
 
 
@@ -218,7 +218,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| AbsolutePersistenceModule | Disabled,Enabled,Permanently Disabled | yes | Both |
+| AbsolutePersistenceModule | Disabled, Enabled, Permanently Disabled | yes | Both |
 </details>
 
 </details>
@@ -236,7 +236,7 @@ Ethernet, USB, CD, and other boot methods to be disabled, only SATA device to be
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| DeviceGuard | Disabled,Enabled | yes | Both |
+| DeviceGuard | Disabled, Enabled | yes | Both |
 </details>
 
 
@@ -269,7 +269,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| CoverTamperDetected | Disabled,Enabled | yes | Both |
+| CoverTamperDetected | Disabled, Enabled | yes | Both |
 </details>
 
 
@@ -286,5 +286,5 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| ConfigurationChangeDetection | Disabled,Enabled | yes | Both |
+| ConfigurationChangeDetection | Disabled, Enabled | yes | Both |
 </details>

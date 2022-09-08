@@ -12,7 +12,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| ASPMSupport | Disabled,Auto | yes | Both |
+| ASPMSupport | Disabled, Auto | yes | Both |
 </details>
 
 <details><summary>PCIe 16x Slot Speed</summary>
@@ -27,7 +27,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| PCIe16xSlotSpeed | Auto,Gen1,Gen2,Gen3,Gen4 | yes | Intel |
+| PCIe16xSlotSpeed | Auto, Gen1, Gen2, Gen3, Gen4 | yes | Intel |
 </details>
 
 
@@ -42,7 +42,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| PCIe4xSlotSpeed | Auto,Gen1,Gen2,Gen3 | yes | Intel |
+| PCIe4xSlotSpeed | Auto, Gen1, Gen2, Gen3 | yes | Intel |
 </details>
 
 
@@ -57,7 +57,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| PCIe1xSlotSpeed | Auto,Gen1,Gen2,Gen3 | yes | Intel |
+| PCIe1xSlotSpeed | Auto, Gen1, Gen2, Gen3 | yes | Intel |
 </details>
 
 

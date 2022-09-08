@@ -13,7 +13,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SpeedShiftTechnology | Disabled,Enabled | yes | Intel |
+| SpeedShiftTechnology | Disabled, Enabled | yes | Intel |
 
 </details>
 
@@ -31,7 +31,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| HyperThreadingTechnology | Disabled,Enabled | yes | Intel |
+| HyperThreadingTechnology | Disabled, Enabled | yes | Intel |
 </details>
 
 
@@ -48,7 +48,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| CoreMultiProcessing | Enabled,Disabled | yes | Intel |
+| CoreMultiProcessing | Enabled, Disabled | yes | Intel |
 </details>
 
 
@@ -67,7 +67,7 @@ Additional information is available here: [How to enable Virtualization Technolo
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| VirtualizationTechnology | Disabled,Enabled | yes | Intel |
+| VirtualizationTechnology | Disabled, Enabled | yes | Intel |
 </details>
 
 
@@ -84,7 +84,7 @@ Additional information is available here: [VT-d Feature](https://www.intel.com/c
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| VTdFeature | Disabled,Enabled | yes | Intel |
+| VTdFeature | Disabled, Enabled | yes | Intel |
 </details>
 
 
@@ -103,7 +103,7 @@ Additional information is available here: [Intel(R) TXT Overview](https://www.in
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| TXTFeature | Disabled,Enabled | yes | Intel |
+| TXTFeature | Disabled, Enabled | yes | Intel |
 </details>
 
 
@@ -118,7 +118,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| IOMMU | Disabled,Enabled | yes | Both |
+| IOMMU | Disabled, Enabled | yes | Both |
 </details>
 
 
@@ -135,7 +135,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| C1ESupport | Disabled,Enabled | yes | Intel |
+| C1ESupport | Disabled, Enabled | yes | Intel |
 </details>
 
 
@@ -153,7 +153,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| CStateSupport | C1,C1C3,C1C3C6,C1C3C6C7,C1C3C6C7C8,C1C3C6C7C8C10 | yes | Both |
+| CStateSupport | C1, C1C3, C1C3C6, C1C3C6C7, C1C3C6C7C8, C1C3C6C7C8C10 | yes | Both |
 </details>
 
 <details><summary>Turbo Mode</summary>
@@ -167,7 +167,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| TurboMode | Disabled,Enabled | yes | Intel |
+| TurboMode | Disabled, Enabled | yes | Intel |
 </details>
 
 
