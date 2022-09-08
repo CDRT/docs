@@ -137,7 +137,7 @@ Whether the system will turn on automatically on this day of the week.
 2. On.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
-   |:---|:---|:---|:---|
+|:---|:---|:---|:---|
 | UserDefinedAlarmSunday  | Disabled, Enabled | yes | Both |
 
 ?> The WMI setting name shown here is for Sunday. For other week days, change `Sunday` to the desired day of the week.
@@ -148,6 +148,6 @@ Whether the system will turn on automatically on this day of the week.
 
 Specify the time when the system is to wake up.
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|
 | UserDefinedAlarmTime |  | yes |

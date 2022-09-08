@@ -11,7 +11,7 @@ Options:
 1. Pусский
 1. 中文
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|
 |  |  | yes |
 
@@ -24,7 +24,7 @@ Options:
 1. **Graphic** - Default.
 1. Text
 
-| WMI Setting name | Values | SVP or SMP Req'd |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|
 |  |  | yes |
 
