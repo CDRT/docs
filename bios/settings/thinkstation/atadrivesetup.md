@@ -60,15 +60,15 @@ Options:
 
 SATA configuration mode.
 
-?> The ANCI and RAID options require additional confirmation.
+?> The AHCI and RAID options require additional confirmation.
 
 Options:
 
-1. **ANCI** – Default.<br> 
+1. **AHCI** – Default.<br> 
 2. Intel(R) RST with Intel(R) Optane
 3. RAID<br> 
 
-!> If you change the SATA mode to `ANCI` you may not boot the system due to the failure of Intel(R) RST with Intel(R) Optane (RAID) function.<br /><br />Do not disable SATA drives in RAID mode. Otherwise you may not boot the system due to the failure of RAID function. <br /><br /> Device driver support is required for `ANCI` or `RAID` or Intel(R) RST with Intel(R) Optane. 
+!> If you change the SATA mode to `AHCI` you may not boot the system due to the failure of Intel(R) RST with Intel(R) Optane (RAID) function.<br /><br />Do not disable SATA drives in RAID mode. Otherwise you may not boot the system due to the failure of RAID function. <br /><br /> Device driver support is required for `AHCI` or `RAID` or Intel(R) RST with Intel(R) Optane. 
 Depending on how the hard disk image was installed, changing the setting may prevent the system from booting.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
