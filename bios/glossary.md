@@ -128,15 +128,15 @@
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| Master hard disk password| $2 synonym to Admin (hard disk) password. <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| | $2 Master hard disk password. <br /> <br /> *More information:* <!-- TODO --> <br /> <br /> *Relevant settings:* <br /> - [Hard Disk Password (ThinkStation)](https://docs.lenovocdrt.com/#/bios/settings/thinkstation/hard_disk_password.md) <br />| $3 Admin (hard disk) password. | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| Microsoft 3rd Party UEFI CA| $2 clear meaning but needs some description / explanation! <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| | $2 Microsoft 3rd Party UEFI CA <br /> <br /> *More information:* <br /> <!-- TODO --> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| MDT| $2 Microsoft Deployment Toolkit <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| MDT| $2 Microsoft Deployment Toolkit <br /> <br /> *More information:*  - [More information at Microsoft.com](https://docs.microsoft.com/en-us/mem/configmgr/mdt/) <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
