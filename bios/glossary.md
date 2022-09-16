@@ -104,7 +104,7 @@
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| Intel AMT| $2 Intel (R) Active Management Technology. <br /> <br /> Remote management solution from Intel (R). <br /> <br />*More information:* <br /> - ["Intel® Active Management Technology" at Intel.com](https://www.intel.com/content/www/us/en/architecture-and-technology/intel-active-management-technology.html) <br /> *Relevant settings:* <br /> - [Intel(R) Manageability (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/intel_r_manageability) <br /> - [Intel(R) AMT Settings (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/intelramt) <br /> - [Onboard Ethernet Controller (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/network_setup) <br />  | $3 | $4 | $5 |
+| Intel AMT| $2 Intel ® Active Management Technology. <br /> <br /> Remote management solution from Intel ®. <br /> <br />*More information:* <br /> - ["Intel® Active Management Technology" at Intel.com](https://www.intel.com/content/www/us/en/architecture-and-technology/intel-active-management-technology.html) <br /> *Relevant settings:* <br /> - [Intel® Manageability (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/intel_r_manageability) <br /> - [Intel® AMT Settings (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/intelramt) <br /> - [Onboard Ethernet Controller (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/network_setup) <br />  | $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
@@ -120,7 +120,7 @@
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-|  | $2 Lenovo Diagnostics. <br /> Tool for testing Lenovo computers. Composed from Modules (diagnostics for a group of devices), Tools for creating custom diagnostic scripts, system information, and Log History. <br /> *More information:* <br />  - ["Lenovo Diagnostics for Windows" at Lenovo PC Support](https://pcsupport.lenovo.com/us/en/downloads/ds102687) <br /> *Relevant settings:* <br /> - [Intel(R) Total Memory Encryption (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/memoryprotection) <br />| $3 | $4 | $5 |
+|  | $2 Lenovo Diagnostics. <br /> Tool for testing Lenovo computers. Composed from Modules (diagnostics for a group of devices), Tools for creating custom diagnostic scripts, system information, and Log History. <br /> *More information:* <br />  - ["Lenovo Diagnostics for Windows" at Lenovo PC Support](https://pcsupport.lenovo.com/us/en/downloads/ds102687) <br /> *Relevant settings:* <br /> - [Intel® Total Memory Encryption (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/memoryprotection) <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
@@ -140,35 +140,35 @@
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| MEBx| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| MEBx| $2  Intel® Management Engine BIOS Extension. <br /> A BIOS menu extension on the Intel® AMT system that can be used to view and manually configure some of Intel® AMT settings. <br /> *More information:* <br />  - [More information at Intel.com](https://www.intel.com/content/dam/support/us/en/documents/software/software-applications/Intel_SCS_Deployment_Guide.pdf) <br /> *Relevant settings:* <br /> - [Intel® MEBx (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/intel_r_manageability) <br />| $3 | $4 AMT | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| ME (firmware)| $2 <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| ME (firmware)| $2 <br /> Intel ® Management Engine. <br /> An embedded microcontroller providing features including OOB (out of band) management. <br /><br /> *More information:* <br />  - [More information at Intel.com](https://www.intel.com/content/www/us/en/support/articles/000008927/software/chipset-software.html) <br /> *Relevant settings:* <br /> [Enhanced Power Saving Mode (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/power) <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| memtest86| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| memtest86 | $2 Commonly used memory (RAM) testing application. <br /> <br /> *More information:* <br />  - [More information at memtest86.com](https://www.memtest86.com/) <br /> <br /> *Relevant settings:* <br /> - [Intel(R) Total Memory Encryption (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/memoryprotection) <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| MFG mode| $2 manufacturing mode (?) <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| MFG mode | $2 Manufacturing Mode <br /> <br /> *More information:* <br /> <!-- TODO --> <br /> *Relevant settings:* <br /> - [Security Chip (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/securitychip) <br />| $3 | $4 | $5 |
+
+<!-- | Acronym | Term | AKA | See also | asdf |
+|---|---|---|---|---|
+| motherboard silkscreen | $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 | -->
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| motherboard silkscreen| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| NFC| $2 Near-Field Communication. <br /> <!-- TODO --> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /> - [NFC Device (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/ioportaccess) <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| NFC| $2 near-field communication <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| NIC| $2 Network Interface Controller / Card. <br />  <br /> *More information:* <br /> <!-- TODO --> <br /> *Relevant settings:* <br /> - [MAC Address Pass Through (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/network) <br /> <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| NIC| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
-
-| Acronym | Term | AKA | See also | asdf |
-|---|---|---|---|---|
-| NVMe| $2 NVM Express or Non-Volatile Memory Host Controller Interface Specification is an open, logical-device interface specification for accessing a computer's non-volatile storage media usually attached via PCI Express bus. NVMe SSDs are about 3-4 times faster than SATA SSDs. <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| NVMe| $2 NVM Express or Non-Volatile Memory Host Controller Interface Specification is an open, logical-device interface specification for accessing a computer's non-volatile storage media usually attached via PCI Express bus. <br />  <br /> *More information:* <br /> <br /> *Relevant settings:* <br /> - [NVMe1 Password (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/password) <br /> [Network Boot (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/startup) <br /> | $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
@@ -177,6 +177,10 @@
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
 | OEM| $2 https://en.wikipedia.org/wiki/Original_equipment_manufacturer  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+
+| Acronym | Term | AKA | See also | asdf |
+|---|---|---|---|---|
+| OOB | $2 Out-of-band. <br /> As in Out-of-band management. <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 ME | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
