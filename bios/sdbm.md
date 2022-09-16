@@ -16,18 +16,23 @@ No longer requires user interaction if a call to clear the TPM was performed. In
 
 ## Supported Systems
 
-?>These systems were the supported systems at the original writing of this article. It is expected that this feature will continue to be included in follow-on models.
+?> It is expected that this feature will continue to be included in follow-on models.
 
 | L-Series | P-Series | T-Series | X-Series |
 |----------|----------|----------|----------|
-| L14/15 (Intel) | P14s/15s | T14 (AMD)| X1 Carbon 8/X1 Yoga 5 |
-| L14/15 (AMD) | P15/17 | T14/15 (Intel) | X13 NEC |
-| | P15v | T14s/X13 | X13/T14s (AMD) |
-| | P43s/53s | T15p | X390 (CML) |
-| | | T490 (CML) | X390 NEC |
-| | | T490/T590 | X390 (WHL) |
+| L13 Gen 1/3 (Intel) | P1 Gen 2/3/4 | T14 Gen 1 (AMD) | X1 Carbon Gen 7/8/9/10 |
+| L14 (AMD) | P14s Gen 1 | T14 Gen 1 (Intel) | X1 Extreme Gen 2/3/4/5 |
+| L14 Gen 3 (Intel) | P15 Gen 1 | T14s Gen 1 (AMD/Intel) | X1 Nano Gen 1/2 |
+| L15 (AMD) | P15s Gen 1 | T15 Gen 1 (Intel) | X1 Yoga Gen 4/5/6/7 |
+| L15 Gen 3 (Intel) | P15v Gen 1/2 | T15p Gen 1/2 | X12 Detachable Gen 1 |
+| | P16 | T490 | X13 (AMD/Intel) |
+| | P17 | T490 (Comet Lake) | X13 Yoga Gen 2/3 |
+| | P43s | T590 | X390 (Comet/Whiskey Lake) |
+| | P53 | | X390 Yoga |
+| | P53s | | |
+| | P73 | | |
 
-!> Note: For L14/15 AMD Gen1 models, be sure to update to the latest BIOS to ensure you have the System Deployment Boot Mode feature.
+!> Note: For L14/15 AMD Gen 1 models, be sure to update to the latest BIOS to ensure you have the System Deployment Boot Mode feature.
 
 ## Activating System Deployment Boot Mode
 
