@@ -29,3 +29,14 @@ Options:
 |  |  | yes |
 
 </details>
+
+<details><summary>Setup Content</summary>
+
+description.
+
+Options:
+
+1.  **Advanced** - Default.
+2.  Basic
+
+</details>
