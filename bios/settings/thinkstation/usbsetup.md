@@ -2,6 +2,12 @@
 
 ![](./img/usbsetup.png)
 
+<details><summary>AMD version of USB Setup</summary>
+
+![](./img/amd_usbsetup.png)
+
+</details>
+
 ?> The number of USB ports may vary depending on model.
 
 <details><summary>USB Port Access</summary>
