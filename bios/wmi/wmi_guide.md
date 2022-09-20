@@ -335,8 +335,6 @@ To change the boot order, complete the following steps:
 
  ```ATAPICD0:HDD0```
 
-TODO:: Need powershell sample
-
 **ThinkCentre | ThinkStation**:
 
 To change the boot order, complete the following steps:
@@ -351,13 +349,9 @@ To change the boot order, complete the following steps:
 	**2**. Settings may different from projects, recommend List all settings first to identify the BIOS setting wants to change, and put all the listed device to the script parameters, just sequence could be changed. <br>
 	**3**. After making changes to the BIOS settings, you must reboot the computer before the changes will take effect.
 
-TODO:: Need powershell sample
-
 ### Restoring Default Settings
 
 To restore default BIOS settings, use the Lenovo_LoadDefaultSettings class, then use the Lenovo_SaveBiosSettings class to save the BIOS changes.
-
-TODO:: Need powershell sample
 
 ### Limitations and Notes
 
