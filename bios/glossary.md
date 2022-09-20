@@ -44,7 +44,7 @@
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| DASH| $2 Desktop and mobile Architecture for System Hardware.  <br /> <br /> Secure out-of-band and remote client management standard. <br /> <br /> *More information:* -  ["Desktop and Mobile Architecture for System Hardware" at DTMF.org](https://www.dmtf.org/standards/dash) <br /> | $3 | $4 | $5 |
+| DASH| $2 Desktop and mobile Architecture for System Hardware.  <br /> <br /> Secure out-of-band and remote client management standard. <br /> <br /> *More information:* <br>  - [DASH article at Lenovo CDRT](https://docs.lenovocdrt.com/#/dash/dash_top) <br> -  ["Desktop and Mobile Architecture for System Hardware" at DTMF.org](https://www.dmtf.org/standards/dash) <br /> | $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
