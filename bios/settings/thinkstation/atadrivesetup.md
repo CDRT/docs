@@ -1,6 +1,8 @@
 # ATA Drive Setup Settings #
 ![](./img/atadrivesetup.png)
 
+?> The number of ATA drives may vary depending on model.
+
 <details><summary>SATA Controller</summary>
 
 Whether to enable or disable the SATA controller.

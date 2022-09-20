@@ -21,7 +21,7 @@ One of 2 possible states:
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| TouchPad | Disable, Enable (on AMD-based machi <br> Disable, Automatic (on Intel-based machine)| No | Both |
+| TouchPad | Disable, Enable (on AMD-based machine) <br> Disable, Automatic (on Intel-based machine)| No | Both |
 </details>
 
 <details><summary>Fn and Ctrl Key swap</summary>

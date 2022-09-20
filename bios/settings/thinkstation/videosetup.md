@@ -3,6 +3,10 @@
 
 <details><summary>Select Active Video</summary>
 
+?> Select a platform:
+
+<details><summary>Select Active Video - Intel(R)</summary>
+
 Select the primary video device for graphics output.
 
 Options:
@@ -18,6 +22,31 @@ Options:
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | SelectActiveVideo | IGD, PEG, Auto | yes | Both |
+
+</details>
+
+<details><summary>Select Active Video - AMD</summary>
+
+Select primary video device for graphics output.
+
+?> If selected slot video device fails to initialize, `Auto` mode follow the order: <br> <br> Slot 3,1,5,4,2,6
+
+Options:
+
+1. Slot1(PEG)
+1. Slot2(PEG)
+1. Slot3(PEG)
+1. Slot4(PEG)
+1. Slot5(PEG)
+1. Slot6(PEG)
+1. **Auto** - Default.
+
+<!-- | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| SelectActiveVideo | IGD, PEG, Auto | yes | Both | -->
+
+</details>
+
 </details>
 
 <details><summary>Pre-Allocated Memory Size</summary>

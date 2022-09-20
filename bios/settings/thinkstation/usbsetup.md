@@ -133,6 +133,8 @@ Options:
 
 ?> `Auto` default values: <br> - Root port: 100 ms <br> - Hub port: delay taken from hub descriptor
 
+<!-- TODO: clarify hub port -->
+
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | DevicePowerupDelay | Auto, Manual | yes | AMD |
