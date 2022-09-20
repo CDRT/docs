@@ -66,6 +66,8 @@
   - [PCI Express Configuration](bios/settings/thinkstation/pciexpresscofig.md)
 
 - [Advanced](bios/settings/thinkstation/advanced.md)
+  - [Diagnostics](bios/settings/thinkstation/diagnostics.md)
+  - [PCIe Configuration](bios/settings/thinkstation/pcieconfiguration.md)
   - [CPU Setup](bios/settings/thinkstation/cpusetup.md)
   - [Intel(R) Manageability](bios/settings/thinkstation/intelmanageability.md)
   - [Intel(R) Thunderbolt](bios/settings/thinkstation/intelthunderbolt.md)

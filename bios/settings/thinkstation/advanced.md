@@ -1,6 +1,10 @@
 # Advanced #
 
+<details><summary>Advanced - Intel version</summary>
+
 ![](./img/advanced.png)
+
+
 
 <details><summary>Intel(R) SIPP Support</summary>
 
@@ -31,5 +35,15 @@ Options:
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | IntelDPTFSupport | Disabled, Enabled | yes | Intel |
+
+</details>
+
+</details>
+
+<details><summary>Advanced - AMD version</summary>
+
+![](./img/amd_advanced.png)
+
+<!-- TODO: confirm layout -->
 
 </details>

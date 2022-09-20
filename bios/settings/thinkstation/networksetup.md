@@ -13,7 +13,11 @@ Options:
 1. **Enabled** – Default. 
 2. Disabled.
 
-!> When `Disabled`:<br>    •`PXE IPV4 Network Stack` setting becomes unavailable<br>    •`PXE IPV6 Network Stack` setting becomes unavailable<br> •`Intel(R) AMT` related functions are disabled.<br>
+!> When `Disabled`:<br>    •`PXE IPV4 Network Stack` setting becomes unavailable<br>    •`PXE IPV6 Network Stack` setting becomes unavailable
+
+!> Intel only: if `Disabled`, Intel(R) AMT functions are disabled.
+
+!> AMD only: if `Disabled`, DASH functions will be disabled.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|

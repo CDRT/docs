@@ -21,7 +21,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SelectActiveVideo | IGD, PEG, Auto | yes | Both |
+| SelectActiveVideo | IGD, PEG, Auto | yes | Intel |
 
 </details>
 
@@ -29,7 +29,7 @@ Options:
 
 Select primary video device for graphics output.
 
-?> If selected slot video device fails to initialize, `Auto` mode follow the order: <br> <br> Slot 3,1,5,4,2,6
+?> If selected slot video device fails to initialize, `Auto` mode follow the order: <br> <br> Slot 3, 1, 5, 4, 2, 6
 
 Options:
 
@@ -43,7 +43,7 @@ Options:
 
 <!-- | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SelectActiveVideo | IGD, PEG, Auto | yes | Both | -->
+| SelectActiveVideo | IGD, PEG, Auto | yes | AMD | -->
 
 </details>
 
