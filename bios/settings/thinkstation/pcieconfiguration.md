@@ -207,8 +207,6 @@ Options:
 
 <details><summary>Link Speed</summary>
 
-description.
-
 Options:
 
 1.  **Disabled** - Default.

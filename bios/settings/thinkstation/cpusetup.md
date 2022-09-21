@@ -1,4 +1,4 @@
-# CPU Setup Settings #
+# CPU Setup - Intel (R) #
 
 ![](./img/cpusetup.png)
 
