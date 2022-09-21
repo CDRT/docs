@@ -68,7 +68,8 @@
 - [Advanced](bios/settings/thinkstation/advanced.md)
   - [Diagnostics](bios/settings/thinkstation/diagnostics.md)
   - [PCIe Configuration](bios/settings/thinkstation/pcieconfiguration.md)
-  - [CPU Setup](bios/settings/thinkstation/cpusetup.md)
+  - [CPU Setup - Intel (R)](bios/settings/thinkstation/cpusetup.md)
+  - [CPU Configuration -AMD](bios/settings/thinkstation/cpuconfiguration.md)
   - [Intel(R) Manageability](bios/settings/thinkstation/intelmanageability.md)
   - [Intel(R) Thunderbolt](bios/settings/thinkstation/intelthunderbolt.md)
 
