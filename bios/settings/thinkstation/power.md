@@ -51,7 +51,7 @@ Options:
 </details>
 
 
-### Intelligent Cooling ###
+### Intelligent Cooling - Intel (R) only ###
 
 Lenovo's unique system thermal management solution. 
 
@@ -68,4 +68,40 @@ Options:
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | IntelligentCoolingPerformanceMode | Best Performance, Best Experience, Full Speed | yes | Intel |
+</details>
+
+### AMD-only features ###
+
+![](./img/amd_power.png)
+
+<details><summary>PSU Over load Warning</summary>
+
+Whether to display a warning (and log if possible) if a Power Supply Unit (PSU) overload condition is detected.
+
+Options:
+
+1.  **Disabled** - Default.
+2.  Enabled.
+
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| setting_name | setting_values | yes_no | both |
+
+</details>
+
+
+<details><summary>Quad M.2 PCIe Card Fan Control Stepping</summary>
+
+Tune the fan speed from low to high for Quad M.2 PCIe card if it is present.
+
+Options:
+
+1. **Low Speed** - Default.
+1. Medium Speed
+1. High Speed
+
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| QuadM2PCIeCardFanControl | Low Speed, Medium Speed, High Speed | yes | AMD |
+
 </details>
