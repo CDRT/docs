@@ -2,7 +2,11 @@
 
 ![](./img/intelligentsecurity.png)
 
- - [More information at Lenovo Support](https://support.lenovo.com/uu/en/solutions/ht511536-smart-features)
+Security functions that rely detecting human presence near the computer.
+
+ - [More information at Lenovo Support](https://support.lenovo.com/solutions/ht511536-smart-features)
+
+?> Some of these features may be unavailable, depending on your model and configuration.
 
 <details><summary>User Presence Sensing</summary>
 
@@ -19,7 +23,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| UserPresenceSensing | Disable,Enable |  |  |
+| UserPresenceSensing | Disable,Enable | yes |  |
 
 </details>
 
@@ -37,7 +41,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ZeroTouchAllowOverride | Disable,Enable |  |  |
+| ZeroTouchAllowOverride | Disable,Enable | yes |  |
 
 </details>
 
@@ -52,7 +56,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ZeroTouchLogin | Disable,Enable |  |  |
+| ZeroTouchLogin | Disable,Enable | yes |  |
 
 </details>
 
@@ -70,7 +74,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ZeroTouchLoginDistanceAdjusting | Near,Middle,Far |  |  |
+| ZeroTouchLoginDistanceAdjusting | Near,Middle,Far | yes |  |
 
 </details>
 </div>
@@ -87,7 +91,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ZeroTouchLock | Disable,Enable |  |  |
+| ZeroTouchLock | Disable,Enable | yes |  |
 
 </details>
 <div style='margin-left:30px'>
@@ -103,7 +107,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ZeroTouchLockDistanceAdjusting | Near,Middle,Far |  |  |
+| ZeroTouchLockDistanceAdjusting | Near,Middle,Far | yes |  |
 
 </details>
 
@@ -119,7 +123,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ZeroTouchLockTimer | Fast,Medium,Slow |  |  |
+| ZeroTouchLockTimer | Fast,Medium,Slow | yes |  |
 
 </details>
 </div>
