@@ -105,3 +105,23 @@ Options:
 | QuadM2PCIeCardFanControl | Low Speed, Medium Speed, High Speed | yes | AMD |
 
 </details>
+
+<details><summary>Fan Control Stepping</summary>
+
+Tune the Fan speed from low to high.
+
+Options:
+
+1. **1 - Lower Fan Speed** - Default.
+1. 2
+1. 3
+1. 4
+1. 5
+1. 6
+1. 7 - Higher Fan Speed
+
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| FanControlStepping | 1 - Lower Fan Speed, 2, 3, 4, 5, 6, 7 - Higher Fan Speed | yes | AMD |
+
+</details>

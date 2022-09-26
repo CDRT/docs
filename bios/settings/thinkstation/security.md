@@ -288,3 +288,261 @@ Options:
 |:---|:---|:---|:---|
 | ConfigurationChangeDetection | Disabled, Enabled | yes | Both |
 </details>
+
+### AMD-only features ###
+
+<details><summary>Set Password Encryption Algorithm</summary>
+
+Select the encryption algorithm for BIOS Password.
+
+Options:
+
+1. **SHA-256 Hash** - Default.
+1. SM3 Hash
+
+<!-- NO WMI -->
+
+</details>
+
+<details><summary>Custom Password Mode</summary>
+
+<!-- TODO: custom password mode description -->
+
+Options:
+
+1.  **Disabled** - Default.
+2.  Enabled.
+
+<!-- NO WMI -->
+
+</details>
+
+<details><summary>Max Password Attempts</summary>
+
+Set maximum number of  supervisor password attempts from any software on the operating system.
+
+!> If password attempts exceeds this, BIOS does not accept further password attempts.
+
+Options:
+
+1. 1
+1. **3** - Default.
+1. 100
+1. Unlimited
+
+<!-- NO WMI -->
+
+</details>
+
+<details><summary>Password Change Time</summary>
+
+When to change the supervisor password if it is requested by software on the operating system.
+
+Options:
+
+1. **After Reboot** - Default.
+1. Immediately
+
+<!-- NO WMI -->
+
+</details>
+
+<details><summary>Set Minimum Length</summary>
+
+If a minimum is set, Supervisor Password, System Management Password, Power-On and Hard Disk password lengths must be equal to or longer than that number. Otherwise, they can be 1 to 128 characters.
+
+Options:
+
+1. **Disabled** - Default.
+1. 4 Characters
+1. 5 Characters
+1. 6 Characters
+1. 7 Characters
+1. 8 Characters
+1. 9 Characters
+1. 10 Characters
+1. 11 Characters
+1. 12 Characters
+
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| SetMinimumLength | Disable, 4 Characters, 5 Characters, 6 Characters, 7 Characters, 8 Characters, 9 Characters, 10 Characters, 11 Characters, 12 Characters | yes | both |
+
+</details>
+
+<details><summary>Set Strong Password</summary>
+
+!> Affects: <br> - Supervisor Password <br> - System Management Password <br> - Power-On password <br> - Hard Disk password
+
+?> For a strong password, length must <br> - be equal to or more than 8 characters <br> - include at least one uppercase character, one lowercase character and one number.
+
+?> Otherwise, minimum length depends on the minimum password length setting.
+
+Options:
+
+1.  **Disabled** - Default.
+2.  Enabled.
+
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| SetStrongPassword | Disable, Enable | yes | both |
+
+</details>
+
+<details><summary>Keyboard Layout</summary>
+
+Select keyboard layout in pre-OS environment. Does not affect OS.
+
+Options:
+
+1.  **Disabled** - Default.
+2.  Enabled.
+
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| KeyboardLayout | English, French, German, Chinese | yes | both |
+
+</details>
+
+<details><summary>Allow Jumper Clear SVP</summary>
+
+Whether to allow the hardware jumper to clear the Supervisor Password.
+
+!> No action can reset the SVP if you forget it.
+
+Options:
+
+1. **Yes** - Default.
+1. No
+
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| AllowJumperClearSVP | No, Yes | yes | both |
+
+</details>
+
+<details><summary>Secure Roll Back Prevention</summary>
+
+Whether flashing BIOS to a previous or current version is prevented.
+
+Options:
+
+1. **Yes** - Default.
+1. No
+
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| SecureRollBackPrevention | No, Yes | yes | both |
+
+</details>
+
+<details><summary>Require SVP when Flashing</summary>
+
+Whether the supervisor password is required when updating the system firmware.
+
+Options:
+
+1.  **Disabled** - Default.
+2.  Enabled.
+
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| RequireSVPwhenFlashing | No, Yes | yes | both |
+
+</details>
+
+<details><summary>Windows UEFI Firmware Update</summary>
+
+Whether to allow windows UEFI firmware update.
+
+Options:
+
+1.  **Enabled** - Default.
+2.  Disabled.
+
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| WindowsUEFIFirmwareUpdate | Disable, Enable | yes | both |
+
+</details>
+
+<details><summary>BIOS Password At System Boot</summary>
+
+Whether to prompt for passwords when the system starts from the full off or hibernate state.
+
+!> To prevent unauthorized access to the system, we recommend setting user authentication on the OS.
+
+Options:
+
+1. **Yes** - Default.
+1. No
+
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| BIOSPasswordAtSystemBoot | No, Yes | yes | both |
+
+</details>
+
+<details><summary>BIOS Password At Reboot</summary>
+
+Whether the Power-On Password is required when system restarts.
+
+Options:
+
+1.  **No** - Default.
+2.  Yes.
+
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| BIOSPasswordAtReboot | No, Yes | yes | both |
+
+</details>
+
+<details><summary>POP Changeable by User</summary>
+
+If "No" is selected, the Power-On Password can only be changed by the supervisor password..
+
+Options:
+
+1.  **Yes** - Default.
+2.  No.
+
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| POPChangeablebyUser | No, Yes | yes | AMD |
+
+</details>
+
+<details><summary>BIOS Password At Boot Device List</summary>
+
+Whether the user is prompted for a password when F12 is pressed during POST.
+
+!> A supervisor password must be set.
+
+Options:
+
+1.  **No** - Default.
+2.  Yes.
+
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| BIOSPasswordAtBootDeviceList | No, Yes | yes | both |
+
+</details>
+
+<details><summary>Smart USB Protection</summary>
+
+Blocks copying data from the computer to the USB storage device in Windows.
+
+
+Options:
+
+1. **Disabled** - Default. 
+1. Read Only - user can copy data from USB storage device to the computer, but cannot copy data from the computer to USB storage device.
+1. No Access - user cannot use USB storage device in Windows.
+
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| SmartUSBProtection | Disable, Read Only, No Access | yes | both |
+
+</details>
