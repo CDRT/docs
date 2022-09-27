@@ -291,6 +291,10 @@ Options:
 
 ### AMD-only features ###
 
+?> Only the AMD-only features are shown in the screenshot below; otherwise they are shown in the screenshot above
+
+![](./img/amd_security.png)
+
 <details><summary>Set Password Encryption Algorithm</summary>
 
 Select the encryption algorithm for BIOS Password.
