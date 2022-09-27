@@ -106,3 +106,69 @@ Options:
 |:---|:---|:---|:---|
 | OptionKeysDisplayStyle | Normal/Legacy | yes | Both |
 </details>
+
+### AMD-only features ###
+
+?> Only the AMD-only features are shown in the screenshot below; otherwise they are shown in the screenshot above.
+
+<details><summary>Primary Boot Sequence</summary>
+
+?> This sequence is used when the system is powered up normally.
+
+Use Up and Down arrows to select a device.
+
+`+` and `-` move the device up or down.
+
+`x` excludes / includes the device from the boot sequence.
+<!-- 
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| setting_name | setting_values | yes_no | both | -->
+
+</details>
+
+<details><summary>Automatic Boot Sequence</summary>
+
+?> This sequence is used when a communication device wakes the system up.
+
+Use Up and Down arrows to select a device.
+
+`+` and `-` move the device up or down.
+
+`x` excludes / includes the device from the boot sequence.
+
+<!-- | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| setting_name | setting_values | yes_no | both | -->
+
+</details>
+
+<details><summary>Error Boot Sequence</summary>
+
+?> This sequence is used when BIOS determines that an error has occurred.
+
+Use Up and Down arrows to select a device.
+
+`+` and `-` move the device up or down.
+
+`x` excludes / includes the device from the boot sequence.
+<!-- 
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| setting_name | setting_values | yes_no | both | -->
+
+</details>
+
+<details><summary>Manufacturing Boot Sequence</summary>
+
+Use Up and Down arrows to select a device.
+
+`+` and `-` move the device up or down.
+
+`x` excludes / includes the device from the boot sequence.
+<!-- 
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| setting_name | setting_values | yes_no | both | -->
+
+</details>

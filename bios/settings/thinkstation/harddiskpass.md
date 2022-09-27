@@ -1,5 +1,7 @@
 # Hard Disk Password Settings #
 
+!> Number of drives depends on the model and platform.
+
 ### General ###
 
 ![](./img/harddiskpass.png)

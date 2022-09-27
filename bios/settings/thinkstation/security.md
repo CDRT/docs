@@ -291,7 +291,7 @@ Options:
 
 ### AMD-only features ###
 
-?> Only the AMD-only features are shown in the screenshot below; otherwise they are shown in the screenshot above
+?> Only the AMD-only features are shown in the screenshot below; otherwise they are shown in the screenshot above.
 
 ![](./img/amd_security.png)
 
@@ -548,5 +548,60 @@ Options:
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | SmartUSBProtection | Disable, Read Only, No Access | yes | both |
+
+</details>
+
+### Fingerprint Setup ###
+
+![](./img/amd_fingerprintsetup.png)
+
+<details><summary>Preboot Authentication</summary>
+
+Whether to enable the fingerprint reader function for entering BIOS passwords.
+
+Options:
+
+1.  **Disabled** - Default.
+2.  Enabled.
+
+<!-- TODO: confirm WMI
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| setting_name | setting_values | yes_no | both |
+-->
+
+</details>
+
+<details><summary>Erase Fingerprint Data</summary>
+
+Whether to clear fingerprint data stored in a fingerprint reader.
+
+Options:
+
+1.  **No** - Default.
+2.  Yes.
+
+<!-- TODO: confirm WMI
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| setting_name | setting_values | yes_no | both |
+-->
+
+</details>
+
+<details><summary>Password Count Exceeded Error</summary>
+
+Whether to show the POST 0199 error and prompt for password.
+
+Options:
+
+1.  **Enabled** - Default.
+2.  Disabled.
+
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| PasswordCountExceededError | Disabled, Enabled| yes | both |
+
+<!-- TODO: confirm WMI -->
 
 </details>
