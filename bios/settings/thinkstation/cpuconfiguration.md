@@ -65,8 +65,6 @@ Options:
 
 <details><summary>AMD Memory Guard</summary>
 
-<!-- TODO: confirm this -->
-
 ?> AMD Memory Guard provides real time encryption to system memory to help protect against physical attacks.
 
 

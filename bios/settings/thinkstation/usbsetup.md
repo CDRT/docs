@@ -36,9 +36,10 @@ Options:
 1.  **Enabled** - Default.
 2.  Disabled
 
-| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+<!-- | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | USBBIOSSupport |  |  | AMD |
+ -->
 
 </details>
 

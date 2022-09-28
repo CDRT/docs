@@ -104,7 +104,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| OptionKeysDisplayStyle | Normal/Legacy | yes | Both |
+| OptionKeysDisplayStyle | Normal, Legacy | yes | Both |
 </details>
 
 ### AMD-only features ###

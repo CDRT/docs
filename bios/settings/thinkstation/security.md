@@ -551,7 +551,7 @@ Options:
 
 </details>
 
-### Fingerprint Setup ###
+<!-- ### Fingerprint Setup ###
 
 ![](./img/amd_fingerprintsetup.png)
 
@@ -564,11 +564,11 @@ Options:
 1.  **Disabled** - Default.
 2.  Enabled.
 
-<!-- TODO: confirm WMI
+TODO: confirm WMI
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | setting_name | setting_values | yes_no | both |
--->
+
 
 </details>
 
@@ -581,13 +581,13 @@ Options:
 1.  **No** - Default.
 2.  Yes.
 
-<!-- TODO: confirm WMI
+TODO: confirm WMI
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | setting_name | setting_values | yes_no | both |
--->
 
-</details>
+
+</details> -->
 
 <details><summary>Password Count Exceeded Error</summary>
 
