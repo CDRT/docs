@@ -2,7 +2,7 @@
 
 ![](./img/intelligentsecurity.png)
 
-Security functions that rely detecting human presence near the computer.
+The Intelligent Security functions provide a convenient way to securely lock and unlock your computer by detecting your presence near the computer.
 
  - [More information at Lenovo Support](https://support.lenovo.com/solutions/ht511536-smart-features)
 
@@ -23,7 +23,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| UserPresenceSensing | Disable,Enable | yes |  |
+| UserPresenceSensing | Disable,Enable | yes | Intel |
 
 </details>
 
@@ -41,7 +41,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ZeroTouchAllowOverride | Disable,Enable | yes |  |
+| ZeroTouchAllowOverride | Disable,Enable | yes | Intel |
 
 </details>
 
@@ -56,7 +56,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ZeroTouchLogin | Disable,Enable | yes |  |
+| ZeroTouchLogin | Disable,Enable | yes | Intel |
 
 </details>
 
@@ -74,7 +74,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ZeroTouchLoginDistanceAdjusting | Near,Middle,Far | yes |  |
+| ZeroTouchLoginDistanceAdjusting | Near,Middle,Far | yes | Intel |
 
 </details>
 </div>
@@ -91,7 +91,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ZeroTouchLock | Disable,Enable | yes |  |
+| ZeroTouchLock | Disable,Enable | yes | Intel |
 
 </details>
 <div style='margin-left:30px'>
@@ -107,7 +107,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ZeroTouchLockDistanceAdjusting | Near,Middle,Far | yes |  |
+| ZeroTouchLockDistanceAdjusting | Near,Middle,Far | yes | Intel |
 
 </details>
 
@@ -123,7 +123,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ZeroTouchLockTimer | Fast,Medium,Slow | yes |  |
+| ZeroTouchLockTimer | Fast,Medium,Slow | yes | Intel |
 
 </details>
 </div>
