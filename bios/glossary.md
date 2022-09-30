@@ -172,11 +172,12 @@
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| ODM| $2 original design manufacturer (???) <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| ODM| $2 Original Design Manufacturer <br /> <br /> *More information:* <br />  - ["Lenovo CSP Is For You!" at Lenovo YouTube](https://www.youtube.com/watch?v=2dFgkv2OQ5Y) <br/>  - ["Lenovo's Secret Recipe For Hyperscale Success Is Called ODM+" at Forbes.com](https://www.forbes.com/sites/patrickmoorhead/2018/10/22/lenovos-secret-recipe-for-hyperscale-success-is-called-odm/) <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| OEM| $2 https://en.wikipedia.org/wiki/Original_equipment_manufacturer  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| OEM| $2 Original Equipment Manufacturer  <br /> <br /> A company that manufactures products that it has designed from purchased components and sells those products under the company's brand name.
+ <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
@@ -184,7 +185,7 @@
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| Optane mode| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+|  | $2 Optane mode <br /> <br /> *More information:* <br />  - ["Intel® Optane™ Memory - Responsive Memory, Accelerated Performance"at Lenovo.com](https://www.intel.com/content/www/us/en/products/details/memory-storage/optane-memory.html) <br /> *Relevant settings:* <br />  - [ATA Drive Setup (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/ata_drive_setup) <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
@@ -192,15 +193,15 @@
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| PAP| $2 supervisor password (?) <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| PAP| $2 supervisor password (?) <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /> - [Require SVP when Flashing (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/password_policies) <br /> - [Set Supervisor Password (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/security) <br />| $3 | $4 | $5 |
+
+<!-- | Acronym | Term | AKA | See also | asdf |
+|---|---|---|---|---|
+| | $2 Password Mode <br /> As opposed to Certificate Mode. <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 | -->
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| Password Mode| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
-
-| Acronym | Term | AKA | See also | asdf |
-|---|---|---|---|---|
-| PCR1| $2 Platform Configuration Register (PCR) is a memory location in the TPM that has some unique properties. *More information:* https://docs.microsoft.com/en-us/windows/security/information-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| PCR1 | $2 Platform Configuration Register (PCR) is a memory location in the TPM that has some unique properties. *More information:* https://docs.microsoft.com/en-us/windows/security/information-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
