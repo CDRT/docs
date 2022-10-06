@@ -20,12 +20,6 @@ functions, such as query-based information retrieval and event notification, whi
 local and remote computers. The Lenovo BIOS WMI interface extends the capabilities of WMI to allow
 management of BIOS settings.
 
-The following illustration shows how WMI can be used to access Lenovo BIOS settings:
-
-<img src="../img/guides/bios/biosWMI.png"
-     alt=""
-     style="text-align:center;" />
-
 ### Key Benefits
 
 The Lenovo BIOS WMI interface provides the following benefits:
