@@ -62,10 +62,12 @@ One of 2 possible states:
 
 
 <details><summary>Boot Order Lock</summary>
+This setting can prevent other software from altering the Boot Order when it is enabled. This may be required in situations where an alternative boot loaded is required to be first in the boot order. When enabled, the Boot Order can only be changed using the BIOS Setup or the WMI interface.
+
 One of 2 possible states:
 
 1.	On – Boot Priority Order is locked.
-2.	**Off** – Boot Priority Order is not locked. Default. 
+2.	**Off** – Boot Priority Order is not locked. Default.
 
 | WMI Setting name | Values | SVP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
