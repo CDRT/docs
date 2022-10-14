@@ -128,7 +128,7 @@
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| | $2 Master hard disk password. <br /> <br /> *More information:* <!-- TODO --> <br /> <br /> *Relevant settings:* <br /> - [Hard Disk Password (ThinkStation)](https://docs.lenovocdrt.com/#/bios/settings/thinkstation/hard_disk_password.md) <br />| $3 Admin (hard disk) password. | $4 | $5 |
+| (M)HDP | $2 (Master) Hard Disk Password. <br /> <br /> *More information:* <!-- TODO --> <br /> <br /> *Relevant settings:* <br /> - [Hard Disk Password (ThinkStation)](https://docs.lenovocdrt.com/#/bios/settings/thinkstation/hard_disk_password.md) <br />| $3 Admin (hard disk) password. | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
@@ -185,7 +185,7 @@
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-|  | $2 Optane mode <br /> <br /> *More information:* <br />  - ["Intel® Optane™ Memory - Responsive Memory, Accelerated Performance"at Lenovo.com](https://www.intel.com/content/www/us/en/products/details/memory-storage/optane-memory.html) <br /> *Relevant settings:* <br />  - [ATA Drive Setup (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/ata_drive_setup) <br />| $3 | $4 | $5 |
+|  | $2 Optane <br /> <br /> *More information:* <br />  - ["Intel® Optane™ Memory - Responsive Memory, Accelerated Performance"at Lenovo.com](https://www.intel.com/content/www/us/en/products/details/memory-storage/optane-memory.html) <br /> *Relevant settings:* <br />  - [ATA Drive Setup (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/ata_drive_setup) <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
@@ -201,55 +201,55 @@
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| PCR1 | $2 Platform Configuration Register (PCR) is a memory location in the TPM that has some unique properties. *More information:* https://docs.microsoft.com/en-us/windows/security/information-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| PCR1 | $2 A Platform Configuration Register (PCR) is a memory location in the TPM, for storing security metrics. <br /> <br /> *More information:* <!-- TODO --> <br /> <br /> *Relevant settings:*  <br /> - [Security Chip (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/securitychip) <br />| $3 | $4 Trusted Platform Module (TPM) | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| PK| $2 platform key <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| PEAP| $2 Protected / Lightweight Extensible Authentication Protocol <!-- TODO: PEAP, LEAP or SEAP? --> <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /> - [Network (ThinkPad)]() <br />| $3 | $4 EAP, LEAP | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| Platform| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| PK | $2 Platform key <br />  The public key used in Secure Boot.<br /> *More information:* <br />  - ["Key Management" at Lenovo CDRT](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/secureboot?id=key-management) <br /> *Relevant settings:* <br /> - [Enter Audit Mode (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/secure_boot?id=enter-audit-mode) <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| POP| $2 Power On Password <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| | $2 Platform <br /> A specific combination of hardware and software. <br /> *More information:* <br /> <!-- TODO --> <br /> *Relevant settings:*<br /> - [Intel (R) SIPP Support (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/advanced) <br /><br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| POST| $2 Power On Self Test <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| POP| $2 Power On Password <br /> Allows the computer to power on directly to a password prompt but go no further until the correct password is entered. <br /> *More information:* <br /> - [BIOS Guide](https://docs.lenovocdrt.com/#/bios/bios_guide) <br /> *Relevant settings:* - [Password Policies (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/password_policies) <br /><br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| Predesktop| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| POST| $2 Power On Self Test <br /> Process of testing and initializing memory, devices, and (depending on model) software required by OS, immediately after power on and before OS is loaded. <br /> *More information:* <br /> <!-- TODO --> <br /> *Relevant settings:* <br /> - [Password Count Exceeded Error (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/password_policies) <br /> - [USB Enumeration Delay (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/usb_setup) | $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| PXE| $2 https://en.wikipedia.org/wiki/Preboot_Execution_Environment <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| Predesktop| $2 <!-- TODO --> <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| RAID| $2 https://en.wikipedia.org/wiki/RAID <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| PXE| $2 Preboot eXecution Environment <br /> Method for booting computers using a network interface, independent of local storage devices or installed operating systems. <br /> *More information:* <br />  - ["Preboot Execution Environment (PXE)" at Microsoft.com](https://learn.microsoft.com/en-us/previous-versions/ms818762(v=msdn.10)) <br /> *Relevant settings:* <br /> - [Network Setup (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/network_setup) <br /> - [Network Settings (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/network) <br/> - [Network Boot (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/startup)  | $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| RST| $2 Rapid Storage Technology <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| RAID| $2 Redundant Array of Independent Disks <br /> A standard configuration of multiple, redundant hard disks into logical units for scale and reliability. <br /> *More information:* <br />  - ["Common RAID Disk Data Format (DDF)" at Storage Networking Industry Association](https://www.snia.org/tech_activities/standards/curr_standards/ddf) <br /> *Relevant settings:* <br /> - [ATA Drive Setup(ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/ata_drive_setup) <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| SATA| $2 Serial AT Attachment <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| RST| $2 Rapid Storage Technology <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /> - [Configure SATA As (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/ata_drive_setup) <br />| $3 | $4 RAID, Optane | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| SCCM| $2 Configuration Manager or System Center Configuration Manager <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| SATA| $2 Serial AT ("Advanced Technology") Attachment <br /> Standard interface between computer bus and storage devices. <br /> *More information:* <br />  - ["Developers Can Trust Intel Leadership in Serial ATA" at Intel.com](https://www.intel.com/content/www/us/en/io/serial-ata/serial-ata-developer.html) <br /> *Relevant settings:* <br /> - [ATA Drive Setup (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/ata_drive_setup) <br /> - [Startup (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/startup) | $3 | $4 ATA, PATA | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| SEAP| $2 (see also EAP) <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| (SC)CM| $2 Configuration Manager or System Center Configuration Manager <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| Security Chip| $2 aka Trusted Platform Module (TPM). More information here: https://docs.microsoft.com/en-us/windows/security/information-protection/tpm/trusted-platform-module-overview and here https://docs.microsoft.com/en-us/windows/security/information-protection/tpm/trusted-platform-module-top-node  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| | $2 Security Chip <br /> A type of Trusted Platform Module (TPM) implemented as a separate chip. <br />  and here https://docs.microsoft.com/en-us/windows/security/information-protection/tpm/trusted-platform-module-top-node  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 Trusted Platform Module (TPM) | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
@@ -321,7 +321,7 @@
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| TPM| $2 Trusted Platform Module| $2 https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-tpm  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| TPM| $2 Trusted Platform Module <br><br> A secure cryptoprocessor, which is either logically or physically separate from the main chipset, and used for security functions. <br> | $2  *More information:* <br />  - ["Lenovo Trusted Platform Module (TPM) FAQ" at Lenovo Support](https://support.lenovo.com/us/en/solutions/ht512598) <br />  - ["Trusted Platform Module" at Microsoft.com](https://learn.microsoft.com/en-us/windows/security/information-protection/tpm/trusted-platform-module-top-node) <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
