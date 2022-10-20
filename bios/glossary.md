@@ -289,15 +289,15 @@
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| SSD password | $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| SSD password | $2 SSD Hard Disk Password <br /> <!-- TODO: --> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| Sticky Key| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| | $2 Sticky Key <br /> When a modifier key (such as shift, CTRL, ALT) remains active until another key is pressed. <br /> *More information:* <br /> <!-- TODO: --> <br /> *Relevant settings:*  <br /> - [Fn Sticky Key (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/keyboardmouse) <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| SVP| $2 Supervisor Password <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| SVP | $2 Supervisor Password <br /> <br /> *More information:* <br /> <br /> *Relevant settings:*   <br /> - [Device Guard Settings (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/deviceguard) <br /> - [Supervisor Password (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/security) <br /> <br /> - [Password Policies (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/password_policies) <br /> | $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
