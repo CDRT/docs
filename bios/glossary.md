@@ -301,23 +301,23 @@
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| System Deployment Boot Mode (SDBM)| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| SDBM | $2 System Deployment Boot Mode <br /> Enables programmatic configuration of key security BIOS settings during operating system deployments. <br /> *More information:* <br />  - ["System Deployment Boot Mode" at Lenovo CDRT](https://docs.lenovocdrt.com/#/bios/sdbm) <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| Sx states| $2 system power states https://docs.microsoft.com/en-us/windows/win32/power/system-power-states  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| Sx states| $2 System power states <br /> <br /> *More information:* <br />  - ["System Power States" at Microsoft.com](https://learn.microsoft.com/en-us/windows/win32/power/system-power-states) <br /> *Relevant settings:* <br />  <br /> - [Enhanced Power Saving Mode (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/power) <br /> <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| TBCT| $2 Think BIOS Config Tool <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| TBCT | $2 Think BIOS Config Tool <br /> <br /> *More information:* <br />  - ["Think BIOS Config Tool" at Lenovo CDRT](https://docs.lenovocdrt.com/#/tbct/tbct_top) <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| TCG| $2 Trusted Computing Group https://trustedcomputinggroup.org/  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| TCG | $2 Trusted Computing Group <br /> Standards body for secure computing. <br /> *More information:* <br />  - [More information at trustedcomputinggroup.org](https://trustedcomputinggroup.org/) <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| TME| $2 Total Memory Encryption <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| TME | $2 Total Memory Encryption <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
@@ -325,52 +325,55 @@
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| TSME| $2 Transparent Secure Memory Encryption  <br /> <br /> *More information:*  <br /> - [White paper at AMD.com](https://www.amd.com/system/files/documents/amd-memory-guard-white-paper.pdf) <br /> <br /> *Relevant settings:* <br /><br />| $3 AMD Memory Guard | $4 SATA | $5 asdfasdf |
-| TrackPad| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| TSME| $2 Transparent Secure Memory Encryption  <br /> <br /> *More information:*  <br /> - [White paper (PDF) at AMD.com](https://www.amd.com/system/files/documents/amd-memory-guard-white-paper.pdf) <br /> <br /> *Relevant settings:* <br /><br />| $3 AMD Memory Guard | $4 SATA | $5 asdfasdf |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| TrackPoint| $2 <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+|  | $2 TrackPad <br /> <br /> *More information:* <br />  - ["Popular Topics: Keyboard, Mouse, Touchpad, TrackPad, TrackPoint" at Lenovo Support](https://support.lenovo.com/us/en/solutions/ht503907) <br /> *Relevant settings:* <br />  <br /> - [Trackpad (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/keyboardmouse) <br /> <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| UEFI| $2 Unified Extensible Firmware Interface <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| | $2 TrackPoint <br /> <br /> *More information:* <br />  - ["Popular Topics: Keyboard, Mouse, Touchpad, TrackPad, TrackPoint" at Lenovo Support](https://support.lenovo.com/us/en/solutions/ht503907) <br /> *Relevant settings:* <br />  <br /> - [TrackPoint (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/keyboardmouse) <br /> <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| UMI| $2 Unified Memory Architecture <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| UEFI| $2 Unified Extensible Firmware Interface <br /> UEFI specifications define an interface in which the implementation of UEFI performs the equivalent of the BIOS, by initiating the platform and loading the operating system. <br /> *More information:* <br />  - ["UEFI FAQS" at UEFI.org](https://uefi.org/faq) <br /> *Relevant settings:* <br />  <br /> - [UEFI BIOS Update Option Settings (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/uefibiosupdate) <br /> <br />| $3 BIOS, Firmware | $4 BIOS | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| UNDI| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| UMA | $2 Unified Memory Architecture <br /> <!-- TODO: --> <br /> *More information:* <br />  - ["Configuring UMA Frame Buffer Size" at AMD.com](https://www.amd.com/en/support/kb/faq/pa-280) <br /> *Relevant settings:* <br />  <br /> - [Total Graphics Memory (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/display) <br /> <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| USB| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| UNDI | $2 Universal Network Driver Interface <br /> API for network cards. <br /> *More information:* <br /> <br /> *Relevant settings:* <br />  <br /> - [Wireless LAN PXE boot (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/network_setup) <br /> <br />| $3  | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| User mode| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| USB| $2 Universal Serial Bus <br /> Connectivity specification that allows peripheral devices like scanners, printers, and memory sticks to be plugged into the computer and configured automatically. <br /> *More information:* <br /> <br /> *Relevant settings:* <br /> <!-- TODO: 100 USB settings --> <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| Vantage| $2 AKA Lenovo Vantage, see also https://support.lenovo.com/us/en/solutions/ht505081-lenovo-vantage-using-your-pc-just-got-easier and https://www.lenovo.com/us/en/software/vantage <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| | $2 User mode <br /> <!-- TODO: --> <br /> *More information:* <br /> <br /> *Relevant settings:* <br />  <br /> - [System Mode (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/secure_boot) <br />  <br /> - [Secure Boot Mode (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/secureboot) <br /> <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| VDI| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| | $2 Lenovo Vantage, see also https://support.lenovo.com/us/en/solutions/ht505081-lenovo-vantage-using-your-pc-just-got-easier and https://www.lenovo.com/us/en/software/vantage <br /> <br /> *More information:* <br />  - ["Commercial Vantage" at Lenovo CDRT](https://docs.lenovocdrt.com/#/cv/cv_top) <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| VMM| $2  <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| VDI | $2 Windows Virtual Desktop <br /> IT infrastructure that allows access enterprise computer systems from almost any device. <br /> *More information:* <br /> - [More information at Lenovo Support](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-virtual-desktop-infrastructure-vdi/#what-is-virtualization) <br /> *Relevant settings:* <br />  <br /> - [Win VDI Boot (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/network_setup) <br />  <br /> - [Lenovo Cloud Services (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/network) <br /> <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| Wireless Certified Information| $2 <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| VMM | $2 Virtual Machine Monitor <br /> <!-- TODO: --> <br /> *More information:* <br /> <br /> *Relevant settings:* <br />  <br /> - [Intel (R) Virtualization Technology (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/virtualization) <br /> <br />| $3 | $4 | $5 |
 
 | Acronym | Term | AKA | See also | asdf |
 |---|---|---|---|---|
-| WMI| $2 Windows Management Interface <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
+| | $2 Wireless Certified Information <br /> <br /> *More information:* <br /> <br /> *Relevant settings:* <br />  <br /> - [Wireless Certified Information (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/network_setup) <br /> <br />| $3 | $4 | $5 |
+
+| Acronym | Term | AKA | See also | asdf |
+|---|---|---|---|---|
+| WMI| $2 Windows Management Interface <br /> <!-- TODO: --> <br /> *More information:* <br /> <br /> *Relevant settings:* <br /><br />| $3 | $4 | $5 |
 
 
 
