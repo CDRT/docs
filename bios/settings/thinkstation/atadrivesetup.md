@@ -53,7 +53,7 @@ Options:
 |:---|:---|:---|:---|
 | SATADrivexHotPlugSupport | Disabled, Enabled | yes | Both |
 
-!> `x` is the port number.
+!> `x` is the port number. May vary depending on model.
 
 </details>
 

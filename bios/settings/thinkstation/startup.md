@@ -102,9 +102,9 @@ Options:
 1. **Normal** – prompt for the Enter key and display a menu. Default.
 2. Legacy – prompt for F1 and F12.
 
-| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+<!-- | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| OptionKeysDisplayStyle | Normal, Legacy | yes | Both |
+| OptionKeysDisplayStyle | Normal, Legacy | yes | Both | -->
 </details>
 
 ### AMD-only features ###

@@ -74,9 +74,8 @@ Options:
 
 ![](./img/amd_power.png)
 
-<details><summary>PSU Over load Warning</summary>
+<!-- <details><summary>PSU Over load Warning</summary>
 
-<!-- TODO: please confirm that this feature is available on the P620 -->
 
 Whether to display a warning (and log if possible) if a Power Supply Unit (PSU) overload condition is detected.
 
@@ -85,11 +84,8 @@ Options:
 1.  **Disabled** - Default.
 2.  Enabled.
 
-<!-- | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| setting_name | setting_values | yes_no | both | -->
 
-</details>
+</details> -->
 
 
 <details><summary>Quad M.2 PCIe Card Fan Control Stepping</summary>

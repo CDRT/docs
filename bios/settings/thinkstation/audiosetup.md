@@ -34,7 +34,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| InternalSpeaker | Disabled, Enabled | yes | Intel |
+| InternalSpeaker | Disabled, Enabled | yes | both |
 
 </details>
 
