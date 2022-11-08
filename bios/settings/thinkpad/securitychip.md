@@ -18,7 +18,7 @@ One of 2 possible states:
 **Note**. If shows ‘MFG Mode’ (manufacturing mode), then TPM (Trusted Platform Module) must be provisioned correctly.
 
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | SecurityChip | Active, Inactive, Disable, Enable | No | Both |
 </details>
@@ -43,7 +43,7 @@ One of 2 possible states:
 1.	On
 2.	**Off** – Default.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | TXTFeature | Disable, Enable | No | Intel |
 </details>
@@ -56,7 +56,7 @@ One of 2 possible states:
 1.	**On** - display user confirmation screen when clearing. Default. 
 2.	Off - No user confirmation screen when clearing.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | PhysicalPresenceForTpmClear  | Disable, Enable | Yes | Both |
 

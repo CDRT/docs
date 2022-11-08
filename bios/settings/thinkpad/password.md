@@ -130,7 +130,7 @@ One of 2 possible states:
 1.	**On** - TCG (Trusted Computing Group) Storage device will block attempts to authenticate the SID (Security Identifier) authority until a subsequent device power cycle occurs. Default.
 2.	Off - allow SID authentication in TCG Storage device at the next system boot only, not all subsequent boots.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | BlockSIDAuthentication | Disable, Enable | No | Both |
 </details>
@@ -144,7 +144,7 @@ One of 2 possible states:
 
 **Note**. UEFI BIOS Lock will not take effect unless Supervisor password is enabled.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | LockBIOSSetting | Disable, Enable | No | Both |
 </details>
@@ -159,7 +159,7 @@ One of 2 possible states:
     **Note**. To protect unauthorized access to the system it is recommended to set user authentication on the OS.
 
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | BIOSPasswordAtUnattendedBoot | Disable, Enable | Yes | Both |
 </details>
@@ -173,7 +173,7 @@ One of 2 possible states:
 
     **Note**. To protect unauthorized access to the system it is recommended to set user authentication on the OS.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | BIOSPasswordAtReboot | Disable, Enable | Yes | Both |
 </details>
@@ -187,7 +187,7 @@ One of 2 possible states:
 2.	**Off** - system will proceed without any user action required. Default. 
 
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | BIOSPasswordAtBootDeviceList | Disable, Enable | Yes | Both |
 </details>
@@ -200,7 +200,7 @@ One of 2 possible states:
 2.	Off - hide the POST 0199 error and proceed without any user action required. 
 
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | PasswordCountExceededError | Disable, Enable | Yes | Both |
 </details>
@@ -222,7 +222,7 @@ One of 9 options:
 
 **Note**. If a supervisor password is set, you cannot change the minimum length until you log in as a supervisor.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | MinimumPasswordLength | Disable, 4, 5, 6, 7, 8, 9, 10, 11, 12 | No | Both |
 </details>
@@ -234,7 +234,7 @@ One of 2 possible options:
 1.	**Disabled** - no specific requirements to passwords. Default. 
 2.	Enabled - Supervisor Password, System Management Password, Power-On and Hard Disk password lengths must be equal or longer than 8 characters, must include at least one uppercase character, one lowercase character and one number.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | StrongPassword | Disable, Enable | Yes | Both |
 </details>
@@ -249,7 +249,7 @@ One of 2 possible options:
 1.	**Off** – Default.
 2.	On – allow System Management Password to have the same authority as Supervisor Password to control System Management Password.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | SystemManagementPasswordControl | Disable, Enable | Yes | Both |
 </details>
@@ -261,7 +261,7 @@ One of 2 possible options:
 1.	**Off** - Default.
 2.	On - allow System Management Password to have the same authority as Supervisor Password to control Power-On Password.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | PowerOnPasswordControl | Disable, Enable | Yes | Both |
 </details>
@@ -273,7 +273,7 @@ One of 2 possible options:
 1.	**Off** - Default.
 2.	On - allow System Management Password to have the same authority as Supervisor Password to control Hard Disk Password.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | HardDiskPasswordControl | Disable, Enable | Yes | Both |
 </details>
@@ -285,7 +285,7 @@ One of 2 possible options:
 1.	**Off** - Default.
 2.	On - allow System Management Password to have the same authority as Supervisor Password to control BIOS setup items.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | BIOSSetupConfigurations | Disable, Enable | Yes | Both |
 </details>
