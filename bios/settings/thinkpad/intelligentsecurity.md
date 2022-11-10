@@ -23,7 +23,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| UserPresenceSensing | Disable,Enable | yes | Intel |
+| UserPresenceSensing | Disable, Enable | yes | Intel |
 
 </details>
 
@@ -41,7 +41,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ZeroTouchAllowOverride | Disable,Enable | yes | Intel |
+| ZeroTouchAllowOverride | Disable, Enable | yes | Intel |
 
 </details>
 
@@ -56,7 +56,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ZeroTouchLogin | Disable,Enable | yes | Intel |
+| ZeroTouchLogin | Disable, Enable | yes | Intel |
 
 </details>
 
@@ -74,7 +74,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ZeroTouchLoginDistanceAdjusting | Near,Middle,Far | yes | Intel |
+| ZeroTouchLoginDistanceAdjusting | Near, Middle, Far | yes | Intel |
 
 </details>
 </div>
@@ -91,7 +91,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ZeroTouchLock | Disable,Enable | yes | Intel |
+| ZeroTouchLock | Disable, Enable | yes | Intel |
 
 </details>
 <div style='margin-left:30px'>
@@ -107,7 +107,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ZeroTouchLockDistanceAdjusting | Near,Middle,Far | yes | Intel |
+| ZeroTouchLockDistanceAdjusting | Near, Middle, Far | yes | Intel |
 
 </details>
 
@@ -123,7 +123,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ZeroTouchLockTimer | Fast,Medium,Slow | yes | Intel |
+| ZeroTouchLockTimer | Fast, Medium, Slow | yes | Intel |
 
 </details>
 </div>
