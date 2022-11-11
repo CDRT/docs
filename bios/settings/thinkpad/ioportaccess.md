@@ -193,3 +193,18 @@ One of 2 possible states:
 |:---|:---|:---|:---|
 | NfcAccess | Disable, Enable | No | Both |
 </details>
+
+<details><summary>Tile</summary>
+
+Whether to enable Tile Mode in the OS environment.
+
+Options:
+
+1.  **On** - Default.
+2.  Off.
+<!-- TODO
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| TileMode | setting_values | yes_no | both | -->
+
+</details>

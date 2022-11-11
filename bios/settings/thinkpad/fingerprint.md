@@ -40,6 +40,23 @@ One of 2 possible states:
 | FingerprintPasswordAuthentication | Disable, Enable | No | Both |
 </details>
 
+<details><summary>Single-touch authentication</summary>
+
+Whether to allow a single touch fingerprint authentication to work through all security levels.
+
+!> Switching off means requiring individual fingerprint authentication for each security level.
+
+Options:
+
+1.  **On** - Default.
+2.  Off.
+<!-- TODO
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| FingerprintSingleTouchAuthentication | setting_values | yes_no | both | -->
+
+</details>
+
 
 <details><summary>Reset Fingerprints Data</summary>
 This option is used to erase all fingerprint data stored in the fingerprint reader and reset settings to the factory state (ex. Power-on security, LEDs, etc.). <br>

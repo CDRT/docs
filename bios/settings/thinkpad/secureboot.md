@@ -56,6 +56,23 @@ The option requires additional confirmation.
 
 </details>
 
+<details><summary>Allow Microsoft 3rd Party UEFI CA</summary>
+
+Whether to install Microsoft 3rd Party UEFI CA in Secure Boot DB, and trust it in Secure Boot.
+
+!> If add-on cards are supported, Microsoft 3rd Party UEFI CA will not be removed until load boot loader.
+
+Options:
+
+1.  **Off** - Default.
+2.  On.
+<!-- TODO
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| Allow3rdPartyUEFICA | setting_values | yes_no | both | -->
+
+</details>
+
 
 ### Key Management ###
 ![](./img/securebootkeysmanagement.png)

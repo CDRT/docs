@@ -71,3 +71,20 @@ Option to define the amount of time to extend the boot process, in seconds.
 |:---|:---|:---|:---|
 | BootTimeExtension | Disable, 1, 2, 3, 5, 10 | No | Both |
 </details>
+
+<details><summary>ePrivacy Lock</summary>
+
+Whether to set Privacy Guard always on, and prevent the user from disabling it.
+
+!> If switched off, Privacy Guard can be toggled any time with hotkey `Fn` + `D`.
+
+Options:
+
+1.  **Off** - Default.
+2.  On.
+<!-- TODO
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| ePrivacyLock | setting_values | yes_no | both | -->
+
+</details>

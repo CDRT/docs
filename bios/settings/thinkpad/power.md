@@ -39,6 +39,26 @@ One of 2 possible options of thermal management scheme to use:
 | AdaptiveThermalManagementBattery | MaximizePerformance,  Balanced | No | Both |
 </details>
 
+<details><summary>Intelligent Cooling Boost</summary>
+
+Whether to  improve power efficiency by limiting system power based on the selected OS application, when Intelligent Cooling is on.
+
+!> This feature is Windows only.
+
+?> For more details about Intelligent Cooling mode, please refer to Vantage or the user guide.
+
+Options:
+
+1.  **On** - Default.
+2.  Off.
+<!-- TODO
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| IntelligentCoolingBoost | setting_values | yes_no | both | -->
+
+</details>
+
+
 <details><summary>CPU Power Management</summary>
 One of 2 possible options:
 
