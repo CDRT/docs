@@ -17,7 +17,7 @@ One of 2 possible options:
 One of 2 possible options if the system includes a discrete graphics adapter:
 
 1.	**Hybrid Graphics** - Both the integrated and the discrete graphics adapters are available to the OS. Default.
-2.	Discrete Graphics - Only the discrete graphics adapater is available to the OS.
+2.	Discrete Graphics - Only the discrete graphics adapter is available to the OS.
 
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
@@ -32,7 +32,9 @@ One of 2 possible options if the system includes a discrete graphics adapter:
 One of 2 possible options to allocate total memory which Intel (R) internal graphics device shares:
 
 1.	**256 MB** - Default. 
-2.	512 MB - If selected, then the maximum usable memory may be reduced on 32-bit OS
+2.	512 MB
+
+!> If 512 MB is selected, the maximum usable memory may be reduced on 32-bit OS
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
@@ -64,7 +66,7 @@ Option to define the amount of time to extend the boot process, in seconds.
 5.	5 seconds
 6.	10 seconds
 
-**Note**. The System cannot detect some external monitors during boot because they need a few seconds to be ready. Try this option if the monitor being used does not display the boot screen.
+!> The System cannot detect some external monitors during boot because they need a few seconds to be ready. Try this option if the monitor being used does not display the boot screen.
 
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |

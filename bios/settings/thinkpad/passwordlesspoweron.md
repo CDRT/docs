@@ -1,6 +1,6 @@
 # ThinkShield Passwordless Power-On  #
 
-![](./img/filename.png)
+![](./img/passwordlesspoweron.png)
 
 <details><summary>ThinkShield Passwordless Power-On Authentication</summary>
 
