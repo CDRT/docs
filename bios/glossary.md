@@ -6,6 +6,30 @@
 |---|---|---|
 | Administrator (hard disk) Password <br /> <br /> Hard disk password, available if `Dual Password` is enabled. <br /> - ThinkPad: Admin + User password <br /> - ThinkCentre & Thinkstation: Master + User passwords. <br /> <br /> Admin and Master are synonyms.<br /> <br /> *More information:* <br /> - ["Types of password for ThinkPad" at Lenovo Support](https://support.lenovo.com/lt/en/solutions/ht036206-types-of-password-for-thinkpad) <br /> - ["Types of Passwords for ThinkCentre, ThinkStation" at Lenovo Support](https://support.lenovo.com/lt/en/solutions/ht513634) <br /> - [BIOS Security Settings](https://docs.lenovocdrt.com/#/bios/bios_guide?id=bios-security-settings) <br /> <br /> *Relevant settings:* <br /> - [Hard Disk Password (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/hard_disk_password) <br />- [Password Policies (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/password_policies) <br /> - [NVMe1 Password (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/password) |  |  |
 
+---
+### Administrator (hard disk) Password
+Hard disk password, available if `Dual Password` is enabled.
+- ThinkPad: Admin + User password
+- ThinkCentre & Thinkstation: Master + User passwords.
+
+Admin and Master are synonyms.
+
+*More information:*
+- ["Types of password for ThinkPad" at Lenovo Support](https://support.lenovo.com/lt/en/solutions/ht036206-types-of-password-for-thinkpad)
+- ["Types of Passwords for ThinkCentre, ThinkStation" at Lenovo Support](https://support.lenovo.com/lt/en/solutions/ht513634) 
+- [BIOS Security Settings](https://docs.lenovocdrt.com/#/bios/bios_guide?id=bios-security-settings)
+
+*Relevant settings:*
+- [Hard Disk Password (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/hard_disk_password)
+- [Password Policies (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/password_policies) 
+- [NVMe1 Password (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/password) 
+
+*AKA*
+
+*See also*
+
+---
+
 | Term | AKA | See also |
 |---|---|---|
 | <strong>AHC </strong><br/>  Advanced Host Controller Interface <br /> <br /> *More information:* <br /> - ["Serial ATA AHCI: Specification" at Intel.com](https://www.intel.com/content/www/us/en/io/serial-ata/serial-ata-ahci-spec-rev1-3-1.html) <br /> <br /> *Relevant settings:* <br /><br /> - [Configure SATA As (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/ata_drive_setup) |  |  RAID |
