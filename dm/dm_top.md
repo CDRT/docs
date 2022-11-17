@@ -33,3 +33,4 @@ The application can also record data from docks into WMI (root\Lenovo\Dock_Manag
 * ThinkPad USB-C Dock Gen 1 - [40A9](https://support.lenovo.com/solutions/ACC100348)
 * ThinkPad USB-C Dock Gen 2 - [40AS](https://support.lenovo.com/solutions/ACC500106)
 * ThinkPad USB-C with USB-A Dock - [40AF](https://support.lenovo.com/solutions/PD500180)
+* Lenovo USB-C Dock - [40B5](https://pcsupport.lenovo.com/accessories/acc500276)
