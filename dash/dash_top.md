@@ -696,7 +696,7 @@ To configure the DASH Wakeup feature, perform the following steps:
 - In the **DASH Configuration** screen select the **DASH Wakeup** check box, if already not selected.
 - In the **Software Deployment Package,** be sure to enable the Wake-on-LAN option and set a valid future schedule when creating the software deployment package for a device collection.
 
-![DASH Plugin Configuration](../img/dash/25-dash.png)
+<!-- ![DASH Plugin Configuration](../img/dash/25-dash.png) -->
       
 ### Auto Discovery
 
@@ -1041,7 +1041,7 @@ The DASH settings that can be changed in the **DASH Configuration** window are:
 - Change DASH port numbers
 - Enable/Disable DASH Auto Discovery and DASH wakeup
 
-![DASH Configuration](../img/dash/46-dash.png)
+![DASH Configuration](../img/dash/46-dashConfig.png)
 
 The **Full Control** security right allows Read or Modify on Site class or Site class instance control. Full Control can modify and save all settings and user security rights assignments.
 

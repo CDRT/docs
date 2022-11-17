@@ -527,6 +527,108 @@ The ThinkPad Thunderbolt 3 Dock is an unmatched docking solution powered by Inte
 
 <hr/>
 
+# ThinkPad Universal USB-C Smart Dock (40B20135)
+
+ThinkPad Universal USB-C Smart Dock (40B2) is designed to enhance everyday productivity. The Lenovo™ ThinkPad® Universal USB-C Smart Dock (40B2) is at the cutting edge of our new series of docks offering a smarter way to work. A bridge to a more intelligent future, the dock features a rich array of data, display, and power ports, including universal USB-C compatibility, while driving incredible performance for commercial users and a secure cloud-based management solution for IT managers. And it’s all powered by Microsoft Azure Sphere.
+
+Top Features:
+
+- One Cable For All Your Needs: Get more from your workday by adding 11+ expansion possibilities in a single quick-release cable for maximum efficiency. Expand your creative potential with access to multiple 4K monitors, and blazing-fast data transfers with USB-C and USB-A. Plus, rapid-charging for your laptops up to 100W so you can remain energized at all time.
+- Universal Dock Compatibility: Boost the value of your investment with the broad compatibility of the ThinkPad Universal USB-C Smart Dock. Supporting both Thunderbolt™ 3 and 4, USB 4™ and USB-C, and extended compatibility in a Multi-OS environment;
+- Streamlined Dock Management: Break free from the old docking paradigm and streamline your management workflow with a range of time-saving innovations. With the ThinkPad Universal USB-C Smart Dock, you can remotely update its firmware without a connected PC, remotely manage ports, conduct data analytics, utilize diagnostic tools, and keep your system safe with Microsoft Azure Sphere security solution.
+
+[>> More Information & Drivers](https://support.lenovo.com/us/en/accessories/acc500253)
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px;">
+
+![](../img/guides/docks/uusbcsd1.png)
+![](../img/guides/docks/uusbcsd2.png)
+</div>
+
+[Display Capabilities](https://support.lenovo.com/us/en/solutions/pd029622#Hybrid%20Dock)
+
+## Connectivity
+
+> Front ports:
+> - 1 USB 3.0
+> - 1 USB-C
+> - 1 3.5mm Audio Headphone/Mic combo jack
+>
+> Rear ports:
+> - 2 USB 3.2 Gen 2
+> - 2 USB 2.0
+> - 2 DisplayPort
+> - 1 HDMI
+> - 1 Thunderbolt - To Computer with power
+> - 1 Ethernet
+> - 1 135W AC power input
+ 
+
+## Deployment
+
+<table class="deploymentTable">
+<tr>
+<td class="tdDT" rowspan="12" style="width:15%">
+<h5 align="center">Deployment (MDT & SCCM)</h5>
+</td>
+</tr>
+<tr>
+<td rowspan="5" class="tdDT">
+<h5>Query: </h5>
+<tr>
+<td class="tdDT">Ethernet </td>
+<td class="depTableFont">USB\VID_0BDA&PID_8153</td>
+</tr>
+<tr>
+<td class="tdDT">Audio</td>
+<td class="depTableFont">USB\VID_17EF&PID_30B0&MI_00 </td>
+</tr>
+<tr>
+<td class="tdDT">Billboard </td>
+<td class="depTableFont">USB\VID_17EF&PID_30CA&MI_00 </td>
+</tr>
+</td>
+</tr>
+<tr rowspan="1">
+<td rowspan="4" class="tdDT">
+<h5>Driver(s): </h5>
+<tr>
+<td class="tdDT">WinPE </td>
+<td class="depTableFont"><a href="https://pcsupport.lenovo.com/accessories/acc500253" target="_blank"> https://pcsupport.lenovo.com/accessories/acc500253</a></td>
+</tr>
+<tr>
+<td class="tdDT">Windows</td>
+<td class="depTableFont"><a href="https://pcsupport.lenovo.com/accessories/acc500253"
+	target="_blank">https://pcsupport.lenovo.com/accessories/acc500253</a></td>
+</tr>
+<tr>
+<td class="tdDT">Firmware</td>
+<td class="depTableFont">We do not recommend deploying firmware updates during OSD
+deployment<br><br><a href="https://pcsupport.lenovo.com/us/en/downloads/DS504448" target="_blank">https://pcsupport.lenovo.com/us/en/downloads/DS504448</a></td>
+</tr>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>PXE Capable: </h5>
+</td>
+<td class="depTableFont">Yes &nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="2" class="tdDT">
+<h5>Driver Deployment: </h5>
+</td>
+<td class="depTableFont"><b>MDT</b> (deploy as hardware app in task sequence)<br>
+&nbsp;&nbsp;&nbsp;As Application ( u3etn09w.exe /VERYSILENT) <br><br>
+<b>SCCM </b><br> &nbsp;&nbsp;&nbsp;Deploy As Package in task sequence
+(u3etn09w.exe /VERYSILENT)
+<br> <b>*Restart required*</b> </td>
+</tr>
+</table>
+
+<hr/>
+
 # ThinkPad Hybrid USB-C with USB-A Dock (PN 40AF0135)
 
 The ThinkPad Hybrid USB-C with USB-A Dock (40AF) expands the capabilities of most any laptop, new or old, making it perfect for enterprise customers with mixed-PC or shared-desk environments. Featuring enterprise-class manageability like PXE boot and MAC address Pass-through the ThinkPad Hybrid USB-C with USB-A offers three high-speed USB3.1 ports, up to dual UHD 4K resolution and rapid charging on ThinkPad notebooks. And, with the included USB-C to USB-A adaptor it can also provide port replication to non-Lenovo or USB-C notebooks. 

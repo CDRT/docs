@@ -9,6 +9,6 @@
 <hr/>
 
 **Other References**
-- [Accessories: Lenovo Quick Pick ![ ](../img/link.png)](http://www.lenovoquickpick.com/usa/accessorycategory/5/docking-stations)
-- [Options Compatibility Matrix ![ ](../img/link.png)](https://download.lenovo.com/pccbbs/options_iso/ocm_sept_2021.xlsx)
+- [Accessories: Lenovo Quick Pick ![ ](../img/link.png)](https://smartfind.lenovo.com/accessories/#/search?%2Fsearch&categoryL1Name=Docking&categoryL2Names&pageIndex=1&pageSize=40)
+- [Options Compatibility Matrix ![ ](../img/link.png)](https://support.lenovo.com/us/en/accessories/um006391)
 - [Docks, Port Replicator, <br>Ultrabase - Reference Guide ![ ](../img/link.png)](https://pcsupport.lenovo.com/us/en/solutions/pd014572)

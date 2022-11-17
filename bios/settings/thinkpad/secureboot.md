@@ -8,7 +8,7 @@ One of 2 possible options:
 1.	On – prevent unauthorized operating systems from running at boot time. Default, if ‘OS Optimized Defaults’ has value ‘On’.
 2.	Off – allow to run any operating systems at boot time. Default, if ‘OS Optimized Defaults’ has value ‘Off.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | SecureBoot | Disable, Enable | Yes* | Both |
 

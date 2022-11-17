@@ -10,7 +10,7 @@ One of 3 possible states:
 3.	Permanently Disabled – permanently disables the activation.<br> 
     **Note**. This selection requires additional confirmation. If this module is permanently disabled, then you will be never able to enable this setting again. 
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | AbsolutePersistenceModuleActivation | Disable, Enable, PermanentlyDisable | No | Both |
 </details>

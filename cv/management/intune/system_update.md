@@ -1,8 +1,10 @@
-### System Update Configuration ###
+### System Update Configuration
+
 This policy setting provides the ability for the Administrator to configure the filter of searching updates.  If you enable this policy setting, Commercial Vantage will search for updates based on this filter. This policy affects both manual and auto update.
 
 OMA-URI:
-```
+
+```csp
 ./Device/Vendor/MSFT/Policy/Config/CommercialVantage~Policy~03E445D7B5956335BEDEF9340AC7E092~7D8BB8A33C8A8577FC2188C5539DFDBB~162A79B7E43E726881D582DBA5C8B0B7/E1181AE4156C9E11CAF88FC6416AE108
 ```
 
@@ -47,13 +49,15 @@ Values:
 
 ---
 
-### System Update Repository ###
+### System Update Repository
+
 Defines the location of where System Update will pickup available content.
 
 ?> Supports UNC paths or a local drive only
 
 OMA-URI:
-```
+
+```csp
 ./Device/Vendor/MSFT/Policy/Config/CommercialVantage~Policy~03E445D7B5956335BEDEF9340AC7E092~7D8BB8A33C8A8577FC2188C5539DFDBB~162A79B7E43E726881D582DBA5C8B0B7/BD0C70F0CE887CC46496DD7BF81C0B8C
 ```
 
@@ -64,11 +68,13 @@ Values:
 
 ---
 
-### Auto Update ###
+### Auto Update
+
 This policy setting provides the ability for the Administrator to control auto update.  If you enable this policy setting, the auto update will be enabled. If you disable this policy setting, the auto update will be disabled.  If you do not configure this policy setting, it will keep the last status and can be controlled by the end user.  By default, auto update will install critical updates and recommended drivers.  If you want customization, please change the setting "Configure System Update".
 
 OMA-URI:
-```
+
+```csp
 ./Device/Vendor/MSFT/Policy/Config/CommercialVantage~Policy~03E445D7B5956335BEDEF9340AC7E092~7D8BB8A33C8A8577FC2188C5539DFDBB~162A79B7E43E726881D582DBA5C8B0B7~E4FF6280DA9B32B3629E2DCFE74DCCDB/CD787218E9D584BCE873273A0AFD7F05
 ```
 
@@ -79,14 +85,15 @@ Values:
 
 ---
 
-### Defer Update ###
+### Defer Update
 
 ?> Added in version 10.2104 v2
 
 This policy setting provides the ability for the Administrator to control deferred updates.  If you enable this policy setting, when there are some updates that needs to reboot the system, the end user can defer these updates for 1 hour.  If you disable or do not configure this policy setting, the end user can cancel these updates.
 
 OMA-URI:
-```
+
+```csp
 ./Device/Vendor/MSFT/Policy/Config/CommercialVantage~Policy~03E445D7B5956335BEDEF9340AC7E092~7D8BB8A33C8A8577FC2188C5539DFDBB~162A79B7E43E726881D582DBA5C8B0B7~E4FF6280DA9B32B3629E2DCFE74DCCDB/C015CAB39D5B210745DC6D0F43029C21
 ```
 
@@ -97,11 +104,13 @@ Values:
 
 ---
 
-### Schedule Day of Week ###
+### Schedule Day of Week
+
 This policy setting provides the ability for the Administrator to configure the day of week for auto updates.
 
 OMA-URI:
-```
+
+```csp
 ./Device/Vendor/MSFT/Policy/Config/CommercialVantage~Policy~03E445D7B5956335BEDEF9340AC7E092~7D8BB8A33C8A8577FC2188C5539DFDBB~162A79B7E43E726881D582DBA5C8B0B7~E4FF6280DA9B32B3629E2DCFE74DCCDB/80393D48344F26E5AE90D0F22D6B676F
 ```
 
@@ -114,11 +123,13 @@ Values:
 
 ---
 
-### Schedule Time ###
+### Schedule Time
+
 This policy setting provides the ability for the Administrator to configure the time for auto updates.
 
 OMA-URI:
-```
+
+```csp
 ./Device/Vendor/MSFT/Policy/Config/CommercialVantage~Policy~03E445D7B5956335BEDEF9340AC7E092~7D8BB8A33C8A8577FC2188C5539DFDBB~162A79B7E43E726881D582DBA5C8B0B7~E4FF6280DA9B32B3629E2DCFE74DCCDB/EC653B23E1449655915FA566BEA54E40
 ```
 
@@ -131,14 +142,15 @@ Values:
 
 ---
 
-### Turn off Run-Once Task ###
+### Turn off Run-Once Task
 
 ?> Added in version 10.2104 v2
 
 When this policy is enabled, the initial check for updates by Commercial Vantage is turned off.
 
 OMA-URI:
-```
+
+```csp
 ./Device/Vendor/MSFT/Policy/Config/CommercialVantage~Policy~03E445D7B5956335BEDEF9340AC7E092~7D8BB8A33C8A8577FC2188C5539DFDBB~162A79B7E43E726881D582DBA5C8B0B7~E4FF6280DA9B32B3629E2DCFE74DCCDB/D89714B27390B0E22E66BCA5C8A43FAE
 ```
 

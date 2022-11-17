@@ -8,7 +8,7 @@ One of 2 possible options to select the mode of Intel (R) SteedStep Technology a
 1.	**On** – Intel (R) SpeedStep Technology is turned on. Default.
 2.	Off - Intel (R) SpeedStep Technology is turned off.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | SpeedStep | Disable, Enable | No | Intel |
 </details>
@@ -21,7 +21,7 @@ One of 2 possible options of thermal management scheme to use:
 
 **Note**. Each scheme affects fan sound, temperature, and performance. 
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | AdaptiveThermalManagementAC | MaximizePerformance, Balanced | No | Both |
 </details>
@@ -34,7 +34,7 @@ One of 2 possible options of thermal management scheme to use:
 
 **Note**. Each scheme affects fan sound, temperature, and performance.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | AdaptiveThermalManagementBattery | MaximizePerformance,  Balanced | No | Both |
 </details>
@@ -42,14 +42,14 @@ One of 2 possible options of thermal management scheme to use:
 <details><summary>CPU Power Management</summary>
 One of 2 possible options:
 
-1.	**Enabled** - enabled power saving feature that stops the microprocessor clock automatically when there are no system activities. Default. 
+1.	**Automatic** - enabled power saving feature that stops the microprocessor clock automatically when there are no system activities. Default. 
 2.	Disabled - disabled power saving feature.
 
 **Note**. Normally, it is not necessary to change this setting.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
-| CPUPowerManagement | Disable, Enable | No | Both |
+| CPUPowerManagement | Disable, Automatic | No | Both |
 </details>
 
 <details><summary>Power On with AC Attach</summary>
@@ -58,7 +58,7 @@ One of 2 possible options for a feature that powers on the system when AC is att
 1.	Enabled - the system is powered when AC is attached. When the system is in hibernate state, the system resumes
 2.	**Disabled** - the system is not powered on nor resumed when AC is attached. Default.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | OnByAcAttach | Disable, Enable | No | Both |
 </details>
@@ -86,7 +86,7 @@ One of 5 possible options for defining when the system shall turn on automatical
 
 **Note**. Wake up will only occur on AC power.  Values for the ‘Wake Up on Alarm’ group of settings can be overwritten by the operating system. 
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | WakeUponAlarm | Disable, UserDefined, WeeklyEvent, <br>DailyEvent, SingleEvent | No | Both |
 </details>
@@ -101,7 +101,7 @@ Possible values:
     b. DD – Date: 1 ~ 31 <br>
     c. YYYY – Year: 1980 ~ 2099 <br>
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | AlarmDate | MM/DD/YYYY | No | Both |
 </details>
@@ -121,7 +121,7 @@ Possible values:
     b. MM - Minute:  00 ~ 59<br>
     c. SS - Second:  00 ~ 59<br>
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | AlarmTime | HH/MM/SS | No | Both |
 </details>
@@ -139,7 +139,7 @@ Possible values:
 7.	Friday
 8.	Saturday
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | AlarmDayofWeek | Sunday, Monday, Tuesday, <br>Wednesday, Thursday, Friday, Saturday | No | Both |
 </details>
@@ -153,7 +153,7 @@ One of 2 states to select:
 1.	**Off** - the system will not turn on automatically on this day. Default.
 2.	On – the system will turn on automatically on this day.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | UserDefinedAlarmSunday | Disable, Enable | No | Both |
 </details>
@@ -164,7 +164,7 @@ One of 2 states to select:
 1.	**Off** - the system will not turn on automatically on this day. Default.
 2.	On – the system will turn on automatically on this day.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | UserDefinedAlarmMonday | Disable, Enable | No | Both |
 </details>
@@ -175,7 +175,7 @@ One of 2 states to select:
 1.	**Off** - the system will not turn on automatically on this day. Default.
 2.	On – the system will turn on automatically on this day.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | UserDefinedAlarmTuesday | Disable, Enable | No | Both |
 </details>
@@ -186,7 +186,7 @@ One of 2 states to select:
 1.	**Off** - the system will not turn on automatically on this day. Default.
 2.	On – the system will turn on automatically on this day.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | UserDefinedAlarmWednesday | Disable, Enable | No | Both |
 </details>
@@ -197,7 +197,7 @@ One of 2 states to select:
 1.	**Off** - the system will not turn on automatically on this day. Default.
 2.	On – the system will turn on automatically on this day.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | UserDefinedAlarmThursday | Disable, Enable | No | Both |
 </details>
@@ -208,7 +208,7 @@ One of 2 states to select:
 1.	**Off** - the system will not turn on automatically on this day. Default.
 2.	On – the system will turn on automatically on this day.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | UserDefinedAlarmFriday | Disable, Enable | No | Both |
 </details>
@@ -219,7 +219,7 @@ One of 2 states to select:
 1.	**Off** - the system will not turn on automatically on this day. Default.
 2.	On – the system will turn on automatically on this day.
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | UserDefinedAlarmSaturday | Disable, Enable | No | Both |
 </details>
@@ -234,7 +234,7 @@ Possible values:
     b. MM - Minute:  00 ~ 59<br>
     c. SS - Second:  00 ~ 59<br>
 
-| WMI Setting name | Values | SVP Req'd | AMD/Intel |
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | UserDefinedAlarmTime | HH/MM/SS | No | Both |
 </details>
