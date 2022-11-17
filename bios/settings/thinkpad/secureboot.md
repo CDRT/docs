@@ -69,7 +69,7 @@ Options:
 <!-- TODO
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| Allow3rdPartyUEFICA | setting_values | yes_no | both | -->
+| Allow3rdPartyUEFICA |  Disable, Enable | yes_no | both | -->
 
 </details>
 
