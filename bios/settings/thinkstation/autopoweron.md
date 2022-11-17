@@ -146,8 +146,8 @@ Whether the system will turn on automatically on this day of the week.
 
 ### User Defined Alarm Time (HH : MM : SS) ###
 
-Specify the time when the system is to wake up.
+Specify the time when the system is to wake up in the format of hh:mm:ss.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
-|:---|:---|:---|
+|:---|:---|:---|:---|
 | UserDefinedAlarmTime |  | yes |

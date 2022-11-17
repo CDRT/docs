@@ -266,6 +266,6 @@ For each Rear USB Port:
 |:---|:---|:---|:---|
 | USBPort7 |  | yes | Both |
 
-?> The WMI setting name is for USB port 7. For other USB ports change the number to that of the desired rear USB port.
+?> The WMI setting name in the example above is for USB port 7. For other USB ports change the number to that of the desired rear USB port.
 
 </details>

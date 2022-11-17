@@ -11,10 +11,6 @@ Options:
 1. Pусский
 1. 中文
 
-| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
-|:---|:---|:---|
-|  |  | yes |
-
 </details>
 
 <details><summary>Setup Mode Select</summary>
@@ -23,10 +19,6 @@ Options:
 
 1. **Graphic** - Default.
 1. Text
-
-| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
-|:---|:---|:---|
-|  |  | yes |
 
 </details>
 

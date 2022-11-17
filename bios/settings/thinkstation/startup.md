@@ -107,10 +107,6 @@ Options:
 | OptionKeysDisplayStyle | Normal, Legacy | yes | Both | -->
 </details>
 
-### AMD-only features ###
-
-?> Only the AMD-only features are shown in the screenshot below; otherwise they are shown in the screenshot above.
-
 <details><summary>Primary Boot Sequence</summary>
 
 ?> This sequence is used when the system is powered up normally.
