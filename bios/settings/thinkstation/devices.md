@@ -8,7 +8,7 @@ Whether card reader will be available in OS.
 Options:
 
 1.	**Enabled** - Default.
-2.	Disabled 
+2.	Disabled
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -27,6 +27,6 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| Bluetooth |  | yes | Both |
+| Bluetooth | Disabled, Enabled | yes | Both |
 
 </details>

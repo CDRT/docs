@@ -3,7 +3,7 @@
 
 <details><summary>Select Active Video</summary>
 
-?> Select a platform:
+?> The Select Active Video setting will vary depending on if the platform is Intel or AMD. Select the appropriate platform below for the details.
 
 <details><summary>Select Active Video - Intel(R)</summary>
 

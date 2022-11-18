@@ -10,7 +10,7 @@ Whether to enable the Onboard Ethernet Controller.
 
 Options:
 
-1. **Enabled** – Default. 
+1. **Enabled** – Default.
 2. Disabled.
 
 !> When `Disabled`:<br>    •`PXE IPV4 Network Stack` setting becomes unavailable<br>    •`PXE IPV6 Network Stack` setting becomes unavailable
@@ -30,14 +30,13 @@ Whether Wireless LAN will be available in OS.
 
 Options:
 
-1. **Enabled** - Default. 
+1. **Enabled** - Default.
 2. Disabled.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| WirelessLANAccess |  | yes | Both |
+| WirelessLANAccess | Disabled, Enabled | yes | Both |
 </details>
-
 
 <details><summary>Wireless LAN PXE boot</summary>
 
@@ -50,9 +49,8 @@ Whether to support wireless LAN PXE (Pre-boot Execution Environment) boot or HTT
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| WirelessLANPXE |  | yes | Both |
+| WirelessLANPXE | Disabled, Enabled  | yes | Both |
 </details>
-
 
 ### Wireless Certified Information ###
 
@@ -67,7 +65,7 @@ Wireless device information. View only.
 Options:
 
 1. **Enabled** – Default.
-2. Disabled 
+2. Disabled
 
 ?> Unavailable if `Onboard Ethernet Controller` is set to `Disabled`.
 
@@ -75,7 +73,6 @@ Options:
 |:---|:---|:---|:---|
 | PXEIPV4NetworkStack | Disabled, Enabled | yes | Both |
 </details>
-
 
 <details><summary>PXE IPV6 Network Stack</summary>
 
@@ -91,20 +88,20 @@ Options:
 | PXEIPV6NetworkStack | Disabled, Enabled | yes | Both |
 </details>
 
-
 <details><summary>HTTPs Boot</summary>
+This setting controls whether or not the system can boot over HTTPS. When enabled, additional configuration may be required. The HTTPS Boot and related settings are not configurable through WMI.
 
 Options:
 
 1. Enabled – the `HTTPs Boot Configuration` and `Tls Auth Configuration` will be shown for custom configuration.
 2. **Disabled** – Default.
 
+<!-- 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  | yes | Both |
 
-<!-- NO WMI -->
-
+NO WMI -->
 </details>
 
 <details><summary>Lenovo Cloud Services</summary>
@@ -116,15 +113,16 @@ Whether to boot system with `Lenovo Cloud` selected through boot menu, so that B
 Options:
 
 1. Enabled.
-2. **Disabled** – Default. 
+2. **Disabled** – Default.
 
 ?> Once the feature is enabled, then it becomes available for selection in `BIOS -> Startup -> Edit Boot Order`, or `BIOS -> Startup -> Network Boot`, or via F12 Boot Menu.<br><br /> When `Lenovo Cloud Services` booted, then following options will be available for selection:<br />
 •**Lenovo Cloud Deploy (ITC)** – sends Factory-Style images to customers for deployment in the field. <br /> Additional information: [Lenovo Cloud Deploy](https://www.lenovoclouddeploy.com/en/auth/welcome).<br /> •**Windows Virtual Desktop (VDI)** – provides the VDI environment to customer. VDI itself must be setup by the customer (IT Admin). If this option is selected, then it will become available as a boot option. <br /><br /> Additional information is available here: [Client Virtualization & Infrastructure Solutions - Lenovo](https://www.lenovo.com/lt/lt/data-center/solutions/client-virtualization) and [Windows Virtual Desktop](https://www.microsoft.com/en-us/microsoft-365/blog/2019/09/30/windows-virtual-desktop-generally-available-worldwide/).
 
+<!--
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  | yes | Both |
-
+-->
 </details>
 
 
@@ -137,13 +135,14 @@ Whether to boot the system with `Win VDI Boot` selected through boot menu, so th
 Options:
 
 1. Enabled.
-2. **Disabled** – Default. 
+2. **Disabled** – Default.
 
+<!--
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
+-->
 </details>
-
 
 ### HTTPs Boot Configuration ###
 
@@ -153,9 +152,11 @@ Options:
 
 Input a label for new created URL, press `Enter`, and it will be displayed in the boot sequence menu.
 
+<!--
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
+-->
 </details>
 
 <details><summary>Internet Protocol</summary>
@@ -164,12 +165,14 @@ Select Internet Protocol to use for this HTTPs Boot option.
 
 Options:
 
-1. **Ipv4** – Default. 
+1. **Ipv4** – Default.
 2. Ipv6
 
+<!--
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-|  |  | yes | Both |
+|  |  |  | Both |
+-->
 </details>
 
 <details><summary>Boot URL</summary>
@@ -180,9 +183,11 @@ Accepts HTTPs URLs only.
 
 ?> Use `Tls Auth Configuration` to import the CA (Certificate Authority) to support the HTTPs boot.
 
+<!--
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
+-->
 </details>
 
 <details><summary>Delete HTTPs Boot Option from List</summary>
@@ -191,9 +196,11 @@ The list of HTTPs Boot options. <br>
 
 Select and press `Enter` to remove an EFI HTTPs boot option.
 
+<!--
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
+-->
 </details>
 
 ### Tls Auth Configuration ###
@@ -202,9 +209,11 @@ Visible only if `HTTPs Boot` has `Enabled` status.<br>
 
 Press `Enter` to configure Server CA (Certificate Authority) for HTTPs Boot. 
 
+<!--
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
+-->
 
 ### Wi-Fi Configuration ###
 
@@ -214,14 +223,15 @@ Press `Enter` to configure Server CA (Certificate Authority) for HTTPs Boot.
 
 Whether to enable or disable automatic Wifi connection on every boot.
 
-1. Enabled 
-2. **Disabled** - Default. 
+1. Enabled
+2. **Disabled** - Default.
 
+<!--
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 |  |  |  | Both |
+-->
 </details>
-
 
 ### Current Connection ###
 

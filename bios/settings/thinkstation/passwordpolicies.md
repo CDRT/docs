@@ -24,7 +24,6 @@ Options:
 | SetMinimumLength | Disable, 4 Characters, 5 Characters, 6 Characters, 7 Characters, 8 Characters, 9 Characters, 10 Characters, 11 Characters, 12 Characters | yes | Both |
 </details>
 
-
 <details><summary>Set Strong Password</summary>
 
 ?> A strong password is defined as: <br /> - Upper case, lower case, and numeric characters are all required <br /> -  Special characters are optional <br /> - The minimum length is 8
@@ -32,13 +31,12 @@ Options:
 Options:
 
 1. Enabled.
-2. **Disabled** – the minimum length is 1 character. Default. 
+2. **Disabled** – the minimum length is 1 character. Default.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | SetStrongPassword | Disabled, Enabled | yes | Both |
 </details>
-
 
 <details><summary>Keyboard Layout</summary>
 
@@ -57,14 +55,13 @@ Options:
 
 </details>
 
-
 <details><summary>BIOS Password At System Boot</summary>
 
 Whether to prompt for passwords when the system starts from the full off or hibernate state.
 
 Options:
 
-1. **Yes** –  Default. 
+1. **Yes** –  Default.
 2. No.
 
 !> To prevent unauthorized access to the system we recommend to setting user authentication on the OS. 
@@ -74,7 +71,6 @@ Options:
 | BIOSPasswordAtSystemBoot | No, Yes | yes | Both |
 
 </details>
-
 
 <details><summary>BIOS Password At Reboot</summary>
 
@@ -90,10 +86,9 @@ Options:
 | BIOSPasswordAtReboot | No, Yes | yes | Both |
 </details>
 
-
 <details><summary>BIOS Password At Boot Device List</summary>
 
-Whether user is prompted for a password when F12 is pressed during POST (Power On Self Test). 
+Whether user is prompted for a password when F12 is pressed during POST (Power On Self Test).
 
 !> Password prompt requires that Administrator Password is set.
 
@@ -107,7 +102,6 @@ Options:
 | BIOSPasswordAtBootDeviceList | No, Yes | yes | Both |
 
 </details>
-
 
 <details><summary>Require SVP when Flashing</summary>
 
@@ -138,7 +132,6 @@ Options:
 | POPChangeablebyUser | No, Yes | yes | Both |
 </details>
 
-
 <details><summary>Allow Jumper Clear SVP</summary>
 
 Whether to allow the hardware jumper to clear the Supervisor Password.
@@ -154,7 +147,6 @@ Options:
 |:---|:---|:---|:---|
 | AllowJumperClearSVP | No, Yes | yes | Both |
 </details>
-
 
 <details><summary>Password Count Exceeded Error</summary>
 

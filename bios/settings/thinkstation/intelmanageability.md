@@ -6,33 +6,27 @@
 
 Options:
 
-1. **Enabled** – Default. 
+1. **Enabled** – Default.
 2. Disabled.
 
 ?> When `Disabled`:<br>    a. If system is provisioned, MEBx (Management Engine BIOS Extension) will be unprovisioned first.<br>    b. Manageability functions will be disabled. You can enter BIOS to re-enable Intel(R) Manageability.<br>
 
-!> When changing from `Enabled` to `Disabled`, after saving and existing SETUP, you need to unplug the AC power cord and plug it in again.
-
+!> When changing from `Enabled` to `Disabled`, after saving and exiting SETUP, you need to unplug the AC power cord and plug it in again.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | ManageabilityControl | Disabled, Enabled | yes | Intel |
 </details>
 
-
 <details><summary>Intel(R) Manageability Reset</summary>
 Options:
 
 1. Enabled.
-2. **Disabled** – Default. 
+2. **Disabled** – Default.
 
 !> When `Enabled`, Intel(R) Manageability settings will reset to default configuration.<br> The MEBx password will also be reset.<br>
 
-| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-|  |  | yes | Intel |
 </details>
-
 
 <details><summary>Press < Ctrl-P > to Enter MEBx</summary>
 
@@ -41,13 +35,12 @@ Options:
 Options:
 
 1. **Enabled** – Default.
-2. Disabled. 
+2. Disabled.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | CtrlPEnterMEBx | Disabled, Enabled | yes | Intel |
 </details>
-
 
 ### ME Firmware Version ###
 
@@ -66,11 +59,7 @@ Options:
 3. Intel(R) Standard Manageability
 4. Intel(R) Level III Manageability Upgrade
 
-| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-|  |  |  | Intel |
 </details>
-
 
 <details><summary>SOL Configuration</summary>
 
@@ -108,4 +97,5 @@ Options:
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | USBProvisioning | Disabled, Enabled | yes | Intel |
+
 </details>

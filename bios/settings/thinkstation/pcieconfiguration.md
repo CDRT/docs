@@ -110,8 +110,8 @@ Whether to enable this PCIe port.
 
 Options:
 
-1.  **Enabled** - Default.
-2.  Disabled.
+1. **Enabled** - Default.
+2. Disabled.
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -129,16 +129,18 @@ Select PCIe port bifurcation.
 
 Options:
 
+1. x4x4
 1. x4x4x4x4
 1. x4x4x8
 1. x8x4x4
+1. x8
 1. x8x8
 1. x16
-1. Auto
+1. **Auto** - Default.
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| PCIeSlotXBifurcation | Auto, x8, x4x4 | yes | AMD |
+| PCIeSlotXBifurcation | Auto, x4x4x4x4, x8x8, x16 | yes | AMD |
 
 !> In the WMI class name, X represents the slot number, from 1 to 6.
 
@@ -150,8 +152,11 @@ description.
 
 Options:
 
-1.  **Disabled** - Default.
-2.  Enabled.
+1. **Auto** - Default.
+1. Auto, Gen 1 (2.5 GT/s)
+1. Gen 2 (5 GT/s)
+1. Gen 3 (8 GT/s)
+1. Gen 4 (16 GT/s)
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -167,14 +172,14 @@ Options:
 
 ?> Y represents the slot number, 1 or 2.
 
-<details><summary>PCIe Port</summary>
+<details><summary>M.2 Port</summary>
 
-Whether to enable this PCIe port.
+Whether to enable this M.2 port.
 
 Options:
 
-1.  **Enabled** - Default.
-2.  Disabled.
+1. **Enabled** - Default.
+2. Disabled.
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -184,33 +189,15 @@ Options:
 
 </details>
 
-<details><summary>PCIe Port Bifurcation</summary>
-
-Select PCIe port bifurcation.
-
-!> If `Auto`, system will auto-configure PCIe port bifurcation and auto-detect Quad M.2 PCIe Card.
+<details><summary>M.2 Link Speed</summary>
 
 Options:
 
-1. x4x4x4x4
-1. x4x4x8
-1. x8x4x4
-1. x8x8
-1. x16
-1. Auto
-
-| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| M2SlotYBifurcation | Auto, x8, x4x4 | yes | AMD |
-
-</details>
-
-<details><summary>Link Speed</summary>
-
-Options:
-
-1.  **Disabled** - Default.
-2.  Enabled.
+1. **Auto** - Default.
+1. Auto, Gen 1 (2.5 GT/s)
+1. Gen 2 (5 GT/s)
+1. Gen 3 (8 GT/s)
+1. Gen 4 (16 GT/s)
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -219,3 +206,10 @@ Options:
 !> In the WMI class name, Y represents the slot number, 1 or 2.
 
 </details>
+
+<details><summary>M.2 DLF Support</summary>
+
+Options:
+
+1. **Enabled** - Default.
+1. Disabled.

@@ -3,7 +3,7 @@
 
 <details><summary>Serial Port1 Address</summary>
 
-Select whether the serial port will be available to the OS, and if so, which interrupt line to assign it to.
+Select whether serial port #1 will be available to the OS, and if so, which interrupt line to assign it to.
 
 Options:
 
@@ -21,7 +21,7 @@ Options:
 
 <details><summary>Serial Port2 Address</summary>
 
-Select whether the serial port will be available to the OS, and if so, which interrupt line to assign it to.
+Select whether serial port #2 will be available to the OS, and if so, which interrupt line to assign it to.
 
 Options:
 
@@ -33,6 +33,6 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SerialPort2Address |  | yes | Both |
+| SerialPort2Address | Disabled, 3F8/IRQ4, 2F8/IRQ3, 3E8/IRQ4, 2E8/IRQ3 | yes | Both |
 
 </details>

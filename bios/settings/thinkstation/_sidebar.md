@@ -37,7 +37,6 @@
    - [Common RefCode Configuration](bios/settings/thinkstation/commonrefcodeconfiguration.md)
    - [DASH Configuration](bios/settings/thinkstation/dashconfiguration.md)
    - [Intel Manageability Settings](bios/settings/thinkstation/intelmanageability.md)
-   - [Serial Port Console Redirection](bios/settings/thinkstation/serialportconsoleredirection.md)
 - [Power](bios/settings/thinkstation/power.md)
    - [Automatic Power On](bios/settings/thinkstation/autopoweron.md)
 - [Security](bios/settings/thinkstation/security.md)

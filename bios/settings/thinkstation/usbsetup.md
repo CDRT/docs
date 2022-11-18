@@ -64,14 +64,12 @@ Whether USB3 ownership can be handed off to OS driver (not remaining in BIOS).
 
 Options:
 
-1.  **Enabled** - Default.
-2.  Disabled.
+1. **Enabled** - Default.
+2. Disabled.
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | XHCIHandoff | Disable, Enable | yes | AMD |
-
-> <i>  </i>.
 
 </details>
 
@@ -114,8 +112,8 @@ USB mass storage device `Start Unit` command time-out.
 
 Options:
 
-1.  **Disabled** - Default.
-2.  Enabled.
+1. **Disabled** - Default.
+2. Enabled.
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -129,8 +127,8 @@ Maximum time before device reports itself to the Host Controller.
 
 Options:
 
-1.  **Auto** - Default.
-2.  Manual.
+1. **Auto** - Default.
+2. Manual.
 
 ?> `Auto` default values: <br> - Root port: 100 ms <br> - Hub port: delay taken from hub descriptor
 
@@ -142,11 +140,9 @@ Options:
 
 </details>
 
-
-
 <details><summary>Front USB Ports</summary>
 
-Whether to enable all Front USB ports and relevant setting fields. 
+Whether to enable all Front USB ports and relevant setting fields.
 
 Options:
 
@@ -159,15 +155,14 @@ Options:
 
 </details>
 
-
 <details><summary>USB Port {Number}</summary>
 
-{Number} is the order number of the front USB port. 
+{Number} is the order number of the front USB port.
 
 For each Front USB Port:
 
-1. **Enabled**. Default, if `Enabled` is selected in `Front USB Ports`. 
-2. Disabled. 
+1. **Enabled**. Default, if `Enabled` is selected in `Front USB Ports`.
+2. Disabled.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -183,8 +178,8 @@ Whether to enable the Media Card Reader (MCR).
 
 Options:
 
-1.  **Enabled** - Default.
-2.  Disabled.
+1. **Enabled** - Default.
+2. Disabled.
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -198,8 +193,8 @@ Whether the device connected to this USB header has the characteristics of exter
 
 Options:
 
-1.  **Internal** - Default. Select when connected to Media Card Reader (MCR).
-2.  External. Select when connected to USB Type C port.
+1. **Internal** - Default. Select when connected to Media Card Reader (MCR).
+2  External. Select when connected to USB Type C port.
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -213,8 +208,8 @@ Whether to enable the internal USB 3.2 port.
 
 Options:
 
-1.  **Enabled** - Default.
-2.  Disabled.
+1. **Enabled** - Default.
+2. Disabled.
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -228,16 +223,14 @@ Whether to enable the internal USB 2.0 port.
 
 Options:
 
-1.  **Enabled** - Default.
-2.  Disabled.
+1. **Enabled** - Default.
+2. Disabled.
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | InternalUSB2Port | Disable, Enable | yes | AMD |
 
 </details>
-
-
 
 <details><summary>Rear USB Ports</summary>
 
@@ -264,7 +257,7 @@ For each Rear USB Port:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| USBPort7 |  | yes | Both |
+| USBPort7 | Disabled, Enabled | yes | Both |
 
 ?> The WMI setting name in the example above is for USB port 7. For other USB ports change the number to that of the desired rear USB port.
 

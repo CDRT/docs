@@ -59,7 +59,7 @@ Options:
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| IOMMU | Disable,Enable | yes | AMD |
+| IOMMU | Auto, Disable, Enable | yes | AMD |
 
 </details>
 
@@ -67,11 +67,10 @@ Options:
 
 ?> AMD Memory Guard provides real time encryption to system memory to help protect against physical attacks.
 
-
 Options:
 
-1.  **Disabled** - Default.
-2.  Enabled.
+1. **Disabled** - Default.
+2. Enabled.
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -85,8 +84,8 @@ Options:
 
 Options:
 
-1.  **Disabled** - Default.
-2.  Enabled.
+1. **Disabled** - Default.
+2. Enabled.
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -100,12 +99,12 @@ Whether to enable CPU power management state to minimize idle power consumption 
 
 Options:
 
-1.  **Enabled** - Default.
-2.  Disabled.
+1. **Enabled** - Default.
+2. Disabled.
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| CStateSupport | Disable,Enable | yes | AMD |
+| CStateSupport | Disable, Enable | yes | AMD |
 
 </details>
 

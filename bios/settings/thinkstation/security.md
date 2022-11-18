@@ -11,7 +11,7 @@ The supervisor password (SVP) protects the system information stored in UEFI BIO
 
 If you have set both the supervisor password and power-on password, you can use the supervisor password to access your computer when you turn it on.
 
-!> The supervisor password overrides the power-on password. 
+!> The supervisor password overrides the power-on password.
 
 View only.
 
@@ -19,14 +19,10 @@ Shows the current password state.
 
 Possible values:
 
-1.  Not Installed 
+1. Not Installed
 2. Installed
 
-| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-|  |  |  | Both |
 </details>
-
 
 <details><summary>Power-On Password</summary>
 
@@ -38,14 +34,10 @@ Shows the current password state.
 
 Possible values:
 
-1. Not Installed 
+1. Not Installed
 2. Installed
 
-| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-|  |  |  | Both |
 </details>
-
 
 <details><summary>System Management Password</summary>
 
@@ -59,14 +51,10 @@ Shows the current password state.
 
 Possible values:
 
-1. Not Installed 
+1. Not Installed
 2. Installed
 
-| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-|  |  |  | Both |
 </details>
-
 
 <details><summary>Set Supervisor Password</summary>
 
@@ -81,18 +69,12 @@ Parameters:
     a. **Save** – default<br>
     b. Cancel
 
-| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-|  |  |  | Both |
 </details>
-
 
 <details><summary>Set Power-On Password</summary>
 Set, change or delete the Power-On Password.
 
 ?> To delete Power-On Password, enter blank fields for each new password line item.
-
-<!-- TODO: confirm parameters -->
 
 Parameters:
 1. [ Enter New Password ]
@@ -101,11 +83,7 @@ Parameters:
     a. **Save** – default<br>
     b. Cancel
 
-| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-|  |  |  | Both |
 </details>
-
 
 <details><summary>Set System Management Password</summary>
 
@@ -113,8 +91,6 @@ Set, change or delete the System Management Password (SMP).
 
 ?> To delete System Management Password, enter blank fields for each new password line item.
 
-<!-- TODO: confirm parameters -->
-
 Parameters:
 1. [ Enter New Password ]
 2. [ Confirm New Password ]
@@ -122,26 +98,7 @@ Parameters:
     a. **Save** – default<br>
     b. Cancel
 
-| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-|  |  |  | Both |
 </details>
-
-
-<details><summary>Secure Roll Back Prevention</summary>
-
-Whether to prevent Flashing the BIOS to a previous or current version.
-
-Options:
-
-1. **Yes** (prevent) – Default.
-2. No (allow).
-
-| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| SecureRollBackPrevention | No, Yes | yes | Both |
-</details>
-
 
 <details><summary>Windows UEFI Firmware Update</summary>
 
@@ -154,7 +111,6 @@ Options:
 |:---|:---|:---|:---|
 | WindowsUEFIFirmwareUpdate | Disabled, Enabled | yes | Both |
 </details>
-
 
 <details><summary>Smart USB Protection</summary>
 
@@ -171,21 +127,19 @@ Options:
 | SmartUSBProtection | Disabled, Read Only, No Access | yes | Both |
 </details>
 
-
 <details><summary>Secure wipe</summary>
 
 Whether to display the `secure wipe` option on the F12 BIOS Startup Menu. Users can select this option to securely erase HDD data.
 
 Options:
 
-1. Enabled. 
-2. **Disabled** – Default. 
+1. Enabled.
+2. **Disabled** – Default.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | securewipe | Disabled, Enabled | yes | Intel |
 </details>
-
 
 <details><summary>Computrace</summary>
 
@@ -197,11 +151,8 @@ Settings for Absolute Persistence Module.
 
 <details><summary>Absolute Persistence Version</summary>
 
-View only. 
+View only.
 
-| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-|  |  |  | Both |
 </details>
 
 <details><summary>Absolute Persistence Module</summary>
@@ -210,35 +161,33 @@ Whether to enable the firmware Persistence Module of the optional service from A
 
 Options:
 
-1.	**Enabled** – Default. 
+1.	**Enabled** – Default.
 2.	Disabled.
-3.	Permanently Disabled. 
+3.	Permanently Disabled.
 
-!> Selecting `Permanently Disabled` requires additional confirmation, because if Computrace activation is permanently disabled, then you can never enable it again. <br> More information on the official site of [Absolute Software Corporation](https://www.absolute.com/partners/device-manufacturers/lenovo/).
+!> Selecting `Permanently Disabled` requires additional confirmation and cannot be done by WMI, because if Computrace activation is permanently disabled, then you can never enable it again. <br> More information on the official site of [Absolute Software Corporation](https://www.absolute.com/partners/device-manufacturers/lenovo/).
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| AbsolutePersistenceModule | Disabled, Enabled, Permanently Disabled | yes | Both |
+| AbsolutePersistenceModule | Disabled, Enabled | yes | Both |
 </details>
 
 </details>
-
 
 <details><summary>Device Guard</summary>
 
-Device Guard enables PCs to be protected against malware by introducing a collective set of restrictions on a device across several technologies. <br>
+Device Guard enables PCs to be protected against malware by introducing a collective set of restrictions on a device across several technologies.
 
 Options:
 
 1. Enabled – CPU Virtualization Technology to be enabled, IOMMU (Intel Input\Output Memory Management Unit), such as Intel VT-d, AMD-Vi to be enabled, TPM to be enabled. 
 Ethernet, USB, CD, and other boot methods to be disabled, only SATA device to be allowed.
-2. **Disabled** – Ethernet, USB, CD, and other boot methods to be enabled. Default. 
+2. **Disabled** – Ethernet, USB, CD, and other boot methods to be enabled. Default.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | DeviceGuard | Disabled, Enabled | yes | Both |
 </details>
-
 
 <details><summary>Electronic Lock</summary>
 
@@ -253,7 +202,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| ElectronicLock |  | yes | Both |
+| ElectronicLock | Lock, Unlock | yes | Intel |
 </details>
 
 <details><summary>Cover Tamper Detected</summary>
@@ -262,7 +211,7 @@ Whether to enable Chassis Intrusion Detection, a utility that can tell whether s
 
 Options:
 
-1. **Disabled** – Default. 
+1. **Disabled** – Default.
 2. Enabled.
 
 !> If chassis tamper occurs, you must enter setup to clear this error.
@@ -271,7 +220,6 @@ Options:
 |:---|:---|:---|:---|
 | CoverTamperDetected | Disabled, Enabled | yes | Both |
 </details>
-
 
 <details><summary>Configuration Change Detection</summary>
 
@@ -303,8 +251,6 @@ Options:
 
 1. **SHA-256 Hash** - Default.
 1. SM3 Hash
-
-<!-- NO WMI -->
 
 </details>
 

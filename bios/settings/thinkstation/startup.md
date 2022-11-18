@@ -21,7 +21,6 @@ Options:
 | FirstBootDevice | Boot Order, NetWork, SATA Drive, M.2 Drive, PCIe Drive, USB HDD, USB CDROM | yes | Intel |
 </details>
 
-
 <details><summary>First {Drive Type} Device</summary>
 
 Select the first boot device from the designated group:
@@ -32,15 +31,10 @@ Select the first boot device from the designated group:
  - M.2
  - PCIE.
 
-
 1. **Disabled** – system will try to boot from all the devices in the group. Default.
 2. Other options will show the relevant list of devices in the group depending on the selected item in 'First Boot Device': 'Network', 'SATA Drive', 'M.2 Drive' or 'PCIE'.
 
-| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-|  |  |  | Both |
 </details>
-
 
 <details><summary>Boot Up Num-Lock Status</summary>
 
