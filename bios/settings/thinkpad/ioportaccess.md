@@ -202,9 +202,9 @@ Options:
 
 1.  **On** - Default.
 2.  Off.
-<!-- TODO
+
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| TileMode | setting_values | yes_no | both | -->
+| TileMode | Disable,Enable | yes | both |
 
 </details>

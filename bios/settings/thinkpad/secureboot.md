@@ -66,10 +66,10 @@ Options:
 
 1.  **Off** - Default.
 2.  On.
-<!-- TODO
+
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| Allow3rdPartyUEFICA |  Disable, Enable | yes_no | both | -->
+| Allow3rdPartyUEFICA |  Disable, Enable | yes | both |
 
 </details>
 

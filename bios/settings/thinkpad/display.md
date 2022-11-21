@@ -84,9 +84,9 @@ Options:
 
 1.  **Off** - Default.
 2.  On.
-<!-- TODO
+
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| ePrivacyLock | setting_values | yes_no | both | -->
+| ePrivacyLock | Disable,Enable | yes | both |
 
 </details>

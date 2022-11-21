@@ -10,9 +10,9 @@ Options:
 
 1.  **On** - Default.
 2.  Off.
-<!-- TODO
+
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| ThinkShieldPasswordlessPowerOnAuthentication | setting_values | yes_no | both | -->
+| ThinkShieldPasswordlessPowerOnAuthentication | Disable,Enable | yes | both |
 
 </details>

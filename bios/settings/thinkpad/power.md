@@ -51,10 +51,10 @@ Options:
 
 1.  **On** - Default.
 2.  Off.
-<!-- TODO
+
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| IntelligentCoolingBoost | setting_values | yes_no | both | -->
+| IntelligentCoolingBoost | Disable,Enable | yes | both |
 
 </details>
 
@@ -82,6 +82,28 @@ One of 2 possible options for a feature that powers on the system when AC is att
    |:---|:---|:---|:---|
 | OnByAcAttach | Disable, Enable | No | Both |
 </details>
+
+<details><summary>Sleep State</summary>
+
+Optimized Sleep States.
+
+!> Sleep State for Windows® and versions of Linux are compatible with Suspend-to-Idle.
+
+!> Optimized Sleep State for S3 are not compatible with Suspend-to-Idle.
+
+!> Windows® must be used with Windows setting only.
+
+Options:
+
+1.  **Windows and Linux** - Default.
+2.  Linux S3.
+
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| SleepState | Linux, Windows, Windows10 | yes | both |
+
+</details>
+
 
 <details><summary>Disable Built-in Battery</summary>
 Option to temporarily disable battery for servicing the system. <br>
