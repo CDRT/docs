@@ -1256,17 +1256,23 @@ BIOS
 
 ### USB 
 
-  Universal Serial Bus 
+Universal Serial Bus 
  
- Connectivity specification that allows peripheral devices like scanners, printers, and memory sticks to be plugged into the computer and configured automatically. 
+Connectivity specification that allows peripheral devices like scanners, printers, and memory sticks to be plugged into the computer and configured automatically. 
  
  *More information:* 
  
+ - [USB Implementers Forum at USB.org](https://www.usb.org/)
+
  *Relevant settings:* 
+ - [USB Provisioning (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/intel_r_manageability.md)
+ - [Smart USB Protection (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/security.md)
+ - [USB Setup (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/usb_setup.md)
+ - [USB Key Provisioning (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/intelramt.md)
+ - [USB Port (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/ioportaccess.md)
+ - [PCIe Tunneling (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/thunderbolttm4.md)
+ - [USB Settings (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/usb.md)
  
- <!-- TODO: 100 USB settings --> 
-
-
 ---
 
 ### User mode
@@ -1285,15 +1291,13 @@ BIOS
 
 ### Lenovo Vantage
 
-see also https://support.lenovo.com/us/en/solutions/ht505081-lenovo-vantage-using-your-pc-just-got-easier and https://www.lenovo.com/us/en/software/vantage 
- 
- *More information:* 
+User interface for changing hardware settings, checking for Lenovo software and driver updates, and more.
+
+  *More information:* 
   - ["Commercial Vantage" at Lenovo CDRT](https://docs.lenovocdrt.com/#/cv/cv_top) 
-
- *Relevant settings:* 
-
-
-
+  - [More information at Lenovo Support](https://support.lenovo.com/us/en/solutions/ht505081-lenovo-vantage-using-your-pc-just-got-easier)
+   - [More information at Lenovo.com](https://www.lenovo.com/us/en/software/vantage)
+ 
 ---
 
 ### VDI 
@@ -1315,20 +1319,22 @@ see also https://support.lenovo.com/us/en/solutions/ht505081-lenovo-vantage-usin
 
 ### VMM 
 
- Virtual Machine Monitor 
+Virtual Machine Monitor 
  
- <!-- TODO: --> 
+The code that creates, manages, and destroys virtualized hardware.
  
  *More information:* 
- 
+  - [More information at Lenovo Support](https://support.lenovo.com/de/en/solutions/ht500006)
+
  *Relevant settings:* 
   - [Intel (R) Virtualization Technology (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/virtualization) 
+
  
 
 
 ---
 
-### Wireless Certified Information
+<!-- ### Wireless Certified Information
 
  
   
@@ -1340,23 +1346,26 @@ see also https://support.lenovo.com/us/en/solutions/ht505081-lenovo-vantage-usin
   
  
 
----
+--- -->
 
 ### WMI 
 
-  Windows Management Interface 
+Windows Management Instrumentation 
  
- <!-- TODO: --> 
+WMI is provided as a standard feature in most Windows® operating systems. It provides a powerful set of functions, such as query-based information retrieval and event notification, which enables users to manage both local and remote computers. The Lenovo BIOS WMI interface extends the capabilities of WMI to allow management of BIOS settings.
  
  *More information:* 
- 
+
+ - [Lenovo BIOS Windows Management Instrumentation Interface Deployment Guide For Desktop – Think Series Products (zip file with guide + scripts)](https://download.lenovo.com/pccbbs/thinkcentre_pdf/lenovo_desktop_bios_wmi_deployment_guide_revision_1.7.zip) 
+ - [More information at Microsoft.com](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-start-page)
+
  *Relevant settings:* 
 
 
 
 
 
-<!-- | Certificate | Mod 
+<!-- | Certificate Mode
 
   (see Password(less?) Mode) use a x509 certificate instead of SVP and SMP. Devin Mcdermott prepared this description but so far it has not been published: BIOS certificate-based features.docx 
  
