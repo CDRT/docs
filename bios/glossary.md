@@ -20,7 +20,7 @@ Admin and Master are synonyms.
 
 *AKA*
 
-*See also*
+*See also:*
 
 ---
 
@@ -34,7 +34,7 @@ Admin and Master are synonyms.
  *Relevant settings:* 
  - [Configure SATA As (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/ata_drive_setup) 
 
-*See also*
+*See also:*
 
 RAID
 
@@ -86,7 +86,7 @@ RAID
 
 
 
-*See also*
+*See also:*
 
 IDE, SATA, PATA
 
@@ -104,7 +104,7 @@ IDE, SATA, PATA
  - [Enter Audit Mode (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/secure_boot?id=enter-audit-mode) 
 
 
-*See also*
+*See also:*
 
 Custom mode 
 
@@ -122,7 +122,7 @@ Custom mode
 
 
 
-*See also*
+*See also:*
 
 UEFI
 
@@ -241,7 +241,7 @@ UEFI
  *Relevant settings:* 
 
 
-*See also*
+*See also:*
 
 NVDIMM
 
@@ -289,7 +289,7 @@ NVDIMM
  - [Delete HTTPs Boot Option from List (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/network_setup?id=delete-https-boot-option-from-list) 
 
 
-*See also*
+*See also:*
 
 UEFI 
 
@@ -361,6 +361,9 @@ UEFI
  *Relevant settings:* 
  - [PCIe Tunneling (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/thunderbolttm4.md) 
 
+*See also:*
+
+UMA
 
 ---
 
@@ -521,7 +524,7 @@ UEFI
  - [Intel® MEBx (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/intel_r_manageability) 
 
 
-*See also*
+*See also:*
 
 AMT 
 
@@ -661,7 +664,7 @@ AMT
 
 
 
-*See also*
+*See also:*
 
 ME
 
@@ -725,7 +728,7 @@ ME
  *Relevant settings:*  
  - [Security Chip (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/securitychip) 
 
-*See also*
+*See also:*
 
 Trusted Platform Module (TPM)
 
@@ -740,7 +743,7 @@ Trusted Platform Module (TPM)
  *Relevant settings:* 
  - [Network (ThinkPad)]() 
 
-*See also*
+*See also:*
 
 EAP, LEAP
 
@@ -832,6 +835,10 @@ EAP, LEAP
  - [Network Setup (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/network_setup) 
  - [Network Settings (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/network)  - [Network Boot (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/startup)  
 
+*See also:*
+
+UNDI
+
 ---
 
 ### RAID 
@@ -859,7 +866,7 @@ EAP, LEAP
  - [Configure SATA As (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/ata_drive_setup) 
 
 
-*See also*
+*See also:*
 
 RAID, Optane 
 
@@ -878,7 +885,7 @@ RAID, Optane
  - [ATA Drive Setup (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/ata_drive_setup) 
  - [Startup (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/startup) 
 
-*See also*
+*See also:*
 
 ATA, PATA
 
@@ -919,7 +926,7 @@ ATA, PATA
   
   *Relevant settings:* 
  
- *See also*
+ *See also:*
  
  Trusted Platform Module (TPM)
 
@@ -1059,7 +1066,7 @@ ATA, PATA
  
  *More information:* 
  
- <!-- TODO: --> 
+ - [More information at Lenovo Support](https://pcsupport.lenovo.com/us/en/products/laptops-and-netbooks/thinkpad-p-series-laptops/thinkpad-p50/solutions/ht510960-function-keys-are-not-working)
  
  *Relevant settings:*  
  - [Fn Sticky Key (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/keyboardmouse) 
@@ -1070,14 +1077,20 @@ ATA, PATA
 ### SVP 
 
   Supervisor Password 
- 
+
+The Supervisor Password (SVP) protects the system information stored in UEFI BIOS.
+
  *More information:* 
- 
+ - [More information at Lenovo Support](https://support.lenovo.com/us/en/solutions/ht036206-types-of-password-for-thinkpad)
+
  *Relevant settings:*   
  - [Device Guard Settings (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/deviceguard) 
  - [Supervisor Password (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/security) 
  - [Password Policies (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/password_policies) 
  
+*See also:*
+
+System Management Password (SMP)
 
 ---
 
@@ -1103,10 +1116,6 @@ ATA, PATA
  *More information:* 
   - ["Think BIOS Config Tool" at Lenovo CDRT](https://docs.lenovocdrt.com/#/tbct/tbct_top) 
 
- *Relevant settings:* 
-
-
-
 ---
 
 ### TCG 
@@ -1119,8 +1128,12 @@ ATA, PATA
   - [More information at trustedcomputinggroup.org](https://trustedcomputinggroup.org/) 
 
  *Relevant settings:* 
+ - [TCG Feature setup (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/tcg_feature_setup.md)
+ - [Block SID Authentication (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/hard_disk_password.md)
 
+*See also:*
 
+TPM
 
 ---
 
@@ -1128,10 +1141,14 @@ ATA, PATA
 
   Total Memory Encryption 
  
+Encrypts a computer’s entire memory with a single transient key. All memory data passing to and from the CPU is encrypted.
+
  *More information:* 
  
- *Relevant settings:* 
+ - ["Intel® Hardware Shield – Intel® Total Memory Encryption" at Lenovo Support](https://www.intel.com/content/dam/www/central-libraries/us/en/documents/white-paper-intel-tme.pdf)
 
+ *Relevant settings:* 
+  - [Intel(R) Total Memory Encryption (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/memoryprotection.md)
 
 
 ---
@@ -1147,13 +1164,13 @@ ATA, PATA
   - ["Trusted Platform Module" at Microsoft.com](https://learn.microsoft.com/en-us/windows/security/information-protection/tpm/trusted-platform-module-top-node) 
  
  *Relevant settings:* 
-
-
+  - [TCG Security Device State (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/tcg_feature_setup.md)
+  - [Security Chip (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/securitychip.md)
 
 ---
 
 ### TSME 
-
+<!-- TODO -->
   Transparent Secure Memory Encryption  
  
  *More information:*  
@@ -1167,7 +1184,7 @@ ATA, PATA
 
 AMD Memory Guard 
 
-*See also*
+*See also:*
 
 SATA 
 
@@ -1175,7 +1192,7 @@ SATA
 
 ### TrackPad
 
- 
+Touch-sensitive interface surface that allows you to manipulate and interact with your laptop computer through finger gestures.
   
   *More information:* 
    - ["Popular Topics: Keyboard, Mouse, Touchpad, TrackPad, TrackPoint" at Lenovo Support](https://support.lenovo.com/us/en/solutions/ht503907) 
@@ -1189,7 +1206,7 @@ SATA
 
 ### TrackPoint
 
- 
+Pointing device, controls the mouse pointer with a joystick mounted in the center of the keyboard.
   
   *More information:* 
    - ["Popular Topics: Keyboard, Mouse, Touchpad, TrackPad, TrackPoint" at Lenovo Support](https://support.lenovo.com/us/en/solutions/ht503907) 
@@ -1197,7 +1214,9 @@ SATA
   *Relevant settings:* 
    - [TrackPoint (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/keyboardmouse) 
   
- 
+ *AKA*
+
+Pointing stick
 
 ---
 
@@ -1212,12 +1231,16 @@ SATA
  
  *Relevant settings:* 
   - [UEFI BIOS Update Option Settings (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/uefibiosupdate) 
- 
+  - [SMBIOS Reporting (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/securitychip.md)
+  - [Lock UEFI BIOS Settings (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/password.md)
+  - [Windows UEFI Firmware Update (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/security.md)
+  - [Allow Microsoft 3rd Party UEFI CA (Think)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/secure_boot.md)
+
 *AKA*
 
 BIOS, Firmware
 
-*See also*
+*See also:*
 
 BIOS 
 
@@ -1226,7 +1249,8 @@ BIOS
 ### UMA 
 
   Unified Memory Architecture 
- <!-- TODO: --> 
+ 
+Architecture using part of RAM rather than dedicated graphics memory.
 
  *More information:* 
   - ["Configuring UMA Frame Buffer Size" at AMD.com](https://www.amd.com/en/support/kb/faq/pa-280) 
@@ -1234,23 +1258,30 @@ BIOS
  *Relevant settings:* 
  - [Total Graphics Memory (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/display) 
  
+*See also:*
 
+GPU
 
 ---
 
 ### UNDI 
 
-  Universal Network Driver Interface 
+Universal Network Driver Interface 
  
- API for network cards. 
+API for network cards. 
  
  *More information:* 
  
+ - ["UEFI Driver Development Guide for Network Boot Devices" at Intel.com](https://www.intel.com/content/dam/doc/guide/uefi-driver-network-boot-devices-guide.pdf)
+  - ["UEFI Drivers" at Intel.com](https://www.intel.com/content/dam/develop/external/us/en/documents/uefi-drivers.ppt)
+
  *Relevant settings:* 
   
  - [Wireless LAN PXE boot (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/network_setup) 
  
+*See also:*
 
+PXE
 
 ---
 
@@ -1289,7 +1320,7 @@ Connectivity specification that allows peripheral devices like scanners, printer
 
 ---
 
-### Lenovo Vantage
+### Vantage (Lenovo)
 
 User interface for changing hardware settings, checking for Lenovo software and driver updates, and more.
 
@@ -1358,9 +1389,6 @@ WMI is provided as a standard feature in most Windows® operating systems. It pr
 
  - [Lenovo BIOS Windows Management Instrumentation Interface Deployment Guide For Desktop – Think Series Products (zip file with guide + scripts)](https://download.lenovo.com/pccbbs/thinkcentre_pdf/lenovo_desktop_bios_wmi_deployment_guide_revision_1.7.zip) 
  - [More information at Microsoft.com](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-start-page)
-
- *Relevant settings:* 
-
 
 
 
