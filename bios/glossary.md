@@ -917,18 +917,20 @@ ATA, PATA
 ---
 
 ### Security Chip
-
  
   A type of Trusted Platform Module (TPM) implemented as a separate chip. 
-   and here https://docs.microsoft.com/en-us/windows/security/information-protection/tpm/trusted-platform-module-top-node  
-  
-  *More information:* 
   
   *Relevant settings:* 
  
+ - [Security Chip Settings (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/securitychip.md)
+
  *See also:*
  
  Trusted Platform Module (TPM)
+
+*AKA*
+
+TPM
 
 ---
 
@@ -936,9 +938,6 @@ ATA, PATA
 
   System Event Log 
  
- *More information:* 
- <!-- TODO: --> 
-
  *Relevant settings:* 
  - [System Event Log (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/system_event_log) 
 
@@ -947,10 +946,12 @@ ATA, PATA
 
 ### Setup mode
 
- 
+ Enables installation of Platform Key and customization of Secure Boot signature databases.
   
   *More information:* 
   
+ - [More information at microsoft.com](https://learn.microsoft.com/en-us/powershell/module/secureboot/)
+
   *Relevant settings:* 
   - [Secure Boot Mode (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/secureboot) 
  
@@ -966,18 +967,14 @@ ATA, PATA
  *More information:* 
   - ["Intel® Software Guard Extensions" at Intel.com](https://www.intel.com/content/www/us/en/developer/tools/software-guard-extensions/overview.html) 
  
- *Relevant settings:* 
- <!-- TODO: --> 
-
-
 ---
 
 ### SID 
 
-  Security Identifier 
-  
+  Security Identifier
+
  *More information:* 
- <!-- TODO: --> 
+ - [More information at trustedcomputinggroup.org](https://trustedcomputinggroup.org/wp-content/uploads/TCG_Storage-Feature_Set_Block_SID_Authentication_v1.01_r1.00.pdf)
 
  *Relevant settings:* 
  - [Block SID Authentication (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/hard_disk_password) 
@@ -1005,14 +1002,16 @@ ATA, PATA
 
   System Management Password 
 
- Administrator password mid-way between the Supervisor Password (SVP) and a user password. Can be configured to have the same permissions as the SVP.
+ Administrator password mid-way between the Supervisor Password (SVP) and a user password. Can be configured to have the same permissions as the SVP. Can be set through the UEFI BIOS menu or through Windows Management Instrumentation (WMI) with the Lenovo
+client-management interface.
 
  *More information:* 
- 
+  - [More information at Lenovo Support](https://support.lenovo.com/us/en/solutions/ht036206-types-of-password-for-thinkpad)
+
  *Relevant settings:*  
  - [System Management Password (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/security)  
  - [System Management Password (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/password) 
- 
+ - [System Management Password Access Control (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/system_management_password_access_control.md)
 
 ---
 
@@ -1029,6 +1028,9 @@ ATA, PATA
  *Relevant settings:*  
  - [BIOS Reporting (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/securitychip) 
  
+ *See also:*
+
+ BIOS, UEFI
 
 ---
 
@@ -1042,22 +1044,26 @@ ATA, PATA
 ---
 
 ### SR TOOL 
- <!-- TODO: --> 
+ IBM Service Request (SR) tool.
+
+!> Replaced by Lenovo Online Service Request function.
+
  *More information:* 
  
- *Relevant settings:* 
-
-
-
+ - [More information at Lenovo Support](https://support.lenovo.com/vn/en/solutions/ht511652)
+  
 ---
 
-### SSD (Hard Disk) Password 
- <!-- TODO: --> 
- *More information:* 
+### SSD (Solid State Disk) 
  
- *Relevant settings:* 
+Storage solution based on collections of memory microchips. Faster, lighter, and more reliable than HDD, but less capacity at the same price.
 
+ *More information:* 
+ - ["Laptop Hard Drives, SSD & Storage" at Lenovo.com](https://www.lenovo.com/us/en/faqs/laptop-faqs/hard-drives-ssd-guide/) 
 
+ *See also:*
+
+HDD, HDP
 
 ---
 
