@@ -1,5 +1,7 @@
 # Power Settings #
+
 ### General ###
+
 ![](./img/power.png)
 
 <details><summary>Intel (R) SpeedStep Technology</summary>
@@ -19,7 +21,7 @@ One of 2 possible options of thermal management scheme to use:
 1.	**Maximize Performance** - reduces CPU throttling. Default.
 2.	Balanced - balanced sound, temperature, and performance.
 
-**Note**. Each scheme affects fan sound, temperature, and performance. 
+**Note**. Each scheme affects fan sound, temperature, and performance.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
@@ -62,7 +64,7 @@ Options:
 <details><summary>CPU Power Management</summary>
 One of 2 possible options:
 
-1.	**Automatic** - enabled power saving feature that stops the microprocessor clock automatically when there are no system activities. Default. 
+1.	**Automatic** - enabled power saving feature that stops the microprocessor clock automatically when there are no system activities. Default.
 2.	Disabled - disabled power saving feature.
 
 **Note**. Normally, it is not necessary to change this setting.
@@ -115,26 +117,27 @@ After selecting this item, the system will be automatically powered off, then re
 </details>
 
 ### Automatic Power On ###
+
 ![](./img/autopoweron.png)
 
 <details><summary>Wake Up on Alarm</summary>
 One of 5 possible options for defining when the system shall turn on automatically:
 
 1.	**Disabled** - the system will not turn on automatically. Default.
-2.	Single Event - the system will turn on one-time on the specified day and time. 
+2.	Single Event - the system will turn on one-time on the specified day and time.
 3.	Daily Event - the system will turn on every day at the specified time.
 4.	Weekly Event - the system will turn on every week on the specified day and time.
-5.	User Defined - this option enables ‘User Defined Alarm’ group of settings. 
+5.	User Defined - this option enables ‘User Defined Alarm’ group of settings.
 
-**Note**. Wake up will only occur on AC power.  Values for the ‘Wake Up on Alarm’ group of settings can be overwritten by the operating system. 
+**Note**. Wake up will only occur on AC power.  Values for the ‘Wake Up on Alarm’ group of settings can be overwritten by the operating system.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
-| WakeUponAlarm | Disable, UserDefined, WeeklyEvent, <br>DailyEvent, SingleEvent | No | Both |
+| WakeUponAlarm | Disable, UserDefined, WeeklyEvent, <br>DailyEvent, SingleEvent | Yes | Both |
 </details>
 
 <details><summary>Alarm Date (MM/DD/YYYY)</summary>
-Field to select the exact day for the system to turn on. Active only when ‘Wake Up on Alarm’ has value ‘Single Event’. 
+Field to select the exact day for the system to turn on. Active only when ‘Wake Up on Alarm’ has value ‘Single Event’.
 Possible values:
 
 1.	**N/A** – Default.
@@ -145,7 +148,7 @@ Possible values:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
-| AlarmDate | MM/DD/YYYY | No | Both |
+| AlarmDate | MM/DD/YYYY | Yes | Both |
 </details>
 
 <details><summary>Alarm Time (HH : MM : SS)</summary>
@@ -165,7 +168,7 @@ Possible values:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
-| AlarmTime | HH/MM/SS | No | Both |
+| AlarmTime | HH/MM/SS | Yes | Both |
 </details>
 
 <details><summary>Alarm Day of Week</summary>
@@ -183,10 +186,11 @@ Possible values:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
-| AlarmDayofWeek | Sunday, Monday, Tuesday, <br>Wednesday, Thursday, Friday, Saturday | No | Both |
+| AlarmDayofWeek | Sunday, Monday, Tuesday, <br>Wednesday, Thursday, Friday, Saturday | Yes | Both |
 </details>
 
 ### Automatic Power On - User Defined Alarm ###
+
 ![](./img/autopoweronuserdefined.png)
 
 <details><summary>Sunday</summary>
@@ -197,7 +201,7 @@ One of 2 states to select:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
-| UserDefinedAlarmSunday | Disable, Enable | No | Both |
+| UserDefinedAlarmSunday | Disable, Enable | Yes | Both |
 </details>
 
 <details><summary>Monday</summary>
@@ -208,7 +212,7 @@ One of 2 states to select:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
-| UserDefinedAlarmMonday | Disable, Enable | No | Both |
+| UserDefinedAlarmMonday | Disable, Enable | Yes | Both |
 </details>
 
 <details><summary>Tuesday</summary>
@@ -219,7 +223,7 @@ One of 2 states to select:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
-| UserDefinedAlarmTuesday | Disable, Enable | No | Both |
+| UserDefinedAlarmTuesday | Disable, Enable | Yes | Both |
 </details>
 
 <details><summary>Wednesday</summary>
@@ -230,7 +234,7 @@ One of 2 states to select:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
-| UserDefinedAlarmWednesday | Disable, Enable | No | Both |
+| UserDefinedAlarmWednesday | Disable, Enable | Yes | Both |
 </details>
 
 <details><summary>Thursday</summary>
@@ -241,7 +245,7 @@ One of 2 states to select:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
-| UserDefinedAlarmThursday | Disable, Enable | No | Both |
+| UserDefinedAlarmThursday | Disable, Enable | Yes | Both |
 </details>
 
 <details><summary>Friday</summary>
@@ -252,7 +256,7 @@ One of 2 states to select:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
-| UserDefinedAlarmFriday | Disable, Enable | No | Both |
+| UserDefinedAlarmFriday | Disable, Enable | Yes | Both |
 </details>
 
 <details><summary>Saturday</summary>
@@ -263,7 +267,7 @@ One of 2 states to select:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
-| UserDefinedAlarmSaturday | Disable, Enable | No | Both |
+| UserDefinedAlarmSaturday | Disable, Enable | Yes | Both |
 </details>
 
 <details><summary>User Defined Alarm Time (HH : MM : SS)</summary>
@@ -278,5 +282,5 @@ Possible values:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
-| UserDefinedAlarmTime | HH/MM/SS | No | Both |
+| UserDefinedAlarmTime | HH/MM/SS | Yes | Both |
 </details>

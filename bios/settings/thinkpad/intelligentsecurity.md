@@ -4,7 +4,7 @@
 
 The Intelligent Security functions provide a convenient way to securely lock and unlock your computer by detecting your presence near the computer.
 
- - [More information at Lenovo Support](https://support.lenovo.com/solutions/ht511536-smart-features)
+- [More information at Lenovo Support](https://support.lenovo.com/solutions/ht511536-smart-features)
 
 ?> Some of these features may be unavailable, depending on your model and configuration.
 
@@ -14,7 +14,7 @@ Whether to enable functions that rely on using the IR camera to recognize the us
 
 !> Before using this feature, ensure you create your Face ID with the IR camera.
 
- - [More information at Lenovo Support](https://support.lenovo.com/uu/en/solutions/ht511536-smart-features)
+- [More information at Lenovo Support](https://support.lenovo.com/uu/en/solutions/ht511536-smart-features)
 
 Options:
 
@@ -23,7 +23,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| UserPresenceSensing | Disable,Enable | yes | Intel |
+| UserPresenceSensing | Disable, Enable | Yes | Intel |
 
 </details>
 
@@ -31,17 +31,17 @@ Options:
 
 Whether to allow Windows® service to prioritize the settings of Lenovo Vantage, if Lenovo Vantage is installed.
 
- - [More information at Lenovo Support](https://support.lenovo.com/us/en/solutions/ht505081-lenovo-vantage-using-your-pc-just-got-easier)
- - [More information at Lenovo.com](https://www.lenovo.com/us/en/software/vantage)
+- [More information at Lenovo Support](https://support.lenovo.com/us/en/solutions/ht505081-lenovo-vantage-using-your-pc-just-got-easier)
+- [More information at Lenovo.com](https://www.lenovo.com/us/en/software/vantage)
 
 Options:
 
 1. **On** - Default.
-2. Off. Enforce BIOS settings. 
+2. Off. Enforce BIOS settings.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ZeroTouchAllowOverride | Disable,Enable | yes | Intel |
+| ZeroTouchAllowOverride | Disable, Enable | Yes | Intel |
 
 </details>
 
@@ -56,7 +56,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ZeroTouchLogin | Disable,Enable | yes | Intel |
+| ZeroTouchLogin | Disable, Enable | Yes | Intel |
 
 </details>
 
@@ -64,6 +64,7 @@ Options:
 <details><summary>DISTANCE SENSITIVITY ADJUSTING</summary>
 
 !> Depends on Windows® Hello. To use it, turn on face recognition in Windows® settings.
+
 - [More information at Microsoft.com](https://www.support.microsoft.com/en-us/windows/learn-about-windows-hello-and-set-it-up-dae28983-8242-bb2a-d3d1-87c9d265a5f0)
 
 Options:
@@ -74,7 +75,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ZeroTouchLoginDistanceAdjusting | Near,Middle,Far | yes | Intel |
+| ZeroTouchLoginDistanceAdjusting | Near, Middle, Far | Yes | Intel |
 
 </details>
 </div>
@@ -91,7 +92,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ZeroTouchLock | Disable,Enable | yes | Intel |
+| ZeroTouchLock | Disable, Enable | Yes | Intel |
 
 </details>
 <div style='margin-left:30px'>
@@ -107,7 +108,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ZeroTouchLockDistanceAdjusting | Near,Middle,Far | yes | Intel |
+| ZeroTouchLockDistanceAdjusting | Near, Middle, Far | Yes | Intel |
 
 </details>
 
@@ -123,7 +124,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ZeroTouchLockTimer | Fast,Medium,Slow | yes | Intel |
+| ZeroTouchLockTimer | Fast, Medium, Slow | Yes | Intel |
 
 </details>
 </div>

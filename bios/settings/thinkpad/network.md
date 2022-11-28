@@ -1,14 +1,18 @@
 # Network Settings #
+
 ### General ###
+
 ![](./img/network.png)
 <details><summary>Wake On Lan</summary>
+This setting is applicable to ThinkPads with built-in Ethernet port.
+
 One of 3 possible states: <br>
 
 1.	**AC Only** - Wake On LAN function works only when AC is attached. Default.
-2.	Disabled - function is turned off. 
+2.	Disabled - function is turned off.
 3.	AC and Battery - Wake On LAN function works with both AC and Battery.
 
-**Note**: AC is required with magic packet type Wake On LAN. 
+**Note**: AC is required with magic packet type Wake On LAN.
 Wake On LAN function may be blocked due to password configuration.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
@@ -17,13 +21,15 @@ Wake On LAN function may be blocked due to password configuration.
 </details>
 
 <details><summary>Wake On LAN from Dock</summary>
+This setting is applicable to ThinkPads with no Ethernet port.
+
 One of 2 possible states:
 
 1.	**On** - function is turned on. Default.
 
    **Note**: This feature will not work while Secure Boot is disabled.
 
-2.	Off - function is turned off. 
+2.	Off - function is turned off.
 
    **Note**: Wake On LAN from Dock works only when ThinkPad USB-C Dock or ThinkPad Thunderbolt Dock is attached.
 Wake on LAN from Dock function may be blocked due to password configuration.
@@ -40,12 +46,13 @@ One of 2 possible states:
 
    **Note**: This feature will not work while Secure Boot is disabled.
 
-2.	Off - function is turned off. 
+2.	Off - function is turned off.
 
 **Additional information**<br>
-Once the feature is enabled,  then it becomes available for selection in “BIOS -> Startup -> Edit Boot Order”, or “BIOS -> Startup -> Network Boot”, or via F12 Boot Menu. 
+Once the feature is enabled,  then it becomes available for selection in “BIOS -> Startup -> Edit Boot Order”, or “BIOS -> Startup -> Network Boot”, or via F12 Boot Menu.
 When “Lenovo Cloud Services” booted, then following options will be available for selection:
-1. **Lenovo Cloud Deploy (ITC)** – it is a method to send Factory-Style images to customers for deployment in the field. 
+
+1. **Lenovo Cloud Deploy (ITC)** – it is a method to send Factory-Style images to customers for deployment in the field.
 Additional information is here: [Lenovo Cloud Deploy](https://www.lenovoclouddeploy.com/en/auth/welcome)
 2. **Windows Virtual Desktop (VDI)** – it provides the VDI environment to customer. VDI itself will be setup by the customer (IT Admin). If this option is selected, then it will become available as a boot option.  
 Additional information is here: [Client Virtualization & Infrastructure Solutions - Lenovo](https://www.lenovo.com/lt/lt/data-center/solutions/client-virtualization) and [Windows Virtual Desktop](https://www.microsoft.com/en-us/microsoft-365/blog/2019/09/30/windows-virtual-desktop-generally-available-worldwide/).
@@ -117,7 +124,7 @@ One of 3 possible options for MAC Address Pass Through function when dock is att
 
 1. **Disabled** - Dock Ethernet uses its own MAC address. Default
 2. Internal MAC Address - Dock Ethernet uses same MAC address as internal LAN.
-3. Second MAC Address - Dock Ethernet uses the second MAC address that is stored in the system's EEPROM. This allows for a device-specific MAC address that is different from the internal NIC's MAC address so they can be managed separately if necessary. 
+3. Second MAC Address - Dock Ethernet uses the second MAC address that is stored in the system's EEPROM. This allows for a device-specific MAC address that is different from the internal NIC's MAC address so they can be managed separately if necessary.
 
 For systems that do not have an internal NIC, there will only be two options:  off, which means the dock will use it's own MAC Address; or on, which means the dock will use MAC address stored in the system EEPROM.
 
@@ -127,24 +134,27 @@ For systems that do not have an internal NIC, there will only be two options:  o
 </details>
 
 ### WiFi Configuration ###
+
 ![](./img/wifi.png)
 
 **Note**. All the settings in this group are not available via WMI.
 
 <details><summary>MAC Address</summary>
 Media access control (MAC) address of the wireless network interface controller. View only.
-Note. There could be several MAC addresses in case there are several wireless network interface controllers. 
+Note. There could be several MAC addresses in case there are several wireless network interface controllers.
 <br>
 For every MAC Address the following information is shown:<br>
 
 * MAC Address - Media access control (MAC) address of the selected wireless network interface controller. View only.
-* [State] - One of 2 possible states: 
+* [State] - One of 2 possible states:
    1. **Disconnected** - device is not connected to a Wi-Fi network. Default.
    2. Connected to [SSID] - device is connected to a Wi-Fi network which has displayed SSID.
+
 </details>
 <br>
 
 ### Wi-Fi Network List ###
+
 ![](./img/wifinetworklist.png)
 
 **Note**. All the settings in this group are not available via WMI.
@@ -162,7 +172,8 @@ Each SSID can be selected to display more details.
 View only. One of 2 possible statuses:
 
 1.	**Disconnected** - device is not connected to this Wi-Fi network. Default.
-2.	Connected - device is connected to this Wi-Fi network.    
+2.	Connected - device is connected to this Wi-Fi network.
+
 </details>
 
 <details><summary>SSID</summary>
@@ -179,7 +190,7 @@ Security type of this Wi-Fi network. View only.Possible values:
 5. EAP-TLS
 
 </details>
-   
+
 <details><summary>Password</summary>
 Field for entering password. Visible only for networks with security WPA2-Personal.<br>
 Password length: 8-63 characters.
@@ -189,13 +200,15 @@ Password length: 8-63 characters.
 Selected EAP Authentication Method. View only. Visible only for networks with security WPA2-Enterprise. Default value depends on the network. Possible values:
 
 1. PEAP
-2.	EAP-TLS 
+2.	EAP-TLS
+
 </details>
 
 <details><summary>EAP Second Authentication Method</summary>
 Selected EAP Second Authentication Method. View only. Visible only for networks with security WPA2-Enterprise and if ‘EAP Authentication Method’ is ‘PEAP’. Default value depends on the network. Possible values:
 
 1. MSCHAPv2
+
 </details>
 
 <details><summary>Enroll CA Cert</summary>
@@ -228,11 +241,13 @@ One of 2 possible actions:
 
 1.	Connect to this network - visible if device is not connected to this Wi-Fi network
 2.	Disconnect - visible if device is connected to this Wi-Fi network
+
 </details>
 </details>
 <br>
 
 ### Add Wi-Fi Network ###
+
 ![](./img/addwifinetwork.png)
 
 **Note**. All the settings in this group are not available via WMI.
@@ -247,6 +262,7 @@ Field to select the security type of this Wi-Fi network. Possible values:
 1.	**Open** – Default
 2.	WPA2-Personal
 3.	WPA2-Enterprise
+
 </details>
 
 <details><summary>Password</summary>
@@ -260,15 +276,15 @@ Field to select EAP Authentication Method. Possible values:
 1.	**PEAP** – Default
 2.	EAP-TLS
 
-Visible only for a network with security WPA2-Enterprise. 
+Visible only for a network with security WPA2-Enterprise.
 </details>
 
 <details><summary>EAP Second Authentication Method</summary>
 Field to select EAP Second Authentication Method. Possible values:
 
-1.	**MSCHAPv2** – Default. 
+1.	**MSCHAPv2** – Default.
 
-Visible only for a network with security WPA2-Enterprise and if ‘EAP Authentication Method’ is ‘PEAP’. 
+Visible only for a network with security WPA2-Enterprise and if ‘EAP Authentication Method’ is ‘PEAP’.
 </details>
 
 <details><summary>Enroll CA Cert</summary>
@@ -287,31 +303,32 @@ Visible only for networks with security WPA2-Enterprise and if ‘EAP Authentica
 </details>
 
 <details><summary>Identity</summary>
-Field for entering identity value if there is any.<br> 
+Field for entering identity value if there is any.<br>
 Requirements to identity length: 6-20 characters.<br>
-Visible only for a network with security WPA2-Enterprise. 
+Visible only for a network with security WPA2-Enterprise.
 </details>
 
 <details><summary>EAP Password</summary>
 Field for entering EAP password. <br>
 Requirements to password length: 1-63 characters.<br>
-Visible only for a network with security WPA2-Enterprise. 
+Visible only for a network with security WPA2-Enterprise.
 </details>
 
 <details><summary>Scan Anyway</summary>
 Field to define whether to scan even when this network is not broadcasting its name. One of 2 possible options:
 
-1.	**On** - the network will be scanned when it does not broadcast its name. Default. 
+1.	**On** - the network will be scanned when it does not broadcast its name. Default.
 2.	Off - the network will not be scanned when it does not broadcast its name.
 
 Visible only for a network with security WPA2-Enterprise.
 </details>
 
 <details><summary>Commit Changes and Exit</summary>
-This is the option to save changes and exits back to the Manage Wi-Fi network page. 
+This is the option to save changes and exits back to the Manage Wi-Fi network page.
 </details>
 
 ### Manage Wi-Fi Network ###
+
 ![](./img/managewifilist.png)
 
 **Note**. All the settings in this group are not available via WMI.
@@ -323,20 +340,21 @@ Every SSID on the list leads to details for this network. See descriptions below
 ![](./img/managewificonfig.png)
 
 <details><summary>SSID</summary>
-Field for editing SSID value. 
+Field for editing SSID value.
 </details>
 
 <details><summary>Security</summary>
 Field to select the security type of this Wi-Fi network. Default value depends on the network. Possible values:
 
-1.	Open 
+1.	Open
 2.	WPA2-Personal
 3.	WPA2-Enterprise
+
 </details>
 
 <details><summary>Password</summary>
-Field for entering password. Visible only for a network with security WPA2-Personal.<br> 
-Password length: 8-63 characters. 
+Field for entering password. Visible only for a network with security WPA2-Personal.<br>
+Password length: 8-63 characters.
 </details>
 
 <details><summary>EAP Authentication Method</summary>
@@ -351,14 +369,14 @@ Visible only for a network with security WPA2-Enterprise.
 <details><summary>EAP Second Authentication Method</summary>
 Field to select EAP Second Authentication Method. Possible values:
 
-1.	**MSCHAPv2** – Default. 
+1.	**MSCHAPv2** – Default.
 
-Visible only for a network with security WPA2-Enterprise and if ‘EAP Authentication Method’ is ‘PEAP’. 
+Visible only for a network with security WPA2-Enterprise and if ‘EAP Authentication Method’ is ‘PEAP’.
 </details>
 
 <details><summary>Enroll CA Cert</summary>
 This is the option to enroll CA (Certification Authority) certificate. Empty by default.<br>
-Visible only for networks with security WPA2-Enterprise. 
+Visible only for networks with security WPA2-Enterprise.
 </details>
 
 <details><summary>Enroll Client Cert</summary>
@@ -372,21 +390,21 @@ Visible only for networks with security WPA2-Enterprise and if ‘EAP Authentica
 </details>
 
 <details><summary>Identity</summary>
-Field to enter identity value if there is any.<br> 
+Field to enter identity value if there is any.<br>
 Requirements to identity length: 6-20 characters.<br>
-Visible only for a network with security WPA2-Enterprise. 
+Visible only for a network with security WPA2-Enterprise.
 </details>
 
 <details><summary>EAP Password</summary>
 Field for entering EAP password. <br>
 Requirements to password length: 1-63 characters.<br>
-Visible only for a network with security WPA2-Enterprise. 
+Visible only for a network with security WPA2-Enterprise.
 </details>
 
 <details><summary>Scan Anyway</summary>
 Field to define whether to scan even when this network is not broadcasting its name. One of 2 possible options:
 
-1.	On - the network will be scanned when it does not broadcast its name. 
+1.	On - the network will be scanned when it does not broadcast its name.
 2.	**Off** - the network will not be scanned when it does not broadcast its name. Default.
 
 Visible only for a network with security WPA2-Enterprise.
@@ -397,10 +415,9 @@ This is the option to save changes and exits back to the Manage Wi-Fi network pa
 </details>
 
 <details><summary>Forget This Network</summary>
-This is the option to forget the settings for the selected network and disconnect from it. 
+This is the option to forget the settings for the selected network and disconnect from it.
 </details>
 </details>
-
 
 <details><summary>Change Priority</summary>
 Leads to the list of saved Wi-Fi networks.<br>  
@@ -409,7 +426,7 @@ The option will show a warning message if Network List is empty. See description
 ![](./img/managewifipriority.png)
 
 <details><summary>Priority List</summary>
-Contains the list of SSIDs of the saved networks. 
+Contains the list of SSIDs of the saved networks.
 </details>
 
 <details><summary>Commit Changes and Exit</summary>
