@@ -1,8 +1,9 @@
 # Virtualization Settings #
+
 ![](./img/virtualization.png)
 
 <details><summary>Kernel DMA Protection</summary>
-Kernel DMA protection to prevent drive-by Direct Memory Access (DMA) attacks using PCI hot plug devices connected to system. 
+Kernel DMA protection to prevent drive-by Direct Memory Access (DMA) attacks using PCI hot plug devices connected to system.
 One of 2 possible states:
 
 1.	Off – Kernel DMA protection is off. Default, if ‘OS Optimized Defaults’ has value ‘Off’.
@@ -12,13 +13,12 @@ Requires additional confirmation of changing these settings.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| KernelDMAProtection | Disable, Enable | No | Both |
+| KernelDMAProtection | Disable, Enable | Yes | Both |
 </details>
-
 
 <details><summary>Intel (R) Virtualization Technology \ AMD-V</summary>
 
-**Intel-based machine** 
+**Intel-based machine**
 
 One of 2 possible states:
 
@@ -30,7 +30,7 @@ Additional information is here: [How to enable Virtualization Technology on Leno
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| VirtualizationTechnology | Disable, Enable | No | Intel |
+| VirtualizationTechnology | Disable, Enable | Yes | Intel |
 
 **AMD-based machine**
 
@@ -38,14 +38,12 @@ One of 2 possible states:
 
 1. **On** - VMM (Virtual Machine Monitor) can utilize the additional hardware capabilities provided by AMD-V (AMD Virtualization). Default.<br>
     **Note**. The setting becomes enabled automatically when "Device Guard" is set to "On".
-2. Off - AMD-V is turned off. 
-
+2. Off - AMD-V is turned off.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| AmdVt | Disable, Enable | No | AMD |
+| AmdVt | Disable, Enable | Yes | AMD |
 </details>
-
 
 <details><summary>Intel (R) VT-d Feature</summary>
 One of 2 possible states:
@@ -58,18 +56,17 @@ More information on the [official Intel site](https://software.intel.com/content
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| VTdFeature | Disable, Enable | No | Intel |
+| VTdFeature | Disable, Enable | Yes | Intel |
 </details>
-
 
 <details><summary>Enhanced Windows Biometric Security</summary>
 One of 2 possible states:
 
-1.	On - allows use of ‘Enhanced sign-in security’ for fingerprint and face authentication with Windows Hello. 
+1.	On - allows use of ‘Enhanced sign-in security’ for fingerprint and face authentication with Windows Hello.
 2.	**Off** – does not allow Windows to use ‘Enhanced sign-in security’ for biometrics. Default. <br>
     **Note**. This option is recommended for Windows 10 October 2018 Update and for Windows 10 version 2004 and earlier, which do not support this feature.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| EnhancedWindowsBiometricSecurity | Disable, Enable | No | Both |
+| EnhancedWindowsBiometricSecurity | Disable, Enable | Yes | Both |
 </details>

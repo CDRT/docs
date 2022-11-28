@@ -7,14 +7,13 @@ One of 3 possible states:
 
 1.	**Enabled** – enables the activation. Default.
 2.	Disabled – disables the activation.
-3.	Permanently Disabled – permanently disables the activation.<br> 
-    **Note**. This selection requires additional confirmation. If this module is permanently disabled, then you will be never able to enable this setting again. 
+3.	Permanently Disabled – permanently disables the activation.<br>
+    **Note**. This selection requires additional confirmation and can only be done through the BIOS Setup screens. If this module is permanently disabled, then you will be never able to enable this setting again.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| AbsolutePersistenceModuleActivation | Disable, Enable, PermanentlyDisable | No | Both |
+| AbsolutePersistenceModuleActivation | Disable, Enable | Yes | Both |
 </details>
-
 
 <details><summary>Current State</summary>
 Shows the current status. One of 2 possible values:

@@ -11,5 +11,5 @@ This option requires additional confirmation.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| DeviceGuard | Disable, Enable | No | Intel |
+| DeviceGuard | Disable, Enable | Yes | Intel |
 </details>

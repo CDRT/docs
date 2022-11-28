@@ -1,5 +1,7 @@
 # Startup #
+
 ### General ###
+
 ![](./img/startup.png)
 
 <details><summary>Network Boot</summary>
@@ -20,9 +22,8 @@ One of 9 possible options:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| NetworkBoot | HDD0, HDD1, HDD2, HDD3, HDD4, <br>PXEBOOT, ATAPICD0, ATAPICD1, ATAPICD2, USBFDD, <br>USBCD, USBHDD, OtherHDD, OtherCD, NVMe0, <br>NVMe1, HTTPSBOOT, LENOVOCLOUD, ON-PREMISE, NODEV | No | Both |
+| NetworkBoot | HDD0, HDD1, HDD2, HDD3, HDD4, <br>PXEBOOT, ATAPICD0, ATAPICD1, ATAPICD2, USBFDD, <br>USBCD, USBHDD, OtherHDD, OtherCD, NVMe0, <br>NVMe1, HTTPSBOOT, LENOVOCLOUD, ON-PREMISE, NODEV | Yes | Both |
 </details>
-
 
 <details><summary>Boot Mode</summary>
 One of 2 possible values:
@@ -35,18 +36,16 @@ One of 2 possible values:
 | BootMode | Quick, Diagnostics | No | Both |
 </details>
 
-
 <details><summary>Option key Display</summary>
 One of 2 possible states:
 
 1.	**On** – system will show the option key message when the system is booted. Default.
-2.	Off – system will not show the option key message. 
+2.	Off – system will not show the option key message.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| StartupOptionKeys | Disable, Enable | No | Both |
+| StartupOptionKeys | Disable, Enable | Yes | Both |
 </details>
-
 
 <details><summary>Boot device List F12 Option</summary>
 One of 2 possible states:
@@ -60,7 +59,6 @@ One of 2 possible states:
 | BootDeviceListF12Option | Disable, Enable | Yes | Both |
 </details>
 
-
 <details><summary>Boot Order Lock</summary>
 This setting can prevent other software from altering the Boot Order when it is enabled. This may be required in situations where an alternative boot loaded is required to be first in the boot order. When enabled, the Boot Order can only be changed using the BIOS Setup or the WMI interface.
 
@@ -71,20 +69,20 @@ One of 2 possible states:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| BootOrderLock | Disable, Enable | No | Both |
+| BootOrderLock | Disable, Enable | Yes | Both |
 </details>
 
-
 ### Boot ###
+
 ![](./img/boot.png)
 
 <details><summary>Boot Priority Order</summary>
 The ordered list of currently defined boot priority order.
-Keys used to view or configure devices: 
+Keys used to view or configure devices:
 
-* '↑' and '↓' arrows Select a device. 
-* '+' and '-' move the device up or down. 
-* 'Shift + 1' enables or disables a device. 
+* '↑' and '↓' arrows Select a device.
+* '+' and '-' move the device up or down.
+* 'Shift + 1' enables or disables a device.
 * 'Delete' deletes an unprotected device.
 
 Possible items on the list:
@@ -104,9 +102,8 @@ Possible items on the list:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| BootOrder | HDD0, HDD1, HDD2, HDD3, HDD4, <br>PXEBOOT, ATAPICD0, ATAPICD1, ATAPICD2, USBFDD, <br>USBCD, USBHDD, OtherHDD, OtherCD, NVMe0, NVMe1, HTTPSBOOT,<br>LENOVOCLOUD, ON-PREMISE, NODEV | No | Both |
+| BootOrder | HDD0, HDD1, HDD2, HDD3, HDD4, <br>PXEBOOT, ATAPICD0, ATAPICD1, ATAPICD2, USBFDD, <br>USBCD, USBHDD, OtherHDD, OtherCD, NVMe0, NVMe1, HTTPSBOOT,<br>LENOVOCLOUD, ON-PREMISE, NODEV | Yes | Both |
 </details>
-
 
 <details><summary>Excluded from boot priority order</summary>
 By default, the following items are excluded from boot priority order:

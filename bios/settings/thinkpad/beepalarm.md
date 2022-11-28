@@ -12,7 +12,7 @@ One of 2 possible states for the password beep:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| PasswordBeep | Disable, Enable | No | Both |
+| PasswordBeep | Disable, Enable | Yes | Both |
 </details>
 
 <details><summary>Keyboard Beep</summary>
@@ -24,5 +24,5 @@ One of 2 possible states for the keyboard beep:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| KeyboardBeep | Disable, Enable | No| Both |
+| KeyboardBeep | Disable, Enable | Yes| Both |
 </details>

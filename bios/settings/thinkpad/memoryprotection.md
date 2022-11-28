@@ -1,4 +1,5 @@
 # Memory Protection Settings #
+
 ![](./img/memoryprotection.png)
 
 <details><summary>Execution Prevention</summary>
@@ -11,9 +12,8 @@ One of 2 possible states:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| DataExecutionPrevention | Disable, Enable | No | Both |
+| DataExecutionPrevention | Disable, Enable | Yes | Both |
 </details>
-
 
 <details><summary>Intel(R) Total Memory Encryption</summary>
 One of 2 possible states for Total Memory Encryption (TME) to protect DRAM data from physical attacks:
@@ -25,5 +25,5 @@ One of 2 possible states for Total Memory Encryption (TME) to protect DRAM data 
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| TotalMemoryEncryption | Disable, Enable | No | Intel |
+| TotalMemoryEncryption | Disable, Enable | Yes | Intel |
 </details>

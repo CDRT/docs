@@ -1,4 +1,5 @@
 # Restart #
+
 ![](./img/restart.png)
 
 <details><summary>Exit Saving Changes</summary>
@@ -6,7 +7,6 @@ Exit Setup and save your changes.<br>
 The option requires additional confirmation.
 
 </details>
-
 
 <details><summary>Exit Discarding Changes</summary>
 Exit Setup without saving changes. The following changes WILL NOT be discarded and must be reset within ThinkPad Setup:
@@ -20,7 +20,6 @@ The option requires additional confirmation.
 
 </details>
 
-
 <details><summary>Load Setup Defaults</summary>
 Load default values for all Setup items. The following changes WILL NO be discarded and must be reset within ThinkPad Setup:
 
@@ -29,13 +28,12 @@ Load default values for all Setup items. The following changes WILL NO be discar
 
 </details>
 
-
 <details><summary>OS Optimized Defaults</summary>
 One of 2 possible states:
 
 1.	**Off** - OS Optimized Defaults are disabled. Default.
 Note. When switching from ‘Enabled’ state the option will require additional confirmation.
-2.	On – the default value of settings below are changed accordingly. Select ‘On’ to meet Microsoft (R) Windows 10 (R) Certification Requirement. 
+2.	On – the default value of settings below are changed accordingly. Select ‘On’ to meet Microsoft (R) Windows 10 (R) Certification Requirement.
 
 Affected settings are:
 
@@ -43,9 +41,7 @@ Affected settings are:
 2.	Secure RollBack Prevention
 3.	Virtualization features
 
-
 </details>
-
 
 <details><summary>Discard Changes</summary>
 Load previous values for most Setup items. The following changes WILL NOT be discarded and must be reset within ThinkPad Setup:
@@ -56,7 +52,6 @@ Load previous values for most Setup items. The following changes WILL NOT be dis
 4.	Hard disk password
 
 The option requires additional confirmation.
-
 
 </details>
 

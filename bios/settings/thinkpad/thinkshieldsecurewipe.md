@@ -9,5 +9,5 @@ One of 2 possible states:
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| ThinkShieldsecurewipe | Disable, Enable | No | Both |
+| ThinkShieldsecurewipe | Disable, Enable | Yes | Both |
 </details>

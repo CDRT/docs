@@ -1,11 +1,12 @@
 # Keyboard/Mouse Settings #
+
 ![](./img/keyboardmouse.png)
 
 <details><summary>TrackPoint</summary>
 One of 2 possible states:
 
 1.	Off - Built-in Track point is disabled.
-2.	**On** - Built-in TrackPoint is enabled. Default. 
+2.	**On** - Built-in TrackPoint is enabled. Default.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
@@ -51,7 +52,7 @@ One of 2 possible states:
 One of 2 possible states:
 
 1.	On - Executes the F1-F12 function.
-2.	**Off** - Executes the special function. Default. 
+2.	**Off** - Executes the special function. Default.
 
 Alternatively, to switch to above two options, press Fn+Esc to use FnLk (Fn Lock). LED in on when FnLk is enabled.
 
@@ -67,7 +68,7 @@ Possible options:
 1.	**US English** - Default
 2.	Canadian French Multilingual
 3.	Canadian French
-4.	Spanish (Latin America) 
+4.	Spanish (Latin America)
 5.	Portuguese (Brazil)
 6.	Belgian
 7.	Danish
@@ -92,10 +93,10 @@ Possible options:
 26.	Finnish
 27.	Czech
 
-**Note**. On latest machines in BIOS added support for ASCII special characters and symbols such as @, ! ,?, etc. Those characters depend on keyboard layout and BIOS cannot know the attached keyboard, therefore users have to select keyboard layout if they replace keyboard.
+**Note**. On latest machines, BIOS added support for ASCII special characters and symbols such as @, ! ,?, etc. Those characters depend on keyboard layout and BIOS cannot know the attached keyboard, therefore users have to select keyboard layout if they replace keyboard.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| KeyboardLayout | English_US, CanadianFrenchMultilingual, CanadianFrench, <br>Spanish_LA, Portuguese_BR, Belgian, Danish, <br>Spanish, French, German, Hungarian, Icelandic, <br>Italian, Norwegian, Portuguese, Slovenian, <br>Swedish, Swiss, Turkish, English_UK, Japanese,<br>Korean, TraditionalChinese, Turkish-F, Estonian, Finnish, Czech | No | Both |
+| KeyboardLayout | English_US, CanadianFrenchMultilingual, CanadianFrench, <br>Spanish_LA, Portuguese_BR, Belgian, Danish, <br>Spanish, French, German, Hungarian, Icelandic, <br>Italian, Norwegian, Portuguese, Slovenian, <br>Swedish, Swiss, Turkish, English_UK, Japanese,<br>Korean, TraditionalChinese, Turkish-F, Estonian, Finnish, Czech | Yes | Both |
 
 </details>
