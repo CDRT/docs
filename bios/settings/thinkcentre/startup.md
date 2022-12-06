@@ -19,6 +19,7 @@ Options:
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | Firstbootdevice |  | yes |
+
 </details>
 
 <details><summary>First Network Device</summary>
@@ -32,6 +33,7 @@ Options:
 1. **Disabled** - the system will try to boot from all the devices in the group. Default.
 1. Network1
 1. Network2
+
 
 </details>
 
@@ -47,6 +49,7 @@ Options:
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | BootUpNumLockStatus | Off, On | yes |
+
 
 </details>
 
@@ -65,6 +68,7 @@ Options:
 |:---|:---|:---|
 | FastBoot | Disabled, Enabled | yes |
 
+
 </details>
 
 <details><summary>Option Keys Display</summary>
@@ -81,5 +85,6 @@ Options:
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | OptionKeysDisplay | Disabled, Enabled | yes |
+
 
 </details>

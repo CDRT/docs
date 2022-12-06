@@ -12,6 +12,7 @@ Options:
 
 <!-- NO WMI -->
 
+
 </details>
 
 <details><summary>Setup Mode Select</summary>
@@ -24,5 +25,6 @@ Options:
 2.	Graphic - graphical interface with possibility to additionally use mouse for navigation and actions.
 
 <!-- NO WMI -->
+
 
 </details>

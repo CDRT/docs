@@ -13,6 +13,7 @@ Options:
 |:---|:---|:---|
 | OnboardAudioController | Disabled, Enabled | yes |
 
+
 </details>
 
 <details><summary>Internal Speaker</summary>
@@ -27,5 +28,6 @@ Options:
 | InternalSpeaker | Disabled, Enabled | yes |
 
 <!-- MODEL: NOT M90q -->
+
 
 </details>

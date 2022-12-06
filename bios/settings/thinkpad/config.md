@@ -2,6 +2,7 @@
 ![](./img/config.png)
 
 <details><summary>Setup UI</summary>
+
 One of 2 possible options for interface of Setup:
 
 1.	Simple Text - enables simple text interface with navigation and actions available only via keys on a keyboard.
@@ -10,4 +11,5 @@ One of 2 possible options for interface of Setup:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | SetupUI | SimpleText, Graphical | No | Both |
+
 </details>

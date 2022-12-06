@@ -18,6 +18,7 @@ Options:
  - Firmware TPM 2.0
 
 <!-- NO WMI -->
+
 </details>
 
 <details><summary>Security Chip 2.0</summary>
@@ -33,6 +34,7 @@ Whether the TCG security feature is fully functional.
 |:---|:---|:---|
 | SecurityChip |  | yes |
 
+
 </details>
 
 <details><summary>Clear TCG Security Feature</summary>
@@ -47,6 +49,7 @@ Options:
 1.  Yes.
 
 <!-- NO WMI -->
+
 </details>
 
 <details><summary>Physical Presence for Clear</summary>
@@ -59,5 +62,6 @@ Whether to require confirmation of a user's physical presence when clearing the 
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | PhysicalPresenceforClear | Disabled, Enabled | yes |
+
 
 </details>

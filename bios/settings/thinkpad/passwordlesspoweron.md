@@ -4,6 +4,7 @@
 
 <details><summary>ThinkShield Passwordless Power-On Authentication</summary>
 
+
 Enable or Disable the ThinkShield Passwordless Power-On Authentication and Device Manager.
 
 Options:
@@ -14,5 +15,6 @@ Options:
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | ThinkShieldPasswordlessPowerOnAuthentication | Disable,Enable | yes | both |
+
 
 </details>

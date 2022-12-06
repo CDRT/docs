@@ -3,6 +3,7 @@
 ![](./img/keyboardmouse.png)
 
 <details><summary>TrackPoint</summary>
+
 One of 2 possible states:
 
 1.	Off - Built-in Track point is disabled.
@@ -12,9 +13,11 @@ One of 2 possible states:
 |:---|:---|:---|:---|
 | TrackPoint | Enable, Disable (on AMD-based machine) <br> Disable, Automatic (on Intel-based machine)| No | Both |
 
+
 </details>
 
 <details><summary>Trackpad</summary>
+
 One of 2 possible states:
 
 1.	Off - Built-in Trackpad is disabled.
@@ -23,9 +26,11 @@ One of 2 possible states:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | TouchPad | Disable, Enable (on AMD-based machi <br> Disable, Automatic (on Intel-based machine)| No | Both |
+
 </details>
 
 <details><summary>Fn and Ctrl Key swap</summary>
+
 One of 2 possible states:
 
 1.	**Off** - Fn key and Ctrl key behaviour is as printed on the keyboard. Default.
@@ -34,9 +39,11 @@ One of 2 possible states:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | FnCtrlKeySwap | Disable, Enable | No | Both |
+
 </details>
 
 <details><summary>Fn Sticky Key</summary>
+
 
 One of 2 possible states:
 
@@ -46,9 +53,11 @@ One of 2 possible states:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | FnSticky | Disable, Enable | No | Both |
+
 </details>
 
 <details><summary>F1-F12 as Primary Function</summary>
+
 One of 2 possible states:
 
 1.	On - Executes the F1-F12 function.
@@ -59,9 +68,11 @@ Alternatively, to switch to above two options, press Fn+Esc to use FnLk (Fn Lock
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | FnKeyAsPrimary | Disable, Enable | No | Both |
+
 </details>
 
 <details><summary>Keyboard Layout</summary>
+
 Field to select keyboard layout in pre-OS environment. This configuration does not affect OS.
 Possible options:
 
@@ -93,10 +104,11 @@ Possible options:
 26.	Finnish
 27.	Czech
 
-**Note**. On latest machines, BIOS added support for ASCII special characters and symbols such as @, ! ,?, etc. Those characters depend on keyboard layout and BIOS cannot know the attached keyboard, therefore users have to select keyboard layout if they replace keyboard.
+?>  On latest machines, BIOS added support for ASCII special characters and symbols such as @, ! ,?, etc. Those characters depend on keyboard layout and BIOS cannot know the attached keyboard, therefore users have to select keyboard layout if they replace keyboard.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | KeyboardLayout | English_US, CanadianFrenchMultilingual, CanadianFrench, <br>Spanish_LA, Portuguese_BR, Belgian, Danish, <br>Spanish, French, German, Hungarian, Icelandic, <br>Italian, Norwegian, Portuguese, Slovenian, <br>Swedish, Swiss, Turkish, English_UK, Japanese,<br>Korean, TraditionalChinese, Turkish-F, Estonian, Finnish, Czech | Yes | Both |
+
 
 </details>

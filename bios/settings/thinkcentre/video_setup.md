@@ -21,6 +21,7 @@ Options:
 |:---|:---|:---|
 | SelectActiveVideo  | IGD, [PEG], Auto | yes |
 
+
 </details>
 
 <details><summary>Pre-Allocated Memory Size</summary>
@@ -39,6 +40,7 @@ Options:
 |:---|:---|:---|
 | Pre-AllocatedMemorySize |  | yes |
 
+
 </details>
 
 <details><summary>Total Graphics Memory</summary>
@@ -50,6 +52,7 @@ Options:
 1.  **Maximum** - enables maximum memory allocation. Default.
 2.  128MB.
 3.  256MB.
+
 </details>
 
 <details><summary>Dual DisplayPorts</summary>
@@ -64,4 +67,5 @@ Options:
 2.  SST (single-stream transport).
 
 <!-- NO WMI -->
+
 </details>

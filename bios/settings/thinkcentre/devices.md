@@ -13,6 +13,7 @@ Options:
 |:---|:---|:---|
 | Bluetooth  | Disabled, Enabled | yes |
 
+
 </details>
 
 <details><summary>Card Reader</summary>
@@ -25,5 +26,6 @@ Options:
 <!-- NO WMI -->
 
 <!-- MODEL: S only -->
+
 
 </details>

@@ -2,6 +2,7 @@
 ![](./img/thinkshieldsecurewipe.png)
 
 <details><summary>ThinkShield secure wipe in AppMenu</summary>
+
 One of 2 possible states:
 
 1.	**On** – enable the ThinkShield secure wipe in the App Menu Invoked by F12. Default.
@@ -10,4 +11,5 @@ One of 2 possible states:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | ThinkShieldsecurewipe | Disable, Enable | Yes | Both |
+
 </details>

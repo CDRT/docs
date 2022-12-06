@@ -2,19 +2,22 @@
 ![](./img/internaldeviceaccess.png)
 
 <details><summary>Bottom Cover Tamper Detection</summary>
+
 One of 2 possible states:
 
 1.	On – enables the tamper detection. If detected, Supervisor Password is required to boot the system.
 2.	**Off** – disables the tamper detection. Default.
 
-**Note**. Bottom Cover Tamper Detection will not take effect unless Supervisor Password is enabled.
+?>  Bottom Cover Tamper Detection will not take effect unless Supervisor Password is enabled.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | BottomCoverTamperDetected | Disable, Enable | Yes | Both |
+
 </details>
 
 <details><summary>Internal Storage Tamper Detection</summary>
+
 Enabling Internal Storage Tamper Detection detects removal of any fixed or removable Internal storage while the system is in sleep state (S3). If a storage device is removed while the system is in S3 state, the system will shutdown when woken from S3.
 
 !> Unsaved data will be lost.
@@ -27,4 +30,5 @@ One of 2 possible states:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | InternalStorageTamper | Disable, Enable | Yes | Both |
+
 </details>

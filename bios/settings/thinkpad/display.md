@@ -3,17 +3,22 @@
 ![](./img/display.png)
 
 <details><summary>Boot Display Device</summary>
+
 One of 2 possible options:
 
 1.	**ThinkPad LCD** - native ThinkPad LCD will be used for boot. Default.
-2.	External Display - an external display attached to USB Type-C connector or HDMI connector on ThinkPad will be used for boot.<br> **Note**. If multiple displays are attached, the boot screen appears on the first recognized one.
+2.	External Display - an external display attached to USB Type-C connector or HDMI connector on ThinkPad will be used for boot.<br> 
+
+?>  If multiple displays are attached, the boot screen appears on the first recognized one.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | BootDisplayDevice | LCD, ExternalDisplay | No | Both |
+
 </details>
 
 <details><summary>Graphics Device</summary>
+
 One of 2 possible options if the system includes a discrete graphics adapter:
 
 1.	**Hybrid Graphics** - Both the integrated and the discrete graphics adapters are available to the OS. Default.
@@ -22,9 +27,11 @@ One of 2 possible options if the system includes a discrete graphics adapter:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | GraphicsDevice | SwitchableGfx, DiscreteGfx | No | Both |
+
 </details>
 
 <details><summary>Total Graphics Memory</summary>
+
 
 **Intel-based machine**
 
@@ -53,9 +60,11 @@ One of 5 possible options to allocate UMA (Unified Memory Architecture) frame bu
 |:---|:---|:---|:---|
 | UMAFramebufferSize | Auto, 1GB, 2GB, 4GB, 8GB | No | AMD |
 
+
 </details>
 
 <details><summary>Boot Time Extension</summary>
+
 Option to define the amount of time to extend the boot process, in seconds.
 
 1.	**Disabled** - Default
@@ -70,9 +79,11 @@ Option to define the amount of time to extend the boot process, in seconds.
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | BootTimeExtension | Disable, 1, 2, 3, 5, 10 | No | Both |
+
 </details>
 
 <details><summary>ePrivacy Lock</summary>
+
 
 Whether to set Privacy Guard always on, and prevent the user from disabling it.
 
@@ -86,5 +97,6 @@ Options:
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | ePrivacyLock | Disable,Enable | Yes | both |
+
 
 </details>

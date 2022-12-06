@@ -8,6 +8,7 @@ View the system event log.
 
 ![](./img/thinkcentre_view_system_event_log.png)
 
+
 </details>
 
 ### Clear System Event Log ###

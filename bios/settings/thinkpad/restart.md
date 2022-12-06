@@ -3,12 +3,15 @@
 ![](./img/restart.png)
 
 <details><summary>Exit Saving Changes</summary>
+
 Exit Setup and save your changes.<br>
 The option requires additional confirmation.
+
 
 </details>
 
 <details><summary>Exit Discarding Changes</summary>
+
 Exit Setup without saving changes. The following changes WILL NOT be discarded and must be reset within ThinkPad Setup:
 
 1.	Date & Time
@@ -18,17 +21,21 @@ Exit Setup without saving changes. The following changes WILL NOT be discarded a
 
 The option requires additional confirmation.
 
+
 </details>
 
 <details><summary>Load Setup Defaults</summary>
+
 Load default values for all Setup items. The following changes WILL NO be discarded and must be reset within ThinkPad Setup:
 
 1.	Security
 2.	Date & Time
 
+
 </details>
 
 <details><summary>OS Optimized Defaults</summary>
+
 One of 2 possible states:
 
 1.	**Off** - OS Optimized Defaults are disabled. Default.
@@ -41,9 +48,11 @@ Affected settings are:
 2.	Secure RollBack Prevention
 3.	Virtualization features
 
+
 </details>
 
 <details><summary>Discard Changes</summary>
+
 Load previous values for most Setup items. The following changes WILL NOT be discarded and must be reset within ThinkPad Setup:
 
 1.	Date & Time
@@ -53,9 +62,12 @@ Load previous values for most Setup items. The following changes WILL NOT be dis
 
 The option requires additional confirmation.
 
+
 </details>
 
 <details><summary>Save Changes</summary>
+
 Save Setup data.
+
 
 </details>

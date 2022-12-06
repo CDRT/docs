@@ -26,6 +26,7 @@ Options:
 |:---|:---|:---|
 | SetMinimumLength | Disabled, 4 characters, 5 characters, 6 characters, 7 characters, 8 characters, 9 characters, 10 characters, 11 characters, 12 characters | yes |
 
+
 </details>
 
 <details><summary>Set Strong Password</summary>
@@ -38,6 +39,7 @@ Options:
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | SetStrongPassword | Disabled, Enabled | yes |
+
 
 </details>
 
@@ -57,6 +59,7 @@ Options:
 |:---|:---|:---|
 | KeyboardLayout | English, French, German, Chinese | yes |
 
+
 </details>
 
 <details><summary>BIOS Password At System Boot</summary>
@@ -71,6 +74,7 @@ Whether to give a BIOS password prompt at system boot (when the system starts fr
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | BIOSPasswordAtSystemBoot | No, Yes | yes |
+
 
 </details>
 
@@ -87,6 +91,7 @@ Options:
 |:---|:---|:---|
 | BIOSPasswordAtReboot | No,Yes | yes |
 
+
 </details>
 
 <details><summary>BIOS Password At Boot Device List</summary>
@@ -101,6 +106,7 @@ Options:
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | BIOSPasswordAtBootDeviceList | No, Yes | yes |
+
 
 </details>
 
@@ -117,6 +123,7 @@ Options:
 |:---|:---|:---|
 | RequireSVPwhenFlashing | No, Yes | yes |
 
+
 </details>
 
 <details><summary>POP Changeable by User</summary>
@@ -131,6 +138,7 @@ Options:
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | POPChangeablebyUser | No, Yes | yes |
+
 
 </details>
 
@@ -150,6 +158,7 @@ Options:
 
 !> When disabled, no action can reset the SVP if you forget it.
 
+
 </details>
 
 <details><summary>Password Count Exceeded Error</summary>
@@ -164,5 +173,6 @@ Whether to show the POST 0199 error and password prompt:
 | PasswordCountExceededError | Disabled, Enabled | yes |
 
  - [More information at Lenovo Support](https://support.lenovo.com/lt/en/solutions/ht052093-error-0199-system-security-security-password-retry-count-exceeded-thinkcentre-m90-m90p-thinkserver-ts200v-thinkstation-e20)
+
 
 </details>

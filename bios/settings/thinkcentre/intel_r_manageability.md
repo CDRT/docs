@@ -15,6 +15,7 @@ Options:
 
 !> the MEBx password will also be reset.
 
+
 </details>
 
 ### Intel(R) MEBx ###
@@ -31,6 +32,7 @@ Displays the firmware version.
 
 Displays the manageability type.
 
+
 </details>
 
 <details><summary>USB Provisioning</summary>
@@ -43,5 +45,6 @@ Options:
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | USBProvisioning | Disabled, Enabled | yes |
+
 
 </details>

@@ -3,6 +3,7 @@
 ![](./img/uefibiosupdate.png)
 
 <details><summary>Flash BIOS Updating by End-Users</summary>
+
 One of 2 possible states:
 
 1.	Off - entering supervisor password is required to update UEFI BIOS when Supervisor password is installed.
@@ -11,9 +12,11 @@ One of 2 possible states:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | BIOSUpdateByEndUsers | Disable, Enable | Yes | Both |
+
 </details>
 
 <details><summary>Secure RollBack Prevention</summary>
+
 One of 2 possible states:
 
 1.	Off – allow flashing to older version of UEFI BIOS. Default, if ‘OS Optimized Defaults’ has value ‘Off’.
@@ -22,9 +25,11 @@ One of 2 possible states:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | SecureRollBackPrevention | Disable, Enable | Yes | Both |
+
 </details>
 
 <details><summary>Windows UEFI Firmware Update</summary>
+
 One of 2 possible options:
 
 1.	**On** – allow Windows UEFI Firmware Update. Default.
@@ -33,4 +38,5 @@ One of 2 possible options:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | WindowsUEFIFirmwareUpdate | Disable, Enable | Yes | Both |
+
 </details>

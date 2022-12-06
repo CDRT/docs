@@ -19,6 +19,7 @@ Options:
 | AfterPowerLoss | Power Off, Power On, Last State | yes |
 
 
+
 </details>
 
 <details><summary>Enhanced Power Saving Mode</summary>
@@ -36,6 +37,7 @@ Options:
 |:---|:---|:---|
 | EnhancedPowerSavingMode | Disabled, Enabled | yes |
 
+
 </details>
 
 <details><summary>Smart Power On</summary>
@@ -50,6 +52,7 @@ Options:
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | SmartPowerOn | Disabled, Enabled | yes |
+
 
 </details>
 
@@ -66,5 +69,6 @@ Options:
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | IntelligentCoolingPerformanceMode | Best Performance, Best Experience, Full Speed | yes |
+
 
 </details>

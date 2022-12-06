@@ -5,6 +5,7 @@
 ![](./img/startup.png)
 
 <details><summary>Network Boot</summary>
+
 Option to select top priority of the Boot Priority Order when waking from LAN.
 One of 9 possible options:
 
@@ -23,9 +24,11 @@ One of 9 possible options:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | NetworkBoot | HDD0, HDD1, HDD2, HDD3, HDD4, <br>PXEBOOT, ATAPICD0, ATAPICD1, ATAPICD2, USBFDD, <br>USBCD, USBHDD, OtherHDD, OtherCD, NVMe0, <br>NVMe1, HTTPSBOOT, LENOVOCLOUD, ON-PREMISE, NODEV | Yes | Both |
+
 </details>
 
 <details><summary>Boot Mode</summary>
+
 One of 2 possible values:
 
 1.	**Quick** – the diagnostic splash screen does not display unless you press Esc during boot. Default.
@@ -34,9 +37,11 @@ One of 2 possible values:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | BootMode | Quick, Diagnostics | No | Both |
+
 </details>
 
 <details><summary>Option key Display</summary>
+
 One of 2 possible states:
 
 1.	**On** – system will show the option key message when the system is booted. Default.
@@ -45,21 +50,26 @@ One of 2 possible states:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | StartupOptionKeys | Disable, Enable | Yes | Both |
+
 </details>
 
 <details><summary>Boot device List F12 Option</summary>
+
 One of 2 possible states:
 
 1.	**On** – F12 key is used to invoke a pop-up Boot devise list. Default.<br>
-    **Note**. This option is only available when Supervisor enters setup.
 2.	Off – F12 does not invoke a pop-up Boot device list.
+
+?>  This option is only available when Supervisor enters setup.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | BootDeviceListF12Option | Disable, Enable | Yes | Both |
+
 </details>
 
 <details><summary>Boot Order Lock</summary>
+
 This setting can prevent other software from altering the Boot Order when it is enabled. This may be required in situations where an alternative boot loaded is required to be first in the boot order. When enabled, the Boot Order can only be changed using the BIOS Setup or the WMI interface.
 
 One of 2 possible states:
@@ -70,6 +80,7 @@ One of 2 possible states:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | BootOrderLock | Disable, Enable | Yes | Both |
+
 </details>
 
 ### Boot ###
@@ -77,6 +88,7 @@ One of 2 possible states:
 ![](./img/boot.png)
 
 <details><summary>Boot Priority Order</summary>
+
 The ordered list of currently defined boot priority order.
 Keys used to view or configure devices:
 
@@ -103,12 +115,15 @@ Possible items on the list:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | BootOrder | HDD0, HDD1, HDD2, HDD3, HDD4, <br>PXEBOOT, ATAPICD0, ATAPICD1, ATAPICD2, USBFDD, <br>USBCD, USBHDD, OtherHDD, OtherCD, NVMe0, NVMe1, HTTPSBOOT,<br>LENOVOCLOUD, ON-PREMISE, NODEV | Yes | Both |
+
 </details>
 
 <details><summary>Excluded from boot priority order</summary>
+
 By default, the following items are excluded from boot priority order:
 
 1.	Other CD
 2.	Other HDD
+
 
 </details>

@@ -34,6 +34,7 @@ Set, change, or delete the Supervisor Password.
 
 Enter and confirm new password.
 
+
 </details>
 
 <details><summary>Set Power-On Password</summary>
@@ -44,6 +45,7 @@ Set, change, or delete the Power-On Password.
 
 Enter and confirm new password.
 
+
 </details>
 
 <details><summary>Set System Management Password</summary>
@@ -53,6 +55,7 @@ Set, change, or delete the System Management Password (SMP).
 ?> To delete System Management Password, enter blank fields for each new password line item.
 
 Enter and confirm new password.
+
 
 </details>
 
@@ -69,6 +72,7 @@ Options:
 |:---|:---|:---|
 | SecureRollBackPrevention | No, Yes |  |
 
+
 </details>
 
 <details><summary>Windows UEFI Firmware Update</summary>
@@ -81,6 +85,7 @@ Options:
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | WindowsUEFIFirmwareUpdate | Disabled, Enabled |  |
+
 
 </details>
 
@@ -98,6 +103,7 @@ Options:
 |:---|:---|:---|
 | SmartUSBProtection | Disabled, Read Only, No Access |  |
 
+
 </details>
 
 <details><summary>secure wipe</summary>
@@ -112,6 +118,7 @@ Options:
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | securewipe | | yes |
+
 
 </details>
 
@@ -129,6 +136,7 @@ Options:
 |:---|:---|:---|
 | DeviceGuard | Disabled, Enabled | yes |
 
+
 </details>
 
 <details><summary>Secure Core PC Level3</summary>
@@ -139,6 +147,7 @@ Whether to support Windows 10/11 Secured-core PCs' Level3:
 2.  Enabled.
 
  - [More information at Microsoft Docs](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-highly-secure)
+
 
 </details>
 
@@ -152,6 +161,7 @@ Options:
 
 1.  **Disabled** - Default.
 2.  Enabled.
+
 
 </details>
 
@@ -170,6 +180,7 @@ Options:
 |:---|:---|:---|
 | CoverTamperDetected | Disabled, Enabled | yes |
 
+
 </details>
 
 <details><summary>Configuration Change Detection</summary>
@@ -184,5 +195,6 @@ Options:
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | ConfigurationChangeDetection | Disabled, Enabled | yes |
+
 
 </details>

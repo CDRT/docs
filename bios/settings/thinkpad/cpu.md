@@ -3,6 +3,7 @@
 ![](./img/cpu.png)
 
 <details><summary>Intel (R) Hyper-Threading Technology</summary>
+
 One of 2 possible states:
 
 1.	**On** - it enables additional CPU threads. These threads appear as additional processors but share some resources with the other threads within a CPU. Default.
@@ -11,5 +12,6 @@ One of 2 possible states:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | HyperThreadingTechnology | Disable, Enable | No | Both |
+
 
 </details>

@@ -22,6 +22,7 @@ Options:
 |:---|:---|:---|
 | SecureBoot | Disabled, Enabled | yes |
 
+
 </details>
 
 ### Restore Factory Keys ###
@@ -61,5 +62,6 @@ Options:
 ?> If add-on cards are supported, Microsoft 3rd Party UEFI CA will not be removed until the boot loader is loaded.
 
 <!-- MODEL: Only M90t/s-3 -->
+
 
 </details>

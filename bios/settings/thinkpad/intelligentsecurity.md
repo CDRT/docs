@@ -10,6 +10,7 @@ The Intelligent Security functions provide a convenient way to securely lock and
 
 <details><summary>User Presence Sensing</summary>
 
+
 Whether to enable functions that rely on using the IR camera to recognize the user's presence and if the user is looking at the screen.
 
 !> Before using this feature, ensure you create your Face ID with the IR camera.
@@ -25,9 +26,11 @@ Options:
 |:---|:---|:---|:---|
 | UserPresenceSensing | Disable, Enable | Yes | Intel |
 
+
 </details>
 
 <details><summary>Allow Lenovo Vantage to Override Setting Below</summary>
+
 
 Whether to allow Windows® service to prioritize the settings of Lenovo Vantage, if Lenovo Vantage is installed.
 
@@ -43,9 +46,11 @@ Options:
 |:---|:---|:---|:---|
 | ZeroTouchAllowOverride | Disable, Enable | Yes | Intel |
 
+
 </details>
 
 <details><summary>Zero Touch Login</summary>
+
 
 Whether to unlock or wake up the computer automatically when you are in front of it or approaching it.
 
@@ -58,10 +63,12 @@ Options:
 |:---|:---|:---|:---|
 | ZeroTouchLogin | Disable, Enable | Yes | Intel |
 
+
 </details>
 
 <div style='margin-left:30px'>
 <details><summary>DISTANCE SENSITIVITY ADJUSTING</summary>
+
 
 !> Depends on Windows® Hello. To use it, turn on face recognition in Windows® settings.
 
@@ -77,9 +84,11 @@ Options:
 |:---|:---|:---|:---|
 | ZeroTouchLoginDistanceAdjusting | Near, Middle, Far | Yes | Intel |
 
+
 </details>
 </div>
 <details><summary>Zero Touch Lock</summary>
+
 
 Whether to dim the display and lock the computer when user presence is not detected.
 
@@ -94,9 +103,11 @@ Options:
 |:---|:---|:---|:---|
 | ZeroTouchLock | Disable, Enable | Yes | Intel |
 
+
 </details>
 <div style='margin-left:30px'>
 <details><summary>SENSITIVITY ADJUSTING</summary>
+
 
 ?> Accuracy varies by body size, posture, and frequency of movement.
 
@@ -110,9 +121,11 @@ Options:
 |:---|:---|:---|:---|
 | ZeroTouchLockDistanceAdjusting | Near, Middle, Far | Yes | Intel |
 
+
 </details>
 
 <details><summary>AUTO SCREEN LOCK TIMER</summary>
+
 
 ?> Uses sensors and camera to detect your presence. However, it does NOT collect any personal data.
 
@@ -125,6 +138,7 @@ Options:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | ZeroTouchLockTimer | Fast, Medium, Slow | Yes | Intel |
+
 
 </details>
 </div>

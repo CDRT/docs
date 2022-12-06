@@ -3,6 +3,7 @@
 ![](./img/usb.png)
 
 <details><summary>Always on USB</summary>
+
 The USG ports can charge external device during low power states (standby, hibernate or power-off).
 Note. If the system runs on battery mode, this works only in standby mode.
 One of 2 possible states:
@@ -13,9 +14,11 @@ One of 2 possible states:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | AlwaysOnUSB | Disable, Enable | No | Both |
+
 </details>
 
 <details><summary>Charge in Battery Mode</summary>
+
 Visible only if 'Always on USB' is Enabled.
 One of 2 possible states:
 
@@ -25,4 +28,5 @@ One of 2 possible states:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | ChargeInBatteryMode | Disable, Enable | No | Both |
+
 </details>

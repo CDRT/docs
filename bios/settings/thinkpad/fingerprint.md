@@ -3,6 +3,7 @@
 ![](./img/fingerprint.png)
 
 <details><summary>Predesktop Authentication</summary>
+
 One of 2 possible states:
 
 1.	**On** - authentication by a fingerprint is enabled at predesktop. Default.
@@ -11,9 +12,11 @@ One of 2 possible states:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | FingerprintPredesktopAuthentication | Disable, Enable | Yes | Both |
+
 </details>
 
 <details><summary>Security Mode</summary>
+
 One of 2 possible options:
 
 1.	**Normal** - Power-On Password or Supervisor Password must be entered to boot a system when no fingerprint is authenticated. Default.
@@ -22,23 +25,27 @@ One of 2 possible options:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | FingerprintSecurityMode | Normal, High | Yes | Both |
+
 </details>
 
 <details><summary>Password Authentication</summary>
+
 Visible and active only if ‘Security Mode’ has value ‘High’.<br>
 One of 2 possible states:
 
 1.	**On** - authentication by password is enabled. Users are authenticated by passwords when fingerprints are not available. Default.
 2.	Off - authentication by password is disabled. Users are not authenticated by passwords.
 
-    **Note**. Administrators are authenticated by a Supervisor Password.
+    ?>  Administrators are authenticated by a Supervisor Password.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | FingerprintPasswordAuthentication | Disable, Enable | Yes | Both |
+
 </details>
 
 <details><summary>Single-touch authentication</summary>
+
 
 Whether to allow a single touch fingerprint authentication to work through all security levels.
 
@@ -53,11 +60,14 @@ Options:
 |:---|:---|:---|:---|
 | FingerprintSingleTouchAuthentication |  | yes | both |
 
+
 </details>
 
 <details><summary>Reset Fingerprints Data</summary>
+
 This option is used to erase all fingerprint data stored in the fingerprint reader and reset settings to the factory state (ex. Power-on security, LEDs, etc.). <br>
 As a result, any power-on security features previously enabled will not be able to work until they are re-enabled in fingerprint software. <br>
 The option requires additional confirmation for erasing the fingerprint data.
+
 
 </details>

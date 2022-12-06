@@ -16,6 +16,7 @@ Options:
 | EISTSupport | Disabled, Enabled | yes |
 
 
+
 </details>
 
 <details><summary>Intel(R) Hyper-Threading Technology</summary>
@@ -30,6 +31,7 @@ Options:
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | HyperThreadingTechnology | Disabled, Enabled | yes |
+
 
 </details>
 
@@ -46,6 +48,7 @@ Options:
 |:---|:---|:---|
 | CoreMultiProcessing | Enabled, Disabled | yes |
 
+
 </details>
 
 <details><summary>Intel(R) Virtualization Technology</summary>
@@ -60,6 +63,7 @@ Options:
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | VirtualizationTechnology | Disabled, Enabled | yes |
+
 
 </details>
 
@@ -76,6 +80,7 @@ Options:
 |:---|:---|:---|
 | VTdFeature | Disabled, Enabled | yes |
 
+
 </details>
 
 <details><summary>TxT</summary>
@@ -91,6 +96,7 @@ Options:
 |:---|:---|:---|
 | TXTFeature | Disabled, Enabled | yes |
 
+
 </details>
 
 <details><summary>C1E Support</summary>
@@ -105,6 +111,7 @@ Options:
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | C1ESupport | Disabled, Enabled | yes |
+
 
 </details>
 
@@ -125,6 +132,7 @@ Options:
 |:---|:---|:---|
 | CStateSupport | C1, C1C3, C1C3C6, C1C3C6C7, C1C3C6C7C8, C1C3C6C7C8C10 | yes |
 
+
 </details>
 
 <details><summary>Turbo Mode</summary>
@@ -140,6 +148,7 @@ Options:
 |:---|:---|:---|
 | TurboMode | Disabled, Enabled | yes |
 
+
 </details>
 
 <details><summary>CPU ID</summary>
@@ -148,6 +157,7 @@ Displays the processor ID.
 
 <!-- NO WMI -->
 
+
 </details>
 
 <details><summary>Microcode Revision (MM/DD/YYYY)</summary>
@@ -155,5 +165,6 @@ Displays the processor ID.
 CPU microcode revision.
 
 <!-- NO WMI -->
+
 
 </details>
