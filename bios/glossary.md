@@ -562,11 +562,7 @@ AMT
 
   Manufacturing Mode 
  
- *More information:* 
-
- <!-- TODO --> 
-
- *Relevant settings:* 
+  *Relevant settings:* 
  - [Security Chip (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/securitychip) 
 
 
@@ -587,10 +583,11 @@ AMT
 ### NFC 
 
   Near-Field Communication. 
- <!-- TODO --> 
 
  *More information:* 
- 
+
+ - [More information at Lenovo.com](https://techtoday.lenovo.com/origind8/sites/default/files/2019-05/Workforce%20Mobility_Static%20Infographic_042618.pdf)
+
  *Relevant settings:* 
  - [NFC Device (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/ioportaccess) 
 
@@ -603,7 +600,8 @@ AMT
   
  *More information:* 
 
- <!-- TODO --> 
+ - [More information at Lenovo CDRT](https://docs.lenovocdrt.com/#/docks/docks_main.md)
+ - [More information at Lenovo CDRT](https://docs.lenovocdrt.com/#/dash/dash_top.md)
 
  *Relevant settings:* 
  - [MAC Address Pass Through (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/network) 
@@ -614,14 +612,19 @@ AMT
 
 ### NVMe 
 
-  NVM Express or Non-Volatile Memory Host Controller Interface Specification is an open, logical-device interface specification for accessing a computer's non-volatile storage media usually attached via PCI Express bus. 
+  NVM Express or Non-Volatile Memory Host Controller Interface Specification is an open, logical-device interface specification for accessing a computer's non-volatile storage media, usually attached via PCI Express bus. 
   
  *More information:* 
  
+ - [More information at nvmexpress.org](https://nvmexpress.org/)
+
  *Relevant settings:* 
  - [NVMe1 Password (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/password) 
  - [Network Boot (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/startup) 
 
+*See also*
+
+ATA
 
 ---
 
@@ -629,10 +632,11 @@ AMT
 
   Original Design Manufacturer 
  
- *More information:* 
-  - ["Lenovo CSP Is For You!" at Lenovo YouTube](https://www.youtube.com/watch?v=2dFgkv2OQ5Y)   - ["Lenovo's Secret Recipe For Hyperscale Success Is Called ODM+" at Forbes.com](https://www.forbes.com/sites/patrickmoorhead/2018/10/22/lenovos-secret-recipe-for-hyperscale-success-is-called-odm/) 
+A company that designs and manufactures a product that is eventually rebranded by another firm for sale.
 
- *Relevant settings:* 
+ *More information:* 
+  - ["Lenovo CSP Is For You!" at Lenovo YouTube](https://www.youtube.com/watch?v=2dFgkv2OQ5Y)   
+  - ["Lenovo's Secret Recipe For Hyperscale Success Is Called ODM+" at Forbes.com](https://www.forbes.com/sites/patrickmoorhead/2018/10/22/lenovos-secret-recipe-for-hyperscale-success-is-called-odm/) 
 
 
 
@@ -646,9 +650,11 @@ AMT
  
  *More information:* 
  
+- [More information at Microsoft Docs](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-highly-secure)
+
  *Relevant settings:* 
 
-
+ - [Secure Core PC Level3 (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/security.md)
 
 ---
 
@@ -656,23 +662,21 @@ AMT
 
   Out-of-band. 
 
- As in Out-of-band management. 
+ As in Out-of-band management, hardware-based features that enable remotely manage devices, even when powered down.
 
  *More information:* 
  
- *Relevant settings:* 
-
-
+ - [More information at Intel.com](https://www.intel.com/content/www/us/en/business/enterprise-computers/resources/out-of-band-management.html)
 
 *See also:*
 
-ME
+ME 
 
 ---
 
-### Optane 
+### Optane™
 
-
+Standalone memory device that combines storage capacity and system acceleration.
  
  *More information:* 
   - ["Intel® Optane™ Memory - Responsive Memory, Accelerated Performance"at Lenovo.com](https://www.intel.com/content/www/us/en/products/details/memory-storage/optane-memory.html) 
@@ -689,12 +693,12 @@ ME
  
  *More information:* 
  
- *Relevant settings:* 
-
+ - [More information at Lenovo CDRT](https://docs.lenovocdrt.com/#/docks/docks_main.md)
+ - [More information at Lenovo Support](https://support.lenovo.com/us/en/solutions/ht104232)
 
 
 ---
-
+<!-- 
 ### PAP 
 
   supervisor password (?) 
@@ -705,6 +709,7 @@ ME
  - [Require SVP when Flashing (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/password_policies) 
  - [Set Supervisor Password (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/security) 
 
+ -->
 
 <!-- ---
 
@@ -721,9 +726,12 @@ ME
 ### PCR 
 
   Platform Configuration Register (PCR) 
+
  A memory location in the TPM, for storing security metrics. 
  
- *More information:* <!-- TODO --> 
+ *More information:* 
+ 
+  - [More information at Microsoft Support](https://learn.microsoft.com/en-us/windows/security/information-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices)
  
  *Relevant settings:*  
  - [Security Chip (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/securitychip) 
@@ -734,24 +742,29 @@ Trusted Platform Module (TPM)
 
 ---
 
-### PEAP / LEAP 
+### PEAP / EAP 
 
-  Protected / Lightweight Extensible Authentication Protocol <!-- TODO: PEAP, LEAP or SEAP? --> 
+  (Protected) Extensible Authentication Protocol
  
+EAP is an authentication framework that supports multiple authentication methods. PEAP adds security services to those EAP methods that EAP provides.
+
  *More information:* 
  
+ - [More information at Microsoft.com](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-peap/73da9658-3dc6-4b97-9c0f-532f6a9b814d)
+
  *Relevant settings:* 
- - [Network (ThinkPad)]() 
+ - [Security (ThinkPad)]https://docs.lenovocdrt.com/#/bios/settings/thinkpad/network.md) 
 
 *See also:*
 
-EAP, LEAP
+SEAP, LEAP
 
 ---
 
 ### PK 
 
   Platform Key 
+
   The public key used in Secure Boot.
 
  *More information:* 
@@ -759,6 +772,7 @@ EAP, LEAP
 
  *Relevant settings:* 
  - [Enter Audit Mode (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/secure_boot?id=enter-audit-mode) 
+ - [Key Management (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/secureboot.md)
 
 
 ---
@@ -767,9 +781,6 @@ EAP, LEAP
 
  
   A specific combination of hardware and software. 
-
-  *More information:* 
-  <!-- TODO --> 
 
   *Relevant settings:*
   - [Intel (R) SIPP Support (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/advanced) 
