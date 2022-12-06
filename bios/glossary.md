@@ -802,7 +802,7 @@ EAP, LEAP
  
  *More information:* 
 
- <!-- TODO --> 
+  - [More information at Intel.com](https://www.intel.com/content/www/us/en/gaming/resources/why-wont-my-computer-turn-on.html)
 
  *Relevant settings:* 
  - [Password Count Exceeded Error (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/password_policies) 
@@ -812,12 +812,14 @@ EAP, LEAP
 
 ### Predesktop
 
- <!-- TODO --> 
+The Rescue and Recovery Predesktop Area provides an emergency workspace for users who are unable to start Windows on their computers. Running under Windows PE (Preinstallation Environment), the environment offers the Windows look, feel, and function and helps users solve problems without consuming IT staff time.
   
   *More information:* 
+
+  - [More information at Lenovo.com](https://download.lenovo.com/ibmdl/pub/pc/pccbbs/thinkvantage_en/rnr421mst.pdf)
   
   *Relevant settings:* 
- 
+  - [Predesktop Authentication (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/fingerprint.md)
  
 
 ---
@@ -853,6 +855,9 @@ UNDI
  *Relevant settings:* 
  - [ATA Drive Setup(ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/ata_drive_setup) 
 
+*See also:*
+
+ATA, Optane 
 
 ---
 
@@ -860,8 +865,12 @@ UNDI
 
   Rapid Storage Technology 
  
+Gives enhanced performance and lower power consumption. When using more than one drive, gives additional protection against data loss in the event of a hard drive failure.
+
  *More information:* 
  
+ - [More information at Intel.com](https://www.intel.com/content/www/us/en/support/articles/000005610/technologies.html)
+
  *Relevant settings:* 
  - [Configure SATA As (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/ata_drive_setup) 
 
@@ -896,14 +905,13 @@ ATA, PATA
   Configuration Manager or System Center Configuration Manager 
  
  *More information:* 
+
+  - [More information at Microsoft.com](https://learn.microsoft.com/en-us/mem/configmgr/core/understand/introduction)
+  - [More information at Microsoft.com](https://learn.microsoft.com/en-us/mem/configmgr/core/understand/what-happened-to-sccm)
  
- *Relevant settings:* 
-
-
-
 ---
 
-### SDBM 
+### SDB(M) 
 
   System Deployment Boot Mode 
 
@@ -911,8 +919,6 @@ ATA, PATA
 
  *More information:* 
   - ["System Deployment Boot Mode" at Lenovo CDRT](https://docs.lenovocdrt.com/#/bios/sdbm) 
-
- *Relevant settings:* 
 
 ---
 
