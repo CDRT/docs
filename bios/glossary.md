@@ -145,6 +145,7 @@ UEFI
  *Relevant settings:* 
  - [Allow Microsoft 3rd Party UEFI CA (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/secure_boot) 
  - [TLS Auth Configuration (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/network_setup) 
+ - [Allow Microsoft 3rd Party UEFI CA (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkstation/secure_boot.md)
 
 
 
@@ -353,7 +354,7 @@ UEFI
 
 ### GPU 
 
-   Graphics Processing Unit 
+Graphics Processing Unit 
  
  *More information:* 
   - ["What Is a GPU?" at Intel.com](https://www.intel.com/content/www/us/en/products/docs/processors/what-is-a-gpu.html) 
@@ -377,6 +378,10 @@ UMA
  *Relevant settings:* 
  - [First Boot Device (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/startup.md) 
  - [Boot Priority Order (THinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/startup.md) 
+
+*See also:*
+
+ATA, HDD, HDP, RST, SATA
 
 
 ---
@@ -485,19 +490,17 @@ UMA
 
 ---
 
-### Microsoft 3rd Party UEFI CA
+<!-- ### Microsoft 3rd Party UEFI CA
 
 
  
  *More information:* 
 
- <!-- TODO --> 
 
  *Relevant settings:* 
 
 
-
----
+--- -->
 
 ### MDT 
 
@@ -505,24 +508,21 @@ UMA
  
  *More information:*
  - [More information at Microsoft.com](https://docs.microsoft.com/en-us/mem/configmgr/mdt/) 
- 
- *Relevant settings:* 
-
-
+  - [More information at Lenovo CDRT](https://docs.lenovocdrt.com/#/bios/bios_guide)
 
 ---
 
 ### MEBx 
 
-   Intel® Management Engine BIOS Extension. 
- A BIOS menu extension on the Intel® AMT system that can be used to view and manually configure some of Intel® AMT settings. 
+   Intel® Management Engine BIOS Extension.
+
+A BIOS menu extension on the Intel® AMT system that can be used to view and manually configure some of Intel® AMT settings. 
 
  *More information:* 
   - [More information at Intel.com](https://www.intel.com/content/dam/support/us/en/documents/software/software-applications/Intel_SCS_Deployment_Guide.pdf) 
 
  *Relevant settings:* 
  - [Intel® MEBx (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/intel_r_manageability) 
-
 
 *See also:*
 
@@ -533,7 +533,8 @@ AMT
 ### ME 
 
   
- Intel ® Management Engine. 
+ Intel ® Management Engine.
+
  An embedded microcontroller providing features including OOB (out of band) management. 
 
  *More information:* 
@@ -542,6 +543,9 @@ AMT
  *Relevant settings:* 
  - [Enhanced Power Saving Mode (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/power) 
 
+*See also:*
+
+OOB
 
 ---
 
