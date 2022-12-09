@@ -194,10 +194,12 @@ UEFI
 
 ### Deployed mode
 
-<!-- (see System Deploy Mode) --> 
+In Deployed Mode, PK must be installed and the BIOS performs signature verification on programmatic attempts to update policy objects.
  
- *More information:* <!-- TODO --> 
+ *More information:*
  
+ - [More information at Dell.com](https://www.dell.com/support/manuals/nl-nl/poweredge-c6525/pecc6525_bios_ism_pub/system-security?guid=guid-65a67b2f-d457-4d8b-bf20-a24875cc54b5&lang=en-us)
+
  *Relevant settings:* 
 - [Enter Deployed Mode (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/secureboot)
 
@@ -212,6 +214,8 @@ UEFI
  
  *More information:* 
  
+ - [More information at Microsoft.com](https://learn.microsoft.com/en-us/windows-server/networking/technologies/dhcp/dhcp-top)
+ 
  *Relevant settings:* 
  - [Lenovo Cloud Services (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/network) 
 
@@ -222,29 +226,28 @@ UEFI
 ### DPTF 
 
   Dynamic Platform and Thermal Framework 
- 
- *More information:* <!-- TODO --> 
- 
+
+Intel Dynamic Platform and Thermal Framework (IDPTF) is a power and thermal management solution. It is used to resolve fan noise, overheating, and performance-related issues of the system.
+
  *Relevant settings:* 
 
-
+ - [Intel (R) DPTF Support (Think)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/advanced.md)
 
 ---
 
 ### DRAM 
 
   Dynamic Random-Access Memory 
- <!-- TODO --> 
+ 
  Random-access semiconductor memory that stores each bit of data in a memory cell, usually consisting of a tiny capacitor and a transistor, both typically based on metal-oxide-semiconductor technology. 
  
  *More information:* 
- 
+
+ - [More information at Lenovo.com](https://www.lenovo.com/ca/en/faqs/pc-life-faqs/what-is-ddr4-ram/)
+
  *Relevant settings:* 
 
-
-*See also:*
-
-NVDIMM
+ - [Intel(R) Total Memory Encryption (Think)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/memoryprotection.md)
 
 ---
 
@@ -261,18 +264,18 @@ NVDIMM
  *Relevant settings:* 
  - [EAP Authentication Method (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/network) 
 
+*See also:*
+
+PEAP
 
 ---
 
 ### EEPROM 
 
-  Electrically Erasable Programmable Read-Only Memory 
+Electrically Erasable Programmable Read-Only Memory
+ 
  Non-volatile memory storing relatively small amounts of data by allowing individual bytes to be erased and reprogrammed. 
- 
- *More information:* 
- 
- <!-- TODO --> 
- 
+  
  *Relevant settings:* 
  - [MAC Address Pass Through (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/network) 
 
@@ -281,11 +284,8 @@ NVDIMM
 
 ### EFI 
 
-   
- Used in the context of HTTPS Boot
- 
- *More information:* 
- 
+Extensible Firmware Interface. Used in the context of HTTPS Boot.
+  
  *Relevant settings:* 
  - [Delete HTTPs Boot Option from List (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/network_setup?id=delete-https-boot-option-from-list) 
 
@@ -317,16 +317,18 @@ UEFI
  A high-speed bi-directional mode for non-printer peripherals. 
  
  *More information:* 
- 
+
+ - [More information at IEEE.org](https://standards.ieee.org/ieee/1284/1956/)
+
  *Relevant settings:* 
- - [Parallel Port Mode (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/parallel_port_setup.md)
+ - [Parallel Port Mode & EPP Version (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/parallel_port_setup.md)
 
 
 ---
 
 ### Flash BIOS
 
-  
+  Updating the BIOS.
    
    *More information:* 
    - ["How to update BIOS" at Intel.com](https://www.intel.com/content/www/us/en/gaming/resources/how-to-update-bios.html) 
@@ -339,22 +341,17 @@ UEFI
 ---
 
 ###  Form Factor
-
- 
   
   The size and spatial design of the computer and its individual components. Broadly similar or the same across a model line. 
-  
-  *More information:* 
-  
-  *Relevant settings:* 
- 
- 
+   
 
 ---
 
 ### GPU 
 
-Graphics Processing Unit 
+Graphics Processing Unit
+
+Specialized processor originally designed to accelerate graphics rendering, able to process many pieces of data simultaneously, useful for machine learning, video editing, and gaming applications, and may be integrated into the computer’s CPU or offered as a discrete hardware unit.
  
  *More information:* 
   - ["What Is a GPU?" at Intel.com](https://www.intel.com/content/www/us/en/products/docs/processors/what-is-a-gpu.html) 
