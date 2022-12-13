@@ -42,7 +42,7 @@ RAID, SATA
 
 ### AMT 
 
-  Intel® Active Management Technology. 
+  Intel® Active Management Technology
  
  Remote management solution from Intel®. 
  
@@ -151,7 +151,7 @@ UEFI
 
 ### CA 
 
-  Certification Authority. 
+  Certification Authority
  
 Organization that verifies identity and issues public key certificates to parties.
 
@@ -203,7 +203,7 @@ UEFI
 
 ### DASH 
 
-  Desktop and mobile Architecture for System Hardware.  
+  Desktop and mobile Architecture for System Hardware
  
  Secure out-of-band and remote client management standard. 
  
@@ -309,7 +309,9 @@ Electrically Erasable Programmable Read-Only Memory
 
 ### EFI 
 
-Extensible Firmware Interface. Used in the context of HTTPS Boot.
+Extensible Firmware Interface
+
+Used in the context of HTTPS Boot.
   
  *Relevant settings:* 
  - [Delete HTTPs Boot Option from List (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/network_setup?id=delete-https-boot-option-from-list) 
@@ -427,7 +429,7 @@ ATA, HDD, HDP, RST, SATA
 
 ### IOMMU 
 
-   Input-Output Memory Management Unit.
+   Input-Output Memory Management Unit
  
  Hardware assisted address translation from I/O device virtual addresses to physical addresses, to improve the system performance in virtual environments. 
  
@@ -443,7 +445,7 @@ ATA, HDD, HDP, RST, SATA
 
 ### IRQ 
 
-  Interrupt Request Line. 
+  Interrupt Request Line
  
  Hardware line allowing devices to take over processor resources for their function. IRQs are assigned numbers to prioritize devices. 
  
@@ -458,7 +460,8 @@ ATA, HDD, HDP, RST, SATA
 
 ### ITC 
 
-  Imaging Technology Center. 
+  Imaging Technology Center
+
  Lenovo's Cloud Deployment solutions. 
  
  *More information:* 
@@ -471,9 +474,9 @@ ATA, HDD, HDP, RST, SATA
 
 ---
 
-### Lenovo Diagnostics.
+### Lenovo Diagnostics
  
-  Tool for testing Lenovo computers. Composed from Modules (diagnostics for a group of devices), Tools for creating custom diagnostic scripts, system information, and Log History. 
+  Tool for testing Lenovo computers. Composed from Modules (diagnostics for a group of devices), tools for creating custom diagnostic scripts, system information, and log history. 
 
   *More information:* 
    - ["Lenovo Diagnostics for Windows" at Lenovo PC Support](https://pcsupport.lenovo.com/us/en/downloads/ds102687) 
@@ -484,13 +487,14 @@ ATA, HDD, HDP, RST, SATA
 
 ---
 
-### Magic Packet.
-
+### Magic Packet
 
  Network packet specific to the network card, used in the Wake On LAN feature. 
 
  *More information:* 
   
+ - [More information at Microsoft.com](https://learn.microsoft.com/en-us/mem/configmgr/core/clients/deploy/configure-wake-on-lan)
+
  *Relevant settings:* 
  - [Wake On Lan (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/network) 
   
@@ -501,12 +505,8 @@ ATA, HDD, HDP, RST, SATA
 
   (Master) Hard Disk Password. 
 
-|  Admin (hard disk) password.
+AKA Admin (hard disk) password.
 
- *More information:*
- 
- <!-- TODO --> 
- 
  *Relevant settings:* 
  - [Hard Disk Password (ThinkStation)](https://docs.lenovocdrt.com/#/bios/settings/thinkstation/hard_disk_password.md) 
 
@@ -536,7 +536,7 @@ ATA, HDD, HDP, RST, SATA
 
 ### MEBx 
 
-   Intel® Management Engine BIOS Extension.
+   Intel® Management Engine BIOS Extension
 
 A BIOS menu extension on the Intel® AMT system that can be used to view and manually configure some of Intel® AMT settings. 
 
@@ -555,7 +555,7 @@ AMT
 ### ME 
 
   
- Intel ® Management Engine.
+ Intel ® Management Engine
 
  An embedded microcontroller providing features including OOB (out of band) management. 
 
@@ -608,7 +608,7 @@ OOB
 
 ### NFC 
 
-  Near-Field Communication. 
+  Near-Field Communication
 
  *More information:* 
 
@@ -622,7 +622,7 @@ OOB
 
 ### NIC 
 
-  Network Interface Controller / Card. 
+  Network Interface Controller / Card
   
  *More information:* 
 
@@ -638,7 +638,9 @@ OOB
 
 ### NVMe 
 
-  NVM Express or Non-Volatile Memory Host Controller Interface Specification is an open, logical-device interface specification for accessing a computer's non-volatile storage media, usually attached via PCI Express bus. 
+Non-Volatile Memory Host Controller Interface Specification
+
+Open, logical-device interface specification for accessing a computer's non-volatile storage media, usually attached via PCI Express bus. 
   
  *More information:* 
  
@@ -686,7 +688,7 @@ A company that designs and manufactures a product that is eventually rebranded b
 
 ### OOB 
 
-  Out-of-band. 
+  Out-of-band
 
  As in Out-of-band management, hardware-based features that enable remotely manage devices, even when powered down.
 
@@ -769,7 +771,7 @@ ASPM, GPU
 
 ### PCR 
 
-  Platform Configuration Register (PCR) 
+  Platform Configuration Register
 
  A memory location in the TPM, for storing security metrics. 
  
