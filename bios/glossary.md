@@ -36,15 +36,15 @@ Admin and Master are synonyms.
 
 *See also:*
 
-RAID
+RAID, SATA
 
 ---
 
 ### AMT 
 
-  Intel ® Active Management Technology. 
+  Intel® Active Management Technology. 
  
- Remote management solution from Intel ®. 
+ Remote management solution from Intel®. 
  
 *More information:* 
  - ["Intel® Active Management Technology" at Intel.com](https://www.intel.com/content/www/us/en/architecture-and-technology/intel-active-management-technology.html) 
@@ -54,6 +54,9 @@ RAID
  - [Intel® AMT Settings (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/intelramt) 
  - [Onboard Ethernet Controller (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/network_setup) 
   
+*See also:*
+
+MEBx
 
 ---
 
@@ -61,13 +64,19 @@ RAID
 
   Active State Power Management 
  
+PCI Express power management for power saving while fully active.
+
  *More information:* 
  
+ - [More information at PCISIG.com](https://pcisig.com/specifications/pciexpress/specifications/)
+
  *Relevant settings:* 
 
  - [ASPM Support](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/pci_express_configuration) 
 
+*See also:*
 
+PCI Express
 
 ---
 
@@ -79,6 +88,8 @@ RAID
  
  *More information:* 
  
+   - ["Developers Can Trust Intel Leadership in Serial ATA" at Intel.com](https://www.intel.com/content/www/us/en/io/serial-ata/serial-ata-developer.html) 
+
  *Relevant settings:* 
  - [SATA Controller](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/ata_drive_setup) 
  - [SATA Drive {Number} Password](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/hard_disk_password) 
@@ -94,8 +105,9 @@ IDE, SATA, PATA
 
 ### Audit mode
 
-
- Enables programmatic discovery of signature list combinations that successfully authenticate installed EFI images without the risk of rendering a system unbootable. Chosen signature lists configurations can be tested to ensure the system will continue to boot after the system is transitioned out of Audit Mode.
+ Enables programmatic discovery of signature list combinations that successfully authenticate installed EFI images without the risk of rendering a system unbootable.
+ 
+ Chosen signature lists configurations can be tested to ensure the system will continue to boot after the system is transitioned out of Audit Mode.
  
  *More information:* 
  - [UEFI Specification Version 2.9 (March 2021) at UEFI.org](https://uefi.org/sites/default/files/resources/UEFI_Spec_2_9_2021_03_18.pdf) 
@@ -106,14 +118,16 @@ IDE, SATA, PATA
 
 *See also:*
 
-Custom mode 
+Custom mode, Setup Mode
 
 ---
 
 ### BIOS 
 
 
-  Basic Input/Output System (overrides user OS permissions to access settings in all cases; has no access to OS settings) 
+  Basic Input/Output System
+  
+  Overrides user OS permissions to access settings in all cases; has no access to OS settings.
  
  *More information:* 
   - ["What Is BIOS?" at Lenovo Support](https://support.lenovo.com/lt/en/videos/vid100790-what-is-bios) 
@@ -183,6 +197,7 @@ UEFI
   *Relevant settings:* 
   - [Secure Boot Key State](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/secureboot) 
  
+ Deployed Mode, Setup Mode
 
 ---
 
@@ -210,6 +225,9 @@ In Deployed Mode, PK must be installed and the BIOS performs signature verificat
  *Relevant settings:* 
 - [Enter Deployed Mode (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/secureboot)
 
+*See also:*
+
+Setup Mode, Custom Mode
 
 ---
 
@@ -731,6 +749,24 @@ Standalone memory device that combines storage capacity and system acceleration.
 
 ---
 
+### PCIe
+
+PCI (Peripheral Component Interconnect) Express
+
+Serial expansion bus standard.
+
+*More information:*
+
+ - [More information at PCISIG.com](https://pcisig.com/)
+
+*Relevant Settings*
+
+ - [PCIe Tunneling (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/thunderbolttm4.md)
+
+*See also:*
+
+ASPM, GPU
+
 ### PCR 
 
   Platform Configuration Register (PCR) 
@@ -980,6 +1016,9 @@ TPM
   *Relevant settings:* 
   - [Secure Boot Mode (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/secureboot) 
  
+*See also:*
+
+Deployed Mode, Custom Mode
 
 ---
 
