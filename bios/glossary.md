@@ -118,12 +118,6 @@ Custom mode
  *More information:* 
   - ["What Is BIOS?" at Lenovo Support](https://support.lenovo.com/lt/en/videos/vid100790-what-is-bios) 
  
- *Relevant settings:* 
-
-
-
-*See also:*
-
 UEFI
 
 ---
@@ -132,6 +126,12 @@ UEFI
 
  BIOS is programmed to restore the machine to its previous state through an uncorrupted, secure backup. 
 
+*More information:*
+
+ - [More information at Lenovo.com](https://www.lenovo.com/origind8/sites/default/files/2019-09/ThinkShield_SolutionsGuide_FINAL.pdf)
+
+*Relevant settings:* 
+ - [BIOS Self-healing (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/advanced.md)
 
 ---
 
@@ -139,24 +139,28 @@ UEFI
 
   Certification Authority. 
  
+Organization that verifies identity and issues public key certificates to parties.
+
  *More information:* 
   - ["Windows Secure Boot Key Creation and Management Guidance" at Microsoft.com](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-secure-boot-key-creation-and-management-guidance) 
+   - [More information at UEFI.org](https://uefi.org/sites/default/files/resources/UEFI_Plugfest_2013_-_New_Orleans_-_Microsoft_UEFI_CA.PDF)
  
  *Relevant settings:* 
  - [Allow Microsoft 3rd Party UEFI CA (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/secure_boot) 
  - [TLS Auth Configuration (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/network_setup) 
  - [Allow Microsoft 3rd Party UEFI CA (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkstation/secure_boot.md)
 
+*See also:*
 
+UEFI
 
 ---
 
 ### C State
 
-
  Core Power States 
  
- A series of states numbered 0 to n, where each state represents lower power consumption. 
+ A series of states numbered 0 to n, where each successive lower state number represents lower power consumption. 
  
 *More information:* 
  - ["C-State" at Intel.com](https://www.intel.com/content/www/us/en/develop/documentation/vtune-help/top/reference/energy-analysis-metrics-reference/c-state.html) 
@@ -170,8 +174,11 @@ UEFI
 
 ### Custom Mode
  
+  Custom Mode allows a user to install their own set of keys. The specifications for Secure Boot state allow a boot to occur in Custom Mode without a PK. This allows an OS to enroll a new PK which would then be used to validate its own KEK, db, and dbx.
   
-  *More information:* <!--- TODO ---> 
+  *More information:*
+
+   - [More information at Lenovo Support](https://support.lenovo.com/us/en/solutions/ht507181-how-to-enable-the-secure-boot-option-in-uefi-setup-lenovo-flex-system-x240-m5-compute-node-9532#Additional_Information_HT)
   
   *Relevant settings:* 
   - [Secure Boot Key State](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/secureboot) 
@@ -195,7 +202,7 @@ UEFI
 ### Deployed mode
 
 In Deployed Mode, PK must be installed and the BIOS performs signature verification on programmatic attempts to update policy objects.
- 
+
  *More information:*
  
  - [More information at Dell.com](https://www.dell.com/support/manuals/nl-nl/poweredge-c6525/pecc6525_bios_ism_pub/system-security?guid=guid-65a67b2f-d457-4d8b-bf20-a24875cc54b5&lang=en-us)
