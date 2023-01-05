@@ -10,7 +10,6 @@ The Intelligent Security functions provide a convenient way to securely lock and
 
 <details><summary>User Presence Sensing</summary>
 
-
 Whether to enable functions that rely on using the IR camera to recognize the user's presence and if the user is looking at the screen.
 
 !> Before using this feature, ensure you create your Face ID with the IR camera.
@@ -31,7 +30,6 @@ Options:
 
 <details><summary>Allow Lenovo Vantage to Override Setting Below</summary>
 
-
 Whether to allow Windows® service to prioritize the settings of Lenovo Vantage, if Lenovo Vantage is installed.
 
 - [More information at Lenovo Support](https://support.lenovo.com/us/en/solutions/ht505081-lenovo-vantage-using-your-pc-just-got-easier)
@@ -40,7 +38,9 @@ Whether to allow Windows® service to prioritize the settings of Lenovo Vantage,
 Options:
 
 1. **On** - Default.
-2. Off. Enforce BIOS settings.
+2. Off
+
+!> System will enforce BIOS settings if set to `Off`.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
@@ -50,7 +50,6 @@ Options:
 </details>
 
 <details><summary>Zero Touch Login</summary>
-
 
 Whether to unlock or wake up the computer automatically when you are in front of it or approaching it.
 
@@ -68,7 +67,6 @@ Options:
 
 <div style='margin-left:30px'>
 <details><summary>DISTANCE SENSITIVITY ADJUSTING</summary>
-
 
 !> Depends on Windows® Hello. To use it, turn on face recognition in Windows® settings.
 
@@ -89,7 +87,6 @@ Options:
 </div>
 <details><summary>Zero Touch Lock</summary>
 
-
 Whether to dim the display and lock the computer when user presence is not detected.
 
 ?> Can reduce the chances of unauthorized access to the computer if you leave the computer unattended and unlocked.
@@ -108,7 +105,6 @@ Options:
 <div style='margin-left:30px'>
 <details><summary>SENSITIVITY ADJUSTING</summary>
 
-
 ?> Accuracy varies by body size, posture, and frequency of movement.
 
 Options:
@@ -125,7 +121,6 @@ Options:
 </details>
 
 <details><summary>AUTO SCREEN LOCK TIMER</summary>
-
 
 ?> Uses sensors and camera to detect your presence. However, it does NOT collect any personal data.
 

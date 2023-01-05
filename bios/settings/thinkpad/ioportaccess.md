@@ -4,11 +4,12 @@
 
 <details><summary>Ethernet LAN</summary>
 
-Select whether to enable or disable Ethernet LAN device.
-One of 2 Possible options:
+Select whether to enable or disable Ethernet LAN device and keeps it disabled in the OS environment.
 
-1.	**On** – enables use of Ethernet LAN device. Default.
-2.	Off - disables use of Ethernet LAN device and keeps it disabled in the OS environment.
+Possible options:
+
+1.	**On** – Default.
+2.	Off
 
 ?>  The setting is removed in the recent versions.
 
@@ -20,11 +21,12 @@ One of 2 Possible options:
 
 <details><summary>Wireless LAN</summary>
 
-Select whether to enable or disable Wireless LAN device.
-One of 2 Possible options:
+Whether to enable or disable Wireless LAN device and keep it disabled in the OS environment.
 
-1.	**On** – enables use of Wireless LAN device. Default.
-2.	Off - disables use of Wireless LAN device and keeps it disabled in the OS environment.
+Possible options:
+
+1.	**On** - Default.
+2.	Off
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
@@ -35,10 +37,11 @@ One of 2 Possible options:
 <details><summary>Wireless WAN</summary>
 
 Select whether to enable or disable Wireless WAN device.
-One of 2 Possible options:
 
-1.	**On** – enables use of Wireless WAN device. Default.
-2.	Off - disables use of Wireless WAN device and keeps it disabled in the OS environment.
+Possible options:
+
+1.	**On** – Default.
+2.	Off
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
@@ -48,11 +51,12 @@ One of 2 Possible options:
 
 <details><summary>Bluetooth</summary>
 
-One of 2 Possible options:
+Possible options:
 
-1.	**On** – enables use of Bluetooth device. Default. <br>
-    ?>  Enabling Bluetooth requires to set ‘Wireless LAN’ to ‘Enabled’ state.
-2.	Off - disables use of Bluetooth device.
+1.	**On** – Default.
+2.	Off
+
+!>  Enabling Bluetooth requires setting ‘Wireless LAN’ to ‘Enabled’ state.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
@@ -62,14 +66,14 @@ One of 2 Possible options:
 
 <details><summary>USB Port</summary>
 
-Select whether to enable or disable all USB ports.
+Whether to enable all USB ports in the OS environment.
 
-?>  This setting does not affect any USB-C (R) ports with a thunderbolt icon.
+!>  This setting does not affect USB-C (R) ports with a thunderbolt icon.
 
-One of 2 Possible options:
+Possible options:
 
-1.	**On** – enables use of USB ports. Default.
-2.	Off – disables use of USB ports and keeps them disabled in the OS environment.
+1.	**On** – Default.
+2.	Off
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
@@ -79,11 +83,12 @@ One of 2 Possible options:
 
 <details><summary>Memory Card Slot</summary>
 
-Select whether to enable or disable memory card slot (SD Card/MultimediaCard/Memory Stick).
-One of 2 Possible options:
+Whether to enable memory card slot (SD Card/MultimediaCard/Memory Stick) in the OS environment.
 
-1.	**On** – enables use of Memory Card slot. Default.
-2.	Off – disables use of Memory Card slot and keeps it disabled in the OS environment.
+Possible options:
+
+1.	**On** – Default.
+2.	Off
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
@@ -93,11 +98,12 @@ One of 2 Possible options:
 
 <details><summary>Smart Card Slot</summary>
 
-Select whether to enable or disable Smart Card slot.
-One of 2 Possible options:
+Whether to enable Smart Card slot in the OS environment.
 
-1.	**On** – enables use of Smart Card slot. Default.
-2.	Off – disables use of Smart Card slot and keeps it disabled in the OS environment.
+Possible options:
+
+1.	**On** – Default.
+2.	Off
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
@@ -107,13 +113,14 @@ One of 2 Possible options:
 
 <details><summary>RFID</summary>
 
-Select whether to enable or disable RFID (radio-frequency identification).
-One of 2 Possible options:
+Whether to enable RFID (radio-frequency identification) in the OS environment.
 
-1.	**On** – enables use of RFID. Default.
-2.	Off – disables use of RFID and keeps it disabled in the OS environment.
+Possible options:
 
-?>  This feature is supported only for the [healthcare model](https://techtoday.lenovo.com/jp/ja/solutions/media/3970), where RFID is installed instead of Smart Card. Therefore, parameter for WMI command will be the same as for Smart Card.
+1.	**On** – Default.
+2.	Off
+
+!> This feature is supported only for the [healthcare model](https://techtoday.lenovo.com/jp/ja/solutions/media/3970), where RFID is installed instead of Smart Card. Therefore, parameter for WMI command will be the same as for Smart Card.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
@@ -123,11 +130,12 @@ One of 2 Possible options:
 
 <details><summary>Integrated Camera</summary>
 
-Select whether to enable or disable Integrated Camera.
-One of 2 Possible options:
+Whether to enable or disable Integrated Camera in the OS environment.
 
-1.	**On** – enables use of Integrated Camera. Default.
-2.	Off – disables use of Integrated Camera and keeps it disabled in the OS environment.
+Possible options:
+
+1.	**On** – Default.
+2.	Off
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
@@ -137,11 +145,14 @@ One of 2 Possible options:
 
 <details><summary>Integrated Audio</summary>
 
-Select whether to enable or disable all audio functions (Microphone/Speaker).
-One of 2 Possible options:
+Whether to enable all audio functions (Microphone/Speaker) in the OS environment.
 
-1.	**On** – to enable audio functions, select ‘Enabled’ and save the setting. Then fully shut down and power on the system. Default.
-2.	Off – disables use of all audio functions and keeps it disabled in the OS environment.
+?> To enable audio functions, select `Enabled` and save the setting. Then fully shut down and power on the system.
+
+Possible options:
+
+1.	**On** – Default.
+2.	Off
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
@@ -151,11 +162,14 @@ One of 2 Possible options:
 
 <details><summary>Microphone</summary>
 
-Select whether to enable or disable Microphone (Internal/External/Line-In).
-One of 2 Possible options:
+Select whether to enable or disable Microphone (Internal/External/Line-In) in the OS environment.
 
-1.	**On** – to enable Microphone, select ‘Enabled’ save the setting. Then fully shut down and power on the system. Default.
-2.	Off – disables use of Microphone.
+?>  To enable Microphone, select ‘Enabled’ save the setting. Then fully shut down and power on the system.
+
+Possible options:
+
+1.	**On** – Default.
+2.	Off
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
@@ -165,11 +179,12 @@ One of 2 Possible options:
 
 <details><summary>Fingerprint Reader</summary>
 
-Select whether to enable or disable Fingerprint Reader.
-One of 2 Possible options:
+Whether to enable Fingerprint Reader in the OS environment.
 
-1.	**On** – enables use of Internal Fingerprint Reader. Default.
-2.	Off – disables use of Internal Fingerprint Reader and keeps it disabled in the OS environment.
+Possible options:
+
+1.	**On** – Default.
+2.	Off
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
@@ -179,14 +194,14 @@ One of 2 Possible options:
 
 <details><summary>Thunderbolt (TM) 4</summary>
 
-Select whether to enable or disable Thunderbolt 4 (PCIe/USB).
+Select whether to enable or disable Thunderbolt 4 (PCIe/USB) in the OS environment.
 
 ?>  Affects only USB-C ports with a thunderbolt icon.
 
 One of 2 Possible options:
 
-1.	**On** – enables use of Thunderbolt 4. Default.
-2.	Off – disables use of Thunderbolt 4 ports and keeps them disabled in the OS environment.
+1.	**On** – Default.
+2.	Off
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
@@ -196,12 +211,12 @@ One of 2 Possible options:
 
 <details><summary>NFC Device</summary>
 
-Select whether to enable or disable NFC (near-field communication) Device.
+Whether to enable or disable NFC (near-field communication) Device in the OS environment
 
-One of 2 Possible options:
+Possible options:
 
-1.	**On** – enables use of NFC Device. Default.
-2.	Off – disables use of NFC Device and keeps it disabled in the OS environment.
+1.	**On** – Default.
+2.	Off
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
