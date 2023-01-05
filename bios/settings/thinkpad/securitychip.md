@@ -14,7 +14,7 @@ Shows the security chip type. View-only value.
 
 <details><summary>Security Chip</summary>
 
-One of 2 possible states:
+One of 2 Possible options:
 
 1.	**On** - security chip is functional. Default.
 2.	Off - security chip is hidden and is not functional.
@@ -43,7 +43,7 @@ The option requires additional confirmation for clearing the keys.
 
 Visible and active only if Security Chip’ is ‘Enabled’.<br>
 Intel (R) Trusted Execution Technology is a hardware-based security foundation to build and maintain a chain of trust, to protect information from software-based attacks.<br>
-One of 2 possible states:
+One of 2 Possible options:
 
 1.	On
 2.	**Off** – Default.
@@ -57,7 +57,7 @@ One of 2 possible states:
 <details><summary>Physical Presence for Clear</summary>
 
 This option enables or disables confirmation of a user’s physical presence when clearing the security chip.
-One of 2 possible states:
+One of 2 Possible options:
 
 1.	**On** - display user confirmation screen when clearing. Default.
 2.	Off - No user confirmation screen when clearing.
@@ -79,7 +79,7 @@ Opens settings for Security Reporting Options.
 
 <details><summary>SMBIOS Reporting</summary>
 
-One of 2 possible states:
+One of 2 Possible options:
 
 1.	**On** - reporting of SMBIOS data is enabled. Changes to corresponding UEFI BIOS data are logged in a location, (PCR1, defined in the TCG standards), which other authorized programs can monitor, read, and analyze. Default.
 2.	Off - reporting of SMBIOS data is disabled.

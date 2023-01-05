@@ -3,10 +3,10 @@
 
 <details><summary>Setup UI</summary>
 
-One of 2 possible options for interface of Setup:
+Whether to enable `simple text` interface with navigation and actions available only via keyboard, or  `graphical` interface with mouse for navigation and actions.
 
-1.	Simple Text - enables simple text interface with navigation and actions available only via keys on a keyboard.
-2.	**Graphical** - enables graphical interface with possibility to additionally use mouse for navigation and actions. Default.
+1.	Simple Text
+2.	**Graphical** - Default.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|

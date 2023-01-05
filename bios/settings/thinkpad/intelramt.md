@@ -20,7 +20,7 @@ One of 3 possible options:
 <details><summary>USB Key Provisioning</summary>
 
 Active only when ‘Intel (R) ATM Control’ has value ‘Enabled’.
-One of 2 possible states:
+One of 2 Possible options:
 
 1.	**Off** - disables USB key provisioning. Default.
 2.	On - enables USB key provisioning.

@@ -5,7 +5,7 @@
 
 The Absolute Persistence module is an optional monitoring service from Absolute Software.
 
-One of 3 possible states:
+One of 3 Possible options:
 
 1.	**Enabled** – Default.
 2.	Disabled
@@ -23,7 +23,7 @@ One of 3 possible states:
 
 Whether Absolute Persistence is activated in OS.
 
-Possible values:
+Possible options:
 
 1.	**Not Activated** – Default.
 2.	Activated

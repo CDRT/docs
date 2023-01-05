@@ -7,7 +7,7 @@
 
 This setting is applicable to ThinkPads with built-in Ethernet port.
 
-One of 3 possible states: <br>
+One of 3 Possible options: <br>
 
 1.	**AC Only** - Wake On LAN function works only when AC is attached. Default.
 2.	Disabled - function is turned off.
@@ -27,7 +27,7 @@ Wake On LAN function may be blocked due to password configuration.
 
 This setting is applicable to ThinkPads with no Ethernet port.
 
-One of 2 possible states:
+One of 2 Possible options:
 
 1.	**On** - function is turned on. Default.
 
@@ -47,7 +47,7 @@ Wake on LAN from Dock function may be blocked due to password configuration.
 
 <details><summary>Lenovo Cloud Services</summary>
 
-One of 2 possible states:
+One of 2 Possible options:
 
 1.	**On** - function is turned on. System connects Lenovo Cloud Services via HTTPs. DHCP option settings are not required. Default.
 
@@ -72,7 +72,7 @@ Additional information is here: [Client Virtualization & Infrastructure Solution
 
 <details><summary>UEFI WI-FI Network Boot</summary>
 
-One of 2 possible states:<br>
+One of 2 Possible options:<br>
 
 1. On - function is turned on. UEFI Wi-Fi driver is loaded at next boot and can connect to Access point.
 2. **Off** - function is turned off. Default.
@@ -87,7 +87,7 @@ One of 2 possible states:<br>
 
 <details><summary>UEFI IPv4 Network Stack</summary>
 
-One of 2 possible states:<br>
+One of 2 Possible options:<br>
 
 1. **On** - function is turned on. UEFI IPv4 Network Stack for UEFI environment is enabled. Default.
 2. Off - function is turned off.
@@ -100,7 +100,7 @@ One of 2 possible states:<br>
 
 <details><summary>UEFI IPv6 Network Stack</summary>
 
-One of 2 possible states:<br>
+One of 2 Possible options:<br>
 
 1. **On** - function is turned on. UEFI IPv6 Network Stack for UEFI environment is enabled. Default.
 2. Off - function is turned off.
@@ -167,7 +167,7 @@ Note. There could be several MAC addresses in case there are several wireless ne
 For every MAC Address the following information is shown:<br>
 
 * MAC Address - Media access control (MAC) address of the selected wireless network interface controller. View only.
-* [State] - One of 2 possible states:
+* [State] - One of 2 Possible options:
    1. **Disconnected** - device is not connected to a Wi-Fi network. Default.
    2. Connected to [SSID] - device is connected to a Wi-Fi network which has displayed SSID.
 
@@ -218,7 +218,7 @@ Security type of this Wi-Fi network.
 
 View only.
 
-Possible values:
+Possible options:
 
 1.	Open
 2.	WPA2-Personal
@@ -238,7 +238,7 @@ Password length: 8-63 characters.
 
 <details><summary>EAP Authentication Method</summary>
 
-Selected EAP Authentication Method. View only. Visible only for networks with security WPA2-Enterprise. Default value depends on the network. Possible values:
+Selected EAP Authentication Method. View only. Visible only for networks with security WPA2-Enterprise. Default value depends on the network. Possible options:
 
 1. PEAP
 2.	EAP-TLS
@@ -248,7 +248,7 @@ Selected EAP Authentication Method. View only. Visible only for networks with se
 
 <details><summary>EAP Second Authentication Method</summary>
 
-Selected EAP Second Authentication Method. View only. Visible only for networks with security WPA2-Enterprise and if ‘EAP Authentication Method’ is ‘PEAP’. Default value depends on the network. Possible values:
+Selected EAP Second Authentication Method. View only. Visible only for networks with security WPA2-Enterprise and if ‘EAP Authentication Method’ is ‘PEAP’. Default value depends on the network. Possible options:
 
 1. MSCHAPv2
 
@@ -317,7 +317,7 @@ Field for entering SSID value.
 
 <details><summary>Security</summary>
 
-Field to select the security type of this Wi-Fi network. Possible values:
+Field to select the security type of this Wi-Fi network. Possible options:
 
 1.	**Open** – Default
 2.	WPA2-Personal
@@ -335,7 +335,7 @@ Password length: 8-63 characters.
 
 <details><summary>EAP Authentication Method</summary>
 
-Field to select EAP Authentication Method. Possible values:
+Field to select EAP Authentication Method. Possible options:
 
 1.	**PEAP** – Default
 2.	EAP-TLS
@@ -346,7 +346,7 @@ Visible only for a network with security WPA2-Enterprise.
 
 <details><summary>EAP Second Authentication Method</summary>
 
-Field to select EAP Second Authentication Method. Possible values:
+Field to select EAP Second Authentication Method. Possible options:
 
 1.	**MSCHAPv2** – Default.
 
@@ -429,7 +429,7 @@ Field for editing SSID value.
 
 <details><summary>Security</summary>
 
-Field to select the security type of this Wi-Fi network. Default value depends on the network. Possible values:
+Field to select the security type of this Wi-Fi network. Default value depends on the network. Possible options:
 
 1.	Open
 2.	WPA2-Personal
@@ -447,7 +447,7 @@ Password length: 8-63 characters.
 
 <details><summary>EAP Authentication Method</summary>
 
-Field to select EAP Authentication Method. Possible values:
+Field to select EAP Authentication Method. Possible options:
 
 1.	**PEAP** – Default
 2.	EAP-TLS
@@ -458,7 +458,7 @@ Visible only for a network with security WPA2-Enterprise.
 
 <details><summary>EAP Second Authentication Method</summary>
 
-Field to select EAP Second Authentication Method. Possible values:
+Field to select EAP Second Authentication Method. Possible options:
 
 1.	**MSCHAPv2** – Default.
 

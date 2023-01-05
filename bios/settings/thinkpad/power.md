@@ -157,7 +157,7 @@ One of 5 possible options for defining when the system shall turn on automatical
 <details><summary>Alarm Date (MM/DD/YYYY)</summary>
 
 Field to select the exact day for the system to turn on. Active only when ‘Wake Up on Alarm’ has value ‘Single Event’.
-Possible values:
+Possible options:
 
 1.	**N/A** – Default.
 2.	MM/DD/YYYY:<br>
@@ -179,7 +179,7 @@ Field to select the exact time for the system to turn on. Active when ‘Wake Up
 * Daily Event
 * Weekly Event
 
-Possible values:
+Possible options:
 
 1.	**N/A** – Default
 2.	HH : MM : SS<br>
@@ -196,7 +196,7 @@ Possible values:
 <details><summary>Alarm Day of Week</summary>
 
 Field to select the exact day for the system to turn on. Active only when ‘Wake Up on Alarm’ has value ‘Weekly Event’.
-Possible values:
+Possible options:
 
 1.	**N/A** – Default
 2.	Sunday
@@ -311,7 +311,7 @@ One of 2 states to select:
 <details><summary>User Defined Alarm Time (HH : MM : SS)</summary>
 
 Field to select the exact time for the system to turn on.
-Possible values:
+Possible options:
 
 1.	**N/A** – Default
 2.	HH : MM : SS<br>

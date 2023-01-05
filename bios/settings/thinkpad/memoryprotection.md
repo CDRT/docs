@@ -4,7 +4,7 @@
 
 <details><summary>Execution Prevention</summary>
 
-One of 2 possible states:
+One of 2 Possible options:
 
 1.	On – if your OS supports Data Execution Prevention, this setting can prevent virus\worm attacks that create memory buffer overflows by running code where only data is allowed.
 2.	**Off** – normal state. Default.

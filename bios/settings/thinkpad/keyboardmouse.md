@@ -4,7 +4,7 @@
 
 <details><summary>TrackPoint</summary>
 
-One of 2 possible states:
+One of 2 Possible options:
 
 1.	Off - Built-in Track point is disabled.
 2.	**On** - Built-in TrackPoint is enabled. Default.
@@ -18,7 +18,7 @@ One of 2 possible states:
 
 <details><summary>Trackpad</summary>
 
-One of 2 possible states:
+One of 2 Possible options:
 
 1.	Off - Built-in Trackpad is disabled.
 2.	**On** - Built-in Trackpad is enabled. Default.
@@ -31,7 +31,7 @@ One of 2 possible states:
 
 <details><summary>Fn and Ctrl Key swap</summary>
 
-One of 2 possible states:
+One of 2 Possible options:
 
 1.	**Off** - Fn key and Ctrl key behaviour is as printed on the keyboard. Default.
 2.	On - Fn key works as Ctrl key. Ctrl key works as Fn key. Note. Bottom-Left key will wake the system from sleep state.
@@ -45,7 +45,7 @@ One of 2 possible states:
 <details><summary>Fn Sticky Key</summary>
 
 
-One of 2 possible states:
+One of 2 Possible options:
 
 1.	**Off** - Fn key will not switch to sticky state. Default.
 2.	On - User can press Fn key to keep it in a pressed condition, then press the desired function key. The action is equivalent to pressing the required key and the Fn key simultaneously. When User presses the Fn key twice, the state is locked until User presses the Fn key again.
@@ -58,7 +58,7 @@ One of 2 possible states:
 
 <details><summary>F1-F12 as Primary Function</summary>
 
-One of 2 possible states:
+One of 2 Possible options:
 
 1.	On - Executes the F1-F12 function.
 2.	**Off** - Executes the special function. Default.

@@ -29,7 +29,7 @@ One of 9 possible options:
 
 <details><summary>Boot Mode</summary>
 
-One of 2 possible values:
+One of 2 Possible options:
 
 1.	**Quick** – the diagnostic splash screen does not display unless you press Esc during boot. Default.
 2.	Diagnostics – the diagnostic splash screen always displays during boot.
@@ -42,7 +42,7 @@ One of 2 possible values:
 
 <details><summary>Option key Display</summary>
 
-One of 2 possible states:
+One of 2 Possible options:
 
 1.	**On** – system will show the option key message when the system is booted. Default.
 2.	Off – system will not show the option key message.
@@ -55,7 +55,7 @@ One of 2 possible states:
 
 <details><summary>Boot device List F12 Option</summary>
 
-One of 2 possible states:
+One of 2 Possible options:
 
 1.	**On** – F12 key is used to invoke a pop-up Boot devise list. Default.<br>
 2.	Off – F12 does not invoke a pop-up Boot device list.
@@ -72,7 +72,7 @@ One of 2 possible states:
 
 This setting can prevent other software from altering the Boot Order when it is enabled. This may be required in situations where an alternative boot loaded is required to be first in the boot order. When enabled, the Boot Order can only be changed using the BIOS Setup or the WMI interface.
 
-One of 2 possible states:
+One of 2 Possible options:
 
 1.	On – Boot Priority Order is locked.
 2.	**Off** – Boot Priority Order is not locked. Default.

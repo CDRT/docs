@@ -4,10 +4,12 @@
 
 <details><summary>Predesktop Authentication</summary>
 
-One of 2 possible states:
+Whether to enable authentication by a fingerprint at predesktop. 
 
-1.	**On** - authentication by a fingerprint is enabled at predesktop. Default.
-2.	Off - authentication by a fingerprint is disabled at predesktop.
+Possible options:
+
+1.	**On** - Default.
+2.	Off
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
@@ -17,10 +19,14 @@ One of 2 possible states:
 
 <details><summary>Security Mode</summary>
 
+Whether to require authentication by Power-On Password or Supervisor Password, or only by Supervisor Password, when no fingerprint is authenticated, to boot.
+
 One of 2 possible options:
 
-1.	**Normal** - Power-On Password or Supervisor Password must be entered to boot a system when no fingerprint is authenticated. Default.
-2.	High - Supervisor password must be entered to boot a system when no fingerprint is authenticated. Power-On Password is not accepted.
+1.	**Normal** - Default.
+2.	High
+
+!> When `High` security mode is enabled, **only** the Supervisor Password will allow boot.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
@@ -30,13 +36,16 @@ One of 2 possible options:
 
 <details><summary>Password Authentication</summary>
 
-Visible and active only if ‘Security Mode’ has value ‘High’.<br>
-One of 2 possible states:
+Whether to enable authentication by password when fingerprint is not available. 
 
-1.	**On** - authentication by password is enabled. Users are authenticated by passwords when fingerprints are not available. Default.
-2.	Off - authentication by password is disabled. Users are not authenticated by passwords.
+!> Visible and active only if ‘Security Mode’ has value ‘High’.
 
-    ?>  Administrators are authenticated by a Supervisor Password.
+Possible options:
+
+1.	**On** - Default.
+2.	Off
+
+!>  Administrators are authenticated by a Supervisor Password.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
@@ -45,7 +54,6 @@ One of 2 possible states:
 </details>
 
 <details><summary>Single-touch authentication</summary>
-
 
 Whether to allow a single touch fingerprint authentication to work through all security levels.
 
@@ -65,9 +73,11 @@ Options:
 
 <details><summary>Reset Fingerprints Data</summary>
 
-This option is used to erase all fingerprint data stored in the fingerprint reader and reset settings to the factory state (ex. Power-on security, LEDs, etc.). <br>
-As a result, any power-on security features previously enabled will not be able to work until they are re-enabled in fingerprint software. <br>
-The option requires additional confirmation for erasing the fingerprint data.
+!> Erase all fingerprint data stored in the fingerprint reader and reset settings to the factory state (ex. Power-on security, LEDs, etc.).
+
+!> Any power-on security features previously enabled will not be able to work until they are re-enabled in fingerprint software.
+
+?> Option requires additional confirmation.
 
 
 </details>

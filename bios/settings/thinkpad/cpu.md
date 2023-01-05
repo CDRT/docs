@@ -4,10 +4,12 @@
 
 <details><summary>Intel (R) Hyper-Threading Technology</summary>
 
-One of 2 possible states:
+Whether to enable additional CPU threads, which appear as additional processors but share some resources with the other threads within a CPU. 
 
-1.	**On** - it enables additional CPU threads. These threads appear as additional processors but share some resources with the other threads within a CPU. Default.
-2.	Off - it enables only one thread within each execution core unit.
+?> When disable, allows only one thread within each execution core unit.
+
+1.	**On** - Default.
+2.	Off
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|

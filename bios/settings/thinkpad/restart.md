@@ -36,7 +36,7 @@ Load default values for all Setup items. The following changes WILL NO be discar
 
 <details><summary>OS Optimized Defaults</summary>
 
-One of 2 possible states:
+One of 2 Possible options:
 
 1.	**Off** - OS Optimized Defaults are disabled. Default.
 Note. When switching from ‘Enabled’ state the option will require additional confirmation.

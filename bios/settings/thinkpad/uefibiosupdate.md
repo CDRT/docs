@@ -4,7 +4,7 @@
 
 <details><summary>Flash BIOS Updating by End-Users</summary>
 
-One of 2 possible states:
+One of 2 Possible options:
 
 1.	Off - entering supervisor password is required to update UEFI BIOS when Supervisor password is installed.
 2.	**On** – UEFI BIOS can be updated without entering supervisor password. Default.
@@ -17,7 +17,7 @@ One of 2 possible states:
 
 <details><summary>Secure RollBack Prevention</summary>
 
-One of 2 possible states:
+One of 2 Possible options:
 
 1.	Off – allow flashing to older version of UEFI BIOS. Default, if ‘OS Optimized Defaults’ has value ‘Off’.
 2.	On – prevent flashing to older version of UEFI BIOS. Default, if ‘OS Optimized Defaults’ has value ‘On’.
