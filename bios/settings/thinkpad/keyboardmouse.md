@@ -4,10 +4,12 @@
 
 <details><summary>TrackPoint</summary>
 
-One of 2 Possible options:
+Whether to enable built-in TrackPoint.
 
-1.	Off - Built-in Track point is disabled.
-2.	**On** - Built-in TrackPoint is enabled. Default.
+Possible options:
+
+1.	Off
+2.	**On** - Default.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
@@ -18,23 +20,31 @@ One of 2 Possible options:
 
 <details><summary>Trackpad</summary>
 
-One of 2 Possible options:
+Whether to enable built-in Trackpad
 
-1.	Off - Built-in Trackpad is disabled.
-2.	**On** - Built-in Trackpad is enabled. Default.
+Possible options:
+
+1.	Off
+2.	**On** - Default.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
-| TouchPad | Disable, Enable (on AMD-based machi <br> Disable, Automatic (on Intel-based machine)| No | Both |
+| TouchPad | Disable, Enable (on AMD-based machine <br> Disable, Automatic (on Intel-based machine)| No | Both |
 
 </details>
 
 <details><summary>Fn and Ctrl Key swap</summary>
 
-One of 2 Possible options:
+Whether to swap behaviors of Fn key and Ctrl key.
 
-1.	**Off** - Fn key and Ctrl key behaviour is as printed on the keyboard. Default.
-2.	On - Fn key works as Ctrl key. Ctrl key works as Fn key. Note. Bottom-Left key will wake the system from sleep state.
+!> When switched `On`, Fn key works as Ctrl key. Ctrl key works as Fn key.
+
+!> Bottom-Left key will wake the system from sleep state.
+
+Possible options:
+
+1.	**Off** - Default.
+2.	On
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
@@ -44,11 +54,14 @@ One of 2 Possible options:
 
 <details><summary>Fn Sticky Key</summary>
 
+Whether User can press Fn key to keep it in a pressed condition, then press the desired function key.
 
-One of 2 Possible options:
+?> Equivalent to pressing the required key and the Fn key simultaneously. When User presses the Fn key twice, the state is locked until User presses the Fn key again.
 
-1.	**Off** - Fn key will not switch to sticky state. Default.
-2.	On - User can press Fn key to keep it in a pressed condition, then press the desired function key. The action is equivalent to pressing the required key and the Fn key simultaneously. When User presses the Fn key twice, the state is locked until User presses the Fn key again.
+Possible options:
+
+1.	**Off** - Default.
+2.	On - 
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
@@ -58,12 +71,18 @@ One of 2 Possible options:
 
 <details><summary>F1-F12 as Primary Function</summary>
 
-One of 2 Possible options:
+Whether to disable the hotkey functionality of the function keys (F1, F2, and so on) in Windows 8.1/10, to avoid having to press Fn to use the function.
 
-1.	On - Executes the F1-F12 function.
-2.	**Off** - Executes the special function. Default.
+?> When switched `Off`, the special hotkey functionality will be enabled.
 
-Alternatively, to switch to above two options, press Fn+Esc to use FnLk (Fn Lock). LED in on when FnLk is enabled.
+?> The methods differ by model. Examples: <br>  - ["How to use the function keys without pressing Fn in Windows 8.1/10" at Lenovo Support](https://pcsupport.lenovo.com/us/en/products/laptops-and-netbooks/thinkpad-l-series-laptops/thinkpad-l15-type-20u7-20u8/solutions/HT103044) <br> - ["Function keys are not working" at Lenovo Support](https://pcsupport.lenovo.com/us/en/products/laptops-and-netbooks/thinkpad-l-series-laptops/thinkpad-l15-type-20u7-20u8/solutions/ht510960) <br>
+
+Possible options:
+
+1.	On -
+2.	**Off** - Default.
+
+!> Alternatively, to switch to above two options, press Fn+Esc to use FnLk (Fn Lock). LED is on when FnLk is enabled.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
@@ -73,7 +92,10 @@ Alternatively, to switch to above two options, press Fn+Esc to use FnLk (Fn Lock
 
 <details><summary>Keyboard Layout</summary>
 
-Field to select keyboard layout in pre-OS environment. This configuration does not affect OS.
+Select keyboard layout in pre-OS environment.
+
+!> This configuration does not affect OS.
+
 Possible options:
 
 1.	**US English** - Default
@@ -104,7 +126,7 @@ Possible options:
 26.	Finnish
 27.	Czech
 
-?>  On latest machines, BIOS added support for ASCII special characters and symbols such as @, ! ,?, etc. Those characters depend on keyboard layout and BIOS cannot know the attached keyboard, therefore users have to select keyboard layout if they replace keyboard.
+?>  On latest machines, BIOS added support for ASCII special characters and symbols such as `@`, `!` , `?`, etc. Those characters depend on keyboard layout and BIOS cannot know the attached keyboard, therefore users have to select keyboard layout if they replace keyboard.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
