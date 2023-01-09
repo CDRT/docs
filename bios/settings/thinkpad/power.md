@@ -6,10 +6,12 @@
 
 <details><summary>Intel (R) SpeedStep Technology</summary>
 
-One of 2 possible options to select the mode of Intel (R) SteedStep Technology at runtime:
+Whether to switch on Intel (R) SteedStep Technology at runtime
 
-1.	**On** – Intel (R) SpeedStep Technology is turned on. Default.
-2.	Off - Intel (R) SpeedStep Technology is turned off.
+Possible options:
+
+1.	**On** – Default.
+2.	Off
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
@@ -19,7 +21,9 @@ One of 2 possible options to select the mode of Intel (R) SteedStep Technology a
 
 <details><summary>Scheme for AC</summary>
 
-One of 2 possible options of thermal management scheme to use:
+Select thermal management scheme.
+
+Possible options:
 
 1.	**Maximize Performance** - reduces CPU throttling. Default.
 2.	Balanced - balanced sound, temperature, and performance.
@@ -34,7 +38,9 @@ One of 2 possible options of thermal management scheme to use:
 
 <details><summary>Scheme for Battery</summary>
 
-One of 2 possible options of thermal management scheme to use:
+Select thermal management scheme.
+
+Possible options:
 
 1.	Maximize Performance - reduces CPU throttling.
 2.	**Balanced** - balanced sound, temperature, and performance. Default.
@@ -48,7 +54,6 @@ One of 2 possible options of thermal management scheme to use:
 </details>
 
 <details><summary>Intelligent Cooling Boost</summary>
-
 
 Whether to  improve power efficiency by limiting system power based on the selected OS application, when Intelligent Cooling is on.
 
@@ -71,12 +76,14 @@ Options:
 
 <details><summary>CPU Power Management</summary>
 
-One of 2 possible options:
+Whether to shut down the microprocessor clock automatically when there are no system activities, for power saving. 
 
-1.	**Automatic** - enabled power saving feature that stops the microprocessor clock automatically when there are no system activities. Default.
-2.	Disabled - disabled power saving feature.
+Possible options:
 
-?>  Normally, it is not necessary to change this setting.
+1.	**Automatic** - Default.
+2.	Disabled
+
+!>  Normally, it is not necessary to change this setting.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
@@ -86,10 +93,14 @@ One of 2 possible options:
 
 <details><summary>Power On with AC Attach</summary>
 
-One of 2 possible options for a feature that powers on the system when AC is attached:
+Whether to power on the system when AC is attached.
 
-1.	Enabled - the system is powered when AC is attached. When the system is in hibernate state, the system resumes
-2.	**Disabled** - the system is not powered on nor resumed when AC is attached. Default.
+?> If the system is in hibernate state, the system resumes upon AC connect.
+
+Possible options:
+
+1.	Enabled
+2.	**Disabled** - Default.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
@@ -98,7 +109,6 @@ One of 2 possible options for a feature that powers on the system when AC is att
 </details>
 
 <details><summary>Sleep State</summary>
-
 
 Optimized Sleep States.
 
@@ -111,7 +121,7 @@ Optimized Sleep States.
 Options:
 
 1.  **Windows and Linux** - Default.
-2.  Linux S3.
+2.  Linux S3
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -124,7 +134,9 @@ Options:
 <details><summary>Disable Built-in Battery</summary>
 
 Option to temporarily disable battery for servicing the system. <br>
+
 This option requests additional confirmation. <br>
+
 After selecting this item, the system will be automatically powered off, then ready to be serviced.
 
 ?>  The battery will be automatically enabled when the AC adapter is reconnected.

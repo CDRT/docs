@@ -204,7 +204,7 @@ Possible options:
 
 ?>  All the settings in this group are not available via WMI.
 
-**Number of networks:** Number of current available networks around. 
+**Number of networks:** Number of current available networks. 
 
 ?> View only.
 
@@ -222,12 +222,14 @@ Each SSID can be selected to display more details.
 
 <details><summary>Connection Status</summary>
 
+Whether device is connected to this Wi-Fi network.
+
 ?> View only. 
 
 Possible statuses:
 
-1.	**Disconnected** - device is not connected to this Wi-Fi network. Default.
-2.	Connected - device is connected to this Wi-Fi network.
+1.	**Disconnected** - Default.
+2.	Connected
 
 
 </details>
@@ -242,7 +244,6 @@ SSID (Service Set Identifier) is the name of the wireless network.
 
 <details><summary>Security</summary>
 
-
 Security type of this Wi-Fi network.
 
 ?> View only.
@@ -251,7 +252,7 @@ Possible options:
 
 1.	Open
 2.	WPA2-Personal
-3.	*WPA2-Enterprise* - Default.
+3.	**WPA2-Enterprise** - Default.
 4. PEAP
 5. EAP-TLS
 
@@ -294,7 +295,7 @@ Enroll CA (Certification Authority) certificate.
 
 Empty by default.
 
-Visible only for networks with security WPA2-Enterprise.
+!> Visible only for networks with security WPA2-Enterprise.
 
 </details>
 
@@ -346,7 +347,6 @@ Possible actions:
 
 1.	Connect to this network - visible if device is not connected to this Wi-Fi network
 2.	Disconnect - visible if device is connected to this Wi-Fi network
-
 
 </details>
 
@@ -503,8 +503,11 @@ Field for editing SSID value.
 
 <details><summary>Security</summary>
 
+Select the security type of this Wi-Fi network.
 
-network. Possible options:
+?> Default value depends on the network.
+
+Possible options:
 
 1.	Open
 2.	WPA2-Personal
@@ -515,8 +518,11 @@ network. Possible options:
 
 <details><summary>Password</summary>
 
-Field for entering password. Visible only for a network with security WPA2-Personal.<br>
-Password length: 8-63 characters.
+Enter password.
+
+!> Visible only for a network with security WPA2-Personal.
+
+!> Password length: 8-63 characters.
 
 </details>
 
