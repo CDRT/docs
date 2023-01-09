@@ -133,11 +133,11 @@ Options:
 
 <details><summary>Disable Built-in Battery</summary>
 
-Option to temporarily disable battery for servicing the system. <br>
+Temporarily disable battery to service the system.
 
-This option requests additional confirmation. <br>
+This option requests additional confirmation.
 
-After selecting this item, the system will be automatically powered off, then ready to be serviced.
+!> After selecting this item, the system will be automatically powered off, ready to be serviced.
 
 ?>  The battery will be automatically enabled when the AC adapter is reconnected.
 
@@ -150,7 +150,9 @@ After selecting this item, the system will be automatically powered off, then re
 
 <details><summary>Wake Up on Alarm</summary>
 
-One of 5 possible options for defining when the system shall turn on automatically:
+Define when the system will turn on automatically.
+
+Possible options:
 
 1.	**Disabled** - the system will not turn on automatically. Default.
 2.	Single Event - the system will turn on one-time on the specified day and time.
@@ -158,7 +160,7 @@ One of 5 possible options for defining when the system shall turn on automatical
 4.	Weekly Event - the system will turn on every week on the specified day and time.
 5.	User Defined - this option enables ‘User Defined Alarm’ group of settings.
 
-?>  Wake up will only occur on AC power.  Values for the ‘Wake Up on Alarm’ group of settings can be overwritten by the operating system.
+?> Wake up will only occur on AC power.  Values for the `Wake Up on Alarm` group of settings can be overwritten by the operating system.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
@@ -168,7 +170,10 @@ One of 5 possible options for defining when the system shall turn on automatical
 
 <details><summary>Alarm Date (MM/DD/YYYY)</summary>
 
-Field to select the exact day for the system to turn on. Active only when ‘Wake Up on Alarm’ has value ‘Single Event’.
+Select the exact day for the system to turn on.
+
+?> Active only when `Wake Up on Alarm` has value `Single Event`.
+
 Possible options:
 
 1.	**N/A** – Default.
@@ -185,11 +190,13 @@ Possible options:
 
 <details><summary>Alarm Time (HH : MM : SS)</summary>
 
-Field to select the exact time for the system to turn on. Active when ‘Wake Up on Alarm’ has one of the values:
+Select the exact time for the system to turn on.
 
-* Single Event
-* Daily Event
-* Weekly Event
+Active when `Wake Up on Alarm` has one of the values:
+
+* `Single Event`
+* `Daily Event`
+* `Weekly Event`
 
 Possible options:
 
@@ -207,7 +214,10 @@ Possible options:
 
 <details><summary>Alarm Day of Week</summary>
 
-Field to select the exact day for the system to turn on. Active only when ‘Wake Up on Alarm’ has value ‘Weekly Event’.
+Select the exact day for the system to turn on.
+
+Active only when `Wake Up on Alarm` has value `Weekly Event`.
+
 Possible options:
 
 1.	**N/A** – Default
@@ -231,10 +241,10 @@ Possible options:
 
 <details><summary>Sunday</summary>
 
-One of 2 states to select:
+Whether the system will turn on automatically on this day.
 
-1.	**Off** - the system will not turn on automatically on this day. Default.
-2.	On – the system will turn on automatically on this day.
+1.	**Off** - Default.
+2.	On
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
@@ -244,10 +254,10 @@ One of 2 states to select:
 
 <details><summary>Monday</summary>
 
-One of 2 states to select:
+Whether the system will turn on automatically on this day.
 
-1.	**Off** - the system will not turn on automatically on this day. Default.
-2.	On – the system will turn on automatically on this day.
+1.	**Off** - Default.
+2.	On
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
@@ -257,10 +267,10 @@ One of 2 states to select:
 
 <details><summary>Tuesday</summary>
 
-One of 2 states to select:
+Whether the system will turn on automatically on this day.
 
-1.	**Off** - the system will not turn on automatically on this day. Default.
-2.	On – the system will turn on automatically on this day.
+1.	**Off** - Default.
+2.	On
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
@@ -270,10 +280,10 @@ One of 2 states to select:
 
 <details><summary>Wednesday</summary>
 
-One of 2 states to select:
+Whether the system will turn on automatically on this day.
 
-1.	**Off** - the system will not turn on automatically on this day. Default.
-2.	On – the system will turn on automatically on this day.
+1.	**Off** - Default.
+2.	On
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
@@ -283,10 +293,10 @@ One of 2 states to select:
 
 <details><summary>Thursday</summary>
 
-One of 2 states to select:
+Whether the system will turn on automatically on this day.
 
-1.	**Off** - the system will not turn on automatically on this day. Default.
-2.	On – the system will turn on automatically on this day.
+1.	**Off** - Default.
+2.	On
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
@@ -296,10 +306,10 @@ One of 2 states to select:
 
 <details><summary>Friday</summary>
 
-One of 2 states to select:
+Whether the system will turn on automatically on this day.
 
-1.	**Off** - the system will not turn on automatically on this day. Default.
-2.	On – the system will turn on automatically on this day.
+1.	**Off** - Default.
+2.	On
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
@@ -309,10 +319,10 @@ One of 2 states to select:
 
 <details><summary>Saturday</summary>
 
-One of 2 states to select:
+Whether the system will turn on automatically on this day.
 
-1.	**Off** - the system will not turn on automatically on this day. Default.
-2.	On – the system will turn on automatically on this day.
+1.	**Off** - Default.
+2.	On
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
@@ -322,7 +332,8 @@ One of 2 states to select:
 
 <details><summary>User Defined Alarm Time (HH : MM : SS)</summary>
 
-Field to select the exact time for the system to turn on.
+Select the exact time for the system to turn on.
+
 Possible options:
 
 1.	**N/A** – Default

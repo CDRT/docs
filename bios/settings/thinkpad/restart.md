@@ -4,63 +4,60 @@
 
 <details><summary>Exit Saving Changes</summary>
 
-Exit Setup and save your changes.<br>
-The option requires additional confirmation.
+Exit Setup and save your changes.
+
+?> The option requires additional confirmation.
 
 
 </details>
 
 <details><summary>Exit Discarding Changes</summary>
 
-Exit Setup without saving changes. The following changes WILL NOT be discarded and must be reset within ThinkPad Setup:
+Exit Setup without saving changes.
 
-1.	Date & Time
-2.	Supervisor Password
-3.	Power-on password
-4.	Hard disk password
+!> The following changes WILL NOT be discarded and must be reset within ThinkPad Setup: <br> - Date & Time <br>- Supervisor Password <br>- Power-on password <br>- Hard disk password <br>
 
-The option requires additional confirmation.
+?> The option requires additional confirmation.
 
 
 </details>
 
 <details><summary>Load Setup Defaults</summary>
 
-Load default values for all Setup items. The following changes WILL NO be discarded and must be reset within ThinkPad Setup:
+Load default values for all Setup items.
 
-1.	Security
-2.	Date & Time
-
+!> The following changes WILL NOT be discarded and must be reset within ThinkPad Setup: <br> - Security <br>- Date & Time <br>
 
 </details>
 
 <details><summary>OS Optimized Defaults</summary>
 
-One of 2 Possible options:
+Whether to enable OS Optimized Defaults for the following:
 
-1.	**Off** - OS Optimized Defaults are disabled. Default.
-Note. When switching from ‘Enabled’ state the option will require additional confirmation.
-2.	On – the default value of settings below are changed accordingly. Select ‘On’ to meet Microsoft (R) Windows 10 (R) Certification Requirement.
+- Secure Boot
+- Secure RollBack Prevention
+- Virtualization features
 
-Affected settings are:
+?> Select ‘On’ to meet Microsoft (R) Windows 10 (R) Certification Requirement.
 
-1.	Secure Boot
-2.	Secure RollBack Prevention
-3.	Virtualization features
+?> When switching from ‘Enabled’ state the option will require additional confirmation.
+
+Possible options:
+
+1.	**Off** - Default.
+2.	On
+
 
 
 </details>
 
 <details><summary>Discard Changes</summary>
 
-Load previous values for most Setup items. The following changes WILL NOT be discarded and must be reset within ThinkPad Setup:
+Load previous values for most Setup items.
 
-1.	Date & Time
-2.	Supervisor password
-3.	Power-on password
-4.	Hard disk password
+!> The following changes WILL NOT be discarded and must be reset within ThinkPad Setup: <br> - Date & Time <br> - Supervisor password <br> - Power-on password <br> - Hard disk password <br> 
 
-The option requires additional confirmation.
+?> The option requires additional confirmation.
 
 
 </details>
