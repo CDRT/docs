@@ -65,7 +65,7 @@ While enabling the following parameters are available:
    - **Save** – default
    - Cancel<br>
 
-!> When enabled, Supervisor Password prevents unauthorized users from accessing these items in ThinkPad Setup: - Boot priority lists <br> - Network related items <br> - Date & Time <br>
+!> When enabled, Supervisor Password prevents unauthorized users from accessing these items in ThinkPad Setup: <br> - Boot priority lists <br> - Network related items <br> - Date & Time <br>
 
 ?>  To have a beep sound when the system is waiting for this password, enable the [Password Beep feature in the Alarm submenu](bios/settings/thinkpad/beepalarm.md).
 
@@ -287,7 +287,7 @@ Possible options:
 
 <details><summary>Set Strong Password</summary>
 
-"Strong password" means
+"Strong password" means:
  - 8 or more characters
  - must include at least one uppercase character, one lowercase character and one number.
 

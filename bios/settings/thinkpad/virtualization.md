@@ -27,8 +27,7 @@ Possible options:
 
 <details><summary>Intel (R) Virtualization Technology \ AMD-V</summary>
 
-
-**Intel-based machine**
+### Intel-based machine
 
 Whether a VMM (Virtual Machine Monitor) can utilize the additional hardware capabilities provided by Intel (R) Virtualization technology.
 
@@ -47,7 +46,7 @@ Additional information: [How to enable Virtualization Technology on Lenovo PC co
 |:---|:---|:---|:---|
 | VirtualizationTechnology | Disable, Enable | Yes | Intel |
 
-**AMD-based machine**
+### AMD-based machine
 
 Whether VMM (Virtual Machine Monitor) can utilize the additional hardware capabilities provided by AMD-V (AMD Virtualization).
 
