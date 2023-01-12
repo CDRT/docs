@@ -4,65 +4,9 @@
 
 ![](./img/password.png)
 
-The **[Types of Passwords]** article describes the different passwords' behaviors.
+The [Types of Passwords](/bios/settings/thinkpad/password?id=types-of-passwords) section describes the different passwords' behaviors.
 
- - [More information about passwords on support.lenovo.com.](https://support.lenovo.com/at/en/solutions/ht036206-types-of-password-for-thinkpad)
-
-<details><summary>[Types of Passwords]</summary>
-
-**Supervisor Password (SVP)**
-
-Protects the system information stored in UEFI BIOS.
-
-- _Entering the SVP_
-
-When entering the UEFI BIOS menu, enter the correct supervisor password in the window prompted.
-
-!> If the user presses `Enter`, the password prompt will be skipped, but then most of the system configuration options in UEFI BIOS will be unavailble.
-
- - _Setting the SVP_
-
-The supervisor password can be set only through the UEFI BIOS menu.
-
-Once it is in place, then it can be modified using Windows Management Instrumentation (WMI) with the Lenovo client-management interface.
-
- - _Overriding the POP_
-
-The supervisor password overrides the power-on password (POP).
-
-If you have set both the supervisor password and power-on password, you can use the supervisor password to access your computer when you turn it on.
-
-**The System Management Password (SMP)**
-
-Also protects the system information stored in UEFI BIOS like a supervisor password, but it has lower authority by default.
-
- - _Setting the SMP_
-
-The system management password can be set through the UEFI BIOS menu or through Windows Management Instrumentation (WMI) with the Lenovo client-management interface.
-
- - _Overriding the SVP_
-
-You can enable the system management password to have the same authority as the supervisor password to control security-related features.
-
-**Power-On Password**
-
-When enabled, Power-On Password prevents unauthorized users from booting your computer.
-
-**ATA / NVMe Password**
-
-Also known as Hard Disk Password (HDP).
-
-Lenovo BIOS supports both ATA and NVMe storage and the displayed BIOS setting changes depending on the attached storage device.
-
-The NVMe (nonvolatile memory express) password prevents unauthorized access to the data on the storage drive. When an NVMe password is set, you are prompted to type a correct password each time you try to access the storage drive.
-
- - _Dual Passwords_
-
-The system can create dual passwords for an Admin and another User.
-
-</details>
-
-<hr />
+- [More information about passwords on support.lenovo.com.](https://support.lenovo.com/at/en/solutions/ht036206-types-of-password-for-thinkpad)
 
 <details><summary>Supervisor Password</summary>
 
@@ -87,9 +31,7 @@ While enabling the following parameters are available:
 
 ?>  To have a beep sound when the system is waiting for this password, enable the [Password Beep feature in the Alarm submenu](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/beepalarm).
 
-
 </details>
-
 
 <details><summary>System Management Password</summary>
 
@@ -113,7 +55,6 @@ While enabling the following parameters are available:
 !> When enabled System Management Password presents unauthorized users from accessing these items in ThinkPad Setup: <br> - Boot priority lists <br> - Network related items <br> - Date & Time
 
 ?>  To have a beep sound when the system is waiting for this password, enable the [Password Beep feature in the Alarm submenu](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/beepalarm.md).
-
 
 </details>
 
@@ -386,3 +327,53 @@ Possible options:
 | BIOSSetupConfigurations | Disable, Enable | Yes | Both |
 
 </details>
+
+<hr />
+
+### Types of Passwords
+
+**Supervisor Password (SVP)**
+
+Protects the system information stored in UEFI BIOS.
+
+- _Entering the SVP_
+
+When entering the UEFI BIOS menu, enter the correct supervisor password in the window prompted.
+
+!> If the user presses `Enter`, the password prompt will be skipped, but then most of the system configuration options in UEFI BIOS will be unavailble.
+
+ - _Setting the SVP_
+
+The supervisor password can be set only through the UEFI BIOS menu.
+
+Once it is in place, then it can be modified using Windows Management Instrumentation (WMI) with the Lenovo client-management interface.
+
+ - _Overriding the POP_
+
+The supervisor password overrides the power-on password (POP).
+
+If you have set both the supervisor password and power-on password, you can use the supervisor password to access your computer when you turn it on.
+
+**The System Management Password (SMP)**
+
+Also protects the system information stored in UEFI BIOS like a supervisor password, but it has lower authority by default.
+
+ - _Setting the SMP_
+
+The system management password can be set through the UEFI BIOS menu or through Windows Management Instrumentation (WMI) with the Lenovo client-management interface.
+
+ - _Overriding the SVP_
+
+You can enable the system management password to have the same authority as the supervisor password to control security-related features.
+
+**Power-On Password**
+
+When enabled, Power-On Password prevents unauthorized users from booting your computer.
+
+**ATA / NVMe Password**
+
+Also known as Hard Disk Password (HDP).
+
+Lenovo BIOS supports both ATA and NVMe storage and the displayed BIOS setting changes depending on the attached storage device.
+
+The NVMe (nonvolatile memory express) password prevents unauthorized access to the data on the storage drive. When an NVMe password is set, you are prompted to type a correct password each time you try to access the storage drive. The system also supports creating dual passwords for an Admin and another User.

@@ -23,7 +23,7 @@ Possible options:
 1.	**On** - Default.
 2.	Off - security chip is hidden and is not functional.
 
-?>  If shows `MFG Mode` (manufacturing mode), then TPM (Trusted Platform Module) must be provisioned correctly.
+?>  If shows `MFG Mode` (manufacturing mode), then TPM (Trusted Platform Module) must be provisioned correctly. If this occurs on a ship-level system, please contact Lenovo Support for assistance.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
