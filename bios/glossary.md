@@ -31,7 +31,7 @@ Admin and Master are synonyms.
 
 *See also:*
 
-[RAID](http://localhost:3000/#/bios/glossary?id=raid), [SATA](http://localhost:3000/#/bios/glossary?id=sata)
+[RAID](https://docs.lenovocdrt.com/#/bios/glossary?id=raid), [SATA](https://docs.lenovocdrt.com/#/bios/glossary?id=sata)
 
 ---
 
@@ -51,7 +51,7 @@ Admin and Master are synonyms.
   
 *See also:*
 
-[MEBx](http://localhost:3000/#/bios/glossary?id=mebx)
+[MEBx](https://docs.lenovocdrt.com/#/bios/glossary?id=mebx)
 
 ---
 
@@ -71,7 +71,7 @@ PCI Express power management for power saving while fully active.
 
 *See also:*
 
-[PCIe](http://localhost:3000/#/bios/glossary?id=pcie)
+[PCIe](https://docs.lenovocdrt.com/#/bios/glossary?id=pcie)
 
 ---
 
@@ -92,7 +92,7 @@ PCI Express power management for power saving while fully active.
 
 *See also:*
 
-[SATA](http://localhost:3000/#/bios/glossary?id=sata), [HDD](http://localhost:3000/#/bios/glossary?id=hdd)
+[SATA](https://docs.lenovocdrt.com/#/bios/glossary?id=sata), [HDD](https://docs.lenovocdrt.com/#/bios/glossary?id=hdd)
 
 ---
 
@@ -111,7 +111,7 @@ PCI Express power management for power saving while fully active.
 
 *See also:*
 
-[Custom mode](http://localhost:3000/#/bios/glossary?id=custom-mode), [Setup Mode](http://localhost:3000/#/bios/glossary?id=setup-mode)
+[Custom mode](https://docs.lenovocdrt.com/#/bios/glossary?id=custom-mode), [Setup Mode](https://docs.lenovocdrt.com/#/bios/glossary?id=setup-mode)
 
 ---
 
@@ -127,7 +127,7 @@ PCI Express power management for power saving while fully active.
  
 *See also:*
 
-[UEFI](http://localhost:3000/#/bios/glossary?id=uefi)
+[UEFI](https://docs.lenovocdrt.com/#/bios/glossary?id=uefi)
 
 ---
 
@@ -160,7 +160,7 @@ Organization that verifies identity and issues public key certificates to partie
 
 *See also:*
 
-[UEFI](http://localhost:3000/#/bios/glossary?id=uefi)
+[UEFI](https://docs.lenovocdrt.com/#/bios/glossary?id=uefi)
 
 ---
 
@@ -191,7 +191,7 @@ Organization that verifies identity and issues public key certificates to partie
   *Relevant settings:* 
   - [Secure Boot Key State](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/secureboot) 
  
- [Deployed Mode](http://localhost:3000/#/bios/glossary?id=deployed-mode), [Setup Mode](http://localhost:3000/#/bios/glossary?id=setup-mode)
+ [Deployed Mode](https://docs.lenovocdrt.com/#/bios/glossary?id=deployed-mode), [Setup Mode](https://docs.lenovocdrt.com/#/bios/glossary?id=setup-mode)
 
 ---
 
@@ -217,7 +217,7 @@ In Deployed Mode, PK must be installed and the BIOS performs signature verificat
 
 *See also:*
 
-[Setup Mode](http://localhost:3000/#/bios/glossary?id=setup-mode), [Custom Mode](http://localhost:3000/#/bios/glossary?id=custom-mode)
+[Setup Mode](https://docs.lenovocdrt.com/#/bios/glossary?id=setup-mode), [Custom Mode](https://docs.lenovocdrt.com/#/bios/glossary?id=custom-mode)
 
 ---
 
@@ -281,7 +281,7 @@ Intel Dynamic Platform and Thermal Framework (IDPTF) is a power and thermal mana
 
 *See also:*
 
-[PEAP](http://localhost:3000/#/bios/glossary?id=peap-eap)
+[PEAP](https://docs.lenovocdrt.com/#/bios/glossary?id=peap-eap)
 
 ---
 
@@ -309,7 +309,7 @@ Used in the context of HTTPS Boot.
 
 *See also:*
 
-[UEFI](http://localhost:3000/#/bios/glossary?id=uefi)
+[UEFI](https://docs.lenovocdrt.com/#/bios/glossary?id=uefi)
 
 ---
 
@@ -378,7 +378,7 @@ Specialized processor originally designed to accelerate graphics rendering, able
 
 *See also:*
 
-[UMA](http://localhost:3000/#/bios/glossary?id=uma)
+[UMA](https://docs.lenovocdrt.com/#/bios/glossary?id=uma)
 
 ---
 
@@ -395,7 +395,7 @@ Specialized processor originally designed to accelerate graphics rendering, able
 
 *See also:*
 
-[ATA](http://localhost:3000/#/bios/glossary?id=ata), [HDP](http://localhost:3000/#/bios/glossary?id=hdp), [RST](http://localhost:3000/#/bios/glossary?id=rst), [SATA](http://localhost:3000/#/bios/glossary?id=sata)
+[ATA](https://docs.lenovocdrt.com/#/bios/glossary?id=ata), [HDP](https://docs.lenovocdrt.com/#/bios/glossary?id=hdp), [RST](https://docs.lenovocdrt.com/#/bios/glossary?id=rst), [SATA](https://docs.lenovocdrt.com/#/bios/glossary?id=sata)
 
 
 ---
@@ -416,7 +416,7 @@ Specialized processor originally designed to accelerate graphics rendering, able
  
 *See also:*
 
-[HDD](http://localhost:3000/#/bios/glossary?id=hdd)
+[HDD](https://docs.lenovocdrt.com/#/bios/glossary?id=hdd)
 
 ---
 
@@ -505,7 +505,7 @@ Admin (hard disk) password.
 
 *See also:*
 
-[HDD](http://localhost:3000/#/bios/glossary?id=hdd)
+[HDD](https://docs.lenovocdrt.com/#/bios/glossary?id=hdd)
 
 ---
 
@@ -533,7 +533,7 @@ A BIOS menu extension on the Intel® AMT system that can be used to view and man
 
 *See also:*
 
-[AMT] (http://localhost:3000/#/bios/glossary?id=amt)
+[AMT] (https://docs.lenovocdrt.com/#/bios/glossary?id=amt)
 
 ---
 
@@ -552,7 +552,7 @@ A BIOS menu extension on the Intel® AMT system that can be used to view and man
 
 *See also:*
 
-[OOB](http://localhost:3000/#/bios/glossary?id=oob)
+[OOB](https://docs.lenovocdrt.com/#/bios/glossary?id=oob)
 
 ---
 
@@ -625,7 +625,7 @@ Open, logical-device interface specification for accessing a computer's non-vola
 
 *See also*
 
-[ATA](http://localhost:3000/#/bios/glossary?id=ata)
+[ATA](https://docs.lenovocdrt.com/#/bios/glossary?id=ata)
 
 ---
 
@@ -669,7 +669,7 @@ A company that designs and manufactures a product that is eventually rebranded b
 
 *See also:*
 
-[ME](http://localhost:3000/#/bios/glossary?id=me)
+[ME](https://docs.lenovocdrt.com/#/bios/glossary?id=me)
 
 ---
 
@@ -715,7 +715,7 @@ Serial expansion bus standard.
 
 *See also:*
 
-[ASPM](http://localhost:3000/#/bios/glossary?id=aspm), [GPU](http://localhost:3000/#/bios/glossary?id=gpu)
+[ASPM](https://docs.lenovocdrt.com/#/bios/glossary?id=aspm), [GPU](https://docs.lenovocdrt.com/#/bios/glossary?id=gpu)
 
 ### PCR 
 
@@ -732,7 +732,7 @@ Serial expansion bus standard.
 
 *See also:*
 
-[TPM](http://localhost:3000/#/bios/glossary?id=tpm)
+[TPM](https://docs.lenovocdrt.com/#/bios/glossary?id=tpm)
 
 ---
 
@@ -794,7 +794,7 @@ EAP is an authentication framework that supports multiple authentication methods
 
 *See also:*
 
-[SVP](http://localhost:3000/#/bios/glossary?id=svp), [SMP](http://localhost:3000/#/bios/glossary?id=smp)
+[SVP](https://docs.lenovocdrt.com/#/bios/glossary?id=svp), [SMP](https://docs.lenovocdrt.com/#/bios/glossary?id=smp)
 
 ---
 
@@ -844,7 +844,7 @@ The Rescue and Recovery Predesktop Area provides an emergency workspace for user
 
 *See also:*
 
-UNDI
+[UNDI](https://docs.lenovocdrt.com/#/bios/glossary?id=undi)
 
 ---
 
@@ -862,7 +862,7 @@ UNDI
 
 *See also:*
 
-ATA, Optane 
+[ATA](https://docs.lenovocdrt.com/#/bios/glossary?id=ata), [Optane™](https://docs.lenovocdrt.com/#/bios/glossary?id=optane%e2%84%a2)
 
 ---
 
@@ -882,7 +882,7 @@ Gives enhanced performance and lower power consumption. When using more than one
 
 *See also:*
 
-RAID, Optane 
+[RAID](https://docs.lenovocdrt.com/#/bios/glossary?id=raid), [Optane™](https://docs.lenovocdrt.com/#/bios/glossary?id=optane%e2%84%a2) 
 
 ---
 
@@ -901,7 +901,7 @@ RAID, Optane
 
 *See also:*
 
-ATA, PATA, [HDD](http://localhost:3000/#/bios/glossary?id=hdd)
+[ATA](https://docs.lenovocdrt.com/#/bios/glossary?id=ata), [HDD](https://docs.lenovocdrt.com/#/bios/glossary?id=hdd)
 
 ---
 
@@ -937,7 +937,7 @@ ATA, PATA, [HDD](http://localhost:3000/#/bios/glossary?id=hdd)
 
  *See also:*
  
- Trusted Platform Module (TPM)
+ [TPM](https://docs.lenovocdrt.com/#/bios/glossary?id=tpm)
 
 *AKA:*
 
@@ -968,7 +968,7 @@ TPM
  
 *See also:*
 
-Deployed Mode, Custom Mode
+[Deployed Mode](https://docs.lenovocdrt.com/#/bios/glossary?id=deployed-mode), [Custom Mode](https://docs.lenovocdrt.com/#/bios/glossary?id=custom-mode)
 
 ---
 
@@ -1029,7 +1029,7 @@ client-management interface.
 
 *See also:*
 
-[POP](http://localhost:3000/#/bios/glossary?id=pop), [SVP](http://localhost:3000/#/bios/glossary?id=svp)
+[POP](https://docs.lenovocdrt.com/#/bios/glossary?id=pop), [SVP](https://docs.lenovocdrt.com/#/bios/glossary?id=svp)
 
 ---
 
@@ -1048,7 +1048,7 @@ client-management interface.
  
  *See also:*
 
- BIOS, UEFI
+ [BIOS](https://docs.lenovocdrt.com/#/bios/glossary?id=bios), [UEFI](https://docs.lenovocdrt.com/#/bios/glossary?id=uefi)
 
 ---
 
@@ -1081,7 +1081,7 @@ Storage solution based on collections of memory microchips. Faster, lighter, and
 
  *See also:*
 
-[HDD](http://localhost:3000/#/bios/glossary?id=hdd), [HDP](http://localhost:3000/#/bios/glossary?id=hdp)
+[HDD](https://docs.lenovocdrt.com/#/bios/glossary?id=hdd), [HDP](https://docs.lenovocdrt.com/#/bios/glossary?id=hdp)
 
 ---
 
@@ -1114,7 +1114,7 @@ The Supervisor Password (SVP) protects the system information stored in UEFI BIO
  
 *See also:*
 
-[POP](http://localhost:3000/#/bios/glossary?id=pop), [SMP](http://localhost:3000/#/bios/glossary?id=smp)
+[POP](https://docs.lenovocdrt.com/#/bios/glossary?id=pop), [SMP](https://docs.lenovocdrt.com/#/bios/glossary?id=smp)
 
 ---
 
@@ -1157,7 +1157,7 @@ The Supervisor Password (SVP) protects the system information stored in UEFI BIO
 
 *See also:*
 
-[TPM](http://localhost:3000/#/bios/glossary?id=tpm)
+[TPM](https://docs.lenovocdrt.com/#/bios/glossary?id=tpm)
 
 ---
 
@@ -1206,7 +1206,7 @@ AMD Memory Guard
 
 *See also:*
 
-[SATA](http://localhost:3000/#/bios/glossary?id=sata)
+[SATA](https://docs.lenovocdrt.com/#/bios/glossary?id=sata)
 
 ---
 
@@ -1262,7 +1262,7 @@ BIOS, Firmware
 
 *See also:*
 
-[BIOS](http://localhost:3000/#/bios/glossary?id=bios)
+[BIOS](https://docs.lenovocdrt.com/#/bios/glossary?id=bios)
 
 ---
 
@@ -1280,7 +1280,7 @@ Architecture using part of RAM rather than dedicated graphics memory.
  
 *See also:*
 
-[GPU](http://localhost:3000/#/bios/glossary?id=gpu)
+[GPU](https://docs.lenovocdrt.com/#/bios/glossary?id=gpu)
 
 ---
 
@@ -1301,7 +1301,7 @@ API for network cards.
  
 *See also:*
 
-[PXE](http://localhost:3000/#/bios/glossary?id=pxe)
+[PXE](https://docs.lenovocdrt.com/#/bios/glossary?id=pxe)
 
 ---
 
@@ -1336,7 +1336,7 @@ Default mode for secure boot. Includes secure boot authentication.
   
  *See also:*
 
- Setup Mode, Custom Mode
+ [Setup Mode](https://docs.lenovocdrt.com/#/bios/glossary?id=setup-mode), [Custom Mode](https://docs.lenovocdrt.com/#/bios/glossary?id=custom-mode)
 
 ---
 
