@@ -31,7 +31,7 @@ Admin and Master are synonyms.
 
 *See also:*
 
-RAID, SATA
+[RAID](http://localhost:3000/#/bios/glossary?id=raid), [SATA](http://localhost:3000/#/bios/glossary?id=sata)
 
 ---
 
@@ -51,7 +51,7 @@ RAID, SATA
   
 *See also:*
 
-MEBx
+[MEBx](http://localhost:3000/#/bios/glossary?id=mebx)
 
 ---
 
@@ -71,7 +71,7 @@ PCI Express power management for power saving while fully active.
 
 *See also:*
 
-PCI Express
+[PCIe](http://localhost:3000/#/bios/glossary?id=pcie)
 
 ---
 
@@ -90,11 +90,9 @@ PCI Express
  - [SATA Drive {Number} Password](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/hard_disk_password) 
  - [First Boot Device](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/hard_disk_password) 
 
-
-
 *See also:*
 
-IDE, SATA, PATA
+[SATA](http://localhost:3000/#/bios/glossary?id=sata), [HDD](http://localhost:3000/#/bios/glossary?id=hdd)
 
 ---
 
@@ -113,7 +111,7 @@ IDE, SATA, PATA
 
 *See also:*
 
-Custom mode, Setup Mode
+[Custom mode](http://localhost:3000/#/bios/glossary?id=custom-mode), [Setup Mode](http://localhost:3000/#/bios/glossary?id=setup-mode)
 
 ---
 
@@ -127,7 +125,9 @@ Custom mode, Setup Mode
  *More information:* 
   - ["What Is BIOS?" at Lenovo Support](https://support.lenovo.com/lt/en/videos/vid100790-what-is-bios) 
  
-UEFI
+*See also:*
+
+[UEFI](http://localhost:3000/#/bios/glossary?id=uefi)
 
 ---
 
@@ -160,7 +160,7 @@ Organization that verifies identity and issues public key certificates to partie
 
 *See also:*
 
-UEFI
+[UEFI](http://localhost:3000/#/bios/glossary?id=uefi)
 
 ---
 
@@ -191,7 +191,7 @@ UEFI
   *Relevant settings:* 
   - [Secure Boot Key State](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/secureboot) 
  
- Deployed Mode, Setup Mode
+ [Deployed Mode](http://localhost:3000/#/bios/glossary?id=deployed-mode), [Setup Mode](http://localhost:3000/#/bios/glossary?id=setup-mode)
 
 ---
 
@@ -217,7 +217,7 @@ In Deployed Mode, PK must be installed and the BIOS performs signature verificat
 
 *See also:*
 
-Setup Mode, Custom Mode
+[Setup Mode](http://localhost:3000/#/bios/glossary?id=setup-mode), [Custom Mode](http://localhost:3000/#/bios/glossary?id=custom-mode)
 
 ---
 
@@ -281,7 +281,7 @@ Intel Dynamic Platform and Thermal Framework (IDPTF) is a power and thermal mana
 
 *See also:*
 
-PEAP
+[PEAP](http://localhost:3000/#/bios/glossary?id=peap-eap)
 
 ---
 
@@ -309,7 +309,7 @@ Used in the context of HTTPS Boot.
 
 *See also:*
 
-UEFI 
+[UEFI](http://localhost:3000/#/bios/glossary?id=uefi)
 
 ---
 
@@ -378,7 +378,7 @@ Specialized processor originally designed to accelerate graphics rendering, able
 
 *See also:*
 
-UMA
+[UMA](http://localhost:3000/#/bios/glossary?id=uma)
 
 ---
 
@@ -395,7 +395,7 @@ UMA
 
 *See also:*
 
-ATA, HDD, HDP, RST, SATA
+[ATA](http://localhost:3000/#/bios/glossary?id=ata), [HDP](http://localhost:3000/#/bios/glossary?id=hdp), [RST](http://localhost:3000/#/bios/glossary?id=rst), [SATA](http://localhost:3000/#/bios/glossary?id=sata)
 
 
 ---
@@ -414,6 +414,9 @@ ATA, HDD, HDP, RST, SATA
  - [Require HDP on System Boot (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/hard_disk_password) 
  - [Hard Disk Password (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/hard_disk_password) 
  
+*See also:*
+
+[HDD](http://localhost:3000/#/bios/glossary?id=hdd)
 
 ---
 
@@ -438,8 +441,6 @@ ATA, HDD, HDP, RST, SATA
   Interrupt Request Line
  
  Hardware line allowing devices to take over processor resources for their function. IRQs are assigned numbers to prioritize devices. 
- 
- *More information:* <!-- TODO --> 
  
  *Relevant settings:* 
  - [Parallel Port IRQ (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/parallel_port_setup) 
@@ -502,19 +503,11 @@ Admin (hard disk) password.
  *Relevant settings:* 
  - [Hard Disk Password (ThinkStation)](https://docs.lenovocdrt.com/#/bios/settings/thinkstation/hard_disk_password.md) 
 
+*See also:*
+
+[HDD](http://localhost:3000/#/bios/glossary?id=hdd)
+
 ---
-
-<!-- ### Microsoft 3rd Party UEFI CA
-
-
- 
- *More information:* 
-
-
- *Relevant settings:* 
-
-
---- -->
 
 ### MDT 
 
@@ -540,7 +533,7 @@ A BIOS menu extension on the Intel® AMT system that can be used to view and man
 
 *See also:*
 
-AMT 
+[AMT] (http://localhost:3000/#/bios/glossary?id=amt)
 
 ---
 
@@ -559,7 +552,7 @@ AMT
 
 *See also:*
 
-OOB
+[OOB](http://localhost:3000/#/bios/glossary?id=oob)
 
 ---
 
@@ -583,18 +576,6 @@ OOB
   *Relevant settings:* 
  - [Security Chip (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/securitychip) 
 
-
-<!-- ---
-
-### motherboard | silkscreen 
-
-   
- 
- *More information:* 
- 
- *Relevant settings:* 
-
- -->
 
 ---
 
@@ -644,7 +625,7 @@ Open, logical-device interface specification for accessing a computer's non-vola
 
 *See also*
 
-ATA
+[ATA](http://localhost:3000/#/bios/glossary?id=ata)
 
 ---
 
@@ -657,8 +638,6 @@ A company that designs and manufactures a product that is eventually rebranded b
  *More information:* 
   - ["Lenovo CSP Is For You!" at Lenovo YouTube](https://www.youtube.com/watch?v=2dFgkv2OQ5Y)   
   - ["Lenovo's Secret Recipe For Hyperscale Success Is Called ODM+" at Forbes.com](https://www.forbes.com/sites/patrickmoorhead/2018/10/22/lenovos-secret-recipe-for-hyperscale-success-is-called-odm/) 
-
-
 
 ---
 
@@ -690,7 +669,7 @@ A company that designs and manufactures a product that is eventually rebranded b
 
 *See also:*
 
-ME 
+[ME](http://localhost:3000/#/bios/glossary?id=me)
 
 ---
 
@@ -717,28 +696,6 @@ Standalone memory device that combines storage capacity and system acceleration.
  - ["Enterprise Deployment Solutions" at Lenovo Support](https://support.lenovo.com/us/en/solutions/ht104232)
 
 
-<!-- 
-### PAP 
-
-  supervisor password (?) 
- 
- *More information:* 
- 
- *Relevant settings:* 
- - [Require SVP when Flashing (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/password_policies) 
- - [Set Supervisor Password (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/security) 
-
- -->
-
-<!-- ---
-
-### Password Mode 
- As opposed to Certificate Mode. 
- *More information:* 
- 
- *Relevant settings:* 
-
- -->
 
 ---
 
@@ -758,7 +715,7 @@ Serial expansion bus standard.
 
 *See also:*
 
-ASPM, GPU
+[ASPM](http://localhost:3000/#/bios/glossary?id=aspm), [GPU](http://localhost:3000/#/bios/glossary?id=gpu)
 
 ### PCR 
 
@@ -775,7 +732,7 @@ ASPM, GPU
 
 *See also:*
 
-Trusted Platform Module (TPM)
+[TPM](http://localhost:3000/#/bios/glossary?id=tpm)
 
 ---
 
@@ -792,9 +749,6 @@ EAP is an authentication framework that supports multiple authentication methods
  *Relevant settings:* 
  - [Security (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/network.md) 
 
-*See also:*
-
-SEAP, LEAP
 
 ---
 
@@ -838,7 +792,9 @@ SEAP, LEAP
  *Relevant settings:*
  - [Password Policies (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/password_policies) 
 
+*See also:*
 
+[SVP](http://localhost:3000/#/bios/glossary?id=svp), [SMP](http://localhost:3000/#/bios/glossary?id=smp)
 
 ---
 
@@ -945,7 +901,7 @@ RAID, Optane
 
 *See also:*
 
-ATA, PATA
+ATA, PATA, [HDD](http://localhost:3000/#/bios/glossary?id=hdd)
 
 ---
 
@@ -1071,6 +1027,10 @@ client-management interface.
  - [System Management Password (ThinkPad)](https://docs.lenovocdrt.com/#/bios/settings/thinkpad/password) 
  - [System Management Password Access Control (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/system_management_password_access_control.md)
 
+*See also:*
+
+[POP](http://localhost:3000/#/bios/glossary?id=pop), [SVP](http://localhost:3000/#/bios/glossary?id=svp)
+
 ---
 
 ### SMBIOS 
@@ -1121,7 +1081,7 @@ Storage solution based on collections of memory microchips. Faster, lighter, and
 
  *See also:*
 
-HDD, HDP
+[HDD](http://localhost:3000/#/bios/glossary?id=hdd), [HDP](http://localhost:3000/#/bios/glossary?id=hdp)
 
 ---
 
@@ -1154,7 +1114,7 @@ The Supervisor Password (SVP) protects the system information stored in UEFI BIO
  
 *See also:*
 
-System Management Password (SMP)
+[POP](http://localhost:3000/#/bios/glossary?id=pop), [SMP](http://localhost:3000/#/bios/glossary?id=smp)
 
 ---
 
@@ -1197,7 +1157,7 @@ System Management Password (SMP)
 
 *See also:*
 
-TPM
+[TPM](http://localhost:3000/#/bios/glossary?id=tpm)
 
 ---
 
@@ -1246,7 +1206,7 @@ AMD Memory Guard
 
 *See also:*
 
-SATA 
+[SATA](http://localhost:3000/#/bios/glossary?id=sata)
 
 ---
 
@@ -1302,7 +1262,7 @@ BIOS, Firmware
 
 *See also:*
 
-BIOS 
+[BIOS](http://localhost:3000/#/bios/glossary?id=bios)
 
 ---
 
@@ -1320,7 +1280,7 @@ Architecture using part of RAM rather than dedicated graphics memory.
  
 *See also:*
 
-GPU
+[GPU](http://localhost:3000/#/bios/glossary?id=gpu)
 
 ---
 
@@ -1341,7 +1301,7 @@ API for network cards.
  
 *See also:*
 
-PXE
+[PXE](http://localhost:3000/#/bios/glossary?id=pxe)
 
 ---
 
@@ -1425,20 +1385,6 @@ The code that creates, manages, and destroys virtualized hardware.
 
 ---
 
-<!-- ### Wireless Certified Information
-
- 
-  
-  *More information:* 
-  
-  *Relevant settings:* 
-   
-  - [Wireless Certified Information (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/network_setup) 
-  
- 
-
---- -->
-
 ### WMI 
 
 Windows Management Instrumentation 
@@ -1449,18 +1395,3 @@ WMI is provided as a standard feature in most Windows® operating systems. It pr
 
  - [Lenovo BIOS Windows Management Instrumentation Interface Deployment Guide For Desktop – Think Series Products (zip file with guide + scripts)](https://download.lenovo.com/pccbbs/thinkcentre_pdf/lenovo_desktop_bios_wmi_deployment_guide_revision_1.7.zip) 
  - [More information at Microsoft.com](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-start-page)
-
-
-
-
-<!-- | Certificate Mode
-
-  (see Password(less?) Mode) use a x509 certificate instead of SVP and SMP. Devin Mcdermott prepared this description but so far it has not been published: BIOS certificate-based features.docx 
- 
- *More information:* 
- 
- *Relevant settings:* 
-
-
-
- -->
