@@ -212,10 +212,6 @@ UEFI
 
 In Deployed Mode, PK must be installed and the BIOS performs signature verification on programmatic attempts to update policy objects.
 
- *More information:*
- 
- - [More information at Dell.com](https://www.dell.com/support/manuals/nl-nl/poweredge-c6525/pecc6525_bios_ism_pub/system-security?guid=guid-65a67b2f-d457-4d8b-bf20-a24875cc54b5&lang=en-us)
-
  *Relevant settings:* 
 - [Enter Deployed Mode (ThinkCentre)](https://docs.lenovocdrt.com/#/bios/settings/thinkcentre/secure_boot.md)
 

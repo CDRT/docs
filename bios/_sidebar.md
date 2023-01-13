@@ -8,3 +8,4 @@
 - [Settings Dictionary](bios/settings/dictionary.md)
 - [System Deployment Boot Mode](bios/sdbm.md)
 - [Glossary of Terms](bios/glossary.md)
+- [Passwords](bios/passwords.md)
