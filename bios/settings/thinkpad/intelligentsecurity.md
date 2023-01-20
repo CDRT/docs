@@ -25,6 +25,7 @@ Options:
 |:---|:---|:---|:---|
 | UserPresenceSensing | Disable, Enable | Yes | Intel |
 
+
 </details>
 
 <details><summary>Allow Lenovo Vantage to Override Setting Below</summary>
@@ -37,11 +38,14 @@ Whether to allow Windows® service to prioritize the settings of Lenovo Vantage,
 Options:
 
 1. **On** - Default.
-2. Off. Enforce BIOS settings.
+2. Off
+
+!> System will enforce BIOS settings if set to `Off`.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | ZeroTouchAllowOverride | Disable, Enable | Yes | Intel |
+
 
 </details>
 
@@ -57,6 +61,7 @@ Options:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | ZeroTouchLogin | Disable, Enable | Yes | Intel |
+
 
 </details>
 
@@ -77,6 +82,7 @@ Options:
 |:---|:---|:---|:---|
 | ZeroTouchLoginDistanceAdjusting | Near, Middle, Far | Yes | Intel |
 
+
 </details>
 </div>
 <details><summary>Zero Touch Lock</summary>
@@ -94,6 +100,7 @@ Options:
 |:---|:---|:---|:---|
 | ZeroTouchLock | Disable, Enable | Yes | Intel |
 
+
 </details>
 <div style='margin-left:30px'>
 <details><summary>SENSITIVITY ADJUSTING</summary>
@@ -110,6 +117,7 @@ Options:
 |:---|:---|:---|:---|
 | ZeroTouchLockDistanceAdjusting | Near, Middle, Far | Yes | Intel |
 
+
 </details>
 
 <details><summary>AUTO SCREEN LOCK TIMER</summary>
@@ -125,6 +133,7 @@ Options:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | ZeroTouchLockTimer | Fast, Medium, Slow | Yes | Intel |
+
 
 </details>
 </div>

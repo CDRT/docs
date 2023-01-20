@@ -17,6 +17,7 @@ Options:
 
 ?> If the `SATA Controller` is set to `Disabled`, then `Configure SATA as` and `SATA Drive {Number}` will be hidden.
 
+
 </details>
 
 <details><summary>SATA DRIVE {Number}</summary>
@@ -33,6 +34,7 @@ Options:
 | SATADrive1 | Disabled, Enabled | yes |
 
 ?> The WMI setting name for Drive 1 is shown. Other drives follow the pattern `SATADrive#` where `#` is the number of the drive.
+
 
 </details>
 
@@ -54,6 +56,7 @@ Options:
 |:---|:---|:---|
 | ConfigureSATAas  | AHCI, Intel(R) RST with Intel(R) Optane, [RAID] | yes |
 
+
 </details>
 
 
@@ -69,5 +72,6 @@ Options:
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | HardDiskPre-delay | Disabled, 3 Seconds, 6 Seconds, 9 Seconds, 12 Seconds, 15 Seconds, 21 Seconds, 30 Seconds | yes |
+
 
 </details>

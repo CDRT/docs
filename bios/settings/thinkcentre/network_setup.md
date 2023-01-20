@@ -15,6 +15,7 @@ Options:
 |:---|:---|:---|
 | OnboardEthernetController | Disabled, Enabled | yes |
 
+
 </details>
 
 <details><summary>Wireless LAN Access</summary>
@@ -29,6 +30,7 @@ Options:
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | WirelessLANAccess | Disabled, Enabled | yes |
+
 
 </details>
 
@@ -45,6 +47,7 @@ Options:
 |:---|:---|:---|
 | WirelessLANPXE | Disabled, Enabled | yes |
 
+
 </details>
 
 
@@ -58,6 +61,7 @@ Disable wireless LAN when onboard Ethernet is connected.
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | WirelessAutoDisconnection | Disabled, Enabled | yes |
+
 
 </details>
 
@@ -75,6 +79,7 @@ Options:
 |:---|:---|:---|
 | PXEIPV4NetworkStack | Disabled, Enabled | yes |
 
+
 </details>
 
 
@@ -89,6 +94,7 @@ Options:
 |:---|:---|:---|
 | PXEIPV6NetworkStack | Disabled, Enabled | yes |
 
+
 </details>
 
 <details><summary>HTTPS Support</summary>
@@ -101,6 +107,7 @@ Options:
 1.  Enabled.
 
 <!-- NO WMI -->
+
 
 </details>
 
@@ -117,6 +124,7 @@ Options:
 ?> If enabled, `HTTPs Boot Configuration` and `Tls Auth Configuration` will be shown.
 
 <!-- NO WMI -->
+
 </details>
 
 <details><summary>Lenovo Cloud Services</summary>
@@ -127,6 +135,7 @@ Whether `Lenovo Cloud` will be selected in boot menu, to boot from Lenovo Cloud 
 2. Enabled.
 
 <!-- NO WMI -->
+
 </details>
 
 <details><summary>Win VDI Boot</summary>
@@ -139,6 +148,7 @@ Options:
 2. Enabled.
 
 <!-- NO WMI -->
+
 
 </details>
 
@@ -156,6 +166,7 @@ Create a new boot option based on a HTTPS URL.
 
 <!-- NO WMI -->
 
+
 </details>
 
 <details><summary>Internet Protocol</summary>
@@ -167,6 +178,7 @@ Options:
 
 <!-- NO WMI -->
 
+
 </details>
 
 <details><summary>Boot URL</summary>
@@ -174,6 +186,7 @@ Options:
 ?> Use the `TLS Auth configuration` to import the CA to support the HTTPs boot 
 
 <!-- NO WMI -->
+
 
 </details>
 
@@ -207,6 +220,7 @@ Options:
 2. Enabled.
 
 <!-- NO WMI -->
+
 
 </details>
 

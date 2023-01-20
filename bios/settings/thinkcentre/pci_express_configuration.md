@@ -17,6 +17,7 @@ Options:
 |:---|:---|:---|
 | ASPMSupport | Disabled, Auto |  |
 
+
 </details>
 
 ## Select PCI Express port speed. ##
@@ -37,6 +38,7 @@ Options:
 |:---|:---|:---|
 | PCIe16xSlotSpeed | Disabled, Enabled |  |
 
+
 </details>
 
 <details><summary>PCIe 8x Slot speed</summary>
@@ -50,6 +52,7 @@ Options:
 5.  Gen 4.
 
 <!-- MODEL: M90q only -->
+
 </details>
 
 <details><summary>PCIe 4x Slot speed</summary>
@@ -68,6 +71,7 @@ Options:
 |:---|:---|:---|
 | PCIe4xSlotSpeed | Auto, Gen1, Gen2, Gen3 |  |
 
+
 </details>
 
 <details><summary>PCIe 1x Slot speed</summary>
@@ -84,5 +88,6 @@ Options:
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | PCIe1xSlotSpeed  | Auto, Gen1, Gen2, Gen3 |  |
+
 
 </details>

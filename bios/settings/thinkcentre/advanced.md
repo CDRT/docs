@@ -15,6 +15,7 @@ Options:
 |:---|:---|:---|
 | IntelSIPPSupport | Disabled, Enabled | yes |
 
+
 </details>
 
 <details><summary>Intel (R) Thunderbolt</summary>
@@ -25,6 +26,7 @@ Options:
 2.  Enabled.
 
 <!-- NO WMI -->
+
 
 </details>
 
@@ -44,6 +46,7 @@ Options:
 
 !> If the Dust Shield is not cleaned, it will lose its effectiveness and the machine may overheat.
 
+
 </details>
 
 
@@ -62,6 +65,7 @@ Options:
 |:---|:---|:---|
 | IntelDPTFSupport | Disabled, Enabled | yes |
 
+
 </details>
 
 <details><summary>Windows Modern Standby</summary>
@@ -77,6 +81,7 @@ Options:
 
 <!-- MODEL: NOT M70s-->
 
+
 </details>
 
 <details><summary>BIOS Self-healing</summary>
@@ -91,5 +96,6 @@ Options:
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | BIOSSelfHealing  |  | no |
+
 
 </details>

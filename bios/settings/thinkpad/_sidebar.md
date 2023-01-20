@@ -41,6 +41,7 @@
    - [Secure Boot](bios/settings/thinkpad/secureboot.md)
    - [Device Guard](bios/settings/thinkpad/deviceguard.md)
    - [ThinkShield Secure Wipe](bios/settings/thinkpad/thinkshieldsecurewipe.md)
+   - [ThinkShield Passwordless Power-On](bios/settings/thinkpad/thinkshieldpasswordless.md)
    - [Intelligent Security](bios/settings/thinkpad/intelligentsecurity.md)
 
 - [Startup](bios/settings/thinkpad/startup.md)

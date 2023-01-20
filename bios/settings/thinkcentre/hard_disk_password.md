@@ -23,6 +23,7 @@ Options:
 1. Single Password
 1. Dual Password (Admin + User)
 
+
 </details>
 
 <details><summary>PCIe Drive {Number} Password</summary>
@@ -33,6 +34,7 @@ Options:
 1. Single Password
 1. Dual Password (Admin + User)
 
+
 </details>
 
 <details><summary>SATA Drive {Number} Password</summary>
@@ -42,6 +44,7 @@ Options:
 1. **Disabled** - Default.
 1. Single Password
 1. Dual Password (Master + User)
+
 
 </details>
 
@@ -60,6 +63,7 @@ Options:
 |:---|:---|:---|
 | RequireHDPonSystemBoot| No, Auto | yes |
 
+
 </details>
 
 <details><summary>Block SID Authentication</summary>
@@ -72,5 +76,6 @@ Options:
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | BlockSIDAuthentication |  | yes |
+
 
 </details>

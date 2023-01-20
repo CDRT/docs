@@ -15,6 +15,7 @@ Options:
 |:---|:---|:---|
 | AccessSecuritySettings | Disabled, Enabled | yes |
 
+
 </details>
 
 <details><summary>Remote Set SMP</summary>
@@ -29,5 +30,6 @@ Options:
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | RemoteSetSMP | Disabled, Enabled | yes |
+
 
 </details>

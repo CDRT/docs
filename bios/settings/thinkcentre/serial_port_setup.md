@@ -16,6 +16,7 @@ Options:
 |:---|:---|:---|
 | SerialPort1Address | 2F8/IRQ3, 3F8/IRQ4, 3E8/IRQ4, 2E8/IRQ3, Disabled | yes |
 
+
 </details>
 
 <details><summary>Serial Port 2 Address</summary>
@@ -29,4 +30,5 @@ Options:
 3.  Disabled - the serial port will not be available to the OS.
 
 <!-- NO WMI -->
+
 </details>

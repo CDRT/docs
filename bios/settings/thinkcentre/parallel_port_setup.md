@@ -12,6 +12,7 @@ Options:
 3.  Disabled - disables the parallel port. The parallel port will not be seen by the OS.
 
 <!-- NO WMI -->
+
 </details>
 
 <details><summary>Parallel Port Mode</summary>
@@ -21,6 +22,7 @@ The parallel port mode has only one value: EPP (Enhanced Parallel Port).
 1. **EPP** - Default.
 
 <!-- NO WMI -->
+
 </details>
 
 <details><summary>EPP Version</summary>
@@ -34,6 +36,7 @@ Options:
 ?> Version 1.7 is supported as an optional setting for backward compatibility with older devices. There are differences between versions 1.9 and 1.7 which may affect the operation of devices.
 
 <!-- NO WMI -->
+
 </details>
 
 <details><summary>Parallel Port IRQ</summary>
@@ -45,4 +48,5 @@ Options:
 2.  IRQ 5 - enables interrupt line 5.
 
 <!-- NO WMI -->
+
 </details>

@@ -15,6 +15,7 @@ Options:
 |:---|:---|:---|
 | WakeonLAN | Primary, Automatic, Disabled | yes |
 
+
 </details>
 
 <details><summary>Wake from Serial Port Ring</summary>
@@ -29,6 +30,7 @@ Options:
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | WakefromSerialPortRing | Primary, Automatic, Disabled | yes |
+
 
 </details>
 
@@ -55,6 +57,7 @@ Options:
 |:---|:---|:---|
 | WakeUponAlarm |  | yes |
 
+
 </details>
 
 <details><summary>Startup Sequence</summary>
@@ -69,6 +72,7 @@ Options:
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | StartupSequence | Primary, Automatic | yes_no |
+
 
 </details>
 
@@ -106,6 +110,7 @@ Options:
 |:---|:---|:---|
 | AlarmDayofWeek  | Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, SaturdayStatus | yes |
 
+
 </details>
 
 ## User Defined Alarm ##
@@ -127,6 +132,7 @@ Options:
 
 ?> The WMI setting name for the wake-up timer week shown here is for Friday. For the other weekdays replace `Friday` with the weekday's name.
 
+
 </details>
 
 <details><summary>User Defined Alarm Time (HH : MM : SS)</summary>
@@ -136,5 +142,6 @@ Specify the time when the system is to wake up.
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | UserDefinedAlarmTime |  | yes |
+
 
 </details>

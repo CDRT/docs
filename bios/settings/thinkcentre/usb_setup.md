@@ -13,6 +13,7 @@ Options:
 |:---|:---|:---|
 | USBPortAccess | Disabled, Enabled | yes |
 
+
 </details>
 
 <details><summary>USB Bios Support</summary>
@@ -21,6 +22,7 @@ BIOS support for USB mouse and keyboard:
 
 1.  **Enabled** - Default.
 2.  Disabled.
+
 
 </details>
 
@@ -37,6 +39,7 @@ Provides extra delay to USB enumeration (detection and recognition of connected 
 |:---|:---|:---|
 | USBEnumerationDelay | Disabled, Enabled | yes |
 
+
 </details>
 
 <details><summary>Front USB Ports</summary>
@@ -51,6 +54,7 @@ Affects all of the front USB ports (numbered):
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
 | FrontUSBPorts | Disabled, Enabled | yes |
+
 
 </details>
 
@@ -69,6 +73,7 @@ Options:
 
 ?> The WMI setting name is shown here for USB port 1. For other ports 2-10 replace the 1 with the port number.
 
+
 </details>
 
 <details><summary>Rear USB Ports</summary>
@@ -84,6 +89,7 @@ Affects all of the rear USB ports (numbered):
 |:---|:---|:---|
 | RearUSBPorts | Disabled, Enabled | yes |
 
+
 </details>
 
 <details><summary>USB Port {Number / Letter}</summary>
@@ -94,5 +100,6 @@ Options:
 
 1.  **Enable** - Default.
 2.  Disable.
+
 
 </details>
