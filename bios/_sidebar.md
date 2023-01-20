@@ -8,3 +8,5 @@
 - [Settings Dictionary](bios/settings/dictionary.md)
 - [WMI Interface Guide](bios/wmi/wmi_guide.md)
 - [System Deployment Boot Mode](bios/sdbm.md)
+- [Glossary of Terms](bios/glossary.md)
+<!-- - [Passwords](bios/passwords.md) -->
