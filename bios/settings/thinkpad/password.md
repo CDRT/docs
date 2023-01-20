@@ -336,39 +336,42 @@ Possible options:
 
 Protects the system information stored in UEFI BIOS.
 
-- _Entering the SVP_
+**_Entering the SVP_**
 
 When entering the UEFI BIOS menu, enter the correct supervisor password in the window prompted.
 
 !> If the user presses `Enter`, the password prompt will be skipped, but then most of the system configuration options in UEFI BIOS will be unavailble.
 
- - _Setting the SVP_
+ **_Setting the SVP_**
 
 The supervisor password can be set only through the UEFI BIOS menu.
 
 Once it is in place, then it can be modified using Windows Management Instrumentation (WMI) with the Lenovo client-management interface.
 
- - _Overriding the POP_
+**_Overriding the POP_**
 
 The supervisor password overrides the power-on password (POP).
 
 If you have set both the supervisor password and power-on password, you can use the supervisor password to access your computer when you turn it on.
+<hr>
 
 **The System Management Password (SMP)**
 
 Also protects the system information stored in UEFI BIOS like a supervisor password, but it has lower authority by default.
 
- - _Setting the SMP_
+**_Setting the SMP_**
 
 The system management password can be set through the UEFI BIOS menu or through Windows Management Instrumentation (WMI) with the Lenovo client-management interface.
 
- - _Overriding the SVP_
+**_Overriding the SVP_**
 
 You can enable the system management password to have the same authority as the supervisor password to control security-related features.
+<hr>
 
 **Power-On Password**
 
 When enabled, Power-On Password prevents unauthorized users from booting your computer.
+<hr>
 
 **ATA / NVMe Password**
 
@@ -376,4 +379,4 @@ Also known as Hard Disk Password (HDP).
 
 Lenovo BIOS supports both ATA and NVMe storage and the displayed BIOS setting changes depending on the attached storage device.
 
-The NVMe (nonvolatile memory express) password prevents unauthorized access to the data on the storage drive. When an NVMe password is set, you are prompted to type a correct password each time you try to access the storage drive. The system also supports creating dual passwords for an Admin and another User.
+The NVMe (nonvolatile memory express) password prevents unauthorized access to the data on the storage drive. When an NVMe password is set, you are prompted to type a correct password each time you try to access the storage drive. The system also supports creating **dual passwords** for an Admin and another User.

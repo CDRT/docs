@@ -14,7 +14,7 @@ Possible options: <br>
 
 1.	**AC Only** - Default.
 2.	Disabled
-3.	AC and Battery 
+3.	AC and Battery
 
 !>  AC is required with magic packet type Wake On LAN.
 
@@ -185,11 +185,12 @@ Media access control (MAC) address of the wireless network interface controller.
 
 For every MAC Address the following information is shown:
 
-* MAC Address - Media access control (MAC) address of the selected wireless network interface controller. 
+* MAC Address - Media access control (MAC) address of the selected wireless network interface controller.
 
 ?> View only.
 
 Possible options:
+
    1. **Disconnected** - Default.
    2. Connected to [SSID]
 
@@ -204,19 +205,19 @@ Possible options:
 
 ?>  All the settings in this group are not available via WMI.
 
-**Number of networks:** Number of current available networks. 
+**Number of networks:** Number of current available networks.
 
 ?> View only.
 
 For each network the Security Type is shown.
- * Possible values are "Open" and "Secured".
- * If Secured, the security type is displayed.
+
+* Possible values are "Open" and "Secured".
+* If Secured, the security type is displayed.
 
 ?> View only.
 
 Each SSID can be selected to display more details.
 <details><summary>[SSID Value](Status)</summary>
-
 
 ![](./img/wifinetworkconfig.png)
 
@@ -224,13 +225,12 @@ Each SSID can be selected to display more details.
 
 Whether device is connected to this Wi-Fi network.
 
-?> View only. 
+?> View only.
 
 Possible statuses:
 
 1.	**Disconnected** - Default.
 2.	Connected
-
 
 </details>
 
@@ -321,7 +321,7 @@ Empty by default.
 
 <details><summary>Identity</summary>
 
-Identity value if there is any. 
+Identity value if there is any.
 
 View only.
 
@@ -396,7 +396,6 @@ Possible options:
 1.	**PEAP** – Default
 2.	EAP-TLS
 
-
 </details>
 
 <details><summary>EAP Second Authentication Method</summary>
@@ -406,7 +405,6 @@ Possible options:
 Possible options:
 
 1.	**MSCHAPv2** – Default.
-
 
 </details>
 
@@ -513,7 +511,6 @@ Possible options:
 2.	WPA2-Personal
 3.	WPA2-Enterprise
 
-
 </details>
 
 <details><summary>Password</summary>
@@ -527,7 +524,6 @@ Enter password.
 </details>
 
 <details><summary>EAP Authentication Method</summary>
-
 
 Select EAP Authentication Method.
 
@@ -650,6 +646,5 @@ List of SSIDs of the saved networks.
 Save changes and exits back to the Manage Wi-Fi network page.
 
 </details>
-
 
 </details>
