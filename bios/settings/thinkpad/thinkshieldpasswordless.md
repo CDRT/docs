@@ -55,3 +55,7 @@ _**Log in to the System with Passwordless Power-On Authentication**_
 1. After your device is verified, the power-on process continues.
 
 ?> You should insert the FIDO2 USB device or enter the power-on password within 60 seconds. Otherwise, your computer will shut down automatically.
+
+Here is a video walk-through of the process:
+
+[ThinkShield Passwordless Power On](https://download.lenovo.com/cdrt/video/ThinkShieldPasswordlessPowerOn.mp4 ":include :type=video controls width=100%")
