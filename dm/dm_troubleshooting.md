@@ -1,4 +1,4 @@
-- ## Dock Manager Troubleshooting Tips
+## Dock Manager Troubleshooting Tips
 
 ### Scheduled Task Does Not Launch
 
@@ -24,19 +24,19 @@ The following example is based on a weekly firmware checking task is set to run 
 
 ##### Check Group Policy
 
-1.IT admins should first check Group Policy settings on domain controller.
+1. IT admins should first check Group Policy settings on domain controller. 
 
 ![](../img/guides/dm/ts1.png)
 
-2.Make sure **Frequency** is set to **Enabled** and configured as Weekly.
+2. Make sure **Frequency** is set to **Enabled** and configured as Weekly.
 
 ![](../img/guides/dm/ts2.png)
 
-3.Make sure **RunOn** is set to **Enabled** and configured as **MONDAY, TUESDAY**.
+3. Make sure **RunOn** is set to **Enabled** and configured as **MONDAY, TUESDAY**.
 
 ![](../img/guides/dm/ts3.png)
 
-4.Make sure **RunAt** is set to **Enabled** and configured as **06: 05:00**.
+4. Make sure **RunAt** is set to **Enabled** and configured as **06: 05:00**. 
 
 ![](../img/guides/dm/ts4.png)
 
@@ -56,13 +56,13 @@ As the last steps, IT admins should check Task Scheduler on the same client PC.
 
 ![](../img/guides/dm/ts6.png)
 
-2.Make sure a task named **DockManager – Task Scheduler** is under the illustrated folder.​
+2. Make sure a task named **DockManager – Task Scheduler** is under the illustrated folder.​
 
-3.Make sure **Triggers** is configured correctly. Refer to the screenshot:
+3. Make sure **Triggers** is configured correctly. Refer to the screenshot:
 
 ![](../img/guides/dm/ts7.png)
 
-4.Check **Last Run Time** and **Last Run Result** to find more details and possible cause.
+4. Check **Last Run Time** and **Last Run Result** to find more details and possible cause.
 
 #### Conclusion
 

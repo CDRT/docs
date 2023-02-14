@@ -2,7 +2,7 @@
 
 This document will provide collected details about the various Lenovo docks that use USB, USB-C, OneLink or Thunderbolt ports for connectivity to the PC. The intended audience for this document is the IT Administrator tasked with deploying these devices into their enterprise environment. Details will include specifications, driver deployment, firmware updates and hints/tips for managing and using these docks.
 
-<hr/>
+
 
 # Overview and General Information
 
@@ -19,13 +19,13 @@ Also in this document you will find information that affects deployment options 
    - **Does your dock support PXE booting?**
    - **What (if any) configuration is necessary for PXE**
    
-<hr/>
+
 
 # General Deployment Information
 
 The information below pertains to deploying Windows 7 and Windows 10 on Lenovo’s enterprise class Think branded laptops using Lenovo's docking solutions. Each family of docks has at least one corresponding Ethernet adapter or Ethernet + video adapter. The basic information in this guide applies to those devices as well.
 
-?>Note: With modern docking solutions, it is critical to the docking experience to ensure several components on the attached system are up to date. Therefore it is important to focus on these other components as well as the individual dock firmware and drivers when deploying and maintaing these solutions. To simplify finding the appropriate content use the [Docking tab on the Driver and Software Matrix for Admins](https://download.lenovo.com/cdrt/tools/drivermatrix/dm_2.html#Docking).
+?>With modern docking solutions, it is critical to the docking experience to ensure several components on the attached system are up to date. Therefore it is important to focus on these other components as well as the individual dock firmware and drivers when deploying and maintaing these solutions. To simplify finding the appropriate content use the [Docking tab on the Driver and Software Matrix for Admins](https://download.lenovo.com/cdrt/tools/drivermatrix/dm_2.html#Docking).
 
 The base process for deployments via the Lenovo docks and dongles all require:
 
@@ -64,7 +64,6 @@ You will also need the appropriate driver for the version of Windows (links prov
 | Make sure the driver is included in the  "Out of box" driver folder for your specific  system. If you are utilizing an alternate driver  deployment method make sure to include the  RealTek USB driver in your solution. | Make sure the driver is included in the  "Driver Package" for your specific system.  Again, if you are utilizing an alternate  method of driver deployment make sure to  include the Realtek USB driver in your solution. |
 
 
-<hr/>
 
 # Using Docking WMI Queries
 
@@ -80,9 +79,9 @@ WQL*:
 ```wql
 SELECT * FROM Win32_PNPEntity WHERE DeviceID LIKE "USB\\VID_17EF&PID_308D"
 ```	
-?>Note: WQL requires a second “\” character to escape the first “\” character so it is processed as part of the search string.
+?>WQL requires a second “\” character to escape the first “\” character so it is processed as part of the search string.
 
-<hr/>
+
 
 # Deployment Related BIOS Settings
 
@@ -93,11 +92,11 @@ As each new Intel chipset is released the new capabilities of each platform are 
 Intel 5th generation processors with CPU designation i3-5xxx, i5-5xxx, i7-5xxx)
 
    - USB 3.0 supported on all Broadwell models.
+   
+   ?>If you are deploying via one of our USB 3.0 docks, the default setting of "Auto" for USB 3.0 Mode should allow you to successfully deploy Windows 7, Windows 8.1. and Windows 10.
    - OneLink/OneLink+ docks supported only on models with either OneLink or OneLink+ port.
    
-?>Note: If you are deploying via one of our USB 3.0 docks, the default setting of "Auto" for USB 3.0 Mode should allow you to successfully deploy Windows 7, Windows 8.1. and Windows 10.
-
-?>Note: There are no Default BIOS settings that affect OneLink and OneLink+ docks.
+   ?>There are no Default BIOS settings that affect OneLink and OneLink+ docks.
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
@@ -147,10 +146,9 @@ When MAC Address PassThrough is Enabled you will still need the Realtek NIC driv
 ![](../img/guides/docks/img4.png)
 </div>
 
-?>Note:Power Pass-Through on Skylake ThinkPad 13 is not supported with USB-C dock. The dock will charge the system with the supplied power adapter but you cannot power the system on or off via the dock's power switch.
+?>Power Pass-Through on Skylake ThinkPad 13 is not supported with USB-C dock. The dock will charge the system with the supplied power adapter but you cannot power the system on or off via the dock's power switch.
 
 
-<hr/>
 
 # ThinkPad Universal Thunderbolt 4 Dock (40B0)
 
@@ -250,7 +248,7 @@ Features:
 </tr>
 </table>
 
-<hr/>
+
 
 # ThinkPad Thunderbolt 3 Essential Dock (40AV0135)
 
@@ -345,7 +343,6 @@ Top Features for Thunderbolt 3 Essential Dock
 </tr>
 </table>
 
-<hr/>
 
 # ThinkPad Thunderbolt 3 Workstation Dock (40AN0170, 40AN0230) / ThinkPad Thunderbolt 3 Dock Gen 2 (40AN0135)
 
@@ -440,8 +437,6 @@ Top Features for Thunderbolt Dock Gen 2
 </table>
 
 
-<hr/>
-
 # ThinkPad Thunderbolt 3 Dock (PN 40AC0135)
 
 The ThinkPad Thunderbolt 3 Dock is an unmatched docking solution powered by Intel Thunderbolt 3 technology. All together 13 ports available enables you to connect all your devices while rapidly charging your system via the USB Type-C port. It delivers conclusive 4K video performance with lightning fast data transfer. Having your most productive and space saving workstation as simple as connecting your notebook or tablet to the ThinkPad Thunderbolt 3 Dock. 
@@ -525,7 +520,7 @@ The ThinkPad Thunderbolt 3 Dock is an unmatched docking solution powered by Inte
 </tr>
 </table>
 
-<hr/>
+
 
 # ThinkPad Universal USB-C Smart Dock (40B20135)
 
@@ -627,7 +622,7 @@ deployment<br><br><a href="https://pcsupport.lenovo.com/us/en/downloads/DS504448
 </tr>
 </table>
 
-<hr/>
+
 
 # ThinkPad Hybrid USB-C with USB-A Dock (PN 40AF0135)
 
@@ -719,7 +714,6 @@ deployment<br><br><a href="https://pcsupport.lenovo.com/us/en/downloads/DS504448
 </tr>
 </table>
 
-<hr/>
 
 # ThinkPad USB-C Dock Gen 2 (PN 40AS0090)
 
@@ -818,7 +812,6 @@ sequence:<br>&nbsp;&nbsp;&nbsp; thinkpad_usb-c_dock_gen2_drivers_v1.0.3.03241.ex
 </tr>
 </table>
 
-<hr/>
 
 # ThinkPad USB-C Dock (PN 40A90090)
 
@@ -910,7 +903,7 @@ target="_blank">https://support.lenovo.com/us/en/downloads/DS501903</a></td>
 </tr>
 </table>
 
-<hr/>
+
 
 # ThinkPad OneLink+ Dock (PN 40A40090)
 
@@ -1004,7 +997,6 @@ target="_blank">https://pcsupport.lenovo.com/documents/ACC100252</a></td>
 </table>
 
 
-<hr/>
 
 # ThinkPad OneLink Pro Dock (PN 4X10E52935)
 
@@ -1107,7 +1099,6 @@ target="_blank">https://support.lenovo.com/id/en/solutions/pd029981</a>
 </tr>
 </table>
 
-<hr/>
 
 # ThinkPad OneLink Dock (PN 4X10A06077)
 
@@ -1201,7 +1192,6 @@ deployment<br><br>
 </tr>
 </table>
 
-<hr/>
 
 # ThinkPad USB 3.0 Ultra Dock (PN 40A80045)
 
@@ -1278,7 +1268,7 @@ deployment<br></td>
 </tr>
 </table>
 
-<hr/>
+
 
 # ThinkPad USB 3.0 Pro Dock (PN 40A70045)
 
@@ -1356,7 +1346,6 @@ deployment<br></td>
 </tr>
 </table>
 
-<hr/>
 
 # ThinkPad USB 3.0 Basic Dock (PN 40AA0045)
 
@@ -1448,7 +1437,6 @@ deployment<br></td>
 </tr>
 </table>
 
-<hr/>
 
 
 # Dock/Port Comparison
@@ -1688,7 +1676,7 @@ deployment<br></td>
 </tr>
 </table>
 
-<hr/>
+
 
 
 # Known Issues
@@ -1697,7 +1685,7 @@ deployment<br></td>
 
 **USB-C**:  https://support.lenovo.com/us/en/solutions/HT504163
 
-<hr/>
+
 
 
 # ThinkPad Ultra Docking Station (40AJ0135)
@@ -1781,7 +1769,6 @@ file and import into the driver packages for the needed models)</td>
 </tr>
 </table>
 
-<hr/>
 
 # ThinkPad Pro Docking Station (40AH0135)
 
@@ -1866,7 +1853,6 @@ file and import into the driver packages for the needed models)</td>
 </table>
 
 
-<hr/>
 
 # ThinkPad Basic Docking Station (PN 40AG0135)
 
@@ -1949,9 +1935,6 @@ file and import into the driver packages for the needed models)</td>
 </tr>
 </table>
  
- 
- 
-<hr/>
 
 # Side-connected Docks/Port Comparison
 
