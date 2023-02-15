@@ -23,6 +23,7 @@ The application can also record data from docks into WMI (root\Lenovo\Dock_Manag
 
 ## Supported Docks <!-- {docsify-ignore} -->
 
+* ThinkPad Universal USB-C Dock v2 - [40B7](https://support.lenovo.com/solutions/acc500295)
 * ThinkPad Thunderbolt 4 Workstation Dock - [40B0](https://pcsupport.lenovo.com/accessories/pd500533)
 * ThinkPad Universal Thunderbolt 4 Dock - [40B0](https://support.lenovo.com/solutions/pd500503)
 * ThinkPad Universal USB-C Dock - [40AY](https://support.lenovo.com/solutions/pd500519)
