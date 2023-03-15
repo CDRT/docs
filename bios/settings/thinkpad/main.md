@@ -1,10 +1,10 @@
 # Main #
 
-![](./img/main.png)
+![Main page in BIOS Setup](./img/mainall.png)
 
 The Main display shows (view-only) system information.
 
-It also gives access to the [BIOS Event Log feature](http://localhost:3000/#/bios/bios_logging).
+It also gives access to the [BIOS Event Log feature](/bios/settings/bios_logging).
 
 <details><summary>BIOS Event Log</summary>
 
