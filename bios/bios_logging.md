@@ -4,7 +4,9 @@ This feature logs system and BIOS configuration change events.
 
 ## How to view event logs
 
-A log viewer application can be launched from the BIOS Setup Menu. It allows you to
+A log viewer application can be launched from the BIOS Setup Menu.
+
+It allows you to
 - show logs
 - clear logs
 

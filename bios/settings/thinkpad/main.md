@@ -4,7 +4,7 @@
 
 The Main display shows (view-only) system information.
 
-It also gives access to the BIOS Event Log feature.
+It also gives access to the [BIOS Event Log feature](http://localhost:3000/#/bios/bios_logging).
 
 <details><summary>BIOS Event Log</summary>
 
