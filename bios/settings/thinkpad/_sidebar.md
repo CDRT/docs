@@ -14,6 +14,8 @@
 
 ---
 
+- [Main](bios/settings/thinkpad/main.md)
+
 - [Config](bios/settings/thinkpad/config.md)
    - [Network](bios/settings/thinkpad/network.md)
    - [USB](bios/settings/thinkpad/usb.md)
