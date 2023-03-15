@@ -40,3 +40,7 @@ The following events are logged:
 - Capsule Update Event
 - Log Cleared Event
 - Shutdown/Reboot Event
+
+The details provided for each event may vary.  An example is shown below:
+
+![Example log entry](thinkpad/img/eventlogentry.png)
