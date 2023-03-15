@@ -136,7 +136,7 @@ Values:
 
 `<disabled/>`
 
-?>Note: Frequency values include DAILY,WEEKLY, and MONTHLY which can be configured on the dropdown provided inside the options panel.
+?>Frequency values include DAILY,WEEKLY, and MONTHLY which can be configured on the dropdown provided inside the options panel.
 
 ### Run At
 
@@ -153,7 +153,7 @@ Values:
 
 `<disabled/>`
 
-?>Note: Valid inputs includes any time of the day in `24:MM:SS` format which can be inputted inside the textbox in the options panel.
+?>Valid inputs includes any time of the day in `24:MM:SS` format which can be inputted inside the textbox in the options panel.
 
 ### Run Days
 
@@ -172,7 +172,7 @@ Values:
 
 `<disabled/>`
 
-?>Note: This configuration will be use when the Frequency policy is enabled and set to "MONTHLY".
+?>This configuration will be use when the Frequency policy is enabled and set to "MONTHLY".
 
 ### Run Month
 
@@ -191,7 +191,7 @@ Values:
 `<data id="RunMonth_Prompt" value="January,March,May,July,September,November"/>`
 `<disabled/>`
 
-?>Note: This configuration will be use when the Frequency policy is enabled and set to "MONTHLY".
+?>This configuration will be use when the Frequency policy is enabled and set to "MONTHLY".
 
 ### Run Monthly On
 
@@ -210,7 +210,7 @@ Values:
 
 `<disabled/>`
 
-?>Note: This configuration will be use when the Frequency policy is enabled and set to "MONTHLY".
+?>This configuration will be use when the Frequency policy is enabled and set to "MONTHLY".
 
 ### Run On
 
@@ -229,4 +229,4 @@ Values:
 
 `<disabled/>`
 
-?>Note: This configuration will be used when the Frequency policy is enabled and set to "MONTHLY" or "WEEKLY".
+?>This configuration will be used when the Frequency policy is enabled and set to "MONTHLY" or "WEEKLY".

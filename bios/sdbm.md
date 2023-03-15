@@ -32,7 +32,7 @@ No longer requires user interaction if a call to clear the TPM was performed. In
 | | P53s | | |
 | | P73 | | |
 
-!> Note: For L14/15 AMD Gen 1 models, be sure to update to the latest BIOS to ensure you have the System Deployment Boot Mode feature.
+!>For L14/15 AMD Gen 1 models, be sure to update to the latest BIOS to ensure you have the System Deployment Boot Mode feature.
 
 ## Activating System Deployment Boot Mode
 

@@ -1,4 +1,4 @@
-### Hosting a repository in an Azure blob 
+# Hosting a Repository in an Azure Blob 
 ![](../img/guides/ur/az_blob/azureblob.png) 
 
 *Author: Philip Jorgensen*
@@ -15,7 +15,7 @@ This post may be helpful for anyone piloting a "modern" way of updating their Th
 
 I won't cover creating the Storage account or Blob, just the process of uploading the Update Retriever content to the Blob container and how to configure the ThinInstaller Configuration XML on the client.  Note though, the Container access level should be set to **Blob (anonymous read access for blobs only)**.
 
-### Populating the Update Retriever repository
+## Populating the Update Retriever repository
 
 First, you'll need to download any new updates to your local machine or network share.  Currently, you can only set a repository location to a local drive or UNC path.
 
@@ -27,7 +27,8 @@ You can take advantage of configuring your Update Retriever repository as a "Len
 * Upload the content using [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy) (latest version can be downloaded [here](http://aka.ms/downloadazcopy))
 * Upload the content using the [Set-AzStorageBlobContent](https://docs.microsoft.com/en-us/powershell/module/azure.storage/set-azurestorageblobcontent?view=azurermps-6.13.0) cmdlet.
 
-**Method 1: Storage Explorer** Authenticate to your Storage account, navigate to the folder containing your updates and choose to upload by folder.
+### Method 1: Storage Explorer
+Authenticate to your Storage account, navigate to the folder containing your updates and choose to upload by folder.
 
 ![](../img/guides/ur/az_blob/image2.jpg)
 
@@ -35,7 +36,8 @@ Once complete, you should see all data uploaded in the Activities pane.
 
 ![](../img/guides/ur/az_blob/image3.jpg)
 
-**Method 2: AzCopy** You'll need a few more pieces of information before uploading with AzCopy.
+### Method 2: AzCopy
+You'll need a few more pieces of information before uploading with AzCopy.
 
 * Blob Container URL (Storage Account/Blobs/Blob Container/Properties)
 
@@ -55,7 +57,8 @@ The results will look something like this
 
 ![](../img/guides/ur/az_blob/image6.jpg)
 
-**Method 3: PowerShell** Similar to AzCopy but instead using the **Set-AzStorageBlobContent** cmdlet.  You'll need the [Azure PowerShell module](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-1.7.0) installed first.  Below is a simple, sample script that was pieced together from the examples provided by the MS docs.
+### Method 3: PowerShell
+ Similar to AzCopy but instead using the **Set-AzStorageBlobContent** cmdlet.  You'll need the [Azure PowerShell module](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-1.7.0) installed first.  Below is a simple, sample script that was pieced together from the examples provided by the MS docs.
 
 ```
 $srcPath = "C:\lenovoUpdates"
@@ -73,9 +76,9 @@ An example capture once the upload kicks off
 
 ![](../img/guides/ur/az_blob/image7.jpg)
 
-### Client side configuration
+## Client side configuration
 
-**Thin Installer**
+### Thin Installer
 
 Now that the repository is ready, you'll need to make a quick change to the Thin Installer Configuration XML to direct the client to the Blob container.  Open the **ThinInstaller.exe.configuration** file and set the new repo path the Blob Container URL as noted earlier. 
 
@@ -85,7 +88,7 @@ When Thin Installer is launched it will connect to the Update Retriever reposito
 
 ![](../img/guides/ur/az_blob/image9.jpg)
 
-**System Update**
+### System Update
 
 Simply update the **AdminCommandLine** registry value to point to your Blob URL.  An example command line would be:
 

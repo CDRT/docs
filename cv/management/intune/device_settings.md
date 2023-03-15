@@ -105,7 +105,7 @@ Values:
 
 **Write Battery Information to WMI**
 
-?>Note: Added in version 10.2109
+?>Added in version 10.2109
 
 This policy setting allows Commercial Vantage to write the computer battery information into the Lenovo Namespace WMI table. If you enable it, the battery information will be written to WMI.  The information written will appear as follows:
 
@@ -145,7 +145,7 @@ Values:
 
 **DPM Power Settings**
 
-?>Note: Added in version 10.2104
+?>Added in version 10.2104
 
 When this policy is enabled, the Desktop Power Manager Power Settings of Commercial Vantage will be turned off.
 

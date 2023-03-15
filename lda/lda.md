@@ -76,7 +76,7 @@ In order to establish the connection between LDA and CM you should provide the f
 - FQDN (Fully Qualified Domain Name) of Site Server;
 - UNC (Uniform Naming Convention) Path for Source Storage.
 
-?>NOTE: LDA uses Shared Database to store the items which are created in CM. The location of
+?>LDA uses Shared Database to store the items which are created in CM. The location of
 the Shared Database is specified by the user on the Configuration screen as UNC path. If the
 Shared Database is missing at the specified UNC path it will be created by LDA once the user
 connects to the CM.
@@ -104,7 +104,7 @@ LDA offers tools to easily create applications and their CIs in CM to deploy to 
 ![](../img/reference/lda/image2.png)
 </div>
 
-?>NOTE: Full version of the Release Notes can be viewed in a Browser in .txt format by
+?>Full version of the Release Notes can be viewed in a Browser in .txt format by
 clicking the “View more information” in the pop-up.
 
 3. Go to the Summary screen.
@@ -128,7 +128,7 @@ clicking the “View more information” in the pop-up.
 
     Once the creation process is started, the UI is blocked until the end of the process.The screen displays the current progress of items creation in CM. When the process is finished, the "Finished" line will be prompted at the end of the progress console.
     
-?>NOTE: The progress console output can be copied for further use.
+?>The progress console output can be copied for further use.
 
 6. You can see the successfully created applications and CIs next time you launch the
 application.
@@ -145,7 +145,7 @@ You can find all the created Lenovo applications in the corresponding section of
 ![](../img/reference/lda/image6.png)
 </div>
 
-?>NOTE: All the applications created by LDA have the "Created by LDA" text in the Administrative comment.
+?>All the applications created by LDA have the "Created by LDA" text in the Administrative comment.
 
 If the CI was also selected for the respective application it will be created in CM in the Assets and and Compliance tab menu.
 
@@ -154,7 +154,7 @@ If the CI was also selected for the respective application it will be created in
 ![](../img/reference/lda/image7.png)
 </div>
 
-?>NOTE: All the CIs created by LDA have the "Created by LDA" text in the Description.
+?>All the CIs created by LDA have the "Created by LDA" text in the Description.
 
 ### Create Next Version of Application
 Once the new version of the application is available the “New version available” section appears on the UI. Also the system notifies you about the update by showing indication in the Bell icon and bullets in the tab menu.
@@ -177,7 +177,7 @@ Once the new version of the application is available the “New version availabl
 ![](../img/reference/lda/image9.png) 
 </div>
 
-?>NOTE: Full version of the Release Notes can be viewed in a Browser in .txt format by clicking the “View more information” in the pop-up.
+?>Full version of the Release Notes can be viewed in a Browser in .txt format by clicking the “View more information” in the pop-up.
 
 3. Go to the Summary screen.
 
@@ -203,7 +203,7 @@ Name -> Application Version" folder.
 ![](../img/reference/lda/image11.png)
 </div>
 
-?>NOTE: All the applications created by LDA have the "Created by LDA" text in the Administrative comment.
+?>All the applications created by LDA have the "Created by LDA" text in the Administrative comment.
 
 ### Update Configuration Item
 Once the new version of the CI is available the system displays it on the UI. Also the system notifies you about the update by showing indication in the Bell icon and bullets in the tab menu.
@@ -240,7 +240,7 @@ Once the new version of the CI is available the system displays it on the UI. Al
 
 You can go to the CM in the Assets and Compliance tab menu, and check that the respective CI is updated for the respective Application version.
 
-?>NOTE: All the CIs created by LDA have the "Created by LDA" text in the Description
+?>All the CIs created by LDA have the "Created by LDA" text in the Description
 
 Please note, when the new version of the application is selected for creation in CM, and there is already a created CI, it will be highlighted with "Will be modified".
 
@@ -274,7 +274,7 @@ LDA provides an option to select Lenovo Inventory Data item (group of WMI classe
 
     You can see the UI is updated with the created Inventory Data next time you launch the application.
 
-?>NOTE: the created WMI classes will be added to the Default Client Settings. 
+?>The created WMI classes will be added to the Default Client Settings. 
 
    In order to collect the client data by hardware inventory, you must select the custom classes in the appropriate Client Settings definition in the CM console.
 
@@ -342,7 +342,7 @@ that you may want to perform an action against.
 
    You can control the creation of Custom Collections by selecting/deselecting them in the Custom Collections panel.
 
-?>NOTE: Some Custom Collections have dependencies on the others. In this case, all the dependent collections are created.
+?>Some Custom Collections have dependencies on the others. In this case, all the dependent collections are created.
 
 4. Click the “Finish” button.
 5. Wait until the process of creation is finished.
@@ -417,7 +417,7 @@ You are able to view the Release Notes in the pop-up.
 ![](../img/reference/lda/image27.png)
 </div>
 
-?>NOTE: The full version of the Release Notes can be viewed in a Browser in .txt format by clicking the “View more information” in the pop-up.
+?>The full version of the Release Notes can be viewed in a Browser in .txt format by clicking the “View more information” in the pop-up.
 
 You can check the current version of the application at the bottom of the screen (e.g. Version 1.6.0.121).
 
@@ -507,7 +507,7 @@ then after the sync, the system displays the item as created in LDA;
 - If the item is NOT created in CM but in LDA it is shown as created, then after the sync
 the system displays the item as NOT created in LDA.
 
-?>NOTE: To maintain the synchronization capability, please follow the guidelines below.
+?>To maintain the synchronization capability, please follow the guidelines below.
 
 - Please do NOT rename the created items in CM with “Created by LDA” text (for
 application in the Administrative comment, for CI in the Description) otherwise it will not
@@ -546,7 +546,7 @@ already created or NOT created in CM.
 ![](../img/reference/lda/image38.png)
 </div>
 
-?>NOTE: Since CI is dependent on the application, CI will be disabled (greyed out) until the respective application is not marked as created in LDA or the respective application is not selected on the "Scanning Result" screen.
+?>Since CI is dependent on the application, CI will be disabled (greyed out) until the respective application is not marked as created in LDA or the respective application is not selected on the "Scanning Result" screen.
 
 5. Wait until the sync process completes and check that the selected items reflect the same state in LDA as in CM.
 
