@@ -12,8 +12,11 @@ It allows you to
 
 ?> The clear log process will be run after setup exit.
 
-!> Clear operation is protected by SVP.
+!> The clear operation is protected by SVP.
 
+ - [Main (ThinkPad )](http://localhost:3000/#/bios/settings/thinkpad/main)
+ - [Main (ThinkCentre)](http://localhost:3000/#/bios/settings/thinkcentre/main)
+ - [Main (ThinkStation)](http://localhost:3000/#/bios/settings/thinkstation/main.md)
 
 ## Details of event logs
 
