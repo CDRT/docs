@@ -1,6 +1,6 @@
 # Commercial Vantage Deployment Guide
 
-_Updated: September 16, 2021_
+_Updated: 2023-3-21_
 
 ## Preface
 
@@ -24,7 +24,7 @@ The installer for Lenovo System Interface Foundation can be downloaded from here
 
 Installation of this package can be performed silently as follows:
 
-```
+```cmd
 System-Interface-Foundation-Update-64.exe /verysilent /NORESTART
 ```
 
@@ -32,7 +32,7 @@ System-Interface-Foundation-Update-64.exe /verysilent /NORESTART
 
 The installer for Lenovo Vantage Service is included in the zip file. It is installed silently as follows:
 
-```
+```cmd
 VantageService.3.6.15.0-lite.exe /verysilent /NORESTART
 ```
 
@@ -100,6 +100,10 @@ The System Update feature of Commercial Vantage writes update history to WMI (in
 **System Update – update repository**
 
 By default, the System Update feature of Commercial Vantage searches the Lenovo repository of updates. If you prefer, you can create your own repository of updates and configure Vantage to use this repository instead. This is configured in **Computer Configuration -> Administrative Templates -> Commercial Vantage -> Device -> System Update -> System Update Repository**. You can point to a local folder (such as c:\myRepository), a mapped drive (such as m:\myRespository) or a UNC path (such as \\\\myServer\myRepository).
+
+This diagram illustrates the System Update workflow in Commercial Vantage
+
+![img](../img/cv/vantage_su_flow.png)
 
 ?>With version 10.2208.22.0 the repository path can now also be specified as a URL path to an accessible cloud storage location.
 
