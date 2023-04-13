@@ -1,15 +1,16 @@
-# Customized BIOS Defaults #
+# Custom BIOS Defaults
 
-This function allows you to
-- save the BIOS Setup settings as customized BIOS default settings
-- load a customized BIOS default to replace the current BIOS settings
+This function was introduced in 2023 products and allows you to:
 
-?> Boot Order is excluded from the custom defaults.
+- save the current BIOS Setup settings as custom BIOS default settings
+- load a custom BIOS default to replace the current BIOS settings
 
-!> If a user resets to factory defaults, the custom defaults will be cleared.
+It is important to note that Security, Date & Time, and Boot Order settings are excluded from the custom defaults.
+
+!> If a user performs the Reset System to Factory Defaults function under the Security menu, the custom defaults will be cleared and the system will revert back to the factory default settings.
 
 Relevant settings:
- - [Restart (ThinkPad)](http://localhost:3000/#/bios/settings/thinkpad/restart)
- - [Exit (ThinkCentre)](http://localhost:3000/#/bios/settings/thinkcentre/exit)
- - [Exit (ThinkStation)](http://localhost:3000/#/bios/settings/thinkstation/exit)
 
+- [Restart (ThinkPad)](http://localhost:3000/#/bios/settings/thinkpad/restart)
+- [Exit (ThinkCentre)](http://localhost:3000/#/bios/settings/thinkcentre/exit)
+- [Exit (ThinkStation)](http://localhost:3000/#/bios/settings/thinkstation/exit)
