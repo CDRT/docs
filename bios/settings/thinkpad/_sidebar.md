@@ -43,6 +43,7 @@
    - [ThinkShield Secure Wipe](bios/settings/thinkpad/thinkshieldsecurewipe.md)
    - [ThinkShield Passwordless Power-On](bios/settings/thinkpad/thinkshieldpasswordless.md)
    - [Intelligent Security](bios/settings/thinkpad/intelligentsecurity.md)
+   - [Reset System to Factory Defaults](bios/settings/thinkpad/resetsystemtofactorydefaults.md)
 
 - [Startup](bios/settings/thinkpad/startup.md)
 
