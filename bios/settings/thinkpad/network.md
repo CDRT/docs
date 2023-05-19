@@ -16,7 +16,7 @@ Possible options: <br>
 2.	Disabled
 3.	AC and Battery
 
-!>  AC is required with magic packet type Wake On LAN.
+!> AC is required with magic packet type Wake On LAN.
 
 !> Wake On LAN function may be blocked due to password configuration.
 
