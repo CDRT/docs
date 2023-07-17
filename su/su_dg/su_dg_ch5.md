@@ -214,7 +214,7 @@ Optional. Specifies the full path to the local repository location. This can be 
 Optional. Causes Thin Installer to store update history data in a WMI table:
 
 ```WMI
-root\Lenovo\Lenovo\_Updates\
+root\Lenovo\Lenovo_Updates\
 ```
 
 #### -log
