@@ -51,20 +51,20 @@ BIOS setup through WMI is supported on the following ThinkPad products:
 
 + All ThinkPad models from 2018 or newer
 + Selected ThinkPad models from 2017 or older:
-   + ThinkPad L430, L530, L440, L540, L450, L460, L560, L470, L570
-   + ThinkPad T430, T430s, T430u, T530, T440, T440p, T440s, T540p, T450, T450s, T550, W550s, T460, T460p, T460s, T560, T470, T470s, T470p, T570
-   + ThinkPad X1 Carbon (all generations), X1 Yoga (all generations)
-   + ThinkPad X1 Tablet (all generations)
-   + ThinkPad X230, X230 Tablet, X240, X240s, X250, X260, X270
-   + ThinkPad W530, W540, W541
-   + ThinkPad P50, P50s, P70, P40 Yoga, P51, P51s, P71
-   + ThinkPad Yoga 11e
-   + ThinkPad 11e, 13e, 13
-   + ThinkPad Helix (machine types: 20CG, 20CH)
-   + ThinkPad 10 (all generations)
-   + ThinkPad Yoga 260, Yoga 460, Yoga 370
-   + ThinkPad E470, E570
-   + ThinkPad S1, S2, S5
+  + ThinkPad L430, L530, L440, L540, L450, L460, L560, L470, L570
+  + ThinkPad T430, T430s, T430u, T530, T440, T440p, T440s, T540p, T450, T450s, T550, W550s, T460, T460p, T460s, T560, T470, T470s, T470p, T570
+  + ThinkPad X1 Carbon (all generations), X1 Yoga (all generations)
+  + ThinkPad X1 Tablet (all generations)
+  + ThinkPad X230, X230 Tablet, X240, X240s, X250, X260, X270
+  + ThinkPad W530, W540, W541
+  + ThinkPad P50, P50s, P70, P40 Yoga, P51, P51s, P71
+  + ThinkPad Yoga 11e
+  + ThinkPad 11e, 13e, 13
+  + ThinkPad Helix (machine types: 20CG, 20CH)
+  + ThinkPad 10 (all generations)
+  + ThinkPad Yoga 260, Yoga 460, Yoga 370
+  + ThinkPad E470, E570
+  + ThinkPad S1, S2, S5
 
 **ThinkCentre**:
 BIOS setup through WMI described in this document is supported on ThinkCentre M-series products only starting with M700, M800, M900.
@@ -87,15 +87,15 @@ The following interface details can be used to access Lenovo BIOS settings.
 | Lenovo_BiosSetting | Query | CurrentSetting: “Item,Value” | “WakeOnLAN,Enable” |
 | Lenovo_GetBiosSelections | Method | “Item” | “WakeOnLAN” |
 | Lenovo_SetBiosSetting | Method | “Item,Value" | “WakeOnLAN,Disable” |
-| Lenovo_WmiOpcodeInterface | Method 	| WmiOpcodePasswordAdmin:{value};<br>WmiOpcodePasswordType:{value};<br>WmiOpcodePasswordCurrent01:{value};<br>   WmiOpcodePasswordNew01:{value};<br>WmiOpcodePasswordSetUpdate; | WmiOpcodePasswordAdmin:MyPassword!;<br>WmiOpcodePasswordType:pap;<br>WmiOpcodePasswordCurrent01:123;<br>WmiOpcodePasswordNew01:456;<br>WmiOpcodePasswordSetUpdate; |
-| Lenovo_SaveBiosSettings | Method 	| none | *Also see Legacy Password Handling Section* |
-| Lenovo_DiscardBiosSettings | Method 	| “Password,Encoding,KbdLang;” | “pswd,ascii,us;” |
-| Lenovo_LoadDefaultSettings | Method 	| “Password,Encoding,KbdLang;” | “pswd,ascii,us;” |
+| Lenovo_WmiOpcodeInterface | Method  | WmiOpcodePasswordAdmin:{value};<br>WmiOpcodePasswordType:{value};<br>WmiOpcodePasswordCurrent01:{value};<br>   WmiOpcodePasswordNew01:{value};<br>WmiOpcodePasswordSetUpdate; | WmiOpcodePasswordAdmin:MyPassword!;<br>WmiOpcodePasswordType:pap;<br>WmiOpcodePasswordCurrent01:123;<br>WmiOpcodePasswordNew01:456;<br>WmiOpcodePasswordSetUpdate; |
+| Lenovo_SaveBiosSettings | Method  | none | *Also see Legacy Password Handling Section* |
+| Lenovo_DiscardBiosSettings | Method  | “Password,Encoding,KbdLang;” | “pswd,ascii,us;” |
+| Lenovo_LoadDefaultSettings | Method  | “Password,Encoding,KbdLang;” | “pswd,ascii,us;” |
 | Lenovo_SetBiosPassword <br>***Deprecated - use Lenovo_WmiOpcodeInterface*** | Method | “PasswordType,CurrentPassword, <br>NewPassword,Encoding,KbdLang;” | “pop,oldpop,newpop, <br> ascii,us;” |
 
 <div style="text-align:center;">
 
-_**Table 1.** ThinkPad Interface Details_
+***Table 1.** ThinkPad Interface Details*
 </div>
 
 **ThinkCentre/ThinkStation**:
@@ -103,16 +103,16 @@ _**Table 1.** ThinkPad Interface Details_
 | Class Name | Type | Parameter / Return | Example |
 |----------- | ---- | ---------------- | ---------------- |
 | Lenovo_BiosSetting  | Query | CurrentSetting: "Item,Value" | “WakeonLAN,Automatic” |
-| Lenovo_SetBiosSetting | Method 	| “Item,Value” | “WakeonLAN,Disabled” |
+| Lenovo_SetBiosSetting | Method  | “Item,Value” | “WakeonLAN,Disabled” |
 | Lenovo_SaveBios Settings | Method | none |   |
-| Lenovo_DiscardBios Settings 	| Method 	| none |  |
-| Lenovo_LoadDefault Settings 	| Method 	| none |  |
-| Lenovo_WmiOpcodeInterface | Method 	| WmiOpcodePasswordAdmin:{value};<br>WmiOpcodePasswordType:{value};<br>WmiOpcodePasswordCurrent01:{value};<br>   WmiOpcodePasswordNew01:{value};<br>WmiOpcodePasswordSetUpdate; | WmiOpcodePasswordAdmin:MyPassword!;<br>WmiOpcodePasswordType:pap;<br>WmiOpcodePasswordCurrent01:123;<br>WmiOpcodePasswordNew01:456;<br>WmiOpcodePasswordSetUpdate; |
+| Lenovo_DiscardBios Settings  | Method  | none |  |
+| Lenovo_LoadDefault Settings  | Method  | none |  |
+| Lenovo_WmiOpcodeInterface | Method  | WmiOpcodePasswordAdmin:{value};<br>WmiOpcodePasswordType:{value};<br>WmiOpcodePasswordCurrent01:{value};<br>   WmiOpcodePasswordNew01:{value};<br>WmiOpcodePasswordSetUpdate; | WmiOpcodePasswordAdmin:MyPassword!;<br>WmiOpcodePasswordType:pap;<br>WmiOpcodePasswordCurrent01:123;<br>WmiOpcodePasswordNew01:456;<br>WmiOpcodePasswordSetUpdate; |
 | Lenovo_SetBios Password <br>***Deprecated - use Lenovo_WmiOpcodeInterface*** | Method | "PasswordType,CurrentPassword, NewPassword, <br>Encoding,KbdLang;" | “pop,oldpop,<br>newpop,<br>ascii,us;” |
 <!--| Lenovo_BiosPasswordSettings 	| Method 	| PasswordMode:”Value”<br>-0:Legacy Mode<br>-Others: Reserved PasswordState:”Value”<br>-BIT0=1: User password is installed<br>-BIT1=1:Admin password isinstalled<br>-BIT2=1:Hard disk passwords are installed <br>MinLength:”Value”<br>-1:always one byte MaxLength:”Value”<br>-64:always 64 byte SupportedKeyboard:”Value”<br>-BIT0=1:Support US keyboard<br>-BIT1=1:Support French keyboard<br>-BIT2=1:Support German keyboard <br>SupportedEncodings:”Value”<br>-BIT0=1: support ASCII password input<br>-BIT1=1:support scancode password input <br>Port0HardDiskPasswordState:”Value”<br>-BIT0=1:User hard disk password is installed<br>-BIT1=1:Master hard disk password is installed<br>   Port1HardDiskPasswordState:”Value”<br>   Port2HardDiskPasswordState:”Value”<br>   Port3HardDiskPasswordState:”Value”<br>   Port4HardDiskPasswordState:”Value”<br>   Port5HardDiskPasswordState:”Value” 	| PasswordMode:1 <br>PasswordState:0 <br>MinLength:1 <br>MaxLength:64 <br>SuportedKeyboard:7 <br>SupportedEncodings:3 <br>Port0HardDiskPasswordState:00 <br>Port1HardDiskPasswordState:00 <br>Port2HardDiskPasswordState:00 <br>Port3HardDiskPasswordState:00 <br>Port4HardDiskPasswordState:00 <br>Port5HardDiskPasswordState:00 	| -->
 <div style="text-align:center;">
 
-_**Table 2.** ThinkCentre/ThinkStation Interface Details_
+***Table 2.** ThinkCentre/ThinkStation Interface Details*
 </div>
 
 ### Return Values
@@ -130,7 +130,7 @@ You will receive one of the following return values after making changes to BIOS
 
 <div style="text-align:center;">
 
-_**Table 3.** Return Types_
+***Table 3.** Return Types*
 </div>
 
 ## Password Handling
@@ -148,7 +148,7 @@ To support these complex BIOS passwords, a new WMI class, Lenovo_WmiOpcodeInterf
 
 The supervisor password is specified using a new class, Lenovo_WmiOpcodeInterface.
 
-The process is executed in the following order:  
+The process is executed in the following order:
 
 1. Lenovo_SetBiosSetting("Item,Value")
 1. Lenovo_WmiOpcodeInterface("WmiOpcodePasswordAdmin:MyPassword!;")
@@ -156,7 +156,7 @@ The process is executed in the following order:
 
 ### Legacy method to Set/Save a Setting
 
-In legacy models, it was required to specify the supervisor password in both Lenovo_SetBiosSetting and Lenovo_SaveBiosSettings. 
+In legacy models, it was required to specify the supervisor password in both Lenovo_SetBiosSetting and Lenovo_SaveBiosSettings.
 
 The old process is executed in the following order:
 
@@ -179,11 +179,11 @@ For legacy models, if a supervisor password is already set, you must specify tha
 |---------- |------------ |-------------------- |
 | Parameter 1 | Current Password | “abc” - as raw ascii character<br>“1e302e” - as scancodes |
 | Parameter 2 | Password encoding | “ascii”<br>“scancode”|
-| Parameter 3 | Keyboard languages <br>(used only if encoding <br>is “ascii”) 	| “us” - English US, English, UK,<br>Chinese-Traditional, Danish, Dutch, <br>  French, Canadian, Italian, Japanese, <br>  Korean, Norwegian, Polish, Portuguese, <br>  Spanish, European, Spanish-Latin American, <br>  Swiss, Turkish<br>“fr” - French-European, Belgian<br>“gr” - German, Cz |
+| Parameter 3 | Keyboard languages <br>(used only if encoding <br>is “ascii”)  | “us” - English US, English, UK,<br>Chinese-Traditional, Danish, Dutch, <br>  French, Canadian, Italian, Japanese, <br>  Korean, Norwegian, Polish, Portuguese, <br>  Spanish, European, Spanish-Latin American, <br>  Swiss, Turkish<br>“fr” - French-European, Belgian<br>“gr” - German, Cz |
 
 <div style="text-align:center;">
 
-_**Table 4.** Password parameters format, legacy password authentication_
+***Table 4.** Password parameters format, legacy password authentication*
 </div>
 
 For newer computers, you must first call Lenovo_WmiOpcodeInterface with below parameters before changing any BIOS settings, and the password only supports ascii encoding.
@@ -194,7 +194,7 @@ For newer computers, you must first call Lenovo_WmiOpcodeInterface with below pa
 
 <div style="text-align:center;">
 
-_**Table 5.** Password parameters format, modern password authentication_
+***Table 5.** Password parameters format, modern password authentication*
 </div>
 
 ## Typical Usage
@@ -214,26 +214,43 @@ This section will describe how to perform various actions using PowerShell to in
 
 Use the following command to display all current BIOS settings:
 
- ```PowerShell
- gwmi -class Lenovo_BiosSetting -namespace root\wmi |  ForEach-Object
- {if ($_.CurrentSetting -ne "") {Write-Host $_.CurrentSetting.replace(","," = ")}} 
- ```
+```PowerShell 5.1
+gwmi -class Lenovo_BiosSetting -namespace root\wmi | ForEach-Object `
+{ if ($_.CurrentSetting -ne "") { Write-Host $_.CurrentSetting.replace(",", " = ") } }
+```
+
+```PowerShell 7.x
+gcim -Namespace root/WMI -class Lenovo_BiosSetting | ForEach-Object `
+{ if ($_.CurrentSetting -ne "") { Write-Host $_.CurrentSetting.replace(",", " = ") } }
+```
 
 ### Get a Particular BIOS Setting
 
 Use the following command as a template to display a particular BIOS setting:
 
- ```PowerShell
- gwmi -class Lenovo_BiosSetting -namespace root\wmi | Where-Object{$_.CurrentSetting.split(",",[StringSplitOptions]::RemoveEmptyEntries) -eq "WakeOnLAN"} | Format-List CurrentSetting
- ```
+```PowerShell 5.1
+gwmi -class Lenovo_BiosSetting -namespace root\wmi | Where-Object `
+{ $_.CurrentSetting.split(",", [StringSplitOptions]::RemoveEmptyEntries) -eq "SecureBoot" } | Format-List CurrentSetting
+```
+
+```PowerShell 7.x
+gcim -Namespace root/WMI -class Lenovo_BiosSetting | Where-Object `
+{ $_.CurrentSetting.split(",", [StringSplitOptions]::RemoveEmptyEntries) -eq "SecureBoot" } | Format-List CurrentSetting
+```
 
 ### Get all Possible Values for a Particular BIOS Setting
 
 Use the following command as a template to display all possible values for a particular BIOS setting:
 
- ```PowerShell
- (gwmi –class Lenovo_GetBiosSelections –namespace root\wmi).GetBiosSelections("WakeOnLAN") | Format-List Selections
- ```
+```PowerShell 5.1
+(gwmi –class Lenovo_GetBiosSelections –namespace root\wmi).GetBiosSelections("BootOrder") | Format-List Selections
+```
+
+```PowerShell 7.x
+$cimLenovoGetBiosSelections = gcim -namespace root/WMI -class Lenovo_GetBiosSelections
+# Replace $SettingName with the appropriate string, i.e. BootOrder
+(icim $cimLenovoGetBiosSelections -MethodName "GetBiosSelections" -Arguments @{ Item = "$SettingName" }).Selections
+```
 
 ### Set and Save a BIOS Setting on newer models
 
@@ -241,21 +258,36 @@ Use the following commands to set the value of a BIOS setting. This is a multi-s
 
 **1**. Change the setting
 
- ```PowerShell
- (gwmi -class Lenovo_SetBiosSetting –namespace root\wmi).SetBiosSetting("WakeOnLANDock,Disable")
- ```
+```PowerShell 5.1
+(gwmi -class Lenovo_SetBiosSetting –namespace root\wmi).SetBiosSetting("WakeOnLANDock,Disable")
+```
+
+```PowerShell 7.x
+$cimSetBiosSetting = gcim -namespace root/WMI -class Lenovo_SetBiosSetting
+icim $cimSetBiosSetting -MethodName SetBiosSetting -Arguments @{ parameter = "WakeOnLANDock,Disable" }
+```
 
 **2**. If a supervisor password is set, specify the supervisor password, otherwise skip this step.
 
- ```PowerShell
- (gwmi -class Lenovo_WmiOpcodeInterface -namespace root\wmi).WmiOpcodeInterface("WmiOpcodePasswordAdmin:MyPassword")
- ```
+```PowerShell 5.1
+(gwmi -class Lenovo_WmiOpcodeInterface -namespace root\wmi).WmiOpcodeInterface("WmiOpcodePasswordAdmin:MyPassword")
+```
+
+```PowerShell 7.x
+$cimOpInt = gcim -namespace root/WMI -class Lenovo_WmiOpcodeInterface
+icim $cimOpInt -MethodName WmiOpcodeInterface -Arguments @{ Parameter = "WmiOpcodePasswordAdmin:MyPassword"}
+```
 
 **3**. Save the new setting
 
- ```PowerShell
- (gwmi -class Lenovo_SaveBiosSettings -namespace root\wmi).SaveBiosSettings()
- ```
+```PowerShell 5.1
+(gwmi -class Lenovo_SaveBiosSettings -namespace root\wmi).SaveBiosSettings()
+```
+
+```PowerShell 7.x
+$cimSaveBiosSettings = gcim -namespace root/WMI -class Lenovo_SaveBiosSettings
+icim $cimSaveBiosSettings -MethodName SaveBiosSettings
+```
 
 ?>The setting string is case sensitive and should be in the format ```<item>,<value>```.
 
@@ -266,13 +298,23 @@ Use the following command as a template to set the value of a setting when a sup
 ?>The setting string is case sensitive and should be in the format
 ```<item>, <value>, <password + encoding>```.
 
- ```PowerShell
- (gwmi -class Lenovo_SetBiosSetting –namespace root\wmi).SetBiosSetting("WakeOnLAN,Disable,password,ascii,us")
- ```
+```PowerShell 5.1
+(gwmi -class Lenovo_SetBiosSetting –namespace root\wmi).SetBiosSetting("WakeOnLAN,Disable,password,ascii,us")
+```
 
- ```PowerShell
- (gwmi -class Lenovo_SaveBiosSettings -namespace root\wmi).SaveBiosSettings("password,ascii,us”)
- ```
+```PowerShell 7.x
+$cimSetBiosSetting = gcim -Namespace root/WMI -class Lenovo_SetBiosSetting
+icim $cimSetBiosSetting -MethodName SetBiosSetting -Arguments @{ parameter = "WakeOnLANDock,Disable,password,ascii,us" }
+```
+
+```PowerShell 5.1
+(gwmi -class Lenovo_SaveBiosSettings -namespace root\wmi).SaveBiosSettings("password,ascii,us”)
+```
+
+```PowerShell 7.x
+$cimSaveBiosSettings = gcim -Namespace root/WMI -class Lenovo_SaveBiosSettings
+icim $cimSaveBiosSettings -MethodName SaveBiosSettings -Arguments @{ parameter = "password,ascii,us" }
+```
 
 ### Change a BIOS Password
 
@@ -281,27 +323,44 @@ set an initial password; it can only be used to change an existing password. Thi
 
 **1**. Specify the password type
 
- ```PowerShell
- (gwmi -class Lenovo_WmiOpcodeInterface -namespace root\wmi).WmiOpcodeInterface("WmiOpcodePasswordType:pap")
- ```
+```PowerShell 5.1
+(gwmi -class Lenovo_WmiOpcodeInterface -namespace root\wmi).WmiOpcodeInterface("WmiOpcodePasswordType:pap")
+```
+
+```PowerShell 7.x
+$cimOpInt = gcim -namespace root/WMI -class Lenovo_WmiOpcodeInterface
+icim $cimOpInt -MethodName WmiOpcodeInterface -Arguments @{ Parameter = "WmiOpcodePasswordType:pap" }
+```
 
 **2**. Specify the current password
 
- ```PowerShell
- (gwmi -class Lenovo_WmiOpcodeInterface -namespace root\wmi).WmiOpcodeInterface("WmiOpcodePasswordCurrent01:MyCurrentPassword")
- ```
+```PowerShell 5.1
+(gwmi -class Lenovo_WmiOpcodeInterface -namespace root\wmi).WmiOpcodeInterface("WmiOpcodePasswordCurrent01:MyCurrentPassword")
+```
+
+```PowerShell 7.x
+icim $cimOpInt -MethodName WmiOpcodeInterface -Arguments @{ Parameter = "WmiOpcodePasswordCurrent01:MyCurrentPassword" }
+```
 
 **3**. Specify the new password
 
- ```PowerShell
- (gwmi -class Lenovo_WmiOpcodeInterface -namespace root\wmi).WmiOpcodeInterface("WmiOpcodePasswordNew01:MyNewPassword")
- ```
+```PowerShell 5.1
+(gwmi -class Lenovo_WmiOpcodeInterface -namespace root\wmi).WmiOpcodeInterface("WmiOpcodePasswordNew01:MyNewPassword")
+```
+
+```PowerShell 7.x
+icim $cimOpInt -MethodName WmiOpcodeInterface -Arguments @{ Parameter = "WmiOpcodePasswordNew01:MyNewPassword" }
+```
 
 **4**. Save the new password
 
- ```PowerShell
- (gwmi -class Lenovo_WmiOpcodeInterface -namespace root\wmi).WmiOpcodeInterface("WmiOpcodePasswordSetUpdate")
- ```
+```PowerShell 5.1
+(gwmi -class Lenovo_WmiOpcodeInterface -namespace root\wmi).WmiOpcodeInterface("WmiOpcodePasswordSetUpdate")
+```
+
+```PowerShell 7.x
+icim $cimOpInt -MethodName WmiOpcodeInterface -Arguments @{ Parameter = "WmiOpcodePasswordSetUpdate" }
+```
 
 The password type can be one of the following values:
 
@@ -327,7 +386,7 @@ To change the boot order, complete the following steps:
 + Determine the available boot devices by using the Lenovo_GetBiosSelections class.
 + To set a new boot order, use the Lenovo_SetBiosSetting class, then use the Lenovo_SaveBiosSetting class to save the settings. In the following example, the CD drive 0 is the first boot device and hard disk drive 0 is the second startup device.
 
- ```ATAPICD0:HDD0```
+```ATAPICD0:HDD0```
 
 **ThinkCentre | ThinkStation**:
 
@@ -336,12 +395,12 @@ To change the boot order, complete the following steps:
 + Determine the current setting for “BootOrder” by using the Lenovo_BiosSetting class.
 + To set a new boot order, use the Lenovo_SetBiosSettingclass, then use the Lenovo_SaveBiosSetting class to save the settings. Specify a new boot order by listing the boot devices in order, separated by colons. Devices that are not specified are excluded from the boot order. In the following example, the Network Card drive is the first boot device and SATA drive 1 is the second boot device and so on.
 
- Example: Change primary boot sequence,
- ```"Primary Boot Sequence” “Network 1:SATA 1:USB HDD:SATA 2:USB CDROM:USB Key"```
+Example: Change primary boot sequence,
+```"Primary Boot Sequence" "Network 1:SATA 1:USB HDD:SATA 2:USB CDROM:USB Key"```
 
-?> 	**1**. “Boot Order” settings are case sensitive.<br>
-	**2**. Settings may different from projects, recommend List all settings first to identify the BIOS setting wants to change, and put all the listed device to the script parameters, just sequence could be changed. <br>
-	**3**. After making changes to the BIOS settings, you must reboot the computer before the changes will take effect.
+?>  **1**. "Boot Order" settings are case sensitive.<br>
+**2**. Settings may different from projects, recommend List all settings first to identify the BIOS setting wants to change, and put all the listed device to the script parameters, just sequence could be changed. <br>
+**3**. After making changes to the BIOS settings, you must reboot the computer before the changes will take effect.
 
 ### Restoring Default Settings
 
@@ -349,25 +408,25 @@ To restore default BIOS settings, use the Lenovo_LoadDefaultSettings class, then
 
 ### Limitations and Notes
 
- **1**. BIOS settings cannot be changed at the same boot as power-on passwords and hard disk passwords. Therefore, Administrator password, POP ,SMP and HDP cannot be changed
+**1**. BIOS settings cannot be changed at the same boot as power-on passwords and hard disk passwords. Therefore, Administrator password, POP ,SMP and HDP cannot be changed
 simultaneously during one power cycle. If you want to change BIOS settings and passwords, you must reboot the system after changing one of them.
 
- **2**. A password cannot be set using this method when one does not already exist. Passwords can only be changed or cleared.
+**2**. A password cannot be set using this method when one does not already exist. Passwords can only be changed or cleared.
 
- **3**. To remove the power-on password when a supervisor password is set, it must be done in three steps total:
- <ol type="a">
-  <li> Change the supervisor password. It’s OK to specify the same password as both the current and the new, in case you don’t really want to change it. But you must do this step.</li>
-  <li> Change the power-on password by specifying the current password and a NULL string as the new password</li>
-  <li> Reboot (do not reboot between steps A and B) </li>
- </ol>
+**3**. To remove the power-on password when a supervisor password is set, it must be done in three steps total:
+<ol type="a">
+<li> Change the supervisor password. It’s OK to specify the same password as both the current and the new, in case you don’t really want to change it. But you must do this step.</li>
+<li> Change the power-on password by specifying the current password and a NULL string as the new password</li>
+<li> Reboot (do not reboot between steps A and B) </li>
+</ol>
 
- **4**. Some security-related settings can only be disabled when a Supervisor password exists. For example, the following BIOS settings cannot be changed from Enable to Disable unless you have a Supervisor password:
- <ol type="a">
-  <li> SecureBoot</li>
-  <li> SecureRollbackPrevention</li>
-  <li> PhysicalPresneceForTpmClear</li>
-  <li> PhysicalPresenceForTpmProvision</li>
- </ol>
+**4**. Some security-related settings can only be disabled when a Supervisor password exists. For example, the following BIOS settings cannot be changed from Enable to Disable unless you have a Supervisor password:
+<ol type="a">
+<li> SecureBoot</li>
+<li> SecureRollbackPrevention</li>
+<li> PhysicalPresneceForTpmClear</li>
+<li> PhysicalPresenceForTpmProvision</li>
+</ol>
 
 ## Security
 
@@ -380,7 +439,7 @@ connection as follows:
 
 See Appendix A Sample Visual Basic scripts for configuring BIOS settings for sample scripts used to implement WMI-based administration scripts that include these parameters for encryption.
 
-<!-- 
+<!--
 
 ### Changing an Existing BIOS Password
 
@@ -413,7 +472,7 @@ The format for password parameters is ″pap,abc,def,ascii,us″ with descriptio
 | Parameter 2 | Current password | “abc”:raw ascii character<br> “1e302e”:scancode |
 | Parameter 3 | New password<br> string | “def”:raw ascii character <br> “201221”:scancode |
 | Parameter 4 | Password<br> encoding | “ascii” <br> “Scancode” |
-| Parameter 5 	| Keyboard Languages | •“us″- English US, English UK, <br> Chinese-Traditional, Danish, Dutch, <br> French-Canadian, Italian, Japanese, <br> Korean, Norwegian, Polish, Portuguese, <br> Spanish-European, Spanish-Latin American,<br> Swiss, Turkish <br> •″fr″- French-European, Belgian <br> •″gr″ - German, Czech, Slovak, Slovenian 	|
+| Parameter 5  | Keyboard Languages | •“us″- English US, English UK, <br> Chinese-Traditional, Danish, Dutch, <br> French-Canadian, Italian, Japanese, <br> Korean, Norwegian, Polish, Portuguese, <br> Spanish-European, Spanish-Latin American,<br> Swiss, Turkish <br> •″fr″- French-European, Belgian <br> •″gr″ - German, Czech, Slovak, Slovenian  |
 
 <div style="text-align:center;">
 
@@ -425,20 +484,20 @@ _**Table 7.** Password parameters format, changing existing hardware password 20
 The format for password parameters is as below:
 For example, Password Type is pap, current password is 123, new password will be 456. The parameter should be:
 
-	WmiOpcodePasswordType:pap;
-	WmiOpcodePasswordCurrent01:123;
-	WmiOpcodePasswordNew01:456;
-	WmiOpcodePasswordSetUpdate;
+ WmiOpcodePasswordType:pap;
+ WmiOpcodePasswordCurrent01:123;
+ WmiOpcodePasswordNew01:456;
+ WmiOpcodePasswordSetUpdate;
 
 The different parameters with different key words, each parameter needa Lenovo_WmiOpcodeInterface method call, and the parameter ”WmiOpcodePasswordSetUpdate;” MUST be the LAST call to make the change take effect.
 The parameters are described in Table 8 , the supported characters arelisted in Table 9.
 
-| Parameter                  	| Description                                               	| Possible Seletctions                                                                                                                                                                                                     	|
-|----------------------------	|-----------------------------------------------------------	|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| WmiOpcodePasswordType      	| Password type <br>string                                  	| “pap”:Administrator   password<br>“pop”:Power-on password<br>“hdpx”: Hard Disk password, <br> x means the current HDD’s num,   <br> start from 0, hdd0 means the first   HDD.<br>Example:<br> WmiOpcodePasswordType:pap; 	|
-| WmiOpcodePasswordCurrent01 	| Current password <br>string                               	| “abc”:raw ascii character <br>Example:<br> WmiOpcodePasswordCurrent01:abc;                                                                                                                                               	|
-| WmiOpcodePasswordNew01     	| New password <br>string                                   	| “def”:raw ascii character <br>Example: <br> WmiOpcodePasswordCurrent01:def;                                                                                                                                              	|
-| WmiOpcodePasswordSetUpdate 	| The last parameter <br>to make the change <br>take effect 	| WmiOpcodePasswordSetUpdate;                                                                                                                                                                                              	|
+| Parameter                   | Description                                                | Possible Seletctions                                                                                                                                                                                                      |
+|---------------------------- |----------------------------------------------------------- |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| WmiOpcodePasswordType       | Password type <br>string                                   | “pap”:Administrator   password<br>“pop”:Power-on password<br>“hdpx”: Hard Disk password, <br> x means the current HDD’s num,   <br> start from 0, hdd0 means the first   HDD.<br>Example:<br> WmiOpcodePasswordType:pap;  |
+| WmiOpcodePasswordCurrent01  | Current password <br>string                                | “abc”:raw ascii character <br>Example:<br> WmiOpcodePasswordCurrent01:abc;                                                                                                                                                |
+| WmiOpcodePasswordNew01      | New password <br>string                                    | “def”:raw ascii character <br>Example: <br> WmiOpcodePasswordCurrent01:def;                                                                                                                                               |
+| WmiOpcodePasswordSetUpdate  | The last parameter <br>to make the change <br>take effect  | WmiOpcodePasswordSetUpdate;                                                                                                                                                                                               |
 
 <div style="text-align:center;">
 
@@ -468,7 +527,7 @@ Sample scripts referenced below are provided on Lenovo’s support website under
  Copyright (C) Microsoft Corporation. All rights reserved.
   
    LoadDefaultSettings: Success
-   SaveBiosSettings: Success 
+   SaveBiosSettings: Success
    ```
 
 ### Restore Default Settings if an Administrator Password Exists
@@ -488,20 +547,20 @@ Sample scripts referenced below are provided on Lenovo’s support website under
  WakeOnLAN
    current setting = ACOnly
    possible settings = Disable, ACOnly, ACandBattery, Enable
-   
+
  EthernetLANOptionROM
    current setting = Enable
    possible settings = Disable, Enable
-   
+
  IPv4NetworkStack
    current setting = Enable
    possible settings = Disable, Enable
-   
+
  IPv6NetworkStack
    current setting = Enable
    possible settings = Disable, Enable
-   
- (additional output omitted here) 
+
+ (additional output omitted here)
  ```
 
 ### List all BIOS Setting on a Remote Computer
@@ -552,7 +611,7 @@ supervisor password exists.
  ```
  Microsoft (R) Windows Script Host Version 5.812
  Copyright (C) Microsoft Corporation. All rights reserved.
- 
+
  WakeOnLAN, Disable, password, ascii, us;
    SetBiosSetting: Success
  WakeOnLAN, Disable, password, ascii, us;
@@ -583,7 +642,7 @@ Use the sample scripts in the ZIP file "Sample Scripts for BIOS Deployment Guide
  ```
  Microsoft (R) Windows Script Host Version 5.812
  Copyright (C) Microsoft Corporation. All rights reserved.
- 
+
  SetBiosPassword: Success
  ```
 
