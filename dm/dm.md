@@ -178,8 +178,11 @@ An example from Resource Explorer
 
 ![](../img/guides/dm/image14.PNG)
 </div>
-Sample report of what can be gathered using SSRS
+Example of what can be gathered using SSRS
+
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
 ![](../img/guides/dm/image15.PNG)
+
+?> Sample report can be downloaded [here](https://download.lenovo.com/cdrt/docs/LenovoDockManager.zip). Update the Data Source properties for your environment.
 </div>
