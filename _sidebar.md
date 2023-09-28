@@ -8,6 +8,7 @@
 -- [Lenovo Deployment <br>Assistant](lda/lda_top.md)
 -- [System Update, <br>Update Retriever, <br>Thin Installer](su/su_top.md)
 -- [Think BIOS Config Tool](tbct/tbct_top.md)
+-- [Lenovo Device Management Module](ldm/ldm_top.md)
 
 
 <!--
@@ -19,7 +20,6 @@
 -- [Docks Reference](docks/docks_top.md)
 -- [BIOS Reference](bios/bios_top.md)
 -- [AMD DASH](dash/dash_top.md)
--- [Lenovo Device Management](ldm/ldm_top.md)
 
 ---
 - [FAQ](faq/faq.md)

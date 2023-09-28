@@ -1,35 +1,105 @@
-## Lenovo Device Management  <!-- {docsify-ignore} -->
+# Lenovo Device Management Module <!-- {docsify-ignore} -->
 
+## Export-LnvUpdateRetrieverConfig
 
-**Key**|**Value**
----|---
----|---
-Find-LnvBiosCode|Find-LnvBiosCode
-Find-LnvDockModel|Find-LnvDockModel
-Find-LnvDriverPack|Find-LnvDriverPack
-Find-LnvMachineType|Find-LnvMachineType
-Find-LnvModel|Find-LnvModel
-Find-LnvUpdate|Find-LnvUpdate
-Get-LnvAvailableBiosVersion|Get-LnvAvailableBiosVersion
-Get-LnvBiosCode|Get-LnvBiosCode
-Get-LnvBiosPasswordsSet|Get-LnvBiosPasswordsSet
-Get-LnvBiosUpdateUrl|Get-LnvBiosUpdateUrl
-Get-LnvBiosVersion|Get-LnvBiosVersion
-Get-LnvCVE|Get-LnvCVE
-Get-LnvDriverPack|Get-LnvDriverPack
-Get-LnvMachineType|Get-LnvMachineType
-Get-LnvModelName|Get-LnvModelName
-Get-LnvProductNumber|Get-LnvProductNumber
-Get-LnvSerial|Get-LnvSerial
-Get-LnvUpdate|Get-LnvUpdate
-Get-LnvUpdatesRepo|Get-LnvUpdatesRepo
-Invoke-LnvDiagnostic|Invoke-LnvDiagnostic
-Set-LnvSUCommandLine|Set-LnvSUCommandLine
-Set-LnvSULogging|Set-LnvSULogging
-Set-LnvSUSchedule|Set-LnvSUSchedule
+### Description
+Generates a .reg file containing an export of the Update Retriever settingsfound at:
+```HKLM\Software\Wow6432Node\Lenovo\Update Retriever\Preferences\UserSetting\General```  
 
+These settings include the local repository path that was last used and the list of models in the Systems list that can be searched for in Update Retirever.
 
+### Parameter
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+| Outfile | String | True |
 
+### Example
+```Export-LnvUpdateRetrieverConfig -Outfile C:\users\admin\Downloads\urconfig```
+
+## Find-LnvBiosCode
+
+### Description
+Shows results for search string representing model friendly name or machine type. The BIOS code is the first four characters of the BIOS image name. It is a useful data point for uniquely targeting a model.
+  
+### Parameter
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+| ModelName | String | True |
+
+### Example
+```Find-LnvBiosCode -ModelName 'ThinkPad X13 Yoga Gen 4'```
+
+```Find-LnvBiosCode 'ThinkPad X13 Yoga Gen 4'```
+
+## Find-LnvDockModel
+
+### Description
+- The first four characters of the dock product number is the machine type.   
+- This command returns the dock model name by searching for the machine type.   
+- The -Details switch controls whether the full dock details are displayed.   
+- If -Details is not specified then only the dock name will be returned.   
+- If -Details is provided then the PnP IDs for the USB Billboard device and the audio device will be shown. These can be used when targeting laptops that have this dock attached.
+
+### Parameter
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+| MachineType | String | True |
+| Details |  | False |
+
+### Example
+```Find-LnvDockModel -MachineType 40AN -Details```
+
+## Find-LnvDriverPack
+
+### Description
+Returns a list of the available driver packs for the machine type specified which includes the OS and the OS build version, the CRC of the pack, and the URL to the package executable. The OS will be "win10" or "win11" and the OS build version will be the four character designator like "21H2" or "22H2".
+
+### Parameter
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+| MachineType | String | True |
+
+### Example
+```Find-LnvDriverPack -MachineType 21DD```
+```Find-LnvDriverPack 21DD```
+``` $url = (Find-LnvDriverPack -MachineType 21DD | Where-Object { (($_.OS -eq 'win10') -and ($_.version -eq '21H2')) }).'#text'```
+
+	OUTPUTS:
+	An object consisting of "os", "version", "crc", "#text" elements where "#text" represents the URL to the package executable file.
+
+?> The Where-Object cmdlet can be used to filter on OS and version to return just one URL.  The URL is in the '#text' field of the returned object.
+
+## Find-LnvMachineType
+
+### Description
+By specifying a search string representing model friendly name, this cmdlet will return the possible machine types that match. Most models have more than one possible machine type. Providing a more detailed model name to search for will help reduce the number of results returned.
+
+### Parameter
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+| ModelName | String | True |
+
+### Example
+```$ Find-LnvMachineType -ModelName 'ThinkPad P1 Gen 5'```
+```$ Find-LnvMachineType -ModelName 'ThinkPad P1 '```
+
+?> A space after the model name such as 'ThinkPad P1 ' will limit the search to ThinkPad P1 models and not include ThinkPad P15 or ThinkPad P16 models. Likewise, use 'ThinkPad X1 ' to search for ThinkPad X1 Carbon and Yoga models and exclude ThinkPad X13 models.
+
+## Find-LnvModel
+
+### Description
+This cmdlet returns the friendly model name that will be found in WMI on a device with the specified machine type. This is useful in cases where a management portal may display the 10 character machine type model number and the user needs to know the model name of that device.
+
+### Parameter
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+| MachineType | String | True |
+
+### Example
+```Find-LnvModel -MachineType 21DD```
+```Find-LnvModel 21DD```
+
+?>The output will also show the other machine types associated with this model.
 
 
 ## Find-LnvUpdate
@@ -84,23 +154,14 @@ It is then possible to get the executable or the package descriptor like this:
 
 ### Parameters	
 
-#### MachineType
-Mandatory: True
-
-#### PackageType
-Mandatory: False
-
-#### RebootType
-Mandatory: False
-
-#### Severity
-Mandatory: False
-
-#### WindowsVersion
-Mandatory: False
-
-#### PackageID
-Mandatory: False
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+| MachineType | String | True |
+| PackageType | String | False |
+| RebootType | String | False |
+| Severity |  | False |
+| WindowsVersion |  | False |
+| PackageID |  | False |
 
 ### Example
 ```Find-LnvUpdate -MachineType 20C1 -PackageType 2 -RebootType 1 -WindowsVersion 7```
@@ -108,6 +169,40 @@ Mandatory: False
 ```Find-LnvUpdates 20C1 2```
 
 ```Find-LnvUpdate 20C1 -PackageType 2```
+
+## Get-LnvAvailableBiosVersion
+
+### Description
+If you specify a machine type, the cmdlet will return the version of the  currently available BIOS update. If no machine type is specified, the cmdlet will use the running system's machine type and will compare the version of the currently available update to the version of the system and return an alert if the update is newer. The -Download switch can be used to trigger the download of the current update in either case.
+
+### Parameters	
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+| MachineType | String | False |
+| OS | String | False |
+| Download |  | False |
+
+?> OS is strictly optional as generally one BIOS update package is released for both Win10 and Win11.
+
+## Get-LnvBiosCode
+
+### Description
+ This cmdlet will read the BIOS image name from the device and return the first four characters which can be used as the BIOS code in targeting actions to the model uniquely.
+ 
+### Example
+```Get-LnvBiosCode```
+
+## Get-LnvBiosPasswordsSet
+
+### Description
+This cmdlet gets the BIOS password state of the system and interprets it to return the set of passwords set on the device. If the -Number switch is used, then the PasswordState number will be returned instead.
+
+### Parameters	
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+| Number |  | False |
+
+!>THIS CMDLET REQUIRES ADMIN RIGHTS TO EXECUTE. Make sure the PowerShell session is running with elevated privileges.
 
 
 ## Get-LnvBiosUpdateUrl
@@ -117,14 +212,40 @@ This command will return the URL to the current BIOS update package for either t
 
 ### Parameters
 
-#### MachineType
-Mandatory: False
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+| MachineType | String | False |
 
 ### Example
 	
 ```Get-LnvBiosUpdateUrl -MachineType '21AH'```
+```Get-LnvBiosUpdateUrl```
 
 ?> The device must be a Lenovo ThinkPad, ThinkCentre, or ThinkStation.
+
+## Get-LnvBiosVersion
+
+### Description
+Returns the BIOS version in the specified format.
+
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+| Format | String/Decimal | False |
+
+?> String  : Returns the full string value of SMBIOSBIOSVersion   
+  Decimal : Returns a standard version string in the format of n.nn
+   
+### Example
+```Get-LnvBiosVersion -Format 'decimal'```
+```Get-LnvBiosVersion```
+
+?>This function handles the different methods used to express the BIOS version
+between ThinkPad and ThinkCentre/ThinkStation. Desktop BIOS will show build
+number in hex and the 'decimal' format will convert to a standard version 
+string format. 
+
+?>If no Format is specified, the function will return the full string of the
+SMBIOSBIOSVersion value.
 
 
 ## Get-LnvCVE
@@ -137,15 +258,81 @@ type of the running system will be used. CVE Data may not be available for all
 machine types.
 
 ### Parameters
-
-#### MachineType
-The four-character machine type of the system to check for.
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+| MachineType | String | False |
 
 ### Example
 ```Get-LnvCVE -MachineType 21DD```
 
 ```Get-LnvCVE```
 
+
+## Get-LnvDriverPack
+
+### Description
+This cmdlet will download the SCCM Driver Pack based on the specified machine type, OS and OS build version. Tab completion can be used to select the OS build version in the correct format. The cmdlet will leverage the default browser for downloading the pack so the user can select the location to save the file to.
+
+### Parameters
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+| MachineType | String | True |
+| WindowsVersion |  | True |
+| OSBuildVersion | String | True |
+
+
+## Get-LnvMachineType
+
+### Description
+Returns the 4 character machinetype of the running device.
+
+### Parameters
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+|  |  |  |
+
+### Example
+```Get-LnvMachineType```
+
+## Get-LnvModelName
+
+### Description
+Returns the model name of the running device.
+
+### Parameters
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+|  |  |  |
+
+### Example
+```Get-LnvModelName```
+
+## Get-LnvProductNumber
+
+### Description
+Returns the full 10-character product number of the running device.
+
+### Parameters
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+|  |  |  |
+
+### Example
+```Get-LnvProductNumber```
+
+
+## Get-LnvSerial
+
+### Description
+Returns the serial number of the running device.
+
+### Parameters
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+|  |  |  |
+
+### Example
+```Get-LnvSerial```
 
 
 ## Get-LnvUpdate
@@ -175,15 +362,13 @@ This script allows users to search for updates that will be downloaded to a fold
 
 ### Parameters
 
-#### MachineType
-
-#### WindowsVersion
-
-#### RepositoryFolder
-
-#### PackageType
-	
-#### RebootType
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+| MachineType | String | True |
+| WindowsVersion |  |  |
+| RepositoryFolder | String |  |
+| PackageType | String |  |
+| RebootType | String |  |
 
 ### Example
 
@@ -200,20 +385,25 @@ This script allows users to search for updates that will be downloaded to a fold
 For instances where Update Retriever cannot be used to create the local repository or where full automation of the repository creation is desired. This PowerShell script can be customized and executed on a regular basis to get the latest update packages. 
 
 ### Parameters  
-#### MachineTypes
-Mandatory: False   
-Data type: String  
-Must be a string of machine type ids separated with comma and surrounded by single quotes. Although multiple machine types can be specified, it is recommended to keep the list small to reduce download times for all updates. If no value is specified, the machine type of the device running the script will be used.
 
-#### OS
-Mandatory: False   
-Data type: String   
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+| MachineType | String | False |
+| OS | String | False |
+| PackageTypes | String | False |
+| RebootTypes | String | False |
+| RepositoryPath | String | True |
+| LogPath | String | False |
+| RT5toRT3 | Switch | False |
+| ScanOnly | Switch | False |
+
+  
+
+#### OS  
 Must be a string of '10' or '11'. The default if no value is specified will
 be determined by the OS of the device the script is running on.
 
-#### PackageTypes  
-Mandatory: False   
-Data type: String   
+#### PackageTypes   
 Must be a string of Package Type integers separated by commas and surrounded by single quotes. The possible values are:<br>
 &nbsp;&nbsp; 1: Application<br>
 &nbsp;&nbsp; 2: Driver<br>
@@ -221,9 +411,7 @@ Must be a string of Package Type integers separated by commas and surrounded by 
 &nbsp;&nbsp; 4: Firmware<br>
 The default if no value is specified will be all package types.
 
-#### RebootTypes
-Mandatory: False   
-Data type: String   
+#### RebootTypes  
 Must be a string of integers, separated by commas, representing the different boot types and surrounded by single quotes:<br>
 &nbsp;&nbsp; 0: No reboot required<br>
 &nbsp;&nbsp; 1: Forces a reboot (not recommended in a task sequence)<br>
@@ -232,28 +420,20 @@ Must be a string of integers, separated by commas, representing the different bo
 &nbsp;&nbsp; 5: Delayed forced reboot (used by many firmware updates)<br>
 The default if no value is specified will be all RebootTypes. 
 
-#### RepositoryPath
-Mandatory: True   
-Data type: string   
+#### RepositoryPath  
 Must be a fully qualified path to the folder where the local repository will be saved. Must be surrounded by single quotes.
 
-#### LogPath
-Mandatory: False    
-Data type: String   
+#### LogPath  
 Must be a fully qualified path. If not specified, ti-auto-repo.log will be  stored in the repository folder.   
 Must be surrounded by single quotes.
 
-#### RT5toRT3
-Mandatory: False   
-Data type: Switch   
+#### RT5toRT3  
 Specify this parameter if you want to convert Reboot Type 5 (Delayed Forced Reboot) packages to be Reboot Type 3 (Requires Reboot). Only do this in task sequence scenarios where a Restart can be performed after the Thin Installer task. Use the -noreboot parameter on the Thin Installer command line to suppress reboot to allow the task sequence to control the restart.
 
 ?>This parameter can only be used when Thin Installer will be processing
 the updates in the repository.
 
-#### ScanOnly
-Mandatory: False   
-Data type: Switch   
+#### ScanOnly  
 Specify this parameter to create a repository that only contains the package
 descriptor XML and external detection routine files to be used with Thin 
 Installer's SCAN action.
@@ -276,20 +456,22 @@ Installer's SCAN action.
 ### Description
 Script to run diagnostic test on Lenovo devices
 
-###Parameters
+### Parameters
 
-#### RunAll
-Data type: String  
-Must be either "default" or one of the following modes [quick, extended, only-unattended], 
-or a combination of the modes [quick, extended, only-unattended]
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+| RunAll | String |  |
+| RunOnModules | String |  |
 
-#### RunOnModules
-Data type: String   
+
+#### RunAll 
+Must be either "default" or one of the following modes [quick, extended, only-unattended], or a combination of the modes [quick, extended, only-unattended].
+
+#### RunOnModules  
 Must be one of the following modules   
 [audio, audio_controller, battery, bluetooth, camera, cpu, display, display_interface, fan, 
 fingerprint, keyboard, memory, motherboard, mouse_devices, optical_drive, pci_express, raid, 
-sensors, storage, touchpad_devices, touchscreen, video_card, wired_ethernet, wireless], 
-or a combination of comma-separated modules
+sensors, storage, touchpad_devices, touchscreen, video_card, wired_ethernet, wireless], or a combination of comma-separated modules.
 
 	INPUTS:
 	None
@@ -314,52 +496,41 @@ or a combination of comma-separated modules
 ## Set-LnvSUCommandLine
 
 ### Description
-Run Script to set Admin command line Windows Registry settings for Lenovo System Update
+Run Script to set Admin command line Windows Registry settings for Lenovo System Update.
   
 ### Parameters
 
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+| Search | String | True |
+| Action | String | True |
+| Scheduler | Int | False |
+| IncludereBootPackages | String | False |
+| PackageTypes | String | False |
+| NoReboot | False | Switch |
+| NoIcon | Switch | False |
+| RebootPrompt | Switch | False |
+| Repository | String | False |
+| ExportToWmi | Switch | False |
+
 #### Search
-Mandatory: True  
-Data type: String  
-Must be one of the following values [C, R, A]
+Must be one of the following values [C, R, A].
 
 #### Action
-Mandatory: True  
-Data type: String  
-Must be one of the following values [DOWNLOAD, LIST, INSTALL]
+Must be one of the following values [DOWNLOAD, LIST, INSTALL].
 
-#### Scheduler
-Data type: Int  
-Must be 1 or 0
 
-#### IncludereBootPackages
-Data type: String   
-Must be one of the following values [1, 3, 4, 5], or multiple values separated with a comma
+#### IncludereBootPackages 
+Must be one of the following values [1, 3, 4, 5], or multiple values separated with a comma.
 
-#### PackageTypes
-Data type: String  
-Must be one of the following values [0, 1, 2, 3, 4], or multiple values separated with a comma
+#### PackageTypes  
+Must be one of the following values [0, 1, 2, 3, 4], or multiple values separated with a comma.If not specified, System Update will use the Lenovo Support servers.
 
-#### NoReboot
-Data type: Int  
-Must be 1 or 0  
 
-#### NoIcon
-Data type: Int  
-Must be 1 or 0  
+#### Repository 
+Must be a local folder path, a UNC file share path, or a URL to a web-hosted repository.
 
-#### RebootPrompt
-Data type: Int   
-Must be 1 or 0   
-
-#### Repository
-Data type: String   
-Must be a local folder path, a UNC file share path, or a URL to a web-hosted repository  
-
-#### ExportToWmi
-Data type: Int  
-Must be 1 or 0  
-
+#### ExportToWmi  
 
 	INPUTS:
 	None.
@@ -384,59 +555,86 @@ Must be 1 or 0
 ## Set-LnvSULogging
 
 ### Description
-Enable or disable logging for the System Update Addin for Commercial Vantage
+Enable or disable logging for the System Update Addin for Commercial Vantage.
 
 ### Parameters
-#### Enable
-Enables logging
 
-#### Disable
-Disables logging
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+| Enable |  |  |
+| Disable |  |  |
 
 ### Example
 
 ```Set-LnvSULogging -Enable```
 
-?>If logging is enabled, log path is located at %ProgramData%\Lenovo\Vantage\AddinData\LenovoSystemUpdateAddin\logs
+?>If logging is enabled, log path is located at ```%ProgramData%\Lenovo\Vantage\AddinData\LenovoSystemUpdateAddin\logs```
+
+## Set-LnvSULogging
+
+### Description
+This cmdlet sets the appropriate registry key to cause the System Update Add-in to perfrom logging during update sessions. If neither the -Enable or -Disable switches are specified, then logging will be ENABLED.
+
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+| Enable |  |  |
+| Disable |  |  |
+
+### Example
+```Set-LnvSULogging -Enable```
+
+?>If logging is enabled, log path is located at ```%ProgramData%\Lenovo\Vantage\AddinData\LenovoSystemUpdateAddin\logs```
+
+
 
 ## Set-LnvSUSchedule
 
 ### Description
-Script to schedule Lenovo System Update application via Task shceduler
+Script to schedule Lenovo System Update application via Task shceduler.
 
 ### Parameters
 
-#### RunAt
-Mandatory: True  
-Data type: String  
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+| RunAt | String | True |
+| Frequency | String | True |
+| WeeksInterval | String |  |
+| DaysInterval | String |  |
+| DaysOfWeek | String |  |
+
+
+#### RunAt 
 Must correspond to the following formats:  
 yyyy-MM-ddTHH:mm:ss  
 yyyy-MM-dd  
 HH:mm:ss  
 
-#### Frequency
-Mandatory: True   
-Data type: String  
+#### Frequency 
 Must be one of the following values [Once, Daily, Weekly]
 
-#### WeeksInterval
-Data type: String  
+#### WeeksInterval 
 Must be a number greater than 0   
 Only when Frequency = "Weekly"  
 
-#### DaysInterval
-Data type: String   
+#### DaysInterval 
 Must be a number greater than 0  
 Only when Frequency = "Daily"  
 
 #### DaysOfWeek
-Data type: String  
 Only when $Frequency = "Weekly"   
 Must be one of the following values [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday], or multiple values separated with a comma
 
-	INPUTS:
-	None.
-
-	OUTPUTS:
 
 ?>Read messages to determine the result of the script working.
+
+## Show-LnvApplicableUpdate
+
+### Description
+Read an Update_ApplicabilityRulesTrace.txt from Thin Installer or ApplicabilityRulesTrace.txt from Lenovo System Update and show list of package IDs that are applicable.  This output string can be passed to the Get-LnvUpdatesRepo cmdlet in the -PackageList parameter to create a local repository of just the specified updates.
+
+| Parameter | Type | Mandatory |
+| --- | --- | --- |
+| Path | String | True |
+
+### Example
+```Show-LnvApplicabileUpdates -Path 'c:\Program Files (x86)\Lenovo\Thin Installer\logs\Update_ApplicabilityRulesTrace.txt'```
