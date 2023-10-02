@@ -5,30 +5,36 @@
 ## Export-LnvUpdateRetrieverConfig
 
 ### Description <!-- {docsify-ignore} -->
+
 Generates a .reg file containing an export of the Update Retriever settingsfound at:
 ```HKLM\Software\Wow6432Node\Lenovo\Update Retriever\Preferences\UserSetting\General```  
 
 These settings include the local repository path that was last used and the list of models in the Systems list that can be searched for in Update Retirever.
 
 ### Parameter <!-- {docsify-ignore} -->
+
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
 | Outfile | String | True |
 
 ### Example <!-- {docsify-ignore} -->
+
 ```Export-LnvUpdateRetrieverConfig -Outfile C:\users\admin\Downloads\urconfig```
 
 ## Find-LnvBiosCode
 
 ### Description <!-- {docsify-ignore} -->
+
 Shows results for search string representing model friendly name or machine type. The BIOS code is the first four characters of the BIOS image name. It is a useful data point for uniquely targeting a model.
   
 ### Parameter <!-- {docsify-ignore} -->
+
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
 | ModelName | String | True |
 
 ### Example <!-- {docsify-ignore} -->
+
 ```Find-LnvBiosCode -ModelName 'ThinkPad X13 Yoga Gen 4'```
 
 ```Find-LnvBiosCode 'ThinkPad X13 Yoga Gen 4'```
@@ -36,6 +42,7 @@ Shows results for search string representing model friendly name or machine type
 ## Find-LnvDockModel
 
 ### Description <!-- {docsify-ignore} -->
+
 - The first four characters of the dock product number is the machine type.   
 - This command returns the dock model name by searching for the machine type.   
 - The -Details switch controls whether the full dock details are displayed.   
@@ -43,25 +50,30 @@ Shows results for search string representing model friendly name or machine type
 - If -Details is provided then the PnP IDs for the USB Billboard device and the audio device will be shown. These can be used when targeting laptops that have this dock attached.
 
 ### Parameter <!-- {docsify-ignore} -->
+
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
 | MachineType | String | True |
 | Details |  | False |
 
 ### Example <!-- {docsify-ignore} -->
+
 ```Find-LnvDockModel -MachineType 40AN -Details```
 
 ## Find-LnvDriverPack
 
 ### Description <!-- {docsify-ignore} -->
+
 Returns a list of the available driver packs for the machine type specified which includes the OS and the OS build version, the CRC of the pack, and the URL to the package executable. The OS will be "win10" or "win11" and the OS build version will be the four character designator like "21H2" or "22H2".
 
 ### Parameter <!-- {docsify-ignore} -->
+
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
 | MachineType | String | True |
 
 ### Example <!-- {docsify-ignore} -->
+
 ```Find-LnvDriverPack -MachineType 21DD```   
 ```Find-LnvDriverPack 21DD```   
 ``` $url = (Find-LnvDriverPack -MachineType 21DD | Where-Object { (($_.OS -eq 'win10')```
@@ -74,15 +86,18 @@ Returns a list of the available driver packs for the machine type specified whic
 
 ## Find-LnvMachineType
 
-### Description
+### Description <!-- {docsify-ignore} -->
+
 By specifying a search string representing model friendly name, this cmdlet will return the possible machine types that match. Most models have more than one possible machine type. Providing a more detailed model name to search for will help reduce the number of results returned.
 
-### Parameter
+### Parameter <!-- {docsify-ignore} -->
+
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
 | ModelName | String | True |
 
-### Example
+### Example <!-- {docsify-ignore} -->
+
 ```$ Find-LnvMachineType -ModelName 'ThinkPad P1 Gen 5'```
 ```$ Find-LnvMachineType -ModelName 'ThinkPad P1 '```
 
@@ -90,15 +105,18 @@ By specifying a search string representing model friendly name, this cmdlet will
 
 ## Find-LnvModel
 
-### Description
+### Description <!-- {docsify-ignore} -->
+
 This cmdlet returns the friendly model name that will be found in WMI on a device with the specified machine type. This is useful in cases where a management portal may display the 10 character machine type model number and the user needs to know the model name of that device.
 
-### Parameter
+### Parameter <!-- {docsify-ignore} -->
+
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
 | MachineType | String | True |
 
-### Example
+### Example <!-- {docsify-ignore} -->
+
 ```Find-LnvModel -MachineType 21DD```   
 ```Find-LnvModel 21DD```
 
@@ -107,7 +125,8 @@ This cmdlet returns the friendly model name that will be found in WMI on a devic
 
 ## Find-LnvUpdate
 
-### Description
+### Description <!-- {docsify-ignore} -->
+
 This script allows users to search for updates for a specified machine type.
 - Defaults to Windows 10 updates 
 - Requires users to enter at least a machine type
@@ -155,7 +174,7 @@ It is then possible to get the executable or the package descriptor like this:
 	
 	> start $update.Descriptor
 
-### Parameters	
+### Parameters	 <!-- {docsify-ignore} -->
 
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
@@ -166,7 +185,8 @@ It is then possible to get the executable or the package descriptor like this:
 | WindowsVersion |  | False |
 | PackageID |  | False |
 
-### Example
+### Example <!-- {docsify-ignore} -->
+
 ```Find-LnvUpdate -MachineType 20C1 -PackageType 2 -RebootType 1 -WindowsVersion 7```
 
 ```Find-LnvUpdates 20C1 2```
@@ -175,10 +195,12 @@ It is then possible to get the executable or the package descriptor like this:
 
 ## Get-LnvAvailableBiosVersion
 
-### Description
+### Description <!-- {docsify-ignore} -->
+
 If you specify a machine type, the cmdlet will return the version of the  currently available BIOS update. If no machine type is specified, the cmdlet will use the running system's machine type and will compare the version of the currently available update to the version of the system and return an alert if the update is newer. The -Download switch can be used to trigger the download of the current update in either case.
 
-### Parameters	
+### Parameters	 <!-- {docsify-ignore} -->
+
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
 | MachineType | String | False |
@@ -189,18 +211,22 @@ If you specify a machine type, the cmdlet will return the version of the  curren
 
 ## Get-LnvBiosCode
 
-### Description
+### Description <!-- {docsify-ignore} -->
+
  This cmdlet will read the BIOS image name from the device and return the first four characters which can be used as the BIOS code in targeting actions to the model uniquely.
  
-### Example
+### Example <!-- {docsify-ignore} -->
+
 ```Get-LnvBiosCode```
 
 ## Get-LnvBiosPasswordsSet
 
-### Description
+### Description <!-- {docsify-ignore} -->
+
 This cmdlet gets the BIOS password state of the system and interprets it to return the set of passwords set on the device. If the -Number switch is used, then the PasswordState number will be returned instead.
 
-### Parameters	
+### Parameters	 <!-- {docsify-ignore} -->
+
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
 | Number |  | False |
@@ -210,16 +236,17 @@ This cmdlet gets the BIOS password state of the system and interprets it to retu
 
 ## Get-LnvBiosUpdateUrl
 
-### Description
+### Description <!-- {docsify-ignore} -->
+
 This command will return the URL to the current BIOS update package for either the specified machine type or for the machine type of the device running the command. 
 
-### Parameters
+### Parameters <!-- {docsify-ignore} -->
 
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
 | MachineType | String | False |
 
-### Example
+### Example <!-- {docsify-ignore} -->
 	
 ```Get-LnvBiosUpdateUrl -MachineType '21AH'```   
 ```Get-LnvBiosUpdateUrl```
@@ -228,7 +255,8 @@ This command will return the URL to the current BIOS update package for either t
 
 ## Get-LnvBiosVersion
 
-### Description
+### Description <!-- {docsify-ignore} -->
+
 Returns the BIOS version in the specified format.
 
 | Parameter | Type | Mandatory |
@@ -238,7 +266,8 @@ Returns the BIOS version in the specified format.
 ?> String  : Returns the full string value of SMBIOSBIOSVersion   
   Decimal : Returns a standard version string in the format of n.nn
    
-### Example
+### Example <!-- {docsify-ignore} -->
+
 ```Get-LnvBiosVersion -Format 'decimal'```   
 ```Get-LnvBiosVersion```
 
@@ -250,22 +279,24 @@ string format.
 ?>If no Format is specified, the function will return the full string of the
 SMBIOSBIOSVersion value.
 
-
 ## Get-LnvCVE
 
-### Description
+### Description <!-- {docsify-ignore} -->
+
 Returns a list of the CVE identifiers that are listed as addressed 
 vulnerabilities in the current BIOS update for the specified system. A machine
 type can be passed as a parameter.  If no parameter is specified, the machine
 type of the running system will be used. CVE Data may not be available for all 
 machine types.
 
-### Parameters
+### Parameters <!-- {docsify-ignore} -->
+
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
 | MachineType | String | False |
 
-### Example
+### Example <!-- {docsify-ignore} -->
+
 ```Get-LnvCVE -MachineType 21DD```   
 
 ```Get-LnvCVE```
@@ -273,10 +304,12 @@ machine types.
 
 ## Get-LnvDriverPack
 
-### Description
+### Description <!-- {docsify-ignore} -->
+
 This cmdlet will download the SCCM Driver Pack based on the specified machine type, OS and OS build version. Tab completion can be used to select the OS build version in the correct format. The cmdlet will leverage the default browser for downloading the pack so the user can select the location to save the file to.
 
-### Parameters
+### Parameters <!-- {docsify-ignore} -->
+
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
 | MachineType | String | True |
@@ -286,66 +319,58 @@ This cmdlet will download the SCCM Driver Pack based on the specified machine ty
 
 ## Get-LnvMachineType
 
-### Description
+### Description <!-- {docsify-ignore} -->
 Returns the 4 character machinetype of the running device.
 
-### Parameters
-| Parameter | Type | Mandatory |
-| --- | --- | --- |
-|  |  |  |
+### Parameters <!-- {docsify-ignore} -->
+None
 
-### Example
+### Example <!-- {docsify-ignore} -->
 ```Get-LnvMachineType```
 
 ## Get-LnvModelName
 
-### Description
+### Description <!-- {docsify-ignore} -->
 Returns the model name of the running device.
 
-### Parameters
-| Parameter | Type | Mandatory |
-| --- | --- | --- |
-|  |  |  |
+### Parameters <!-- {docsify-ignore} -->
+None
 
-### Example
+### Example <!-- {docsify-ignore} -->
 ```Get-LnvModelName```
 
 ## Get-LnvProductNumber
 
-### Description
+### Description <!-- {docsify-ignore} -->
 Returns the full 10-character product number of the running device.
 
-### Parameters
-| Parameter | Type | Mandatory |
-| --- | --- | --- |
-|  |  |  |
+### Parameters <!-- {docsify-ignore} -->
+None
 
-### Example
+### Example <!-- {docsify-ignore} -->
 ```Get-LnvProductNumber```
 
 
 ## Get-LnvSerial
 
-### Description
+### Description <!-- {docsify-ignore} -->
 Returns the serial number of the running device.
 
-### Parameters
-| Parameter | Type | Mandatory |
-| --- | --- | --- |
-|  |  |  |
+### Parameters <!-- {docsify-ignore} -->
+None
 
-### Example
+### Example <!-- {docsify-ignore} -->
 ```Get-LnvSerial```
 
 
 ## Get-LnvUpdate
 
-### Description
+### Description <!-- {docsify-ignore} -->
 This script allows users to search for updates that will be downloaded to a folder of their choice
 - Defaults to Windows 10 updates and a repo folder in downloads if you do not specify
 - Requires users to enter at least a machine type
 - Can be called without identifiers so long as you use the right order 
-- If a repositoryfolder is specified that doesn't exist the script will create it
+- If a repository folder is specified that doesn't exist the script will create it
 - PackageType can be:  <br>
 &nbsp;&nbsp; 1: Application <br>
 &nbsp;&nbsp; 2: Driver <br>
@@ -363,7 +388,7 @@ This script allows users to search for updates that will be downloaded to a fold
 
 ?>Note: 9 can be used for these three parameters to represent 'All'
 
-### Parameters
+### Parameters <!-- {docsify-ignore} -->
 
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
@@ -373,7 +398,7 @@ This script allows users to search for updates that will be downloaded to a fold
 | PackageType | String |  |
 | RebootType | String |  |
 
-### Example
+### Example <!-- {docsify-ignore} -->
 
 ```Get-LnvUpdate -MachineType 20E4 -WindowsVersion 10 -RepositoryFolder "C:\repository" -PackageType 1```
 
@@ -384,10 +409,10 @@ This script allows users to search for updates that will be downloaded to a fold
 
 ## Get-LnvUpdatesRepo
 
-### Description
+### Description <!-- {docsify-ignore} -->
 For instances where Update Retriever cannot be used to create the local repository or where full automation of the repository creation is desired. This PowerShell script can be customized and executed on a regular basis to get the latest update packages. 
 
-### Parameters  
+### Parameters   <!-- {docsify-ignore} -->
 
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
@@ -400,13 +425,12 @@ For instances where Update Retriever cannot be used to create the local reposito
 | RT5toRT3 | Switch | False |
 | ScanOnly | Switch | False |
 
-  
 
-#### OS  
+#### OS   <!-- {docsify-ignore} -->
 Must be a string of '10' or '11'. The default if no value is specified will
 be determined by the OS of the device the script is running on.
 
-#### PackageTypes   
+#### PackageTypes    <!-- {docsify-ignore} -->
 Must be a string of Package Type integers separated by commas and surrounded by single quotes. The possible values are:<br>
 &nbsp;&nbsp; 1: Application<br>
 &nbsp;&nbsp; 2: Driver<br>
@@ -414,7 +438,7 @@ Must be a string of Package Type integers separated by commas and surrounded by 
 &nbsp;&nbsp; 4: Firmware<br>
 The default if no value is specified will be all package types.
 
-#### RebootTypes  
+#### RebootTypes   <!-- {docsify-ignore} -->
 Must be a string of integers, separated by commas, representing the different boot types and surrounded by single quotes:<br>
 &nbsp;&nbsp; 0: No reboot required<br>
 &nbsp;&nbsp; 1: Forces a reboot (not recommended in a task sequence)<br>
@@ -423,25 +447,25 @@ Must be a string of integers, separated by commas, representing the different bo
 &nbsp;&nbsp; 5: Delayed forced reboot (used by many firmware updates)<br>
 The default if no value is specified will be all RebootTypes. 
 
-#### RepositoryPath  
+#### RepositoryPath   <!-- {docsify-ignore} -->
 Must be a fully qualified path to the folder where the local repository will be saved. Must be surrounded by single quotes.
 
-#### LogPath  
+#### LogPath   <!-- {docsify-ignore} -->
 Must be a fully qualified path. If not specified, ti-auto-repo.log will be  stored in the repository folder.   
 Must be surrounded by single quotes.
 
-#### RT5toRT3  
+#### RT5toRT3   <!-- {docsify-ignore} -->
 Specify this parameter if you want to convert Reboot Type 5 (Delayed Forced Reboot) packages to be Reboot Type 3 (Requires Reboot). Only do this in task sequence scenarios where a Restart can be performed after the Thin Installer task. Use the -noreboot parameter on the Thin Installer command line to suppress reboot to allow the task sequence to control the restart.
 
 ?>This parameter can only be used when Thin Installer will be processing
 the updates in the repository.
 
-#### ScanOnly  
+#### ScanOnly   <!-- {docsify-ignore} -->
 Specify this parameter to create a repository that only contains the package
 descriptor XML and external detection routine files to be used with Thin 
 Installer's SCAN action.
 
-### Example
+### Example <!-- {docsify-ignore} -->
 ```Get-LnvUpdatesRepo.ps1 -RepositoryPath 'C:\Program Files (x86)\Lenovo\ThinInstaller\Repository'```
 ``` -PackageTypes '1,2' -RebootTypes '0,3'```
   
@@ -457,10 +481,10 @@ Installer's SCAN action.
 
 ## Invoke-LnvDiagnostic
 
-### Description
+### Description <!-- {docsify-ignore} -->
 Script to run diagnostic test on Lenovo devices
 
-### Parameters
+### Parameters <!-- {docsify-ignore} -->
 
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
@@ -468,10 +492,10 @@ Script to run diagnostic test on Lenovo devices
 | RunOnModules | String |  |
 
 
-#### RunAll 
+#### RunAll  <!-- {docsify-ignore} -->
 Must be either "default" or one of the following modes [quick, extended, only-unattended], or a combination of the modes [quick, extended, only-unattended].
 
-#### RunOnModules  
+#### RunOnModules   <!-- {docsify-ignore} -->
 Must be one of the following modules   
 [audio, audio_controller, battery, bluetooth, camera, cpu, display, display_interface, fan, 
 fingerprint, keyboard, memory, motherboard, mouse_devices, optical_drive, pci_express, raid, 
@@ -499,10 +523,10 @@ sensors, storage, touchpad_devices, touchscreen, video_card, wired_ethernet, wir
 
 ## Set-LnvSUCommandLine
 
-### Description
+### Description <!-- {docsify-ignore} -->
 Run Script to set Admin command line Windows Registry settings for Lenovo System Update.
   
-### Parameters
+### Parameters <!-- {docsify-ignore} -->
 
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
@@ -517,24 +541,24 @@ Run Script to set Admin command line Windows Registry settings for Lenovo System
 | Repository | String | False |
 | ExportToWmi | Switch | False |
 
-#### Search
+#### Search <!-- {docsify-ignore} -->
 Must be one of the following values [C, R, A].
 
-#### Action
+#### Action <!-- {docsify-ignore} -->
 Must be one of the following values [DOWNLOAD, LIST, INSTALL].
 
 
-#### IncludereBootPackages 
+#### IncludereBootPackages  <!-- {docsify-ignore} -->
 Must be one of the following values [1, 3, 4, 5], or multiple values separated with a comma.
 
-#### PackageTypes  
+#### PackageTypes   <!-- {docsify-ignore} -->
 Must be one of the following values [0, 1, 2, 3, 4], or multiple values separated with a comma.If not specified, System Update will use the Lenovo Support servers.
 
 
-#### Repository 
+#### Repository  <!-- {docsify-ignore} -->
 Must be a local folder path, a UNC file share path, or a URL to a web-hosted repository.
 
-#### ExportToWmi  
+#### ExportToWmi   <!-- {docsify-ignore} -->
 
 	INPUTS:
 	None.
@@ -558,17 +582,17 @@ Must be a local folder path, a UNC file share path, or a URL to a web-hosted rep
 
 ## Set-LnvSULogging
 
-### Description
+### Description <!-- {docsify-ignore} -->
 Enable or disable logging for the System Update Addin for Commercial Vantage.
 
-### Parameters
+### Parameters <!-- {docsify-ignore} -->
 
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
 | Enable |  |  |
 | Disable |  |  |
 
-### Example
+### Example <!-- {docsify-ignore} -->
 
 ```Set-LnvSULogging -Enable```
 
@@ -576,7 +600,7 @@ Enable or disable logging for the System Update Addin for Commercial Vantage.
 
 ## Set-LnvSULogging
 
-### Description
+### Description <!-- {docsify-ignore} -->
 This cmdlet sets the appropriate registry key to cause the System Update Add-in to perfrom logging during update sessions. If neither the -Enable or -Disable switches are specified, then logging will be ENABLED.
 
 | Parameter | Type | Mandatory |
@@ -584,7 +608,7 @@ This cmdlet sets the appropriate registry key to cause the System Update Add-in 
 | Enable |  |  |
 | Disable |  |  |
 
-### Example
+### Example <!-- {docsify-ignore} -->
 ```Set-LnvSULogging -Enable```
 
 ?>If logging is enabled, log path is located at ```%ProgramData%\Lenovo\Vantage\AddinData\LenovoSystemUpdateAddin\logs```
@@ -593,10 +617,10 @@ This cmdlet sets the appropriate registry key to cause the System Update Add-in 
 
 ## Set-LnvSUSchedule
 
-### Description
+### Description <!-- {docsify-ignore} -->
 Script to schedule Lenovo System Update application via Task shceduler.
 
-### Parameters
+### Parameters <!-- {docsify-ignore} -->
 
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
@@ -607,24 +631,24 @@ Script to schedule Lenovo System Update application via Task shceduler.
 | DaysOfWeek | String |  |
 
 
-#### RunAt 
+#### RunAt  <!-- {docsify-ignore} -->
 Must correspond to the following formats:  
 yyyy-MM-ddTHH:mm:ss  
 yyyy-MM-dd  
 HH:mm:ss  
 
-#### Frequency 
+#### Frequency  <!-- {docsify-ignore} -->
 Must be one of the following values [Once, Daily, Weekly]
 
-#### WeeksInterval 
+#### WeeksInterval  <!-- {docsify-ignore} -->
 Must be a number greater than 0   
 Only when Frequency = "Weekly"  
 
-#### DaysInterval 
+#### DaysInterval  <!-- {docsify-ignore} -->
 Must be a number greater than 0  
 Only when Frequency = "Daily"  
 
-#### DaysOfWeek
+#### DaysOfWeek <!-- {docsify-ignore} -->
 Only when $Frequency = "Weekly"   
 Must be one of the following values [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday], or multiple values separated with a comma
 
@@ -633,12 +657,12 @@ Must be one of the following values [Sunday, Monday, Tuesday, Wednesday, Thursda
 
 ## Show-LnvApplicableUpdate
 
-### Description
+### Description <!-- {docsify-ignore} -->
 Read an Update_ApplicabilityRulesTrace.txt from Thin Installer or ApplicabilityRulesTrace.txt from Lenovo System Update and show list of package IDs that are applicable.  This output string can be passed to the Get-LnvUpdatesRepo cmdlet in the -PackageList parameter to create a local repository of just the specified updates.
 
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
 | Path | String | True |
 
-### Example
+### Example <!-- {docsify-ignore} -->
 ```Show-LnvApplicabileUpdates -Path 'c:\Program Files (x86)\Lenovo\Thin Installer\logs\Update_ApplicabilityRulesTrace.txt'```
