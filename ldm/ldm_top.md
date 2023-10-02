@@ -4,64 +4,64 @@
 
 ## Export-LnvUpdateRetrieverConfig
 
-### Description
+### Description <!-- {docsify-ignore} -->
 Generates a .reg file containing an export of the Update Retriever settingsfound at:
 ```HKLM\Software\Wow6432Node\Lenovo\Update Retriever\Preferences\UserSetting\General```  
 
 These settings include the local repository path that was last used and the list of models in the Systems list that can be searched for in Update Retirever.
 
-### Parameter
+### Parameter <!-- {docsify-ignore} -->
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
 | Outfile | String | True |
 
-### Example
+### Example <!-- {docsify-ignore} -->
 ```Export-LnvUpdateRetrieverConfig -Outfile C:\users\admin\Downloads\urconfig```
 
 ## Find-LnvBiosCode
 
-### Description
+### Description <!-- {docsify-ignore} -->
 Shows results for search string representing model friendly name or machine type. The BIOS code is the first four characters of the BIOS image name. It is a useful data point for uniquely targeting a model.
   
-### Parameter
+### Parameter <!-- {docsify-ignore} -->
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
 | ModelName | String | True |
 
-### Example
+### Example <!-- {docsify-ignore} -->
 ```Find-LnvBiosCode -ModelName 'ThinkPad X13 Yoga Gen 4'```
 
 ```Find-LnvBiosCode 'ThinkPad X13 Yoga Gen 4'```
 
 ## Find-LnvDockModel
 
-### Description
+### Description <!-- {docsify-ignore} -->
 - The first four characters of the dock product number is the machine type.   
 - This command returns the dock model name by searching for the machine type.   
 - The -Details switch controls whether the full dock details are displayed.   
 - If -Details is not specified then only the dock name will be returned.   
 - If -Details is provided then the PnP IDs for the USB Billboard device and the audio device will be shown. These can be used when targeting laptops that have this dock attached.
 
-### Parameter
+### Parameter <!-- {docsify-ignore} -->
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
 | MachineType | String | True |
 | Details |  | False |
 
-### Example
+### Example <!-- {docsify-ignore} -->
 ```Find-LnvDockModel -MachineType 40AN -Details```
 
 ## Find-LnvDriverPack
 
-### Description
+### Description <!-- {docsify-ignore} -->
 Returns a list of the available driver packs for the machine type specified which includes the OS and the OS build version, the CRC of the pack, and the URL to the package executable. The OS will be "win10" or "win11" and the OS build version will be the four character designator like "21H2" or "22H2".
 
-### Parameter
+### Parameter <!-- {docsify-ignore} -->
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
 | MachineType | String | True |
 
-### Example
+### Example <!-- {docsify-ignore} -->
 ```Find-LnvDriverPack -MachineType 21DD```   
 ```Find-LnvDriverPack 21DD```   
 ``` $url = (Find-LnvDriverPack -MachineType 21DD | Where-Object { (($_.OS -eq 'win10')```

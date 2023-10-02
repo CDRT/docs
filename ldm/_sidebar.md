@@ -2,5 +2,4 @@
 
 [**Home**](/)
 
-[**Lenovo Device Manaagment Module**](ldm/ldm_top.md)
-
+[**Lenovo Device Management Module**](ldm/ldm_top.md)
