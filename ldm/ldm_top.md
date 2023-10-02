@@ -1,5 +1,7 @@
 # Lenovo Device Management Module <!-- {docsify-ignore} -->
 
+<br><br>
+
 ## Export-LnvUpdateRetrieverConfig
 
 ### Description
@@ -60,9 +62,10 @@ Returns a list of the available driver packs for the machine type specified whic
 | MachineType | String | True |
 
 ### Example
-```Find-LnvDriverPack -MachineType 21DD```
-```Find-LnvDriverPack 21DD```
-``` $url = (Find-LnvDriverPack -MachineType 21DD | Where-Object { (($_.OS -eq 'win10') -and ($_.version -eq '21H2')) }).'#text'```
+```Find-LnvDriverPack -MachineType 21DD```   
+```Find-LnvDriverPack 21DD```   
+``` $url = (Find-LnvDriverPack -MachineType 21DD | Where-Object { (($_.OS -eq 'win10')```
+``` -and ($_.version -eq '21H2')) }).'#text'```
 
 	OUTPUTS:
 	An object consisting of "os", "version", "crc", "#text" elements where "#text" represents the URL to the package executable file.
@@ -96,7 +99,7 @@ This cmdlet returns the friendly model name that will be found in WMI on a devic
 | MachineType | String | True |
 
 ### Example
-```Find-LnvModel -MachineType 21DD```
+```Find-LnvModel -MachineType 21DD```   
 ```Find-LnvModel 21DD```
 
 ?>The output will also show the other machine types associated with this model.
@@ -218,7 +221,7 @@ This command will return the URL to the current BIOS update package for either t
 
 ### Example
 	
-```Get-LnvBiosUpdateUrl -MachineType '21AH'```
+```Get-LnvBiosUpdateUrl -MachineType '21AH'```   
 ```Get-LnvBiosUpdateUrl```
 
 ?> The device must be a Lenovo ThinkPad, ThinkCentre, or ThinkStation.
@@ -236,7 +239,7 @@ Returns the BIOS version in the specified format.
   Decimal : Returns a standard version string in the format of n.nn
    
 ### Example
-```Get-LnvBiosVersion -Format 'decimal'```
+```Get-LnvBiosVersion -Format 'decimal'```   
 ```Get-LnvBiosVersion```
 
 ?>This function handles the different methods used to express the BIOS version
@@ -263,7 +266,7 @@ machine types.
 | MachineType | String | False |
 
 ### Example
-```Get-LnvCVE -MachineType 21DD```
+```Get-LnvCVE -MachineType 21DD```   
 
 ```Get-LnvCVE```
 
@@ -439,7 +442,8 @@ descriptor XML and external detection routine files to be used with Thin
 Installer's SCAN action.
 
 ### Example
-```Get-LnvUpdatesRepo.ps1 -RepositoryPath 'C:\Program Files (x86)\Lenovo\ThinInstaller\Repository' -PackageTypes '1,2' -RebootTypes '0,3'```
+```Get-LnvUpdatesRepo.ps1 -RepositoryPath 'C:\Program Files (x86)\Lenovo\ThinInstaller\Repository'```
+``` -PackageTypes '1,2' -RebootTypes '0,3'```
   
 ```Get-LnvUpdatesRepo.ps1 -RepositoryPath 'Z:\21DD' -PackageTypes '1,2,3' -RebootTypes '0,3,5' -RT5toRT3```
  
