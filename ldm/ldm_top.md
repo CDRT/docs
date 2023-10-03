@@ -54,7 +54,7 @@ Shows results for search string representing model friendly name or machine type
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
 | MachineType | String | True |
-| Details |  | False |
+| Details | Switch | False |
 
 ### Example <!-- {docsify-ignore} -->
 
@@ -181,9 +181,9 @@ It is then possible to get the executable or the package descriptor like this:
 | MachineType | String | True |
 | PackageType | String | False |
 | RebootType | String | False |
-| Severity |  | False |
-| WindowsVersion |  | False |
-| PackageID |  | False |
+| Severity | String | False |
+| WindowsVersion | String | False |
+| PackageID | String | False |
 
 ### Example <!-- {docsify-ignore} -->
 
@@ -205,7 +205,8 @@ If you specify a machine type, the cmdlet will return the version of the  curren
 | --- | --- | --- |
 | MachineType | String | False |
 | OS | String | False |
-| Download |  | False |
+| Download | Switch | False |
+| ReadMe | Switch | False |
 
 ?> OS is strictly optional as generally one BIOS update package is released for both Win10 and Win11.
 
@@ -229,7 +230,7 @@ This cmdlet gets the BIOS password state of the system and interprets it to retu
 
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
-| Number |  | False |
+| Number | Switch | False |
 
 !>THIS CMDLET REQUIRES ADMIN RIGHTS TO EXECUTE. Make sure the PowerShell session is running with elevated privileges.
 
@@ -313,7 +314,7 @@ This cmdlet will download the SCCM Driver Pack based on the specified machine ty
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
 | MachineType | String | True |
-| WindowsVersion |  | True |
+| WindowsVersion | String | True |
 | OSBuildVersion | String | True |
 
 
@@ -393,14 +394,14 @@ This script allows users to search for updates that will be downloaded to a fold
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
 | MachineType | String | True |
-| WindowsVersion |  |  |
-| RepositoryFolder | String |  |
-| PackageType | String |  |
-| RebootType | String |  |
+| WindowsVersion | String | False |
+| RepositoryFolder | String | False |
+| PackageType | String | False |
+| RebootType | String | False |
 
 ### Example <!-- {docsify-ignore} -->
 
-```Get-LnvUpdate -MachineType 20E4 -WindowsVersion 10 -RepositoryFolder "C:\repository" -PackageType 1```
+```Get-LnvUpdate -MachineType 20E4 -WindowsVersion 10 -RepositoryFolder "C:\repository" -PackageStringType 1```
 
 ```Get-LnvUpdate 20E4 10 "C:\repository"```
 
@@ -488,8 +489,8 @@ Script to run diagnostic test on Lenovo devices
 
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
-| RunAll | String |  |
-| RunOnModules | String |  |
+| RunAll | String | False |
+| RunOnModules | String | False |
 
 
 #### RunAll  <!-- {docsify-ignore} -->
@@ -589,8 +590,8 @@ Enable or disable logging for the System Update Addin for Commercial Vantage.
 
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
-| Enable |  |  |
-| Disable |  |  |
+| Enable | Switch | False |
+| Disable | Switch | False |
 
 ### Example <!-- {docsify-ignore} -->
 
@@ -605,8 +606,8 @@ This cmdlet sets the appropriate registry key to cause the System Update Add-in 
 
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
-| Enable |  |  |
-| Disable |  |  |
+| Enable | Switch | False |
+| Disable | Switch | False |
 
 ### Example <!-- {docsify-ignore} -->
 ```Set-LnvSULogging -Enable```
@@ -626,9 +627,9 @@ Script to schedule Lenovo System Update application via Task shceduler.
 | --- | --- | --- |
 | RunAt | String | True |
 | Frequency | String | True |
-| WeeksInterval | String |  |
-| DaysInterval | String |  |
-| DaysOfWeek | String |  |
+| WeeksInterval | String | False |
+| DaysInterval | String | False |
+| DaysOfWeek | String | False |
 
 
 #### RunAt  <!-- {docsify-ignore} -->
