@@ -3,7 +3,7 @@
 
 ## Overview
 
-Lenovo View is a hardware support app for the Lenovo View device driver that enhances camera quality and provides collaboration features for some mainstream video call apps. 
+Lenovo View is a hardware support app for the Lenovo View device driver that enhances camera quality and provides collaboration features for some mainstream video call apps.
 
 ### Deploying Lenovo View
 As an HSA, the Lenovo View app is available in the HSA pack for models that support it. The Lenovo View device driver, which is included in the SCCM driver packs and available on Lenovo Support site, must be deployed to the device in order for the Lenovo View app to work. For systems which have access to the Microsoft Store, simply deploy the device driver to the device and the OS will automatically install the Lenovo View app. Otherwise, refer to this article for detail on how to 'sideload' the app from the HSA pack: [Hardware Support Apps Without Microsoft Store](https://blog.lenovocdrt.com/#/2020/hsa-1)
@@ -22,11 +22,11 @@ Type Lenovo View in the Windows search box and then press Enter.
 	- **Background Removal:** Conceal the background during a video call to keep the focus on you.
 
 	![](../img/guides/view/Background_Removal.jpg)
-	
+
 	- **Auto-framing:** Automatically keep your face centered in the video call when you move around.
-	
+
 	![](../img/guides/view/Auto-Framing.jpg)
-	
+
 - **Privacy**
 	- **Privacy Alert:** An alert icon appears on your computer screen when a shoulder surfer appears behind you.
 
@@ -35,7 +35,7 @@ Type Lenovo View in the Windows search box and then press Enter.
 	- **Privacy Guard:** Your screen becomes blurred when a shoulder surfer appears behind you. Press Alt + F2 to cancel the blur effect.
 
 	![](../img/guides/view/Privacy_Guard.jpg)
-		
+
 - **Wellness**
 	- **Posture Warning:** Remind you to adjust your posture when you hunch toward the screen.
 	- **Eye Wellness:** Remind you to look away from the screen and relax your eyes for 20 seconds every 20 minutes.
@@ -50,7 +50,7 @@ Type Lenovo View in the Windows search box and then press Enter.
 
 ## Managing Configuration with Group Policy
 
-The Lenovo View app supports group policy controls of the configuration settings listed below. To define a policy for you devices running Lenovo View, download the ADMX template and use the standard procedure to implement your desired settings through Active Directory.  You may also import the ADMX template for Lenovo View into Intune to manage the policies. 
+The Lenovo View app supports group policy controls of the configuration settings listed below. To define a policy for you devices running Lenovo View, download the ADMX template and use the standard procedure to implement your desired settings through Active Directory.  You may also import the ADMX template for Lenovo View into Intune to manage the policies.
 
 More about Intune here: [Import custom and third party partner ADMX templates in Microsoft Intune | Microsoft Learn](https://learn.microsoft.com/en-us/mem/intune/configuration/administrative-templates-import-custom)
 
