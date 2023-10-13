@@ -236,8 +236,8 @@ By specifying a search string representing model friendly name, this cmdlet will
 
 #### Example <!-- {docsify-ignore} -->
 
-```$ Find-LnvMachineType -ModelName 'ThinkPad P1 Gen 5'```
-```$ Find-LnvMachineType -ModelName 'ThinkPad P1 '```
+```Find-LnvMachineType -ModelName 'ThinkPad P1 Gen 5'```
+```Find-LnvMachineType -ModelName 'ThinkPad P1 '```
 
 ?> A space after the model name such as 'ThinkPad P1 ' will limit the search to ThinkPad P1 models and not include ThinkPad P15 or ThinkPad P16 models. Likewise, use 'ThinkPad X1 ' to search for ThinkPad X1 Carbon and Yoga models and exclude ThinkPad X13 models.
 
