@@ -323,7 +323,7 @@ It is then possible to get the executable or the package descriptor like this:
 
 #### Example <!-- {docsify-ignore} -->
 
-```Find-LnvUpdate -MachineType 20C1 -PackageType 2 -RebootType 1 -WindowsVersion 7```
+```Find-LnvUpdate -MachineType 20C1 -PackageType 2 -RebootType 1 -WindowsVersion 11```
 
 ```Find-LnvUpdates 20C1 2```
 
