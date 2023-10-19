@@ -532,7 +532,7 @@ This script allows users to search for updates that will be downloaded to a fold
 
 #### Example <!-- {docsify-ignore} -->
 
-```Get-LnvUpdate -MachineType 20E4 -WindowsVersion 10 -RepositoryFolder "C:\repository" -PackageStringType 1```
+```Get-LnvUpdate -MachineType 20E4 -WindowsVersion 10 -RepositoryFolder "C:\repository" -PackageType 1```
 
 ```Get-LnvUpdate 20E4 10 "C:\repository"```
 
@@ -596,10 +596,10 @@ descriptor XML and external detection routine files to be used with Thin
 Installer's SCAN action.
 
 #### Example <!-- {docsify-ignore} -->
-```Get-LnvUpdatesRepo.ps1 -RepositoryPath 'C:\Program Files (x86)\Lenovo\ThinInstaller\Repository'```
+```Get-LnvUpdatesRepo -RepositoryPath 'C:\Program Files (x86)\Lenovo\ThinInstaller\Repository'```
 ``` -PackageTypes '1,2' -RebootTypes '0,3'```
 
-```Get-LnvUpdatesRepo.ps1 -RepositoryPath 'Z:\21DD' -PackageTypes '1,2,3' -RebootTypes '0,3,5' -RT5toRT3```
+```Get-LnvUpdatesRepo -RepositoryPath 'Z:\21DD' -PackageTypes '1,2,3' -RebootTypes '0,3,5' -RT5toRT3```
 
 	INPUTS:
 	None
@@ -658,4 +658,4 @@ Read an Update_ApplicabilityRulesTrace.txt from Thin Installer or ApplicabilityR
 | Path | String | True |
 
 #### Example <!-- {docsify-ignore} -->
-```Show-LnvApplicableUpdates -Path 'c:\Program Files (x86)\Lenovo\Thin Installer\logs\Update_ApplicabilityRulesTrace.txt'```
+```Show-LnvApplicableUpdate -Path 'c:\Program Files (x86)\Lenovo\Thin Installer\logs\Update_ApplicabilityRulesTrace.txt'```
