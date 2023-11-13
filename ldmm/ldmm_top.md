@@ -20,14 +20,16 @@ PS C:\> Get-Module LnvDeviceManagement
 
 ModuleType Version    Name                                ExportedCommands                                                                                               
 ---------- -------    ----                                ----------------                                                                                               
-Script     0.0.4      LnvDeviceManagement                 {Add-LnvSUCommandLine, Add-LnvSULogging, Add-LnvSUSchedule, Export-LnvUpdateRetrieverConfig...}   
+Script     1.0.0      LnvDeviceManagement                 {Add-LnvSUCommandLine, Add-LnvSULogging, Export-LnvUpdateRetrieverConfig...}   
 ```
 
+<!-- 
 The Lenovo Device Management Module will also be available in the PowerShell Gallery which enables the ability to use Install-Module command:
 
 ``` PowerShell
 PS C:\> Install-Module LnvDeviceManagement
 ```
+-->
 
 ## Cmdlet Reference
 
@@ -101,44 +103,6 @@ This cmdlet sets the appropriate registry key to cause the System Update Add-in 
 ```Add-LnvSULogging -Enable```
 
 ?>If logging is enabled, log path is located at ```%ProgramData%\Lenovo\Vantage\AddinData\LenovoSystemUpdateAddin\logs```
-
-### Add-LnvSUSchedule
-
-### Description <!-- {docsify-ignore} -->
-Script to schedule Lenovo System Update application via Task shceduler.
-
-### Parameters <!-- {docsify-ignore} -->
-
-| Parameter | Type | Mandatory |
-| --- | --- | --- |
-| RunAt | String | True |
-| Frequency | String | True |
-| WeeksInterval | String | False |
-| DaysInterval | String | False |
-| DaysOfWeek | String | False |
-
-#### RunAt  <!-- {docsify-ignore} -->
-Must correspond to the following formats:
-yyyy-MM-ddTHH:mm:ss
-yyyy-MM-dd
-HH:mm:ss
-
-#### Frequency  <!-- {docsify-ignore} -->
-Must be one of the following values [Once, Daily, Weekly]
-
-#### WeeksInterval  <!-- {docsify-ignore} -->
-Must be a number greater than 0
-Only when Frequency = "Weekly"
-
-#### DaysInterval  <!-- {docsify-ignore} -->
-Must be a number greater than 0
-Only when Frequency = "Daily"
-
-#### DaysOfWeek <!-- {docsify-ignore} -->
-Only when $Frequency = "Weekly"
-Must be one of the following values [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday], or multiple values separated with a comma
-
-?>Read messages to determine the result of the script working.
 
 ### Export-LnvUpdateRetrieverConfig
 
@@ -607,46 +571,6 @@ Installer's SCAN action.
 	OUTPUTS:
 	System.Int32. 0 - success
 	System.Int32. 1 - fail
-
-### Invoke-LnvDiagnostic
-
-#### Description <!-- {docsify-ignore} -->
-Script to run diagnostic test on Lenovo devices
-
-#### Parameters <!-- {docsify-ignore} -->
-
-| Parameter | Type | Mandatory |
-| --- | --- | --- |
-| RunAll | String | False |
-| RunOnModules | String | False |
-
-##### RunAll  <!-- {docsify-ignore} -->
-Must be either "default" or one of the following modes [quick, extended, only-unattended], or a combination of the modes [quick, extended, only-unattended].
-
-##### RunOnModules   <!-- {docsify-ignore} -->
-Must be one of the following modules
-[audio, audio_controller, battery, bluetooth, camera, cpu, display, display_interface, fan,
-fingerprint, keyboard, memory, motherboard, mouse_devices, optical_drive, pci_express, raid,
-sensors, storage, touchpad_devices, touchscreen, video_card, wired_ethernet, wireless], or a combination of comma-separated modules.
-
-	INPUTS:
-	None
-
-	OUTPUTS:
-
-	Messages:
-	[LDMM_INFORMATION_%TIMESTAMP%]:
-	Script execution started.
-	Script execution finished.
-
-	[LDMM_ERROR_%TIMESTAMP%]:
-	%PARAMETERS_VALIDATION_ERROR_MESSAGE%
-	Only one of the parameters must be specified.
-	One of the parameters must be specified.
-	Lenovo Diagnostics was not found at the default installation path.
-	Unexpected error occurred: %POWERSHELL_ERROR_MESSAGE%
-
-?>Read messages to determine the result of the script working.
 
 ### Show-LnvApplicableUpdate
 
