@@ -38,7 +38,7 @@ Now on updated Whiskey Lake ThinkPads, administrators can set a supervisor passw
 
 ![System Deploy Mode](../img/reference/tbct/tbct3.png)
 </div>
-On the right side of the Security Actions section the user can select the check box next to **Use different credentials to connect to target machine** to expand the user interface to show additional input fields.  When connecting to a remote machine over the network, a username and password for a local administrator account of the targeted machine must be supplied.  On a domain network, the username may need to be in the format of "\<domain\>\\\<username\>".  
+On the right side of the Security Actions section the user can select the check box next to <b>Use different credentials to connect to target machine</b> to expand the user interface to show additional input fields.  When connecting to a remote machine over the network, a username and password for a local administrator account of the targeted machine must be supplied.  On a domain network, the username may need to be in the format of "\<domain\>\\\<username\>".  
 
 ?>The user CANNOT use different credentials when targeting the local machine.
 
@@ -52,7 +52,7 @@ By default the application will attempt to load the settings of the local machin
 
 ![Targeted Machine](../img/reference/tbct/tbct4.png)
 </div>
-If you would like to target another remote machine on the network, click **Target Remote** and the dialog below will be displayed.
+If you would like to target another remote machine on the network, click <b>Target Remote</b> and the dialog below will be displayed.
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
 
