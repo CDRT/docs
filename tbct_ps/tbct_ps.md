@@ -2,23 +2,82 @@
 
 ## Introduction
 
-The Think BIOS Configurator tool was developed using the WMI BIOS interface methods and the scripts located at [this website](http://support.lenovo.com/us/en/documents/ht100612) to create a user friendly way of applying changes to the BIOS from within the Windows environment. This document will describe the ways the tool can be used and the various options it supports. The application needs no other files for execution. The application will read from WMI to provide the proper options for each of the available settings.
+The Think BIOS Configurator tool was developed using the WMI BIOS interface methods and the scripts located at [this website](http://support.lenovo.com/us/en/documents/ht100612) <!--change the link here once new one is available--> to create a user friendly way of applying changes to the BIOS from within the Windows environment. This document will describe the ways the tool can be used and the various options it supports. The application needs no other files for execution. The application will read from WMI to provide the proper options for each of the available settings.
 
 ?>Not all BIOS settings are exposed through the WMI interface.  This tool will list only the settings that are configurable through WMI.</i>
 
-## Satndard Execution of Application
-
-Below is an example of what a standard execution of the application will look like:
+## Standard Execution of Application
+Below is an example of what a standard execution of the application will look like using Windows PowerShell. The **Work with Settings** tab is displayed by default, which is shown in the first image. 
 
 <div style="text-align:center;">
 
 ![Think BIOS Config Tool UI](../img/reference/tbct_ps/tbctps1.png)
 </div>
 
+The second image displays the **Other Actions** tab.
+
+<div style="text-align:center;">
+
+![Think BIOS Config Tool UI](../img/reference/tbct_ps/tbctpsOA.png)
+</div>
+
+This document will detail how each action can be performed using the Think BIOS Config Tool. 
 
 ## Settings
 
 <!-- Insert Image here-->
+
+### Settings Table 
+<div style="text-align:center;">
+
+![Think BIOS Config Tool UI](../img/reference/tbct_ps/tbctps1_2.png)
+</div>
+
+The Settings Table displays the current settings of the target machine. As seen above, each setting has an associated value column which can be changed easily. Most settings are in the form of dropdown boxes but options like ‘BootOrder’ have more complex options to select the new value of the setting. 
+
+### Save Changed Settings <!-- {docsify-ignore} -->
+
+If the user makes any changes, the text of the setting name will be changed to red (as seen below with the AlwaysOnUSB setting) to signify that it is a value different than what is currently set on the computer.
+
+<div style="text-align:center;">
+
+![Think BIOS Config Tool UI](../img/reference/tbct_ps/tbctps1_1.png)
+</div>
+
+Once all the required changes have been set, click **Save Changed Settings** and the application attempts to commit the changes to the machine. Only the settings that are pending change are attempted to be saved to save time and eliminate any issues with trying to commit a setting will the same value. This is what will be displayed after the button is clicked:
+
+<!-- add message box of saved chnages here -->
+
+As seen above, the application was successful in setting one setting. Error messages are provided in the case of a failure. More than likely, the error users will see will be ‘Access Denied’.
+
+?>All settings will only take affect once the computer is restarted.
+
+<!-- Is the bwlow paragraph and image still true? -->
+<!--If a user closes the application with changes pending, a message will be displayed that there were pending changes. Unfortunately, there is a bug in Microsoft’s code that makes it so the closing of the application cannot be stopped once it is started.
+
+<div style="text-align:center;padding-bottom:40px;padding-top:40px">
+
+![Pending changes](../img/reference/tbct/tbct10.png)
+</div>
+-->
+
+?>Not all BIOS settings are affected by the BIOS defaults change and varies by product. If the button is clicked, a warning prompt will be shown to confirm the user wishes to do that.
+
+### Revert Changes <!-- {docsify-ignore} -->
+If settings have been changed in the application but not applied to the machine and the user wants to revert back to the original settings, click **Revert Changes**. <!-- make sure this is correct--> The user will see the items that were previously marked in red text will be reverted back to black text and the values reset to their original settings. This is a quick way for the user to create multiple configuration files and revert back to the settings they had already saved.
+
+### Reset to Factory Defaults <!-- {docsify-ignore} -->
+
+The **Reset to Factory Defaults** button applies factory default values to the settings.
+
+### Reset to Custom Defaults <!-- {docsify-ignore} -->
+
+### Generate INI <!-- {docsify-ignore} -->
+On the bottom right, there is a **Generate INI** button. This will create an .INI file of the current settings. The file will be generated in the working directory the application is launched from. The file will be named <model>Config.ini where <model> is the text inside the parenthesis above the Settings Table. The settings that are exported are the current settings of the machine AND the pending changes to the machine. This is done to allow the user to create these files without having to commit changes to the machine. The created file has an optional first line if there is a supervisor password and the remaining lines are of the form key,value. If there is a supervisor password on the machine the application will include it based on the details provided in the Security Actions sections below. <!-- Make sure the file downloads in the same location or do we need to edit it? -->
+
+### Create Intune Package <!-- {docsify-ignore} -->
+
+## Security
 
 ### Authentication <!-- {docsify-ignore} -->
 
@@ -27,20 +86,28 @@ Below is an example of what a standard execution of the application will look li
 ![Authentication](../img/reference/tbct_ps/tbctps2.png)
 </div>
 
-If settings are being changed on a system where a BIOS Supervisor Password has been set, the **Authentications** section provides the ability to provide the necessary password details.
+If settings are being changed on a system where a BIOS Supervisor Password has been set, the **Authentications** section provides the ability to provide the necessary password details. At the top left of the application you will see a section for authentication.
 
-<!--#### Target Local
-
-By default the application will attempt to load the settings of the local machine when it launches. The address and model of the machine whose settings are being displayed will visible once the **Load WMI** button is clicked. -->
 
 ### Target Remote <!-- {docsify-ignore} -->
+By default the application will attempt to load the settings of the local machine when it launches. The address and model of the machine whose settings are being displayed will be displayed above the Settings table, such as:
+
+<div style="text-align:center;">
+
+![Target Remote](../img/reference/tbct_ps/tbctps3_1.png)
+</div>
+
+
+If you would like to target another remote machine on the network, use the **Target Remote** section to the left. Enter the IP Address, Username, and Password for the targetted machine. 
 
 <div style="text-align:center;">
 
 ![Target Remote](../img/reference/tbct_ps/tbctps3.png)
 </div>
 
-If you would like to target another remote machine on the network, use the **Target Remote** section to the left. Enter the IP Address, Username, and Password for the targetted machine. 
+<!-- Add images/error messages that may pop up if host is unreachable or the WMI service is unavailable -->
+
+Once connected to the remote computer, the screen will refresh with the data that is on that machine. To switch back to the local machine, just click the <!--‘Target Local’ --> button, which is only enabled if the application is accessing a remote machine.  <!-- Add how to revert back? -->
 
 ### Output Location <!-- {docsify-ignore} -->
 
@@ -50,32 +117,37 @@ If you would like to target another remote machine on the network, use the **Tar
 </div>
 
 
-### Save Changed Settings <!-- {docsify-ignore} -->
 
-### Revert Changes <!-- {docsify-ignore} -->
-
-### Reset to Factory Defaults <!-- {docsify-ignore} -->
-
-### Reset to Custom Defaults <!-- {docsify-ignore} -->
-
-### Generate INI <!-- {docsify-ignore} -->
-
-### Create Intune Package <!-- {docsify-ignore} -->
 
 
 
 ## Other Actions
 
-### Password Change <!-- {docsify-ignore} -->
+Below is an example of what the application will display when the **Other Actions** tab is selected.
+
+<div style="text-align:center;">
+
+![Other Actions](../img/reference/tbct_ps/tbctpsOA.png)
+</div>
 
 ### INI File <!-- {docsify-ignore} -->
 
-Browse to select an .INI file that was previously generated by this program. Once selected, click **Apply Settings** to make any changes detected in the .INI file. All the settings are read into the potential changes and then compared to the current settings of the machine. Only those that are different will be applied.
+<div style="text-align:center;">
+
+![INI Upload](../img/reference/tbct_ps/tbctpsini.png)
+</div>
+
+When the **Other Actions** tab is clicked, there will be an option to browse and select an .INI file that was previously generated by this program. Once selected, click **Apply Settings** to make any changes detected in the .INI file. All the settings are read into the potential changes and then compared to the current settings of the machine. Only those that are different will be applied. Specify Supervisor password if applicable or specify an encryption passphrase if used in the INI file. 
+
+The user will also have the option to clear the Supervisor password or the Fingerprint data by simply clicking one of the two buttons below the 'Apply Settings' button.
 
 
+### Password Change <!-- {docsify-ignore} -->
 
+<div style="text-align:center;">
 
-
+![Password Change](../img/reference/tbct_ps/tbctpsinipass.png)
+</div>
 
 
 
