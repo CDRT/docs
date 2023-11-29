@@ -27,6 +27,7 @@ If settings are being changed on a system where a BIOS Supervisor Password has b
 
 ![Security Actions](../img/reference/tbct/tbct2.png)
 </div>
+
 Encoding can be either "ascii" or "scancode" and language is either "us", "fr", "gr". In most cases, the user should only have to supply the password and leave the other fields as they are. The password box is for the Supervisor password on the targeted machine. The encrypting key box is only used if the Export Settings function will be used to capture the settings of this targeted machine into an .INI file.  A random 16 character string can be generated or the user can create their own personal encryption key using characters from this set: a-z, A-Z, 0-9.  Do not use any punctuation or special characters.  This will allow the Supervisor password to be encrypted using [xxTEA](http://www.movable-type.co.uk/scripts/tea-block.html) in the .INI file, which is simply plain text. The encrypting key would be used later when the tool is used to apply the settings in the .INI file.
 
 Under the first security action section is the area to change the current supervisor password. By providing the new password, the user can click the **Change password** button to change the current machine’s password or click the **Create password change** file button to generate a file to change the password on multiple machines. If you want to clear the password from the machine just leave the new password fields blank. The generated password file will contain the previous password and the new password encrypted with the encrypting key that is provided above. 
@@ -38,6 +39,7 @@ Now on updated Whiskey Lake ThinkPads, administrators can set a supervisor passw
 
 ![System Deploy Mode](../img/reference/tbct/tbct3.png)
 </div>
+
 On the right side of the Security Actions section the user can select the check box next to **Use different credentials to connect to target machine** to expand the user interface to show additional input fields.  When connecting to a remote machine over the network, a username and password for a local administrator account of the targeted machine must be supplied.  On a domain network, the username may need to be in the format of "\<domain\>\\\<username\>".  
 
 ?>The user CANNOT use different credentials when targeting the local machine.
@@ -52,6 +54,7 @@ By default the application will attempt to load the settings of the local machin
 
 ![Targeted Machine](../img/reference/tbct/tbct4.png)
 </div>
+
 If you would like to target another remote machine on the network, click **Target Remote** and the dialog below will be displayed.
 
 <div style="text-align:center;padding-bottom:40px;padding-top:40px">
@@ -98,9 +101,6 @@ If a user closes the application with changes pending, a message will be display
 
 ![Pending changes](../img/reference/tbct/tbct10.png)
 </div>
-As seen above, the application was successful in setting one setting. Error messages are provided in the case of a failure. More than likely, the error users will see will be ‘Access Denied’. 
-
-?>All settings will only take affect once the computer is restarted.
 
 The **Restore BIOS Defaults** button applies factory default values to the settings.  
 
