@@ -36,6 +36,7 @@ PS C:\> Install-Module LnvDeviceManagement
 ### Add-LnvSUCommandLine
 
 ### Description <!-- {docsify-ignore} -->
+
 Run Script to set Admin command line Windows Registry settings for Lenovo System Update.
 
 ### Parameters <!-- {docsify-ignore} -->
@@ -54,18 +55,23 @@ Run Script to set Admin command line Windows Registry settings for Lenovo System
 | ExportToWmi | Switch | False |
 
 #### Search <!-- {docsify-ignore} -->
+
 Must be one of the following values [C, R, A].
 
 #### Action <!-- {docsify-ignore} -->
-Must be one of the following values [DOWNLOAD, LIST, INSTALL].
 
-#### IncludereBootPackages  <!-- {docsify-ignore} -->
+Must be one of the following values [DOWNLOAD, INSTALL, LIST].
+
+#### IncludeRebootPackages  <!-- {docsify-ignore} -->
+
 Must be one of the following values [1, 3, 4, 5], or multiple values separated with a comma.
 
 #### PackageTypes   <!-- {docsify-ignore} -->
-Must be one of the following values [0, 1, 2, 3, 4], or multiple values separated with a comma.If not specified, System Update will use the Lenovo Support servers.
+
+Must be one of the following values [0, 1, 2, 3, 4], or multiple values separated with a comma. 
 
 #### Repository  <!-- {docsify-ignore} -->
+
 Must be a local folder path, a UNC file share path, or a URL to a web-hosted repository.
 
 #### ExportToWmi   <!-- {docsify-ignore} -->
@@ -92,7 +98,8 @@ Must be a local folder path, a UNC file share path, or a URL to a web-hosted rep
 ### Add-LnvSULogging
 
 ### Description <!-- {docsify-ignore} -->
-This cmdlet sets the appropriate registry key to cause the System Update Add-in to perfrom logging during update sessions. If neither the -Enable or -Disable switches are specified, then logging will be ENABLED.
+
+This cmdlet sets the appropriate registry key to cause the System Update Add-in to perform logging during update sessions. If neither the -Enable or -Disable switches are specified, then logging will be ENABLED.
 
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
@@ -100,18 +107,20 @@ This cmdlet sets the appropriate registry key to cause the System Update Add-in 
 | Disable | Switch | False |
 
 ### Example <!-- {docsify-ignore} -->
+
 ```Add-LnvSULogging -Enable```
 
-?>If logging is enabled, log path is located at ```%ProgramData%\Lenovo\Vantage\AddinData\LenovoSystemUpdateAddin\logs```
+?>When logging is enabled a restart may be required and the log file will be located at ```%ProgramData%\Lenovo\Vantage\AddinData\LenovoSystemUpdateAddin\logs```
 
 ### Export-LnvUpdateRetrieverConfig
 
 ### Description <!-- {docsify-ignore} -->
 
-Generates a .reg file containing an export of the Update Retriever settingsfound at:
+Generates a .reg file containing an export of the Update Retriever settings found at:
+
 ```HKLM\Software\Wow6432Node\Lenovo\Update Retriever\Preferences\UserSetting\General```
 
-These settings include the local repository path that was last used and the list of models in the Systems list that can be searched for in Update Retirever.
+These settings include the local repository path that was last used and the list of models in the Systems list that can be searched for in Update Retriever. Specify the output file name without an extension.  If an extension other than .reg is specified it will be ignored and the output file will have a .reg extension.
 
 ### Parameter <!-- {docsify-ignore} -->
 
@@ -140,6 +149,8 @@ Shows results for search string representing model friendly name or machine type
 ```Find-LnvBiosCode -ModelName 'ThinkPad X13 Yoga Gen 4'```
 
 ```Find-LnvBiosCode 'ThinkPad X13 Yoga Gen 4'```
+
+```Find-LnvBiosCode 21F3```
 
 ### Find-LnvDockModel
 
@@ -177,12 +188,13 @@ Returns a list of the available driver packs for the machine type specified whic
 #### Example <!-- {docsify-ignore} -->
 
 ```Find-LnvDriverPack -MachineType 21DD```
-```Find-LnvDriverPack 21DD```
-``` $url = (Find-LnvDriverPack -MachineType 21DD | Where-Object { (($_.OS -eq 'win10')```
-``` -and ($_.version -eq '21H2')) }).'#text'```
 
-	OUTPUTS:
-	An object consisting of "os", "version", "crc", "#text" elements where "#text" represents the URL to the package executable file.
+```Find-LnvDriverPack 21DD```
+
+```$url = (Find-LnvDriverPack -MachineType 21DD | Where-Object { (($_.OS -eq 'win10') -and ($_.version -eq '21H2')) }).'#text'```
+
+OUTPUTS:
+An object consisting of "os", "version", "crc", "#text" elements where "#text" represents the URL to the package executable file.
 
 ?> The Where-Object cmdlet can be used to filter on OS and version to return just one URL.  The URL is in the '#text' field of the returned object.
 
@@ -229,7 +241,8 @@ This cmdlet returns the friendly model name that will be found in WMI on a devic
 #### Description <!-- {docsify-ignore} -->
 
 This script allows users to search for updates for a specified machine type.
-- Defaults to Windows 10 updates
+
+- Defaults to Windows 10 updates. WindowsVersion parameter is currently limited to 10 or 11 and can be populated with tab completion.
 - Requires users to enter at least a machine type
 - Can be called without identifiers so long as you use the right order
 - PackageType can be:  <br>
@@ -248,17 +261,16 @@ This script allows users to search for updates for a specified machine type.
  2: Recommended <br>
  3: Optional <br>
 
-?>9 can be used for these three parameters to represent 'All'. Multiples can be combined by seperating with comma, for example:  "2,3,4" or "1,5" or "1,2"
+?>9 can be used for these three parameters to represent 'All'. Multiples can be combined by separating with comma, for example:  "2,3,4" or "1,5" or "1,2"
 
-Find-LnvUpdate displays a grid-view of the results. A single selected update can be
-returned when the grid-view is closed. Therefore, execute the following to display the
-search results and then capture the selected update object:
+Find-LnvUpdate displays a grid-view of the results. A single selected update can be returned when the grid-view is closed. Therefore, execute the following to display the search results and then capture the selected update object:
 
-	> $update = Find-LnvUpdate -MachineType 21DD -WindowsVersion 11
+```PS C:\> $update = Find-LnvUpdate -MachineType 21DD -WindowsVersion 11```
 
 Then it is possible to view the attributes of the update like this:
 
-	> $update
+``` PowerShell
+PS C:\> $update
 
 		ID          : n3jw603w
 		Name        : Qualcomm Bluetooth Driver - 11 (21H2 or later)
@@ -269,10 +281,11 @@ Then it is possible to view the attributes of the update like this:
 		Severity    : 1
 		Descriptor  : https://download.lenovo.com/pccbbs/mobiles/n3jw603w_2_.xml
 		PackageExe  : https://download.lenovo.com/pccbbs/mobiles/n3jw603w.exe
+```
 
-It is then possible to get the executable or the package descriptor like this:
+It is then possible to get the package executable or the package descriptor like this:
 
-	> start $update.Descriptor
+```PS C:\> start $update.Descriptor```
 
 #### Parameters	 <!-- {docsify-ignore} -->
 
@@ -297,18 +310,26 @@ It is then possible to get the executable or the package descriptor like this:
 
 #### Description <!-- {docsify-ignore} -->
 
-If you specify a machine type, the cmdlet will return the version of the  currently available BIOS update. If no machine type is specified, the cmdlet will use the running system's machine type and will compare the version of the currently available update to the version of the system and return an alert if the update is newer. The -Download switch can be used to trigger the download of the current update in either case.
+If you specify a machine type, the cmdlet will return the version of the  currently available BIOS update. If no machine type is specified, the cmdlet will use the running system's machine type and will compare the version of the currently available update to the version of the system and return an alert if the update is newer. 
+
+The -Download switch can be used to trigger the download of the current update in either case. 
+
+The -Readme switch will download and display the readme text file at the end if available.
 
 #### Parameters	 <!-- {docsify-ignore} -->
 
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
 | MachineType | String | False |
-| OS | String | False |
+| WindowsVersion | String | False |
 | Download | Switch | False |
 | ReadMe | Switch | False |
 
-?> OS is strictly optional as generally one BIOS update package is released for both Win10 and Win11.
+?> WindowsVersion is strictly optional as generally one BIOS update package is released for both Windows 10 and Windows 11.
+
+#### Example <!-- {docsify-ignore} -->
+
+```Get-LnvAvailableBiosVersion -MachineType 21DD -OS win10 -Download -ReadMe```
 
 ### Get-LnvBiosCode
 
@@ -415,53 +436,70 @@ This cmdlet will download the SCCM Driver Pack based on the specified machine ty
 | WindowsVersion | String | True |
 | OSBuildVersion | String | True |
 
+#### Example <!-- {docsify-ignore} -->
+
+```Get-LnvDriverPack -MachineType 21DD -WindowsVersion 10 -OSBuildVersion 22H2```
+
 ### Get-LnvMachineType
 
 #### Description <!-- {docsify-ignore} -->
+
 Returns the 4 character machinetype of the running device.
 
 #### Parameters <!-- {docsify-ignore} -->
+
 None
 
 #### Example <!-- {docsify-ignore} -->
+
 ```Get-LnvMachineType```
 
 ### Get-LnvModelName
 
 #### Description <!-- {docsify-ignore} -->
+
 Returns the model name of the running device.
 
 #### Parameters <!-- {docsify-ignore} -->
+
 None
 
 #### Example <!-- {docsify-ignore} -->
+
 ```Get-LnvModelName```
 
 ### Get-LnvProductNumber
 
 #### Description <!-- {docsify-ignore} -->
+
 Returns the full 10-character product number of the running device.
 
 #### Parameters <!-- {docsify-ignore} -->
+
 None
 
 #### Example <!-- {docsify-ignore} -->
+
 ```Get-LnvProductNumber```
 
 ### Get-LnvSerial
 
 #### Description <!-- {docsify-ignore} -->
+
 Returns the serial number of the running device.
 
 #### Parameters <!-- {docsify-ignore} -->
+
 None
 
 #### Example <!-- {docsify-ignore} -->
+
 ```Get-LnvSerial```
 
 ### Get-LnvUpdate
 
 #### Description <!-- {docsify-ignore} -->
+
 This script allows users to search for updates that will be downloaded to a folder of their choice
 - Defaults to Windows 10 updates and a repo folder in downloads if you do not specify
 - Requires users to enter at least a machine type
@@ -505,6 +543,7 @@ This script allows users to search for updates that will be downloaded to a fold
 ### Get-LnvUpdatesRepo
 
 #### Description <!-- {docsify-ignore} -->
+
 For instances where Update Retriever cannot be used to create the local repository or where full automation of the repository creation is desired. This PowerShell script can be customized and executed on a regular basis to get the latest update packages.
 
 #### Parameters   <!-- {docsify-ignore} -->
@@ -521,10 +560,12 @@ For instances where Update Retriever cannot be used to create the local reposito
 | ScanOnly | Switch | False |
 
 ##### OS   <!-- {docsify-ignore} -->
+
 Must be a string of '10' or '11'. The default if no value is specified will
 be determined by the OS of the device the script is running on.
 
 ##### PackageTypes    <!-- {docsify-ignore} -->
+
 Must be a string of Package Type integers separated by commas and surrounded by single quotes. The possible values are:<br>
 &nbsp;&nbsp; 1: Application<br>
 &nbsp;&nbsp; 2: Driver<br>
@@ -533,6 +574,7 @@ Must be a string of Package Type integers separated by commas and surrounded by 
 The default if no value is specified will be all package types.
 
 ##### RebootTypes   <!-- {docsify-ignore} -->
+
 Must be a string of integers, separated by commas, representing the different boot types and surrounded by single quotes:<br>
 &nbsp;&nbsp; 0: No reboot required<br>
 &nbsp;&nbsp; 1: Forces a reboot (not recommended in a task sequence)<br>
@@ -542,24 +584,29 @@ Must be a string of integers, separated by commas, representing the different bo
 The default if no value is specified will be all RebootTypes.
 
 ##### RepositoryPath   <!-- {docsify-ignore} -->
+
 Must be a fully qualified path to the folder where the local repository will be saved. Must be surrounded by single quotes.
 
 ##### LogPath   <!-- {docsify-ignore} -->
+
 Must be a fully qualified path. If not specified, ti-auto-repo.log will be  stored in the repository folder.
 Must be surrounded by single quotes.
 
 ##### RT5toRT3   <!-- {docsify-ignore} -->
+
 Specify this parameter if you want to convert Reboot Type 5 (Delayed Forced Reboot) packages to be Reboot Type 3 (Requires Reboot). Only do this in task sequence scenarios where a Restart can be performed after the Thin Installer task. Use the -noreboot parameter on the Thin Installer command line to suppress reboot to allow the task sequence to control the restart.
 
 ?>This parameter can only be used when Thin Installer will be processing
 the updates in the repository.
 
 ##### ScanOnly   <!-- {docsify-ignore} -->
+
 Specify this parameter to create a repository that only contains the package
 descriptor XML and external detection routine files to be used with Thin
 Installer's SCAN action.
 
 #### Example <!-- {docsify-ignore} -->
+
 ```Get-LnvUpdatesRepo -RepositoryPath 'C:\Program Files (x86)\Lenovo\ThinInstaller\Repository'```
 ``` -PackageTypes '1,2' -RebootTypes '0,3'```
 
@@ -575,6 +622,7 @@ Installer's SCAN action.
 ### Show-LnvApplicableUpdate
 
 #### Description <!-- {docsify-ignore} -->
+
 Read an Update_ApplicabilityRulesTrace.txt from Thin Installer or ApplicabilityRulesTrace.txt from Lenovo System Update and show list of package IDs that are applicable.  This output string can be passed to the Get-LnvUpdatesRepo cmdlet in the -PackageList parameter to create a local repository of just the specified updates.
 
 | Parameter | Type | Mandatory |
@@ -582,4 +630,5 @@ Read an Update_ApplicabilityRulesTrace.txt from Thin Installer or ApplicabilityR
 | Path | String | True |
 
 #### Example <!-- {docsify-ignore} -->
+
 ```Show-LnvApplicableUpdate -Path 'c:\Program Files (x86)\Lenovo\Thin Installer\logs\Update_ApplicabilityRulesTrace.txt'```
