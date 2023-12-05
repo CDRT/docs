@@ -6,12 +6,18 @@ The Lenovo Device Management Module is a PowerShell Module containing numerous c
 
 The Lenovo Device Management Module requires 64-bit PowerShell v5.1 or higher and runs on Windows 10 and Windows 11.
 
-The module folder, LnvDeviceManagement, consists of the LnvDeviceManagement.psm1 and LnvDeviceManagement.psd1 files plus the Public and Private subfolders containing individual PowerShell scripts for the various functions. To manually install the module, there are two locations that the module folder can be copied to:
+## Installing Lenovo Device Management Module
+
+The module itself is currently available for download here: [ldmm_1.0.0.zip](https://download.lenovo.com/cdrt/tools/ldmm_1.0.0.zip)
+
+The plan is to eventually have it published in the PowerShell Gallery so it can easily be installed with the Install-Module command. For now, the module can be copied to a system and the Import-Module command can be used to install it.
+
+The zip file contains the module folder, LnvDeviceManagement, which contains the LnvDeviceManagement.psm1 and LnvDeviceManagement.psd1 files plus the Public and Private sub-folders containing individual PowerShell scripts for the various functions. To manually install the module, there are two locations that the module folder can be copied to:
 
 1. Per User:  %UserProfile%\Documents\WindowsPowerShell\Modules
 1. All Users:  %ProgramFiles%\WindowsPowerShell\Modules
 
-To ensure the module is loaded you may need to Import it first:
+To ensure the module is loaded you will need to Import it first:
 
 ``` PowerShell
 PS C:\> Import-Module LnvDeviceManagement -Force
@@ -22,14 +28,6 @@ ModuleType Version    Name                                ExportedCommands
 ---------- -------    ----                                ----------------                                                                                               
 Script     1.0.0      LnvDeviceManagement                 {Add-LnvSUCommandLine, Add-LnvSULogging, Export-LnvUpdateRetrieverConfig...}   
 ```
-
-<!-- 
-The Lenovo Device Management Module will also be available in the PowerShell Gallery which enables the ability to use Install-Module command:
-
-``` PowerShell
-PS C:\> Install-Module LnvDeviceManagement
-```
--->
 
 ## Cmdlet Reference
 
