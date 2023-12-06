@@ -33,11 +33,11 @@ Script     1.0.0      LnvDeviceManagement                 {Add-LnvSUCommandLine,
 
 ### Add-LnvSUCommandLine
 
-### Description <!-- {docsify-ignore} -->
+#### Description <!-- {docsify-ignore} -->
 
 Run Script to set Admin command line Windows Registry settings for Lenovo System Update.
 
-### Parameters <!-- {docsify-ignore} -->
+#### Parameters <!-- {docsify-ignore} -->
 
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
@@ -52,27 +52,27 @@ Run Script to set Admin command line Windows Registry settings for Lenovo System
 | Repository | String | False |
 | ExportToWmi | Switch | False |
 
-#### Search <!-- {docsify-ignore} -->
+##### Search <!-- {docsify-ignore} -->
 
 Must be one of the following values [C, R, A].
 
-#### Action <!-- {docsify-ignore} -->
+##### Action <!-- {docsify-ignore} -->
 
 Must be one of the following values [DOWNLOAD, INSTALL, LIST].
 
-#### IncludeRebootPackages  <!-- {docsify-ignore} -->
+##### IncludeRebootPackages  <!-- {docsify-ignore} -->
 
 Must be one of the following values [1, 3, 4, 5], or multiple values separated with a comma.
 
-#### PackageTypes   <!-- {docsify-ignore} -->
+##### PackageTypes   <!-- {docsify-ignore} -->
 
 Must be one of the following values [0, 1, 2, 3, 4], or multiple values separated with a comma. 
 
-#### Repository  <!-- {docsify-ignore} -->
+##### Repository  <!-- {docsify-ignore} -->
 
 Must be a local folder path, a UNC file share path, or a URL to a web-hosted repository.
 
-#### ExportToWmi   <!-- {docsify-ignore} -->
+##### ExportToWmi   <!-- {docsify-ignore} -->
 
 	INPUTS:
 	None.
@@ -95,7 +95,7 @@ Must be a local folder path, a UNC file share path, or a URL to a web-hosted rep
 
 ### Add-LnvSULogging
 
-### Description <!-- {docsify-ignore} -->
+#### Description <!-- {docsify-ignore} -->
 
 This cmdlet sets the appropriate registry key to cause the System Update Add-in to perform logging during update sessions. If neither the -Enable or -Disable switches are specified, then logging will be ENABLED.
 
@@ -104,7 +104,7 @@ This cmdlet sets the appropriate registry key to cause the System Update Add-in 
 | Enable | Switch | False |
 | Disable | Switch | False |
 
-### Example <!-- {docsify-ignore} -->
+#### Example <!-- {docsify-ignore} -->
 
 ```Add-LnvSULogging -Enable```
 
@@ -112,7 +112,7 @@ This cmdlet sets the appropriate registry key to cause the System Update Add-in 
 
 ### Export-LnvUpdateRetrieverConfig
 
-### Description <!-- {docsify-ignore} -->
+#### Description <!-- {docsify-ignore} -->
 
 Generates a .reg file containing an export of the Update Retriever settings found at:
 
@@ -120,13 +120,13 @@ Generates a .reg file containing an export of the Update Retriever settings foun
 
 These settings include the local repository path that was last used and the list of models in the Systems list that can be searched for in Update Retriever. Specify the output file name without an extension.  If an extension other than .reg is specified it will be ignored and the output file will have a .reg extension.
 
-### Parameter <!-- {docsify-ignore} -->
+#### Parameter <!-- {docsify-ignore} -->
 
 | Parameter | Type | Mandatory |
 | --- | --- | --- |
 | Outfile | String | True |
 
-### Example <!-- {docsify-ignore} -->
+#### Example <!-- {docsify-ignore} -->
 
 ```Export-LnvUpdateRetrieverConfig -Outfile C:\users\admin\Downloads\urconfig```
 
@@ -191,8 +191,9 @@ Returns a list of the available driver packs for the machine type specified whic
 
 ```$url = (Find-LnvDriverPack -MachineType 21DD | Where-Object { (($_.OS -eq 'win10') -and ($_.version -eq '21H2')) }).'#text'```
 
-OUTPUTS:
-An object consisting of "os", "version", "crc", "#text" elements where "#text" represents the URL to the package executable file.
+	OUTPUTS:
+	An object consisting of "os", "version", "crc", or "#text" elements where 
+	"#text" represents the URL to the package executable file.
 
 ?> The Where-Object cmdlet can be used to filter on OS and version to return just one URL.  The URL is in the '#text' field of the returned object.
 
@@ -518,7 +519,7 @@ This script allows users to search for updates that will be downloaded to a fold
 &nbsp;&nbsp; 2: Recommended <br>
 &nbsp;&nbsp; 3: Optional <br>
 
-?>Note: 9 can be used for these three parameters to represent 'All'
+?>9 can be used for these three parameters to represent 'All'
 
 #### Parameters <!-- {docsify-ignore} -->
 
@@ -616,6 +617,7 @@ Installer's SCAN action.
 	OUTPUTS:
 	System.Int32. 0 - success
 	System.Int32. 1 - fail
+
 
 ### Show-LnvApplicableUpdate
 
