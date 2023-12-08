@@ -9,7 +9,13 @@
 -- [Think BIOS Config Tool](tbct/tbct_top.md)
 -- [Lenovo View](view/view_top.md)
 
+<!--
+-- [Lenovo Device Management Module](ldmm/ldmm_top.md)
+-->
+-- [Lenovo View](view/view_top.md)
+
 ---
+
 - **Reference Material**
 -- [Scripting Samples](samples/samples.md)
 -- [Docks Reference](docks/docks_top.md)
@@ -17,6 +23,7 @@
 -- [AMD DASH](dash/dash_top.md)
 
 ---
+
 - [FAQ](faq/faq.md)
 
 - [Think Deploy Blog ![ ](../img/link.png)](https://blog.lenovocdrt.com)
