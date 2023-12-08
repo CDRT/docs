@@ -10,6 +10,7 @@
 <!--
 -- [Lenovo Device Management Module](ldmm/ldmm_top.md)
 -->
+-- [Lenovo View](view/view_top.md)
 
 ---
 
