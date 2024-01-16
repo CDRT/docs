@@ -71,18 +71,49 @@ As seen above, the application was successful in setting one setting. Error mess
 ?>Not all BIOS settings are affected by the BIOS defaults change and varies by product. If the button is clicked, a warning prompt will be shown to confirm the user wishes to do that.
 
 ### Revert Changes <!-- {docsify-ignore} -->
+
+<div style="text-align:center;">
+
+![Think BIOS Config Tool UI](../img/reference/tbct_ps/tbctpsrevert_changes.png)
+</div>
+
 If settings have been changed in the application but not applied to the machine and the user wants to revert back to the original settings, click **Revert Changes**. <!-- make sure this is correct--> The user will see the items that were previously marked in red text will be reverted back to black text and the values reset to their original settings. This is a quick way for the user to create multiple configuration files and revert back to the settings they had already saved.
 
 ### Reset to Factory Defaults <!-- {docsify-ignore} -->
+
+<div style="text-align:center;">
+
+![Think BIOS Config Tool UI](../img/reference/tbct_ps/tbctpsreset_factory.png)
+</div>
 
 The **Reset to Factory Defaults** button applies factory default values to the settings.
 
 ### Reset to Custom Defaults <!-- {docsify-ignore} -->
 
+<div style="text-align:center;">
+
+![Think BIOS Config Tool UI](../img/reference/tbct_ps/tbctpsreset_custom.png)
+</div>
+
 ### Generate INI <!-- {docsify-ignore} -->
-On the bottom right, there is a **Generate INI** button. This will create an .INI file of the current settings. The file will be generated in the working directory the application is launched from. The file will be named <model>Config.ini where <model> is the text inside the parenthesis above the Settings Table. The settings that are exported are the current settings of the machine AND the pending changes to the machine. This is done to allow the user to create these files without having to commit changes to the machine. The created file has an optional first line if there is a supervisor password and the remaining lines are of the form key,value. If there is a supervisor password on the machine the application will include it based on the details provided in the Security Actions sections below. <!-- Make sure the file downloads in the same location or do we need to edit it? -->
+<div style="text-align:center;">
+
+![Think BIOS Config Tool UI](../img/reference/tbct_ps/tbctpsini_gen.png)
+</div>
+
+On the bottom right, there is a **Generate INI** button. This will create an .INI file of the current settings. The file will be generated in the working directory the application is launched from, inside the Output folder. The file will be named after the localhost name the settings are being accessed on. The settings that are exported are the current settings of the machine AND the pending changes to the machine. This is done to allow the user to create these files without having to commit changes to the machine. The created file has an optional first line if there is a supervisor password and the remaining lines are of the form key,value. If there is a supervisor password on the machine the application will include it based on the details provided in the Security Actions sections below. <!-- Make sure the file downloads in the same location or do we need to edit it? -->
+
+<div style="text-align:center;">
+
+![Think BIOS Config Tool UI](../img/reference/tbct_ps/tbctpsini_ex.png)
+</div>
 
 ### Create Intune Package <!-- {docsify-ignore} -->
+
+<div style="text-align:center;">
+
+![Think BIOS Config Tool UI](../img/reference/tbct_ps/tbctpscreate_intune.png)
+</div>
 
 ## Security
 
