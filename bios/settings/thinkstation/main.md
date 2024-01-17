@@ -1,6 +1,6 @@
 # Main #
 
-![](./img/main.png)
+![](./img/ts_main_p3twr.png)
 
 These settings affect the appearance of the BIOS Setup interface on the system.
 
