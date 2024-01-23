@@ -1,15 +1,14 @@
 # 4 Troubleshooting
 
-
 ## 4.1 System Update
 
 Typically the first step in isolating issues when running System Update is to make sure System Update can access the repository, whether that is over the Internet to access content directly from Lenovo or over an intranet network to access a local repository. Use standard network troubleshooting steps to verify the logged-on user account has access as required.
 
-When pulling content from Lenovo, System Update uses HTTPS to access content at [https://download.lenovo.com/catalog](https://download.lenovo.com/catalog) and [https://download.lenovo.com/pccbbs](https://download.lenovo.com/pccbbs). These sites may need to be white listed to have access through a corporate firewall. These sites are hosted on a Content Delivery Network (CDN) which consists of hundreds of "edge" servers around the world.  A device will connect to the closest edge server to download content. The specific IP addresses of the available edge servers is always changing as the CDN is being maintained. Therefore, it is not possible to provide a specific IP address or addresses for white listing.
+When pulling content from Lenovo, System Update uses HTTPS to access content at [https://download.lenovo.com/catalog](https://download.lenovo.com/catalog) and [https://download.lenovo.com/pccbbs](https://download.lenovo.com/pccbbs). It will also access https://chifsr.lenovomm.com to record metrics of failed updates if metrics are enabled. These sites may need to be white listed to have access through a corporate firewall. These sites are hosted on a Content Delivery Network (CDN) which consists of hundreds of "edge" servers around the world.  A device will connect to the closest edge server to download content. The specific IP addresses of the available edge servers is always changing as the CDN is being maintained. Therefore, it is not possible to provide a specific IP address or addresses for white listing.
 
 There are no special ports required to be opened for System Update. In some cases the System Update application itself will need to be white listed to have access to the Internet. To ensure complete access for System Update to function properly, enable the following programs:
 
-```
+```CMD
 	%PROGRAMFILES%\Lenovo\System Update\TvsuCommandLauncher.exe	
 
 	%PROGRAMFILES%\Lenovo\System Update\Tvsukernel.exe

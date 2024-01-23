@@ -7,6 +7,7 @@
 -- [Dock Manager](dm/dm_top.md)
 -- [System Update, <br>Update Retriever, <br>Thin Installer](su/su_top.md)
 -- [Think BIOS Config Tool](tbct/tbct_top.md)
+-- [Lenovo Device <br>Management Module](ldmm/ldmm_top.md)
 -- [Lenovo View](view/view_top.md)
 
 <!--

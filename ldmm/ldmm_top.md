@@ -604,6 +604,11 @@ Specify this parameter to create a repository that only contains the package
 descriptor XML and external detection routine files to be used with Thin
 Installer's SCAN action.
 
+##### PackageList <!-- {docsify-ignore} -->
+
+Specify a list of updates by their package IDs which can be obtained using Update
+Retriever. One or more updates can be specified, separated by a comma.
+
 #### Example <!-- {docsify-ignore} -->
 
 ```Get-LnvUpdatesRepo -RepositoryPath 'C:\Program Files (x86)\Lenovo\ThinInstaller\Repository'```
@@ -617,7 +622,6 @@ Installer's SCAN action.
 	OUTPUTS:
 	System.Int32. 0 - success
 	System.Int32. 1 - fail
-
 
 ### Show-LnvApplicableUpdate
 
