@@ -1,5 +1,6 @@
 # BMC Setup #
-![](./img/ts_bmcsetup.png)
+<!--![](./img/ts_bmcsetup.png)-->
+![](./img/ts_bmcsetup1.png)
 
 <details><summary>BMC Card Support</summary>
 

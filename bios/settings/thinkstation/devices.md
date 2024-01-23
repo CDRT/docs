@@ -1,7 +1,8 @@
 # Devices #
-![](./img/ts_devices_pciesetup_px.png)
+![](./img/ts_devices.png)
+<!--![](./img/ts_devices_pciesetup_px.png)-->
 ![](./img/ts_devices_pciexpress_p3twr.png)
-<!--![](./img/devices.png)-->
+<!-- ata drive is missing from other images but in this one ![](./img/devices.png) -->
 
 <details><summary>Card Reader</summary>
 

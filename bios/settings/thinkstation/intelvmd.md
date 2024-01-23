@@ -1,0 +1,193 @@
+# Intel(R) VMD Technology #
+![](./img/ts_intelvmd_1.png)
+![](./img/ts_intelvmd_2.png)
+![](./img/ts_intelvmd_3.png)
+
+Enable the VMD(Volume Management Device) technology to 
+support configure PCIe storages to VROC(Virtual RAID on 
+CPU) feature.
+
+<!-- More options for users: (Display image here?)
+would these be more dropdown subheaders? or do we make it another page
+look at atadriversetup for ex on how they did it
+EX: M.2 Slot 1, M.2 Slot 2, M.2 Slot3
+	PCIe Slot1, etc -->
+
+<details><summary>M.2 Slot1</summary>
+
+Enable/Disable Intel(R) Volume Management Device Technology
+on M.2 Slot1.
+
+Options:
+
+1. **PCIe** – Default.
+2. VMD.
+</details>
+
+<details><summary>M.2 Slot2</summary>
+
+Enable/Disable Intel(R) Volume Management Device Technology
+on M.2 Slot2.
+
+Options:
+
+1. **PCIe** – Default.
+2. VMD.
+</details>
+
+
+<details><summary>M.2 Slot3</summary>
+
+Enable/Disable Intel(R) Volume Management Device Technology
+on M.2 Slot3.
+
+Options:
+
+1. **PCIe** – Default.
+2. VMD.
+</details>
+
+<details><summary>PCIe Slot1</summary>
+
+Enable/Disable Intel(R) Volume Management Device Technology
+on PCIe Slot1.
+
+Options:
+
+1. **PCIe** – Default.
+2. VMD.
+</details>
+
+<details><summary>PCIe Slot2</summary>
+
+Enable/Disable Intel(R) Volume Management Device Technology
+on PCIe Slot2.
+
+Options:
+
+1. **PCIe** – Default.
+2. VMD.
+</details>
+
+<details><summary>PCIe Slot3</summary>
+
+Enable/Disable Intel(R) Volume Management Device Technology
+on PCIe Slot3.
+
+Options:
+
+1. **PCIe** – Default.
+2. VMD.
+</details>
+
+<details><summary>PCIe Slot4</summary>
+
+Enable/Disable Intel(R) Volume Management Device Technology
+on PCIe Slot4.
+
+Options:
+
+1. **PCIe** – Default.
+2. VMD.
+</details>
+
+<details><summary>PCIe Slot5</summary>
+
+Enable/Disable Intel(R) Volume Management Device Technology
+on PCIe Slot5.
+
+Options:
+
+1. **PCIe** – Default.
+2. VMD.
+</details>
+
+
+<details><summary>PCIe Slot6</summary>
+
+Enable/Disable Intel(R) Volume Management Device Technology
+on PCIe Slot6.
+
+Options:
+
+1. **PCIe** – Default.
+2. VMD.
+</details>
+
+<details><summary>PCIe Slot7</summary>
+
+Enable/Disable Intel(R) Volume Management Device Technology
+on PCIe Slot7.
+
+Options:
+
+1. **PCIe** – Default.
+2. VMD.
+</details>
+
+
+<details><summary>PCIe Slot8</summary>
+
+Enable/Disable Intel(R) Volume Management Device Technology
+on PCIe Slot8.
+
+Options:
+
+1. **PCIe** – Default.
+2. VMD.
+</details>
+
+<details><summary>PCIe Slot9</summary>
+
+Enable/Disable Intel(R) Volume Management Device Technology
+on PCIe Slot9.
+
+Options:
+
+1. **PCIe** – Default.
+2. VMD.
+</details>
+
+
+<details><summary>MCIO Slot1-1</summary>
+
+Enable/Disable Intel(R) Volume Management Device Technology
+on MCIO Slot1-1.
+
+Options:
+
+1. **PCIe** – Default.
+2. VMD.
+</details>
+
+<details><summary>MCIO Slot1-2</summary>
+
+Enable/Disable Intel(R) Volume Management Device Technology
+on MCIO Slot1-2.
+
+Options:
+
+1. **PCIe** – Default.
+2. VMD.
+</details>
+
+<details><summary>MCIO Slot2-1</summary>
+
+Enable/Disable Intel(R) Volume Management Device Technology
+on MCIO Slot2-1.
+Options:
+
+1. **PCIe** – Default.
+2. VMD.
+</details>
+
+<details><summary>MCIO Slot2-2</summary>
+
+Enable/Disable Intel(R) Volume Management Device Technology
+on MCIO Slot2-2.
+
+Options:
+
+1. **PCIe** – Default.
+2. VMD.
+</details>

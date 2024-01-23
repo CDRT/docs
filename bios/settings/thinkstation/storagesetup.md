@@ -1,9 +1,12 @@
 # Storage Setup #
-
-![](./img/ts_storagesetup_p3twr_1.png)
-<!--![](./img/ts_storagesetup_p3twr_2.png)-->
+![](./img/ts_storagesetup_p3twr1.png)
+![](./img/ts_storagesetup_p3twr2.png)
+![](./img/ts_storagesetup_px1.png)
+![](./img/ts_storagesetup_px2.png)
+<!--![](./img/ts_storagesetup_p3twr_1.png)
+![](./img/ts_storagesetup_p3twr_2.png)
 ![](./img/ts_storagesetup_px_1.png)
-![](./img/ts_storagesetup_px_2.png)
+![](./img/ts_storagesetup_px_2.png)-->
 
 
 <details><summary>SATA Controller</summary>
@@ -153,7 +156,7 @@ Options:
 
 
 </details>
-
+<!--
 ### Intel(R) VMD Technology ###
 ![](./img/ts_intelvmd_1.png)
 ![](./img/ts_intelvmd_2.png)
@@ -161,7 +164,7 @@ Options:
 
 Enable the VMD(Volume Management Device) technology to 
 support configure PCIe storages to VROC(Virtual RAID on 
-CPU) feature.
+CPU) feature. -->
 
 <!-- More options for users: (Display image here?)
 would these be more dropdown subheaders? or do we make it another page

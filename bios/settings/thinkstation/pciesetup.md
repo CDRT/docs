@@ -1,7 +1,9 @@
 # PCIe Setup #
 
-![](./img/ts_pciesetup_px.png)
-![](./img/ts_pciesetup_px_2.png)
+![](./img/ts_pciesetup_px1.png)
+![](./img/ts_pciesetup_px2.png)
+<!--![](./img/ts_pciesetup_px.png)
+![](./img/ts_pciesetup_px_2.png)-->
 
 <details><summary>Re-Size BAR Support</summary>
 If system has Resizable BAR capable PCIe Devices, this option
