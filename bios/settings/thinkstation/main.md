@@ -27,7 +27,6 @@ Options:
 </details>
 
 <details><summary>Setup Content</summary>
-
 Controls the level of settings displayed between just the basic settings versus the more advanced settings.
 
 Options:

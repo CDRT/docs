@@ -1,5 +1,6 @@
 # Video Setup Settings #
-![](./img/videosetup.png)
+![](./img/ts_videosetup.png)
+<!--![](./img/videosetup.png)-->
 
 <details><summary>Select Active Video</summary>
 

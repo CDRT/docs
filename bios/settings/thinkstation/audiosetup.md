@@ -1,8 +1,8 @@
 # Audio Setup Settings #
 
 ### Intel version ###
-
-![](./img/audiosetup.png)
+![](./img/ts_audiosetup.png)
+<!--![](./img/audiosetup.png)-->
 
 <details><summary>Onboard Audio Controller</summary>
 

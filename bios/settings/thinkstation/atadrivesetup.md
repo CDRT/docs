@@ -1,5 +1,6 @@
 # ATA Drive Setup Settings #
-![](./img/atadrivesetup.png)
+![](./img/ts_atadrivesetup.png)
+<!--![](./img/atadrivesetup.png)-->
 
 ?> The number of ATA drives may vary depending on model.
 

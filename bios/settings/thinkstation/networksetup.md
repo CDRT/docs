@@ -1,8 +1,8 @@
 # Network Setup Settings #
 
 ### General ###
-
-![](./img/networksetup.png)
+![](./img/ts_networksetup.png)
+<!--![](./img/networksetup.png)-->
 
 <details><summary>Onboard Ethernet Controller</summary>
 

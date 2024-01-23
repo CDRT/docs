@@ -1,5 +1,6 @@
 # Serial Port Setup Settings #
-![](./img/serialportsetup.png)
+![](./img/ts_serialportsetup.png)
+<!--![](./img/serialportsetup.png)-->
 
 <details><summary>Serial Port1 Address</summary>
 

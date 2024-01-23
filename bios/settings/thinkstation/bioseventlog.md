@@ -1,7 +1,7 @@
 # BIOS Event Logging #
 ![](./img/ts_biosevent.png)
 ![](./img/ts_bioseventlog.png)
-![](./img/ts_biosevent_p3twr.png)
+<!--![](./img/ts_biosevent_p3twr.png)-->
 
 
 Displays information on system components such as:

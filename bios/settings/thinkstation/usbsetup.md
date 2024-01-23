@@ -1,6 +1,6 @@
 # USB Setup Settings #
-
-![](./img/usbsetup.png)
+![](./img/ts_usbsetup.png)
+<!--![](./img/usbsetup.png)-->
 
 <details><summary>AMD version of USB Setup</summary>
 

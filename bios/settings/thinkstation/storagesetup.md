@@ -1,9 +1,9 @@
 # Storage Setup #
 ![](./img/ts_storagesetup_p3twr1.png)
-![](./img/ts_storagesetup_p3twr2.png)
+<!--![](./img/ts_storagesetup_p3twr2.png)
 ![](./img/ts_storagesetup_px1.png)
 ![](./img/ts_storagesetup_px2.png)
-<!--![](./img/ts_storagesetup_p3twr_1.png)
+![](./img/ts_storagesetup_p3twr_1.png)
 ![](./img/ts_storagesetup_p3twr_2.png)
 ![](./img/ts_storagesetup_px_1.png)
 ![](./img/ts_storagesetup_px_2.png)-->
@@ -136,6 +136,21 @@ this setting may prevent the system from booting.
 
 </details>
 
+![](./img/ts_storagesetup_px_2.png)
+
+<details><summary>Configure SATA as</summary>
+
+?>Device driver support is required for AHCI or RAID.
+Depending on how the hard disk image was installed, changing
+this setting may prevent the system from booting.
+
+Options:
+
+1. **AHCI** – Default.
+2. RAID
+
+</details>
+
 <details><summary>Hard Disk Pre-delay</summary>
 Adds a delay before the first access of a hard disk by the system
 software. Some hard disks hang if accessed before they have
@@ -153,9 +168,11 @@ Options:
 6. 21 Seconds
 7. 30 Seconds
 
-
-
 </details>
+
+
+
+
 <!--
 ### Intel(R) VMD Technology ###
 ![](./img/ts_intelvmd_1.png)
