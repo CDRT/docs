@@ -1,6 +1,6 @@
 # Boot Priority Order #
 
-![](./img/bootpriorityorder.png)
+![](./img/ts_bootpriorityorder.png)
 
 <details><summary>UEFI Boot Options</summary>
 

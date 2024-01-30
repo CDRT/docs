@@ -3,6 +3,13 @@
 ![](./img/ts_serialport.png)
 <!--![](./img/amd_serialportconsoleredirection.png)-->
 
+<details><summary>Console Redirection</summary>
+Options:
+
+1.  **Disabled** - Default.
+2.  Enabled.
+</details>
+
 ### Console Redirection Settings ###
 
 ![](./img/ts_consolerd1.png)

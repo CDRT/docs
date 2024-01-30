@@ -40,7 +40,7 @@ Options:
 
 ### AMD version ###
 
-![](./img/amd_audiosetup.png)
+![](./img/ts_amd_audiosetup.png)
 
 <details><summary>Front Audio Controller</summary>
 

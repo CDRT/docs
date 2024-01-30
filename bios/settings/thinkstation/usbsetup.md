@@ -4,7 +4,10 @@
 
 <details><summary>AMD version of USB Setup</summary>
 
-![](./img/amd_usbsetup.png)
+<!--![](./img/amd_usbsetup.png)-->
+![](./img/ts_amd_usbsetup1.png)
+![](./img/ts_amd_usbsetup2.png)
+<!--![](./img/ts_amd_usbsetup3.png)-->
 
 </details>
 

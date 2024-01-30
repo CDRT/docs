@@ -72,7 +72,7 @@ Options:
 
 ### AMD-only features ###
 
-![](./img/amd_power.png)
+![](./img/ts_amd_power.png)
 
 <!-- <details><summary>PSU Over load Warning</summary>
 

@@ -1,6 +1,13 @@
 # Security #
-![](./img/security.png)
 
+![](./img/ts_security_1.png)
+
+<!--![](./img/ts_security1.png)
+![](./img/ts_security2.png)
+![](./img/ts_security3.png)
+![](./img/ts_security4.png)
+![](./img/security.png)
+-->
 <details><summary>Supervisor Password</summary>
 
 The supervisor password (SVP) protects the system information stored in UEFI BIOS.
@@ -127,7 +134,7 @@ Options:
 | SmartUSBProtection | Disabled, Read Only, No Access | yes | Both |
 </details>
 
-<details><summary>Secure wipe</summary>
+<details><summary>secure wipe</summary>
 
 Whether to display the `secure wipe` option on the F12 BIOS Startup Menu. Users can select this option to securely erase HDD data.
 
@@ -205,6 +212,17 @@ Options:
 | ElectronicLock | Lock, Unlock | yes | Intel |
 </details>
 
+<details><summary>ThinkShield Passwordless Power-On Authentication</summary>
+
+Enable or Disable the ThinkShield Passwordless Power-On
+Authentication and Device Manager.
+
+Options:
+
+1. **Enabled** – Default.
+2. Disabled.
+</details>
+
 <details><summary>Cover Tamper Detected</summary>
 
 Whether to enable Chassis Intrusion Detection, a utility that can tell whether someone has opened the case (intruded into the chassis).
@@ -237,11 +255,21 @@ Options:
 | ConfigurationChangeDetection | Disabled, Enabled | yes | Both |
 </details>
 
+<details><summary>Reset system to Factory Default</summary>
+
+This option is used clear all data stored in UEFI system. Not
+affected to storage data. After selecting this item, the system
+will be automatically reboot, then reset system to factory default
+settings.
+
+</details>
+
 ### AMD-only features ###
 
 ?> Only the AMD-only features are shown in the screenshot below; otherwise they are shown in the screenshot above.
 
-![](./img/amd_security.png)
+![](./img/ts_amd_security.png)
+![](./img/ts_amd_security2.png)
 
 <details><summary>Set Password Encryption Algorithm</summary>
 
@@ -354,6 +382,19 @@ Options:
 
 </details>
 
+<details><summary>Keyboard Language</summary>
+
+Select the keyboard language for password. The default
+is English keyboard.
+
+Options:
+
+1.  **English** - Default.
+2.  French.
+3.	German
+
+</details>
+
 <details><summary>Allow Jumper Clear SVP</summary>
 
 Whether to allow the hardware jumper to clear the Supervisor Password.
@@ -394,6 +435,22 @@ Options:
 
 1.  **Disabled** - Default.
 2.  Enabled.
+
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| RequireSVPwhenFlashing | No, Yes | yes | both |
+
+</details>
+
+<details><summary>Require POP on System Boot</summary>
+
+
+Options:
+
+1.  **Yes** - Default.  The system prompts for passwords when the system starts form the full off or hibernate state.
+2.  No - Passwords are not prompted and continue to boot the
+OS. To prevent unauthorized access to the system, recommended
+to set user authentication on the OS.
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|

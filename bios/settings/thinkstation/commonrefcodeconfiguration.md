@@ -1,6 +1,6 @@
 # Common RefCode Configuration #
 
-![](./img/amd_commonrefcodeconfiguration.png)
+![](./img/ts_amd_commonrefcodeconfiguration.png)
 
 <details><summary>MMIO Above 4G Limit</summary>
 

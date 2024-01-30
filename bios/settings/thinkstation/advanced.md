@@ -3,9 +3,10 @@
 
 <details><summary>Advanced - Intel version</summary>
 
-![](./img/ts_advanced_px1.png)
+
 ![](./img/ts_advanced_p3twr1.png)
-<!--![](./img/ts_advanced_px.png)
+<!-- ![](./img/ts_advanced_px1.png)
+![](./img/ts_advanced_px.png)
 ![](./img/ts_advanced_p3twr.png)
 ![](./img/advanced.png)-->
 
@@ -84,7 +85,8 @@ Options:
 
 <details><summary>Advanced - AMD version</summary>
 
-![](./img/amd_advanced.png)
+![](./img/ts_amdadvanced.png)
+<!--![](./img/amd_advanced.png)-->
 
 <!-- TODO: confirm layout -->
 

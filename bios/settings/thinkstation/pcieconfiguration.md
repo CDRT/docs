@@ -1,6 +1,7 @@
 # PCIe Configuration #
 
-![](./img/amd_pcieconfiguration.png)
+![](./img/ts_amd_pcieconfiguration.png)
+<!--![](./img/amd_pcieconfiguration.png)-->
 
 <details><summary>Above 4G Decoding</summary>
 
@@ -100,7 +101,7 @@ Options:
 
 ### PCIe Slot{X} Status ###
 
-![](./img/amd_pcieslot1status.png)
+![](./img/ts_pcieslotstatus.png)
 
 ?> X represents the slot number, from 1 to 6.
 
@@ -168,7 +169,7 @@ Options:
 
 ### M.2 Slot{Y} Status ###
 
-![](./img/amd_m2slot1status.png)
+![](./img/ts_amd_m2slot1status.png)
 
 ?> Y represents the slot number, 1 or 2.
 
