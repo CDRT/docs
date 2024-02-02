@@ -12,6 +12,10 @@ Options:
 1. **Disabled**. Default.
 2. Enabled.
 
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| SRIOVSupport | Enabled, Disabled |  | Both |
+
 </details>
 
 <details><summary>ASPM Support</summary>
@@ -22,6 +26,10 @@ Options:
 
 1. **Auto**. Default. Configure ASPM automatically according to what the attached device supports in each PCI Express port.
 2. Disabled - Disable ASPM support of all PCI Express ports.
+
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| ASPMSupport | Auto, Disabled |  | Both |
 
 </details>
 
@@ -36,6 +44,10 @@ Options:
 4. Gen 3
 5. Gen 4
 
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| PCIe16xSlotSpeed | Auto, Gen1, Gen2, Gen3, Gen4 |  | Intel |
+
 </details>
 
 <details><summary>PCIe 4x Slot Speed</summary>
@@ -49,6 +61,10 @@ Options:
 4. Gen 3
 5. Gen 4
 
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| PCIe4xSlotSpeed | Auto, Gen1, Gen2, Gen3, Gen4 |  | Intel |
+
 </details>
 
 <details><summary>PCIe 1x Slot 1 Speed</summary>
@@ -61,4 +77,7 @@ Options:
 3. Gen 2
 4. Gen 3
 
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| PCIe1xSlot1Speed | Auto, Gen1, Gen2, Gen3|  | Intel |
 </details>

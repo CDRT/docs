@@ -63,7 +63,9 @@ Options:
 1. **Enabled** – All CPU cores. Default. 
 2. Disabled – Only one core.
 
-
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| EfficientCores | Enabled, Disabled | yes | Intel |
 </details>
 
 <details><summary>Intel(R) Virtualization Technology</summary>

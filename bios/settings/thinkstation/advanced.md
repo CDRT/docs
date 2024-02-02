@@ -18,6 +18,9 @@ Options:
 1. **Enabled** – Default.
 2. Disabled.
 
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| WHEASupport | Disabled, Enabled |  | Intel |
 </details>
 
 <details><summary>Intel(R) Total Memory Encryption</summary>
@@ -29,6 +32,10 @@ Options:
 
 1. **Disabled** – Default.
 2. Enabled.
+
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| IntelTotalMemoryEncryption | Disabled, Enabled | yes | Intel |
 </details>
 
 <details><summary>Intel(R) SIPP Support</summary>
@@ -50,6 +57,10 @@ Options:
 
 1. **Disabled** – Default.
 2. Enabled. 
+
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| IntelThunderboltTechnology | Enabled, Disabled | yes | Intel |
 </details>
 
 <details><summary>Dust Shield Alert</summary>
@@ -62,6 +73,9 @@ Options:
 1. **Disabled** – Default. The user is not reminded to clean the Dust Shield.
 2. Enabled - The user is reminded to clean the Dust Shield.
 
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| DustShieldAlert | Disabled, Enabled | yes | Intel |
 </details>
 
 <details><summary>Intel(R) DPTF Support</summary>
@@ -88,6 +102,8 @@ Options:
 ![](./img/ts_amdadvanced.png)
 <!--![](./img/amd_advanced.png)-->
 
-<!-- TODO: confirm layout -->
+?> Please see sidebar for Advnaced AMD Settings
+<!-- TODO: confirm layout because each setting is a seperate page in the sidebar Maybe put a statement there -->
+
 
 </details>

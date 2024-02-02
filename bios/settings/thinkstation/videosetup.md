@@ -8,7 +8,9 @@
 
 <details><summary>Select Active Video - Intel(R)</summary>
 
-Select the primary video device for graphics output.
+Select primary video device that will be used for graphic output. If "Auto" is selected, system will prioritize video devices as following sequence:
+PEG (PCI-e Graphics Device)
+IGD (Internal Graphics Device)
 
 Options:
 
@@ -42,9 +44,9 @@ Options:
 1. Slot6(PEG)
 1. **Auto** - Default.
 
-<!-- | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SelectActiveVideo | IGD, PEG, Auto | yes | AMD | -->
+| SelectActiveVideo | ISlot1(PEG), Slot2(PEG),Slot3(PEG), Slot4(PEG), Slot5(PEG), Slot6(PEG), Auto | yes | AMD | 
 
 </details>
 

@@ -1,6 +1,6 @@
 # TCG Feature Setup Settings #
 
-![](./img/tcgfeaturesetup.png)
+![](./img/ts_tcgfeaturesetup.png)
 
 <details><summary>TCG Security Device State</summary>
 

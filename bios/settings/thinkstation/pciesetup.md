@@ -12,6 +12,10 @@ Options:
 
 1. **Disabled** – Default.
 2. Enabled.
+
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| ReSizeBARSupport  | Enabled, Disabled |  | Both |
 </details>
 
 
@@ -24,6 +28,9 @@ Options:
 1. **Disabled** – Default.
 2. Enabled.
 
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| SRIOVSupport   | Enabled, Disabled |  | Both |
 </details>
 
 <details><summary>ASPM Support</summary>
@@ -36,6 +43,9 @@ Options:
 1. **Disabled** – Default.
 2. Auto.
 
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| ASPMSupport   | Disabled, Auto |  | Both | 
 </details>
 
 <details><summary>Link Training Timeout(uS)</summary>
@@ -48,6 +58,97 @@ Options:
 
 </details>
 
+
 <!-- Need to add all of the PCIe Slotx Configurations 
 These will likely be subheader drop downs
 -->
+### PCIe Slot{Number} Configuration ###
+
+![](./img/ts_pcieslotconfig.png)
+
+<details><summary>PCIe Port</summary>
+Select whether to enable or disable this PCIe port.
+
+Options:
+
+1. **Enabled** – Default.
+2. Disabled.
+
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| PCIeSlot{Number}Port | Enabled, Disabled |  | Both | 
+</details>
+
+<details><summary>PCIe Port Bifurcationt</summary>
+Select PCIe port bifurcation. If select [Auto], system will auto
+configurate PCIe port bifurcation and auto detect Quad M.2 PCIe Card.
+
+Options:
+
+1. **Auto** – Default.
+2. x4x4x4x4.
+3. x8x8.
+4. x16
+
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| PCIeSlot{Number}Bifurcation   | x4x4x4x4, x8x8, x16, Auto |  | Both | 
+</details>
+
+<details><summary>Link Speed</summary>
+Select PCEi Link Speed.
+
+Options:
+
+1. **Auto** – Default.
+2. Gen 1 (2.5 GT/s).
+3. Gen 2 (5 GT/s).
+4. Gen 3 (8 GT/s).
+5. Gen 4 (16 GT/s)
+
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| PCIeSlot{Number}LinkSpeed | Auto, Gen 1 (2.5 GT/s), Gen 2 (5 GT/s), Gen 3 (8 GT/s), Gen 4 (16 GT/s) |  | Both | 
+</details>
+
+### M.2 Slot{Number} Configuration ###
+
+![](./img/ts_m2slotconfig.png)
+
+<details><summary>Link Speed</summary>
+Select PCIe Link Speed.
+
+Options:
+
+1. **Auto** – Default.
+2. Gen 1 (2.5 GT/s).
+3. Gen 2 (5 GT/s).
+4. Gen 3 (8 GT/s).
+5. Gen 4 (16 GT/s)
+6. Gen 5 (32 GT/s)
+
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| M2Slot{Number}LinkSpeed | Auto, Gen 1 (2.5 GT/s), Gen 2 (5 GT/s), Gen 3 (8 GT/s), Gen 4 (16 GT/s), Gen 5 (32 GT/s) |  | Both | 
+</details>
+
+### MCIO Slot{Number}-{Number} Configuration
+
+![](./img/ts_mcioslotconfig.png)
+
+<details><summary>Link Speed</summary>
+Select PCIe Link Speed.
+
+Options:
+
+1. **Auto** – Default.
+2. Gen 1 (2.5 GT/s).
+3. Gen 2 (5 GT/s).
+4. Gen 3 (8 GT/s).
+5. Gen 4 (16 GT/s)
+6. Gen 5 (32 GT/s)
+
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| MCIOSlot{Number}{Number}LinkSpeed | Auto, Gen 1 (2.5 GT/s), Gen 2 (5 GT/s), Gen 3 (8 GT/s), Gen 4 (16 GT/s), Gen 5 (32 GT/s) |  | Intel | 
+</details>

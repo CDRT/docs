@@ -44,6 +44,9 @@ Options:
 1. **Enabled** – Default. The system could support boot from USB devices.
 2. Disabled - The system could not support boot from USB devices.
 
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| USBBootSupport | Enabled, Disabled | yes | Both |
 </details>
 
 <details><summary>Boot Up Num-Lock Status</summary>
@@ -120,10 +123,10 @@ Use Up and Down arrows to select a device.
 `+` and `-` move the device up or down.
 
 `x` excludes / includes the device from the boot sequence.
-<!-- 
+
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| setting_name | setting_values | yes_no | both | -->
+| PrimaryBootSequence | M.2 Drive |  | AMD | 
 
 </details>
 
@@ -137,9 +140,9 @@ Use Up and Down arrows to select a device.
 
 `x` excludes / includes the device from the boot sequence.
 
-<!-- | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| setting_name | setting_values | yes_no | both | -->
+| AutomaticBootSequence | M.2 Drive |  | AMD |
 
 </details>
 
@@ -152,10 +155,10 @@ Use Up and Down arrows to select a device.
 `+` and `-` move the device up or down.
 
 `x` excludes / includes the device from the boot sequence.
-<!-- 
+
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| setting_name | setting_values | yes_no | both | -->
+| ErrorBootSequence | M.2 Drive |  | AMD | 
 
 </details>
 

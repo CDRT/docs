@@ -1,10 +1,10 @@
 # System Event Log Settings #
 
-![](./img/systemeventlog.png)
+![](./img/ts_systemeventlog.png)
 
 <details><summary>View System Event Log</summary>
 
-![](./img/viewsystemeventlog.png)
+![](./img/ts_viewsystemeventlog.png)
 
 View only.
 

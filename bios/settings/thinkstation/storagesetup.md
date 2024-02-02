@@ -15,105 +15,48 @@ Options:
 
 1. **Enabled** – Default.
 2. Disabled.
+
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| SATAController | Disabled, Enabled |  | Both |
 </details>
 
 
-<details><summary>SATA Drive 1</summary>
+<details><summary>SATA Drive {Number}</summary>
 
 Options:
 
 1. **Enabled** – Default.
 2. Disabled.
 
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| SATADrive{Number} | Disabled, Enabled |  | Both |
 </details>
 
 
-<details><summary>SATA Drive 2</summary>
+<details><summary>M.2 Drive {Number}</summary>
 
 Options:
 
 1. **Enabled** – Default.
 2. Disabled.
 
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| M.2Drive{Number} | Disabled, Enabled |  | Intel |
 </details>
 
-<details><summary>SATA Drive 3</summary>
+<details><summary>MCIO Drive {Number}-{Number}</summary>
 
 Options:
 
 1. **Enabled** – Default.
 2. Disabled.
 
-</details>
-
-<details><summary>SATA Drive 4</summary>
-
-Options:
-
-1. **Enabled** – Default.
-2. Disabled.
-
-</details>
-
-<details><summary>SATA Drive 5</summary>
-
-Options:
-
-1. **Enabled** – Default.
-2. Disabled.
-
-</details>
-
-<details><summary>SATA Drive 6</summary>
-
-Options:
-
-1. **Enabled** – Default.
-2. Disabled.
-
-</details>
-
-<details><summary>M.2 Drive 1</summary>
-
-Options:
-
-1. **Enabled** – Default.
-2. Disabled.
-
-</details>
-
-<details><summary>M.2 Drive 2</summary>
-
-Options:
-
-1. **Enabled** – Default.
-2. Disabled.
-
-</details>
-
-<details><summary>M.2 Drive 3</summary>
-
-Options:
-
-1. **Enabled** – Default.
-2. Disabled.
-
-</details>
-
-<details><summary>MCIO Drive 1-1</summary>
-
-</details>
-
-<details><summary>MCIO Drive 1-2</summary>
-
-</details>
-
-<details><summary>MCIO Drive 2-1</summary>
-
-</details>
-
-<details><summary>MCIO Drive 2-2</summary>
-
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| MCIODrive{Number}{Number} | Disabled, Enabled |  | Intel |
 </details>
 
 <details><summary>SATA Drive * Hot-Plug Support</summary>
@@ -122,6 +65,9 @@ Options:
 1. Enabled.
 2. **Disabled** – Default.
 
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| SATADrivexHotPlugSupport | Disabled, Enabled |  | Both |
 </details>
 
 <details><summary>Configure Storage as</summary>
@@ -133,6 +79,10 @@ Mode Options:
 ?>Device driver support is required for AHCI or RAID.
 Depending on how the hard disk image was installed, changing
 this setting may prevent the system from booting.
+
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| ConfigureStorageas | AHCI, RAID |  | Intel |
 
 </details>
 
@@ -149,6 +99,9 @@ Options:
 1. **AHCI** – Default.
 2. RAID
 
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| ConfigureSATAas | AHCI, RAID |  | Both |
 </details>
 
 <details><summary>Hard Disk Pre-delay</summary>
@@ -168,6 +121,9 @@ Options:
 6. 21 Seconds
 7. 30 Seconds
 
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| HardDiskPre-delay | Disabled, 3 Seconds, 6 Seconds, 9 Seconds, 12 Seconds, 15 Seconds, 21 Seconds, 30 Seconds |  | Both |
 </details>
 
 

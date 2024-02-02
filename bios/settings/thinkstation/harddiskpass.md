@@ -3,8 +3,9 @@
 !> Number of drives depends on the model and platform.
 
 ### General ###
-
-![](./img/harddiskpass.png)
+<!--![](./img/harddiskpass.png)-->
+![](./img/ts_harddiskpass.png)
+![](./img/ts_harddiskpass2.png)
 
 <details><summary> {DriveType} {Number} Password</summary>
 
@@ -89,7 +90,9 @@ Options:
 
 ### Security Erase HDD Data ###
 
-![](./img/securityerasehdd.png)
+![](./img/ts_securityerasehdd.png)
+![](./img/ts_securityerasehdd2.png)
+<!--![](./img/securityerasehdd.png)-->
 
 <details><summary>Erase {DriveType} {N} Data</summary>
 

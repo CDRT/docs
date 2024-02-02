@@ -9,6 +9,7 @@ Options:
 1. **Disabled** – Default.
 2. Enabled.
 
+
 </details>
 
 <details><summary>Attempt Fast Boot</summary>
@@ -29,4 +30,8 @@ Options:
 
 ### Memory Topology ###
 
-![](./img/ts_memtopology.png)
+![](./img/ts_memtopologysnip.png)
+
+![](./img/ts_memtopologysnip.png)
+
+<!--![](./img/ts_memtopology.png)-->

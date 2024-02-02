@@ -54,7 +54,7 @@
    - [TCG Feature Setup](bios/settings/thinkstation/tcgfeaturesetup.md)
    - [Secure Boot](bios/settings/thinkstation/secureboot.md)
    - [System Event Log](bios/settings/thinkstation/systemeventlog.md)
-   - [Certificate-based BIOS Authentication](bios/settings/certbasedbiosauth.md)
+   - [Certificate-based BIOS Authentication](bios/settings/thinkstation/certbasedbiosauth.md)
 - [Startup](bios/settings/thinkstation/startup.md)
    - [Boot Priority Order](bios/settings/thinkstation/bootpriorityorder.md)
 - [Exit](bios/settings/thinkstation/exit.md)
