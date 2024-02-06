@@ -9,6 +9,7 @@
 ![](./img/ts_storagesetup_px_2.png)-->
 
 
+
 <details><summary>SATA Controller</summary>
 
 Options:
@@ -18,7 +19,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SATAController | Disabled, Enabled |  | Both |
+| SATAController | Disabled, Enabled | Yes | Both |
 </details>
 
 
@@ -31,7 +32,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SATADrive{Number} | Disabled, Enabled |  | Both |
+| SATADrive{Number} | Disabled, Enabled | Yes | Both |
 </details>
 
 

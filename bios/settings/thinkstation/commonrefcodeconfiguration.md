@@ -32,6 +32,6 @@ Options:
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| NUMA | NPS1, NPS2, NPS4, Auto | yes_no | both |
+| NUMA | NPS1, NPS2, NPS4, Auto | yes | both |
 
 </details>

@@ -30,8 +30,6 @@ Options:
 
 ### Memory Topology ###
 
-![](./img/ts_memtopologysnip.png)
-
-![](./img/ts_memtopologysnip.png)
+![](./img/ts_memtopologysnip.jpg)
 
 <!--![](./img/ts_memtopology.png)-->

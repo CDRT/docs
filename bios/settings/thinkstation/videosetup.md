@@ -64,7 +64,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| Pre-AllocatedMemorySize |  | yes | Both |
+| Pre-AllocatedMemorySize | 32 MB, 64 MB, 128 MB | yes | Both |
 </details>
 
 <details><summary>Total Graphics Memory</summary>
@@ -79,5 +79,5 @@ Optional:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| TotalGraphicsMemory |  | yes | Both |
+| TotalGraphicsMemory | 128 MB, 256 MB, Maximum | yes | Both |
 </details>

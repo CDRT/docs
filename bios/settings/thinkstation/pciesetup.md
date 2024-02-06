@@ -30,7 +30,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SRIOVSupport   | Enabled, Disabled |  | Both |
+| SRIOVSupport   | Enabled, Disabled | Yes | Both |
 </details>
 
 <details><summary>ASPM Support</summary>
@@ -45,7 +45,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| ASPMSupport   | Disabled, Auto |  | Both | 
+| ASPMSupport   | Disabled, Auto | Yes | Both | 
 </details>
 
 <details><summary>Link Training Timeout(uS)</summary>
@@ -76,7 +76,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| PCIeSlot{Number}Port | Enabled, Disabled |  | Both | 
+| PCIeSlot{Number}Port | Enabled, Disabled | Yes | Both | 
 </details>
 
 <details><summary>PCIe Port Bifurcationt</summary>
@@ -92,7 +92,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| PCIeSlot{Number}Bifurcation   | x4x4x4x4, x8x8, x16, Auto |  | Both | 
+| PCIeSlot{Number}Bifurcation   | x4x4x4x4, x8x8, x16, Auto | Yes | Both | 
 </details>
 
 <details><summary>Link Speed</summary>
@@ -108,7 +108,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| PCIeSlot{Number}LinkSpeed | Auto, Gen 1 (2.5 GT/s), Gen 2 (5 GT/s), Gen 3 (8 GT/s), Gen 4 (16 GT/s) |  | Both | 
+| PCIeSlot{Number}LinkSpeed | Auto, Gen 1 (2.5 GT/s), Gen 2 (5 GT/s), Gen 3 (8 GT/s), Gen 4 (16 GT/s) | Yes | Both | 
 </details>
 
 ### M.2 Slot{Number} Configuration ###
@@ -129,7 +129,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| M2Slot{Number}LinkSpeed | Auto, Gen 1 (2.5 GT/s), Gen 2 (5 GT/s), Gen 3 (8 GT/s), Gen 4 (16 GT/s), Gen 5 (32 GT/s) |  | Both | 
+| M2Slot{Number}LinkSpeed | Auto, Gen 1 (2.5 GT/s), Gen 2 (5 GT/s), Gen 3 (8 GT/s), Gen 4 (16 GT/s), Gen 5 (32 GT/s) | Yes | Both | 
 </details>
 
 ### MCIO Slot{Number}-{Number} Configuration
@@ -150,5 +150,5 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| MCIOSlot{Number}{Number}LinkSpeed | Auto, Gen 1 (2.5 GT/s), Gen 2 (5 GT/s), Gen 3 (8 GT/s), Gen 4 (16 GT/s), Gen 5 (32 GT/s) |  | Intel | 
+| MCIOSlot{Number}{Number}LinkSpeed | Auto, Gen 1 (2.5 GT/s), Gen 2 (5 GT/s), Gen 3 (8 GT/s), Gen 4 (16 GT/s), Gen 5 (32 GT/s) | Yes | Intel | 
 </details>

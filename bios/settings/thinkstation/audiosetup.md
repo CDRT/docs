@@ -55,7 +55,7 @@ Options:
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| FrontAudioController | | yes | AMD |
+| FrontAudioController | Enabled, Disabled | yes | AMD |
 
 </details>
 

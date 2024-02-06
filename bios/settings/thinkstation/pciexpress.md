@@ -14,7 +14,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SRIOVSupport | Enabled, Disabled |  | Both |
+| SRIOVSupport | Enabled, Disabled | Yes | Both |
 
 </details>
 
@@ -29,7 +29,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| ASPMSupport | Auto, Disabled |  | Both |
+| ASPMSupport | Auto, Disabled | Yes | Both |
 
 </details>
 
@@ -46,7 +46,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| PCIe16xSlotSpeed | Auto, Gen1, Gen2, Gen3, Gen4 |  | Intel |
+| PCIe16xSlotSpeed | Auto, Gen1, Gen2, Gen3, Gen4 | Yes | Intel |
 
 </details>
 
@@ -63,7 +63,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| PCIe4xSlotSpeed | Auto, Gen1, Gen2, Gen3, Gen4 |  | Intel |
+| PCIe4xSlotSpeed | Auto, Gen1, Gen2, Gen3, Gen4 | Yes | Intel |
 
 </details>
 
@@ -79,5 +79,5 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| PCIe1xSlot1Speed | Auto, Gen1, Gen2, Gen3|  | Intel |
+| PCIe1xSlot1Speed | Auto, Gen1, Gen2, Gen3| Yes | Intel |
 </details>
