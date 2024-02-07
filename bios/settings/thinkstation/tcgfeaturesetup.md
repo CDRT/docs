@@ -13,9 +13,6 @@ Possible values:
 1. Discrete TPM 2.0
 2. Firmware TPM 2.0
 
-| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-|  |  |  | Both |
 </details>
 
 
@@ -30,9 +27,7 @@ Select the type of TCG Security Device:
 
 !> Before changing the TCG Security Device, all TPM related applications must be disabled, otherwise you may not be able to access your data.
 
-| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-|  |  |  | Both |
+
 </details>
 
 
@@ -65,9 +60,6 @@ One of two options:
 1.  Yes.
 2. **No** – Default.
 
-| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-|  |  |  | Both |
 </details>
 
 

@@ -20,7 +20,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| WHEASupport | Disabled, Enabled |  | Intel |
+| WHEASupport | Disabled, Enabled | Yes | Intel |
 </details>
 
 <details><summary>Intel(R) Total Memory Encryption</summary>

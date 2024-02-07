@@ -23,7 +23,7 @@ Options:
 </details>
 
 
-<details><summary>SATA Drive {Number}</summary>
+<details><summary>SATA Drive {X}</summary>
 
 Options:
 
@@ -32,11 +32,13 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SATADrive{Number} | Disabled, Enabled | Yes | Both |
+| SATADriveX | Disabled, Enabled | Yes | Both |
+
+!> In the WMI class name, X represents the drive number.
 </details>
 
 
-<details><summary>M.2 Drive {Number}</summary>
+<details><summary>M.2 Drive {X}</summary>
 
 Options:
 
@@ -45,10 +47,12 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| M.2Drive{Number} | Disabled, Enabled |  | Intel |
+| M.2DriveX | Disabled, Enabled | Yes | Intel |
+
+!> In the WMI class name, X represents the drive number.
 </details>
 
-<details><summary>MCIO Drive {Number}-{Number}</summary>
+<details><summary>MCIO Drive {X}-{Y}</summary>
 
 Options:
 
@@ -57,7 +61,9 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| MCIODrive{Number}{Number} | Disabled, Enabled |  | Intel |
+| MCIODriveXY | Disabled, Enabled | Yes | Intel |
+
+!> In the WMI class name, X & Y represents the drive number.
 </details>
 
 <details><summary>SATA Drive * Hot-Plug Support</summary>
@@ -68,7 +74,9 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SATADrivexHotPlugSupport | Disabled, Enabled |  | Both |
+| SATADriveXHotPlugSupport | Disabled, Enabled | Yes | Both |
+
+!> In the WMI class name, X represents the drive number.
 </details>
 
 <details><summary>Configure Storage as</summary>
@@ -83,7 +91,7 @@ this setting may prevent the system from booting.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| ConfigureStorageas | AHCI, RAID |  | Intel |
+| ConfigureStorageas | AHCI, RAID | Yes | Intel |
 
 </details>
 
@@ -102,7 +110,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| ConfigureSATAas | AHCI, RAID |  | Both |
+| ConfigureSATAas | AHCI, RAID | Yes | Both |
 </details>
 
 <details><summary>Hard Disk Pre-delay</summary>
@@ -124,7 +132,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| HardDiskPre-delay | Disabled, 3 Seconds, 6 Seconds, 9 Seconds, 12 Seconds, 15 Seconds, 21 Seconds, 30 Seconds |  | Both |
+| HardDiskPre-delay | Disabled, 3 Seconds, 6 Seconds, 9 Seconds, 12 Seconds, 15 Seconds, 21 Seconds, 30 Seconds | Yes | Both |
 </details>
 
 

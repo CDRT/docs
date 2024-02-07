@@ -134,7 +134,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| IOMMU | Disabled, Enabled | yes | Both |
+| IOMMU | Disabled, Enabled | yes | Intel |
 </details>
 
 
@@ -169,7 +169,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| CStateSupport | C1, C1C3, C1C3C6, C1C3C6C7, C1C3C6C7C8, C1C3C6C7C8C10 | yes | Both |
+| CStateSupport | C1, C1C3, C1C3C6, C1C3C6C7, C1C3C6C7C8, C1C3C6C7C8C10 | yes | Intel |
 </details>
 
 <details><summary>Turbo Mode</summary>

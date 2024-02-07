@@ -264,12 +264,9 @@ settings.
 
 </details>
 
-### AMD-only features ###
 
-?> Only the AMD-only features are shown in the screenshot below; otherwise they are shown in the screenshot above.
-
-![](./img/ts_amd_security.png)
-![](./img/ts_amd_security2.png)
+<!--![](./img/ts_amd_security.png)
+![](./img/ts_amd_security2.png)-->
 
 <details><summary>Set Password Encryption Algorithm</summary>
 
@@ -311,7 +308,7 @@ Options:
 <!-- NO WMI -->
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| ConfigurationChangeDetection | 1, 3, 100, Unlimited | Yes | Both |
+| MaxPasswordAttempts | 1, 3, 100, Unlimited | Yes | Both |
 
 </details>
 
@@ -464,20 +461,6 @@ to set user authentication on the OS.
 
 </details>
 
-<details><summary>Windows UEFI Firmware Update</summary>
-
-Whether to allow windows UEFI firmware update.
-
-Options:
-
-1.  **Enabled** - Default.
-2.  Disabled.
-
-| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| WindowsUEFIFirmwareUpdate | Disable, Enable | Yes | Both |
-
-</details>
 
 <details><summary>BIOS Password At System Boot</summary>
 

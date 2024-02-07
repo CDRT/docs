@@ -126,7 +126,7 @@ Use Up and Down arrows to select a device.
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| PrimaryBootSequence | M.2 Drive |  | AMD | 
+| PrimaryBootSequence | M.2 Drive | Yes | Both | 
 
 </details>
 
@@ -142,7 +142,7 @@ Use Up and Down arrows to select a device.
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| AutomaticBootSequence | M.2 Drive |  | AMD |
+| AutomaticBootSequence | M.2 Drive | Yes | Both |
 
 </details>
 
@@ -158,7 +158,7 @@ Use Up and Down arrows to select a device.
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| ErrorBootSequence | M.2 Drive |  | AMD | 
+| ErrorBootSequence | M.2 Drive | Yes | Both | 
 
 </details>
 

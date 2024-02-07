@@ -171,7 +171,7 @@ Options:
 
 ![](./img/ts_amd_m2slot1status.png)
 
-?> Y represents the slot number, 1 or 2.
+?> X represents the slot number, 1 or 2.
 
 <details><summary>M.2 Port</summary>
 
@@ -184,9 +184,9 @@ Options:
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| M2SlotYPort | Disable, Enable | yes | AMD |
+| M2SlotXPort | Disable, Enable | yes | AMD |
 
-!> In the WMI class name, Y represents the slot number, 1 or 2.
+!> In the WMI class name, X represents the slot number, 1 or 2.
 
 </details>
 
@@ -202,9 +202,9 @@ Options:
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| M2SlotYLinkSpeed | Auto, Gen 1 (2.5 GT/s), Gen 2 (5 GT/s), Gen 3 (8 GT/s), Gen 4 (16 GT/s) | yes | AMD |
+| M2SlotXLinkSpeed | Auto, Gen 1 (2.5 GT/s), Gen 2 (5 GT/s), Gen 3 (8 GT/s), Gen 4 (16 GT/s) | yes | AMD |
 
-!> In the WMI class name, Y represents the slot number, 1 or 2.
+!> In the WMI class name, X represents the slot number, 1 or 2.
 
 </details>
 

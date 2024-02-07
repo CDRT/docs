@@ -21,9 +21,9 @@ Options:
 </details>
 
 
-<details><summary>SATA Drive {Number}</summary>
+<details><summary>SATA Drive {X}</summary>
 
-Whether to enable each SATA Drive numbered {Number}:
+Whether to enable each SATA Drive numbered {X}:
 
 1. **Enabled**. Default. 
 2. Disabled.
@@ -32,9 +32,9 @@ Whether to enable each SATA Drive numbered {Number}:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SATADrive1 | Disabled, Enabled | yes | Both |
+| SATADriveX | Disabled, Enabled | yes | Both |
 
-?> The WMI setting name is for SATA drive 1. For other SATA drives, change the number to that of the desired SATA drive.
+!> In the WMI class name, X represents the drive number.
 
 </details>
 
