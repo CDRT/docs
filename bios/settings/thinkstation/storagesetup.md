@@ -34,7 +34,7 @@ Options:
 |:---|:---|:---|:---|
 | SATADriveX | Disabled, Enabled | Yes | Both |
 
-!> In the WMI class name, X represents the drive number.
+?> In the WMI class name, X represents the drive number.
 </details>
 
 
@@ -49,7 +49,7 @@ Options:
 |:---|:---|:---|:---|
 | M.2DriveX | Disabled, Enabled | Yes | Intel |
 
-!> In the WMI class name, X represents the drive number.
+?> In the WMI class name, X represents the drive number.
 </details>
 
 <details><summary>MCIO Drive {X}-{Y}</summary>
@@ -63,7 +63,7 @@ Options:
 |:---|:---|:---|:---|
 | MCIODriveXY | Disabled, Enabled | Yes | Intel |
 
-!> In the WMI class name, X & Y represents the drive number.
+?> In the WMI class name, X & Y represents the drive number.
 </details>
 
 <details><summary>SATA Drive * Hot-Plug Support</summary>
@@ -76,7 +76,7 @@ Options:
 |:---|:---|:---|:---|
 | SATADriveXHotPlugSupport | Disabled, Enabled | Yes | Both |
 
-!> In the WMI class name, X represents the drive number.
+?> In the WMI class name, X represents the drive number.
 </details>
 
 <details><summary>Configure Storage as</summary>

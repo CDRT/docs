@@ -34,7 +34,7 @@ Whether to enable each SATA Drive numbered {X}:
 |:---|:---|:---|:---|
 | SATADriveX | Disabled, Enabled | yes | Both |
 
-!> In the WMI class name, X represents the drive number.
+?> In the WMI class name, X represents the drive number.
 
 </details>
 
@@ -54,7 +54,7 @@ Options:
 |:---|:---|:---|:---|
 | SATADrivexHotPlugSupport | Disabled, Enabled | yes | Both |
 
-!> `x` is the port number. May vary depending on model.
+?> `x` is the port number. May vary depending on model.
 
 </details>
 

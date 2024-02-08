@@ -77,9 +77,11 @@ Options:
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
 | PCIeSlotXPort | Enabled, Disabled | Yes | Both | 
+
+?> In the WMI class name, X represents the slot number.
 </details>
 
-!> In the WMI class name, X represents the slot number.
+
 
 <details><summary>PCIe Port Bifurcationt</summary>
 Select PCIe port bifurcation. If select [Auto], system will auto
@@ -96,7 +98,7 @@ Options:
 |:---|:---|:---|:---|
 | PCIeSlotXBifurcation   | x4x4x4x4, x8x8, x16, Auto | Yes | Both | 
 
-!> In the WMI class name, X represents the slot number.
+?> In the WMI class name, X represents the slot number.
 </details>
 
 <details><summary>Link Speed</summary>
@@ -114,7 +116,7 @@ Options:
 |:---|:---|:---|:---|
 | PCIeSlotXLinkSpeed | Auto, Gen 1 (2.5 GT/s), Gen 2 (5 GT/s), Gen 3 (8 GT/s), Gen 4 (16 GT/s) | Yes | Both | 
 
-!> In the WMI class name, X represents the slot number.
+?> In the WMI class name, X represents the slot number.
 </details>
 
 ### M.2 Slot{X} Configuration ###
@@ -137,7 +139,7 @@ Options:
 |:---|:---|:---|:---|
 | M2SlotXLinkSpeed | Auto, Gen 1 (2.5 GT/s), Gen 2 (5 GT/s), Gen 3 (8 GT/s), Gen 4 (16 GT/s), Gen 5 (32 GT/s) | Yes | Both | 
 
-!> In the WMI class name, X represents the slot number.
+?> In the WMI class name, X represents the slot number.
 </details>
 
 ### MCIO Slot{X}-{Y} Configuration
@@ -160,5 +162,5 @@ Options:
 |:---|:---|:---|:---|
 | MCIOSlotXYLinkSpeed | Auto, Gen 1 (2.5 GT/s), Gen 2 (5 GT/s), Gen 3 (8 GT/s), Gen 4 (16 GT/s), Gen 5 (32 GT/s) | Yes | Intel | 
 
-!> In the WMI class name, X & Y represents the slot numbers.
+?> In the WMI class name, X & Y represents the slot numbers.
 </details>

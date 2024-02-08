@@ -158,20 +158,6 @@ Options:
 
 </details>
 
-<details><summary>USB Port {X}</summary>
-
-For each Front USB Port:
-
-1. **Enabled**. Default, if `Enabled` is selected in `Front USB Ports`.
-2. Disabled.
-
-| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| USBPortx | Disabled, Enabled | yes | Intel |
-
-!> In the WMI class name, X represents the port number.
-
-</details>
 
 <details><summary>Media Card Reader</summary>
 

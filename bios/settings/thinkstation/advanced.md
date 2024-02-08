@@ -102,8 +102,8 @@ Options:
 ![](./img/ts_amdadvanced.png)
 <!--![](./img/amd_advanced.png)-->
 
-?> Please see sidebar for Advnaced AMD Settings
-<!-- TODO: confirm layout because each setting is a seperate page in the sidebar Maybe put a statement there -->
+<!-- ?> Please see sidebar for Advnaced AMD Settings
+TODO: confirm layout because each setting is a seperate page in the sidebar Maybe put a statement there -->
 
 
 </details>

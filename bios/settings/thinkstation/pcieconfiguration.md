@@ -48,9 +48,11 @@ Options:
 |:---|:---|:---|:---|
 | ASPMSupport | Disabled,Auto | yes | AMD |
 
+!> Enabling ASPM may cause some PCIe devices to fail.
+
 </details>
 
-!> Enabling ASPM may cause some PCIe devices to fail.
+
 
 <details><summary>Extended Synch</summary>
 
@@ -103,8 +105,6 @@ Options:
 
 ![](./img/ts_pcieslotstatus.png)
 
-?> X represents the slot number, from 1 to 6.
-
 <details><summary>PCIe Port</summary>
 
 Whether to enable this PCIe port.
@@ -118,7 +118,7 @@ Options:
 |:---|:---|:---|:---|
 | PCIeSlotXPort | Disable, Enable | yes | AMD |
 
-!> In the WMI class name, X represents the slot number, from 1 to 6.
+?> In the WMI class name, X represents the slot number, from 1 to 6.
 
 </details>
 
@@ -143,7 +143,7 @@ Options:
 |:---|:---|:---|:---|
 | PCIeSlotXBifurcation | Auto, x4x4x4x4, x8x8, x16 | yes | AMD |
 
-!> In the WMI class name, X represents the slot number, from 1 to 6.
+?> In the WMI class name, X represents the slot number, from 1 to 6.
 
 </details>
 
@@ -163,15 +163,13 @@ Options:
 |:---|:---|:---|:---|
 | PCIeSlotXLinkSpeed | Auto, Gen 1 (2.5 GT/s), Gen 2 (5 GT/s), Gen 3 (8 GT/s), Gen 4 (16 GT/s) | yes | AMD |
 
-!> In the WMI class name, X represents the slot number, from 1 to 6.
+?> In the WMI class name, X represents the slot number, from 1 to 6.
 
 </details>
 
 ### M.2 Slot{Y} Status ###
 
 ![](./img/ts_amd_m2slot1status.png)
-
-?> X represents the slot number, 1 or 2.
 
 <details><summary>M.2 Port</summary>
 
@@ -186,7 +184,7 @@ Options:
 |:---|:---|:---|:---|
 | M2SlotXPort | Disable, Enable | yes | AMD |
 
-!> In the WMI class name, X represents the slot number, 1 or 2.
+?> In the WMI class name, X represents the slot number, 1 or 2.
 
 </details>
 
@@ -204,7 +202,7 @@ Options:
 |:---|:---|:---|:---|
 | M2SlotXLinkSpeed | Auto, Gen 1 (2.5 GT/s), Gen 2 (5 GT/s), Gen 3 (8 GT/s), Gen 4 (16 GT/s) | yes | AMD |
 
-!> In the WMI class name, X represents the slot number, 1 or 2.
+?> In the WMI class name, X represents the slot number, 1 or 2.
 
 </details>
 
