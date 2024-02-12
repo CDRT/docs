@@ -111,8 +111,8 @@ Parameters:
 
 Options:
 
-1. **Enabled** – allow windows UEFI firmware update. Default.
-2. Disabled – BIOS will skip windows UEFI firmware update.
+1. **Enabled** – allow Windows UEFI firmware update. Default.
+2. Disabled – BIOS will skip Windows UEFI firmware update.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -121,7 +121,7 @@ Options:
 
 <details><summary>Smart USB Protection</summary>
 
-Smart USB Protection blocks copying data from the computer to the USB storage device in windows.<br>
+Smart USB Protection blocks copying data from the computer to the USB storage device in Windows.<br>
 
 Options:
 
