@@ -3,10 +3,11 @@
 !> Number of drives depends on the model and platform.
 
 ### General ###
+<!--![](./img/harddiskpass.png)-->
+![](./img/ts_harddiskpass.png)
+![](./img/ts_harddiskpass2.png)
 
-![](./img/harddiskpass.png)
-
-<details><summary> {DriveType} {Number} Password</summary>
+<details><summary> {DriveType} {X} Password</summary>
 
 Set a Hard Disk Password (HDP) to prevent unauthorized users from accessing the data on the Hard Disk.
 
@@ -15,7 +16,7 @@ Set a Hard Disk Password (HDP) to prevent unauthorized users from accessing the 
 One setting for each drive's password:
 
  - {DriveType} - M.2, PCIe, or SATA
- - {Number} - one of a number of the same type of drive.
+ - {X} - one of a number of the same type of drive.
 
 For each drive it is possible to define a separate password, or leave a drive without a password.
 
@@ -46,9 +47,6 @@ While enabling the following parameters are available:
 
 ?> If several disks are present, it’s suggested to set all Hard Disk Passwords to the same. 
 
-| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-|  |  |  | Both |
 </details>
 
 <details><summary>Require HDP on System Boot</summary>
@@ -89,18 +87,18 @@ Options:
 
 ### Security Erase HDD Data ###
 
-![](./img/securityerasehdd.png)
+![](./img/ts_securityerasehdd.png)
+![](./img/ts_securityerasehdd2.png)
+<!--![](./img/securityerasehdd.png)-->
 
-<details><summary>Erase {DriveType} {N} Data</summary>
+<details><summary>Erase {DriveType} {X} Data</summary>
 
 Erase data per individual drive.
 
 - {DriveType} stands for the drive type.<br>
- - {N} stands for the order number of a drive.<br>
+ - {X} stands for the order number of a drive.<br>
 
 !> All hard drive data will be erased, and the hard disk password will be deleted. Requires additional confirmation.
 
-| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-|  |  |  | Both |
+
 </details>

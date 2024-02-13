@@ -1,6 +1,5 @@
 # RAS Configuration #
-
-![](./img/amd_rasconfiguration.png)
+![](./img/ts_amd_rasconfiguration.png)
 
 <details><summary>Post Package Repair (PPR)</summary>
 

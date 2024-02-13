@@ -1,6 +1,6 @@
 # System Summary #
-
-![](./img/systemsummary.png)
+![](./img/ts_systemsummary.png)
+<!--![](./img/systemsummary.png)-->
 
 Displays information on system components such as:
  - CPU

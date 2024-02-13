@@ -1,6 +1,6 @@
 # NVMe Setup #
-
-![](./img/amd_nvme.png)
+![](./img/ts_nvme.png)
+<!--![](./img/amd_nvme.png)-->
 
 <details><summary>NVMe RAID Mode</summary>
 

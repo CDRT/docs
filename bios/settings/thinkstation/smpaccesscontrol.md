@@ -1,6 +1,6 @@
 # System Management Password Access Control Settings #
 
-![](./img/smpaccesscontrol.png)
+![](./img/ts_smpaccesscontrol.png)
 
 <details><summary>Access Security Settings</summary>
 

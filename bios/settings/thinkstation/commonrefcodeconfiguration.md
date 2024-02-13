@@ -1,6 +1,6 @@
 # Common RefCode Configuration #
 
-![](./img/amd_commonrefcodeconfiguration.png)
+![](./img/ts_amd_commonrefcodeconfiguration.png)
 
 <details><summary>MMIO Above 4G Limit</summary>
 
@@ -32,6 +32,6 @@ Options:
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| NUMA | NPS1, NPS2, NPS4, Auto | yes_no | both |
+| NUMA | NPS1, NPS2, NPS4, Auto | yes | AMD |
 
 </details>

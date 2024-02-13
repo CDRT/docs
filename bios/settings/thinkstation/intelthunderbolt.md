@@ -1,6 +1,7 @@
 # Intel(R) Thunderbolt Settings #
-
-![](./img/intelthunderbolt.png)
+![](./img/ts_intelthunderbolt2.png)
+<!--![](./img/ts_intelthunderbolt.png)
+![](./img/intelthunderbolt.png)-->
 
 <details><summary>Intel Thunderbolt Technology</summary>
 
@@ -37,6 +38,48 @@ Options:
 </details>
 
 <details><summary>Wake From Thunderbolt Devices</summary>
+
+Options:
+
+1. **Enabled** – Default.
+2. Disabled
+
+<!--
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+|  |  |  | Both |
+-->
+</details>
+
+<details><summary>SwSMI Support</summary>
+
+Options:
+
+1. **Enabled** – Default.
+2. Disabled
+
+<!--
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+|  |  |  | Both |
+-->
+</details>
+
+<details><summary>Notify Support</summary>
+
+Options:
+
+1. **Enabled** – Default.
+2. Disabled
+
+<!--
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+|  |  |  | Both |
+-->
+</details>
+
+<details><summary>Ignore Thunderbolt Option ROM</summary>
 
 Options:
 

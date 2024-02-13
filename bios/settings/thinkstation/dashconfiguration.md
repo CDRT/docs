@@ -1,6 +1,6 @@
 # DASH Configuration #
 
-![](./img/amd_dashconfiguration.png)
+![](./img/ts_amd_dashconfiguration.png)
 
 <details><summary>DASH Support</summary>
 
@@ -15,7 +15,8 @@ Options:
 
 </details>
 
-**Console Redirection Settings**
+### Console Redirection Settings ###
+
 
 <details><summary>Console Redirection </summary>
 

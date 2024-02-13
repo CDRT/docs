@@ -1,6 +1,6 @@
 # Diagnostics (AMD only) #
-
-![](./img/amd_diagnostics.png)
+![](./img/ts_amddiagnostics.png)
+<!--![](./img/amd_diagnostics.png)-->
 
 <details><summary>Real-time Diagnostics Monitoring</summary>
 

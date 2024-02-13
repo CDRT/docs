@@ -1,6 +1,7 @@
 # PCIe Configuration #
 
-![](./img/amd_pcieconfiguration.png)
+![](./img/ts_amd_pcieconfiguration.png)
+<!--![](./img/amd_pcieconfiguration.png)-->
 
 <details><summary>Above 4G Decoding</summary>
 
@@ -47,9 +48,11 @@ Options:
 |:---|:---|:---|:---|
 | ASPMSupport | Disabled,Auto | yes | AMD |
 
+!> Enabling ASPM may cause some PCIe devices to fail.
+
 </details>
 
-!> Enabling ASPM may cause some PCIe devices to fail.
+
 
 <details><summary>Extended Synch</summary>
 
@@ -100,9 +103,7 @@ Options:
 
 ### PCIe Slot{X} Status ###
 
-![](./img/amd_pcieslot1status.png)
-
-?> X represents the slot number, from 1 to 6.
+![](./img/ts_pcieslotstatus.png)
 
 <details><summary>PCIe Port</summary>
 
@@ -117,7 +118,7 @@ Options:
 |:---|:---|:---|:---|
 | PCIeSlotXPort | Disable, Enable | yes | AMD |
 
-!> In the WMI class name, X represents the slot number, from 1 to 6.
+?> In the WMI class name, X represents the slot number, from 1 to 6.
 
 </details>
 
@@ -142,7 +143,7 @@ Options:
 |:---|:---|:---|:---|
 | PCIeSlotXBifurcation | Auto, x4x4x4x4, x8x8, x16 | yes | AMD |
 
-!> In the WMI class name, X represents the slot number, from 1 to 6.
+?> In the WMI class name, X represents the slot number, from 1 to 6.
 
 </details>
 
@@ -162,15 +163,13 @@ Options:
 |:---|:---|:---|:---|
 | PCIeSlotXLinkSpeed | Auto, Gen 1 (2.5 GT/s), Gen 2 (5 GT/s), Gen 3 (8 GT/s), Gen 4 (16 GT/s) | yes | AMD |
 
-!> In the WMI class name, X represents the slot number, from 1 to 6.
+?> In the WMI class name, X represents the slot number, from 1 to 6.
 
 </details>
 
 ### M.2 Slot{Y} Status ###
 
-![](./img/amd_m2slot1status.png)
-
-?> Y represents the slot number, 1 or 2.
+![](./img/ts_amd_m2slot1status.png)
 
 <details><summary>M.2 Port</summary>
 
@@ -183,9 +182,9 @@ Options:
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| M2SlotYPort | Disable, Enable | yes | AMD |
+| M2SlotXPort | Disable, Enable | yes | AMD |
 
-!> In the WMI class name, Y represents the slot number, 1 or 2.
+?> In the WMI class name, X represents the slot number, 1 or 2.
 
 </details>
 
@@ -201,9 +200,9 @@ Options:
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| M2SlotYLinkSpeed | Auto, Gen 1 (2.5 GT/s), Gen 2 (5 GT/s), Gen 3 (8 GT/s), Gen 4 (16 GT/s) | yes | AMD |
+| M2SlotXLinkSpeed | Auto, Gen 1 (2.5 GT/s), Gen 2 (5 GT/s), Gen 3 (8 GT/s), Gen 4 (16 GT/s) | yes | AMD |
 
-!> In the WMI class name, Y represents the slot number, 1 or 2.
+?> In the WMI class name, X represents the slot number, 1 or 2.
 
 </details>
 

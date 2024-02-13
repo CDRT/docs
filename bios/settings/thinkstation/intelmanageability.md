@@ -1,6 +1,6 @@
 # Intel(R) Manageability Settings #
 
-![](./img/intelmanageability.png)
+![](./img/ts_intelmanageability.png)
 
 <details><summary>Intel(R) Manageability</summary>
 
@@ -61,11 +61,11 @@ Options:
 
 </details>
 
-<details><summary>SOL Configuration</summary>
+### SOL Configuration ###
 
 SOL (Serial over LAN) configuration group of settings.<br>
 
-![](./img/solconfig.png)
+![](./img/ts_solconfig.png)
 
 <details><summary>Console Type</summary>
 

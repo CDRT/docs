@@ -1,6 +1,7 @@
 # CPU Configuration #
 
-![](./img/amd_cpuconfiguration.png)
+![](./img/ts_amd_cpuconfiguration.png)
+![](./img/ts_amd_cpuconfiguration2.png)
 
 ### Processor ID ###
 

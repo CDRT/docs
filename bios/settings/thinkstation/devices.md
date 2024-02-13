@@ -1,5 +1,7 @@
 # Devices #
-![](./img/devices.png)
+![](./img/ts_devices.png)
+<!--![](./img/ts_devices_pciesetup_px.png)
+![](./img/ts_devices_pciexpress_p3twr.png)![](./img/devices.png) -->
 
 <details><summary>Card Reader</summary>
 

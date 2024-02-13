@@ -1,6 +1,6 @@
 # Parallel Port Setup Settings #
-
-![](./img/parallelportsetup.png)
+![](./img/ts_parallelportsetup.png)
+<!--![](./img/parallelportsetup.png)-->
 
 <details><summary>Parallel Port Address</summary>
 
