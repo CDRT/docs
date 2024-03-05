@@ -1,5 +1,5 @@
 # Thunderbolt(TM) 4 Settings #
-![](./img/thunderbolttm4.png)
+![](./img/tp_thunderbolttm4.png)
 
 <details><summary>PCIe Tunneling</summary>
 

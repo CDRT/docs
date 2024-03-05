@@ -1,6 +1,6 @@
 # Virtualization Settings #
 
-![](./img/virtualization.png)
+![](./img/tp_virtualization.png)
 
 <details><summary>Kernel DMA Protection</summary>
 

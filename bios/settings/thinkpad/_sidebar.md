@@ -26,6 +26,7 @@
    - [CPU](bios/settings/thinkpad/cpu.md)
    - [Thunderbolt(TM) 4](bios/settings/thinkpad/thunderbolttm4.md)
    - [Intel(R) AMT](bios/settings/thinkpad/intelramt.md)
+   - [Intel(R) Standard Manageability](bios/settings/thinkpad/intelrsm.md)
    - [HDMI Configuration](bios/settings/thinkpad/hdmi.md)
 
 - [Date/Time](bios/settings/thinkpad/datetime.md)
@@ -46,6 +47,7 @@
    - [ThinkShield Passwordless Power-On](bios/settings/thinkpad/thinkshieldpasswordless.md)
    - [Intelligent Security](bios/settings/thinkpad/intelligentsecurity.md)
    - [Reset System to Factory Defaults](bios/settings/thinkpad/resetsystemtofactorydefaults.md)
+   - [Certificate-based BIOS Authentication](bios/settings/thinkpad/certbasedbiosauth.md)
 
 - [Startup](bios/settings/thinkpad/startup.md)
 

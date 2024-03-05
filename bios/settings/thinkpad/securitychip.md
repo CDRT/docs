@@ -2,7 +2,7 @@
 
 ### General ###
 
-![](./img/securitychip.png)
+![](./img/tp_securitychip.png)
 
 <details><summary>Security Chip Type</summary>
 
@@ -82,7 +82,7 @@ Possible options:
 
 ### Security Reporting Options ###
 
-![](./img/securityreportingoptions.png)
+![](./img/tp_securityreportingoptions.png)
 
 Visible and active only if `Security Chip` is `Enabled`.
 

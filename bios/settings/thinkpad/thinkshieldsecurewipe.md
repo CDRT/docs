@@ -1,5 +1,5 @@
 # ThinkShield Secure Wipe Settings #
-![](./img/thinkshieldsecurewipe.png)
+![](./img/tp_thinkshieldsecurewipe.png)
 
 <details><summary>ThinkShield Secure Wipe in AppMenu</summary>
 

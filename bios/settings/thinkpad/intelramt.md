@@ -1,5 +1,5 @@
 # Intel(R) AMT Settings #
-![](./img/intelramt.png)
+![](./img/tp_intelramt.png)
 
 <details><summary>Intel (R) AMT Control</summary>
 

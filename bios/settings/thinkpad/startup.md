@@ -2,7 +2,7 @@
 
 ### General ###
 
-![](./img/startup.png)
+![](./img/tp_startup.png)
 
 <details><summary>Network Boot</summary>
 
@@ -96,7 +96,7 @@ Possible options:
 
 ### Boot ###
 
-![](./img/boot.png)
+![](./img/tp_boot.png)
 
 <details><summary>Boot Priority Order</summary>
 

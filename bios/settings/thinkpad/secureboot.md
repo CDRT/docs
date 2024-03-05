@@ -2,7 +2,7 @@
 
 ### General ###
 
-![](./img/secureboot.png)
+![](./img/tp_secureboot.png)
 
 <details><summary>Secure Boot</summary>
 

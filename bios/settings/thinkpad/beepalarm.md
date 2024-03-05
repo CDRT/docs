@@ -1,5 +1,5 @@
 # Beep and Alarm Settings #
-![](./img/beepalarm.png)
+![](./img/tp_beepalarm.png)
 
 <details><summary>Password Beep</summary>
 

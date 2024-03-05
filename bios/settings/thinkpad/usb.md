@@ -1,6 +1,6 @@
 # USB Settings #
 
-![](./img/usb.png)
+![](./img/tp_usb.png)
 
 <details><summary>Always on USB</summary>
 

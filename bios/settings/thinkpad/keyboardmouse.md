@@ -1,6 +1,6 @@
 # Keyboard/Mouse Settings #
 
-![](./img/keyboardmouse.png)
+![](./img/tp_keyboardmouse.png)
 
 <details><summary>TrackPoint</summary>
 
