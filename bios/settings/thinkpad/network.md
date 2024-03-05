@@ -181,10 +181,6 @@ Possible options:
 2. Enable.
 
 
-| WMI Setting name | Values | Locked by SVP | AMD/Intel |
-|:---|:---|:---|:---|
-|   | Disable, Enable |  |  |
-
 </details>
 
 ### WiFi Configuration ###
