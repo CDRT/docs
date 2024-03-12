@@ -1,8 +1,8 @@
 # Secure Boot
 
-![](./img/thinkcentre_secure_boot.png)
+![](./img/tc_secure_boot.png)
 
-### System Mode (display only) ###
+<details><summary>System Mode (display only)</summary>
 
 <!-- TODO: add description -->
 
@@ -12,6 +12,8 @@ Options:
 1. Audit Mode
 1. User Mode
 1. Setup Mode
+
+</details>
 
 <details><summary>Secure Boot</summary>
 
@@ -25,17 +27,21 @@ Options:
 
 </details>
 
-### Restore Factory Keys ###
+<details><summary>Restore Factory Keys</summary>
 
 Restore Factory Keys resets secure boot to factory defaults.
 
 Press `Yes` to proceed, or `No` to cancel.
 
-### Reset Platform to Setup Mode ###
+</details>
+
+<details><summary>Reset Platform to Setup Mode</summary>
 
 Reset to setup mode will change secure boot to setup mode.
 
-### Enter Audit Mode ###
+</details>
+
+<details><summary>Enter Audit Mode</summary>
 
 Enter Audit Mode workflow.
 
@@ -43,9 +49,13 @@ Enter Audit Mode workflow.
 
 !> Removing PK (Platform Key) will reset the system to setup / audit mode.
 
-### Enter Deployed Mode ###
+</details>
+
+<details><summary>Enter Deployed Mode</summary>
 
 Transition between Deployment and User Modes.
+
+</details>
 
 <details><summary>Allow Microsoft 3rd Party UEFI CA</summary>
 
@@ -57,7 +67,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
-| AllowMicrosoft3rdPartyUEFICA |  | yes |
+| AllowMicrosoft3rdPartyUEFICA | Enabled, Disabled | yes |
 
 ?> If add-on cards are supported, Microsoft 3rd Party UEFI CA will not be removed until the boot loader is loaded.
 
@@ -65,3 +75,9 @@ Options:
 
 
 </details>
+
+<!--<details><summary>Key Management</summary>
+Simulator not supported.
+
+<details>-->
+

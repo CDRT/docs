@@ -1,6 +1,6 @@
 # System Management Password Access Control
 
-![](./img/thinkcentre_system_management_password_access_control.png)
+![](./img/tc_smp_access_control.png)
 
 <details><summary>Access Security Settings</summary>
 

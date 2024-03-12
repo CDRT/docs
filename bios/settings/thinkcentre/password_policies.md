@@ -1,7 +1,7 @@
 # Password Policies #
 
 
-![](./img/thinkcentre_password_policy.png)
+![](./img/tc_password_policies.png)
 
  - [More information at Lenovo Support - types of password](https://support.lenovo.com/us/en/solutions/ht513634)
  - [More information at Lenovo Support - password manager](https://support.lenovo.com/us/en/solutions/ht103666-introduction-to-password-manager-thinkpad-thinkcentre-thinkstation)

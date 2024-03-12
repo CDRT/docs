@@ -1,6 +1,7 @@
 # CPU Setup #
 
-![](./img/thinkcentre_cpu_setup.png)
+![](./img/tc_cpu_setup.png)
+![](./img/tc_cpu_setup_2.png)
 
 <details><summary>EIST Support</summary>
 
@@ -15,6 +16,23 @@ Options:
 |:---|:---|:---|
 | EISTSupport | Disabled, Enabled | yes |
 
+
+
+</details>
+
+<details><summary>Intel(R) Speed Shift Technology</summary>
+
+Intel(R) Speed Shift Technology is an energy efficient method of frequency
+control by the hardware rather than relying on OS control.
+
+Options:
+
+1.  **Enabled** - Default.
+2.  Disabled.
+
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+|  | Disabled, Enabled | yes |
 
 
 </details>
@@ -51,6 +69,7 @@ Options:
 
 </details>
 
+
 <details><summary>Intel(R) Virtualization Technology</summary>
 
 Intel(R) Virtualization Technology multiple applications and operating systems to run simultaneously in independent partitions.
@@ -67,6 +86,8 @@ Options:
 
 </details>
 
+
+
 <details><summary>VT-d Feature</summary>
 
 VT-d provides improved isolation of I/O resources for greater reliability, security, and availability.
@@ -80,6 +101,17 @@ Options:
 |:---|:---|:---|
 | VTdFeature | Disabled, Enabled | yes |
 
+
+</details>
+
+<details><summary>IOMMU</summary>
+
+Intel input/output memory management unit
+
+Options:
+
+1.  **Enabled** - Default.
+2.  Disabled.
 
 </details>
 

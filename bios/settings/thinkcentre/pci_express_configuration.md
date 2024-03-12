@@ -1,6 +1,6 @@
 # PCI Express Configuration #
 
-![](./img/thinkcentre_pci_express_configuration.png)
+![](./img/tc_pci_express_config.png)
 
 Peripheral Component Interconnect (PCI) Express configuration.
 

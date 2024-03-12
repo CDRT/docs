@@ -1,6 +1,6 @@
 # Hard Disk Password #
 
-![](./img/thinkcentre_hard_disk_password.png)
+![](./img/tc_hard_disk_password.png)
 
 <!-- MODEL: M70s disabled, M70q, M90 s & q enter -->
 
@@ -75,7 +75,12 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
-| BlockSIDAuthentication |  | yes |
+| BlockSIDAuthentication | Enabled, Disabled | yes |
 
 
 </details>
+
+
+### Security Erase HDD Data ###
+
+![](./img/tc_security_erase_hdd_data.png)

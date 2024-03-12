@@ -1,6 +1,6 @@
 # Audio Setup #
 
-![](./img/thinkcentre_audio_setup.png)
+![](./img/tc_audio_setup.png)
 
 <details><summary>Onboard Audio Controller</summary>
 
@@ -28,6 +28,22 @@ Options:
 | InternalSpeaker | Disabled, Enabled | yes |
 
 <!-- MODEL: NOT M90q -->
+
+
+</details>
+
+<details><summary>Microphone</summary>
+
+Options:
+
+1.  **Enabled** - Default.
+2.  Disabled - Disable the use of Microphone.
+
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| Microphone | Disabled, Enabled | yes |
+
+<!-- MODEL: M90a gen 2 -->
 
 
 </details>

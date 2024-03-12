@@ -1,6 +1,6 @@
 # System Summary #
 
-![](./img/thinkcentre_system_summary.png)
+![](./img/tc_system_summary.png)
 
 Displays system information, including:
 

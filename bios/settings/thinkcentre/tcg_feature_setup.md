@@ -1,6 +1,6 @@
 # TCG Feature setup
 
-![](./img/thinkcentre_tcg_feature_setup.png)
+![](./img/tc_tcg_feature_setup.png)
 
 <details><summary>TCG Security Device State</summary>
 
@@ -32,7 +32,7 @@ Whether the TCG security feature is fully functional.
 
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
-| SecurityChip |  | yes |
+| SecurityChip | Enabled, Disabled | yes |
 
 
 </details>

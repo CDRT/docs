@@ -1,6 +1,6 @@
 # Network Setup #
 
-![](./img/thinkcentre_network_setup.png)
+![](./img/tc_network_setup_1.png)
 
 <details><summary>Onboard Ethernet Controller</summary>
 
@@ -208,7 +208,7 @@ Server CA configuration (display only).
 
 ## WiFi Configuration ##
 
-![](./img/thinkcentre_WiFi_configuration.png)
+![](./img/tC_wifi_config.png)
 
 <details><summary>Automatic Connection Support</summary>
 
