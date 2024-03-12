@@ -224,14 +224,20 @@ Options:
 
 </details>
 
-### Current Connection (display only) ###
+<details><summary>Current Connection (display only) </summary>
 
 Displays the current WiFi connection.
 
-### Wi-Fi Scan ###
+</details>
+
+<details><summary>Wi-Fi Scan </summary>
 
 ?> Press `Enter` to scan the available connections.
 
-### Scanned List (display only) ###
+</details>
+
+<details><summary>Scanned List (display only) </summary>
 
 Scanned WiFi nodes.
+
+</details>
