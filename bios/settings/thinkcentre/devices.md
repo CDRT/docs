@@ -30,6 +30,8 @@ Options:
 
 </details>
 
+<!-- MODEL: Neo 50a 24 Gen 3
+
 <details><summary>Integrated Camera</summary>
 
 Options:
@@ -39,7 +41,7 @@ Options:
 
 !> Camera will not be available in OS.
 
-<!-- MODEL: Neo 50a 24 Gen 3 -->
+
 
 </details>
 
@@ -52,6 +54,5 @@ Options:
 
 !> Touch Screen will not be available in OS.
 
-<!-- MODEL: Neo 50a 24 Gen 3 -->
 
-</details>
+</details> -->

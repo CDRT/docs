@@ -32,7 +32,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
-|  | Disabled, Enabled | yes |
+| SpeedShiftTechnology | Disabled, Enabled | yes |
 
 
 </details>
@@ -112,6 +112,10 @@ Options:
 
 1.  **Enabled** - Default.
 2.  Disabled.
+
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| IOMMU | Disabled, Enabled | yes |
 
 </details>
 
