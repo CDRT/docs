@@ -1,0 +1,9 @@
+﻿Catalog Scan Log: 6/7/2015 - 11:51
+ 
+Catalogs with incorrect CRC in Catalog DESC file:
+ 
+Packages in Catalogs with incorrect CRC values:
+PackageID	Package Name	Title	Released	Category	Setup	Language	Valid	XML2 Path	CRC from Catalog	CRC Actual	Comment	
+ 
+Down level packages:
+Package ID	Package Name	Released	Catalog found in	Package XML2 URL
