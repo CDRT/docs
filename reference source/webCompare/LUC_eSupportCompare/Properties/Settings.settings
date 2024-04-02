@@ -1,0 +1,42 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LUC_eSupportCompare.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Name" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">LUC_eSupport_Compare</Value>
+    </Setting>
+    <Setting Name="ThinkPad" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ThinkPad</Value>
+    </Setting>
+    <Setting Name="ThinkStation" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ThinkStation</Value>
+    </Setting>
+    <Setting Name="ThinkCentre" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ThinkCentre</Value>
+    </Setting>
+    <Setting Name="IdeaPad" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">IdeaPad</Value>
+    </Setting>
+    <Setting Name="Win10" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Win10</Value>
+    </Setting>
+    <Setting Name="Win7" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Win7</Value>
+    </Setting>
+    <Setting Name="LucFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">luc</Value>
+    </Setting>
+    <Setting Name="LucCab" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">luc.cab</Value>
+    </Setting>
+    <Setting Name="ExeFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">exes</Value>
+    </Setting>
+    <Setting Name="CatalogName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">LenovoUpdatesCatalog2v2.xml</Value>
+    </Setting>
+    <Setting Name="Win11" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Win11</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
