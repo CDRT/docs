@@ -1,6 +1,6 @@
 # USB Setup #
 
-![](./img/thinkcentre_usb_setup.png)
+![](./img/tc_usb_setup.png)
 
 <details><summary>USB Port Access</summary>
 

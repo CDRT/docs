@@ -1,6 +1,6 @@
 # CPU Settings #
 
-![](./img/cpu.png)
+![](./img/tp_cpu.png)
 
 <details><summary>Efficient-cores Support</summary>
 

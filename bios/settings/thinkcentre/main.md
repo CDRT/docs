@@ -1,5 +1,5 @@
 # Main #
-![](./img/thinkcentre_main.png)
+![](./img/tc_main.png)
 
 <details><summary>Language</summary>
 

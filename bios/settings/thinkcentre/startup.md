@@ -1,6 +1,6 @@
 # Startup
 
-![](./img/thinkcentre_startup.png)
+![](./img/tc_startup.png)
 
 <details><summary>First Boot Device</summary>
 
@@ -18,7 +18,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
-| Firstbootdevice |  | yes |
+| Firstbootdevice | Boot Order, Network, SATA Drive, M.2 Drive, VMD Drive, USB HDD, USB CDROM | yes |
 
 </details>
 
@@ -33,6 +33,22 @@ Options:
 1. **Disabled** - the system will try to boot from all the devices in the group. Default.
 1. Network1
 1. Network2
+
+
+</details>
+
+<details><summary>USB Boot Support</summary>
+
+
+
+Options:
+
+1. **Enabled** - The system could support boot from USB devices. Default.
+1. Disabled - The system could not support boot from USB devices.
+
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| USBBootSupport | Enabled, Disabled | yes |
 
 
 </details>
@@ -88,3 +104,6 @@ Options:
 
 
 </details>
+
+
+![](./img/tc_startup_2.png)

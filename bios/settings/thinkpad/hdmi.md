@@ -1,6 +1,6 @@
 # HDMI Configuration #
 
-![](./img/hdmi.png)
+![](./img/tp_hdmi.png)
 
 Available only on certain models.
 

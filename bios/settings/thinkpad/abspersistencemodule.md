@@ -1,5 +1,5 @@
 # Absolute Persistence(R) Module Settings #
-![](./img/abspersistencemodule.png)
+![](./img/tp_abspersistencemodule.png)
 
 <details><summary>Current Settings</summary>
 

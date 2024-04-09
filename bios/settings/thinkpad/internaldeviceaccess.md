@@ -1,5 +1,5 @@
 # Internal Device Access Settings #
-![](./img/internaldeviceaccess.png)
+![](./img/tp_internaldeviceaccess.png)
 
 <details><summary>Bottom Cover Tamper Detection</summary>
 

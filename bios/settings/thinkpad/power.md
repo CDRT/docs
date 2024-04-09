@@ -2,7 +2,7 @@
 
 ### General ###
 
-![](./img/power.png)
+![](./img/tp_power.png)
 
 <details><summary>Intel (R) SpeedStep Technology</summary>
 
@@ -146,7 +146,7 @@ This option requests additional confirmation.
 
 ### Automatic Power On ###
 
-![](./img/autopoweron.png)
+![](./img/tp_autopoweron.png)
 
 <details><summary>Wake Up on Alarm</summary>
 
@@ -237,7 +237,7 @@ Possible options:
 
 ### Automatic Power On - User Defined Alarm ###
 
-![](./img/autopoweronuserdefined.png)
+![](./img/tp_autopoweronuserdefined.png)
 
 <details><summary>Sunday</summary>
 

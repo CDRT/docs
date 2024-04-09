@@ -1,6 +1,6 @@
 # Computrace #
 
-![](./img/thinkcentre_computrace.png)
+![](./img/tc_computrace.png)
 
 <details><summary>Absolute Persistence Module</summary>
 

@@ -1,5 +1,5 @@
 # Config #
-![](./img/config.png)
+![](./img/tp_config.png)
 
 <details><summary>Setup UI</summary>
 

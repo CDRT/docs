@@ -1,6 +1,6 @@
 # Restart
 
-![](./img/loadfactorydefaults.png)
+![](./img/tp_restart.png)
 
 <details><summary>Exit Saving Changes</summary>
 

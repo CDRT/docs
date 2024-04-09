@@ -2,7 +2,7 @@
 
 ### General ###
 
-![](./img/network.png)
+![](./img/tp_network.png)
 
 <details><summary>Wake On Lan</summary>
 
@@ -169,9 +169,24 @@ Possible options:
 
 </details>
 
+<details><summary>Reinstall Windows from Cloud</summary>
+
+Enable/Disable “Reinstall Windows from Cloud (Microsoft® Connected System Recovery)” in the App Menu invoked by F12.
+Choosing Reinstall Windows from Cloud from the F12 menu will completely replace the system software, including all user files, and cannot be undone.This feature works with system-integrated Ethernet LAN or wireless LAN (only WPA2 personal). Secure Boot must be enabled to use Reinstall Windows from Cloud.
+Please note that this feature is not compatible with Lenovo Cloud Boot. Do not attempt to start Lenovo Cloud Boot while Reinstall Windows from Cloud is enabled.
+
+Possible options:
+
+1. **Disabled** - Default.
+2. Enable.
+
+
+</details>
+
 ### WiFi Configuration ###
 
-![](./img/wifi.png)
+![](./img/tp_wifi1.png)
+![](./img/tp_wifi2.png)
 
 ?> All the settings in this group are not available via WMI.
 
@@ -201,7 +216,7 @@ Possible options:
 
 ### Wi-Fi Network List ###
 
-![](./img/wifinetworklist.png)
+![](./img/tp_wifinetworklist.png)
 
 ?>  All the settings in this group are not available via WMI.
 
@@ -219,7 +234,7 @@ For each network the Security Type is shown.
 Each SSID can be selected to display more details.
 <details><summary>[SSID Value](Status)</summary>
 
-![](./img/wifinetworkconfig.png)
+![](./img/tp_wifinetworkconfig.png)
 
 <details><summary>Connection Status</summary>
 
@@ -355,7 +370,7 @@ Possible actions:
 
 ### Add Wi-Fi Network ###
 
-![](./img/addwifinetwork.png)
+![](./img/tp_addwifinetwork.png)
 
 ?>  All the settings in this group are not available via WMI.
 
@@ -477,7 +492,7 @@ This is the option to save changes and exits back to the Manage Wi-Fi network pa
 
 ### Manage Wi-Fi Network ###
 
-![](./img/managewifilist.png)
+![](./img/tp_managewifilist.png)
 
 ?>  All the settings in this group are not available via WMI.
 
@@ -491,7 +506,7 @@ Every SSID on the list leads to details for this network.
 
 See descriptions below.
 
-![](./img/managewificonfig.png)
+![](./img/tp_managewificonfig.png)
 
 <details><summary>SSID</summary>
 

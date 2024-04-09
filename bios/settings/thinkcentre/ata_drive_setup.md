@@ -1,6 +1,6 @@
 # ATA Drive Setup #
 
-![](./img/thinkcentre_ata_drive_setup.png)
+![](./img/tc_ata_drive_setup.png)
 
 <details><summary>SATA Controller</summary>
 

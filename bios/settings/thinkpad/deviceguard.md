@@ -1,5 +1,5 @@
 # Device Guard Settings #
-![](./img/deviceguard.png)
+![](./img/tp_deviceguard.png)
 
 <details><summary>Device Guard</summary>
 

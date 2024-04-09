@@ -1,6 +1,6 @@
 # Devices #
 
-![](./img/thinkcentre_devices.png)
+![](./img/tc_devices.png)
 
 <details><summary>Bluetooth</summary>
 
@@ -29,3 +29,30 @@ Options:
 
 
 </details>
+
+<!-- MODEL: Neo 50a 24 Gen 3
+
+<details><summary>Integrated Camera</summary>
+
+Options:
+
+1.  **Enabled** - Default.
+1.  Disabled - disables card reader.
+
+!> Camera will not be available in OS.
+
+
+
+</details>
+
+<details><summary>Touch Screen</summary>
+
+Options:
+
+1.  **Enabled** - Default.
+1.  Disabled - disables card reader.
+
+!> Touch Screen will not be available in OS.
+
+
+</details> -->

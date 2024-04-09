@@ -1,6 +1,6 @@
 # Automatic Power On #
 
-![](./img/thinkcentre_automatic_power_on.png)
+![](./img/tc_automatic_power_on.png)
 
 <details><summary>Wake on LAN</summary>
 
@@ -67,11 +67,32 @@ Select the startup sequence after a Wake Up on Alarm event.
 Options:
 
 1.  **Primary** - enables primary startup sequence. Default.
-2.  Automatic - disables automatic selection of startup sequence.
+1.  Automatic - disables automatic selection of startup sequence.
+1.  Boot Order.
+1.  Network Group.
+1.  Storage Group.
+1.  SATA 1.
+1.  SATA 2.
+1.  SATA 3.
+1.  SATA 4.
+1.  M.2 Drive 1.
+1.  M.2 Drive 2.
+1.  PCIe Drive 1.
+1.  PCIe Drive 2.
+1.  VMD.
+1.  USB HDD.
+1.  USB CDROM.
+1.  Network 1. 
+1.  Network 2.
+1.  Network 3. 
+1.  Network 4.
+1.  Network 5. 
+1.  Network 6.
+1.  Network 7.
 
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
-| StartupSequence | Primary, Automatic | yes_no |
+| StartupSequence | Primary, Automatic, etc | yes_no |
 
 
 </details>
@@ -108,14 +129,14 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
-| AlarmDayofWeek  | Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, SaturdayStatus | yes |
+| AlarmDayofWeek  | Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday | yes |
 
 
 </details>
 
 ## User Defined Alarm ##
 
-![](./img/thinkcentre_user_defined_alarm.png)
+![](./img/tc_user_defined_alarm.png)
 
 Select the day(s) of the week when the system is to wake up. Each {Weekday} (Sunday to Saturday) has its own setting.
 

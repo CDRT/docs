@@ -1,6 +1,6 @@
 # I/O Port Access Settings #
 
-![](./img/ioportaccess.png)
+![](./img/tp_ioportaccess.png)
 
 <details><summary>Ethernet LAN</summary>
 

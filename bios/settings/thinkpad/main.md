@@ -1,6 +1,6 @@
 # Main #
 
-![Main page in BIOS Setup](./img/mainall.png)
+![Main page in BIOS Setup](./img/tp_main.png)
 
 The Main display shows (view-only) system information.
 

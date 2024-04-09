@@ -1,6 +1,6 @@
 # Video Setup #
 
-![](./img/thinkcentre_video_setup.png)
+![](./img/tc_video_setup.png)
 
 <details><summary>Select Active Video</summary>
 
@@ -38,7 +38,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
-| Pre-AllocatedMemorySize |  | yes |
+| Pre-AllocatedMemorySize | 32MB, 64MB, 96MB, 128MB, 160MB | yes |
 
 
 </details>
@@ -52,6 +52,21 @@ Options:
 1.  **Maximum** - enables maximum memory allocation. Default.
 2.  128MB.
 3.  256MB.
+
+</details>
+
+<details><summary>UMA Frame Buffer Size</summary>
+
+Configure the memory size for internal graphic
+
+Options:
+
+1.  **Auto** - Default.
+2.  512MB.
+3.  1024MB.
+4.  2048MB.
+
+<!-- NO WMI -->
 
 </details>
 
