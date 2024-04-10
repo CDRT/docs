@@ -105,5 +105,32 @@ Options:
 
 </details>
 
+ <!--On M75q Gen2-->
 
-![](./img/tc_startup_2.png)
+<!--![](./img/tc_startup_2.png)
+
+<details><summary>Primary Boot Sequence</summary>
+
+![](./img/tc_primary_boot_sequence.png)
+
+</details>
+
+<details><summary>Automatic Boot Sequence</summary>
+
+![](./img/tc_automatic_boot_sequence.png)
+
+</details>
+
+<details><summary>Error Boot Sequence</summary>
+
+![](./img/tc_error_boot_sequence.png)
+
+</details>
+
+<details><summary>Manufacturing Boot Sequence</summary>
+
+![](./img/tc_manufacturing_boot_sequence.png)
+
+</details>
+
+-->

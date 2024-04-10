@@ -10,7 +10,7 @@ The exact BIOS interface is determined by the model.
 
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
-| BootOrder |  |  |
+| BootOrder |  | Yes |
 
 ![](./img/./thinkcentre_boot_priority_order.png)
 

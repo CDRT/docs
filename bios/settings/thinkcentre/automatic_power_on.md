@@ -97,15 +97,17 @@ Options:
 
 </details>
 
-### Alarm Time (HH : MM : SS) ###
+<details><summary>Alarm Time (HH : MM : SS) </summary>
 
 Specify the time when the system is to wake up.
 
 Hours / minutes / seconds format.
 
+</details>
+
 <!-- SIMULATOR DOES NOT SUPPORT -->
 
-### Alarm Date (MM / DD / YYYY) ###
+<details><summary> Alarm Date (MM / DD / YYYY) </summary>
 
 Specify the precise date in month / day / year format.
 
@@ -113,6 +115,8 @@ Specify the precise date in month / day / year format.
 | WMI Setting name | Values | SVP Req'd |
 |:---|:---|:---|
 | AlarmDate  |  | yes |
+
+</details>
 
 
 <details><summary>Alarm day of week</summary>
