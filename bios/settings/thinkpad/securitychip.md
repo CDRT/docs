@@ -10,9 +10,9 @@ Shows the security chip type.
 
 View-only.
 
-For some AMD and Qualcomm models, the TPM can be switched from the default discrete TPM chip to the Microsoft Pluton security processor.
+For some AMD and Qualcomm models, the TPM can be switched from the default discrete TPM chip to the Microsoft(R) Pluton security processor.
 
-!> If a device registered with Autopilot is switched from discrete TPM to Pluton, it will no longer be recognized by the Autopilot service. An administrator will need to manually register the device again after switching to Pluton to enable Autopilot again.
+!> If a device registered with Autopilot is switched from discrete TPM to Pluton, it will no longer be recognized by the Autopilot service. An administrator will need to [manually register the device again](https://learn.microsoft.com/en-us/autopilot/add-devices#collect-the-hardware-hash) after switching to Pluton to enable Autopilot again.
 
 [Available via standard Windows commands](https://docs.microsoft.com/en-us/powershell/module/trustedplatformmodule/?view=windowsserver2019-ps&preserve-view=true&viewFallbackFrom=win10-ps)
 
@@ -80,6 +80,22 @@ Possible options:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | PhysicalPresenceForTpmClear  | Disable, Enable | Yes | Both |
+
+</details>
+
+<details><summary>Microsoft(R) Pluton Processor Control</summary>
+
+Whether to enable or disable the Pluton security processor.
+
+Possible options:
+
+1. **Disabled** - Default.
+2. Enabled
+3. Disabled(SW Controlled)
+
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
+|:---|:---|:---|:---|
+|   | Disable, Enable | Yes | AMD |
 
 </details>
 
