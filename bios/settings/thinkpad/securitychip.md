@@ -41,6 +41,8 @@ Only an option on some AMD and some Qualcomm models. Allows to switch from discr
 
 !> In order to switch to Pluton TPM, the Microsoft Pluton Processor Control setting must already be Enabled.
 
+!> If a device registered with Autopilot is switched from discrete TPM to Pluton, it will no longer be recognized by the Autopilot service. An administrator will need to [manually register the device again](https://learn.microsoft.com/en-us/autopilot/add-devices#collect-the-hardware-hash) after switching to Pluton to enable Autopilot again.
+
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
 | TpmSelection | DiscreteTPM2.0, PlutonTPM2.0 | Yes | AMD |
@@ -99,15 +101,15 @@ Possible options:
 
 Whether to enable or disable the Pluton security processor.
 
-!> This setting must be Enabled before the TPM can be switched to Pluton.
+!> This setting must be enabled before the TPM can be switched to Pluton.
 
 When configuring these BIOS settings using WMI scripts, it is possible to follow these steps:
 
-1. set PlutonSecurityProcessor to **Enable**
-2. set TpmSelection to **PlutonTPM2.0**
+1. set ```PlutonSecurityProcessor``` to **Enable**
+2. set ```TpmSelection``` to **PlutonTPM2.0**
 3. specify the Supervisor password using WmiOpcodeInterface
 4. save settings
-5. suspend Bitlocker
+5. suspend BitLocker
 6. reboot
 
 Possible options:
@@ -116,7 +118,7 @@ Possible options:
 2. Enabled
 3. **Disabled(SW Controlled)** - Default
 
-When set to Disabled or Enabled, the setting cannot be changed without specifying a Supervisor password when using WMI.  When set to Disabled (SW Controlled), the setting can be changed using WMI without requiring Supervisor password. This allows the Pluton Security Processor to be enabled for use with a Discrete TPM 2.0 without requiring Supervisor password. If this setting is being changed in order to switch to the Pluton TPM 2.0, a Supervisor password will be required to make the TpmSelection change. If the setting is already Enabled, then a Supervisor password will be required to change it using WMI.
+When set to ***Disabled*** or ***Enabled***, the setting cannot be changed without specifying a Supervisor password when using WMI.  When set to ***Disabled (SW Controlled)***, the setting can be changed using WMI without requiring Supervisor password. This allows the Pluton Security Processor to be enabled for use with a Discrete TPM 2.0 without requiring Supervisor password. If this setting is being changed in order to switch to the Pluton TPM 2.0, a Supervisor password will be required to make the TpmSelection change. If the setting is already ***Enabled***, then a Supervisor password will be required to change it using WMI. When using WMI, be sure to use the proper values from the table below.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|
