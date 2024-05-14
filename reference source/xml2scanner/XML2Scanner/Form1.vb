@@ -1341,4 +1341,8 @@ Public Class Form1
     Private Sub linkDocks_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linkDocks.LinkClicked
         Process.Start("https://download.lenovo.com/luc/docks.txt")
     End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
+    End Sub
 End Class

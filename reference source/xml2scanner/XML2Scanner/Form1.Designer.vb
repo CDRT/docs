@@ -85,13 +85,13 @@ Partial Class Form1
         Me.btnClear = New System.Windows.Forms.Button()
         Me.TabControl2 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.linkDocks = New System.Windows.Forms.LinkLabel()
         Me._rbWin10 = New System.Windows.Forms.RadioButton()
         Me._rbWin81 = New System.Windows.Forms.RadioButton()
         Me._rbWin7 = New System.Windows.Forms.RadioButton()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.linkDocks = New System.Windows.Forms.LinkLabel()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.tp_status.SuspendLayout()
@@ -197,6 +197,7 @@ Partial Class Form1
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.RowHeadersWidth = 82
         Me.DataGridView1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.DataGridView1.RowTemplate.Height = 25
         Me.DataGridView1.Size = New System.Drawing.Size(1179, 341)
@@ -206,6 +207,7 @@ Partial Class Form1
         '
         Me.PkgID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.PkgID.HeaderText = "PackageID"
+        Me.PkgID.MinimumWidth = 10
         Me.PkgID.Name = "PkgID"
         Me.PkgID.ReadOnly = True
         Me.PkgID.Width = 87
@@ -213,6 +215,7 @@ Partial Class Form1
         'PackageName
         '
         Me.PackageName.HeaderText = "Package Name"
+        Me.PackageName.MinimumWidth = 10
         Me.PackageName.Name = "PackageName"
         Me.PackageName.ReadOnly = True
         Me.PackageName.Width = 102
@@ -228,6 +231,7 @@ Partial Class Form1
         'Version
         '
         Me.Version.HeaderText = "Version"
+        Me.Version.MinimumWidth = 10
         Me.Version.Name = "Version"
         Me.Version.ReadOnly = True
         Me.Version.Width = 70
@@ -236,6 +240,7 @@ Partial Class Form1
         '
         Me.Released.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.Released.HeaderText = "Released"
+        Me.Released.MinimumWidth = 10
         Me.Released.Name = "Released"
         Me.Released.ReadOnly = True
         Me.Released.Width = 78
@@ -243,6 +248,7 @@ Partial Class Form1
         'PackageType
         '
         Me.PackageType.HeaderText = "Package Type"
+        Me.PackageType.MinimumWidth = 10
         Me.PackageType.Name = "PackageType"
         Me.PackageType.ReadOnly = True
         Me.PackageType.Width = 95
@@ -250,6 +256,7 @@ Partial Class Form1
         'category
         '
         Me.category.HeaderText = "Category"
+        Me.category.MinimumWidth = 10
         Me.category.Name = "category"
         Me.category.ReadOnly = True
         Me.category.Width = 80
@@ -257,6 +264,7 @@ Partial Class Form1
         'RebootType
         '
         Me.RebootType.HeaderText = "Reboot Type"
+        Me.RebootType.MinimumWidth = 10
         Me.RebootType.Name = "RebootType"
         Me.RebootType.ReadOnly = True
         Me.RebootType.Width = 89
@@ -264,6 +272,7 @@ Partial Class Form1
         'Severity
         '
         Me.Severity.HeaderText = "Severity"
+        Me.Severity.MinimumWidth = 10
         Me.Severity.Name = "Severity"
         Me.Severity.ReadOnly = True
         Me.Severity.Width = 73
@@ -271,6 +280,7 @@ Partial Class Form1
         'Brand
         '
         Me.Brand.HeaderText = "Brand"
+        Me.Brand.MinimumWidth = 10
         Me.Brand.Name = "Brand"
         Me.Brand.ReadOnly = True
         Me.Brand.Width = 63
@@ -278,6 +288,7 @@ Partial Class Form1
         'Setup
         '
         Me.Setup.HeaderText = "Setup"
+        Me.Setup.MinimumWidth = 10
         Me.Setup.Name = "Setup"
         Me.Setup.ReadOnly = True
         Me.Setup.Width = 62
@@ -285,6 +296,7 @@ Partial Class Form1
         'language
         '
         Me.language.HeaderText = "Language"
+        Me.language.MinimumWidth = 10
         Me.language.Name = "language"
         Me.language.ReadOnly = True
         Me.language.Visible = False
@@ -293,6 +305,7 @@ Partial Class Form1
         'Valid
         '
         Me.Valid.HeaderText = "Valid"
+        Me.Valid.MinimumWidth = 10
         Me.Valid.Name = "Valid"
         Me.Valid.ReadOnly = True
         Me.Valid.Width = 57
@@ -300,6 +313,7 @@ Partial Class Form1
         'xml2_path
         '
         Me.xml2_path.HeaderText = "XML2 Path"
+        Me.xml2_path.MinimumWidth = 10
         Me.xml2_path.Name = "xml2_path"
         Me.xml2_path.ReadOnly = True
         Me.xml2_path.Width = 82
@@ -308,6 +322,7 @@ Partial Class Form1
         '
         Me.CRC.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells
         Me.CRC.HeaderText = "CRC from Catalog"
+        Me.CRC.MinimumWidth = 10
         Me.CRC.Name = "CRC"
         Me.CRC.ReadOnly = True
         Me.CRC.Width = 117
@@ -315,6 +330,7 @@ Partial Class Form1
         'crcactual
         '
         Me.crcactual.HeaderText = "CRC Actual"
+        Me.crcactual.MinimumWidth = 10
         Me.crcactual.Name = "crcactual"
         Me.crcactual.ReadOnly = True
         Me.crcactual.Width = 85
@@ -322,6 +338,7 @@ Partial Class Form1
         'Comment
         '
         Me.Comment.HeaderText = "Comment"
+        Me.Comment.MinimumWidth = 10
         Me.Comment.Name = "Comment"
         Me.Comment.ReadOnly = True
         Me.Comment.Width = 86
@@ -336,12 +353,12 @@ Partial Class Form1
         Me.ListBox1.ForeColor = System.Drawing.Color.White
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 15
-        Me.ListBox1.Location = New System.Drawing.Point(7, 49)
+        Me.ListBox1.Location = New System.Drawing.Point(10, 138)
         Me.ListBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.ScrollAlwaysVisible = True
         Me.ListBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended
-        Me.ListBox1.Size = New System.Drawing.Size(1175, 225)
+        Me.ListBox1.Size = New System.Drawing.Size(1175, 135)
         Me.ListBox1.TabIndex = 9
         '
         'Button2
@@ -391,7 +408,7 @@ Partial Class Form1
         Me.Button3.ForeColor = System.Drawing.Color.Black
         Me.Button3.Location = New System.Drawing.Point(512, 6)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 30)
+        Me.Button3.Size = New System.Drawing.Size(157, 41)
         Me.Button3.TabIndex = 16
         Me.Button3.Text = "Copy"
         Me.Button3.UseVisualStyleBackColor = True
@@ -764,7 +781,7 @@ Partial Class Form1
         '
         Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClear.ForeColor = System.Drawing.Color.Black
-        Me.btnClear.Location = New System.Drawing.Point(608, 45)
+        Me.btnClear.Location = New System.Drawing.Point(617, 42)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(75, 79)
         Me.btnClear.TabIndex = 13
@@ -803,6 +820,20 @@ Partial Class Form1
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "   Catalog Search   "
         Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'linkDocks
+        '
+        Me.linkDocks.AutoSize = True
+        Me.linkDocks.DisabledLinkColor = System.Drawing.Color.Silver
+        Me.linkDocks.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.linkDocks.LinkColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(221, Byte), Integer))
+        Me.linkDocks.Location = New System.Drawing.Point(402, 18)
+        Me.linkDocks.Name = "linkDocks"
+        Me.linkDocks.Size = New System.Drawing.Size(70, 16)
+        Me.linkDocks.TabIndex = 25
+        Me.linkDocks.TabStop = True
+        Me.linkDocks.Text = "Docks List"
+        Me.linkDocks.VisitedLinkColor = System.Drawing.Color.Gold
         '
         '_rbWin10
         '
@@ -882,20 +913,6 @@ Partial Class Form1
         Me.PictureBox1.Size = New System.Drawing.Size(460, 66)
         Me.PictureBox1.TabIndex = 16
         Me.PictureBox1.TabStop = False
-        '
-        'linkDocks
-        '
-        Me.linkDocks.AutoSize = True
-        Me.linkDocks.DisabledLinkColor = System.Drawing.Color.Silver
-        Me.linkDocks.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.linkDocks.LinkColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(221, Byte), Integer))
-        Me.linkDocks.Location = New System.Drawing.Point(402, 18)
-        Me.linkDocks.Name = "linkDocks"
-        Me.linkDocks.Size = New System.Drawing.Size(70, 16)
-        Me.linkDocks.TabIndex = 25
-        Me.linkDocks.TabStop = True
-        Me.linkDocks.Text = "Docks List"
-        Me.linkDocks.VisitedLinkColor = System.Drawing.Color.Gold
         '
         'Form1
         '

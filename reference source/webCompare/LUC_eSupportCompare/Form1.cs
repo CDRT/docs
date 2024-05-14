@@ -48,7 +48,7 @@ namespace LUC_eSupportCompare
         /// List of all the models available on esupport
         /// </summary>
         List<ModelInformation> modelInfo;
-        
+
         /// <summary>
         /// Flags for the configurable options
         /// </summary>
@@ -131,7 +131,7 @@ namespace LUC_eSupportCompare
                 mode = SilentOutputMode.Error;
                 modeSetViaCMD = true;
             }//end if
-            if(args.Any("warning".Contains))
+            if (args.Any("warning".Contains))
             {
                 mode = SilentOutputMode.Warning;
                 modeSetViaCMD = true;
@@ -144,7 +144,7 @@ namespace LUC_eSupportCompare
 
             log.Info("Running in " + mode);
 
-            if(!File.Exists(file))
+            if (!File.Exists(file))
             {
                 Console.Out.WriteLine("No file has been found!");
                 log.Error("No file was found.");
@@ -153,14 +153,14 @@ namespace LUC_eSupportCompare
 
             string[] lines = File.ReadAllLines(file);
             string os = "Win10";
-            foreach(string line in lines)
+            foreach (string line in lines)
             {
                 if (string.IsNullOrWhiteSpace(line) || line.StartsWith("#"))
                     continue;
                 if (line.Contains("="))
                 {
                     string[] splits = line.Split(new char[] { '=', '#' });
-                    if(splits[0].Trim().ToUpper().Equals("OS"))
+                    if (splits[0].Trim().ToUpper().Equals("OS"))
                     {
                         os = splits[1];
                         log.Info("Setting os = " + os);
@@ -191,14 +191,14 @@ namespace LUC_eSupportCompare
                             log.Info("Performing xml crc checks");
                         }//end else
                     }//end else if
-                    else if(splits[0].Trim().ToUpper().Equals("EXPORT"))
+                    else if (splits[0].Trim().ToUpper().Equals("EXPORT"))
                     {
                         if (splits[1].Trim().ToUpper().Equals("EXCEL"))
                             exportToExcel = true;
                     }//end else if
                     else if (splits[0].Trim().ToUpper().Equals("EXCLUDE_COLUMNS"))
                     {
-                        foreach(string col in splits[1].Split(','))
+                        foreach (string col in splits[1].Split(','))
                         {
                             excludeColumns.Add(col.Trim());
                         }//end foreach
@@ -314,11 +314,11 @@ namespace LUC_eSupportCompare
                                 }//end foreach
                                 */
                                 // storing header part in Excel  
-                                rows.Sort((p,q) => p.name.CompareTo(q.name));
+                                rows.Sort((p, q) => p.name.CompareTo(q.name));
                                 ListtoDataTable ltod = new ListtoDataTable();
                                 DataTable dt = ltod.ToDataTable(rows).DefaultView.ToTable(true);
                                 dt.Columns["Issues"].SetOrdinal(0);
-                                foreach(string col in excludeColumns)
+                                foreach (string col in excludeColumns)
                                 {
                                     dt.Columns.Remove(col);
                                 }//end foreach
@@ -334,7 +334,7 @@ namespace LUC_eSupportCompare
                                         }//end if
                                     }//end for
                                 }//end if
-                                if(hideIssues.Count > 0)
+                                if (hideIssues.Count > 0)
                                 {
                                     for (int i = dt.Rows.Count - 1; i >= 0; i--)
                                     {
@@ -376,7 +376,7 @@ namespace LUC_eSupportCompare
                 }//end else
             }//end foreach
             DataTable master = new DataTable();
-            foreach(DataTable d in dataTables)
+            foreach (DataTable d in dataTables)
             {
                 master.Merge(d);
             }
@@ -394,10 +394,10 @@ namespace LUC_eSupportCompare
             .Select(r => new
             {
                 r.Key.issues,
-                 r.Key.name,
-                 r.Key.package,
-                 r.Key.eSupportVersion,
-                 r.Key.suVersion,
+                r.Key.name,
+                r.Key.package,
+                r.Key.eSupportVersion,
+                r.Key.suVersion,
                 model = String.Join(",", r.Select(z => z.Field<string>("model"))),
                 r.Key.suReleaseDate,
                 //r.Key.lucXML
@@ -512,7 +512,7 @@ namespace LUC_eSupportCompare
                 //Directory.CreateDirectory(baseFolder + "\\xmls\\" + fileName.Substring(0, fileName.Length - 4) + "\\exes");
             }//end try
             catch (Exception e) { }
-            
+
             try
             {
                 if (!File.Exists(baseFolder + "\\xmls\\" + folderName + "\\" + fileName))
@@ -554,7 +554,7 @@ namespace LUC_eSupportCompare
                 }//end foreach
                 return su;
             }
-            catch(WebException e)
+            catch (WebException e)
             {
                 Console.Out.WriteLine("Catalog not found!");
                 return new List<DownloadItem>();
@@ -622,7 +622,7 @@ namespace LUC_eSupportCompare
                     else
                     {
                         DateTime date = File.GetCreationTime(baseFolder + "\\exes\\" + di.ID + ".exe");
-                        if(date.Date != DateTime.Now.Date)
+                        if (date.Date != DateTime.Now.Date)
                         {
                             File.Delete(baseFolder + "\\exes\\" + di.ID + ".exe");
                             using (var wclient = new WebClient())
@@ -639,13 +639,13 @@ namespace LUC_eSupportCompare
                     }//end using FileStream
                 }//end if
             }//end try
-            catch(WebException e)
+            catch (WebException e)
             {
                 Console.Out.WriteLine("Sub catalog not found!\n" + location);
                 log.Error("Sub catalog not found! - " + location);
                 return null;
             }//end catch
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.Out.WriteLine("Unexpected issue on: " + location);
                 log.Error("Unexpected issue on: " + location);
@@ -724,17 +724,17 @@ namespace LUC_eSupportCompare
                                     //make sure i get all exes
                                     DownloadItem objList = new DownloadItem();
                                     string fileUrl = (string)file["URL"];
-                                    if(parentTitle.Contains('-'))
+                                    if (parentTitle.Contains('-'))
                                         parentTitle = parentTitle.Substring(0, parentTitle.IndexOf('-') - 1);
                                     if (fileUrl.EndsWith(".exe") || fileUrl.EndsWith(".zip"))
                                     {
                                         string name = (string)file["Title"];
-                                        if(parentTitle.EndsWith(")"))
+                                        if (parentTitle.EndsWith(")"))
                                         {
                                             string winVer = " " + parentTitle.Substring(parentTitle.LastIndexOf('('));
                                             if (winVer.Equals(" (64-bit)") || winVer.Equals(" (32-bit)"))
                                                 winVer = "";
-                                            if(!name.EndsWith(")"))
+                                            if (!name.EndsWith(")"))
                                                 name += winVer;
                                         }
                                         objList.Name = name;
@@ -1023,18 +1023,18 @@ namespace LUC_eSupportCompare
             }//end for
 
             //MessageBox.Show("" + notOnESupport.Count);
-           // MessageBox.Show("" + notOnSU.Count);
+            // MessageBox.Show("" + notOnSU.Count);
 
             foreach (DataRow d in notOnESupport)
             {
-                foreach(DataRow e in notOnSU)
+                foreach (DataRow e in notOnSU)
                 {
                     string ePackage = (string)d["package"];
                     string sPackage = (string)e["package"];
                     int distance = LevenshteinDistance.Compute(ePackage, sPackage);
                     if (distance < 3)
                     { }
-                        //MessageBox.Show((string)d["package"] + " " + (string)e["package"] + " " + distance);
+                    //MessageBox.Show((string)d["package"] + " " + (string)e["package"] + " " + distance);
                 }//end foreach not su
             }//end foreach not esupport
         }//end matchPartialPackages
@@ -1072,7 +1072,7 @@ namespace LUC_eSupportCompare
                                                                                        { "4TH", "4th" },
                                                                                        { "11E", "11e" }};
             List<ModelInformation> mi = new List<ModelInformation>();
-            List<string> thinkProducts = new List<string> { "THINKPAD", "THINKCENTRE", "THINKSTATION", "ideapad"};
+            List<string> thinkProducts = new List<string> { "THINKPAD", "THINKCENTRE", "THINKSTATION", "ideapad" };
             /*string urlToProductInfo = "https://pcsupport.lenovo.com/services/us/en/ContentService/GetProducts?productId=";
             WebClient webClient = new WebClient();
             string json1 = webClient.DownloadString(urlToProductInfo);
@@ -1081,7 +1081,7 @@ namespace LUC_eSupportCompare
             var entities = JsonConvert.DeserializeObject<List<ModelAPI>>(json1);
             foreach (var entity in entities)
             {
-                if (thinkProducts.Any(s => entity.ID.Contains(s)) || entity.Name.Contains("(ideapad)")) 
+                if (thinkProducts.Any(s => entity.ID.Contains(s)) || entity.Name.Contains("(ideapad)"))
                 {
                     string[] parts = entity.ID.Split('/');
                     if (parts.Last().Length == 4)
@@ -1297,175 +1297,175 @@ namespace LUC_eSupportCompare
                 issueCell.ToolTipText = toolTip.ToString();
             }//end foreach
         }//end dataGridView1_ColumnHeaderMouseClick
-         
-         /// <summary>
-         /// Listener on the filter box
-         /// </summary>
-         /// <param name="sender"></param>
-         /// <param name="e"></param>
-         private void textBox1_TextChanged(object sender, EventArgs e)
-         {
-             (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = string.Format("{0} LIKE '%{1}%'", comboBox1.Text, textBox1.Text);
-         }//end textBox1_TextChanged
 
-         /// <summary>
-         /// 
-         /// </summary>
-         /// <param name="sender"></param>
-         /// <param name="e"></param>
-         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-         {
-             if (comboBox1.SelectedIndex != -1)
-                 textBox1.Enabled = true;
-         }//end comboBox1_SelectedIndexChanged
+        /// <summary>
+        /// Listener on the filter box
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = string.Format("{0} LIKE '%{1}%'", comboBox1.Text, textBox1.Text);
+        }//end textBox1_TextChanged
 
-         /// <summary>
-         /// Do all the processing. Probably should split this into a background worker.
-         /// </summary>
-         /// <param name="sender"></param>
-         /// <param name="e"></param>
-         private void button_submit_Click(object sender, EventArgs e)
-         {
-             button_submit.Enabled = false;
-             string type = modelInfo.First(x => x.getName().Equals(cb_model.Text)).getMTM();
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex != -1)
+                textBox1.Enabled = true;
+        }//end comboBox1_SelectedIndexChanged
 
-             string os = cb_os.Text;
-             string url = "https://download.lenovo.com/catalog/" + type + "_" + os + ".xml";
-            
+        /// <summary>
+        /// Do all the processing. Probably should split this into a background worker.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button_submit_Click(object sender, EventArgs e)
+        {
+            button_submit.Enabled = false;
+            string type = modelInfo.First(x => x.getName().Equals(cb_model.Text)).getMTM();
+
+            string os = cb_os.Text;
+            string url = "https://download.lenovo.com/catalog/" + type + "_" + os + ".xml";
+
             suWorker.RunWorkerAsync(url);
-            
+
             eSupportWorker.RunWorkerAsync(new string[] { type, os });
             toolStripStatusLabel1.Text = "Parsing eSupport and System Update...";
-           
+
             downloadLUC();
-            
-            while(suWorker.IsBusy || eSupportWorker.IsBusy)
+
+            while (suWorker.IsBusy || eSupportWorker.IsBusy)
             {
                 Application.DoEvents();
             }
 
-             toolStripStatusLabel1.Text = "Comparing the data...";
-             
-             List<DGRow> rows = new List<DGRow>();
-             foreach (DownloadItem d in eSupport)
-             {
-                 var matches = su.Where(p => p.ID.Equals(d.ID));
-                 if (matches.Count() > 0)
-                 {
-                     foreach (DownloadItem match in matches)
-                     {
-                         DGRow row = new DGRow(d, match, type);
-                         //MessageBox.Show(row.package);
-                         rows.Add(row);
-                     }//end foreach
-                 }//end if
-                 
-                 else
-                 {
-                     DGRow row = new DGRow(d, null, type);
-                     //MessageBox.Show(row.package);
-                     rows.Add(row);
-                 }//end else
-             }//end foreach
+            toolStripStatusLabel1.Text = "Comparing the data...";
 
-             foreach (DownloadItem s in su)
-             {
-                 var matches = eSupport.Where(p => p.ID.Equals(s.ID));
-                 if (matches.Count() == 0)
-                 {
-                     DGRow row = new DGRow(null, s, type);
-                     //MessageBox.Show(row.package);
-                     rows.Add(row);
-                 }//end if
-             }//end foreach
+            List<DGRow> rows = new List<DGRow>();
+            foreach (DownloadItem d in eSupport)
+            {
+                var matches = su.Where(p => p.ID.Equals(d.ID));
+                if (matches.Count() > 0)
+                {
+                    foreach (DownloadItem match in matches)
+                    {
+                        DGRow row = new DGRow(d, match, type);
+                        //MessageBox.Show(row.package);
+                        rows.Add(row);
+                    }//end foreach
+                }//end if
 
-             setupDataGrid(rows);
-             button_submit.Enabled = true;
-             groupBox2.Enabled = true;
-             toolStripProgressBar1.Value = 0;
-             toolStripStatusLabel1.Text = "Done!";
-         }//end button_submit_Click
+                else
+                {
+                    DGRow row = new DGRow(d, null, type);
+                    //MessageBox.Show(row.package);
+                    rows.Add(row);
+                }//end else
+            }//end foreach
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-         private void checkBox4_CheckedChanged(object sender, EventArgs e)
-         {
-             preventCRCEXE = !preventCRCEXE;
-         }
+            foreach (DownloadItem s in su)
+            {
+                var matches = eSupport.Where(p => p.ID.Equals(s.ID));
+                if (matches.Count() == 0)
+                {
+                    DGRow row = new DGRow(null, s, type);
+                    //MessageBox.Show(row.package);
+                    rows.Add(row);
+                }//end if
+            }//end foreach
+
+            setupDataGrid(rows);
+            button_submit.Enabled = true;
+            groupBox2.Enabled = true;
+            toolStripProgressBar1.Value = 0;
+            toolStripStatusLabel1.Text = "Done!";
+        }//end button_submit_Click
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-         private void excelWorker_DoWork(object sender, DoWorkEventArgs e)
-         {
-             string modelOS = e.Argument as string;
-             // creating Excel Application  
-             Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
-             // creating new WorkBook within Excel application  
-             Microsoft.Office.Interop.Excel._Workbook workbook = app.Workbooks.Add(Type.Missing);
-             // creating new Excelsheet in workbook  
-             Microsoft.Office.Interop.Excel._Worksheet worksheet = null;
-             // see the excel sheet behind the program  
-             app.Visible = false;
-             // get the reference of first sheet. By default its name is Sheet1.  
-             // store its reference to worksheet  
-             worksheet = workbook.Sheets["Sheet1"];
-             worksheet = workbook.ActiveSheet;
-             // changing the name of active sheet  
-             worksheet.Name = "Exported from gridview";
-             // storing header part in Excel  
-             for (int i = 1; i < dataGridView1.Columns.Count + 1; i++)
-             {
-                 worksheet.Cells[1, i] = dataGridView1.Columns[i - 1].HeaderText;
-             }
-             // storing Each row and column value to excel sheet  
-             for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
-             {
-                 for (int j = 0; j < dataGridView1.Columns.Count; j++)
-                 {
-                     worksheet.Cells[i + 2, j + 1] = dataGridView1.Rows[i].Cells[j].Value.ToString();
-                 }
-             }
-             // save the application  
-             workbook.SaveAs(baseFolder + "\\" + modelOS + ".xls", Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing,
-                 Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
-             // Exit from the application  
-             app.Quit();
-         }
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+            preventCRCEXE = !preventCRCEXE;
+        }
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-         private void excelWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
-         {
-             Application.UseWaitCursor = false;
-         }
+        private void excelWorker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            string modelOS = e.Argument as string;
+            // creating Excel Application  
+            Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
+            // creating new WorkBook within Excel application  
+            Microsoft.Office.Interop.Excel._Workbook workbook = app.Workbooks.Add(Type.Missing);
+            // creating new Excelsheet in workbook  
+            Microsoft.Office.Interop.Excel._Worksheet worksheet = null;
+            // see the excel sheet behind the program  
+            app.Visible = false;
+            // get the reference of first sheet. By default its name is Sheet1.  
+            // store its reference to worksheet  
+            worksheet = workbook.Sheets["Sheet1"];
+            worksheet = workbook.ActiveSheet;
+            // changing the name of active sheet  
+            worksheet.Name = "Exported from gridview";
+            // storing header part in Excel  
+            for (int i = 1; i < dataGridView1.Columns.Count + 1; i++)
+            {
+                worksheet.Cells[1, i] = dataGridView1.Columns[i - 1].HeaderText;
+            }
+            // storing Each row and column value to excel sheet  
+            for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
+            {
+                for (int j = 0; j < dataGridView1.Columns.Count; j++)
+                {
+                    worksheet.Cells[i + 2, j + 1] = dataGridView1.Rows[i].Cells[j].Value.ToString();
+                }
+            }
+            // save the application  
+            workbook.SaveAs(baseFolder + "\\" + modelOS + ".xls", Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing,
+                Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
+            // Exit from the application  
+            app.Quit();
+        }
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-         private void eSupportWorker_DoWork(object sender, DoWorkEventArgs e)
-         {
+        private void excelWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            Application.UseWaitCursor = false;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void eSupportWorker_DoWork(object sender, DoWorkEventArgs e)
+        {
             string[] args = e.Argument as string[];
             eSupport = geteSupportInfoByType(args[0], args[1]);
-         }
+        }
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-         private void eSupportWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
-         {
+        private void eSupportWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
             if (!suWorker.IsBusy)
                 toolStripProgressBar1.Value = 100;
         }
@@ -1597,7 +1597,7 @@ namespace LUC_eSupportCompare
         /// <param name="e"></param>
         private void checkBox7_CheckedChanged(object sender, EventArgs e)
         {
-            if(checkBox7.Checked)
+            if (checkBox7.Checked)
             {
                 textBox4.Enabled = true;
             }
@@ -1633,6 +1633,11 @@ namespace LUC_eSupportCompare
                 }
             }
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }//end form1
 
     /* **********************************************************************************************************************************************
@@ -1644,7 +1649,7 @@ namespace LUC_eSupportCompare
     /// <summary>
     /// Class to represent the rows in the datagrid
     /// </summary>
-    
+
 
     /// <summary>
     /// 
@@ -1908,7 +1913,7 @@ namespace LUC_eSupportCompare
     /**
     * Class to deserialize the JSON into
 */
-        class JSONApplicationEntity
+    class JSONApplicationEntity
     {
         public string Id { get; set; }
         public string Name { get; set; }

@@ -17,3 +17,14 @@ C:\Users\JoeR\Documents\Visual Studio 2012\Projects\TI_LogViewer\TI_LogViewer\bi
 C:\Users\JoeR\Documents\Visual Studio 2012\Projects\TI_LogViewer\TI_LogViewer\obj\Debug\TI_LogViewer.Form1.resources
 C:\Users\JoeR\Documents\Visual Studio 2012\Projects\TI_LogViewer\TI_LogViewer\obj\Debug\TI_LogViewer.Resources.resources
 C:\Users\JoeR\Documents\Visual Studio 2012\Projects\TI_LogViewer\TI_LogViewer\obj\Debug\TI_LogViewer.vbproj.GenerateResource.Cache
+C:\Users\gpennell\Documents\GitHub\investigator\reference source\ti-logviewer\TI_LogViewer\bin\Debug\TI_LogViewer.exe.config
+C:\Users\gpennell\Documents\GitHub\investigator\reference source\ti-logviewer\TI_LogViewer\bin\Debug\TI_LogViewer.exe
+C:\Users\gpennell\Documents\GitHub\investigator\reference source\ti-logviewer\TI_LogViewer\bin\Debug\TI_LogViewer.pdb
+C:\Users\gpennell\Documents\GitHub\investigator\reference source\ti-logviewer\TI_LogViewer\bin\Debug\TI_LogViewer.xml
+C:\Users\gpennell\Documents\GitHub\investigator\reference source\ti-logviewer\TI_LogViewer\obj\Debug\TI_LogViewer.vbprojAssemblyReference.cache
+C:\Users\gpennell\Documents\GitHub\investigator\reference source\ti-logviewer\TI_LogViewer\obj\Debug\TI_LogViewer.Form1.resources
+C:\Users\gpennell\Documents\GitHub\investigator\reference source\ti-logviewer\TI_LogViewer\obj\Debug\TI_LogViewer.Resources.resources
+C:\Users\gpennell\Documents\GitHub\investigator\reference source\ti-logviewer\TI_LogViewer\obj\Debug\TI_LogViewer.vbproj.GenerateResource.cache
+C:\Users\gpennell\Documents\GitHub\investigator\reference source\ti-logviewer\TI_LogViewer\obj\Debug\TI_LogViewer.exe
+C:\Users\gpennell\Documents\GitHub\investigator\reference source\ti-logviewer\TI_LogViewer\obj\Debug\TI_LogViewer.xml
+C:\Users\gpennell\Documents\GitHub\investigator\reference source\ti-logviewer\TI_LogViewer\obj\Debug\TI_LogViewer.pdb

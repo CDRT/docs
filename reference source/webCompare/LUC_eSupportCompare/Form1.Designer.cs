@@ -68,6 +68,10 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lucXML = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.excelWorker = new System.ComponentModel.BackgroundWorker();
+            this.eSupportWorker = new System.ComponentModel.BackgroundWorker();
+            this.suWorker = new System.ComponentModel.BackgroundWorker();
             this.issues = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.package = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -87,11 +91,7 @@
             this.suComputedEXEHash = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.suGivenXMLHash = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.suComputedXMLHash = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lucXML = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dGRowBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.excelWorker = new System.ComponentModel.BackgroundWorker();
-            this.eSupportWorker = new System.ComponentModel.BackgroundWorker();
-            this.suWorker = new System.ComponentModel.BackgroundWorker();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -476,6 +476,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -483,6 +484,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(1081, 24);
             this.menuStrip1.TabIndex = 15;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // fileToolStripMenuItem
             // 
@@ -498,24 +500,24 @@
             // loadConfigurationToolStripMenuItem
             // 
             this.loadConfigurationToolStripMenuItem.Name = "loadConfigurationToolStripMenuItem";
-            this.loadConfigurationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loadConfigurationToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.loadConfigurationToolStripMenuItem.Text = "Load Configuration";
             // 
             // saveConfigurationToolStripMenuItem
             // 
             this.saveConfigurationToolStripMenuItem.Name = "saveConfigurationToolStripMenuItem";
-            this.saveConfigurationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveConfigurationToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.saveConfigurationToolStripMenuItem.Text = "Save Configuration";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(174, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // dataGridView1
@@ -557,6 +559,33 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_ColumnHeaderMouseClick);
+            // 
+            // lucXML
+            // 
+            this.lucXML.DataPropertyName = "lucXML";
+            this.lucXML.HeaderText = "lucXML";
+            this.lucXML.Name = "lucXML";
+            this.lucXML.ReadOnly = true;
+            this.lucXML.Visible = false;
+            // 
+            // excelWorker
+            // 
+            this.excelWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.excelWorker_DoWork);
+            this.excelWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.excelWorker_RunWorkerCompleted);
+            // 
+            // eSupportWorker
+            // 
+            this.eSupportWorker.WorkerReportsProgress = true;
+            this.eSupportWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.eSupportWorker_DoWork);
+            this.eSupportWorker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.eSupportWorker_ProgressChanged);
+            this.eSupportWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.eSupportWorker_RunWorkerCompleted);
+            // 
+            // suWorker
+            // 
+            this.suWorker.WorkerReportsProgress = true;
+            this.suWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.suWorker_DoWork);
+            this.suWorker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.suWorker_ProgressChanged);
+            this.suWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.suWorker_RunWorkerCompleted);
             // 
             // issues
             // 
@@ -706,36 +735,9 @@
             this.suComputedXMLHash.ReadOnly = true;
             this.suComputedXMLHash.Visible = false;
             // 
-            // lucXML
-            // 
-            this.lucXML.DataPropertyName = "lucXML";
-            this.lucXML.HeaderText = "lucXML";
-            this.lucXML.Name = "lucXML";
-            this.lucXML.ReadOnly = true;
-            this.lucXML.Visible = false;
-            // 
             // dGRowBindingSource
             // 
             this.dGRowBindingSource.DataSource = typeof(LUC_eSupportCompare.DGRow);
-            // 
-            // excelWorker
-            // 
-            this.excelWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.excelWorker_DoWork);
-            this.excelWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.excelWorker_RunWorkerCompleted);
-            // 
-            // eSupportWorker
-            // 
-            this.eSupportWorker.WorkerReportsProgress = true;
-            this.eSupportWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.eSupportWorker_DoWork);
-            this.eSupportWorker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.eSupportWorker_ProgressChanged);
-            this.eSupportWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.eSupportWorker_RunWorkerCompleted);
-            // 
-            // suWorker
-            // 
-            this.suWorker.WorkerReportsProgress = true;
-            this.suWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.suWorker_DoWork);
-            this.suWorker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.suWorker_ProgressChanged);
-            this.suWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.suWorker_RunWorkerCompleted);
             // 
             // Form1
             // 

@@ -52,3 +52,14 @@ C:\svn\cdrt\xml2scanner\trunk\XML2Scanner\obj\Debug\XML2Scanner.vbproj.CoreCompi
 C:\svn\cdrt\xml2scanner\trunk\XML2Scanner\obj\Debug\XML2Scanner.exe
 C:\svn\cdrt\xml2scanner\trunk\XML2Scanner\obj\Debug\XML2Scanner.xml
 C:\svn\cdrt\xml2scanner\trunk\XML2Scanner\obj\Debug\XML2Scanner.pdb
+C:\Users\gpennell\Documents\GitHub\investigator\reference source\xml2scanner\XML2Scanner\bin\Debug\XML2Scanner.exe.config
+C:\Users\gpennell\Documents\GitHub\investigator\reference source\xml2scanner\XML2Scanner\bin\Debug\XML2Scanner.exe
+C:\Users\gpennell\Documents\GitHub\investigator\reference source\xml2scanner\XML2Scanner\bin\Debug\XML2Scanner.pdb
+C:\Users\gpennell\Documents\GitHub\investigator\reference source\xml2scanner\XML2Scanner\bin\Debug\XML2Scanner.xml
+C:\Users\gpennell\Documents\GitHub\investigator\reference source\xml2scanner\XML2Scanner\obj\Debug\XML2Scanner.vbprojAssemblyReference.cache
+C:\Users\gpennell\Documents\GitHub\investigator\reference source\xml2scanner\XML2Scanner\obj\Debug\XML2Scanner.Form1.resources
+C:\Users\gpennell\Documents\GitHub\investigator\reference source\xml2scanner\XML2Scanner\obj\Debug\XML2Scanner.Resources.resources
+C:\Users\gpennell\Documents\GitHub\investigator\reference source\xml2scanner\XML2Scanner\obj\Debug\XML2Scanner.vbproj.GenerateResource.cache
+C:\Users\gpennell\Documents\GitHub\investigator\reference source\xml2scanner\XML2Scanner\obj\Debug\XML2Scanner.exe
+C:\Users\gpennell\Documents\GitHub\investigator\reference source\xml2scanner\XML2Scanner\obj\Debug\XML2Scanner.xml
+C:\Users\gpennell\Documents\GitHub\investigator\reference source\xml2scanner\XML2Scanner\obj\Debug\XML2Scanner.pdb
