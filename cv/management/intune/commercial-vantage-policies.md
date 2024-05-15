@@ -12,8 +12,13 @@ When this policy is enabled, the Dashboard feature of Commercial Vantage will be
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 ### Turn off Give Feedback
 
@@ -25,8 +30,13 @@ When this policy is enabled, the Give Feedback feature of Commercial Vantage wil
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 ## Device
 
@@ -40,8 +50,13 @@ When this policy is enabled, the Device Settings feature of Commercial Vantage w
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 ---
 
@@ -55,8 +70,13 @@ When this policy is enabled, the System Update feature of Commercial Vantage wil
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 ---
 
@@ -70,8 +90,13 @@ When this policy is enabled, the My Device feature of Commercial Vantage will be
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 ### Device Settings
 
@@ -85,8 +110,13 @@ When this policy is enabled, the Smart Assist feature of Commercial Vantage will
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 ### Display and Camera
 
@@ -100,8 +130,13 @@ When this policy is enabled, the Camera features of Commercial Vantage will be t
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 ---
 
@@ -115,8 +150,13 @@ When this policy is enabled, the Display features of Commercial Vantage will be 
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 ### Input and Accessories
 
@@ -130,8 +170,13 @@ When this policy is enabled, the Intelligent Keyboard feature of Commercial Vant
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 ### Microphone
 
@@ -145,8 +190,13 @@ When this policy is enabled, the Microphone Settings features of Commercial Vant
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 ### Power
 
@@ -160,8 +210,13 @@ When this policy is enabled, the Power Settings of Commercial Vantage will be tu
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 #### Write battery information to WMI
 
@@ -192,12 +247,16 @@ If you disable or do not configure this policy setting, the battery information 
 
 Values:
 
-`<enabled/>`  
-`<data id="ADE41242A9F8CE596481FE945E5FE5D8" value="1"/>`
-`<data id="F04F922293A120999D4EB95012CA0C64" value="1"/>`
-`<data id="AC72B4BC066D807C760A11748C39F451" value="10:00:00"/>`
+```xml
+<enabled/>  
+<data id="ADE41242A9F8CE596481FE945E5FE5D8" value="1"/>
+<data id="F04F922293A120999D4EB95012CA0C64" value="1"/>
+<data id="AC72B4BC066D807C760A11748C39F451" value="10:00:00"/>
+```
 
-`<disabled/>`
+```xml
+<disabled/>
+```
 
 #### Turn off DPM Power Settings
 
@@ -211,8 +270,13 @@ When this policy is enabled, the Desktop Power Manager Power Settings of Commerc
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 #### Turn off Battery Settings
 
@@ -243,13 +307,17 @@ When the toggle to "Automatically Set Threshold" is on, then Battery Threshold "
 
 Values:
 
-`<enabled/>`  
-`<data id="30B3EB897294AF0A770737E004CCE7B0" value="true"/>`
-`<data id="4B9DE8D61B215393ED7255D0719FA5FA" value="60"/>`
-`<data id="2FE339B04615BBA5C913F45FB6A1B34D" value="80"/>`
-`<data id="51A1765894644A2F58B9AF5EE7F65922" value="false"/>`
+```xml
+<enabled/>  
+<data id="30B3EB897294AF0A770737E004CCE7B0" value="true"/>
+<data id="4B9DE8D61B215393ED7255D0719FA5FA" value="60"/>
+<data id="2FE339B04615BBA5C913F45FB6A1B34D" value="80"/>
+<data id="51A1765894644A2F58B9AF5EE7F65922" value="false"/>
+```
 
-`<disabled/>`
+```xml
+<disabled/>
+```
 
 #### Turn off Power Smart Settings
 
@@ -267,8 +335,13 @@ When this policy is Not Configured,  the Power Smart Settings (Intelligent Cooli
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 #### Turn off Standby Settings
 
@@ -282,8 +355,13 @@ When this policy is enabled, the Standby Settings feature of Commercial Vantage 
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 #### Turn off Energy Star
 
@@ -297,8 +375,13 @@ When this policy is enabled, the Energy Star features of Commercial Vantage will
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 ### Smart Assist
 
@@ -314,8 +397,13 @@ When this policy is enabled, the Active Protection System Settings features of C
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 ### Dolby Access
 
@@ -329,8 +417,13 @@ When this policy is enabled, Dolby Access page will be hidden. Then, the Advance
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 ### My Software
 
@@ -344,8 +437,13 @@ When this policy is enabled, My Software page will be hidden.
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 ### System Update
 
@@ -361,10 +459,14 @@ Defines the location of where System Update will pickup available content.
 
 Values:
 
-`<enabled/>`  
-`<data id="BD0C70F0CE887CC46496DD7BF81C0B8C" value="\\your_repository"/>`
+```xml
+<enabled/> 
+<data id="BD0C70F0CE887CC46496DD7BF81C0B8C" value="\\your_repository"/>
+```
 
-`<disabled/>`
+```xml
+<disabled/>
+```
 
 #### System Update Configuration
 
@@ -376,24 +478,28 @@ This policy setting provides the ability for the Administrator to configure the 
 
 Values:
 
-`<enabled/>`  
-`<data id="602015B22CFEA08C53FEC8C3E81356BF" value="true"/>`
-`<data id="CE7D1526B3D8674705FF75DFF52B4416" value="true"/>`
-`<data id="7C75C7AA6FF288235BCA3886FA9A4176" value="true"/>`
-`<data id="94803C37291A574BB4CAF4DFAE682CC2" value="true"/>`
-`<data id="7326616EB323392D1BB0E6436A4A02AF" value="false"/>`
-`<data id="6564E6607DD79991C0A56F009A4102FA" value="true"/>`
-`<data id="B78D824B47B0EC632B7EDEF30B63E2D9" value="true"/>`
-`<data id="A0DEF98CD96C592582382A3453CB78BA" value="true"/>`
-`<data id="8E6885D7C10107B5CD98053B7D8B2A6E" value="true"/>`
-`<data id="A45D902F95DDD3B8597B21175A66A804" value="true"/>`
-`<data id="46302403B9C32072305518FE20DC6720" value="false"/>`
-`<data id="FDC13AFD3BA418958D122D78105C2F90" value="false"/>`
-`<data id="3297105136FCEC5D3432C0FA2FDB73BB" value="false"/>`
-`<data id="C62002C924CF75712313AC1CF94525AB" value="false"/>`
-`<data id="9A82A62C3EF3BA2FCC142413A1FAC951" value="false"/>`
+```xml
+<enabled/>  
+<data id="602015B22CFEA08C53FEC8C3E81356BF" value="true"/>
+<data id="CE7D1526B3D8674705FF75DFF52B4416" value="true"/>
+<data id="7C75C7AA6FF288235BCA3886FA9A4176" value="true"/>
+<data id="94803C37291A574BB4CAF4DFAE682CC2" value="true"/>
+<data id="7326616EB323392D1BB0E6436A4A02AF" value="false"/>
+<data id="6564E6607DD79991C0A56F009A4102FA" value="true"/>
+<data id="B78D824B47B0EC632B7EDEF30B63E2D9" value="true"/>
+<data id="A0DEF98CD96C592582382A3453CB78BA" value="true"/>
+<data id="8E6885D7C10107B5CD98053B7D8B2A6E" value="true"/>
+<data id="A45D902F95DDD3B8597B21175A66A804" value="true"/>
+<data id="46302403B9C32072305518FE20DC6720" value="false"/>
+<data id="FDC13AFD3BA418958D122D78105C2F90" value="false"/>
+<data id="3297105136FCEC5D3432C0FA2FDB73BB" value="false"/>
+<data id="C62002C924CF75712313AC1CF94525AB" value="false"/>
+<data id="9A82A62C3EF3BA2FCC142413A1FAC951" value="false"/>
+```
 
+```xml
 `<disabled/>`
+```
 
 ?> All elements must be specified with a value of either True or False.  Reference the legend below for Boolean id elements to string match.
 
@@ -447,37 +553,57 @@ If this policy is enabled, the Run Once task will be disabled automatically.
 
 Values:
 
-`<enabled/>`  
-`<data id="B2DD6109EA2E207C836383CECF4A9BEC" value="true"/>`
-`<data id="ED5C30B56EF8F5365D9C42831CF04BD8" value="false"/>`
-`<data id="BF9C2D60C64BF8F3B5099FE91F9B5089" value="false"/>`
-`<data id="43C6E71EE827630A483FA7FD7ED57CCF" value="false"/>`
-`<data id="9438FDA7478EC6BFD7FAF9C71FE1152B" value="false"/>`
-`<data id="7D438E61733F014AD996B137C6250657" value="false"/>`
-`<data id="3205471F2D479A66D2E74BD31E8CACCE" value="false"/>`
-`<data id="2AA4C9F2C503F923457D404EA7EB6064" value="false"/>`
-`<data id="66676FED4BBAFA451F2300EF10644292" value="false"/>`
-`<data id="D7FFEA0FD35DA18D6BD5853D1D5D6207" value="false"/>`
-`<data id="328D5A4F3EF98FC4FCEE4776C1A2F716" value="false"/>`
-`<data id="5EB2B35C9240F82A600E5E6CC701FA89" value="false"/>`
-`<data id="DBEC478AFADA88DC29C9BBC5A4AD2A97" value="false"/>`
+```xml
+<enabled/>  
+<data id="B2DD6109EA2E207C836383CECF4A9BEC" value="true"/>
+<data id="ED5C30B56EF8F5365D9C42831CF04BD8" value="false"/>
+<data id="BF9C2D60C64BF8F3B5099FE91F9B5089" value="false"/>
+<data id="43C6E71EE827630A483FA7FD7ED57CCF" value="false"/>
+<data id="9438FDA7478EC6BFD7FAF9C71FE1152B" value="false"/>
+<data id="7D438E61733F014AD996B137C6250657" value="false"/>
+<data id="3205471F2D479A66D2E74BD31E8CACCE" value="false"/>
+<data id="2AA4C9F2C503F923457D404EA7EB6064" value="false"/>
+<data id="66676FED4BBAFA451F2300EF10644292" value="false"/>
+<data id="D7FFEA0FD35DA18D6BD5853D1D5D6207" value="false"/>
+<data id="328D5A4F3EF98FC4FCEE4776C1A2F716" value="false"/>
+<data id="5EB2B35C9240F82A600E5E6CC701FA89" value="false"/>
+<data id="DBEC478AFADA88DC29C9BBC5A4AD2A97" value="false"/>
+```
 
-`<disabled/>`
+```xml
+<disabled/>
+```
 
 #### Defer Update
 
 ?> Added in version 10.2104 v2
 
-This policy setting provides the ability for the Administrator to control deferred updates.  If you enable this policy setting, when there are some updates that needs to reboot the system, the end user can defer these updates for 1 hour.  If you disable or do not configure this policy setting, the end user can cancel these updates.
+This policy setting provides the ability for the Administrator to control how updates can be deferred.
+
+If you enable this policy, then you may configure the number of times the end-user is allowed to defer updates (DeferLimit) and the amount of time for each deferral (DeferTime). If these options are not configured, then the end-user may defer unlimited times for 60 minutes each deferral.
+
+If you disable this policy or the policy is not configured, then the end-user may only continue with the updates or cancel the updates. If cancelled, the updates will be presented again by the next scheduled scan for updates.
 
 ```oma-uri
 ./Device/Vendor/MSFT/Policy/Config/CommercialVantage~Policy~03E445D7B5956335BEDEF9340AC7E092~7D8BB8A33C8A8577FC2188C5539DFDBB~162A79B7E43E726881D582DBA5C8B0B7~E4FF6280DA9B32B3629E2DCFE74DCCDB/C015CAB39D5B210745DC6D0F43029C21
 ```
 
+| id | valueName |
+|:---|:---|
+| 311D60F57C54D2DD03394368BDFCED99 | DeferLimit |
+| 95E579A1A0BABCEDAC4AF1BC81B042F4 | DeferTime |
+
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+<data id="311D60F57C54D2DD03394368BDFCED99" value="4"/>
+<data id="95E579A1A0BABCEDAC4AF1BC81B042F4" value="30"/>
+```
+
+```xml
+<disabled/>
+```
 
 #### Auto Update
 
@@ -489,8 +615,13 @@ This policy setting provides the ability for the Administrator to control auto u
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 #### Turn off Run-Once Task
 
@@ -504,8 +635,13 @@ When this policy is enabled, the initial check for updates by Commercial Vantage
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 #### Schedule the Time for Auto Update
 
@@ -519,10 +655,14 @@ This policy setting provides the ability for the Administrator to configure the 
 
 Values:
 
-`<enabled/>`  
-`<data id="EC653B23E1449655915FA566BEA54E40" value="10:00:00"/>`
+```xml
+<enabled/>
+<data id="EC653B23E1449655915FA566BEA54E40" value="10:00:00"/>
+```
 
-`<disabled/>`
+```xml
+<disabled/>
+```
 
 #### Schedule the Day for Auto Update
 
@@ -573,27 +713,31 @@ Example for Frequency/Days of the Week:
 
 Values:
 
-`<enabled/>`
-`<data id="9B56ECD989102ABD1C7FEAF701B20490" value="true"/>`
-`<data id="001C72322736D14CFC56E1F4653019F6" value="true"/>`
-`<data id="B2CF1DA1B0B639B6B14ED2CCC1E26B80" value="true"/>`
-`<data id="B2CF1DA1B0B639B6B14ED2CCC1E26B80" value="true"/>`
-`<data id="B2CF1DA1B0B639B6B14ED2CCC1E26B80" value="true"/>`
-`<data id="B2CF1DA1B0B639B6B14ED2CCC1E26B80" value="true"/>`
-`<data id="B2CF1DA1B0B639B6B14ED2CCC1E26B80" value="true"/>`
-`<data id="B2CF1DA1B0B639B6B14ED2CCC1E26B80" value="true"/>`
-`<data id="B2CF1DA1B0B639B6B14ED2CCC1E26B80" value="true"/>`
-`<data id="B2CF1DA1B0B639B6B14ED2CCC1E26B80" value="true"/>`
-`<data id="B2CF1DA1B0B639B6B14ED2CCC1E26B80" value="true"/>`
-`<data id="B2CF1DA1B0B639B6B14ED2CCC1E26B80" value="true"/>`
-`<data id="B2CF1DA1B0B639B6B14ED2CCC1E26B80" value="true"/>`
-`<data id="B2CF1DA1B0B639B6B14ED2CCC1E26B80" value="true"/>`
+```xml
+<enabled/>
+<data id="9B56ECD989102ABD1C7FEAF701B20490" value="1"/>
+<data id="8954B312E3ABB22A17F7E50723750B80" value="false"/>
+<data id="001C72322736D14CFC56E1F4653019F6" value="true"/>
+<data id="806D1BC85455150F0DCD44BDFC9839FA" value="false"/>
+<data id="0E8030803EB7BFD27581D3A2BEFE771E" value="true"/>
+<data id="E68FFD0829E277997C8972276A02E92B" value="false"/>
+<data id="AFA05A1BB42D873987FFD971D4B1B6A2" value="false"/>
+<data id="4BBE69DF32A6A22FDA4FF162C53C7154" value="false"/>
+<data id="A48090544BD0587769808CA01B8D1670" value="false"/>
+<data id="159A93568F287E05F64F599B64034E2F" value="true"/>
+<data id="B2CF1DA1B0B639B6B14ED2CCC1E26B80" value="false"/>
+<data id="24E625869762ABC41BA468897B581394" value="false"/>
+<data id="606C484482FDC09861E8DCFD5EFFBB2A" value="false"/>
+<data id="C6F63436FC3A9ECA03116BB2624763E3" value="false"/>
+```
 
-`<disabled/>`
+```xml
+<disabled/>
+```
 
 ### Warranty
 
-#### Warranty Information
+#### Hide Warranty Information
 
 ?> Added in version 10.2104
 
@@ -605,8 +749,13 @@ This policy setting allows the Administrator to hide the warranty information in
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 ---
 
@@ -622,8 +771,13 @@ This policy setting allows the Administrator to enable Commercial Vantage to wri
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 ## EULA
 
@@ -637,8 +791,13 @@ When you use this policy to disable the EULA and Privacy window, a notification 
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 ## Hardware Scan
 
@@ -654,8 +813,13 @@ When this policy is enabled, Hardware Scan feature of Commercial Vantage will be
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 ## Metrics
 
@@ -671,8 +835,13 @@ If this group policy is disabled or not configured, the Lenovo Commercial Vantag
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 ## Preference Settings
 
@@ -692,8 +861,13 @@ Not config is default value of this policy and it works as same as disabled.
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 ### Lenovo Service Bridge Integration Settings
 
@@ -706,13 +880,18 @@ If you disable this policy setting, LSB integration will be disabled and end use
 If you do not configure this policy setting,  end user will be able to control it from the UI.
 
 ```oma-uri
-./Device/Vendor/MSFT/Policy/Config/CommercialVantage~Policy~03E445D7B5956335BEDEF9340AC7E092~F397BA36AB8172032068DED867F1008D~05D7BD01003FF7B51B42669826BEA9BF\247702B460D3861CFE59DC0AF4B7AE21
+./Device/Vendor/MSFT/Policy/Config/CommercialVantage~Policy~03E445D7B5956335BEDEF9340AC7E092~F397BA36AB8172032068DED867F1008D~05D7BD01003FF7B51B42669826BEA9BF/247702B460D3861CFE59DC0AF4B7AE21
 ```
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 ## Toast Message
 
@@ -726,8 +905,13 @@ When this policy is enabled, toast messages will not be displayed to end-users.
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
 
 ## Wifi Security
 
@@ -741,5 +925,10 @@ When this policy is enabled, the Wifi Security feature of Commercial Vantage wil
 
 Values:
 
-`<enabled/>`
-`<disabled/>`
+```xml
+<enabled/>
+```
+
+```xml
+<disabled/>
+```
