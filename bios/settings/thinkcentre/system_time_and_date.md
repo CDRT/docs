@@ -1,6 +1,6 @@
 # System Time and Date #
 
-![](./img/thinkcentre_system_time_and_date.png)
+![](./img/tc_system_time_date.png)
 
 Shows the current system time and date. 
 

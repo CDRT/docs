@@ -1,6 +1,6 @@
 # PCI Express Configuration #
 
-![](./img/thinkcentre_pci_express_configuration.png)
+![](./img/tc_pci_express_config.png)
 
 Peripheral Component Interconnect (PCI) Express configuration.
 
@@ -15,7 +15,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
-| ASPMSupport | Disabled, Auto |  |
+| ASPMSupport | Disabled, Auto | Yes |
 
 
 </details>
@@ -36,7 +36,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
-| PCIe16xSlotSpeed | Disabled, Enabled |  |
+| PCIe16xSlotSpeed | Disabled, Enabled | Yes |
 
 
 </details>
@@ -69,7 +69,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
-| PCIe4xSlotSpeed | Auto, Gen1, Gen2, Gen3 |  |
+| PCIe4xSlotSpeed | Auto, Gen1, Gen2, Gen3 | Yes |
 
 
 </details>
@@ -87,7 +87,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
-| PCIe1xSlotSpeed  | Auto, Gen1, Gen2, Gen3 |  |
+| PCIe1xSlotSpeed  | Auto, Gen1, Gen2, Gen3 | Yes |
 
 
 </details>

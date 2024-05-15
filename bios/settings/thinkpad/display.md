@@ -1,6 +1,6 @@
 # Display Settings #
 
-![](./img/display.png)
+![](./img/tp_display.png)
 
 <details><summary>Boot Display Device</summary>
 

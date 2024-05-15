@@ -1,30 +1,38 @@
 # Security #
 
-![](./img/thinkcentre_security.png)
+![](./img/tc_security.png)
+![](./img/tc_security_2.png)
+![](./img/tc_security_3.png)
 
  - [More information at Lenovo Support - types of password](https://support.lenovo.com/us/en/solutions/ht513634)
  - [More information at Lenovo Support - password manager](https://support.lenovo.com/us/en/solutions/ht103666-introduction-to-password-manager-thinkpad-thinkcentre-thinkstation)
 
-### Supervisor Password (display only) ###
+<details><summary>Supervisor Password (display only)</summary>
 
 Options:
 
 1.  **Not Installed** - password disabled. Default.
 2.  Installed -  password enabled.
 
-### Power-On Password (display only) ###
+</details>
+
+<details><summary>Power-On Password (display only)</summary>
 
 Options:
 
 1. **Not Installed** - password disabled. Default.
 2. Installed -  password enabled.
 
-### System Management Password (display only) ###
+</details>
+
+<details><summary>System Management Password (display only)</summary>
 
 Options:
 
 1. **Not Installed** - password disabled. Default.
 2. Installed -  password enabled.
+
+</details>
 
 <details><summary>Set Supervisor Password</summary>
 
@@ -70,7 +78,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
-| SecureRollBackPrevention | No, Yes |  |
+| SecureRollBackPrevention | No, Yes | Yes |
 
 
 </details>
@@ -84,7 +92,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
-| WindowsUEFIFirmwareUpdate | Disabled, Enabled |  |
+| WindowsUEFIFirmwareUpdate | Disabled, Enabled | Yes |
 
 
 </details>
@@ -101,7 +109,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
-| SmartUSBProtection | Disabled, Read Only, No Access |  |
+| SmartUSBProtection | Disabled, Read Only, No Access | Yes |
 
 
 </details>
@@ -117,7 +125,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
-| securewipe | | yes |
+| securewipe | Disabled, Enabled | yes |
 
 
 </details>

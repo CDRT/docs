@@ -1,5 +1,5 @@
 # Date\Time #
-![](./img/datetime.png)
+![](./img/tp_datetime.png)
 
 <details><summary>System Date</summary>
 

@@ -1,6 +1,6 @@
 # Password Policies Settings #
 
-![](./img/passwordpolicies.png)
+![](./img/ts_passwordpolicies.png)
 
 <details><summary>Set Minimum Length</summary>
 

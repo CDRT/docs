@@ -1,6 +1,6 @@
 # Main #
 
-![](./img/main.png)
+![](./img/ts_main_p3twr.png)
 
 These settings affect the appearance of the BIOS Setup interface on the system.
 
@@ -27,7 +27,6 @@ Options:
 </details>
 
 <details><summary>Setup Content</summary>
-
 Controls the level of settings displayed between just the basic settings versus the more advanced settings.
 
 Options:

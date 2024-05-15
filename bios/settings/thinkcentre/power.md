@@ -1,6 +1,6 @@
 # Power #
 
-![](./img/thinkcentre_power.png)
+![](./img/tc_power.png)
 
 <details><summary>After Power Loss</summary>
 
@@ -56,19 +56,4 @@ Options:
 
 </details>
 
-### Intelligent Cooling  ###
 
-<details><summary>Performance Mode</summary>
-
-Options:
-
-1. **Best Performance** - Best system performance with normal acoustic level. Default.
-2. Best Experience - Balanced noise and better performance.
-3. Full Speed - All fans at full speed.
-
-| WMI Setting name | Values | Locked by SVP |
-|:---|:---|:---|
-| IntelligentCoolingPerformanceMode | Best Performance, Best Experience, Full Speed | yes |
-
-
-</details>

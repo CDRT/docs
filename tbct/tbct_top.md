@@ -23,12 +23,14 @@ Think BIOS Config Tool from Lenovo is a free, lightweight HTML Application (HTA)
 
 **Download link**
 
-[https://download.lenovo.com/cdrt/tools/tbct135.zip](https://download.lenovo.com/cdrt/tools/tbct135.zip)
+[https://download.lenovo.com/cdrt/tools/tbct140.zip](https://download.lenovo.com/cdrt/tools/tbct140.zip)
 
 ---
 
 <details>
 <summary>Changes:</summary>
+1.40: Support complex passwords on ThinkPad
+
 1.35: Fix for handling 'show only' settings.
 
 1.34: Fix for condition to prevent popup if passwords don't match. Return Code 3 will represent passwords not matching.

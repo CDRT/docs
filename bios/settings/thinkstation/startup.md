@@ -1,6 +1,7 @@
 # Startup #
 
-![](./img/startup.png)
+![](./img/ts_startup.png)
+<!--![](./img/startup.png)-->
 
 <details><summary>First Boot Device</summary>
 
@@ -34,6 +35,18 @@ Select the first boot device from the designated group:
 1. **Disabled** – system will try to boot from all the devices in the group. Default.
 2. Other options will show the relevant list of devices in the group depending on the selected item in 'First Boot Device': 'Network', 'SATA Drive', 'M.2 Drive' or 'PCIE'.
 
+</details>
+
+<details><summary>USB Boot Support</summary>
+
+Options:
+
+1. **Enabled** – Default. The system could support boot from USB devices.
+2. Disabled - The system could not support boot from USB devices.
+
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| USBBootSupport | Enabled, Disabled | yes | Both |
 </details>
 
 <details><summary>Boot Up Num-Lock Status</summary>
@@ -110,10 +123,10 @@ Use Up and Down arrows to select a device.
 `+` and `-` move the device up or down.
 
 `x` excludes / includes the device from the boot sequence.
-<!-- 
+
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| setting_name | setting_values | yes_no | both | -->
+| PrimaryBootSequence | M.2 Drive | Yes | Both | 
 
 </details>
 
@@ -127,9 +140,9 @@ Use Up and Down arrows to select a device.
 
 `x` excludes / includes the device from the boot sequence.
 
-<!-- | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
+| WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| setting_name | setting_values | yes_no | both | -->
+| AutomaticBootSequence | M.2 Drive | Yes | Both |
 
 </details>
 
@@ -142,10 +155,10 @@ Use Up and Down arrows to select a device.
 `+` and `-` move the device up or down.
 
 `x` excludes / includes the device from the boot sequence.
-<!-- 
+
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| setting_name | setting_values | yes_no | both | -->
+| ErrorBootSequence | M.2 Drive | Yes | Both | 
 
 </details>
 

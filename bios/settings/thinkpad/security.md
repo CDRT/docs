@@ -1,2 +1,2 @@
 # Security #
-![](./img/security.png)
+![](./img/tp_security.png)

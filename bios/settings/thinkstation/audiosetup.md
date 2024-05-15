@@ -1,8 +1,8 @@
 # Audio Setup Settings #
 
 ### Intel version ###
-
-![](./img/audiosetup.png)
+![](./img/ts_audiosetup.png)
+<!--![](./img/audiosetup.png)-->
 
 <details><summary>Onboard Audio Controller</summary>
 
@@ -40,7 +40,7 @@ Options:
 
 ### AMD version ###
 
-![](./img/amd_audiosetup.png)
+![](./img/ts_amd_audiosetup.png)
 
 <details><summary>Front Audio Controller</summary>
 
@@ -55,7 +55,7 @@ Options:
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| FrontAudioController | | yes | AMD |
+| FrontAudioController | Enabled, Disabled | yes | AMD |
 
 </details>
 

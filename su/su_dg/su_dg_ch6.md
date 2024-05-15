@@ -4,7 +4,7 @@
 
 System Update can be configured directly by modifying registry values. It may also be configured through Group Policy.
 
-**Attention:** To edit registry configurations, exit System Update. If System Update is running while changes are made in the registry, the old registry entries will be recovered.
+!> To edit registry configurations, exit System Update. If System Update is running while changes are made in the registry, the old registry entries will be recovered.
 
 The following table lists the configurable and modifiable items for System Update and their registry locations, after the first launch of System Update.
 
@@ -60,13 +60,13 @@ To add the ADMX file and customize the settings, do the following:
 
     This will extract the System Update ADMX file into the ```C:\SWTOOLS\TOOLS\Admin\ ```	folder.
 
-   ?>Note: If using an ADMX file and the Group Policy Editor to set policy settings, make sure that you are using the ADMX file released specifically for each application. For example, if customizing policies for System Update, you must use the ADMX file designed for System Update.
+   ?>If using an ADMX file and the Group Policy Editor to set policy settings, make sure that you are using the ADMX file released specifically for each application. For example, if customizing policies for System Update, you must use the ADMX file designed for System Update.
 
    2. On your server, launch Active Directory.
    3. Click **servername.com** and then click **Properties**.
    4. On the **Group Policy** tab, highlight New **Group Policy Object** and click **Edit.**
 
-   ?>Note: You can also type _gpedit.msc_ in the **Open** or **Start Search** box to launch the Group Policy Editor.
+   ?>You can also type _gpedit.msc_ in the **Open** or **Start Search** box to launch the Group Policy Editor.
 
    5. Copy the ADMX file (tvsu.admx) located in the ```C:\SWTOOLS\TOOLS\Admin\ ``` folder and paste the file to ```\\\<domain\>\SYSVOL\\<domain\>\Policies\PolicyDefinitions ``` folder.
 
@@ -82,7 +82,7 @@ To add the ADMX file and customize the settings, do the following:
 ```
    7. The **ThinkVantage** tab is created under the Administrative Templates folder.
 
-   ?>Note: Under the **ThinkVantage** tab, there is a **System Update** tab. If you do not see the applicable policy, make sure that your Group Policy Editor is set to display all policy settings.
+   ?>Under the **ThinkVantage** tab, there is a **System Update** tab. If you do not see the applicable policy, make sure that your Group Policy Editor is set to display all policy settings.
 
    8. Navigate the Group Policy Editor to the following location:
 
@@ -115,7 +115,7 @@ To apply policy settings immediately after configuring the settings for the ADM 
 
 The following tables provide policy settings for System Update.
 
-**UserSettings**
+#### UserSettings
 
 This table provides the settings for the User Settings policies.
 
@@ -132,7 +132,7 @@ This table provides the settings for the User Settings policies.
 |                                   |     Ignore Local License                                                                                                                              |     This setting enables you to show or hide the license dialog when  System Update is downloading and installing an update package  located in a repository folder such as the network share repository.<br/><br/>      • If **YES**, the license dialog will not be displayed when a repository  is used to store update   packages.<br/><br/>    **Note:** If you obtain packages directly from the Lenovo Help Center  and do not use a repository for update package storage,  the IgnoreLocalLicense value will be ignored and the  license dialog will be displayed.<br/><br/>           • If **NO**, the license dialog will be displayed when a  repository is used to store update packages.                                                              |
 |                                   |     IgnoreRMLicCRCSize                                                                                                                                |     This setting enables users to enable or disable  the CRC and file size check functions when System  Update downloads update packages from the  Lenovo Help Center Web site.     You can set the value to **YES** or **NO**:<br/>      • If **YES**, System Update will ignore these  files and will not check the file CRC and file size.<br/>        • If **NO**, System Update will check the file  CRC and file size.<br/><br/>      **Note:** System Update does not check file size and  corruption of readme files and license agreement  files when you download packages from a local  repository even if you set this value to NO.                                                                                                                   |
 |                                   |     NotifyInterval                                                                                                                                    |     This setting specifies the amount of time between restart  notifications when you download and install update packages  that require a   reboot.<br/><br/>      You can specify any value between 60 seconds and 86400 seconds.  By default, you will be prompted with a restart notification  every 300 seconds when you begin to download and install an  update package that forces a reboot or defer the download and  installation process.<br/><br/>   System Update will use the default value when an invalid value  is set. For example, if you set a value greater than  86400 seconds (24   hours), System Update will use the  default value of 300 seconds.                                                                  |
-|                                   |     Metrics Enabled                                                                                                                                   |     This setting enables or disables the Metrics collection.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|                                   |     MetricsEnabled                                                                                                                                   |     This setting enables or disables the Metrics collection.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |                                   |     Administrator Command Line                                                                                                                        |     This setting enables the administrator to specify the desired  command-line when launching the tvsu.exe file with the parameter /CM.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |                                   |     OfferEnabled                                                                                                                                      |     **OBSOLETE**:  No longer used.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |     **Scheduler**                     |     Scheduler Lock                                                                                                                                    |     This setting enables you to show, hide, disable, or lock  the **Schedule updates** option in the System Update user interface.<br/><br/>     • If **SHOW**, the **Schedule updates** option is available  in the left navigation pane.<br/>      • If **HIDE**, the Schedule updates option is not  visible to the end user.<br/><br/>    **Note**: System Update for Windows 7 and later  operating systems provides a weekly scheduler setting.  However, you also can use the Task Scheduler tool  on Windows 7 and later operating systems to create a  customized scheduler for System Update to provide more  scheduler options to   achieve the best scheduling  practice. When using Task Scheduler, it is  recommended to change this setting to **HIDE**.    |
@@ -142,7 +142,7 @@ This table provides the settings for the User Settings policies.
 
 <div style="text-align:center;padding-bottom:40px;font-style: italic;">Table 7-2. Computer Configuration \> Administrative Templates \> ThinkVantage \> System Update \> User Settings.</div>
 
-**UserSettings Configurable Items**
+#### UserSettings Configurable Items
 
 This section provides descriptions for the configurable items available in the UserSettings registry key that are not exposed in the administrative template for group policy.
 

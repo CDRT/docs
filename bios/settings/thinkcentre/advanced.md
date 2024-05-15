@@ -1,6 +1,24 @@
 # Advanced #
 
-![](./img/thinkcentre_advanced.png)
+![](./img/tc_advanced.png)
+
+<details><summary>Intel(R) Total Memory Encryption</summary>
+
+Intel(R) Total Memory Encryption(TME) is a technology that encrypts
+data written to system memory to protect DRAM data from physical
+attacks.
+
+Options:
+
+1. **Disabled** - Default.
+2. Enabled.
+
+| WMI Setting name | Values | Locked by SVP |
+|:---|:---|:---|
+| IntelTotalMemoryEncryption | Disabled, Enabled | yes |
+
+
+</details>
 
 <details><summary>Intel (R) SIPP Support</summary>
 
@@ -95,7 +113,7 @@ Options:
 
 | WMI Setting name | Values | Locked by SVP |
 |:---|:---|:---|
-| BIOSSelfHealing  |  | no |
+| BIOSSelfHealing  | Enabled, Disabled | no |
 
 
 </details>

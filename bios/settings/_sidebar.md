@@ -8,7 +8,7 @@
 
 ---
 
->>[ThinkPad](bios/settings/thinkpad/config.md)
+>>[ThinkPad](bios/settings/thinkpad/main.md)
 
 ---
 

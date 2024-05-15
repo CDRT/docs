@@ -1,6 +1,11 @@
 # CPU Setup - Intel (R) #
-
-![](./img/cpusetup.png)
+![](./img/ts_cpusetup.png)
+![](./img/ts_cpusetup2.png)
+<!--![](./img/cpusetup.png)
+I think these are amd> 
+![](./img/ts_amd_cpusetup.png)
+![](./img/ts_amd_cpusetup2.png)
+-->
 
 <details><summary>Intel(R) Speed Shift Technology</summary>
 
@@ -51,6 +56,17 @@ Options:
 | CoreMultiProcessing | Enabled, Disabled | yes | Intel |
 </details>
 
+<details><summary>Efficient-Cores</summary>
+
+Options:
+
+1. **Enabled** – All CPU cores. Default. 
+2. Disabled – Only one core.
+
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| EfficientCores | Enabled, Disabled | yes | Intel |
+</details>
 
 <details><summary>Intel(R) Virtualization Technology</summary>
 
@@ -118,7 +134,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| IOMMU | Disabled, Enabled | yes | Both |
+| IOMMU | Disabled, Enabled | yes | Intel |
 </details>
 
 
@@ -153,7 +169,7 @@ Options:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| CStateSupport | C1, C1C3, C1C3C6, C1C3C6C7, C1C3C6C7C8, C1C3C6C7C8C10 | yes | Both |
+| CStateSupport | C1, C1C3, C1C3C6, C1C3C6C7, C1C3C6C7C8, C1C3C6C7C8C10 | yes | Intel |
 </details>
 
 <details><summary>Turbo Mode</summary>

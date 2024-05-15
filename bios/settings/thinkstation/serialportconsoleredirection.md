@@ -1,10 +1,21 @@
 # Serial Port Console Redirection #
 
-![](./img/amd_serialportconsoleredirection.png)
+![](./img/ts_serialport.png)
+<!--![](./img/amd_serialportconsoleredirection.png)-->
+
+<details><summary>Console Redirection</summary>
+Options:
+
+1.  **Disabled** - Default.
+2.  Enabled.
+</details>
 
 ### Console Redirection Settings ###
 
-![](./img/amd_consoleredirectionsettings.png)
+![](./img/ts_consolerd1.png)
+![](./img/ts_consolerd2.png)
+
+<!--![](./img/amd_consoleredirectionsettings.png)-->
 
 <details><summary>Terminal Type</summary>
 
@@ -88,3 +99,78 @@ Options:
 
 </details>
 
+<details><summary>Flow Control</summary>
+Flow control can prevent data loss from buffer overflow. When
+sending data, if the receiving buffers are full, a 'stop' signal can
+be sent to stop the data flow. Once the buffers are empty, a 'start'
+signal can be sent to re-start the flow. Hardware flow control uses
+two wires to send start/stop signals.
+
+Options:
+
+1.  **None** - Default.
+2.  Hardware RTS/CTS
+</details>
+
+<details><summary>VT-UTF8 Combo Key Support</summary>
+Enables VT-UTF8 Combination Key Support for ANSI/VT100 terminals.
+
+Options:
+
+1.  **Enabled** - Default.
+2.  Disabled
+</details>
+
+<details><summary>Recorder Mode</summary>
+With this mode enabled only text will be sent. This is to capture
+Terminal data.
+
+Options:
+
+1.  **Disabled** - Default.
+2.  Enabled
+</details>
+
+<details><summary>Resolution 100x31</summary>
+Enables or disables extended terminal resolution.
+
+Options:
+
+1.  **Disabled** - Default.
+2.  Enabled
+</details>
+
+<details><summary>Legacy OS Redirection Resolution</summary>
+On Legacy OS, the Number of Rows and Columns supported
+redirection.
+
+Options:
+
+1.  **80x24** - Default.
+2.  80x26
+</details>
+
+<details><summary>Putty KeyPad</summary>
+Select FunctionKey and KeyPad on Putty.
+
+Options:
+
+1.  **VT100** - Default.
+2.  Linux
+3.  XTERMR5
+4.  SCO
+5.  ESCN
+6.  VT401
+</details>
+
+<details><summary>Redirection After BIOS POST</summary>
+The Settings specify if BootLoader is selected then Legacy
+console redirection is disabled before booting to Legacy OS.
+Default value is Always Enable which means Legacy console
+Redirection is enabled for Legacy OS.
+
+Options:
+
+1.  **Always Enable** - Default.
+2.  BootLoader
+</details>

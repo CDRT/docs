@@ -1,6 +1,6 @@
 # Memory Protection Settings #
 
-![](./img/memoryprotection.png)
+![](./img/tp_memoryprotection.png)
 
 <details><summary>Execution Prevention</summary>
 

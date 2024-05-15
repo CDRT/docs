@@ -1,10 +1,13 @@
 # USB Setup Settings #
-
-![](./img/usbsetup.png)
+![](./img/ts_usbsetup.png)
+<!--![](./img/usbsetup.png)-->
 
 <details><summary>AMD version of USB Setup</summary>
 
-![](./img/amd_usbsetup.png)
+<!--![](./img/amd_usbsetup.png)-->
+![](./img/ts_amd_usbsetup1.png)
+![](./img/ts_amd_usbsetup2.png)
+<!--![](./img/ts_amd_usbsetup3.png)-->
 
 </details>
 
@@ -155,22 +158,6 @@ Options:
 
 </details>
 
-<details><summary>USB Port {Number}</summary>
-
-{Number} is the order number of the front USB port.
-
-For each Front USB Port:
-
-1. **Enabled**. Default, if `Enabled` is selected in `Front USB Ports`.
-2. Disabled.
-
-| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
-|:---|:---|:---|:---|
-| USBPort1 | Disabled, Enabled | yes | Intel |
-
-?> The WMI setting name is for USB port 1. For other USB ports change the number to that of the desired front USB port.
-
-</details>
 
 <details><summary>Media Card Reader</summary>
 
@@ -246,9 +233,9 @@ Options:
 | RearUSBPorts | Disabled, Enabled | yes | Both |
 </details>
 
-<details><summary>USB Port {Number}</summary>
+<details><summary>USB Port {X}</summary>
 
-{Number} is the number of the rear USB port (total number of ports dependent on model).
+{X} is the number of the rear USB port (total number of ports dependent on model).
 
 For each Rear USB Port:
 
@@ -257,8 +244,8 @@ For each Rear USB Port:
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| USBPort7 | Disabled, Enabled | yes | Both |
+| USBPortX | Disabled, Enabled | yes | Both |
 
-?> The WMI setting name in the example above is for USB port 7. For other USB ports change the number to that of the desired rear USB port.
+?> The WMI setting name in the example above represents the port number. Change the number to that of the desired rear USB port.
 
 </details>

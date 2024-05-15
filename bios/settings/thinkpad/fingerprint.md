@@ -1,6 +1,6 @@
 # Fingerprint Settings #
 
-![](./img/fingerprint.png)
+![](./img/tp_fingerprint.png)
 
 <details><summary>Predesktop Authentication</summary>
 
@@ -66,7 +66,7 @@ Options:
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| FingerprintSingleTouchAuthentication |  | yes | both |
+| FingerprintSingleTouchAuthentication | On, Off | yes | both |
 
 
 </details>

@@ -1,5 +1,6 @@
 # System Time and Date #
-![](./img/systemtimedate.png)
+![](./img/ts_systemtimedate.png)
+<!--![](./img/systemtimedate.png)-->
 
 <details><summary>System Time</summary>
 

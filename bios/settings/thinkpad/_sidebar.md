@@ -14,6 +14,8 @@
 
 ---
 
+- [Main](bios/settings/thinkpad/main.md)
+
 - [Config](bios/settings/thinkpad/config.md)
    - [Network](bios/settings/thinkpad/network.md)
    - [USB](bios/settings/thinkpad/usb.md)
@@ -43,6 +45,8 @@
    - [ThinkShield Secure Wipe](bios/settings/thinkpad/thinkshieldsecurewipe.md)
    - [ThinkShield Passwordless Power-On](bios/settings/thinkpad/thinkshieldpasswordless.md)
    - [Intelligent Security](bios/settings/thinkpad/intelligentsecurity.md)
+   - [Reset System to Factory Defaults](bios/settings/thinkpad/resetsystemtofactorydefaults.md)
+   - [Certificate-based BIOS Authentication](bios/settings/thinkpad/certbasedbiosauth.md)
 
 - [Startup](bios/settings/thinkpad/startup.md)
 

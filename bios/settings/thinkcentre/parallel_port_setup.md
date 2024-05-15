@@ -2,7 +2,7 @@
 
 <!-- MODEL: S only -->
 
-![](./img/thinkcentre_parallel_port_setup.png)
+![](./img/tc_parallel_port_setup.png)
 <details><summary>Parallel Port Address</summary>
 
 Options:
@@ -20,6 +20,8 @@ Options:
 The parallel port mode has only one value: EPP (Enhanced Parallel Port).
 
 1. **EPP** - Default.
+1. ECP+EPP.
+1. EPP.
 
 <!-- NO WMI -->
 
@@ -34,6 +36,23 @@ Options:
 2.  1.7 - enables version 1.7.
 
 ?> Version 1.7 is supported as an optional setting for backward compatibility with older devices. There are differences between versions 1.9 and 1.7 which may affect the operation of devices.
+
+<!-- NO WMI -->
+
+</details>
+
+<details><summary>ECP Mode DMA Channel</summary>
+DMA (Direct Memory Access), a technique for transferring
+data from main memory to the parallel port devices
+without passing it through the CPU. Computers that have
+DMA channels can transfer data to and from devices
+while the CPU works on other tasks.
+Select DMA3 or DMA1 channel.
+
+Options:
+
+1.  **DMA3** - Default.
+2.  DMA1.
 
 <!-- NO WMI -->
 

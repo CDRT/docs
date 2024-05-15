@@ -1,6 +1,13 @@
 # Security #
-![](./img/security.png)
 
+![](./img/ts_security_1.png)
+
+<!--![](./img/ts_security1.png)
+![](./img/ts_security2.png)
+![](./img/ts_security3.png)
+![](./img/ts_security4.png)
+![](./img/security.png)
+-->
 <details><summary>Supervisor Password</summary>
 
 The supervisor password (SVP) protects the system information stored in UEFI BIOS.
@@ -104,8 +111,8 @@ Parameters:
 
 Options:
 
-1. **Enabled** – allow windows UEFI firmware update. Default.
-2. Disabled – BIOS will skip windows UEFI firmware update.
+1. **Enabled** – allow Windows UEFI firmware update. Default.
+2. Disabled – BIOS will skip Windows UEFI firmware update.
 
 | WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
@@ -114,7 +121,7 @@ Options:
 
 <details><summary>Smart USB Protection</summary>
 
-Smart USB Protection blocks copying data from the computer to the USB storage device in windows.<br>
+Smart USB Protection blocks copying data from the computer to the USB storage device in Windows.<br>
 
 Options:
 
@@ -127,7 +134,7 @@ Options:
 | SmartUSBProtection | Disabled, Read Only, No Access | yes | Both |
 </details>
 
-<details><summary>Secure wipe</summary>
+<details><summary>secure wipe</summary>
 
 Whether to display the `secure wipe` option on the F12 BIOS Startup Menu. Users can select this option to securely erase HDD data.
 
@@ -147,7 +154,7 @@ Settings for Absolute Persistence Module.
 
 ?> Absolute(c) is a service designed to help track devices and provide recovery services in the event a device is lost or stolen. Once installed, the Absolute agent communicates with the Absolute Monitoring Center and programmed intervals to provide the tracking service. By installing the agent and activating the service, you consent to the transmission of information between your device and the Absolute Monitoring Center. For customers who have purchased the Absolute service, the firmware Persistence Module checks for the presence and health of Absolute on boot, and restores the functionality in case of agent removal or tampering. Absolute and Persistence are registered trademarks of Absolute Software Corporation.
 
-![](./img/computrace.png)
+![](./img/ts_computrace.png)
 
 <details><summary>Absolute Persistence Version</summary>
 
@@ -205,6 +212,17 @@ Options:
 | ElectronicLock | Lock, Unlock | yes | Intel |
 </details>
 
+<details><summary>ThinkShield Passwordless Power-On Authentication</summary>
+
+Enable or Disable the ThinkShield Passwordless Power-On
+Authentication and Device Manager.
+
+Options:
+
+1. **Enabled** – Default.
+2. Disabled.
+</details>
+
 <details><summary>Cover Tamper Detected</summary>
 
 Whether to enable Chassis Intrusion Detection, a utility that can tell whether someone has opened the case (intruded into the chassis).
@@ -237,11 +255,18 @@ Options:
 | ConfigurationChangeDetection | Disabled, Enabled | yes | Both |
 </details>
 
-### AMD-only features ###
+<details><summary>Reset system to Factory Default</summary>
 
-?> Only the AMD-only features are shown in the screenshot below; otherwise they are shown in the screenshot above.
+This option is used clear all data stored in UEFI system. Not
+affected to storage data. After selecting this item, the system
+will be automatically reboot, then reset system to factory default
+settings.
 
-![](./img/amd_security.png)
+</details>
+
+
+<!--![](./img/ts_amd_security.png)
+![](./img/ts_amd_security2.png)-->
 
 <details><summary>Set Password Encryption Algorithm</summary>
 
@@ -281,12 +306,15 @@ Options:
 1. Unlimited
 
 <!-- NO WMI -->
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| MaxPasswordAttempts | 1, 3, 100, Unlimited | Yes | Both |
 
 </details>
 
 <details><summary>Password Change Time</summary>
 
-When to change the supervisor password if it is requested by software on the operating system.
+When to change the supervisor password if it is requested by software on the operating system. This option is used to control the timing to change the supervisor password if it is requested by software on the operating system.
 
 Options:
 
@@ -294,6 +322,9 @@ Options:
 1. Immediately
 
 <!-- NO WMI -->
+| WMI Setting name | Values | SVP / SMP Req'd | AMD/Intel |
+|:---|:---|:---|:---|
+| PasswordChangeTime | After Reboot, Immediately | Yes | Both |
 
 </details>
 
@@ -316,7 +347,7 @@ Options:
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SetMinimumLength | Disable, 4 Characters, 5 Characters, 6 Characters, 7 Characters, 8 Characters, 9 Characters, 10 Characters, 11 Characters, 12 Characters | yes | both |
+| SetMinimumLength | Disable, 4 Characters, 5 Characters, 6 Characters, 7 Characters, 8 Characters, 9 Characters, 10 Characters, 11 Characters, 12 Characters | Yes | Both |
 
 </details>
 
@@ -335,7 +366,7 @@ Options:
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SetStrongPassword | Disable, Enable | yes | both |
+| SetStrongPassword | Disable, Enable | Yes | Both |
 
 </details>
 
@@ -350,9 +381,22 @@ Options:
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| KeyboardLayout | English, French, German, Chinese | yes | both |
+| KeyboardLayout | English, French, German, Chinese | Yes | Both |
 
 </details>
+
+<!--<details><summary>Keyboard Language</summary>
+
+Select the keyboard language for password. The default
+is English keyboard.
+
+Options:
+
+1.  **English** - Default.
+2.  French.
+3.	German
+
+</details>-->
 
 <details><summary>Allow Jumper Clear SVP</summary>
 
@@ -367,7 +411,7 @@ Options:
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| AllowJumperClearSVP | No, Yes | yes | both |
+| AllowJumperClearSVP | No, Yes | Yes | Both |
 
 </details>
 
@@ -382,7 +426,7 @@ Options:
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SecureRollBackPrevention | No, Yes | yes | both |
+| SecureRollBackPrevention | No, Yes | Yes | Both |
 
 </details>
 
@@ -397,24 +441,26 @@ Options:
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| RequireSVPwhenFlashing | No, Yes | yes | both |
+| RequireSVPwhenFlashing | No, Yes | Yes | Both |
 
 </details>
 
-<details><summary>Windows UEFI Firmware Update</summary>
+<details><summary>Require POP on System Boot</summary>
 
-Whether to allow windows UEFI firmware update.
 
 Options:
 
-1.  **Enabled** - Default.
-2.  Disabled.
+1.  **Yes** - Default.  The system prompts for passwords when the system starts form the full off or hibernate state.
+2.  No - Passwords are not prompted and continue to boot the
+OS. To prevent unauthorized access to the system, recommended
+to set user authentication on the OS.
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| WindowsUEFIFirmwareUpdate | Disable, Enable | yes | both |
+| RequireSVPwhenFlashing | No, Yes | Yes | Both |
 
 </details>
+
 
 <details><summary>BIOS Password At System Boot</summary>
 
@@ -429,7 +475,7 @@ Options:
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| BIOSPasswordAtSystemBoot | No, Yes | yes | both |
+| BIOSPasswordAtSystemBoot | No, Yes | Yes | Both |
 
 </details>
 
@@ -444,7 +490,7 @@ Options:
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| BIOSPasswordAtReboot | No, Yes | yes | both |
+| BIOSPasswordAtReboot | No, Yes | Yes | Both |
 
 </details>
 
@@ -459,7 +505,7 @@ Options:
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| POPChangeablebyUser | No, Yes | yes | AMD |
+| POPChangeablebyUser | No, Yes | Yes | AMD |
 
 </details>
 
@@ -476,7 +522,7 @@ Options:
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| BIOSPasswordAtBootDeviceList | No, Yes | yes | both |
+| BIOSPasswordAtBootDeviceList | No, Yes | Yes | Both |
 
 </details>
 
@@ -493,7 +539,7 @@ Options:
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| SmartUSBProtection | Disable, Read Only, No Access | yes | both |
+| SmartUSBProtection | Disable, Read Only, No Access | Yes | Both |
 
 </details>
 
@@ -547,7 +593,7 @@ Options:
 
 | WMI Setting name | Values | SVP or SMP Req'd | AMD/Intel |
 |:---|:---|:---|:---|
-| PasswordCountExceededError | Disabled, Enabled| yes | both |
+| PasswordCountExceededError | Disabled, Enabled| Yes | Both |
 
 <!-- TODO: confirm WMI -->
 

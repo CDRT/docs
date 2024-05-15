@@ -1,4 +1,4 @@
-### Hosting a repository in an Azure file share 
+# Hosting a Repository in an Azure File Share 
 ![](../img/guides/ur/az_fs/azurefs.jpg)
 
 *Author: Philip Jorgensen*
@@ -15,7 +15,7 @@ A few things to note before exploring this route:
 * Commercial Vantage is supported
 * Thin Installer is NOT supported
 
-### Creating the Storage Account
+## Creating the Storage Account
 You'll need to create a new [storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account) first.  During the creation, make sure you set the account kind to **StorageV2** since we're going to be using this as an Azure file share. 
 
 After creation, go to the new storage account and scroll down to the **File service** section and click **File shares**.  Click **+File share**, give it a name and click **Create**.
@@ -30,7 +30,7 @@ You'll need to take note of one of the **Access keys** for the storage account, 
 
 If you need to lock down access to specific vNets and/or IP ranges, you can configure this under **Networking**.
 
-### Populating the Update Retriever repository
+## Populating the Update Retriever Repository
 Install the latest version of [Update Retriever](https://support.lenovo.com/solutions/ht037099) on a technician system.  We're going to use [cmdkey](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/cmdkey) to store the Azure storage account credentials.  Launch PowerShell and enter the following command (replacing the storage account name and access key):
 ```
 Invoke-Expression -Command "cmdkey /add:<storageaccountname>.file.core.windows.net /user:Azure\<storageaccountname> /pass:<accesskey>"
@@ -52,7 +52,7 @@ Back in the Azure portal, navigate to your file share and you should now see all
 
 ![](../img/guides/ur/az_fs/image6.jpg) ![](../img/guides/ur/az_fs/image7.jpg)
 
-### Client side configuration
+## Client Side Configuration
 We need to upload and deploy a PowerShell script to add the Azure storage account credentials on the client.  Unfortunately, SAS tokens aren't supported with SMB access so one option is to use a Storage Account Access Key.
 
 Copy the same command that was used earlier into a **.ps1** file and add it to **Device Scripts** in the MEM admin center.

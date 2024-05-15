@@ -1,6 +1,6 @@
 # Virtualization Settings #
 
-![](./img/virtualization.png)
+![](./img/tp_virtualization.png)
 
 <details><summary>Kernel DMA Protection</summary>
 
@@ -93,7 +93,7 @@ Possible options:
 1.	On
 2.	**Off** – Default.
 
-!>  This option is recommended for Windows 10 October 2018 Update and for Windows 10 version 2004 and earlier, which do not support this feature.
+!>  This option should only be enabled for Windows 10 version 2004 and later. Prior versions of the OS do not support this feature.
 
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
 |:---|:---|:---|:---|

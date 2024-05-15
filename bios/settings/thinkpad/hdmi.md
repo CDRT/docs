@@ -1,6 +1,6 @@
 # HDMI Configuration #
 
-![](./img/hdmi.png)
+![](./img/tp_hdmi.png)
 
 Available only on certain models.
 
@@ -12,6 +12,5 @@ Possible options:
 
 1. **HDMI 2.0** - Allows for higher frame rate for 4K video. Default.
 2. HDMI 1.4 - Supports 4K video with lower frame rate.
-
 
 </details>

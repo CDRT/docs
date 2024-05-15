@@ -25,3 +25,14 @@ Details about configuring Group Policies, or using registry files instead, can b
 <summary>Can an end-user set the date/time for this schedule, using the Commercial Vantage GUI?</summary>
 No.  The only thing the end-user can do is click on "Check for Updates".  If the end user tries to manually adjust the scheduled task within Task Scheduler, Commercial Vantage may overwrite those changes.
 </details>
+
+<details>
+<summary>Why can't I find a log file for the LenovoSystemUpdateAddin?</summary>
+Due to requirements from the Lenovo Product Security team, logging is not enabled by default any longer.  To enable logging, set the following registry value to "True":
+
+```Registry
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Lenovo\SystemUpdateAddin\Logs]
+"EnableLogs"="True"
+```
+
+</details>

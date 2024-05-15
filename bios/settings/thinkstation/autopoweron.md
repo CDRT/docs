@@ -125,7 +125,7 @@ Options:
 </details>
 
 ### User Defined Alarm ###
-![](./img/userdefinedalarm.png)
+![](./img/ts_userdefinedalarm.png)
 
 Settings per {Weekday}.
 

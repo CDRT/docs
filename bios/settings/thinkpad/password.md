@@ -2,7 +2,7 @@
 
 ### General ###
 
-![](./img/password.png)
+![](./img/tp_password.png)
 
 The [Types of Passwords](/bios/settings/thinkpad/password?id=types-of-passwords) section describes the different passwords' behaviors.
 
@@ -266,7 +266,7 @@ Possible options:
 
 ### System Management Password Access Control ###
 
-![](./img/smpaccesscontrol.png)
+![](./img/tp_smpaccesscontrol.png)
 
 <details><summary>System Management Password Control</summary>
 
@@ -295,6 +295,21 @@ Possible options:
 | WMI Setting name | Values | Locked by SVP | AMD/Intel |
    |:---|:---|:---|:---|
 | PowerOnPasswordControl | Disable, Enable | Yes | Both |
+
+</details>
+
+<details><summary>Storage Password Control</summary>
+
+When enabled, allows System Management Password to have a same authority as Supervisor Password to control NVMe Password.
+
+Possible options:
+
+1.	**Off** - Default.
+2.	On
+
+| WMI Setting name | Values | Locked by SVP | AMD/Intel |
+   |:---|:---|:---|:---|
+| StorageDiskPasswordControl | Disable, Enable | Yes | Both |
 
 </details>
 

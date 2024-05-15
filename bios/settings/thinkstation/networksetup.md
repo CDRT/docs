@@ -1,8 +1,8 @@
 # Network Setup Settings #
 
 ### General ###
-
-![](./img/networksetup.png)
+![](./img/ts_networksetup.png)
+<!--![](./img/networksetup.png)-->
 
 <details><summary>Onboard Ethernet Controller</summary>
 
@@ -217,7 +217,7 @@ Press `Enter` to configure Server CA (Certificate Authority) for HTTPs Boot.
 
 ### Wi-Fi Configuration ###
 
-![](./img/wificonfig.png)
+![](./img/ts_wificonfig.png)
 
 <details><summary>Automatic Connection Support</summary>
 

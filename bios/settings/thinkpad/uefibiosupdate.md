@@ -1,6 +1,6 @@
 # UEFI BIOS Update Option Settings #
 
-![](./img/uefibiosupdate.png)
+![](./img/tp_uefibiosupdate.png)
 
 <details><summary>Flash BIOS Updating by End-Users</summary>
 
