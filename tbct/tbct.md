@@ -213,9 +213,11 @@ M910x has a slightly different ‘Load Defaults’ functionality. Once it is com
 
 Executing ThinkBiosConfig.hta under Powershell requires special attention when command line parameters are used. To pass the desired switches, Powershell needs them inside single quotes.
 
-Example: 
+Example:
 ```
 ThinkBiosConfig.hta '"help"'  
 
 ThinkBiosConfig.hta '"file=C:\W550sConfig.ini"' '"pass=myEncryptionKey"'
 ```
+
+When using the Config switch, pay close attention to the exact values that can be used for each setting. For example, settings on a ThinkPad may use "Enable" whereas on a ThinkCentre the value is "Enabled". If the correct string is not used then you may see "Invalid parameter" errors.
