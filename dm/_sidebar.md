@@ -5,9 +5,10 @@
 [**Dock Manager**](/dm/dm_top.md)
 
 - [Deployment](dm/dm.md)
-- [Management](dm/dm_policies.md)
+- [Managing With Intune](dm/management/intune/overview.md)
 - [Troubleshooting](dm/dm_troubleshooting.md)
-- [FAQ ](dm/dock_manager_faq.md)
+
+- [FAQ](dm/dock_manager_faq.md)
 
 ---
 
