@@ -345,7 +345,7 @@ Public Class Form1
     End Sub
 
     Private Sub _rbWin7_CheckedChanged(sender As Object, e As EventArgs) Handles _rbWin7.CheckedChanged
-        If Me._rbWin7.Checked Or Me._rbWin81.Checked Or Me._rbWin10.checked Then
+        If Me._rbWin7.Checked Or Me._rbWin81.Checked Or Me._rbWin10.Checked Then
             Me.btnSearchCatalog.Enabled = True
         Else
             Me.btnSearchCatalog.Enabled = False
@@ -565,7 +565,7 @@ Public Class Form1
 
             'Loop through the nodes
             For Each m_node In m_nodelist
-                
+
                 'Get the location Element Value
                 Dim locationValue = m_node.ChildNodes.Item(0).InnerText
 
@@ -1343,6 +1343,10 @@ Public Class Form1
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
+    End Sub
+
+    Private Sub gbColumns_Enter(sender As Object, e As EventArgs) Handles gbColumns.Enter
 
     End Sub
 End Class

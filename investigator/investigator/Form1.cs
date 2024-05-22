@@ -24,6 +24,7 @@ namespace investigator
 
         dynamic modelObj = "";
         XmlDocument doc;
+        string osVersion;
 
         public Form1()
         {
@@ -32,10 +33,13 @@ namespace investigator
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            comboSeries.Text = "Select Series";
-            comboModel.Text = "Select Model";
-            comboOS.Items.Add("Win10");
-            comboOS.Items.Add("Win11");
+           // comboSeries.Text = "Select Series";
+            //comboModel.Text = "Select Model";
+            //comboOS.Items.Add("Win10");
+            //comboOS.Items.Add("Win11");
+
+            radioWin11.Checked = true;
+           
 
             Dictionary<string, string> cbb = new Dictionary<string, string>();
             cbb.Add("SF", "Select Family");
@@ -98,22 +102,22 @@ namespace investigator
 
         private void comboModel_SelectedIndexChanged(object sender, EventArgs e)
         {
-            clearOsTab();
+            clearTabInfo();
             string comboBrandValue = ((KeyValuePair<string, string>)comboBrand.SelectedItem).Value;
             string comboModelSelected = comboModel.SelectedItem.ToString();
             string prettyName = comboBrandValue + " " + comboModelSelected;
 
-            getBIOSInfo(prettyName);
+            getDeviceInfo(prettyName);
         }
 
         //Reading from Catalogv2 XML file to populate BIOS Info
-        public void getBIOSInfo(string prettyName)
+        public void getDeviceInfo(string prettyName)
         {
-            rtbModel.Text += prettyName + ",   "; 
+            rtbModel.Text += prettyName + ",   ";
             foreach (XmlNode node in doc.DocumentElement)
             {
 
-                string attr = node.Attributes["name"]?.InnerText; 
+                string attr = node.Attributes["name"]?.InnerText;
                 if (attr == prettyName)
                 {
 
@@ -124,10 +128,12 @@ namespace investigator
                         if (chldNode.Name == "Types")
                         {
 
+                            // CheckBox box;
                             foreach (XmlNode chld in chldNode.ChildNodes)
                             {
-                                rtbMT.Text += chld.InnerText + " ";
-                                //comboMT.Items.Add(chld.InnerText); //maybe add back in?
+
+                                //rtbMT.Text += chld.InnerText + " ";
+                                checkedListBoxMT.Items.Add(chld.InnerText);
                             }
 
                         }
@@ -145,7 +151,11 @@ namespace investigator
                         }
                         if (chldNode.Name == "SCCM")
                         {
-                            sccmListBox.Items.Add(chldNode.InnerText);
+                            string sccmOs = chldNode.Attributes["os"]?.Value;
+                            string sccmVersion = chldNode.Attributes["version"]?.Value;
+
+                            //sccmListBox.Items.Add(chldNode.InnerText);
+                            DataGridViewSCCM.Rows.Add(sccmOs, sccmVersion, chldNode.InnerText);
                         }
                         if (chldNode.Name == "HSA")
                         {
@@ -160,12 +170,19 @@ namespace investigator
 
         }
 
-        public void clearOsTab()
+        public void clearTabInfo()
         {
             //labels automatically overwrite 
             rtbModel.Clear();
-            rtbMT.Clear();
-            sccmListBox.Items.Clear();
+            //rtbMT.Clear();
+            checkedListBoxMT.Items.Clear();
+            bcLabel.Text = "";
+            buvLabel.Text = "";
+            bexeLabel.Text = "";
+            bReadmeLink.Text = "";
+            //sccmListBox.Items.Clear();
+            DataGridView1.Rows.Clear();
+            DataGridViewSCCM.Rows.Clear();
             hsaListBox.Items.Clear();
 
 
@@ -176,20 +193,36 @@ namespace investigator
             comboBrand.SelectedIndex = 0;
             comboSeries.Items.Clear();
             comboModel.Items.Clear();
-            comboOS.SelectedIndex = -1;
+            comboPackageID.SelectedIndex = -1;
+            // comboMT.SelectedIndex = -1; //might beed to put this in other spots
+            //comboOS.SelectedIndex = -1;
+            radioWin11.Checked = true;
         }
 
-
+        public void mtChanged()
+        {
+            
+        }
 
         private void comboMT_SelectedIndexChanged(object sender, EventArgs e)
         {
-            clearOsTab();
+            //mtChanged();
+            //MessageBox.Show("MT changed");
+            clearTabInfo();
             clearSearchCriteria();
             var mt = comboMT.Text.ToUpper();
             if (mt.Length == 4)
             {
                 fillMtDetails(mt);
-                DataGridView1.Rows.Clear();
+                
+
+                //add the itmes to combobox here?
+                comboMT.Items.Add(mt);
+                if (osVersion != null)
+                {
+                    //MessageBox.Show(osVersion);
+                    ProcessCatalog();
+                }
             }
 
         }
@@ -207,8 +240,10 @@ namespace investigator
                             if (chld.InnerText == mt)
                             {
                                 var prettyName = chldNode.ParentNode.Attributes["name"].Value;
-                                comboMT.Items.Add(chld.InnerText); //Might need to add this back?
-                                getBIOSInfo(prettyName);
+                               
+                                
+                                //comboMT.Items.Add(chld.InnerText); //Might need to add this back?
+                                getDeviceInfo(prettyName);
                             }
                         }
                     }
@@ -218,7 +253,7 @@ namespace investigator
 
         private void comboBiosCode_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            clearOsTab();
+            clearTabInfo();
             clearSearchCriteria();
 
             var bc = comboBiosCode.Text;
@@ -226,6 +261,11 @@ namespace investigator
             {
                 comboBiosCode.Items.Add(bc);
                 fillBiosDetails(bc);
+                if (osVersion != null)
+                {
+                    //MessageBox.Show(osVersion);
+                    ProcessCatalog();
+                }
             }
         }
 
@@ -241,7 +281,7 @@ namespace investigator
                         if (biosCode == bc)
                         {
                             var prettyName = chldNode.ParentNode.Attributes["name"].Value;
-                            getBIOSInfo(prettyName);
+                            getDeviceInfo(prettyName);
                         }
 
                     }
@@ -292,7 +332,48 @@ namespace investigator
 
 
 
-        private void comboOS_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboTitle_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            clearTabInfo();
+            clearSearchCriteria();
+            //if match found, then store in combobox
+
+           if(radioWin10.Checked || radioWin11.Checked) { 
+                if (radioWin10.Checked || radioWin11.Checked && comboTitle.Text != null && comboMT.Text != null)
+                {
+                    //string OS_suffix = comboOS.SelectedItem.ToString();
+                    string OS_suffix = osVersion;
+                    string mt = comboMT.Text;
+
+                    string file_to_download = mt + "_" + OS_suffix + ".xml";
+
+
+                    //var pkgNameList = new List<string>();
+                    List<_package> pkgsList = getPackages(local_base_path + file_to_download);
+                    // var pkgNameListDL = new List<string>();
+                    if (pkgsList != null)
+                    {
+                        // Loop through and add pkg to DataGridView1
+                        foreach (_package pkg in pkgsList)
+                        {
+
+                            if (comboTitle.Text.Contains(pkg.CTitle))
+                            {
+                                this.DataGridView1.Rows.Add(pkg.CPkgID, pkg.CPackageName, pkg.CTitle, pkg.CVersion, pkg.CReleased, pkg.CPackageType, pkg.CCategory, pkg.CReboot, pkg.CSeverity, pkg.CBrand, pkg.Csetup, pkg.Clangs, pkg.Cxml2valid, pkg.CURLxml2, pkg.Cxml2crc, pkg.Cxml2crcactual);
+                               // MessageBox.Show("Title match");
+                            }
+
+                        }
+
+                    }
+                }
+                else { MessageBox.Show("Select a machine type and OS"); }
+
+            }
+        }
+
+
+       /* private void comboOS_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboOS.SelectedIndex != -1)
             {
@@ -313,14 +394,16 @@ namespace investigator
 
 
             }
-        }
+        }*/
 
         private void ProcessCatalog()
         {
+            //MessageBox.Show("reading into process catalog");
             try
             {
-                string OS_suffix = comboOS.SelectedItem.ToString();
-                string mt = comboMT.Text;
+                // string OS_suffix = comboOS.SelectedItem.ToString();
+                String OS_suffix = osVersion;
+                string mt = comboMT.Text.ToUpper();
 
                 string file_to_download = mt + "_" + OS_suffix + ".xml";
                 string desc_to_download = mt + "_" + OS_suffix + "_DESC.xml";
@@ -328,8 +411,10 @@ namespace investigator
                 _Downloader = new WebFileDownloader();
                 if (_Downloader.DownloadFileWithProgress(catalog_base_pathX + desc_to_download + "?t=" + DateTime.Now.Ticks.ToString(), local_base_path + desc_to_download))
                 {
-                    //this.setStatus("Downloading catalog: " + catalog_base_path + file_to_download);
-                    //this.setStatus("To: " + local_base_path + file_to_download);
+                    //toolTip1.SetToolTip(statusBox, "Downloading catalog: " + catalog_base_pathX + file_to_download);
+                    //toolTip1.SetToolTip(statusBox, "To: " + local_base_path + file_to_download);
+                    toolStripStatusLabel1.Text = "Downloading catalog: " + catalog_base_pathX + file_to_download;
+                    toolStripStatusLabel2.Text = "To: " + local_base_path + file_to_download;
 
                     if (_Downloader.DownloadFileWithProgress(catalog_base_pathX + file_to_download + "?t=" + DateTime.Now.Ticks.ToString(), local_base_path + file_to_download))
                     {
@@ -342,13 +427,14 @@ namespace investigator
 
                         if ((expectedCRC ?? "") == (actualCRC ?? ""))
                         {
-                            MessageBox.Show("CRCs Match!!");
+                            //MessageBox.Show("CRCs Match!!");
                             //this.setStatus("CRCs Match!!");
+                            statusLabel1.Text = "CRCs Match!!";
                         }
                         else
                         {
                             MessageBox.Show("** CRCs DO NOT MATCH!! **");
-                            //this.setStatus("** CRCs DO NOT MATCH!! **");
+                            toolStripStatusLabel1.Text = "** CRCs DO NOT MATCH!! **";
                         }
                         var pkgNameList = new List<string>();
                         List<_package> pkgsList = getPackages(local_base_path + file_to_download);
@@ -381,7 +467,7 @@ namespace investigator
                                     {
                                         if (z == y.CPackageName)
                                         {
-                                            downlevelPackages.Add(y.CPkgID + "\t" + y.CPackageName + "\t" + y.CReleased + "\t" + "http://download.lenovo.com/catalog/" + comboModel.SelectedItem + "_" + comboOS.SelectedItem + ".xml" + "\t" + y.CURLxml2);
+                                            downlevelPackages.Add(y.CPkgID + "\t" + y.CPackageName + "\t" + y.CReleased + "\t" + "http://download.lenovo.com/catalog/" + comboModel.SelectedItem + "_" + osVersion + ".xml" + "\t" + y.CURLxml2);
                                         }
                                     }
                                 }
@@ -393,27 +479,32 @@ namespace investigator
                         this.SetBGColor();
                         //this.setStatus("Got all packages.");
                         //this.TabControl1.SelectedTab = tp_packages;
+                        toolStripStatusLabel1.Text = "Got all packages";
                     }
 
                     else
                     {
                         //this.setStatus("Could not download catalog.");
+                        toolStripStatusLabel1.Text = "Could not download catalog.";
 
                         string expectedCRC = getCatalogCRC(local_base_path + desc_to_download).ToLower();
                         //this.setStatus("Expected CRC: " + expectedCRC);
+                        toolStripStatusLabel2.Text = "Expected CRC: " + expectedCRC;
 
                         string actualCRC = getSHA256hash(local_base_path + file_to_download).ToLower();
                         //this.setStatus("Actual CRC: " + actualCRC);
+                        toolStripStatusLabel3.Text = "Actual CRC: " + actualCRC;
 
                         if ((expectedCRC ?? "") == (actualCRC ?? ""))
                         {
                             //this.setStatus("CRCs Match!!");
-                            MessageBox.Show("CRCs Match!");
+                            // MessageBox.Show("CRCs Match!");
                         }
                         else
                         {
                             //this.setStatus("** CRCs DO NOT MATCH!! **");
                             MessageBox.Show("** CRCs DO NOT MATCH!! **");
+                            toolStripStatusLabel1.Text = "** CRCs DO NOT MATCH!! **";
                         }
 
                         List<_package> pkgsList = getPackages(local_base_path + file_to_download);
@@ -426,6 +517,7 @@ namespace investigator
                         this.DataGridView1.AutoResizeColumns();
                         //this.setStatus("Got all packages.");
                         //this.TabControl1.SelectedTab = tp_packages;
+                        toolStripStatusLabel1.Text = "Got all packages.";
                     }
                 }
                 else
@@ -529,6 +621,8 @@ namespace investigator
 
                 //this.setStatus("Total packages (" + catalog.Substring(catalog.LastIndexOf(@"\") + 1) + "): " + m_nodelist.Count.ToString);
                 //this.setStatus("Getting details for packages, please wait...");
+                toolStripStatusLabel1.Text = "Total packages (" + catalog.Substring(catalog.LastIndexOf(@"\") + 1) + "): " + m_nodelist.Count.ToString();
+                toolStripStatusLabel2.Text = "Getting details for packages, please wait...";
 
                 // Loop through the nodes
                 foreach (XmlNode m_node in m_nodelist)
@@ -626,9 +720,10 @@ namespace investigator
                 {
                     DataGridView1.Rows[cnt].DefaultCellStyle.BackColor = Color.White;
                 }
-
-                if (DataGridView1.Rows[cnt].Cells["Valid"].Value.ToString() != "yes")
-                {
+                if(cnt == 0) { return; }
+                else{ 
+                    if(DataGridView1.Rows[cnt].Cells["Valid"].Value.ToString() != "yes") //error here because no valid value for datagrid on 20fc
+                
                     DataGridView1.Rows[cnt].DefaultCellStyle.BackColor = Color.LightGray;
                     DataGridView1.Rows[cnt].DefaultCellStyle.ForeColor = Color.Blue;
                 }
@@ -816,11 +911,26 @@ namespace investigator
 
                 // get the readme file
                 m_nodelist = m_xmld.SelectNodes("/Package/Files/Readme/File");
-                _Downloader = new WebFileDownloader();
-                if (_Downloader.DownloadFileWithProgress(thisPkg.CURLxml2.Substring(0, thisPkg.CURLxml2.LastIndexOf("/") + 1) + m_nodelist.Item(0).ChildNodes.Item(0).InnerText + "?t=" + DateTime.Now.Ticks.ToString(), local_base_path + m_nodelist.Item(0).ChildNodes.Item(0).InnerText))
+                //MessageBox.Show(m_nodelist.Item(0).ChildNodes.Item(0).InnerText);
+                if (m_nodelist.Count == 0) {  return; }
+                else
                 {
-                    thisPkg.CURLtxt = thisPkg.CURLxml2.Substring(0, thisPkg.CURLxml2.LastIndexOf("/") + 1) + m_nodelist.Item(0).ChildNodes.Item(0).InnerText;
+                    //if nodelist has nothing in it
+                    // m_nodelist.count == 0 , then either continue or return to stop it 
+
+                    _Downloader = new WebFileDownloader();
+                    if (_Downloader.DownloadFileWithProgress(thisPkg.CURLxml2.Substring(0, thisPkg.CURLxml2.LastIndexOf("/") + 1) + m_nodelist.Item(0).ChildNodes.Item(0).InnerText + "?t=" + DateTime.Now.Ticks.ToString(), local_base_path + m_nodelist.Item(0).ChildNodes.Item(0).InnerText))
+                    {
+
+                        thisPkg.CURLtxt = thisPkg.CURLxml2.Substring(0, thisPkg.CURLxml2.LastIndexOf("/") + 1) + m_nodelist.Item(0).ChildNodes.Item(0).InnerText;
+                        // if (thisPkg.CURLtxt == null) { return; } //just added
+                        // MessageBox.Show(thisPkg.CURLtxt);
+
+                    }
                 }
+                //else { return; }
+
+
 
                 if (File.Exists(local_base_path + thisPkg.CPkgID + "_2_.xml"))
                 {
@@ -840,6 +950,7 @@ namespace investigator
             catch (Exception ex)
             {
                 // setStatus("getTitle: " & ex.Message.ToString)
+
             }
         }
 
@@ -881,7 +992,9 @@ namespace investigator
                     string file_options = package_base_path + "options/" + pkgid;
 
                     //setStatus("Searching for package: " + pkgid);
-                    MessageBox.Show("Searching for package: " + pkgid);
+                    statusLabel1.Text = "Searching for package: " + pkgid;
+                    //MessageBox.Show("Searching for package: " + pkgid);
+                    toolStripStatusLabel1.Text = "Searching for package: " + pkgid;
 
                     WebFileDownloader _Downloader = new WebFileDownloader();
                     if (_Downloader.DownloadFileWithProgress(file_mobiles + "?t=" + DateTime.Now.Ticks.ToString(), local_base_path + pkgid))
@@ -906,17 +1019,21 @@ namespace investigator
                 if (!string.IsNullOrEmpty(found) && search)
                 {
                     //setStatus("Found package: " + found);
-                    MessageBox.Show("Found package: " + found);
+                    //MessageBox.Show("Found package: " + found);
+                    toolStripStatusLabel1.Text = "Found package: " + found;
+
                     Process.Start(found);
                     string exeFileName = "";
                     if (checkExe(found, ref exeFileName))
                     {
                         //setStatus("Installer CRC valid: " + exeFileName);
-                        MessageBox.Show("Installer CRC valid: " + exeFileName);
+                       // MessageBox.Show("Installer CRC valid: " + exeFileName);
+                        toolStripStatusLabel1.Text = "Installer CRC valid: " + exeFileName;
                     }
                     else
                     {
                         //setStatus("** INSTALLER (" + exeFileName + ") CRC INVALID!!! **");
+                        toolStripStatusLabel1.Text = "** INSTALLER (" + exeFileName + ") CRC INVALID!!! **";
                     }
                 }
                 else if (!string.IsNullOrEmpty(found) && !search)
@@ -1206,5 +1323,212 @@ namespace investigator
         {
 
         }
+
+        private void comboPackageID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            clearTabInfo();
+            clearSearchCriteria();
+
+            var pID = comboPackageID.Text;
+            if (pID.Length > 6)
+            {
+                if (!pID.Contains("_2_.xml"))
+                {
+                    pID = pID + "_2_.xml";
+                }
+                ProcessPackage(pID);
+                //If packageID matched then add it to the dropdown list
+                comboPackageID.Items.Add(pID);
+            }
+
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+
+        private void checkedListBoxMT_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            for (int i = 0; i < checkedListBoxMT.Items.Count; ++i)
+            {
+                //only allows one checkbox to be checked 
+                if (i == e.Index)
+                {
+                    checkedListBoxMT.SetItemChecked(i, false);
+
+                    comboMT.Text = checkedListBoxMT.Text;
+
+                    if (!comboMT.Items.Contains(checkedListBoxMT.Text))
+                    {
+                        comboMT.Items.Add(checkedListBoxMT.Text);
+
+                    }
+                    else { continue; }
+                }
+            }
+           // foreach (var item in comboMT.Items)
+            //{
+
+                // do something with your item
+                /*if (!comboMT.Items.Contains(checkedListBoxMT.Text))
+                {
+                    //MessageBox.Show(item.ToString());
+                    //comboMT.Items.Remove(item);
+                    comboMT.Items.Add(checkedListBoxMT.Text);
+
+                }*/
+           // }
+            //comboMT.Items.Add(checkedListBoxMT.Text);
+
+            /* for (int i = 0; i < comboMT.Items.Count; i++)
+             {
+                 string value = comboMT.GetItemText(comboMT.Items[i]);
+                 MessageBox.Show(value);
+                 if (!comboMT.Items.Contains(value))
+                 {
+                     //comboMT.Items.Remove(value);
+                     comboMT.Items.Add(value);
+
+                 }
+             }*/
+
+
+        }
+
+
+
+        private void comboTitle_TextChanged(object sender, EventArgs e)
+        {
+           /* if (comboTitle.Text != null)
+            {
+                if (comboOS.SelectedItem != null && comboMT != null)
+                {
+                    string OS_suffix = comboOS.SelectedItem.ToString();
+                    string mt = comboMT.Text;
+
+                    string file_to_download = mt + "_" + OS_suffix + ".xml";
+
+
+                    //var pkgNameList = new List<string>();
+                    List<_package> pkgsList = getPackages(local_base_path + file_to_download);
+                    // var pkgNameListDL = new List<string>();
+                    if (pkgsList != null)
+                    {
+                        // Loop through and add pkg to DataGridView1
+                        foreach (_package pkg in pkgsList)
+                        {
+
+                            if (comboTitle.Text.Contains(pkg.CTitle))
+                            {
+                                this.DataGridView1.Rows.Add(pkg.CPkgID, pkg.CPackageName, pkg.CTitle, pkg.CVersion, pkg.CReleased, pkg.CPackageType, pkg.CCategory, pkg.CReboot, pkg.CSeverity, pkg.CBrand, pkg.Csetup, pkg.Clangs, pkg.Cxml2valid, pkg.CURLxml2, pkg.Cxml2crc, pkg.Cxml2crcactual);
+
+                            }
+
+                        }
+
+                    }
+                }
+                else { MessageBox.Show("Select a machine type and OS"); }
+
+            }*/
+        }
+
+
+        //string clickedLink = "";
+        public void DataGridViewSCCM_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (DataGridViewSCCM.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
+            {
+                if (shiftPressed == false)
+                {
+                    //gives the cell clicked in value
+                    var clickedLink = DataGridViewSCCM.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
+
+                    Process.Start(clickedLink); //uncomment once shift, double click for readme is working
+                                                //MessageBox.Show("double click");
+
+                }
+                else
+                {
+                    //shiftPressed = true;
+                    var clickedLink = DataGridViewSCCM.CurrentCell.Value.ToString();
+                    string clickedReadme = Path.ChangeExtension(clickedLink, ".txt");
+                    // MessageBox.Show("shift double click " + clickedReadme);
+                    Process.Start(clickedReadme);
+                }
+                
+            }     
+
+        }
+        bool shiftPressed = false;
+        private void DataGridViewSCCM_KeyDown(object sender, KeyEventArgs e)
+        {
+           
+            if (Control.ModifierKeys == Keys.Shift ) 
+                {
+                shiftPressed = true;
+                
+            }
+            
+
+        }
+        private void DataGridViewSCCM_KeyUp(object sender, KeyEventArgs e)
+        {
+            shiftPressed = false;
+            MessageBox.Show("shift = false");
+        }
+
+
+        private void os_CheckedChange(object sender, EventArgs e)
+        {
+            clearTabInfo();
+            //clearSearchCriteria();
+            //check machine type and and other comboboxes and reprocess
+
+            var osRadioButton = panelRadio.Controls.OfType<RadioButton>()
+                                         .FirstOrDefault(r => r.Checked);
+            osVersion = osRadioButton.Text;
+        }
+
+      
+        private void comboMT_TextUpdate(object sender, EventArgs e)
+        {
+            mtChanged();
+        }
+
+        private void pcSupportLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo("https://pcsupport.lenovo.com");
+            Process.Start(sInfo);
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo("https://psref.lenovo.com");
+            Process.Start(sInfo);
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo("https://download.lenovo.com/bsco/index.html");
+            Process.Start(sInfo);
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo("https://docs.lenovocdrt.com");
+            Process.Start(sInfo);
+        }
+        
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo("https://blog.lenovocdrt.com");
+            Process.Start(sInfo);
+        }
+
+
+        
     }
 }
