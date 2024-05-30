@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
             this.panelRadio = new System.Windows.Forms.Panel();
             this.radioWin10 = new System.Windows.Forms.RadioButton();
             this.radioWin11 = new System.Windows.Forms.RadioButton();
@@ -142,6 +143,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.panelRadio);
             this.panel1.Controls.Add(this.label22);
             this.panel1.Controls.Add(this.label21);
@@ -167,11 +169,20 @@
             this.panel1.Size = new System.Drawing.Size(193, 679);
             this.panel1.TabIndex = 0;
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(3, 467);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(183, 17);
+            this.label16.TabIndex = 30;
+            this.label16.Text = "-----------------------------------";
+            // 
             // panelRadio
             // 
             this.panelRadio.Controls.Add(this.radioWin10);
             this.panelRadio.Controls.Add(this.radioWin11);
-            this.panelRadio.Location = new System.Drawing.Point(37, 448);
+            this.panelRadio.Location = new System.Drawing.Point(37, 385);
             this.panelRadio.Name = "panelRadio";
             this.panelRadio.Size = new System.Drawing.Size(118, 72);
             this.panelRadio.TabIndex = 29;
@@ -203,7 +214,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(3, 537);
+            this.label22.Location = new System.Drawing.Point(3, 581);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(152, 17);
             this.label22.TabIndex = 26;
@@ -212,7 +223,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(3, 455);
+            this.label21.Location = new System.Drawing.Point(3, 392);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(28, 17);
             this.label21.TabIndex = 25;
@@ -221,7 +232,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(3, 381);
+            this.label20.Location = new System.Drawing.Point(3, 508);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(80, 17);
             this.label20.TabIndex = 24;
@@ -257,7 +268,7 @@
             // comboTitle
             // 
             this.comboTitle.FormattingEnabled = true;
-            this.comboTitle.Location = new System.Drawing.Point(17, 566);
+            this.comboTitle.Location = new System.Drawing.Point(17, 610);
             this.comboTitle.Margin = new System.Windows.Forms.Padding(2);
             this.comboTitle.Name = "comboTitle";
             this.comboTitle.Size = new System.Drawing.Size(154, 24);
@@ -269,7 +280,7 @@
             // 
             this.comboPackageID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboPackageID.FormattingEnabled = true;
-            this.comboPackageID.Location = new System.Drawing.Point(17, 411);
+            this.comboPackageID.Location = new System.Drawing.Point(17, 538);
             this.comboPackageID.Margin = new System.Windows.Forms.Padding(2);
             this.comboPackageID.Name = "comboPackageID";
             this.comboPackageID.Size = new System.Drawing.Size(154, 23);
@@ -387,7 +398,7 @@
             this.statusLabel2,
             this.toolStripStatusLabel2,
             this.toolStripStatusLabel3});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 718);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 702);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1106, 22);
             this.statusStrip1.TabIndex = 3;
@@ -484,7 +495,6 @@
             this.DataGridView1.RowTemplate.Height = 25;
             this.DataGridView1.Size = new System.Drawing.Size(865, 534);
             this.DataGridView1.TabIndex = 20;
-            this.DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             this.DataGridView1.SelectionChanged += new System.EventHandler(this.DataGridView1_SelectionChanged);
             // 
             // PkgID
@@ -906,7 +916,7 @@
             this.tabDevice.Margin = new System.Windows.Forms.Padding(2);
             this.tabDevice.Name = "tabDevice";
             this.tabDevice.Padding = new System.Windows.Forms.Padding(2);
-            this.tabDevice.Size = new System.Drawing.Size(879, 654);
+            this.tabDevice.Size = new System.Drawing.Size(879, 677);
             this.tabDevice.TabIndex = 0;
             this.tabDevice.Text = "Device Details";
             this.tabDevice.UseVisualStyleBackColor = true;
@@ -928,7 +938,7 @@
             this.DataGridViewSCCM.ReadOnly = true;
             this.DataGridViewSCCM.RowHeadersWidth = 82;
             this.DataGridViewSCCM.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridViewSCCM.Size = new System.Drawing.Size(824, 129);
+            this.DataGridViewSCCM.Size = new System.Drawing.Size(824, 152);
             this.DataGridViewSCCM.TabIndex = 32;
             this.DataGridViewSCCM.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewSCCM_CellContentDoubleClick);
             this.DataGridViewSCCM.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DataGridViewSCCM_KeyDown);
@@ -965,6 +975,7 @@
             this.checkedListBoxMT.Size = new System.Drawing.Size(276, 76);
             this.checkedListBoxMT.TabIndex = 31;
             this.checkedListBoxMT.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBoxMT_ItemCheck);
+            this.checkedListBoxMT.SelectedIndexChanged += new System.EventHandler(this.checkedListBoxMT_SelectedIndexChanged);
             // 
             // bcLabel
             // 
@@ -1162,7 +1173,7 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(6, -583);
+            this.label6.Location = new System.Drawing.Point(6, -572);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(122, 17);
@@ -1174,7 +1185,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, -682);
+            this.label5.Location = new System.Drawing.Point(6, -671);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(102, 17);
@@ -1194,7 +1205,7 @@
             this.tabs.Margin = new System.Windows.Forms.Padding(2);
             this.tabs.Name = "tabs";
             this.tabs.SelectedIndex = 0;
-            this.tabs.Size = new System.Drawing.Size(887, 683);
+            this.tabs.Size = new System.Drawing.Size(887, 706);
             this.tabs.TabIndex = 1;
             // 
             // tabBD
@@ -1294,7 +1305,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1106, 740);
+            this.ClientSize = new System.Drawing.Size(1123, 701);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel4);
@@ -1332,7 +1343,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboTitle;
         private System.Windows.Forms.ComboBox comboPackageID;
         private System.Windows.Forms.ComboBox comboBiosCode;
         private System.Windows.Forms.ComboBox comboMT;
@@ -1343,7 +1353,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label15;
@@ -1429,6 +1438,9 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.LinkLabel linkLabel4;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.ComboBox comboTitle;
     }
 }
 
