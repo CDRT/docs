@@ -71,25 +71,53 @@ namespace investigator
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
-            string name = e.Argument as string;
-            MessageBox.Show(name);
-            //only call processCatalog here and then put backgroundWorker1.ReportProgress(i); inside processCatalog
-           ProcessCatalog(name);
-            
-            //if you need to pass more than one thing put in hash table, list, array and pass that (make sure you grab back in the right order)
 
-            /*for (int i = 0; i < 100; i++)
-            {
-                //Thread.Sleep(1000);  //dont need 
-                ProcessCatalog(name);
-                backgroundWorker1.ReportProgress(i); //this goes in process catalog
-            }*/
+            string name = e.Argument as string;
+           // MessageBox.Show(name);
+            //only call processCatalog here and then put backgroundWorker1.ReportProgress(i); inside processCatalog
+          ProcessCatalog(name);
+
+
+            //if you need to pass more than one thing put in hash table, list, array and pass that (make sure you grab back in the right order)
+        
+             for (int i = 0; i < 100; i++)
+              {
+                  //Thread.Sleep(1000);  //dont need 
+                 // ProcessCatalog(name);
+                  backgroundWorker1.ReportProgress(i); //this goes in process catalog
+              }
         }
 
         private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
             
            progressBar1.Value = e.ProgressPercentage;
+        }
+        private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            String OS_suffix = osVersion;
+            string mt = comboMT.Text.ToUpper();
+            string file_to_download = mt + "_" + OS_suffix + ".xml";
+            List<_package> pkgsList = getPackages(local_base_path + file_to_download);
+            if (pkgsList != null)
+            {
+                foreach (_package pkg in pkgsList)
+                {
+                    this.DataGridView1.Rows.Add(pkg.CPkgID, pkg.CPackageName, pkg.CTitle, pkg.CVersion, pkg.CReleased, pkg.CPackageType, pkg.CCategory, pkg.CReboot, pkg.CSeverity, pkg.CBrand, pkg.Csetup, pkg.Clangs, pkg.Cxml2valid, pkg.CURLxml2, pkg.Cxml2crc, pkg.Cxml2crcactual);
+                    btnClearCatalog.Enabled = true;
+                }
+            }
+
+            setColumns();
+            this.DataGridView1.AutoResizeColumns();
+            this.DataGridView1.Sort(DataGridView1.Columns["Valid"], System.ComponentModel.ListSortDirection.Ascending);
+            progressBar1.Visible = false;
+           // this.SetBGColor(); //error here if valid == 0
+
+
+           /*if (e.Cancelled) MessageBox.Show("Operation was canceled");
+            else if (e.Error != null) MessageBox.Show(e.Error.Message);*/
+            
         }
 
 
@@ -132,6 +160,7 @@ namespace investigator
         private void comboModel_SelectedIndexChanged(object sender, EventArgs e)
         {
             clearTabInfo();
+            tabs.SelectedTab = tabDevice;
             string comboBrandValue = ((KeyValuePair<string, string>)comboBrand.SelectedItem).Value;
             string comboModelSelected = comboModel.SelectedItem.ToString();
             string prettyName = comboBrandValue + " " + comboModelSelected;
@@ -234,6 +263,15 @@ namespace investigator
                 {
                     comboMT.Items.Add(mt); 
                 }
+               /*if(tabs.SelectedTab == tabCatalog)
+                {
+                   tabs_Selecting(sender, e);
+                 // tabs.Selecting += new EventHandler(tabs_Selecting);
+                }
+                else
+                {
+                    tabs.SelectedTab = tabDevice;
+                }*/
               /*   if(osVersion != null)
                 {
                     if (backgroundWorker1.IsBusy != true)
@@ -348,9 +386,7 @@ namespace investigator
         {
             clearTabInfo();
             clearSearchCriteria();
-            //comboBiosCode.SelectedIndex = -1;
             comboBiosCode.Text = "";
-            //comboMT.SelectedIndex = -1;
             comboMT.Text = "";
             //comboTitle.SelectedIndex = -1;
             comboTitle.Text = "";
@@ -375,6 +411,9 @@ namespace investigator
 
         private void checkedListBoxMT_ItemCheck(object sender, ItemCheckEventArgs e)
         {
+            DataGridView1.Rows.Clear();
+            comboBiosCode.Text = "";
+
             for (int i = 0; i < checkedListBoxMT.Items.Count; ++i)
             {
                 //only allows one checkbox to be checked 
@@ -392,7 +431,7 @@ namespace investigator
                     else { continue; }
                 }
             }
-            DataGridView1.Rows.Clear();
+            
            /* if (osVersion != null)
             {
                 
@@ -450,18 +489,26 @@ namespace investigator
 
             if (comboModel.SelectedIndex != 0 && comboModel.SelectedIndex != -1 && comboModel.Text != "Select Model")
             {
-                comboModel_SelectedIndexChanged(sender, e);
+               
+                    comboModel_SelectedIndexChanged(sender, e);
+                
             }
 
             if (comboMT.Text != "" || comboMT.SelectedIndex != -1)
             {
-                comboMT_SelectedIndexChanged(sender, e);
-                MessageBox.Show(comboMT.Text);
+               // if (tabs.SelectedTab == tabCatalog)
+                
+                    comboMT_SelectedIndexChanged(sender, e);
+                
+                //MessageBox.Show(comboMT.Text);
             }
             if (comboBiosCode.Text != "" || comboBiosCode.SelectedIndex != -1)
             {
-                comboBiosCode_SelectedIndexChanged_1(sender, e);
-                MessageBox.Show(comboBiosCode.Text);
+                //if (tabs.SelectedTab == tabCatalog)
+               
+                    comboBiosCode_SelectedIndexChanged_1(sender, e);
+                
+               // MessageBox.Show(comboBiosCode.Text);
             }
             if (comboPackageID.Text != "" || comboPackageID.SelectedIndex != -1)
             {
@@ -488,92 +535,84 @@ namespace investigator
             try
             {
                 String OS_suffix = osVersion;
+                MessageBox.Show(OS_suffix);
 
                 string file_to_download = mt + "_" + OS_suffix + ".xml";
                 string desc_to_download = mt + "_" + OS_suffix + "_DESC.xml";
 
-                
+
+                //backgroundWorker1.ReportProgress(); //report progress of _Downloader?
                 _Downloader = new WebFileDownloader(); //could put this into workerreport/progressreported percentage
-               
-                if (_Downloader.DownloadFileWithProgress(catalog_base_pathX + desc_to_download + "?t=" + DateTime.Now.Ticks.ToString(), local_base_path + desc_to_download))
-                {
-                    //backgroundWorker1.ReportProgress();
-                   // MessageBox.Show("Line499");
-                    toolStripStatusLabel1.Text = "Downloading catalog: " + catalog_base_pathX + file_to_download;
-                    toolStripStatusLabel2.Text = "To: " + local_base_path + file_to_download;
 
-                    if (_Downloader.DownloadFileWithProgress(catalog_base_pathX + file_to_download + "?t=" + DateTime.Now.Ticks.ToString(), local_base_path + file_to_download))
-                    {
-                        string expectedCRC = getCatalogCRC(local_base_path + desc_to_download).ToLower();
-                        //this.setStatus("Expected CRC: " + expectedCRC);
+                      if (_Downloader.DownloadFileWithProgress(catalog_base_pathX + desc_to_download + "?t=" + DateTime.Now.Ticks.ToString(), local_base_path + desc_to_download))
+                      {
+                          
+                          toolStripStatusLabel1.Text = "Downloading catalog: " + catalog_base_pathX + file_to_download;
+                          toolStripStatusLabel2.Text = "To: " + local_base_path + file_to_download;
 
-                        string actualCRC = getSHA256hash(local_base_path + file_to_download).ToLower();
-                        //this.setStatus("Actual CRC: " + actualCRC);
+                          if (_Downloader.DownloadFileWithProgress(catalog_base_pathX + file_to_download + "?t=" + DateTime.Now.Ticks.ToString(), local_base_path + file_to_download))
+                          {
+                              string expectedCRC = getCatalogCRC(local_base_path + desc_to_download).ToLower();
+                              //this.setStatus("Expected CRC: " + expectedCRC);
 
-                        if ((expectedCRC ?? "") == (actualCRC ?? ""))
-                        {
-                            //this.setStatus("CRCs Match!!");
-                            statusLabel1.Text = "CRCs Match!!";
-                        }
-                        else
-                        {
-                            MessageBox.Show("** CRCs DO NOT MATCH!! **");
-                            toolStripStatusLabel1.Text = "** CRCs DO NOT MATCH!! **";
-                        }
-                       // MessageBox.Show("Line522");
-                        var pkgNameList = new List<string>();
-                        List<_package> pkgsList = getPackages(local_base_path + file_to_download);
-                        var pkgNameListDL = new List<string>();
-                        if (pkgsList != null)
-                        {
-                            MessageBox.Show("Line528");
-                            // Loop through and add pkg to DataGridView1
-                            foreach (_package pkg in pkgsList)
-                            {
-                                this.DataGridView1.Rows.Add(pkg.CPkgID, pkg.CPackageName, pkg.CTitle, pkg.CVersion, pkg.CReleased, pkg.CPackageType, pkg.CCategory, pkg.CReboot, pkg.CSeverity, pkg.CBrand, pkg.Csetup, pkg.Clangs, pkg.Cxml2valid, pkg.CURLxml2, pkg.Cxml2crc, pkg.Cxml2crcactual);
-                               // MessageBox.Show("Line533");
-                                if (pkgNameList.Contains(pkg.CPackageName))
-                                {
-                                 //   MessageBox.Show("Line536");
-                                    if (!pkgNameListDL.Contains(pkg.CPackageName))
-                                    {
-                                        pkgNameListDL.Add(pkg.CPackageName);
-                                   //     MessageBox.Show("Line539");
-                                    }
-                                }
-                                else
-                                {
-                                    //MessageBox.Show("Line545");
-                                    pkgNameList.Add(pkg.CPackageName);
-                                }
+                              string actualCRC = getSHA256hash(local_base_path + file_to_download).ToLower();
+                              //this.setStatus("Actual CRC: " + actualCRC);
 
-                            }
-                           // MessageBox.Show("Line547");
-                            if (pkgNameListDL.Count > 0)
-                            {
-                                foreach (string z in pkgNameListDL)
-                                {
-                                    foreach (_package y in pkgsList)
-                                    {
-                                        if (z == y.CPackageName)
-                                        {
-                                            downlevelPackages.Add(y.CPkgID + "\t" + y.CPackageName + "\t" + y.CReleased + "\t" + "https://download.lenovo.com/catalog/" + comboModel.SelectedItem + "_" + osVersion + ".xml" + "\t" + y.CURLxml2);
-                                           // MessageBox.Show("Line557");
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                       // MessageBox.Show("Line559");
-                        setColumns();
-                        //MessageBox.Show("Line561");
-                        this.DataGridView1.AutoResizeColumns();
-                        this.DataGridView1.Sort(DataGridView1.Columns["Valid"], System.ComponentModel.ListSortDirection.Ascending);
-                        //this.SetBGColor(); //error here if valid == 0
-                        toolStripStatusLabel1.Text = "Got all packages";
+                              if ((expectedCRC ?? "") == (actualCRC ?? ""))
+                              {
+                                  //this.setStatus("CRCs Match!!");
+                                  statusLabel1.Text = "CRCs Match!!";
+                              }
+                              else
+                              {
+                                  MessageBox.Show("** CRCs DO NOT MATCH!! **");
+                                  toolStripStatusLabel1.Text = "** CRCs DO NOT MATCH!! **";
+                              }
+                              var pkgNameList = new List<string>();
+                              List<_package> pkgsList = getPackages(local_base_path + file_to_download);
+                              var pkgNameListDL = new List<string>();
+                              if (pkgsList != null)
+                              {
+                                  // Loop through and add pkg to DataGridView1
+                                  foreach (_package pkg in pkgsList)
+                                  {
+                                     // this.DataGridView1.Rows.Add(pkg.CPkgID, pkg.CPackageName, pkg.CTitle, pkg.CVersion, pkg.CReleased, pkg.CPackageType, pkg.CCategory, pkg.CReboot, pkg.CSeverity, pkg.CBrand, pkg.Csetup, pkg.Clangs, pkg.Cxml2valid, pkg.CURLxml2, pkg.Cxml2crc, pkg.Cxml2crcactual);
+
+                                      if (pkgNameList.Contains(pkg.CPackageName))
+                                      {
+                                          if (!pkgNameListDL.Contains(pkg.CPackageName))
+                                          {
+                                              pkgNameListDL.Add(pkg.CPackageName);
+                                          }
+                                      }
+                                      else
+                                      {
+                                          pkgNameList.Add(pkg.CPackageName);
+                                      }
+
+                                  }
+                                  if (pkgNameListDL.Count > 0)
+                                  {
+                                      foreach (string z in pkgNameListDL)
+                                      {
+                                          foreach (_package y in pkgsList)
+                                          {
+                                              if (z == y.CPackageName)
+                                              {
+                                                  downlevelPackages.Add(y.CPkgID + "\t" + y.CPackageName + "\t" + y.CReleased + "\t" + "https://download.lenovo.com/catalog/" + comboModel.SelectedItem + "_" + osVersion + ".xml" + "\t" + y.CURLxml2);
+
+                                              }
+                                          }
+                                      }
+                                  }
+                              }
+                              /*setColumns();
+                              this.DataGridView1.AutoResizeColumns();
+                              this.DataGridView1.Sort(DataGridView1.Columns["Valid"], System.ComponentModel.ListSortDirection.Ascending);
+                              //this.SetBGColor(); //error here if valid == 0*/
+                toolStripStatusLabel1.Text = "Got all packages";
 
                     }
-
                     else
                     {
                         //this.setStatus("Could not download catalog.");
@@ -585,8 +624,7 @@ namespace investigator
 
                         string actualCRC = getSHA256hash(local_base_path + file_to_download).ToLower();
                         //this.setStatus("Actual CRC: " + actualCRC);
-                        toolStripStatusLabel3.Text = "Actual CRC: " + actualCRC;
-                        //MessageBox.Show("line 506");
+                        toolStripStatusLabel3.Text = "Actual CRC: " + actualCRC;;
 
                         if ((expectedCRC ?? "") == (actualCRC ?? ""))
                         {
@@ -600,25 +638,29 @@ namespace investigator
                             toolStripStatusLabel1.Text = "** CRCs DO NOT MATCH!! **";
                         }
 
-                        List<_package> pkgsList = getPackages(local_base_path + file_to_download);
+                       /* List<_package> pkgsList = getPackages(local_base_path + file_to_download);
                         if (pkgsList != null)
                         {
                             // Loop through and add pkg to DataGridView1
                             foreach (_package pkg in pkgsList)
                                 this.DataGridView1.Rows.Add(pkg.CPkgID, pkg.CPackageName, pkg.CTitle, pkg.CVersion, pkg.CReleased, pkg.CPackageType, pkg.CCategory, pkg.CReboot, pkg.CSeverity, pkg.CBrand, pkg.Csetup, pkg.Clangs, pkg.Cxml2valid, pkg.CURLxml2, pkg.Cxml2crc, pkg.Cxml2crcactual);
                         }
-                        this.DataGridView1.AutoResizeColumns();
+                        this.DataGridView1.AutoResizeColumns();*/
                         //this.setStatus("Got all packages.");
                         toolStripStatusLabel1.Text = "Got all packages.";
                     }
-                   // MessageBox.Show("Line605");
                 }
                 else
                 {
                     //this.setStatus("Could not download catalog descriptor.");
                     MessageBox.Show("Could not download catalog descriptor.");
                 }
-               // MessageBox.Show("Line613");
+                /*for (int i = 0; i < 100; i++)
+                {
+                    //Thread.Sleep(1000);  //dont need 
+                    // ProcessCatalog(name);
+                    backgroundWorker1.ReportProgress(i); //this goes in process catalog
+                }*/
             }
 
             catch (Exception ex)
@@ -861,7 +903,8 @@ namespace investigator
                 //thisPkg.CReleased = m_nodelist.Item(0).InnerText;
 
                 // Get the PackageType node and pull "type" attribute
-                m_nodelist = m_xmld.SelectNodes("/Package/PackageType");
+                m_nodelist = m_xmld.SelectNodes("/Package/PackageType"); //error here if no package type on 10am
+                if (m_nodelist.Count == 0) { return; }
                 int packageType = int.Parse(m_nodelist.Item(0).Attributes["type"].Value);
                 switch (packageType)
                 {
@@ -1043,12 +1086,12 @@ namespace investigator
             if (DataGridView1.SelectedRows.Count == 1)
             {
                 this.btnCheckCRC.Enabled = true;
-                this.btnClearCatalog.Enabled = true;
+               // this.btnClearCatalog.Enabled = true;
             }
             else
             {
                 this.btnCheckCRC.Enabled = false;
-                this.btnClearCatalog.Enabled = false;
+                //this.btnClearCatalog.Enabled = false;
             }
         }
 
@@ -1263,7 +1306,6 @@ namespace investigator
             }
             catch (Exception ex)
             {
-                //this.setStatus("checkExe: " + ex.Message.ToString());
                 MessageBox.Show("checkExe: " + ex.Message.ToString());
                 return false;
             }
@@ -1444,21 +1486,23 @@ namespace investigator
         {
            if (e.TabPage == tabCatalog)
             {
-                //MessageBox.Show("Clicked catalog tab");
+                DataGridView1.Rows.Clear();
                 // if (backgroundWorker1.IsBusy != true)
                 //{
                 // Start the asynchronous operation.
+
                 progressBar1.Visible = true;
 
                 if (comboMT.Text != "" || comboMT.SelectedIndex != -1)
                 {
-                    MessageBox.Show("reading comboMT");
+                    //MessageBox.Show("reading comboMT");
                     backgroundWorker1.RunWorkerAsync(comboMT.Text.ToUpper());
                 }
                 if (comboBiosCode.Text != "" || comboBiosCode.SelectedIndex != -1)
                 {
-                    MessageBox.Show("reading comboBios");
-                    backgroundWorker1.RunWorkerAsync(firstMT);
+                    //MessageBox.Show("reading comboBios");
+                    //MessageBox.Show(firstMT);
+                    backgroundWorker1.RunWorkerAsync(firstMT); //firstMt = first machine type in list
                 }
                 // }
 
@@ -1466,6 +1510,8 @@ namespace investigator
             else
             {
                 progressBar1.Visible = false; 
+                progressBar1.Value = 0;
+                btnClearCatalog.Enabled = false;
             }
            
         }

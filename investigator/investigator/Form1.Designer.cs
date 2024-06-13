@@ -96,6 +96,7 @@
             this.cbTitle = new System.Windows.Forms.CheckBox();
             this.cbPackageName = new System.Windows.Forms.CheckBox();
             this.tabDevice = new System.Windows.Forms.TabPage();
+            this.rtbModel = new System.Windows.Forms.RichTextBox();
             this.DataGridViewSCCM = new System.Windows.Forms.DataGridView();
             this.OS = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ver = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -107,7 +108,6 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.rtbModel = new System.Windows.Forms.RichTextBox();
             this.hsaListBox = new System.Windows.Forms.ListBox();
             this.buvLabel = new System.Windows.Forms.Label();
             this.bReadmeLink = new System.Windows.Forms.LinkLabel();
@@ -938,6 +938,15 @@
             this.tabDevice.Text = "Device Details";
             this.tabDevice.UseVisualStyleBackColor = true;
             // 
+            // rtbModel
+            // 
+            this.rtbModel.Location = new System.Drawing.Point(22, 34);
+            this.rtbModel.Margin = new System.Windows.Forms.Padding(2);
+            this.rtbModel.Name = "rtbModel";
+            this.rtbModel.Size = new System.Drawing.Size(752, 60);
+            this.rtbModel.TabIndex = 23;
+            this.rtbModel.Text = "";
+            // 
             // DataGridViewSCCM
             // 
             this.DataGridViewSCCM.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
@@ -1048,15 +1057,6 @@
             this.label23.Size = new System.Drawing.Size(99, 16);
             this.label23.TabIndex = 24;
             this.label23.Text = "Model Name:";
-            // 
-            // rtbModel
-            // 
-            this.rtbModel.Location = new System.Drawing.Point(22, 34);
-            this.rtbModel.Margin = new System.Windows.Forms.Padding(2);
-            this.rtbModel.Name = "rtbModel";
-            this.rtbModel.Size = new System.Drawing.Size(752, 60);
-            this.rtbModel.TabIndex = 23;
-            this.rtbModel.Text = "";
             // 
             // hsaListBox
             // 
@@ -1315,8 +1315,10 @@
             // 
             // backgroundWorker1
             // 
+            this.backgroundWorker1.WorkerReportsProgress = true;
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
+            this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
             // progressBar1
             // 
