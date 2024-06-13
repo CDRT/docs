@@ -10,6 +10,7 @@ using System.Net;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
@@ -26,9 +27,9 @@ namespace investigator
         XmlDocument doc;
         string osVersion;
         private WebFileDownloader _Downloader;
-        private string catalog_base_pathX = "http://download.lenovo.com/catalog/";
+        private string catalog_base_pathX = "https://download.lenovo.com/catalog/";
         //private string catalog_base_pathS = "https://download.lenovo.com/catalog/";
-        private string package_base_path = "http://download.lenovo.com/ibmdl/pub/pc/pccbbs/";
+        private string package_base_path = "https://download.lenovo.com/ibmdl/pub/pc/pccbbs/";
         private string local_base_path = Application.UserAppDataPath + @"\";
         private List<string> downlevelPackages = new List<string>();
         bool shiftPressed = false;
@@ -36,6 +37,9 @@ namespace investigator
         public Form1()
         {
             InitializeComponent();
+            backgroundWorker1.DoWork += backgroundWorker1_DoWork;
+            backgroundWorker1.ProgressChanged += backgroundWorker1_ProgressChanged;
+            backgroundWorker1.WorkerReportsProgress = true;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -64,6 +68,30 @@ namespace investigator
             doc.Load("https://download.lenovo.com/cdrt/td/catalogv2.xml");
 
         }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+            string name = e.Argument as string;
+            MessageBox.Show(name);
+            //only call processCatalog here and then put backgroundWorker1.ReportProgress(i); inside processCatalog
+           ProcessCatalog(name);
+            
+            //if you need to pass more than one thing put in hash table, list, array and pass that (make sure you grab back in the right order)
+
+            /*for (int i = 0; i < 100; i++)
+            {
+                //Thread.Sleep(1000);  //dont need 
+                ProcessCatalog(name);
+                backgroundWorker1.ReportProgress(i); //this goes in process catalog
+            }*/
+        }
+
+        private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            
+           progressBar1.Value = e.ProgressPercentage;
+        }
+
 
         private void comboBrand_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -130,7 +158,6 @@ namespace investigator
                             {
                                 checkedListBoxMT.Items.Add(chld.InnerText);
                                 firstMT = checkedListBoxMT.Items[0].ToString();
-                               // MessageBox.Show(firstMT);
                             }
                         }
                         if (chldNode.Name == "BIOS")
@@ -191,16 +218,15 @@ namespace investigator
         {
             clearTabInfo();
             clearSearchCriteria();
-            //comboBiosCode.SelectedIndex = -1;
             comboBiosCode.Text = "";
-            //comboPackageID.SelectedIndex = -1;
             comboPackageID.Text = "";
-            //comboTitle.SelectedIndex = -1;
             comboTitle.Text = "";
 
             var mt = comboMT.Text.ToUpper();
+            //comboMT.Text = mt;
             if (mt.Length == 4)
             {
+                tabs.SelectedTab = tabDevice;
                 fillMtDetails(mt);
                
                 //add the itmes to combobox here? or add them in ProcessCatalog()?
@@ -208,11 +234,17 @@ namespace investigator
                 {
                     comboMT.Items.Add(mt); 
                 }
-                if (osVersion != null)
+              /*   if(osVersion != null)
                 {
-                    ProcessCatalog(comboMT.Text.ToUpper());
-                }
+                    if (backgroundWorker1.IsBusy != true)
+                    {
+                        // Start the asynchronous operation.
+                        backgroundWorker1.RunWorkerAsync(comboMT.Text.ToUpper()); //pass function here
+                        //ProcessCatalog(comboMT.Text.ToUpper());
+                    }
+                }*/
             }
+            
 
         }
 
@@ -243,25 +275,28 @@ namespace investigator
         {
             clearTabInfo();
             clearSearchCriteria();
-            //comboMT.SelectedIndex = -1;
             comboMT.Text = "";
-            //comboPackageID.SelectedIndex = -1;
             comboPackageID.Text = "";
-            //comboTitle.SelectedIndex = -1;
             comboTitle.Text = "";
 
             var bc = comboBiosCode.Text;
             if (bc.Length == 4)
             {
+                tabs.SelectedTab = tabDevice;
+                fillBiosDetails(bc);
+
                 if (!comboBiosCode.Items.Contains(bc))
                 {
                     comboBiosCode.Items.Add(bc);
                 }
-                fillBiosDetails(bc);
-                if (osVersion != null)
-                {
-                    ProcessCatalog(firstMT);
-                }
+               /* if (osVersion != null)
+                 {
+                     if (backgroundWorker1.IsBusy != true)
+                     {
+                         backgroundWorker1.RunWorkerAsync(firstMT); 
+                     }
+                     //ProcessCatalog(firstMT);
+                 }*/
             }
         }
 
@@ -357,11 +392,18 @@ namespace investigator
                     else { continue; }
                 }
             }
-            if (osVersion != null)
+            DataGridView1.Rows.Clear();
+           /* if (osVersion != null)
             {
-                DataGridView1.Rows.Clear();
-                ProcessCatalog(comboMT.Text.ToUpper());
-            }
+                
+                if (backgroundWorker1.IsBusy != true)
+                {
+                    // Start the asynchronous operation.
+                    backgroundWorker1.RunWorkerAsync(comboMT.Text.ToUpper()); //pass function here
+                                                                              //ProcessCatalog(comboMT.Text.ToUpper());
+                }
+                //ProcessCatalog(comboMT.Text.ToUpper());
+            }*/
 
         }
 
@@ -414,10 +456,12 @@ namespace investigator
             if (comboMT.Text != "" || comboMT.SelectedIndex != -1)
             {
                 comboMT_SelectedIndexChanged(sender, e);
+                MessageBox.Show(comboMT.Text);
             }
             if (comboBiosCode.Text != "" || comboBiosCode.SelectedIndex != -1)
             {
                 comboBiosCode_SelectedIndexChanged_1(sender, e);
+                MessageBox.Show(comboBiosCode.Text);
             }
             if (comboPackageID.Text != "" || comboPackageID.SelectedIndex != -1)
             {
@@ -440,17 +484,21 @@ namespace investigator
 
         private void ProcessCatalog(string mt)
         {
+         
             try
             {
                 String OS_suffix = osVersion;
-               // string mt = comboMT.Text.ToUpper();
 
                 string file_to_download = mt + "_" + OS_suffix + ".xml";
                 string desc_to_download = mt + "_" + OS_suffix + "_DESC.xml";
 
-                _Downloader = new WebFileDownloader();
+                
+                _Downloader = new WebFileDownloader(); //could put this into workerreport/progressreported percentage
+               
                 if (_Downloader.DownloadFileWithProgress(catalog_base_pathX + desc_to_download + "?t=" + DateTime.Now.Ticks.ToString(), local_base_path + desc_to_download))
                 {
+                    //backgroundWorker1.ReportProgress();
+                   // MessageBox.Show("Line499");
                     toolStripStatusLabel1.Text = "Downloading catalog: " + catalog_base_pathX + file_to_download;
                     toolStripStatusLabel2.Text = "To: " + local_base_path + file_to_download;
 
@@ -472,29 +520,35 @@ namespace investigator
                             MessageBox.Show("** CRCs DO NOT MATCH!! **");
                             toolStripStatusLabel1.Text = "** CRCs DO NOT MATCH!! **";
                         }
+                       // MessageBox.Show("Line522");
                         var pkgNameList = new List<string>();
                         List<_package> pkgsList = getPackages(local_base_path + file_to_download);
                         var pkgNameListDL = new List<string>();
                         if (pkgsList != null)
                         {
+                            MessageBox.Show("Line528");
                             // Loop through and add pkg to DataGridView1
                             foreach (_package pkg in pkgsList)
                             {
                                 this.DataGridView1.Rows.Add(pkg.CPkgID, pkg.CPackageName, pkg.CTitle, pkg.CVersion, pkg.CReleased, pkg.CPackageType, pkg.CCategory, pkg.CReboot, pkg.CSeverity, pkg.CBrand, pkg.Csetup, pkg.Clangs, pkg.Cxml2valid, pkg.CURLxml2, pkg.Cxml2crc, pkg.Cxml2crcactual);
-
+                               // MessageBox.Show("Line533");
                                 if (pkgNameList.Contains(pkg.CPackageName))
                                 {
+                                 //   MessageBox.Show("Line536");
                                     if (!pkgNameListDL.Contains(pkg.CPackageName))
                                     {
                                         pkgNameListDL.Add(pkg.CPackageName);
+                                   //     MessageBox.Show("Line539");
                                     }
                                 }
                                 else
                                 {
+                                    //MessageBox.Show("Line545");
                                     pkgNameList.Add(pkg.CPackageName);
                                 }
 
                             }
+                           // MessageBox.Show("Line547");
                             if (pkgNameListDL.Count > 0)
                             {
                                 foreach (string z in pkgNameListDL)
@@ -503,17 +557,21 @@ namespace investigator
                                     {
                                         if (z == y.CPackageName)
                                         {
-                                            downlevelPackages.Add(y.CPkgID + "\t" + y.CPackageName + "\t" + y.CReleased + "\t" + "http://download.lenovo.com/catalog/" + comboModel.SelectedItem + "_" + osVersion + ".xml" + "\t" + y.CURLxml2);
+                                            downlevelPackages.Add(y.CPkgID + "\t" + y.CPackageName + "\t" + y.CReleased + "\t" + "https://download.lenovo.com/catalog/" + comboModel.SelectedItem + "_" + osVersion + ".xml" + "\t" + y.CURLxml2);
+                                           // MessageBox.Show("Line557");
                                         }
                                     }
                                 }
                             }
                         }
+                       // MessageBox.Show("Line559");
                         setColumns();
+                        //MessageBox.Show("Line561");
                         this.DataGridView1.AutoResizeColumns();
                         this.DataGridView1.Sort(DataGridView1.Columns["Valid"], System.ComponentModel.ListSortDirection.Ascending);
                         //this.SetBGColor(); //error here if valid == 0
                         toolStripStatusLabel1.Text = "Got all packages";
+
                     }
 
                     else
@@ -553,18 +611,21 @@ namespace investigator
                         //this.setStatus("Got all packages.");
                         toolStripStatusLabel1.Text = "Got all packages.";
                     }
+                   // MessageBox.Show("Line605");
                 }
                 else
                 {
                     //this.setStatus("Could not download catalog descriptor.");
                     MessageBox.Show("Could not download catalog descriptor.");
                 }
+               // MessageBox.Show("Line613");
             }
 
             catch (Exception ex)
             {
                 MessageBox.Show("ProcessCatalog: " + ex.Message.ToString());
             }
+            
         }
 
 
@@ -982,10 +1043,12 @@ namespace investigator
             if (DataGridView1.SelectedRows.Count == 1)
             {
                 this.btnCheckCRC.Enabled = true;
+                this.btnClearCatalog.Enabled = true;
             }
             else
             {
                 this.btnCheckCRC.Enabled = false;
+                this.btnClearCatalog.Enabled = false;
             }
         }
 
@@ -1370,9 +1433,43 @@ namespace investigator
             Process.Start(sInfo);
         }
 
-        private void checkedListBoxMT_SelectedIndexChanged(object sender, EventArgs e)
-        {
+     
 
+        private void btnClearCatalog_Click(object sender, EventArgs e)
+        {
+            DataGridView1.Rows.Clear();
         }
+
+        private void tabs_Selecting(object sender, TabControlCancelEventArgs e)
+        {
+           if (e.TabPage == tabCatalog)
+            {
+                //MessageBox.Show("Clicked catalog tab");
+                // if (backgroundWorker1.IsBusy != true)
+                //{
+                // Start the asynchronous operation.
+                progressBar1.Visible = true;
+
+                if (comboMT.Text != "" || comboMT.SelectedIndex != -1)
+                {
+                    MessageBox.Show("reading comboMT");
+                    backgroundWorker1.RunWorkerAsync(comboMT.Text.ToUpper());
+                }
+                if (comboBiosCode.Text != "" || comboBiosCode.SelectedIndex != -1)
+                {
+                    MessageBox.Show("reading comboBios");
+                    backgroundWorker1.RunWorkerAsync(firstMT);
+                }
+                // }
+
+            }
+            else
+            {
+                progressBar1.Visible = false; 
+            }
+           
+        }
+
+       
     }
 }

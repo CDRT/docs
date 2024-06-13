@@ -57,6 +57,7 @@
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tabCatalog = new System.Windows.Forms.TabPage();
+            this.btnClearCatalog = new System.Windows.Forms.Button();
             this.btnCheckCRC = new System.Windows.Forms.Button();
             this.DataGridView1 = new System.Windows.Forms.DataGridView();
             this.PkgID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -127,6 +128,8 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.panel1.SuspendLayout();
             this.panelRadio.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -166,7 +169,7 @@
             this.panel1.Location = new System.Drawing.Point(11, 23);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(193, 679);
+            this.panel1.Size = new System.Drawing.Size(193, 671);
             this.panel1.TabIndex = 0;
             // 
             // label16
@@ -398,9 +401,9 @@
             this.statusLabel2,
             this.toolStripStatusLabel2,
             this.toolStripStatusLabel3});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 702);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 699);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1106, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1037, 22);
             this.statusStrip1.TabIndex = 3;
             // 
             // statusLabel1
@@ -431,6 +434,7 @@
             // tabCatalog
             // 
             this.tabCatalog.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabCatalog.Controls.Add(this.btnClearCatalog);
             this.tabCatalog.Controls.Add(this.btnCheckCRC);
             this.tabCatalog.Controls.Add(this.DataGridView1);
             this.tabCatalog.Controls.Add(this.gbColumns);
@@ -438,20 +442,31 @@
             this.tabCatalog.Margin = new System.Windows.Forms.Padding(2);
             this.tabCatalog.Name = "tabCatalog";
             this.tabCatalog.Padding = new System.Windows.Forms.Padding(2);
-            this.tabCatalog.Size = new System.Drawing.Size(879, 654);
+            this.tabCatalog.Size = new System.Drawing.Size(806, 646);
             this.tabCatalog.TabIndex = 2;
             this.tabCatalog.Text = "Catalog Details";
             this.tabCatalog.UseVisualStyleBackColor = true;
             // 
+            // btnClearCatalog
+            // 
+            this.btnClearCatalog.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnClearCatalog.Enabled = false;
+            this.btnClearCatalog.Location = new System.Drawing.Point(415, 598);
+            this.btnClearCatalog.Name = "btnClearCatalog";
+            this.btnClearCatalog.Size = new System.Drawing.Size(75, 28);
+            this.btnClearCatalog.TabIndex = 22;
+            this.btnClearCatalog.Text = "Clear Catalog";
+            this.btnClearCatalog.UseVisualStyleBackColor = true;
+            this.btnClearCatalog.Click += new System.EventHandler(this.btnClearCatalog_Click);
+            // 
             // btnCheckCRC
             // 
-            this.btnCheckCRC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCheckCRC.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnCheckCRC.Enabled = false;
             this.btnCheckCRC.ForeColor = System.Drawing.Color.Black;
-            this.btnCheckCRC.Location = new System.Drawing.Point(406, 626);
+            this.btnCheckCRC.Location = new System.Drawing.Point(302, 598);
             this.btnCheckCRC.Name = "btnCheckCRC";
-            this.btnCheckCRC.Size = new System.Drawing.Size(113, 28);
+            this.btnCheckCRC.Size = new System.Drawing.Size(88, 28);
             this.btnCheckCRC.TabIndex = 21;
             this.btnCheckCRC.Text = "Check CRC";
             this.btnCheckCRC.UseVisualStyleBackColor = true;
@@ -493,7 +508,7 @@
             this.DataGridView1.RowHeadersWidth = 82;
             this.DataGridView1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             this.DataGridView1.RowTemplate.Height = 25;
-            this.DataGridView1.Size = new System.Drawing.Size(865, 534);
+            this.DataGridView1.Size = new System.Drawing.Size(799, 488);
             this.DataGridView1.TabIndex = 20;
             this.DataGridView1.SelectionChanged += new System.EventHandler(this.DataGridView1_SelectionChanged);
             // 
@@ -639,6 +654,8 @@
             // 
             // gbColumns
             // 
+            this.gbColumns.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gbColumns.AutoSize = true;
             this.gbColumns.BackColor = System.Drawing.Color.WhiteSmoke;
             this.gbColumns.Controls.Add(this.cbBrand);
@@ -660,9 +677,9 @@
             this.gbColumns.Controls.Add(this.cbPackageName);
             this.gbColumns.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbColumns.ForeColor = System.Drawing.Color.Black;
-            this.gbColumns.Location = new System.Drawing.Point(6, 2);
+            this.gbColumns.Location = new System.Drawing.Point(4, 2);
             this.gbColumns.Name = "gbColumns";
-            this.gbColumns.Size = new System.Drawing.Size(1023, 122);
+            this.gbColumns.Size = new System.Drawing.Size(801, 92);
             this.gbColumns.TabIndex = 19;
             this.gbColumns.TabStop = false;
             this.gbColumns.Text = "Columns";
@@ -672,7 +689,7 @@
             this.cbBrand.AutoSize = true;
             this.cbBrand.Checked = true;
             this.cbBrand.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbBrand.Location = new System.Drawing.Point(728, 23);
+            this.cbBrand.Location = new System.Drawing.Point(647, 23);
             this.cbBrand.Name = "cbBrand";
             this.cbBrand.Size = new System.Drawing.Size(56, 17);
             this.cbBrand.TabIndex = 16;
@@ -685,7 +702,7 @@
             this.cbVersion.AutoSize = true;
             this.cbVersion.Checked = true;
             this.cbVersion.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbVersion.Location = new System.Drawing.Point(317, 23);
+            this.cbVersion.Location = new System.Drawing.Point(271, 23);
             this.cbVersion.Name = "cbVersion";
             this.cbVersion.Size = new System.Drawing.Size(64, 17);
             this.cbVersion.TabIndex = 15;
@@ -724,7 +741,7 @@
             this.cbPackageType.AutoSize = true;
             this.cbPackageType.Checked = true;
             this.cbPackageType.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbPackageType.Location = new System.Drawing.Point(500, 23);
+            this.cbPackageType.Location = new System.Drawing.Point(443, 23);
             this.cbPackageType.Name = "cbPackageType";
             this.cbPackageType.Size = new System.Drawing.Size(94, 17);
             this.cbPackageType.TabIndex = 12;
@@ -802,7 +819,7 @@
             this.cbSetup.AutoSize = true;
             this.cbSetup.Checked = true;
             this.cbSetup.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbSetup.Location = new System.Drawing.Point(806, 23);
+            this.cbSetup.Location = new System.Drawing.Point(732, 23);
             this.cbSetup.Name = "cbSetup";
             this.cbSetup.Size = new System.Drawing.Size(56, 17);
             this.cbSetup.TabIndex = 2;
@@ -815,7 +832,7 @@
             this.cbCategory.AutoSize = true;
             this.cbCategory.Checked = true;
             this.cbCategory.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbCategory.Location = new System.Drawing.Point(627, 23);
+            this.cbCategory.Location = new System.Drawing.Point(556, 23);
             this.cbCategory.Name = "cbCategory";
             this.cbCategory.Size = new System.Drawing.Size(72, 17);
             this.cbCategory.TabIndex = 1;
@@ -826,7 +843,7 @@
             // cbLanguage
             // 
             this.cbLanguage.AutoSize = true;
-            this.cbLanguage.Location = new System.Drawing.Point(878, 23);
+            this.cbLanguage.Location = new System.Drawing.Point(700, 53);
             this.cbLanguage.Name = "cbLanguage";
             this.cbLanguage.Size = new System.Drawing.Size(77, 17);
             this.cbLanguage.TabIndex = 3;
@@ -840,7 +857,7 @@
             this.cbReleased.AutoSize = true;
             this.cbReleased.Checked = true;
             this.cbReleased.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbReleased.Location = new System.Drawing.Point(404, 23);
+            this.cbReleased.Location = new System.Drawing.Point(355, 23);
             this.cbReleased.Name = "cbReleased";
             this.cbReleased.Size = new System.Drawing.Size(72, 17);
             this.cbReleased.TabIndex = 0;
@@ -866,7 +883,7 @@
             this.cbTitle.AutoSize = true;
             this.cbTitle.Checked = true;
             this.cbTitle.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbTitle.Location = new System.Drawing.Point(240, 23);
+            this.cbTitle.Location = new System.Drawing.Point(207, 23);
             this.cbTitle.Name = "cbTitle";
             this.cbTitle.Size = new System.Drawing.Size(48, 17);
             this.cbTitle.TabIndex = 10;
@@ -879,7 +896,7 @@
             this.cbPackageName.AutoSize = true;
             this.cbPackageName.Checked = true;
             this.cbPackageName.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbPackageName.Location = new System.Drawing.Point(116, 23);
+            this.cbPackageName.Location = new System.Drawing.Point(99, 23);
             this.cbPackageName.Name = "cbPackageName";
             this.cbPackageName.Size = new System.Drawing.Size(100, 17);
             this.cbPackageName.TabIndex = 9;
@@ -891,6 +908,7 @@
             // 
             this.tabDevice.AutoScroll = true;
             this.tabDevice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabDevice.Controls.Add(this.rtbModel);
             this.tabDevice.Controls.Add(this.DataGridViewSCCM);
             this.tabDevice.Controls.Add(this.checkedListBoxMT);
             this.tabDevice.Controls.Add(this.bcLabel);
@@ -899,7 +917,6 @@
             this.tabDevice.Controls.Add(this.label25);
             this.tabDevice.Controls.Add(this.label24);
             this.tabDevice.Controls.Add(this.label23);
-            this.tabDevice.Controls.Add(this.rtbModel);
             this.tabDevice.Controls.Add(this.hsaListBox);
             this.tabDevice.Controls.Add(this.buvLabel);
             this.tabDevice.Controls.Add(this.bReadmeLink);
@@ -916,16 +933,13 @@
             this.tabDevice.Margin = new System.Windows.Forms.Padding(2);
             this.tabDevice.Name = "tabDevice";
             this.tabDevice.Padding = new System.Windows.Forms.Padding(2);
-            this.tabDevice.Size = new System.Drawing.Size(879, 677);
+            this.tabDevice.Size = new System.Drawing.Size(806, 646);
             this.tabDevice.TabIndex = 0;
             this.tabDevice.Text = "Device Details";
             this.tabDevice.UseVisualStyleBackColor = true;
             // 
             // DataGridViewSCCM
             // 
-            this.DataGridViewSCCM.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.DataGridViewSCCM.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.DataGridViewSCCM.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DataGridViewSCCM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -933,12 +947,12 @@
             this.OS,
             this.Ver,
             this.url});
-            this.DataGridViewSCCM.Location = new System.Drawing.Point(22, 383);
+            this.DataGridViewSCCM.Location = new System.Drawing.Point(25, 360);
             this.DataGridViewSCCM.Name = "DataGridViewSCCM";
             this.DataGridViewSCCM.ReadOnly = true;
             this.DataGridViewSCCM.RowHeadersWidth = 82;
             this.DataGridViewSCCM.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridViewSCCM.Size = new System.Drawing.Size(824, 152);
+            this.DataGridViewSCCM.Size = new System.Drawing.Size(749, 120);
             this.DataGridViewSCCM.TabIndex = 32;
             this.DataGridViewSCCM.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewSCCM_CellContentDoubleClick);
             this.DataGridViewSCCM.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DataGridViewSCCM_KeyDown);
@@ -970,17 +984,16 @@
             // checkedListBoxMT
             // 
             this.checkedListBoxMT.FormattingEnabled = true;
-            this.checkedListBoxMT.Location = new System.Drawing.Point(22, 134);
+            this.checkedListBoxMT.Location = new System.Drawing.Point(22, 128);
             this.checkedListBoxMT.Name = "checkedListBoxMT";
-            this.checkedListBoxMT.Size = new System.Drawing.Size(276, 76);
+            this.checkedListBoxMT.Size = new System.Drawing.Size(276, 58);
             this.checkedListBoxMT.TabIndex = 31;
             this.checkedListBoxMT.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBoxMT_ItemCheck);
-            this.checkedListBoxMT.SelectedIndexChanged += new System.EventHandler(this.checkedListBoxMT_SelectedIndexChanged);
             // 
             // bcLabel
             // 
             this.bcLabel.AutoSize = true;
-            this.bcLabel.Location = new System.Drawing.Point(108, 225);
+            this.bcLabel.Location = new System.Drawing.Point(109, 212);
             this.bcLabel.Name = "bcLabel";
             this.bcLabel.Size = new System.Drawing.Size(58, 17);
             this.bcLabel.TabIndex = 29;
@@ -990,7 +1003,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(36, 291);
+            this.label27.Location = new System.Drawing.Point(36, 270);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(89, 16);
             this.label27.TabIndex = 28;
@@ -1000,7 +1013,7 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(19, 262);
+            this.label26.Location = new System.Drawing.Point(19, 241);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(228, 16);
             this.label26.TabIndex = 27;
@@ -1010,7 +1023,7 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(19, 227);
+            this.label25.Location = new System.Drawing.Point(19, 213);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(87, 16);
             this.label25.TabIndex = 26;
@@ -1020,7 +1033,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(19, 110);
+            this.label24.Location = new System.Drawing.Point(19, 104);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(117, 16);
             this.label24.TabIndex = 25;
@@ -1030,7 +1043,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(19, 14);
+            this.label23.Location = new System.Drawing.Point(19, 9);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(99, 16);
             this.label23.TabIndex = 24;
@@ -1038,10 +1051,10 @@
             // 
             // rtbModel
             // 
-            this.rtbModel.Location = new System.Drawing.Point(22, 38);
+            this.rtbModel.Location = new System.Drawing.Point(22, 34);
             this.rtbModel.Margin = new System.Windows.Forms.Padding(2);
             this.rtbModel.Name = "rtbModel";
-            this.rtbModel.Size = new System.Drawing.Size(824, 53);
+            this.rtbModel.Size = new System.Drawing.Size(752, 60);
             this.rtbModel.TabIndex = 23;
             this.rtbModel.Text = "";
             // 
@@ -1049,10 +1062,10 @@
             // 
             this.hsaListBox.FormattingEnabled = true;
             this.hsaListBox.ItemHeight = 16;
-            this.hsaListBox.Location = new System.Drawing.Point(22, 551);
+            this.hsaListBox.Location = new System.Drawing.Point(22, 533);
             this.hsaListBox.Margin = new System.Windows.Forms.Padding(2);
             this.hsaListBox.Name = "hsaListBox";
-            this.hsaListBox.Size = new System.Drawing.Size(824, 84);
+            this.hsaListBox.Size = new System.Drawing.Size(752, 68);
             this.hsaListBox.TabIndex = 18;
             // 
             // buvLabel
@@ -1061,7 +1074,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.buvLabel.AutoSize = true;
-            this.buvLabel.Location = new System.Drawing.Point(249, 261);
+            this.buvLabel.Location = new System.Drawing.Point(249, 240);
             this.buvLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.buvLabel.Name = "buvLabel";
             this.buvLabel.Size = new System.Drawing.Size(66, 17);
@@ -1071,7 +1084,7 @@
             // bReadmeLink
             // 
             this.bReadmeLink.AutoSize = true;
-            this.bReadmeLink.Location = new System.Drawing.Point(161, 317);
+            this.bReadmeLink.Location = new System.Drawing.Point(161, 296);
             this.bReadmeLink.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bReadmeLink.Name = "bReadmeLink";
             this.bReadmeLink.Size = new System.Drawing.Size(95, 17);
@@ -1085,7 +1098,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bexeLabel.AutoSize = true;
-            this.bexeLabel.Location = new System.Drawing.Point(126, 289);
+            this.bexeLabel.Location = new System.Drawing.Point(126, 268);
             this.bexeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bexeLabel.Name = "bexeLabel";
             this.bexeLabel.Size = new System.Drawing.Size(73, 17);
@@ -1097,7 +1110,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(19, 527);
+            this.label12.Location = new System.Drawing.Point(19, 502);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(163, 17);
@@ -1108,7 +1121,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(19, 360);
+            this.label11.Location = new System.Drawing.Point(19, 332);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(223, 17);
@@ -1119,7 +1132,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(36, 318);
+            this.label10.Location = new System.Drawing.Point(36, 297);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(126, 17);
@@ -1173,7 +1186,7 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(6, -572);
+            this.label6.Location = new System.Drawing.Point(-39, -600);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(122, 17);
@@ -1185,7 +1198,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, -671);
+            this.label5.Location = new System.Drawing.Point(-39, -699);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(102, 17);
@@ -1201,12 +1214,13 @@
             this.tabs.Controls.Add(this.tabCatalog);
             this.tabs.Controls.Add(this.tabBD);
             this.tabs.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabs.Location = new System.Drawing.Point(208, 23);
+            this.tabs.Location = new System.Drawing.Point(212, 23);
             this.tabs.Margin = new System.Windows.Forms.Padding(2);
             this.tabs.Name = "tabs";
             this.tabs.SelectedIndex = 0;
-            this.tabs.Size = new System.Drawing.Size(887, 706);
+            this.tabs.Size = new System.Drawing.Size(814, 675);
             this.tabs.TabIndex = 1;
+            this.tabs.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabs_Selecting);
             // 
             // tabBD
             // 
@@ -1214,7 +1228,7 @@
             this.tabBD.Location = new System.Drawing.Point(4, 25);
             this.tabBD.Name = "tabBD";
             this.tabBD.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBD.Size = new System.Drawing.Size(879, 654);
+            this.tabBD.Size = new System.Drawing.Size(806, 646);
             this.tabBD.TabIndex = 3;
             this.tabBD.Text = "BIOS Dictionary";
             this.tabBD.UseVisualStyleBackColor = true;
@@ -1229,7 +1243,7 @@
             this.webView21.DefaultBackgroundColor = System.Drawing.Color.White;
             this.webView21.Location = new System.Drawing.Point(6, 6);
             this.webView21.Name = "webView21";
-            this.webView21.Size = new System.Drawing.Size(867, 654);
+            this.webView21.Size = new System.Drawing.Size(794, 634);
             this.webView21.Source = new System.Uri("https://docs.lenovocdrt.com/#/bios/settings/dictionary", System.UriKind.Absolute);
             this.webView21.TabIndex = 0;
             this.webView21.ZoomFactor = 1D;
@@ -1238,7 +1252,7 @@
             // 
             this.linkLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Location = new System.Drawing.Point(943, 8);
+            this.linkLabel3.Location = new System.Drawing.Point(872, 8);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(78, 13);
             this.linkLabel3.TabIndex = 3;
@@ -1251,7 +1265,7 @@
             // 
             this.pcSupportLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pcSupportLink.AutoSize = true;
-            this.pcSupportLink.Location = new System.Drawing.Point(828, 8);
+            this.pcSupportLink.Location = new System.Drawing.Point(757, 8);
             this.pcSupportLink.Name = "pcSupportLink";
             this.pcSupportLink.Size = new System.Drawing.Size(61, 13);
             this.pcSupportLink.TabIndex = 2;
@@ -1264,7 +1278,7 @@
             // 
             this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(895, 8);
+            this.linkLabel1.Location = new System.Drawing.Point(824, 8);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(42, 13);
             this.linkLabel1.TabIndex = 1;
@@ -1277,7 +1291,7 @@
             // 
             this.linkLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(1027, 8);
+            this.linkLabel2.Location = new System.Drawing.Point(956, 8);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(32, 13);
             this.linkLabel2.TabIndex = 4;
@@ -1290,7 +1304,7 @@
             // 
             this.linkLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.linkLabel4.AutoSize = true;
-            this.linkLabel4.Location = new System.Drawing.Point(1065, 8);
+            this.linkLabel4.Location = new System.Drawing.Point(994, 8);
             this.linkLabel4.Name = "linkLabel4";
             this.linkLabel4.Size = new System.Drawing.Size(28, 13);
             this.linkLabel4.TabIndex = 5;
@@ -1299,13 +1313,28 @@
             this.linkLabel4.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
             // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.progressBar1.Location = new System.Drawing.Point(651, 11);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(100, 10);
+            this.progressBar1.TabIndex = 6;
+            this.progressBar1.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1123, 701);
+            this.ClientSize = new System.Drawing.Size(1037, 721);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel4);
@@ -1441,6 +1470,9 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.ComboBox comboTitle;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Button btnClearCatalog;
     }
 }
 

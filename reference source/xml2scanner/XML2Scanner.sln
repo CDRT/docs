@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "XML2Scanner", "XML2Scanner\XML2Scanner.vbproj", "{479F6C80-5159-4B6E-BD56-37FA20BE6E15}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XML2Scanner", "XML2Scanner\XML2Scanner.csproj", "{F5BBEDEB-9D01-049F-3F0E-FD8442295AB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{479F6C80-5159-4B6E-BD56-37FA20BE6E15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{479F6C80-5159-4B6E-BD56-37FA20BE6E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{479F6C80-5159-4B6E-BD56-37FA20BE6E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{479F6C80-5159-4B6E-BD56-37FA20BE6E15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5BBEDEB-9D01-049F-3F0E-FD8442295AB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5BBEDEB-9D01-049F-3F0E-FD8442295AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5BBEDEB-9D01-049F-3F0E-FD8442295AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5BBEDEB-9D01-049F-3F0E-FD8442295AB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

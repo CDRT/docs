@@ -111,7 +111,7 @@ Partial Class Form1
         Me.Label2.Location = New System.Drawing.Point(17, 18)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(97, 16)
+        Me.Label2.Size = New System.Drawing.Size(181, 30)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Machine Type:"
         '
@@ -122,7 +122,7 @@ Partial Class Form1
         Me.Label3.Location = New System.Drawing.Point(31, 32)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(79, 16)
+        Me.Label3.Size = New System.Drawing.Size(144, 30)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Package ID"
         '
@@ -133,7 +133,7 @@ Partial Class Form1
         Me.Label4.Location = New System.Drawing.Point(90, 56)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(30, 16)
+        Me.Label4.Size = New System.Drawing.Size(57, 30)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "OS:"
         '
@@ -143,7 +143,7 @@ Partial Class Form1
         Me.TextBox1.Location = New System.Drawing.Point(131, 15)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(106, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(106, 37)
         Me.TextBox1.TabIndex = 4
         '
         'TextBox2
@@ -152,7 +152,7 @@ Partial Class Form1
         Me.TextBox2.Location = New System.Drawing.Point(122, 30)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(142, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(142, 37)
         Me.TextBox2.TabIndex = 5
         '
         'ComboBox1
@@ -164,7 +164,7 @@ Partial Class Form1
         Me.ComboBox1.Location = New System.Drawing.Point(807, 114)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(106, 24)
+        Me.ComboBox1.Size = New System.Drawing.Size(106, 38)
         Me.ComboBox1.TabIndex = 6
         Me.ComboBox1.Visible = False
         '
@@ -200,7 +200,7 @@ Partial Class Form1
         Me.DataGridView1.RowHeadersWidth = 82
         Me.DataGridView1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
         Me.DataGridView1.RowTemplate.Height = 25
-        Me.DataGridView1.Size = New System.Drawing.Size(1179, 341)
+        Me.DataGridView1.Size = New System.Drawing.Size(1171, 315)
         Me.DataGridView1.TabIndex = 8
         '
         'PkgID
@@ -210,7 +210,7 @@ Partial Class Form1
         Me.PkgID.MinimumWidth = 10
         Me.PkgID.Name = "PkgID"
         Me.PkgID.ReadOnly = True
-        Me.PkgID.Width = 87
+        Me.PkgID.Width = 169
         '
         'PackageName
         '
@@ -218,7 +218,7 @@ Partial Class Form1
         Me.PackageName.MinimumWidth = 10
         Me.PackageName.Name = "PackageName"
         Me.PackageName.ReadOnly = True
-        Me.PackageName.Width = 102
+        Me.PackageName.Width = 199
         '
         'Title
         '
@@ -227,6 +227,7 @@ Partial Class Form1
         Me.Title.MinimumWidth = 100
         Me.Title.Name = "Title"
         Me.Title.ReadOnly = True
+        Me.Title.Width = 106
         '
         'Version
         '
@@ -234,7 +235,7 @@ Partial Class Form1
         Me.Version.MinimumWidth = 10
         Me.Version.Name = "Version"
         Me.Version.ReadOnly = True
-        Me.Version.Width = 70
+        Me.Version.Width = 138
         '
         'Released
         '
@@ -243,7 +244,7 @@ Partial Class Form1
         Me.Released.MinimumWidth = 10
         Me.Released.Name = "Released"
         Me.Released.ReadOnly = True
-        Me.Released.Width = 78
+        Me.Released.Width = 154
         '
         'PackageType
         '
@@ -251,7 +252,7 @@ Partial Class Form1
         Me.PackageType.MinimumWidth = 10
         Me.PackageType.Name = "PackageType"
         Me.PackageType.ReadOnly = True
-        Me.PackageType.Width = 95
+        Me.PackageType.Width = 188
         '
         'category
         '
@@ -259,7 +260,7 @@ Partial Class Form1
         Me.category.MinimumWidth = 10
         Me.category.Name = "category"
         Me.category.ReadOnly = True
-        Me.category.Width = 80
+        Me.category.Width = 156
         '
         'RebootType
         '
@@ -267,7 +268,7 @@ Partial Class Form1
         Me.RebootType.MinimumWidth = 10
         Me.RebootType.Name = "RebootType"
         Me.RebootType.ReadOnly = True
-        Me.RebootType.Width = 89
+        Me.RebootType.Width = 179
         '
         'Severity
         '
@@ -275,7 +276,7 @@ Partial Class Form1
         Me.Severity.MinimumWidth = 10
         Me.Severity.Name = "Severity"
         Me.Severity.ReadOnly = True
-        Me.Severity.Width = 73
+        Me.Severity.Width = 145
         '
         'Brand
         '
@@ -283,7 +284,7 @@ Partial Class Form1
         Me.Brand.MinimumWidth = 10
         Me.Brand.Name = "Brand"
         Me.Brand.ReadOnly = True
-        Me.Brand.Width = 63
+        Me.Brand.Width = 122
         '
         'Setup
         '
@@ -291,7 +292,7 @@ Partial Class Form1
         Me.Setup.MinimumWidth = 10
         Me.Setup.Name = "Setup"
         Me.Setup.ReadOnly = True
-        Me.Setup.Width = 62
+        Me.Setup.Width = 122
         '
         'language
         '
@@ -308,7 +309,7 @@ Partial Class Form1
         Me.Valid.MinimumWidth = 10
         Me.Valid.Name = "Valid"
         Me.Valid.ReadOnly = True
-        Me.Valid.Width = 57
+        Me.Valid.Width = 111
         '
         'xml2_path
         '
@@ -316,7 +317,7 @@ Partial Class Form1
         Me.xml2_path.MinimumWidth = 10
         Me.xml2_path.Name = "xml2_path"
         Me.xml2_path.ReadOnly = True
-        Me.xml2_path.Width = 82
+        Me.xml2_path.Width = 160
         '
         'CRC
         '
@@ -325,7 +326,7 @@ Partial Class Form1
         Me.CRC.MinimumWidth = 10
         Me.CRC.Name = "CRC"
         Me.CRC.ReadOnly = True
-        Me.CRC.Width = 117
+        Me.CRC.Width = 229
         '
         'crcactual
         '
@@ -333,7 +334,7 @@ Partial Class Form1
         Me.crcactual.MinimumWidth = 10
         Me.crcactual.Name = "crcactual"
         Me.crcactual.ReadOnly = True
-        Me.crcactual.Width = 85
+        Me.crcactual.Width = 163
         '
         'Comment
         '
@@ -341,7 +342,7 @@ Partial Class Form1
         Me.Comment.MinimumWidth = 10
         Me.Comment.Name = "Comment"
         Me.Comment.ReadOnly = True
-        Me.Comment.Width = 86
+        Me.Comment.Width = 166
         '
         'ListBox1
         '
@@ -352,13 +353,13 @@ Partial Class Form1
         Me.ListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.ListBox1.ForeColor = System.Drawing.Color.White
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 15
+        Me.ListBox1.ItemHeight = 32
         Me.ListBox1.Location = New System.Drawing.Point(10, 138)
         Me.ListBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.ScrollAlwaysVisible = True
         Me.ListBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended
-        Me.ListBox1.Size = New System.Drawing.Size(1175, 135)
+        Me.ListBox1.Size = New System.Drawing.Size(1167, 96)
         Me.ListBox1.TabIndex = 9
         '
         'Button2
@@ -393,10 +394,10 @@ Partial Class Form1
         '
         Me.tp_status.Controls.Add(Me.Button3)
         Me.tp_status.Controls.Add(Me.ListBox1)
-        Me.tp_status.Location = New System.Drawing.Point(4, 24)
+        Me.tp_status.Location = New System.Drawing.Point(8, 46)
         Me.tp_status.Name = "tp_status"
         Me.tp_status.Padding = New System.Windows.Forms.Padding(3)
-        Me.tp_status.Size = New System.Drawing.Size(1189, 474)
+        Me.tp_status.Size = New System.Drawing.Size(1181, 448)
         Me.tp_status.TabIndex = 2
         Me.tp_status.Text = "Status"
         Me.tp_status.UseVisualStyleBackColor = True
@@ -419,11 +420,11 @@ Partial Class Form1
         Me.tp_packages.Controls.Add(Me.btnColumns)
         Me.tp_packages.Controls.Add(Me.btnCheckCRC)
         Me.tp_packages.Controls.Add(Me.DataGridView1)
-        Me.tp_packages.Location = New System.Drawing.Point(4, 24)
+        Me.tp_packages.Location = New System.Drawing.Point(8, 46)
         Me.tp_packages.Margin = New System.Windows.Forms.Padding(4)
         Me.tp_packages.Name = "tp_packages"
         Me.tp_packages.Padding = New System.Windows.Forms.Padding(4)
-        Me.tp_packages.Size = New System.Drawing.Size(1189, 474)
+        Me.tp_packages.Size = New System.Drawing.Size(1181, 448)
         Me.tp_packages.TabIndex = 0
         Me.tp_packages.Text = "Package List"
         Me.tp_packages.UseVisualStyleBackColor = True
@@ -464,7 +465,7 @@ Partial Class Form1
         Me.cbBrand.CheckState = System.Windows.Forms.CheckState.Checked
         Me.cbBrand.Location = New System.Drawing.Point(997, 25)
         Me.cbBrand.Name = "cbBrand"
-        Me.cbBrand.Size = New System.Drawing.Size(56, 17)
+        Me.cbBrand.Size = New System.Drawing.Size(102, 34)
         Me.cbBrand.TabIndex = 16
         Me.cbBrand.Text = "Brand"
         Me.cbBrand.UseVisualStyleBackColor = True
@@ -476,7 +477,7 @@ Partial Class Form1
         Me.cbVersion.CheckState = System.Windows.Forms.CheckState.Checked
         Me.cbVersion.Location = New System.Drawing.Point(345, 25)
         Me.cbVersion.Name = "cbVersion"
-        Me.cbVersion.Size = New System.Drawing.Size(64, 17)
+        Me.cbVersion.Size = New System.Drawing.Size(117, 34)
         Me.cbVersion.TabIndex = 15
         Me.cbVersion.Text = "Version"
         Me.cbVersion.UseVisualStyleBackColor = True
@@ -488,7 +489,7 @@ Partial Class Form1
         Me.cbSeverity.CheckState = System.Windows.Forms.CheckState.Checked
         Me.cbSeverity.Location = New System.Drawing.Point(900, 24)
         Me.cbSeverity.Name = "cbSeverity"
-        Me.cbSeverity.Size = New System.Drawing.Size(65, 17)
+        Me.cbSeverity.Size = New System.Drawing.Size(123, 34)
         Me.cbSeverity.TabIndex = 14
         Me.cbSeverity.Text = "Severity"
         Me.cbSeverity.UseVisualStyleBackColor = True
@@ -500,7 +501,7 @@ Partial Class Form1
         Me.cbReboot.CheckState = System.Windows.Forms.CheckState.Checked
         Me.cbReboot.Location = New System.Drawing.Point(775, 24)
         Me.cbReboot.Name = "cbReboot"
-        Me.cbReboot.Size = New System.Drawing.Size(90, 17)
+        Me.cbReboot.Size = New System.Drawing.Size(168, 34)
         Me.cbReboot.TabIndex = 13
         Me.cbReboot.Text = "Reboot Type"
         Me.cbReboot.UseVisualStyleBackColor = True
@@ -512,7 +513,7 @@ Partial Class Form1
         Me.cbPackageType.CheckState = System.Windows.Forms.CheckState.Checked
         Me.cbPackageType.Location = New System.Drawing.Point(539, 25)
         Me.cbPackageType.Name = "cbPackageType"
-        Me.cbPackageType.Size = New System.Drawing.Size(94, 17)
+        Me.cbPackageType.Size = New System.Drawing.Size(177, 34)
         Me.cbPackageType.TabIndex = 12
         Me.cbPackageType.Text = "Package Type"
         Me.cbPackageType.UseVisualStyleBackColor = True
@@ -524,7 +525,7 @@ Partial Class Form1
         Me.cbComment.CheckState = System.Windows.Forms.CheckState.Checked
         Me.cbComment.Location = New System.Drawing.Point(519, 46)
         Me.cbComment.Name = "cbComment"
-        Me.cbComment.Size = New System.Drawing.Size(75, 17)
+        Me.cbComment.Size = New System.Drawing.Size(141, 34)
         Me.cbComment.TabIndex = 11
         Me.cbComment.Text = "Comment"
         Me.cbComment.UseVisualStyleBackColor = True
@@ -536,7 +537,7 @@ Partial Class Form1
         Me.cbCRC_Actual.CheckState = System.Windows.Forms.CheckState.Checked
         Me.cbCRC_Actual.Location = New System.Drawing.Point(404, 46)
         Me.cbCRC_Actual.Name = "cbCRC_Actual"
-        Me.cbCRC_Actual.Size = New System.Drawing.Size(82, 17)
+        Me.cbCRC_Actual.Size = New System.Drawing.Size(151, 34)
         Me.cbCRC_Actual.TabIndex = 7
         Me.cbCRC_Actual.Text = "CRC Actual"
         Me.cbCRC_Actual.UseVisualStyleBackColor = True
@@ -548,7 +549,7 @@ Partial Class Form1
         Me.cbCRC_Catalog.CheckState = System.Windows.Forms.CheckState.Checked
         Me.cbCRC_Catalog.Location = New System.Drawing.Point(280, 46)
         Me.cbCRC_Catalog.Name = "cbCRC_Catalog"
-        Me.cbCRC_Catalog.Size = New System.Drawing.Size(90, 17)
+        Me.cbCRC_Catalog.Size = New System.Drawing.Size(166, 34)
         Me.cbCRC_Catalog.TabIndex = 6
         Me.cbCRC_Catalog.Text = "CRC Catalog"
         Me.cbCRC_Catalog.UseVisualStyleBackColor = True
@@ -560,7 +561,7 @@ Partial Class Form1
         Me.cbXML2Path.CheckState = System.Windows.Forms.CheckState.Checked
         Me.cbXML2Path.Location = New System.Drawing.Point(173, 46)
         Me.cbXML2Path.Name = "cbXML2Path"
-        Me.cbXML2Path.Size = New System.Drawing.Size(73, 17)
+        Me.cbXML2Path.Size = New System.Drawing.Size(135, 34)
         Me.cbXML2Path.TabIndex = 5
         Me.cbXML2Path.Text = "XML Path"
         Me.cbXML2Path.UseVisualStyleBackColor = True
@@ -572,7 +573,7 @@ Partial Class Form1
         Me.cbValid.CheckState = System.Windows.Forms.CheckState.Checked
         Me.cbValid.Location = New System.Drawing.Point(97, 46)
         Me.cbValid.Name = "cbValid"
-        Me.cbValid.Size = New System.Drawing.Size(51, 17)
+        Me.cbValid.Size = New System.Drawing.Size(91, 34)
         Me.cbValid.TabIndex = 4
         Me.cbValid.Text = "Valid"
         Me.cbValid.UseVisualStyleBackColor = True
@@ -584,7 +585,7 @@ Partial Class Form1
         Me.cbSetup.CheckState = System.Windows.Forms.CheckState.Checked
         Me.cbSetup.Location = New System.Drawing.Point(15, 46)
         Me.cbSetup.Name = "cbSetup"
-        Me.cbSetup.Size = New System.Drawing.Size(56, 17)
+        Me.cbSetup.Size = New System.Drawing.Size(101, 34)
         Me.cbSetup.TabIndex = 2
         Me.cbSetup.Text = "Setup"
         Me.cbSetup.UseVisualStyleBackColor = True
@@ -596,7 +597,7 @@ Partial Class Form1
         Me.cbCategory.CheckState = System.Windows.Forms.CheckState.Checked
         Me.cbCategory.Location = New System.Drawing.Point(670, 24)
         Me.cbCategory.Name = "cbCategory"
-        Me.cbCategory.Size = New System.Drawing.Size(72, 17)
+        Me.cbCategory.Size = New System.Drawing.Size(134, 34)
         Me.cbCategory.TabIndex = 1
         Me.cbCategory.Text = "Category"
         Me.cbCategory.UseVisualStyleBackColor = True
@@ -606,7 +607,7 @@ Partial Class Form1
         Me.cbLanguage.AutoSize = True
         Me.cbLanguage.Location = New System.Drawing.Point(627, 46)
         Me.cbLanguage.Name = "cbLanguage"
-        Me.cbLanguage.Size = New System.Drawing.Size(77, 17)
+        Me.cbLanguage.Size = New System.Drawing.Size(139, 34)
         Me.cbLanguage.TabIndex = 3
         Me.cbLanguage.Text = "Language"
         Me.cbLanguage.UseVisualStyleBackColor = True
@@ -619,7 +620,7 @@ Partial Class Form1
         Me.cbReleased.CheckState = System.Windows.Forms.CheckState.Checked
         Me.cbReleased.Location = New System.Drawing.Point(437, 25)
         Me.cbReleased.Name = "cbReleased"
-        Me.cbReleased.Size = New System.Drawing.Size(72, 17)
+        Me.cbReleased.Size = New System.Drawing.Size(131, 34)
         Me.cbReleased.TabIndex = 0
         Me.cbReleased.Text = "Released"
         Me.cbReleased.UseVisualStyleBackColor = True
@@ -631,7 +632,7 @@ Partial Class Form1
         Me.cbPackageID.CheckState = System.Windows.Forms.CheckState.Checked
         Me.cbPackageID.Location = New System.Drawing.Point(15, 25)
         Me.cbPackageID.Name = "cbPackageID"
-        Me.cbPackageID.Size = New System.Drawing.Size(82, 17)
+        Me.cbPackageID.Size = New System.Drawing.Size(151, 34)
         Me.cbPackageID.TabIndex = 8
         Me.cbPackageID.Text = "Package ID"
         Me.cbPackageID.UseVisualStyleBackColor = True
@@ -643,7 +644,7 @@ Partial Class Form1
         Me.cbTitle.CheckState = System.Windows.Forms.CheckState.Checked
         Me.cbTitle.Location = New System.Drawing.Point(271, 24)
         Me.cbTitle.Name = "cbTitle"
-        Me.cbTitle.Size = New System.Drawing.Size(48, 17)
+        Me.cbTitle.Size = New System.Drawing.Size(86, 34)
         Me.cbTitle.TabIndex = 10
         Me.cbTitle.Text = "Title"
         Me.cbTitle.UseVisualStyleBackColor = True
@@ -655,7 +656,7 @@ Partial Class Form1
         Me.cbPackageName.CheckState = System.Windows.Forms.CheckState.Checked
         Me.cbPackageName.Location = New System.Drawing.Point(132, 24)
         Me.cbPackageName.Name = "cbPackageName"
-        Me.cbPackageName.Size = New System.Drawing.Size(100, 17)
+        Me.cbPackageName.Size = New System.Drawing.Size(188, 34)
         Me.cbPackageName.TabIndex = 9
         Me.cbPackageName.Text = "Package Name"
         Me.cbPackageName.UseVisualStyleBackColor = True
@@ -675,9 +676,9 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnCheckCRC.Enabled = False
         Me.btnCheckCRC.ForeColor = System.Drawing.Color.Black
-        Me.btnCheckCRC.Location = New System.Drawing.Point(534, 439)
+        Me.btnCheckCRC.Location = New System.Drawing.Point(534, 413)
         Me.btnCheckCRC.Name = "btnCheckCRC"
-        Me.btnCheckCRC.Size = New System.Drawing.Size(118, 28)
+        Me.btnCheckCRC.Size = New System.Drawing.Size(110, 28)
         Me.btnCheckCRC.TabIndex = 16
         Me.btnCheckCRC.Text = "Check CRC"
         Me.btnCheckCRC.UseVisualStyleBackColor = True
@@ -688,7 +689,7 @@ Partial Class Form1
         Me.cbWin10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbWin10.Location = New System.Drawing.Point(174, 37)
         Me.cbWin10.Name = "cbWin10"
-        Me.cbWin10.Size = New System.Drawing.Size(64, 20)
+        Me.cbWin10.Size = New System.Drawing.Size(118, 34)
         Me.cbWin10.TabIndex = 23
         Me.cbWin10.Text = "Win10"
         Me.cbWin10.UseVisualStyleBackColor = True
@@ -699,7 +700,7 @@ Partial Class Form1
         Me.cbWin8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbWin8.Location = New System.Drawing.Point(95, 37)
         Me.cbWin8.Name = "cbWin8"
-        Me.cbWin8.Size = New System.Drawing.Size(57, 20)
+        Me.cbWin8.Size = New System.Drawing.Size(104, 34)
         Me.cbWin8.TabIndex = 22
         Me.cbWin8.Text = "Win8"
         Me.cbWin8.UseVisualStyleBackColor = True
@@ -712,7 +713,7 @@ Partial Class Form1
         Me.linkTaxonomy.LinkColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(221, Byte), Integer))
         Me.linkTaxonomy.Location = New System.Drawing.Point(284, 18)
         Me.linkTaxonomy.Name = "linkTaxonomy"
-        Me.linkTaxonomy.Size = New System.Drawing.Size(69, 16)
+        Me.linkTaxonomy.Size = New System.Drawing.Size(130, 30)
         Me.linkTaxonomy.TabIndex = 21
         Me.linkTaxonomy.TabStop = True
         Me.linkTaxonomy.Text = "Model List"
@@ -726,7 +727,7 @@ Partial Class Form1
         Me.cbWin7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbWin7.Location = New System.Drawing.Point(20, 37)
         Me.cbWin7.Name = "cbWin7"
-        Me.cbWin7.Size = New System.Drawing.Size(57, 20)
+        Me.cbWin7.Size = New System.Drawing.Size(104, 34)
         Me.cbWin7.TabIndex = 19
         Me.cbWin7.Text = "Win7"
         Me.cbWin7.UseVisualStyleBackColor = True
@@ -737,7 +738,7 @@ Partial Class Form1
         Me.cbWinVista.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbWinVista.Location = New System.Drawing.Point(95, 101)
         Me.cbWinVista.Name = "cbWinVista"
-        Me.cbWinVista.Size = New System.Drawing.Size(80, 20)
+        Me.cbWinVista.Size = New System.Drawing.Size(147, 34)
         Me.cbWinVista.TabIndex = 18
         Me.cbWinVista.Text = "WinVista"
         Me.cbWinVista.UseVisualStyleBackColor = True
@@ -749,7 +750,7 @@ Partial Class Form1
         Me.cbWinXP.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbWinXP.Location = New System.Drawing.Point(16, 101)
         Me.cbWinXP.Name = "cbWinXP"
-        Me.cbWinXP.Size = New System.Drawing.Size(67, 20)
+        Me.cbWinXP.Size = New System.Drawing.Size(124, 34)
         Me.cbWinXP.TabIndex = 17
         Me.cbWinXP.Text = "WinXP"
         Me.cbWinXP.UseVisualStyleBackColor = True
@@ -772,7 +773,7 @@ Partial Class Form1
         Me.CheckBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox1.Location = New System.Drawing.Point(376, 55)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(148, 20)
+        Me.CheckBox1.Size = New System.Drawing.Size(273, 34)
         Me.CheckBox1.TabIndex = 16
         Me.CheckBox1.Text = "Search by HTTPS://"
         Me.CheckBox1.UseVisualStyleBackColor = True
@@ -813,10 +814,10 @@ Partial Class Form1
         Me.TabPage1.Controls.Add(Me.TextBox1)
         Me.TabPage1.Controls.Add(Me.Label4)
         Me.TabPage1.Controls.Add(Me.Label2)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 28)
+        Me.TabPage1.Location = New System.Drawing.Point(8, 32)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(557, 94)
+        Me.TabPage1.Size = New System.Drawing.Size(549, 86)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "   Catalog Search   "
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -829,7 +830,7 @@ Partial Class Form1
         Me.linkDocks.LinkColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(221, Byte), Integer))
         Me.linkDocks.Location = New System.Drawing.Point(402, 18)
         Me.linkDocks.Name = "linkDocks"
-        Me.linkDocks.Size = New System.Drawing.Size(70, 16)
+        Me.linkDocks.Size = New System.Drawing.Size(132, 30)
         Me.linkDocks.TabIndex = 25
         Me.linkDocks.TabStop = True
         Me.linkDocks.Text = "Docks List"
@@ -841,7 +842,7 @@ Partial Class Form1
         Me._rbWin10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._rbWin10.Location = New System.Drawing.Point(220, 54)
         Me._rbWin10.Name = "_rbWin10"
-        Me._rbWin10.Size = New System.Drawing.Size(40, 20)
+        Me._rbWin10.Size = New System.Drawing.Size(72, 34)
         Me._rbWin10.TabIndex = 24
         Me._rbWin10.TabStop = True
         Me._rbWin10.Tag = "Win10"
@@ -854,7 +855,7 @@ Partial Class Form1
         Me._rbWin81.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._rbWin81.Location = New System.Drawing.Point(173, 54)
         Me._rbWin81.Name = "_rbWin81"
-        Me._rbWin81.Size = New System.Drawing.Size(43, 20)
+        Me._rbWin81.Size = New System.Drawing.Size(79, 34)
         Me._rbWin81.TabIndex = 23
         Me._rbWin81.TabStop = True
         Me._rbWin81.Tag = "Win8"
@@ -867,7 +868,7 @@ Partial Class Form1
         Me._rbWin7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me._rbWin7.Location = New System.Drawing.Point(133, 54)
         Me._rbWin7.Name = "_rbWin7"
-        Me._rbWin7.Size = New System.Drawing.Size(33, 20)
+        Me._rbWin7.Size = New System.Drawing.Size(58, 34)
         Me._rbWin7.TabIndex = 22
         Me._rbWin7.TabStop = True
         Me._rbWin7.Tag = "Win7"
@@ -879,10 +880,10 @@ Partial Class Form1
         Me.TabPage2.Controls.Add(Me.Button2)
         Me.TabPage2.Controls.Add(Me.TextBox2)
         Me.TabPage2.Controls.Add(Me.Label3)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 28)
+        Me.TabPage2.Location = New System.Drawing.Point(8, 32)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(557, 94)
+        Me.TabPage2.Size = New System.Drawing.Size(549, 86)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "   Package Search   "
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -895,11 +896,11 @@ Partial Class Form1
         Me.TabPage3.Controls.Add(Me.btnThink)
         Me.TabPage3.Controls.Add(Me.cbWinVista)
         Me.TabPage3.Controls.Add(Me.cbWin7)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 28)
+        Me.TabPage3.Location = New System.Drawing.Point(8, 32)
         Me.TabPage3.Margin = New System.Windows.Forms.Padding(6, 3, 6, 3)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(557, 94)
+        Me.TabPage3.Size = New System.Drawing.Size(549, 86)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "   Full Scan Catalogs   "
         Me.TabPage3.UseVisualStyleBackColor = True
