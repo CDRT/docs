@@ -1,10 +1,12 @@
 # Commercial Vantage Deployment Guide
 
-?> Updated: 2023-3-21
+?> Updated: 2023-03-21
 
 !> Due to requirements from the Lenovo Product Security team, logging is not enabled by default any longer. To enable logging, set the following registry value to "True":<br><br>
 [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Lenovo\SystemUpdateAddin\Logs]
-"EnableLogs"="True"
+"EnableLogs"="True"<br><br>
+Logs can be found in:
+%ProgramData%\Lenovo\Vantage\AddinData\LenovoSystemUpdateAddin\logs
 
 ## Preface
 
