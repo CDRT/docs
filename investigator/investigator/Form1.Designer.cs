@@ -171,6 +171,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(193, 671);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label16
             // 
@@ -401,7 +402,7 @@
             this.statusLabel2,
             this.toolStripStatusLabel2,
             this.toolStripStatusLabel3});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 699);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 694);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1037, 22);
             this.statusStrip1.TabIndex = 3;
@@ -442,7 +443,7 @@
             this.tabCatalog.Margin = new System.Windows.Forms.Padding(2);
             this.tabCatalog.Name = "tabCatalog";
             this.tabCatalog.Padding = new System.Windows.Forms.Padding(2);
-            this.tabCatalog.Size = new System.Drawing.Size(806, 646);
+            this.tabCatalog.Size = new System.Drawing.Size(789, 676);
             this.tabCatalog.TabIndex = 2;
             this.tabCatalog.Text = "Catalog Details";
             this.tabCatalog.UseVisualStyleBackColor = true;
@@ -933,22 +934,26 @@
             this.tabDevice.Margin = new System.Windows.Forms.Padding(2);
             this.tabDevice.Name = "tabDevice";
             this.tabDevice.Padding = new System.Windows.Forms.Padding(2);
-            this.tabDevice.Size = new System.Drawing.Size(806, 646);
+            this.tabDevice.Size = new System.Drawing.Size(772, 691);
             this.tabDevice.TabIndex = 0;
             this.tabDevice.Text = "Device Details";
             this.tabDevice.UseVisualStyleBackColor = true;
             // 
             // rtbModel
             // 
+            this.rtbModel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.rtbModel.Location = new System.Drawing.Point(22, 34);
             this.rtbModel.Margin = new System.Windows.Forms.Padding(2);
             this.rtbModel.Name = "rtbModel";
-            this.rtbModel.Size = new System.Drawing.Size(752, 60);
+            this.rtbModel.Size = new System.Drawing.Size(718, 60);
             this.rtbModel.TabIndex = 23;
             this.rtbModel.Text = "";
             // 
             // DataGridViewSCCM
             // 
+            this.DataGridViewSCCM.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DataGridViewSCCM.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.DataGridViewSCCM.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DataGridViewSCCM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -961,7 +966,7 @@
             this.DataGridViewSCCM.ReadOnly = true;
             this.DataGridViewSCCM.RowHeadersWidth = 82;
             this.DataGridViewSCCM.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridViewSCCM.Size = new System.Drawing.Size(749, 120);
+            this.DataGridViewSCCM.Size = new System.Drawing.Size(715, 120);
             this.DataGridViewSCCM.TabIndex = 32;
             this.DataGridViewSCCM.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewSCCM_CellContentDoubleClick);
             this.DataGridViewSCCM.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DataGridViewSCCM_KeyDown);
@@ -1060,12 +1065,14 @@
             // 
             // hsaListBox
             // 
+            this.hsaListBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.hsaListBox.FormattingEnabled = true;
             this.hsaListBox.ItemHeight = 16;
             this.hsaListBox.Location = new System.Drawing.Point(22, 533);
             this.hsaListBox.Margin = new System.Windows.Forms.Padding(2);
             this.hsaListBox.Name = "hsaListBox";
-            this.hsaListBox.Size = new System.Drawing.Size(752, 68);
+            this.hsaListBox.Size = new System.Drawing.Size(718, 68);
             this.hsaListBox.TabIndex = 18;
             // 
             // buvLabel
@@ -1186,7 +1193,7 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(-39, -600);
+            this.label6.Location = new System.Drawing.Point(-56, -578);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(122, 17);
@@ -1198,7 +1205,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(-39, -699);
+            this.label5.Location = new System.Drawing.Point(-56, -677);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(102, 17);
@@ -1218,7 +1225,7 @@
             this.tabs.Margin = new System.Windows.Forms.Padding(2);
             this.tabs.Name = "tabs";
             this.tabs.SelectedIndex = 0;
-            this.tabs.Size = new System.Drawing.Size(814, 675);
+            this.tabs.Size = new System.Drawing.Size(780, 720);
             this.tabs.TabIndex = 1;
             this.tabs.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabs_Selecting);
             // 
@@ -1228,7 +1235,7 @@
             this.tabBD.Location = new System.Drawing.Point(4, 25);
             this.tabBD.Name = "tabBD";
             this.tabBD.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBD.Size = new System.Drawing.Size(806, 646);
+            this.tabBD.Size = new System.Drawing.Size(789, 676);
             this.tabBD.TabIndex = 3;
             this.tabBD.Text = "BIOS Dictionary";
             this.tabBD.UseVisualStyleBackColor = true;
@@ -1252,7 +1259,7 @@
             // 
             this.linkLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Location = new System.Drawing.Point(872, 8);
+            this.linkLabel3.Location = new System.Drawing.Point(838, 8);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(78, 13);
             this.linkLabel3.TabIndex = 3;
@@ -1265,7 +1272,7 @@
             // 
             this.pcSupportLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pcSupportLink.AutoSize = true;
-            this.pcSupportLink.Location = new System.Drawing.Point(757, 8);
+            this.pcSupportLink.Location = new System.Drawing.Point(723, 8);
             this.pcSupportLink.Name = "pcSupportLink";
             this.pcSupportLink.Size = new System.Drawing.Size(61, 13);
             this.pcSupportLink.TabIndex = 2;
@@ -1278,7 +1285,7 @@
             // 
             this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(824, 8);
+            this.linkLabel1.Location = new System.Drawing.Point(790, 8);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(42, 13);
             this.linkLabel1.TabIndex = 1;
@@ -1291,7 +1298,7 @@
             // 
             this.linkLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(956, 8);
+            this.linkLabel2.Location = new System.Drawing.Point(922, 8);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(32, 13);
             this.linkLabel2.TabIndex = 4;
@@ -1304,7 +1311,7 @@
             // 
             this.linkLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.linkLabel4.AutoSize = true;
-            this.linkLabel4.Location = new System.Drawing.Point(994, 8);
+            this.linkLabel4.Location = new System.Drawing.Point(960, 8);
             this.linkLabel4.Name = "linkLabel4";
             this.linkLabel4.Size = new System.Drawing.Size(28, 13);
             this.linkLabel4.TabIndex = 5;
@@ -1323,7 +1330,7 @@
             // progressBar1
             // 
             this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.progressBar1.Location = new System.Drawing.Point(651, 11);
+            this.progressBar1.Location = new System.Drawing.Point(617, 11);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(100, 10);
             this.progressBar1.TabIndex = 6;
@@ -1335,7 +1342,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1037, 721);
+            this.ClientSize = new System.Drawing.Size(1054, 701);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.linkLabel2);
