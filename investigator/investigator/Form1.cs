@@ -1481,5 +1481,31 @@ namespace investigator
         {
 
         }
+
+        private void DataGridView1_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                var selectedRow = DataGridView1.Rows[e.RowIndex];
+                var cellValue = selectedRow.Cells["xml2_path"].Value;
+                if (cellValue != null)
+                {
+                    ProcessStartInfo sInfo = new ProcessStartInfo($"{cellValue}");
+                    Process.Start(sInfo);
+                }
+            }
+        }
+
+        private void DataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+           // Create a new small dialog form with three buttons
+           // 1 = "ReadMe"
+           // 2 = "EXE"
+           // 3 = "XML"
+           // clicking the buttons will open the resouce based on the URL stored in the Datagridview1.
+           // already have the xml2_path stored in datagridview.
+           // need to add two hidden columns for path to readme and path to exe.
+           // the URLs will be the same as the path to the XML just replace the file name with the filenames that are in the XML for the EXE and the Readme.
+        }
     }
 }

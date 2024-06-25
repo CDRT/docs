@@ -402,9 +402,9 @@
             this.statusLabel2,
             this.toolStripStatusLabel2,
             this.toolStripStatusLabel3});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 694);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 739);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1037, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1054, 22);
             this.statusStrip1.TabIndex = 3;
             // 
             // statusLabel1
@@ -443,7 +443,7 @@
             this.tabCatalog.Margin = new System.Windows.Forms.Padding(2);
             this.tabCatalog.Name = "tabCatalog";
             this.tabCatalog.Padding = new System.Windows.Forms.Padding(2);
-            this.tabCatalog.Size = new System.Drawing.Size(789, 676);
+            this.tabCatalog.Size = new System.Drawing.Size(822, 671);
             this.tabCatalog.TabIndex = 2;
             this.tabCatalog.Text = "Catalog Details";
             this.tabCatalog.UseVisualStyleBackColor = true;
@@ -452,7 +452,7 @@
             // 
             this.btnClearCatalog.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnClearCatalog.Enabled = false;
-            this.btnClearCatalog.Location = new System.Drawing.Point(415, 598);
+            this.btnClearCatalog.Location = new System.Drawing.Point(440, 578);
             this.btnClearCatalog.Name = "btnClearCatalog";
             this.btnClearCatalog.Size = new System.Drawing.Size(75, 28);
             this.btnClearCatalog.TabIndex = 22;
@@ -465,7 +465,7 @@
             this.btnCheckCRC.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnCheckCRC.Enabled = false;
             this.btnCheckCRC.ForeColor = System.Drawing.Color.Black;
-            this.btnCheckCRC.Location = new System.Drawing.Point(302, 598);
+            this.btnCheckCRC.Location = new System.Drawing.Point(327, 578);
             this.btnCheckCRC.Name = "btnCheckCRC";
             this.btnCheckCRC.Size = new System.Drawing.Size(88, 28);
             this.btnCheckCRC.TabIndex = 21;
@@ -509,8 +509,10 @@
             this.DataGridView1.RowHeadersWidth = 82;
             this.DataGridView1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             this.DataGridView1.RowTemplate.Height = 25;
-            this.DataGridView1.Size = new System.Drawing.Size(799, 488);
+            this.DataGridView1.Size = new System.Drawing.Size(849, 468);
             this.DataGridView1.TabIndex = 20;
+            this.DataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentDoubleClick);
+            this.DataGridView1.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DataGridView1_RowHeaderMouseDoubleClick);
             this.DataGridView1.SelectionChanged += new System.EventHandler(this.DataGridView1_SelectionChanged);
             // 
             // PkgID
@@ -680,7 +682,7 @@
             this.gbColumns.ForeColor = System.Drawing.Color.Black;
             this.gbColumns.Location = new System.Drawing.Point(4, 2);
             this.gbColumns.Name = "gbColumns";
-            this.gbColumns.Size = new System.Drawing.Size(801, 92);
+            this.gbColumns.Size = new System.Drawing.Size(851, 92);
             this.gbColumns.TabIndex = 19;
             this.gbColumns.TabStop = false;
             this.gbColumns.Text = "Columns";
@@ -934,7 +936,7 @@
             this.tabDevice.Margin = new System.Windows.Forms.Padding(2);
             this.tabDevice.Name = "tabDevice";
             this.tabDevice.Padding = new System.Windows.Forms.Padding(2);
-            this.tabDevice.Size = new System.Drawing.Size(772, 691);
+            this.tabDevice.Size = new System.Drawing.Size(822, 671);
             this.tabDevice.TabIndex = 0;
             this.tabDevice.Text = "Device Details";
             this.tabDevice.UseVisualStyleBackColor = true;
@@ -946,7 +948,7 @@
             this.rtbModel.Location = new System.Drawing.Point(22, 34);
             this.rtbModel.Margin = new System.Windows.Forms.Padding(2);
             this.rtbModel.Name = "rtbModel";
-            this.rtbModel.Size = new System.Drawing.Size(718, 60);
+            this.rtbModel.Size = new System.Drawing.Size(768, 60);
             this.rtbModel.TabIndex = 23;
             this.rtbModel.Text = "";
             // 
@@ -966,7 +968,7 @@
             this.DataGridViewSCCM.ReadOnly = true;
             this.DataGridViewSCCM.RowHeadersWidth = 82;
             this.DataGridViewSCCM.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridViewSCCM.Size = new System.Drawing.Size(715, 120);
+            this.DataGridViewSCCM.Size = new System.Drawing.Size(765, 120);
             this.DataGridViewSCCM.TabIndex = 32;
             this.DataGridViewSCCM.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewSCCM_CellContentDoubleClick);
             this.DataGridViewSCCM.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DataGridViewSCCM_KeyDown);
@@ -1072,7 +1074,7 @@
             this.hsaListBox.Location = new System.Drawing.Point(22, 533);
             this.hsaListBox.Margin = new System.Windows.Forms.Padding(2);
             this.hsaListBox.Name = "hsaListBox";
-            this.hsaListBox.Size = new System.Drawing.Size(718, 68);
+            this.hsaListBox.Size = new System.Drawing.Size(768, 68);
             this.hsaListBox.TabIndex = 18;
             // 
             // buvLabel
@@ -1193,7 +1195,7 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(-56, -578);
+            this.label6.Location = new System.Drawing.Point(-31, -588);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(122, 17);
@@ -1205,7 +1207,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(-56, -677);
+            this.label5.Location = new System.Drawing.Point(-31, -687);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(102, 17);
@@ -1225,7 +1227,7 @@
             this.tabs.Margin = new System.Windows.Forms.Padding(2);
             this.tabs.Name = "tabs";
             this.tabs.SelectedIndex = 0;
-            this.tabs.Size = new System.Drawing.Size(780, 720);
+            this.tabs.Size = new System.Drawing.Size(830, 700);
             this.tabs.TabIndex = 1;
             this.tabs.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabs_Selecting);
             // 
@@ -1235,7 +1237,7 @@
             this.tabBD.Location = new System.Drawing.Point(4, 25);
             this.tabBD.Name = "tabBD";
             this.tabBD.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBD.Size = new System.Drawing.Size(789, 676);
+            this.tabBD.Size = new System.Drawing.Size(772, 691);
             this.tabBD.TabIndex = 3;
             this.tabBD.Text = "BIOS Dictionary";
             this.tabBD.UseVisualStyleBackColor = true;
@@ -1342,7 +1344,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1054, 701);
+            this.ClientSize = new System.Drawing.Size(1054, 761);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.linkLabel2);
