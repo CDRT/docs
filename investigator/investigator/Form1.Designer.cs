@@ -57,7 +57,7 @@
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tabCatalog = new System.Windows.Forms.TabPage();
-            this.btnClearCatalog = new System.Windows.Forms.Button();
+            this.reloadCatalog = new System.Windows.Forms.Button();
             this.btnCheckCRC = new System.Windows.Forms.Button();
             this.DataGridView1 = new System.Windows.Forms.DataGridView();
             this.PkgID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -76,6 +76,8 @@
             this.xml2_path = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CRC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.crcactual = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Readme = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Exe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Comment = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbColumns = new System.Windows.Forms.GroupBox();
             this.cbBrand = new System.Windows.Forms.CheckBox();
@@ -435,7 +437,7 @@
             // tabCatalog
             // 
             this.tabCatalog.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabCatalog.Controls.Add(this.btnClearCatalog);
+            this.tabCatalog.Controls.Add(this.reloadCatalog);
             this.tabCatalog.Controls.Add(this.btnCheckCRC);
             this.tabCatalog.Controls.Add(this.DataGridView1);
             this.tabCatalog.Controls.Add(this.gbColumns);
@@ -448,24 +450,23 @@
             this.tabCatalog.Text = "Catalog Details";
             this.tabCatalog.UseVisualStyleBackColor = true;
             // 
-            // btnClearCatalog
+            // reloadCatalog
             // 
-            this.btnClearCatalog.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnClearCatalog.Enabled = false;
-            this.btnClearCatalog.Location = new System.Drawing.Point(440, 578);
-            this.btnClearCatalog.Name = "btnClearCatalog";
-            this.btnClearCatalog.Size = new System.Drawing.Size(75, 28);
-            this.btnClearCatalog.TabIndex = 22;
-            this.btnClearCatalog.Text = "Clear Catalog";
-            this.btnClearCatalog.UseVisualStyleBackColor = true;
-            this.btnClearCatalog.Click += new System.EventHandler(this.btnClearCatalog_Click);
+            this.reloadCatalog.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.reloadCatalog.Location = new System.Drawing.Point(325, 578);
+            this.reloadCatalog.Name = "reloadCatalog";
+            this.reloadCatalog.Size = new System.Drawing.Size(81, 29);
+            this.reloadCatalog.TabIndex = 23;
+            this.reloadCatalog.Text = "Reload";
+            this.reloadCatalog.UseVisualStyleBackColor = true;
+            this.reloadCatalog.Click += new System.EventHandler(this.reloadCatalog_Click);
             // 
             // btnCheckCRC
             // 
             this.btnCheckCRC.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnCheckCRC.Enabled = false;
             this.btnCheckCRC.ForeColor = System.Drawing.Color.Black;
-            this.btnCheckCRC.Location = new System.Drawing.Point(327, 578);
+            this.btnCheckCRC.Location = new System.Drawing.Point(419, 578);
             this.btnCheckCRC.Name = "btnCheckCRC";
             this.btnCheckCRC.Size = new System.Drawing.Size(88, 28);
             this.btnCheckCRC.TabIndex = 21;
@@ -501,6 +502,8 @@
             this.xml2_path,
             this.CRC,
             this.crcactual,
+            this.Readme,
+            this.Exe,
             this.Comment});
             this.DataGridView1.Location = new System.Drawing.Point(6, 85);
             this.DataGridView1.Margin = new System.Windows.Forms.Padding(4);
@@ -509,7 +512,7 @@
             this.DataGridView1.RowHeadersWidth = 82;
             this.DataGridView1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             this.DataGridView1.RowTemplate.Height = 25;
-            this.DataGridView1.Size = new System.Drawing.Size(849, 468);
+            this.DataGridView1.Size = new System.Drawing.Size(818, 468);
             this.DataGridView1.TabIndex = 20;
             this.DataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentDoubleClick);
             this.DataGridView1.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DataGridView1_RowHeaderMouseDoubleClick);
@@ -612,7 +615,7 @@
             this.language.Name = "language";
             this.language.ReadOnly = true;
             this.language.Visible = false;
-            this.language.Width = 103;
+            this.language.Width = 97;
             // 
             // Valid
             // 
@@ -647,12 +650,29 @@
             this.crcactual.ReadOnly = true;
             this.crcactual.Width = 96;
             // 
+            // Readme
+            // 
+            this.Readme.HeaderText = "Readme";
+            this.Readme.Name = "Readme";
+            this.Readme.ReadOnly = true;
+            this.Readme.Visible = false;
+            this.Readme.Width = 86;
+            // 
+            // Exe
+            // 
+            this.Exe.HeaderText = "Exe";
+            this.Exe.Name = "Exe";
+            this.Exe.ReadOnly = true;
+            this.Exe.Visible = false;
+            this.Exe.Width = 56;
+            // 
             // Comment
             // 
             this.Comment.HeaderText = "Comment";
             this.Comment.MinimumWidth = 10;
             this.Comment.Name = "Comment";
             this.Comment.ReadOnly = true;
+            this.Comment.Visible = false;
             this.Comment.Width = 92;
             // 
             // gbColumns
@@ -1237,7 +1257,7 @@
             this.tabBD.Location = new System.Drawing.Point(4, 25);
             this.tabBD.Name = "tabBD";
             this.tabBD.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBD.Size = new System.Drawing.Size(772, 691);
+            this.tabBD.Size = new System.Drawing.Size(822, 671);
             this.tabBD.TabIndex = 3;
             this.tabBD.Text = "BIOS Dictionary";
             this.tabBD.UseVisualStyleBackColor = true;
@@ -1407,23 +1427,6 @@
         private System.Windows.Forms.TabPage tabCatalog;
         internal System.Windows.Forms.Button btnCheckCRC;
         internal System.Windows.Forms.DataGridView DataGridView1;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn PkgID;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn PackageName;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn Title;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn Version;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn Released;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn PackageType;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn category;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn RebootType;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn Severity;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn Brand;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn Setup;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn language;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn Valid;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn xml2_path;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn CRC;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn crcactual;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn Comment;
         internal System.Windows.Forms.GroupBox gbColumns;
         internal System.Windows.Forms.CheckBox cbBrand;
         internal System.Windows.Forms.CheckBox cbVersion;
@@ -1483,7 +1486,26 @@
         private System.Windows.Forms.ComboBox comboTitle;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.Button btnClearCatalog;
+        private System.Windows.Forms.Button reloadCatalog;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PkgID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PackageName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Title;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Version;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Released;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PackageType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn category;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RebootType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Severity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Brand;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Setup;
+        private System.Windows.Forms.DataGridViewTextBoxColumn language;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Valid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn xml2_path;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CRC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn crcactual;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Readme;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Exe;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Comment;
     }
 }
 

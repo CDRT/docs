@@ -17,6 +17,7 @@ using System.Xml;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
 
 namespace investigator
 {
@@ -73,12 +74,13 @@ namespace investigator
         {
 
             string name = e.Argument as string;
-            ProcessCatalog(name); //if you need to pass more than one thing put in hash table, list, array and pass that (make sure you grab back in the right order)
+            //if you need to pass more than one thing put in hash table, list, array and pass that (make sure you grab back in the right order)
 
-            for (int i = 0; i < 100; i++)
-            {
-                backgroundWorker1.ReportProgress(i); //this goes in process catalog
-            }
+            /*  for (int i = 0; i < 100; i++)
+              {
+                  backgroundWorker1.ReportProgress(i); //this goes in process catalog
+              }*/
+            ProcessCatalog(name);
         }
 
         private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
@@ -104,8 +106,7 @@ namespace investigator
             {
                 foreach (_package pkg in pkgsList)
                 {
-                    this.DataGridView1.Rows.Add(pkg.CPkgID, pkg.CPackageName, pkg.CTitle, pkg.CVersion, pkg.CReleased, pkg.CPackageType, pkg.CCategory, pkg.CReboot, pkg.CSeverity, pkg.CBrand, pkg.Csetup, pkg.Clangs, pkg.Cxml2valid, pkg.CURLxml2, pkg.Cxml2crc, pkg.Cxml2crcactual);
-                    btnClearCatalog.Enabled = true;
+                    this.DataGridView1.Rows.Add(pkg.CPkgID, pkg.CPackageName, pkg.CTitle, pkg.CVersion, pkg.CReleased, pkg.CPackageType, pkg.CCategory, pkg.CReboot, pkg.CSeverity, pkg.CBrand, pkg.Csetup, pkg.Clangs, pkg.Cxml2valid, pkg.CURLxml2, pkg.Cxml2crc, pkg.Cxml2crcactual, pkg.CURLtxt, pkg.CURLexe);
                 }
             }
 
@@ -113,7 +114,7 @@ namespace investigator
             this.DataGridView1.AutoResizeColumns();
             this.DataGridView1.Sort(DataGridView1.Columns["Valid"], System.ComponentModel.ListSortDirection.Ascending);
             progressBar1.Visible = false;
-            this.SetBGColor(); //error here if valid == 0
+            this.SetBGColor(); 
 
 
             /*if (e.Cancelled) MessageBox.Show("Operation was canceled");
@@ -254,7 +255,7 @@ namespace investigator
             var mt = comboMT.Text.ToUpper();
             if (mt.Length == 4)
             {
-                tabs.SelectedTab = tabDevice;
+                //tabs.SelectedTab = tabDevice;
                 fillMtDetails(mt);
 
                 if (!comboMT.Items.Contains(mt))
@@ -309,7 +310,7 @@ namespace investigator
             var bc = comboBiosCode.Text;
             if (bc.Length == 4)
             {
-                tabs.SelectedTab = tabDevice;
+               // tabs.SelectedTab = tabDevice;
                 fillBiosDetails(bc);
 
                 if (!comboBiosCode.Items.Contains(bc))
@@ -522,8 +523,13 @@ namespace investigator
 
 
                 //backgroundWorker1.ReportProgress(); //report progress of _Downloader?
-                _Downloader = new WebFileDownloader(); //could put this into workerreport/progressreported percentage
+                for (int i = 0; i < 100; i++)
+                {
+                    //this goes in process catalog
 
+                    _Downloader = new WebFileDownloader(); //could put this into workerreport/progressreported percentage
+                    backgroundWorker1.ReportProgress(i);
+                }
                 if (_Downloader.DownloadFileWithProgress(catalog_base_pathX + desc_to_download + "?t=" + DateTime.Now.Ticks.ToString(), local_base_path + desc_to_download))
                 {
 
@@ -625,6 +631,7 @@ namespace investigator
                 {
                     MessageBox.Show("Could not download catalog descriptor.");
                 }
+
             }
 
             catch (Exception ex)
@@ -831,7 +838,7 @@ namespace investigator
                     DataGridView1.Rows[cnt].DefaultCellStyle.ForeColor = Color.Blue;
                     cnt--;
                 }
-                
+
             }
         }
 
@@ -1472,7 +1479,6 @@ namespace investigator
             {
                 progressBar1.Visible = false;
                 progressBar1.Value = 0;
-                btnClearCatalog.Enabled = false;
             }
 
         }
@@ -1496,16 +1502,43 @@ namespace investigator
             }
         }
 
+        //Dispalays Form2 with Catalog Readme, EXE, and XML buttons based on the machine type
         private void DataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-           // Create a new small dialog form with three buttons
-           // 1 = "ReadMe"
-           // 2 = "EXE"
-           // 3 = "XML"
-           // clicking the buttons will open the resouce based on the URL stored in the Datagridview1.
-           // already have the xml2_path stored in datagridview.
-           // need to add two hidden columns for path to readme and path to exe.
-           // the URLs will be the same as the path to the XML just replace the file name with the filenames that are in the XML for the EXE and the Readme.
+            if (e.RowIndex >= 0)
+            {
+                var selectedRow = DataGridView1.Rows[e.RowIndex];
+                string xmlValue = selectedRow.Cells["xml2_path"].Value.ToString();
+                Form2 f2 = new Form2(xmlValue);
+                f2.ShowDialog();
+            }
+
+
+
         }
+
+        private void reloadCatalog_Click(object sender, EventArgs e)
+        {
+            if (tabs.SelectedTab == tabCatalog)
+            {
+                DataGridView1.Rows.Clear();
+                if (backgroundWorker1.IsBusy != true)
+                {
+                    if (comboMT.Text != "" || comboMT.SelectedIndex != -1)
+                    {
+                        progressBar1.Visible = true;
+                        backgroundWorker1.RunWorkerAsync(comboMT.Text.ToUpper());
+                    }
+                    else
+                    if (comboBiosCode.Text != "" || comboBiosCode.SelectedIndex != -1)
+                    {
+                        progressBar1.Visible = true;
+                        backgroundWorker1.RunWorkerAsync(firstMT); //firstMt = first machine type in list
+                    }
+                }
+                // comboMT_SelectedIndexChanged(sender, e);
+            }
+        }
+
     }
 }
